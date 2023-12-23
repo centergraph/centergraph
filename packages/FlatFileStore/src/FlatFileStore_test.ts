@@ -15,3 +15,8 @@ Deno.test('Test store with quads', () => {
   store.add(dataFactory.quad(ex('frank'), schema('name'), dataFactory.literal('Frank')))
   assertEquals(store.size, 2)
 })
+
+Deno.test('Test store with folder', () => {
+  const store = new FlatFileStore()
+  assertEquals(store.size, 0)
+})
