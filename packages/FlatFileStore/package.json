@@ -1,0 +1,6 @@
+{
+    "name": "flat-file-store",
+    "scripts": {
+        "dev": "deno task dev"
+    }
+}

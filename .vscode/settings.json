@@ -1,0 +1,12 @@
+{
+    "cSpell.words": [
+        "Beeke",
+        "centergraph",
+        "shacl"
+    ],
+    "deno.enablePaths": [
+        "./packages/FlatFileStore"
+    ],
+    "deno.lint": true,
+    "deno.unstable": true
+}

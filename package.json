@@ -1,0 +1,14 @@
+{
+  "name": "centergraph",
+  "version": "1.0.0",
+  "description": "The monorepo for CenterGraph",
+  "author": "Daniel Beeke",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "dependencies": {
+    "shacl-engine": "^0.1.1"
+  }
+}
