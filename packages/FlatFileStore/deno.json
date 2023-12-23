@@ -1,8 +1,6 @@
 {
-    "tasks": {
-        "dev": "deno run --watch --allow-sys --allow-env src/index.ts"
-    },
-    "imports": {
-        "shacl-engine": "npm:shacl-engine"
-      }
+  "tasks": {
+    "dev": "deno run --watch --allow-sys --allow-env src/FlatFileStore.ts"
+  },
+  "imports": {}
 }

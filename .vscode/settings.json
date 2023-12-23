@@ -1,12 +1,13 @@
 {
-    "cSpell.words": [
-        "Beeke",
-        "centergraph",
-        "shacl"
-    ],
-    "deno.enablePaths": [
-        "./packages/FlatFileStore"
-    ],
-    "deno.lint": true,
-    "deno.unstable": true
+  "cSpell.words": ["Beeke", "centergraph", "shacl"],
+  "deno.enablePaths": ["./packages/FlatFileStore"],
+  "deno.lint": false,
+  "deno.unstable": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "never"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2
 }
