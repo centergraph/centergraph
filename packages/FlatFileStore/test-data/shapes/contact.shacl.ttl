@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+  a sh:NodeShape ;
+  sh:targetClass schema:Person ;
+
+  sh:property [
+    sh:name "Given name"@en ;
+    sh:path schema:givenName ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:group "name" ;
+    sh:datatype xsd:string ;
+  ];
+  
+  sh:property [
+    sh:name "Family name"@en ;
+    sh:group "name" ;
+    sh:path schema:familyName ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:datatype xsd:string ;
+  ];
+
+  sh:property [
+    sh:name "Address"@en ;
+    sh:path schema:address ;
+    sh:maxCount 1 ;
+    sh:node <addressShape> ;
+    sh:nodeKind sh:BlankNode ;
+  ];
+
+.
+
+<addressShape>
+    a sh:NodeShape ;
+    sh:targetClass schema:PostalAddress ;
+
+    sh:property [
+        sh:name "Street"@en ;
+        sh:path schema:streetAddress ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:name "Region"@en ;
+        sh:path schema:addressRegion ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:name "Locality"@en ;
+        sh:path schema:addressLocality ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:name "Postal code"@en ;
+        sh:path schema:postalCode ;
+        sh:or (
+            [ sh:datatype xsd:string ]
+            [ sh:datatype xsd:number ]
+        ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:name "Country"@en ;
+        sh:path schema:addressCountry ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .

@@ -5,12 +5,10 @@
   "author": "Daniel Beeke",
   "license": "MIT",
   "workspaces": [
-    "packages/*",
-    "apps/*"
+    "packages/*"
   ],
   "dependencies": {},
   "devDependencies": {
-    "@rdfjs/types": "^1.1.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -20,5 +18,6 @@
   },
   "engines": {
     "node": "^20.0.0"
-  }
+  },
+  "packageManager": "^npm@10.1.0"
 }
