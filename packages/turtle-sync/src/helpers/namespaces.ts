@@ -1,4 +1,4 @@
-import { namespace } from './deps.ts'
+import { namespace } from '../deps.ts'
 
 export const schema = namespace('https://schema.org/')
 export const rdfs = namespace('http://www.w3.org/2000/01/rdf-schema#')

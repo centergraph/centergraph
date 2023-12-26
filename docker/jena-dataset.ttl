@@ -1,0 +1,70 @@
+@prefix :      <http://base/#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#> .
+@prefix text:    <http://jena.apache.org/text#> .
+@prefix fuseki:  <http://jena.apache.org/fuseki#> .
+@prefix schema: <https://schema.org/> .
+@prefix tdb2:  <http://jena.apache.org/2016/tdb#> .
+@prefix tdb:     <http://jena.hpl.hp.com/2008/tdb#> .
+
+:service_tdb_contents a fuseki:Service ;
+    rdfs:label                      "TDB2 contents" ;
+    fuseki:name                     "contents" ;
+    fuseki:serviceQuery             "query" ;
+    fuseki:serviceQuery             "sparql" ;
+    fuseki:serviceUpdate            "update" ;
+    fuseki:serviceUpload            "upload" ;
+    fuseki:serviceReadGraphStore    "get" ;
+    fuseki:serviceReadWriteGraphStore    "data" ;
+    fuseki:dataset                  :contents .
+
+:contents a     text:TextDataset ;
+    text:dataset   :tdb_dataset_readwrite ;
+    text:index     :indexLucene .
+
+:tdb_dataset_readwrite a      tdb2:DatasetTDB2 ;
+    tdb:unionDefaultGraph true ;
+    tdb2:unionDefaultGraph true ;
+    tdb2:location "/fuseki-base/databases/contents" .
+
+:indexLucene a text:TextIndexLucene ;
+    text:directory <file:/fuseki-base/databases/search-index> ;
+    text:multilingualSupport true ;
+    text:storeValues true ; 
+    text:defineAnalyzers (
+     [ text:defineAnalyzer :configuredAnalyzer ;
+       text:analyzer [
+            a text:ConfigurableAnalyzer ;
+            text:tokenizer :ngram ;
+            text:filters ( :asciiff text:LowerCaseFilter ) ] ]
+     [ text:defineTokenizer :ngram ;
+       text:tokenizer [
+            a text:GenericTokenizer ;
+            text:class "org.apache.lucene.analysis.ngram.NGramTokenizer" ;
+            text:params (
+                 [ text:paramName "minGram" ;
+                   text:paramValue 3 ]
+                 [ text:paramName "maxGram" ;
+                   text:paramValue 7 ]
+                 ) ] ]
+     [ text:defineFilter :asciiff ;
+       text:filter [
+            a text:GenericFilter ;
+            text:class "org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilter" ;
+            text:params (
+                 [ text:paramName "preserveOriginal" ;
+                   text:paramValue true ]
+                 ) ] ]
+     ) ;
+    text:entityMap :entityMapping .
+
+:entityMapping a text:EntityMap ;
+    text:entityField      "uri" ;
+    # text:uidField         "uri" ;
+    text:langField        "langCode" ;
+    text:defaultField     "text" ;
+    text:map (
+         [ text:field "text" ; text:predicate schema:name ]
+         [ text:field "abstract" ; text:predicate schema:abstract ]
+    ) .

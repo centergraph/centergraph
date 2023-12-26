@@ -1,5 +1,5 @@
 import { Store, Parser } from './deps.ts'
-import { ffs } from './namespaces.ts'
+import { ffs } from './helpers/namespaces.ts'
 import type { FileEntry } from './types.ts'
 
 /**
@@ -17,7 +17,8 @@ export const parseTurtleFile = async (file: FileEntry, baseIRI: string) => {
   if (fileContents.includes('@base')) errors.push(new Error('@base is not supported with TurtleToStore.'))
 
   try {
-    const parser = new Parser({ baseIRI })
+    const specificBaseIRI = (baseIRI + file.relativePath).replace('/index', '')
+    const parser = new Parser({ baseIRI: specificBaseIRI })
     const quads = await parser.parse(fileContents)
     metadata.addQuads(quads.filter((quad) => quad.predicate.value.startsWith(ffs().value)))
     const filteredQuads = quads.filter((quad) => !quad.predicate.value.startsWith(ffs().value))

@@ -1,16 +1,10 @@
 import { DenoFolderAdapter } from './adapters/DenoFolderAdapter.ts'
-import { Store, ShaclValidator, dataFactory, Literal } from './deps.ts'
-import { ffs } from './namespaces.ts'
+import { Store, ShaclValidator, dataFactory } from './deps.ts'
+import { lastPart } from './helpers/lastPart.ts'
+import { ffs } from './helpers/namespaces.ts'
 import { parseTurtleFile } from './parseTurtleFile.ts'
+import { shaclReportResultToString } from './helpers/shaclReportResultToString.ts'
 import type { TurtleToStoreOptions } from './types.ts'
-
-/**
- * TODO improve this formatting of the SHACL report item.
- */
-export const shaclReportResultToString = (result: any) => {
-  const simplePath = result.path[0].predicates[0].value // TODO fix for all the types.
-  return `${simplePath}: ${result.message.map((message: Literal) => message.value)}`
-}
 
 export default async function turtleSync(options: TurtleToStoreOptions) {
   // TODO create getShaclStore with existing SHACL from the database if using a database.
@@ -40,15 +34,23 @@ export default async function turtleSync(options: TurtleToStoreOptions) {
       continue
     }
 
-    const strategy = metadata.getObjects(null, ffs('strategy'), null)
-    console.log(strategy)
+    if (!errors.length) {
+      const [strategyTerm = 'DeleteInsert'] = metadata.getObjects(null, ffs('strategy'), null)
+      const strategy = await import(`./strategies/${lastPart(strategyTerm)}.ts`).then((module) => module.default)
+      const iri = (options.baseIRI + file.relativePath).replace('/index', '')
+      await strategy({ file, graphStore: store, metadata, iri, store: options.store, sparqlEndpoint: options.sparqlEndpoint })
+    }
   }
 
-  console.log(indexedErrors)
+  return indexedErrors
 }
 
-turtleSync({
-  store: new Store(),
+const store = new Store()
+const errors = await turtleSync({
+  // store,
+  sparqlEndpoint: 'http://localhost:3030/contents',
   baseIRI: 'http://example.com/',
   folderAdapter: new DenoFolderAdapter('test-data'),
 })
+
+console.log(store.size, errors)

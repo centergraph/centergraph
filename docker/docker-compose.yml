@@ -1,0 +1,11 @@
+version: '2.3'
+services:
+  jena:
+    restart: 'on-failure'
+    image: 'secoresearch/fuseki'
+    environment:
+      - ADMIN_PASSWORD="${CG_JENA_PASSWORD}"
+    volumes:
+      - ./jena-dataset.ttl:/fuseki-base/configuration/assembler.ttl
+    ports:
+      - '3030:3030'
