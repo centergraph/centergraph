@@ -1,7 +1,7 @@
 import { StrategyProps } from '../types.ts'
 import { DataFactory } from '../deps.ts'
 
-export default async ({ iri, store, sparqlEndpoint }: StrategyProps) => {
+export default async ({ iri, store, sparqlEndpoint, fetch }: StrategyProps) => {
   if (sparqlEndpoint) {
     const sparqlQuery = `
       DROP GRAPH <${iri}>
@@ -17,6 +17,7 @@ export default async ({ iri, store, sparqlEndpoint }: StrategyProps) => {
   }
 
   if (store) {
-    store.removeMatches(null, null, null, DataFactory.namedNode(iri))
+    const quadsToRemove = store.getQuads(null, null, null, DataFactory.namedNode(iri))
+    store.removeQuads(quadsToRemove)
   }
 }

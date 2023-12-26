@@ -17,11 +17,12 @@ export default async ({ graphStore, iri, store, sparqlEndpoint }: StrategyProps)
       headers: {
         'content-type': 'application/sparql-update',
       },
-    })
+    }).then((response) => response.text())
   }
 
   if (store) {
-    store.removeMatches(null, null, null, DataFactory.namedNode(iri))
+    const quadsToRemove = store.getQuads(null, null, null, DataFactory.namedNode(iri))
+    store.removeQuads(quadsToRemove)
     store.addQuads([...graphStore])
   }
 }

@@ -2,33 +2,24 @@ import { writeTurtle } from '../helpers/writeTurtle.ts'
 import { StrategyProps } from '../types.ts'
 import { DataFactory } from '../deps.ts'
 
-export default async ({ graphStore, iri, store, sparqlEndpoint }: StrategyProps) => {
+export default async ({ graphStore, iri, store, sparqlEndpoint, fetch }: StrategyProps) => {
   if (sparqlEndpoint) {
     const askSparqlQuery = `ASK WHERE { GRAPH <${iri}> { ?s ?p ?o } }`
-
     const response = await fetch(sparqlEndpoint, {
       method: 'POST',
       body: askSparqlQuery,
-      headers: {
-        'content-type': 'application/sparql-query',
-      },
+      headers: { 'content-type': 'application/sparql-query' },
     }).then((response) => response.json())
 
-    const exists = response.boolean
+    if (response.boolean) return
 
-    if (!exists) {
-      const turtle = await writeTurtle({ store: graphStore })
-
-      const insertSparqlQuery = `INSERT DATA { GRAPH <${iri}> { ${turtle} } }`
-
-      await fetch(sparqlEndpoint, {
-        method: 'POST',
-        body: insertSparqlQuery,
-        headers: {
-          'content-type': 'application/sparql-update',
-        },
-      })
-    }
+    const turtle = await writeTurtle({ store: graphStore })
+    const insertSparqlQuery = `INSERT DATA { GRAPH <${iri}> { ${turtle} } }`
+    await fetch(sparqlEndpoint, {
+      method: 'POST',
+      body: insertSparqlQuery,
+      headers: { 'content-type': 'application/sparql-update' },
+    }).then((response) => response.text())
   }
 
   if (store) {

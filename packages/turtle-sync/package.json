@@ -1,9 +1,9 @@
 {
   "name": "@centergraph/turtle-sync",
   "scripts": {
-    "dev": "deno test --allow-read --watch",
-    "test": "deno test --allow-read",
-    "coverage": "rm -rf .code-coverage && deno test --allow-read --coverage=.code-coverage && deno coverage .code-coverage",
-    "coverage-html": "rm -rf .code-coverage && deno test --allow-read --coverage=.code-coverage && deno coverage .code-coverage --html"
+    "dev": "deno test --allow-read --allow-net --watch",
+    "test": "deno test --allow-read --allow-net",
+    "coverage": "rm -rf .code-coverage && deno test --allow-read --allow-net --coverage=.code-coverage && deno coverage .code-coverage",
+    "coverage-html": "rm -rf .code-coverage && deno test --allow-read --allow-net --coverage=.code-coverage && deno coverage .code-coverage --html"
   }
 }

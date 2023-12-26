@@ -24,6 +24,7 @@ export type StrategyProps = {
   graphStore: Store
   metadata: Store
   iri: string
-  sparqlEndpoint: string
-  store: Store
+  sparqlEndpoint?: string
+  store?: Store
+  fetch: typeof globalThis.fetch
 }

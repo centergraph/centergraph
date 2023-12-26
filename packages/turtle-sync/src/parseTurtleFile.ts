@@ -3,7 +3,7 @@ import { ffs } from './helpers/namespaces.ts'
 import type { FileEntry } from './types.ts'
 
 /**
- * Contains rudimentary parsing
+ * Contains rudimentary text parsing
  */
 export const parseTurtleFile = async (file: FileEntry, baseIRI: string) => {
   const errors: Array<Error> = []

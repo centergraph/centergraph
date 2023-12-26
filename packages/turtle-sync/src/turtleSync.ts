@@ -1,4 +1,3 @@
-import { DenoFolderAdapter } from './adapters/DenoFolderAdapter.ts'
 import { Store, ShaclValidator, dataFactory } from './deps.ts'
 import { lastPart } from './helpers/lastPart.ts'
 import { ffs } from './helpers/namespaces.ts'
@@ -7,8 +6,6 @@ import { shaclReportResultToString } from './helpers/shaclReportResultToString.t
 import type { TurtleToStoreOptions } from './types.ts'
 
 export default async function turtleSync(options: TurtleToStoreOptions) {
-  // TODO create getShaclStore with existing SHACL from the database if using a database.
-  // We need all the SHACL shapes in the running memory to be able to do validations.
   const shaclStore = new Store()
 
   for await (const file of options.folderAdapter.iterator('.shacl.ttl')) {
@@ -38,19 +35,9 @@ export default async function turtleSync(options: TurtleToStoreOptions) {
       const [strategyTerm = 'DeleteInsert'] = metadata.getObjects(null, ffs('strategy'), null)
       const strategy = await import(`./strategies/${lastPart(strategyTerm)}.ts`).then((module) => module.default)
       const iri = (options.baseIRI + file.relativePath).replace('/index', '')
-      await strategy({ file, graphStore: store, metadata, iri, store: options.store, sparqlEndpoint: options.sparqlEndpoint })
+      await strategy({ file, graphStore: store, metadata, iri, store: options.store, sparqlEndpoint: options.sparqlEndpoint, fetch })
     }
   }
 
   return indexedErrors
 }
-
-const store = new Store()
-const errors = await turtleSync({
-  store,
-  sparqlEndpoint: 'http://localhost:3030/contents',
-  baseIRI: 'http://example.com/',
-  folderAdapter: new DenoFolderAdapter('test-data'),
-})
-
-console.log(store.size, errors)
