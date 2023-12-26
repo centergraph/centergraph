@@ -1,5 +1,0 @@
-@prefix schema: <https://schema.org/> .
-
-<>
-  schema:givenName "Frank" ;
-  schema:familyName "Baker" .

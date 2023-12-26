@@ -1,9 +1,0 @@
-{
-  "name": "@centergraph/flat-file-store",
-  "scripts": {
-    "dev": "deno test --allow-read --watch",
-    "test": "deno test --allow-read",
-    "coverage": "rm -rf .code-coverage && deno test --allow-read --coverage=.code-coverage && deno coverage .code-coverage",
-    "coverage-html": "rm -rf .code-coverage && deno test --allow-read --coverage=.code-coverage && deno coverage .code-coverage --html"
-  }
-}
