@@ -1,0 +1,5 @@
+@prefix schema: <https://schema.org/> .
+@prefix ffs: <https://centergraph.danielbeeke.nl/ffs#> .
+
+<>
+  ffs:strategy ffs:Delete .

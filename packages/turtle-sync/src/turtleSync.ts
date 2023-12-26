@@ -47,7 +47,7 @@ export default async function turtleSync(options: TurtleToStoreOptions) {
 
 const store = new Store()
 const errors = await turtleSync({
-  // store,
+  store,
   sparqlEndpoint: 'http://localhost:3030/contents',
   baseIRI: 'http://example.com/',
   folderAdapter: new DenoFolderAdapter('test-data'),

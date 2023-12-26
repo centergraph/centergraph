@@ -1,14 +1,10 @@
-import { writeTurtle } from '../helpers/writeTurtle.ts'
 import { StrategyProps } from '../types.ts'
 import { DataFactory } from '../deps.ts'
 
-export default async ({ graphStore, iri, store, sparqlEndpoint }: StrategyProps) => {
+export default async ({ iri, store, sparqlEndpoint }: StrategyProps) => {
   if (sparqlEndpoint) {
-    const turtle = await writeTurtle({ store: graphStore })
-
     const sparqlQuery = `
-      DROP GRAPH <${iri}> ;
-      INSERT DATA { GRAPH <${iri}> { ${turtle} } }
+      DROP GRAPH <${iri}>
     `
 
     await fetch(sparqlEndpoint, {
@@ -22,6 +18,5 @@ export default async ({ graphStore, iri, store, sparqlEndpoint }: StrategyProps)
 
   if (store) {
     store.removeMatches(null, null, null, DataFactory.namedNode(iri))
-    store.addQuads([...graphStore])
   }
 }
