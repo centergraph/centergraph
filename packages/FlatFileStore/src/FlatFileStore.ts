@@ -1,4 +1,14 @@
-import { Store, Quad, Parser, dataFactory } from './deps.ts'
+import { ffs, rdf } from './core/helpers/namespaces.ts'
+import {
+  Store,
+  Quad,
+  Parser,
+  dataFactory,
+  percentageWidget,
+  amountWidget,
+  ProgressBar,
+  ShaclValidator,
+} from './deps.ts'
 
 export interface FolderAdapter {
   load(): Array<FileEntry>
@@ -14,6 +24,7 @@ export type FlatFileStoreOptions = {
   quads?: Array<Quad>
   folderAdapter?: FolderAdapter
   base?: string
+  disableCLI?: boolean
   removeExtensions?: boolean
 }
 
@@ -37,17 +48,62 @@ export class FlatFileStore extends Store {
 
   async parseData() {
     if (!this.#options.folderAdapter) return
-    const parser = new Parser()
 
     const files = this.#options.folderAdapter.load()
+    if (!this.#options.disableCLI) {
+      console.log()
+      console.log(`Parsing ${files.length} turtle files`)
+    }
+    const widgets = [percentageWidget, amountWidget]
+    const parseProgressBar = new ProgressBar({ total: files.length, widgets })
 
-    const promises = files.map(async (file) => {
+    let finished = 0
+    const parsePromises: Array<Promise<void>> = files.map(async (file) => {
+      const parser = new Parser({
+        baseIRI: this.#options.base,
+      })
       const quads = await parser.parse(file.contents)
       const transformedQuads = quads.map((quad) => this.transformQuad(quad, file))
-      this.addQuads(transformedQuads)
+      const tempStore = new Store(transformedQuads)
+      const [ffsMetaDataSubject] = tempStore.getSubjects(rdf('type'), ffs('MetaData'), null)
+      const filteredTransformedQuads = ffsMetaDataSubject
+        ? transformedQuads.filter((quad) => !quad.subject.equals(ffsMetaDataSubject))
+        : transformedQuads
+
+      const ffsStrategy = tempStore.getObjects(ffsMetaDataSubject, ffs('strategy'), null)
+      if (ffsStrategy) {
+        console.log(ffsStrategy)
+      }
+
+      this.addQuads(filteredTransformedQuads)
+
+      finished++
+      if (!this.#options.disableCLI) await parseProgressBar.update(finished)
+    })
+    if (!this.#options.disableCLI) await parseProgressBar.finish()
+    if (!this.#options.disableCLI) console.log()
+
+    await Promise.allSettled(parsePromises)
+    finished = 0
+    if (!this.#options.disableCLI) console.log(`Validating ${files.length} turtle files`)
+
+    const validateProgressBar = new ProgressBar({ total: files.length, widgets })
+    const validator = new ShaclValidator(this, { factory: dataFactory })
+
+    const validatePromises = this.getGraphs(null, null, null).map(async (graph) => {
+      const subset = new Store(this.getQuads(null, null, null, graph))
+      const report = await validator.validate({ dataset: subset })
+      finished++
+      if (!this.#options.disableCLI) await validateProgressBar.update(finished)
+      return report.conforms
     })
 
-    return Promise.allSettled(promises)
+    if (!this.#options.disableCLI) {
+      await validateProgressBar.finish()
+      console.log()
+    }
+
+    const results = await Promise.allSettled(validatePromises)
   }
 
   transformQuad(quad: Quad, file: FileEntry) {

@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix ffs: <https://centergraph.danielbeeke.nl/ffs#> .
+
+<>
+  ffs:strategy ffs:DeleteInsert ;
+  a schema:Person ;
+  schema:givenName "John" ;
+  schema:familyName "Doe" .

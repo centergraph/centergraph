@@ -1,0 +1,6 @@
+@prefix schema: <https://schema.org/> .
+
+<>
+  a schema:Person ;
+  schema:givenName "Frank" ;
+  schema:familyName "Baker" .

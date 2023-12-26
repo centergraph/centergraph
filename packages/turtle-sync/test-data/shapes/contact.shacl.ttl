@@ -4,11 +4,9 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ffs: <https://centergraph.danielbeeke.nl/ffs#> .
 
-<ffs>
-  a ffs:MetaData ;
-  ffs:strategy ffs:DeleteInsert .
-
 <>
+  ffs:strategy ffs:DeleteInsert ;
+
   a sh:NodeShape ;
   sh:targetClass schema:Person ;
 

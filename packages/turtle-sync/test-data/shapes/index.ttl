@@ -2,9 +2,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ffs: <https://centergraph.danielbeeke.nl/ffs#> .
 
-<ffs>
-  a ffs:MetaData ;
-  ffs:strategy ffs:DeleteInsert .
-
-<> a ldp:Container, ldp:BasicContainer ;
+<> 
+  ffs:strategy ffs:DeleteInsert ;
+  
+  a ldp:Container, ldp:BasicContainer ;
   rdfs:label "Shapes" .

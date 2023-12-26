@@ -1,0 +1,4 @@
+@prefix schema: <https://schema.org/> .
+
+<>
+  schema:givenName "Eddy" .
