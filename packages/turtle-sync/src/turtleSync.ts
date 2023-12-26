@@ -1,4 +1,4 @@
-import { Store, ShaclValidator, dataFactory } from './deps.ts'
+import { Store, ShaclValidator, dataFactory, Parser } from './deps.ts'
 import { lastPart } from './helpers/lastPart.ts'
 import { ffs } from './helpers/namespaces.ts'
 import { parseTurtleFile } from './parseTurtleFile.ts'
@@ -6,7 +6,44 @@ import { shaclReportResultToString } from './helpers/shaclReportResultToString.t
 import type { TurtleToStoreOptions } from './types.ts'
 
 export default async function turtleSync(options: TurtleToStoreOptions) {
-  const shaclStore = new Store()
+  const shaclStore = options.shaclStore ?? new Store()
+
+  if (options.sparqlEndpoint) {
+    const fetch = options.fetch ?? globalThis.fetch
+    const response = await fetch(options.sparqlEndpoint, {
+      method: 'POST',
+      headers: { 'content-type': 'application/sparql-query' },
+      body: `
+        SELECT DISTINCT ?g WHERE {
+          GRAPH ?g {
+          ?s a <http://www.w3.org/ns/shacl#NodeShape> .
+          }
+        }
+      `,
+    }).then((response) => response.json())
+
+    const graphIris = response.results.bindings.map((binding: any) => binding.g.value)
+
+    for (const graphIri of graphIris) {
+      const fetchQuery = `
+        CONSTRUCT {
+          ?s ?p ?o
+        } WHERE {
+          GRAPH <${graphIri}> { ?s ?p ?o }  
+        }
+      `
+
+      const shapes = await fetch(options.sparqlEndpoint, {
+        method: 'POST',
+        headers: { 'content-type': 'application/sparql-query' },
+        body: fetchQuery,
+      }).then((response) => response.text())
+
+      const parser = new Parser()
+      const quads = await parser.parse(shapes)
+      shaclStore.addQuads(quads.map((quad) => dataFactory.quad(quad.subject, quad.predicate, quad.object, dataFactory.namedNode(graphIri))))
+    }
+  }
 
   for await (const file of options.folderAdapter.iterator('.shacl.ttl')) {
     const { store, errors } = await parseTurtleFile(file, options.baseIRI)

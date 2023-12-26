@@ -70,3 +70,195 @@ Deno.test('Test shacl validation error store', async () => {
     errors
   )
 })
+const stubbedResponse1 = {
+  head: { vars: ['g'] },
+  results: {
+    bindings: [
+      {
+        g: {
+          type: 'uri',
+          value: 'http://example.com/shapes/contact.shacl',
+        },
+      },
+    ],
+  },
+}
+
+const stubbedResponse2 = `<http://example.com/shapes/addressShape>
+a       <http://www.w3.org/ns/shacl#NodeShape>;
+<http://www.w3.org/ns/shacl#property>
+        [ <http://www.w3.org/ns/shacl#datatype>
+                  <http://www.w3.org/2001/XMLSchema#string>;
+          <http://www.w3.org/ns/shacl#maxCount>
+                  1;
+          <http://www.w3.org/ns/shacl#minCount>
+                  1;
+          <http://www.w3.org/ns/shacl#name>
+                  "Country"@en;
+          <http://www.w3.org/ns/shacl#path>
+                  <https://schema.org/addressCountry>
+        ];
+<http://www.w3.org/ns/shacl#property>
+        [ <http://www.w3.org/ns/shacl#maxCount>
+                  1;
+          <http://www.w3.org/ns/shacl#minCount>
+                  1;
+          <http://www.w3.org/ns/shacl#name>
+                  "Postal code"@en;
+          <http://www.w3.org/ns/shacl#or>
+                  ( [ <http://www.w3.org/ns/shacl#datatype>
+                              <http://www.w3.org/2001/XMLSchema#string> ]
+                    [ <http://www.w3.org/ns/shacl#datatype>
+                              <http://www.w3.org/2001/XMLSchema#number> ]
+                  );
+          <http://www.w3.org/ns/shacl#path>
+                  <https://schema.org/postalCode>
+        ];
+<http://www.w3.org/ns/shacl#property>
+        [ <http://www.w3.org/ns/shacl#datatype>
+                  <http://www.w3.org/2001/XMLSchema#string>;
+          <http://www.w3.org/ns/shacl#maxCount>
+                  1;
+          <http://www.w3.org/ns/shacl#minCount>
+                  1;
+          <http://www.w3.org/ns/shacl#name>
+                  "Locality"@en;
+          <http://www.w3.org/ns/shacl#path>
+                  <https://schema.org/addressLocality>
+        ];
+<http://www.w3.org/ns/shacl#property>
+        [ <http://www.w3.org/ns/shacl#datatype>
+                  <http://www.w3.org/2001/XMLSchema#string>;
+          <http://www.w3.org/ns/shacl#maxCount>
+                  1;
+          <http://www.w3.org/ns/shacl#minCount>
+                  1;
+          <http://www.w3.org/ns/shacl#name>
+                  "Region"@en;
+          <http://www.w3.org/ns/shacl#path>
+                  <https://schema.org/addressRegion>
+        ];
+<http://www.w3.org/ns/shacl#property>
+        [ <http://www.w3.org/ns/shacl#datatype>
+                  <http://www.w3.org/2001/XMLSchema#string>;
+          <http://www.w3.org/ns/shacl#maxCount>
+                  1;
+          <http://www.w3.org/ns/shacl#minCount>
+                  1;
+          <http://www.w3.org/ns/shacl#name>
+                  "Street"@en;
+          <http://www.w3.org/ns/shacl#path>
+                  <https://schema.org/streetAddress>
+        ];
+<http://www.w3.org/ns/shacl#targetClass>
+        <https://schema.org/PostalAddress> .
+
+<http://example.com/shapes/contact.shacl>
+a       <http://www.w3.org/ns/shacl#NodeShape>;
+<http://www.w3.org/ns/shacl#property>
+        [ <http://www.w3.org/ns/shacl#maxCount>
+                  1;
+          <http://www.w3.org/ns/shacl#name>
+                  "Address"@en;
+          <http://www.w3.org/ns/shacl#node>
+                  <http://example.com/shapes/addressShape>;
+          <http://www.w3.org/ns/shacl#nodeKind>
+                  <http://www.w3.org/ns/shacl#BlankNode>;
+          <http://www.w3.org/ns/shacl#path>
+                  <https://schema.org/address>
+        ];
+<http://www.w3.org/ns/shacl#property>
+        [ <http://www.w3.org/ns/shacl#datatype>
+                  <http://www.w3.org/2001/XMLSchema#string>;
+          <http://www.w3.org/ns/shacl#group>
+                  "name";
+          <http://www.w3.org/ns/shacl#maxCount>
+                  1;
+          <http://www.w3.org/ns/shacl#minCount>
+                  1;
+          <http://www.w3.org/ns/shacl#name>
+                  "Family name"@en;
+          <http://www.w3.org/ns/shacl#path>
+                  <https://schema.org/familyName>
+        ];
+<http://www.w3.org/ns/shacl#property>
+        [ <http://www.w3.org/ns/shacl#datatype>
+                  <http://www.w3.org/2001/XMLSchema#string>;
+          <http://www.w3.org/ns/shacl#group>
+                  "name";
+          <http://www.w3.org/ns/shacl#maxCount>
+                  1;
+          <http://www.w3.org/ns/shacl#minCount>
+                  1;
+          <http://www.w3.org/ns/shacl#name>
+                  "Given name"@en;
+          <http://www.w3.org/ns/shacl#path>
+                  <https://schema.org/givenName>
+        ];
+<http://www.w3.org/ns/shacl#targetClass>
+        <https://schema.org/Person> .
+`
+
+Deno.test('shapes fetching from endpoint', async () => {
+  const shaclStore = new Store()
+
+  try {
+    await turtleSync({
+      shaclStore,
+      sparqlEndpoint: 'http://localhost:3030/contents',
+      baseIRI: 'http://example.com/',
+      folderAdapter: new TestFolderAdapter(undefined, {
+        relativePath: `shapes/broken`,
+        contents: '',
+      }),
+      fetch: (input: URL | Request | string, init?: RequestInit) => {
+        return new Promise((resolve) => {
+          resolve(new Response(init?.body?.toString().includes('SELECT') ? JSON.stringify(stubbedResponse1) : stubbedResponse2))
+        })
+      },
+    })
+  } catch (error) {}
+
+  assertEquals(shaclStore.size, 60)
+})
+
+Deno.test('shapes fetching from endpoint and added shapes', async () => {
+  const shaclStore = new Store()
+
+  try {
+    await turtleSync({
+      shaclStore,
+      sparqlEndpoint: 'http://localhost:3030/contents',
+      baseIRI: 'http://example.com/',
+      folderAdapter: new TestFolderAdapter(undefined, {
+        relativePath: `shapes/broken`,
+        contents: '',
+      }),
+      fetch: (input: URL | Request | string, init?: RequestInit) => {
+        return new Promise((resolve) => {
+          resolve(new Response(init?.body?.toString().includes('SELECT') ? JSON.stringify(stubbedResponse1) : stubbedResponse2))
+        })
+      },
+    })
+  } catch (error) {}
+
+  assertEquals(shaclStore.size, 60)
+})
+
+Deno.test('unstubbed fetch', async () => {
+  const shaclStore = new Store()
+
+  try {
+    await turtleSync({
+      shaclStore,
+      sparqlEndpoint: 'http://unknown',
+      baseIRI: 'http://example.com/',
+      folderAdapter: new TestFolderAdapter(undefined, {
+        relativePath: `shapes/broken`,
+        contents: '',
+      }),
+    })
+  } catch (error) {}
+
+  assertEquals(shaclStore.size, 0)
+})

@@ -5,9 +5,11 @@ import { DatasetCore, Store } from './deps.ts'
  */
 export type TurtleToStoreOptions = {
   store?: DatasetCore
+  shaclStore?: Store
   sparqlEndpoint?: string
   folderAdapter: FolderAdapter
   baseIRI: string
+  fetch?: typeof globalThis.fetch
 }
 
 export interface FolderAdapter {
