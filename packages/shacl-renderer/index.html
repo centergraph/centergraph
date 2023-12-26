@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHACL Renderer</title>
+    <script type="module" src="/lib/ShaclRenderer.tsx"></script>
+  </head>
+  <body>
+    <shacl-renderer shacl-shapes-url="./shapes/contact.shacl.ttl"></shacl-renderer>
+    <script>
+      document.querySelector('shacl-renderer').addEventListener('settings', (event) => {
+        event.detail.settings.targetClass = 'https://schema.org/Person'
+      })
+    </script>
+  </body>
+</html>

@@ -7,14 +7,34 @@
   "workspaces": [
     "packages/*"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@preact/signals-react": "^2.0.0",
+    "grapoi": "^1.1.0",
+    "n3": "^1.17.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "shacl-engine": "^0.1.1"
+  },
   "devDependencies": {
-    "eslint": "^8.45.0",
+    "@rdfjs/data-model": "^2.0.1",
+    "@rdfjs/dataset": "^2.0.1",
+    "@rdfjs/namespace": "^2.0.0",
+    "@rdfjs/types": "^1.1.0",
+    "@types/n3": "^1.16.4",
+    "@types/rdfjs__namespace": "^2.0.10",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-unused-imports": "^3.0.0"
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
   },
   "engines": {
     "node": "^20.0.0"
