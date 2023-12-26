@@ -10,5 +10,4 @@ It can be used to sync configuration in the form of triples to your datastore. T
 
 ## TODO
 
-- Load the existing SHACL shapes from the SPARQL endpoint or the store.
 - Write back changes on the SPARQL endpoint or store to the disk.
