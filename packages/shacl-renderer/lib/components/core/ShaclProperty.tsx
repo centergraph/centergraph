@@ -37,10 +37,11 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
   const alternativePredicates = path[0].predicates
   const maxCount = shaclPointer.out(sh('maxCount')).value ? parseInt(shaclPointer.out(sh('maxCount')).value) : Infinity
 
-  const shouldShow = widgetMeta && (!!objectPointers.ptrs.length || settings.mode === 'edit')
+  const shouldShow =
+    (widgetMeta && (!!objectPointers.ptrs.length || settings.mode === 'edit')) || (settings.mode === 'view' && !!objectPointers.ptrs.length)
 
   return shouldShow ? (
-    <div className="property mb-3">
+    <div className={`property ${settings.mode === 'edit' ? 'mb-3' : ''}`}>
       {/* The label of the field */}
       {label ? (
         <label className={`form-label ${settings.mode === 'view' ? 'd-inline' : ''}`}>
@@ -69,7 +70,7 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
       {/* The rendering of the widget happens inside the PropertyObject */}
       {[...objectPointers].map((objectPointer) => (
         <PropertyObject
-          key={objectPointer?.term}
+          key={objectPointer.term.value}
           setObjectPointers={setObjectPointers}
           dataPointer={objectPointer}
           shaclPointer={shaclPointer}

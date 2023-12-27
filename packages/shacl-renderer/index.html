@@ -31,7 +31,7 @@
       </shacl-renderer>
     </details>
 
-    <!-- <details name="demo">
+    <details name="demo">
       <summary>View mode</summary>
       <shacl-renderer
         shacl-shapes-url="./shapes/contact.shacl.ttl"
@@ -39,7 +39,7 @@
         data-url="./john-doe.ttl"
         mode="view"
       ></shacl-renderer>
-    </details> -->
+    </details>
 
     <script>
       const shaclRenderer = document.querySelector('shacl-renderer')
@@ -47,7 +47,7 @@
         event.detail.settings.targetClass = 'https://schema.org/Person'
       })
 
-      document.querySelector('#save').addEventListener('click', (event) => {
+      document.querySelector('#save')?.addEventListener('click', (event) => {
         event.preventDefault()
         console.log([...shaclRenderer.settings.dataStore])
       })

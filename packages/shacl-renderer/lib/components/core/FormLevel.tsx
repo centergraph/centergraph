@@ -40,7 +40,7 @@ export default function FormLevel(props: FormLevelProps) {
 
   return (
     <div
-      className="form-level p-3"
+      className={`form-level ps-3 pe-3`}
       ref={(element) => {
         if (!htmlChildren) return
         htmlChildren.forEach((child) => element?.appendChild(child))

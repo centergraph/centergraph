@@ -89,10 +89,7 @@
     sh:property [
         sh:name "Postal code"@en ;
         sh:path schema:postalCode ;
-        sh:or (
-            [ sh:datatype xsd:string ]
-            [ sh:datatype xsd:number ]
-        ) ;
+        sh:datatype xsd:string ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
     ] ;
