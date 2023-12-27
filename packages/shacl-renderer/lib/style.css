@@ -1,0 +1,35 @@
+.mode-edit {
+  .group.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1em;
+  }
+
+  .group.horizontal {
+    .form-label {
+      flex: 100%;
+    }
+
+    .property {
+      flex: 10 10 30%;
+    }
+  }
+
+  .group.address {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1em;
+
+    .property {
+      flex: 1 1 30%;
+    }
+
+    .street-address {
+      flex: 1 1 60%;
+    }
+
+    .postal-code {
+      flex: 1 1 180px;
+    }
+  }
+}

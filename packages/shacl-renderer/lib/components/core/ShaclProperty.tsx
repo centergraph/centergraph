@@ -7,6 +7,8 @@ import { useCallback, useEffect, useState } from 'react'
 import { useWidget } from '@/hooks/useWidget'
 import { Term } from '@rdfjs/types'
 import { lastPart } from '@/helpers/lastPart'
+import { ensureTerm } from '@/helpers/ensureTerm'
+import { snakeCase } from '@/helpers/snakeCase'
 
 type ShaclPropertyProps = {
   shaclPointer: GrapoiPointer
@@ -26,12 +28,8 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
   // Add an empty value so an empty widget displays for simple property paths
   useEffect(() => {
     if (!widgetMeta) return
-
-    if (settings.mode === 'edit' && !dataPointer.executeAll(path).ptrs.length && path.length === 1 && path[0].predicates?.length === 1) {
-      dataPointer.addOut(path[0].predicates[0], widgetMeta.createTerm ? widgetMeta.createTerm() : DataFactory.literal(''))
-      setObjectPointers()
-    }
-  }, [widgetMeta, dataPointer, path, settings.mode, shaclPointer, setObjectPointers])
+    ensureTerm(settings, path, dataPointer, widgetMeta, setObjectPointers)
+  }, [widgetMeta, dataPointer, path, settings, shaclPointer, setObjectPointers])
 
   // Sometimes the whole of the property can be hidden.
   const alternativePredicates = path[0].predicates
@@ -40,8 +38,10 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
   const shouldShow =
     (widgetMeta && (!!objectPointers.ptrs.length || settings.mode === 'edit')) || (settings.mode === 'view' && !!objectPointers.ptrs.length)
 
+  const propertyCssClassName = path[0]?.predicates?.[0] ? snakeCase(lastPart(path[0]?.predicates?.[0]) ?? '') : ''
+
   return shouldShow ? (
-    <div className={settings.cssClasses.shaclProperty}>
+    <div className={`${settings.cssClasses.shaclProperty} ${propertyCssClassName}`}>
       {/* The label of the field */}
       {label ? (
         <label className={settings.cssClasses.label}>
@@ -68,9 +68,9 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
         : null}
 
       {/* The rendering of the widget happens inside the PropertyObject */}
-      {[...objectPointers].map((objectPointer) => (
+      {[...objectPointers].map((objectPointer, index) => (
         <PropertyObject
-          key={objectPointer.term.value}
+          key={JSON.stringify(path) + index} // TODO get the shortest representation of the path.
           setObjectPointers={setObjectPointers}
           dataPointer={objectPointer}
           shaclPointer={shaclPointer}

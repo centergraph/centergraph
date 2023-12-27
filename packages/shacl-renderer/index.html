@@ -23,16 +23,16 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <details name="demo" open>
-      <summary>Edit mode</summary>
+  <body class="p-5">
+    <details name="demo" class="mb-3" open>
+      <summary class="pb-3">Edit mode</summary>
       <shacl-renderer shacl-shapes-url="./shapes/contact.shacl.ttl" subject="http://example.com/john-doe" data-url="./john-doe.ttl">
         <button class="btn btn-primary" id="save">Save</button>
       </shacl-renderer>
     </details>
 
-    <details name="demo">
-      <summary>View mode</summary>
+    <details name="demo" class="mb-3">
+      <summary class="pb-3">View mode</summary>
       <shacl-renderer
         shacl-shapes-url="./shapes/contact.shacl.ttl"
         subject="http://example.com/john-doe"

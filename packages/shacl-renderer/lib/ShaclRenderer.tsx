@@ -8,6 +8,7 @@ import { rdf, sh } from '@/helpers/namespaces'
 import { DataFactory } from 'n3'
 import { loadWidgets } from '@/helpers/loadWidgets'
 import defaultCssClasses from '@/defaultCssClasses'
+import './style.css'
 
 export class ShaclRenderer extends HTMLElement {
   #root: Root
@@ -31,11 +32,11 @@ export class ShaclRenderer extends HTMLElement {
   constructor() {
     super()
     this.#root = ReactDOM.createRoot(this)
-    this.initiateSettings()
-
-    // Reflect the settings
-    this.classList.add('shacl-renderer')
-    this.classList.add(`mode-${this.settings.mode}`)
+    this.initiateSettings().then(() => {
+      // Reflect the settings
+      this.classList.add('shacl-renderer')
+      this.classList.add(`mode-${this.settings.mode}`)
+    })
   }
 
   async initiateSettings() {

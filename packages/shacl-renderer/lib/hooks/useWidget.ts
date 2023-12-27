@@ -1,4 +1,4 @@
-import { JSXElementConstructor, useEffect, useState } from 'react'
+import { JSXElementConstructor, useEffect, useMemo, useState } from 'react'
 import { sh } from '@/helpers/namespaces'
 import { Settings, WidgetProps } from '@/types'
 import { getBestWidget } from '@/helpers/getBestWidget'
@@ -8,18 +8,15 @@ export const useWidget = (settings: Settings, dataPointer: GrapoiPointer, shaclP
   const widgets = settings.mode === 'edit' ? settings.widgetMetas.editors : settings.widgetMetas.viewers
 
   const [Widget, setWidget] = useState<JSXElementConstructor<WidgetProps>>()
-  const [widgetIri, setWidgetIri] = useState<string>()
-
-  useEffect(() => {
-    const widgetIri = shaclPointer.out(shWidget).value ?? getBestWidget(widgets, dataPointer, shaclPointer)
-    setWidgetIri(widgetIri)
-  }, [dataPointer, settings.widgetLoaders, shWidget, shaclPointer, widgets])
+  const widgetIri = useMemo(() => {
+    return shaclPointer.out(shWidget).value ?? getBestWidget(widgets, dataPointer, shaclPointer)
+  }, [dataPointer, shWidget, shaclPointer, widgets])
 
   useEffect(() => {
     if (!widgetIri || !load) return
     const widgetModule = settings.widgetLoaders.get(widgetIri)
     if (widgetModule) widgetModule().then((module) => setWidget(() => module.default))
-  }, [widgetIri, settings.widgetLoaders, load])
+  }, [dataPointer, settings.widgetLoaders, shWidget, shaclPointer, widgets, load, widgetIri])
 
   const widgetMeta = widgets.find((widgetMeta) => widgetMeta.iri.value === widgetIri)
 

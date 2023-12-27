@@ -25,9 +25,12 @@ export type Settings = {
     label: string
     input: string
     shaclProperty: string
+    propertyObject: string
     button: {
+      remove: string
       primary: string
       secondary: string
+      danger: string
     }
   }
 }
