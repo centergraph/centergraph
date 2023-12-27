@@ -13,13 +13,13 @@
     sh:path schema:givenName ;
     sh:minCount 1;
     sh:maxCount 1;
-    sh:group "name" ;
+    sh:group <#name> ;
     sh:datatype xsd:string ;
   ];
   
   sh:property [
     sh:name "Family name"@en ;
-    sh:group "name" ;
+    sh:group <#name> ;
     sh:path schema:familyName ;
     sh:minCount 1;
     sh:maxCount 1;
@@ -28,7 +28,7 @@
 
   sh:property [
     sh:name "Name"@en ;
-    sh:group "name" ;
+    sh:group <#name> ;
     sh:path [ sh:alternativePath ( schema:name rdfs:label ) ] ;
     sh:minCount 1;
     sh:maxCount 1;
@@ -37,7 +37,6 @@
 
   sh:property [
     sh:name "Date of birth"@en ;
-    sh:group "name" ;
     sh:path schema:birthDate ;
     sh:maxCount 1;
     sh:datatype xsd:date ;
@@ -52,6 +51,12 @@
   ];
 
 .
+
+<#name>
+	a sh:PropertyGroup ;
+	sh:order 0 ;
+	sh:name "Name"@en .
+
 
 <#addressShape>
     a sh:NodeShape ;

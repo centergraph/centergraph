@@ -3,5 +3,12 @@ import { WidgetProps } from '../../../../types'
 import { xsd } from '../../../../helpers/namespaces'
 
 export default function DatePickerEditor({ term, setTerm }: WidgetProps) {
-  return <input type="date" value={term.value} onChange={(event) => setTerm(DataFactory.literal(event.target.value, xsd('date')))} />
+  return (
+    <input
+      type="date"
+      className="form-control"
+      value={term.value}
+      onChange={(event) => setTerm(DataFactory.literal(event.target.value, xsd('date')))}
+    />
+  )
 }

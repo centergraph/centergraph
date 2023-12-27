@@ -5,6 +5,8 @@ import PropertyObject from './PropertyObject'
 import { DataFactory } from 'n3'
 import { useCallback, useEffect, useState } from 'react'
 import { useWidget } from '../../hooks/useWidget'
+import { Term } from '@rdfjs/types'
+import { lastPart } from '../../helpers/lastPart'
 
 type ShaclPropertyProps = {
   shaclPointer: GrapoiPointer
@@ -21,25 +23,50 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
   const [objectPointers, setRealObjectPointers] = useState(dataPointer.executeAll(path))
   const setObjectPointers = useCallback(() => setRealObjectPointers(dataPointer.executeAll(path)), [dataPointer, path])
 
+  // Add an empty value so an empty widget displays for simple property paths
   useEffect(() => {
     if (!widgetMeta) return
 
-    // Add an empty value so an empty widget displays for simple property paths
     if (settings.mode === 'edit' && !dataPointer.executeAll(path).ptrs.length && path.length === 1 && path[0].predicates?.length === 1) {
-      const datatype = shaclPointer.out(sh('nodeKind')).term
-      if (!datatype || sh('Literal').equals(datatype)) {
-        dataPointer.addOut(path[0].predicates[0], widgetMeta.createTerm ? widgetMeta.createTerm() : DataFactory.literal(''))
-        setObjectPointers()
-      }
+      dataPointer.addOut(path[0].predicates[0], widgetMeta.createTerm ? widgetMeta.createTerm() : DataFactory.literal(''))
+      setObjectPointers()
     }
   }, [widgetMeta, dataPointer, path, settings.mode, shaclPointer, setObjectPointers])
 
   // Sometimes the whole of the property can be hidden.
-  const shouldShow = !!objectPointers.ptrs.length || settings.mode === 'edit'
+  const alternativePredicates = path[0].predicates
+  const maxCount = shaclPointer.out(sh('maxCount')).value ? parseInt(shaclPointer.out(sh('maxCount')).value) : Infinity
+
+  const shouldShow = widgetMeta && (!!objectPointers.ptrs.length || settings.mode === 'edit')
 
   return shouldShow ? (
-    <div className="property">
-      {label ? <label>{label}</label> : null}
+    <div className="property mb-3">
+      {/* The label of the field */}
+      {label ? (
+        <label className={`form-label ${settings.mode === 'view' ? 'd-inline' : ''}`}>
+          {label}
+          {settings.mode === 'view' ? ': ' : ''}
+        </label>
+      ) : null}
+
+      {/* Alternative predicates like schema:name | rdfs:label */}
+      {alternativePredicates?.length > 1 && [...objectPointers].length < maxCount
+        ? alternativePredicates.map((predicate: Term) => (
+            <button
+              onClick={() => {
+                dataPointer.addOut(predicate, widgetMeta?.createTerm ? widgetMeta.createTerm() : DataFactory.literal(''))
+                setObjectPointers()
+              }}
+              className="btn btn-sm btn-secondary ms-2"
+              key={predicate.value}
+              title={predicate.value}
+            >
+              + {lastPart(predicate)}
+            </button>
+          ))
+        : null}
+
+      {/* The rendering of the widget happens inside the PropertyObject */}
       {[...objectPointers].map((objectPointer) => (
         <PropertyObject
           key={objectPointer?.term}

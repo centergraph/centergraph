@@ -100,7 +100,9 @@ export class ShaclRenderer extends HTMLElement {
 
     this.#root.render(
       <StrictMode>
-        <FormLevel shaclPointer={shaclRoot} dataPointer={this.dataPointer} settings={this.settings} />
+        <form onSubmit={(event) => event.preventDefault()}>
+          <FormLevel htmlChildren={[...this.children]} shaclPointer={shaclRoot} dataPointer={this.dataPointer} settings={this.settings} />
+        </form>
       </StrictMode>
     )
   }
