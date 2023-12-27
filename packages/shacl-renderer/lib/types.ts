@@ -1,4 +1,5 @@
-import { NamedNode } from '@rdfjs/types'
+import { NamedNode, Term } from '@rdfjs/types'
+import { Store } from 'n3'
 import { ReactElement } from 'react'
 
 export type WidgetMeta = {
@@ -15,5 +16,14 @@ export type Settings = {
     editors: Array<WidgetMeta>
     viewers: Array<WidgetMeta>
   }
+  dataStore: Store
   widgetLoaders: Map<string, () => Promise<{ default: ReactElement }>>
+}
+
+export type WidgetProps = {
+  term: Term
+  setTerm: React.Dispatch<Term>
+  shaclPointer: GrapoiPointer
+  dataPointer: GrapoiPointer
+  settings: Settings
 }

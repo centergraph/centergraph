@@ -8,10 +8,20 @@
     <script type="module" src="/lib/ShaclRenderer.tsx"></script>
   </head>
   <body>
-    <shacl-renderer shacl-shapes-url="./shapes/contact.shacl.ttl"></shacl-renderer>
+    <shacl-renderer
+      shacl-shapes-url="./shapes/contact.shacl.ttl"
+      subject="http://example.com/john-doe"
+      data-url="./john-doe.ttl"
+    ></shacl-renderer>
+    <button id="save">Save</button>
     <script>
-      document.querySelector('shacl-renderer').addEventListener('settings', (event) => {
+      const shaclRenderer = document.querySelector('shacl-renderer')
+      shaclRenderer.addEventListener('settings', (event) => {
         event.detail.settings.targetClass = 'https://schema.org/Person'
+      })
+
+      document.querySelector('#save').addEventListener('click', () => {
+        console.log([...shaclRenderer.settings.dataStore])
       })
     </script>
   </body>

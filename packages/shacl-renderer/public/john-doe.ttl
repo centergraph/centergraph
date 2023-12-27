@@ -1,0 +1,5 @@
+@prefix schema: <https://schema.org/> .
+
+<http://example.com/john-doe>
+  a schema:Person ;
+  schema:givenName "John" .

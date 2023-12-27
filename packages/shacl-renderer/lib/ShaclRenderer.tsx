@@ -20,9 +20,11 @@ export class ShaclRenderer extends HTMLElement {
       viewers: [],
     },
     widgetLoaders: new Map(),
+    dataStore: new Store(),
   }
 
   public shaclShapes!: GrapoiPointer
+  public dataPointer!: GrapoiPointer
 
   constructor() {
     super()
@@ -51,6 +53,22 @@ export class ShaclRenderer extends HTMLElement {
     this.dispatchEvent(settingsEvent)
   }
 
+  async loadData() {
+    const dataUrl = this.getAttribute('data-url')
+
+    if (dataUrl) {
+      const response = await this.settings.fetch(dataUrl).then((response) => response.text())
+      const parser = new Parser({ baseIRI: dataUrl })
+      const quads = await parser.parse(response)
+      this.settings.dataStore.addQuads(quads)
+    }
+
+    const subject = this.getAttribute('subject')
+    if (!subject) throw new Error('Subject is required')
+
+    this.dataPointer = grapoi({ dataset: this.settings.dataStore, factory: DataFactory, term: DataFactory.namedNode(subject) })
+  }
+
   async loadShaclShapes() {
     const shaclShapesUrl = this.getAttribute('shacl-shapes-url')
     if (!shaclShapesUrl) throw new Error(`Please set the shacl-shapes-url attribute`)
@@ -58,11 +76,12 @@ export class ShaclRenderer extends HTMLElement {
     const parser = new Parser()
     const quads = await parser.parse(response)
     const dataset = new Store(quads)
-    this.shaclShapes = grapoi({ dataset })
+    this.shaclShapes = grapoi({ dataset, factory: DataFactory })
   }
 
   async connectedCallback() {
     await this.loadShaclShapes()
+    await this.loadData()
 
     let shaclRoot = this.shaclShapes.hasOut(rdf('type'), sh('NodeShape'))
     if (this.settings.targetClass) shaclRoot = shaclRoot.hasOut(sh('targetClass'), DataFactory.namedNode(this.settings.targetClass))
@@ -74,7 +93,7 @@ export class ShaclRenderer extends HTMLElement {
     this.#root.render(
       <StrictMode>
         <h1>test2</h1>
-        <FormLevel shaclPointer={shaclRoot} settings={this.settings} />
+        <FormLevel shaclPointer={shaclRoot} dataPointer={this.dataPointer} settings={this.settings} />
       </StrictMode>
     )
   }

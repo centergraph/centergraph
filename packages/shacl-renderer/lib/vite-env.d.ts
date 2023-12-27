@@ -16,7 +16,7 @@ type GrapoiPointer = {
   deleteList: () => GrapoiPointer
   list: () => Array<GrapoiPointer>
   ptrs: Array<unknown>
-  clone: (data: unknown) => GrapoiPointer
+  clone: (data?: unknown) => GrapoiPointer
   node: (pointers?: Array<unknown>) => GrapoiPointer
   execute: (paths: Array<unknown>) => GrapoiPointer
   executeAll: (paths: Array<unknown>) => GrapoiPointer
@@ -27,7 +27,7 @@ type GrapoiPointer = {
 }
 
 declare module 'grapoi' {
-  function grapoi({ dataset: Dataset }): GrapoiPointer
+  function grapoi({ dataset, factory, term }: { dataset: Dataset; factory: DataFactory; term?: NamedNode }): GrapoiPointer
   export = grapoi
 }
 
