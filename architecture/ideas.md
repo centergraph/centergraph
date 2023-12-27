@@ -1,0 +1,1 @@
+- External IRI can be resolved like: localhost:8000/external/example.com/contents/john-doe which would also map to the file on disk.

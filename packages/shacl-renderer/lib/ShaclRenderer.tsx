@@ -1,16 +1,12 @@
-import React, { ReactElement } from 'react'
+import { StrictMode } from 'react'
 import ReactDOM, { Root } from 'react-dom/client'
-import { Settings, WidgetMeta } from './types'
+import { Settings } from './types'
 import { Parser, Store } from 'n3'
 import grapoi from 'grapoi'
 import FormLevel from './components/core/FormLevel'
 import { rdf, sh } from './helpers/namespaces'
 import { DataFactory } from 'n3'
-
-const editorMetas = import.meta.glob('./components/widgets/editors/*/meta.ts')
-const editorModules = import.meta.glob('./components/widgets/editors/*/index.tsx')
-const viewerMetas = import.meta.glob('./components/widgets/viewers/*/meta.ts')
-const viewerModules = import.meta.glob('./components/widgets/viewers/*/index.tsx')
+import { loadWidgets } from './helpers/loadWidgets'
 
 export class ShaclRenderer extends HTMLElement {
   #root: Root
@@ -35,16 +31,21 @@ export class ShaclRenderer extends HTMLElement {
   }
 
   async initiateSettings() {
-    Object.entries(editorMetas).map(async ([path, editorMetaPromise]) => {
-      const editorMeta = (await editorMetaPromise()) as WidgetMeta
-      const pathParts = path.split('/')
-      pathParts.pop()
-      const pathPrefix = pathParts.join('/')
-
-      const module = Object.entries(editorModules).find(([path]) => path.startsWith(pathPrefix))
-      this.settings.widgetLoaders.set(editorMeta.iri.value, module?.[1] as unknown as () => Promise<{ default: ReactElement }>)
-      this.settings.widgetMetas.editors.push(editorMeta)
+    const editorPromises = loadWidgets({
+      targetMetas: this.settings.widgetMetas.editors,
+      loaders: this.settings.widgetLoaders,
+      metasGlob: import.meta.glob('./components/widgets/editors/*/meta.ts'),
+      modulesGlob: import.meta.glob('./components/widgets/editors/*/index.tsx'),
     })
+
+    const viewerPromises = loadWidgets({
+      targetMetas: this.settings.widgetMetas.viewers,
+      loaders: this.settings.widgetLoaders,
+      metasGlob: import.meta.glob('./components/widgets/viewers/*/meta.ts'),
+      modulesGlob: import.meta.glob('./components/widgets/viewers/*/index.tsx'),
+    })
+
+    await Promise.allSettled([...editorPromises, ...viewerPromises])
 
     const settingsEvent = new CustomEvent('settings', { detail: { settings: this.settings } })
     this.dispatchEvent(settingsEvent)
@@ -66,15 +67,15 @@ export class ShaclRenderer extends HTMLElement {
     let shaclRoot = this.shaclShapes.hasOut(rdf('type'), sh('NodeShape'))
     if (this.settings.targetClass) shaclRoot = shaclRoot.hasOut(sh('targetClass'), DataFactory.namedNode(this.settings.targetClass))
 
-    // TODO Make the form selectable.
+    // TODO Make the form shape selectable.
     // For now we choose the first shape that matches.
     shaclRoot.ptrs = [shaclRoot.ptrs[0]]
 
     this.#root.render(
-      <React.StrictMode>
+      <StrictMode>
         <h1>test2</h1>
         <FormLevel shaclPointer={shaclRoot} settings={this.settings} />
-      </React.StrictMode>
+      </StrictMode>
     )
   }
 }

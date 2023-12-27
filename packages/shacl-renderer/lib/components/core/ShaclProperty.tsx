@@ -1,7 +1,8 @@
 import { rdfs, schema, sh } from '../../helpers/namespaces'
 import parsePath from 'shacl-engine/lib/parsePath'
 import { Settings } from '../../types'
-import { JSXElementConstructor, ReactElement, ReactNode, useEffect, useState } from 'react'
+import { JSXElementConstructor, useEffect, useState } from 'react'
+import { getBestWidget } from '../../helpers/getBestWidget'
 
 type ShaclPropertyProps = {
   shaclPointer: GrapoiPointer
@@ -15,33 +16,18 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
   const shWidget = settings.mode === 'edit' ? sh('editor') : sh('viewer')
   const widgets = settings.mode === 'edit' ? settings.widgetMetas.editors : settings.widgetMetas.viewers
 
-  const [Widget, setWidget] = useState<JSXElementConstructor<any>>()
+  const [Widget, setWidget] = useState<JSXElementConstructor<unknown>>()
 
   useEffect(() => {
-    let widgetIri = shaclPointer.out(shWidget).value
-
-    if (!widgetIri) {
-      const widgetMatches = widgets
-        .map((widgetMeta) => ({
-          iri: widgetMeta.iri,
-          score: widgetMeta.score(shaclPointer, dataPointer),
-        }))
-        .sort((a, b) => a.score - b.score)
-
-      widgetIri = widgetMatches[0].iri.value
-    }
-
+    const widgetIri = shaclPointer.out(shWidget).value ?? getBestWidget(widgets, shaclPointer, dataPointer)
     const widgetModule = settings.widgetLoaders.get(widgetIri)
-    if (widgetModule)
-      widgetModule().then((module) => {
-        setWidget(() => module.default)
-      })
-  }, [])
+    if (widgetModule) widgetModule().then((module) => setWidget(() => module.default))
+  }, [dataPointer, settings.widgetLoaders, shWidget, shaclPointer, widgets])
 
   return (
     <div className="property">
       {label ? <h3>{label}</h3> : null}
-      {Widget ? <Widget /> : `Loading...`}
+      {Widget ? <Widget /> : `...`}
     </div>
   )
 }
