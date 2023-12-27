@@ -4,7 +4,7 @@ import { ReactElement } from 'react'
 
 export type WidgetMeta = {
   iri: NamedNode
-  score: (shaclProperty: GrapoiPointer, data: GrapoiPointer) => number
+  score: (dataPointer: GrapoiPointer, shaclPointer: GrapoiPointer) => number
   loader?: Promise<ReactElement>
 }
 

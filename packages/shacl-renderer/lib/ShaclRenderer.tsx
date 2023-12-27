@@ -30,6 +30,10 @@ export class ShaclRenderer extends HTMLElement {
     super()
     this.#root = ReactDOM.createRoot(this)
     this.initiateSettings()
+
+    // Reflect the settings
+    this.classList.add('shacl-renderer')
+    this.classList.add(`mode-${this.settings.mode}`)
   }
 
   async initiateSettings() {
@@ -48,6 +52,10 @@ export class ShaclRenderer extends HTMLElement {
     })
 
     await Promise.allSettled([...editorPromises, ...viewerPromises])
+
+    // Attribute overrides
+    const mode = this.getAttribute('mode')
+    if (mode && ['view', 'edit'].includes(mode)) this.settings.mode = mode as 'view' | 'edit'
 
     const settingsEvent = new CustomEvent('settings', { detail: { settings: this.settings } })
     this.dispatchEvent(settingsEvent)
@@ -92,7 +100,6 @@ export class ShaclRenderer extends HTMLElement {
 
     this.#root.render(
       <StrictMode>
-        <h1>test2</h1>
         <FormLevel shaclPointer={shaclRoot} dataPointer={this.dataPointer} settings={this.settings} />
       </StrictMode>
     )

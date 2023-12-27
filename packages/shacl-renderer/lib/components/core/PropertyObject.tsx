@@ -18,7 +18,7 @@ export default function PropertyObject({ shaclPointer, dataPointer, settings, se
   const [Widget, setWidget] = useState<JSXElementConstructor<WidgetProps>>()
 
   useEffect(() => {
-    const widgetIri = shaclPointer.out(shWidget).value ?? getBestWidget(widgets, shaclPointer, dataPointer)
+    const widgetIri = shaclPointer.out(shWidget).value ?? getBestWidget(widgets, dataPointer, shaclPointer)
     const widgetModule = settings.widgetLoaders.get(widgetIri)
     if (widgetModule) widgetModule().then((module) => setWidget(() => module.default))
   }, [dataPointer, settings.widgetLoaders, shWidget, shaclPointer, widgets])

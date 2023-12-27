@@ -8,12 +8,24 @@
     <script type="module" src="/lib/ShaclRenderer.tsx"></script>
   </head>
   <body>
+    <h2>Edit mode</h2>
+
     <shacl-renderer
       shacl-shapes-url="./shapes/contact.shacl.ttl"
       subject="http://example.com/john-doe"
       data-url="./john-doe.ttl"
     ></shacl-renderer>
     <button id="save">Save</button>
+
+    <h2>View mode</h2>
+
+    <shacl-renderer
+      shacl-shapes-url="./shapes/contact.shacl.ttl"
+      subject="http://example.com/john-doe"
+      data-url="./john-doe.ttl"
+      mode="view"
+    ></shacl-renderer>
+
     <script>
       const shaclRenderer = document.querySelector('shacl-renderer')
       shaclRenderer.addEventListener('settings', (event) => {

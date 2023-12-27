@@ -1,12 +1,12 @@
 import { WidgetMeta } from '../types'
 
-export const getBestWidget = (widgets: Array<WidgetMeta>, shaclPointer: GrapoiPointer, dataPointer: GrapoiPointer) => {
+export const getBestWidget = (widgets: Array<WidgetMeta>, dataPointer: GrapoiPointer, shaclPointer: GrapoiPointer) => {
   const widgetMatches = widgets
     .map((widgetMeta) => ({
       iri: widgetMeta.iri,
-      score: widgetMeta.score(shaclPointer, dataPointer),
+      score: widgetMeta.score(dataPointer, shaclPointer) ?? 0,
     }))
-    .sort((a, b) => a.score - b.score)
+    .sort((a, b) => b.score - a.score)
 
   return widgetMatches[0].iri.value
 }

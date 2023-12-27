@@ -27,9 +27,12 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
   const [objectPointers, setRealObjectPointers] = useState(dataPointer.executeAll(path))
   const setObjectPointers = () => setRealObjectPointers(dataPointer.executeAll(path))
 
-  return (
+  // Sometimes the whole of the property can be hidden.
+  const shouldShow = !!objectPointers.ptrs.length || settings.mode === 'edit'
+
+  return shouldShow ? (
     <div className="property">
-      {label ? <h3>{label}</h3> : null}
+      {label ? <label>{label}</label> : null}
       {[...objectPointers].map((objectPointer) => (
         <PropertyObject
           key={objectPointer?.term}
@@ -40,5 +43,5 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
         />
       ))}
     </div>
-  )
+  ) : null
 }
