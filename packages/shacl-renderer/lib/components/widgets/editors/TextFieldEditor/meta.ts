@@ -1,3 +1,4 @@
+import { DataFactory } from 'n3'
 import { dash, rdf, sh, xsd } from '../../../../helpers/namespaces'
 
 export const iri = dash('TextFieldEditor')
@@ -18,3 +19,5 @@ export const score = (dataPointer: GrapoiPointer, shaclPointer: GrapoiPointer) =
     return 5
   }
 }
+
+export const createTerm = () => DataFactory.literal('')

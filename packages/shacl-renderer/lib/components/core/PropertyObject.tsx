@@ -1,8 +1,7 @@
-import { Settings, WidgetProps } from '../../types'
-import { sh } from '../../helpers/namespaces'
-import { JSXElementConstructor, useEffect, useState } from 'react'
-import { getBestWidget } from '../../helpers/getBestWidget'
+import { Settings } from '../../types'
+import { useState } from 'react'
 import { Term } from '@rdfjs/types'
+import { useWidget } from '../../hooks/useWidget'
 
 type PropertyObjectProps = {
   shaclPointer: GrapoiPointer
@@ -12,17 +11,7 @@ type PropertyObjectProps = {
 }
 
 export default function PropertyObject({ shaclPointer, dataPointer, settings, setObjectPointers }: PropertyObjectProps) {
-  const shWidget = settings.mode === 'edit' ? sh('editor') : sh('viewer')
-  const widgets = settings.mode === 'edit' ? settings.widgetMetas.editors : settings.widgetMetas.viewers
-
-  const [Widget, setWidget] = useState<JSXElementConstructor<WidgetProps>>()
-
-  useEffect(() => {
-    const widgetIri = shaclPointer.out(shWidget).value ?? getBestWidget(widgets, dataPointer, shaclPointer)
-    const widgetModule = settings.widgetLoaders.get(widgetIri)
-    if (widgetModule) widgetModule().then((module) => setWidget(() => module.default))
-  }, [dataPointer, settings.widgetLoaders, shWidget, shaclPointer, widgets])
-
+  const { Widget } = useWidget(settings, dataPointer, shaclPointer, true)
   const [term, realSetTerm] = useState(dataPointer.term)
 
   const setTerm = (value: Term) => {

@@ -5,6 +5,7 @@ import { ReactElement } from 'react'
 export type WidgetMeta = {
   iri: NamedNode
   score: (dataPointer: GrapoiPointer, shaclPointer: GrapoiPointer) => number
+  createTerm?: () => Term
   loader?: Promise<ReactElement>
 }
 
