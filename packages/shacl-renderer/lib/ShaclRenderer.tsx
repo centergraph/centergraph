@@ -1,12 +1,13 @@
 import { StrictMode } from 'react'
 import ReactDOM, { Root } from 'react-dom/client'
-import { Settings } from './types'
+import { Settings } from '@/types'
 import { Parser, Store } from 'n3'
 import grapoi from 'grapoi'
-import FormLevel from './components/core/FormLevel'
-import { rdf, sh } from './helpers/namespaces'
+import FormLevel from '@/components/core/FormLevel'
+import { rdf, sh } from '@/helpers/namespaces'
 import { DataFactory } from 'n3'
-import { loadWidgets } from './helpers/loadWidgets'
+import { loadWidgets } from '@/helpers/loadWidgets'
+import defaultCssClasses from '@/defaultCssClasses'
 
 export class ShaclRenderer extends HTMLElement {
   #root: Root
@@ -21,6 +22,7 @@ export class ShaclRenderer extends HTMLElement {
     },
     widgetLoaders: new Map(),
     dataStore: new Store(),
+    cssClasses: defaultCssClasses('edit'),
   }
 
   public shaclShapes!: GrapoiPointer
@@ -59,6 +61,7 @@ export class ShaclRenderer extends HTMLElement {
 
     const settingsEvent = new CustomEvent('settings', { detail: { settings: this.settings } })
     this.dispatchEvent(settingsEvent)
+    this.settings.cssClasses = defaultCssClasses(this.settings.mode)
   }
 
   async loadData() {

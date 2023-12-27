@@ -1,6 +1,6 @@
 import { DataFactory } from 'n3'
-import { sh } from '../../helpers/namespaces'
-import { Settings } from '../../types'
+import { sh } from '@/helpers/namespaces'
+import { Settings } from '@/types'
 import Group from './Group'
 import ShaclProperty from './ShaclProperty'
 import { ReactNode } from 'react'
@@ -32,7 +32,7 @@ export default function FormLevel(props: FormLevelProps) {
     const groupPointer = shaclPointer.node([DataFactory.namedNode(groupIdentifier)])
 
     return (
-      <Group key={groupIdentifier} groupPointer={groupPointer}>
+      <Group settings={settings} key={groupIdentifier} groupPointer={groupPointer}>
         {shaclPropertyWidgets.filter(({ group }) => group === groupIdentifier).map(({ widget }) => widget)}
       </Group>
     )
@@ -40,7 +40,7 @@ export default function FormLevel(props: FormLevelProps) {
 
   return (
     <div
-      className={`form-level ps-3 pe-3`}
+      className={settings.cssClasses.formLevel}
       ref={(element) => {
         if (!htmlChildren) return
         htmlChildren.forEach((child) => element?.appendChild(child))

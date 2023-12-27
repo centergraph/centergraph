@@ -19,6 +19,17 @@ export type Settings = {
   }
   dataStore: Store
   widgetLoaders: Map<string, () => Promise<{ default: ReactElement }>>
+  cssClasses: {
+    formLevel: string
+    group: string
+    label: string
+    input: string
+    shaclProperty: string
+    button: {
+      primary: string
+      secondary: string
+    }
+  }
 }
 
 export type WidgetProps = {

@@ -1,7 +1,7 @@
 import { JSXElementConstructor, useEffect, useState } from 'react'
-import { sh } from '../helpers/namespaces'
-import { Settings, WidgetProps } from '../types'
-import { getBestWidget } from '../helpers/getBestWidget'
+import { sh } from '@/helpers/namespaces'
+import { Settings, WidgetProps } from '@/types'
+import { getBestWidget } from '@/helpers/getBestWidget'
 
 export const useWidget = (settings: Settings, dataPointer: GrapoiPointer, shaclPointer: GrapoiPointer, load: boolean = false) => {
   const shWidget = settings.mode === 'edit' ? sh('editor') : sh('viewer')

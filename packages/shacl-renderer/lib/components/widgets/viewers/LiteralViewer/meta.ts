@@ -1,4 +1,4 @@
-import { dash } from '../../../../helpers/namespaces'
+import { dash } from '@/helpers/namespaces'
 
 export const iri = dash('LiteralViewer')
 

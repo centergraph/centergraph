@@ -1,12 +1,12 @@
-import { rdfs, schema, sh } from '../../helpers/namespaces'
+import { rdfs, schema, sh } from '@/helpers/namespaces'
 import parsePath from 'shacl-engine/lib/parsePath'
-import { Settings } from '../../types'
+import { Settings } from '@/types'
 import PropertyObject from './PropertyObject'
 import { DataFactory } from 'n3'
 import { useCallback, useEffect, useState } from 'react'
-import { useWidget } from '../../hooks/useWidget'
+import { useWidget } from '@/hooks/useWidget'
 import { Term } from '@rdfjs/types'
-import { lastPart } from '../../helpers/lastPart'
+import { lastPart } from '@/helpers/lastPart'
 
 type ShaclPropertyProps = {
   shaclPointer: GrapoiPointer
@@ -41,10 +41,10 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
     (widgetMeta && (!!objectPointers.ptrs.length || settings.mode === 'edit')) || (settings.mode === 'view' && !!objectPointers.ptrs.length)
 
   return shouldShow ? (
-    <div className={`property ${settings.mode === 'edit' ? 'mb-3' : ''}`}>
+    <div className={settings.cssClasses.shaclProperty}>
       {/* The label of the field */}
       {label ? (
-        <label className={`form-label ${settings.mode === 'view' ? 'd-inline' : ''}`}>
+        <label className={settings.cssClasses.label}>
           {label}
           {settings.mode === 'view' ? ': ' : ''}
         </label>
@@ -58,7 +58,7 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
                 dataPointer.addOut(predicate, widgetMeta?.createTerm ? widgetMeta.createTerm() : DataFactory.literal(''))
                 setObjectPointers()
               }}
-              className="btn btn-sm btn-secondary ms-2"
+              className={settings.cssClasses.button.secondary}
               key={predicate.value}
               title={predicate.value}
             >

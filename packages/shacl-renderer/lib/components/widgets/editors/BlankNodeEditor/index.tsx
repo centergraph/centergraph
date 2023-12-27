@@ -1,6 +1,6 @@
-import { sh } from '../../../../helpers/namespaces'
-import { WidgetProps } from '../../../../types'
-import FormLevel from '../../../core/FormLevel'
+import { sh } from '@/helpers/namespaces'
+import { WidgetProps } from '@/types'
+import FormLevel from '@/components/core/FormLevel'
 
 export default function BlankNodeEditor({ dataPointer, shaclPointer, settings }: WidgetProps) {
   const node = shaclPointer.out(sh('node')).term

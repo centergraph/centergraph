@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import { WidgetMeta } from '../types'
+import { WidgetMeta } from '@/types'
 
 export type LoadWidgetsProps = {
   targetMetas: Array<WidgetMeta>

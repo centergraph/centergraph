@@ -1,5 +1,5 @@
 import { DataFactory } from 'n3'
-import { dash, rdf, sh, xsd } from '../../../../helpers/namespaces'
+import { dash, rdf, sh, xsd } from '@/helpers/namespaces'
 
 export const iri = dash('TextFieldEditor')
 

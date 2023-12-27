@@ -1,7 +1,7 @@
-import { Settings } from '../../types'
+import { Settings } from '@/types'
 import { useState } from 'react'
 import { Term } from '@rdfjs/types'
-import { useWidget } from '../../hooks/useWidget'
+import { useWidget } from '@/hooks/useWidget'
 
 type PropertyObjectProps = {
   shaclPointer: GrapoiPointer

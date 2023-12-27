@@ -1,5 +1,5 @@
 import { DataFactory } from 'n3'
-import { dash, sh, xsd } from '../../../../helpers/namespaces'
+import { dash, sh, xsd } from '@/helpers/namespaces'
 
 export const iri = dash('DatePickerEditor')
 

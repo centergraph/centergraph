@@ -1,4 +1,4 @@
-import { dash, sh } from '../../../../helpers/namespaces'
+import { dash, sh } from '@/helpers/namespaces'
 
 export const iri = dash('BlankNodeViewer')
 
