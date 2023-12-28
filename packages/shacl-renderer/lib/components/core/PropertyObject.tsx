@@ -6,7 +6,6 @@ import { Icon } from '@iconify/react'
 import { lastPart } from '@/helpers/lastPart'
 import { snakeCase } from '@/helpers/snakeCase'
 import { useValidate } from '@/hooks/useValidate'
-import * as _ from 'lodash-es'
 
 type PropertyObjectProps = {
   shaclPointer: GrapoiPointer
@@ -19,10 +18,9 @@ type PropertyObjectProps = {
 export default function PropertyObject({ shaclPointer, dataPointer, settings, setObjectPointers, path }: PropertyObjectProps) {
   const { Widget, widgetMeta } = useWidget(settings, dataPointer, shaclPointer, true)
   const [term, realSetTerm] = useState(dataPointer.term)
-  const { report, validate } = useValidate()
+  const { getErrorMessages, reportSignal, validate } = useValidate(settings)
 
-  const errors = report?.results?.filter((result: { path: unknown }) => _.isEqual(result.path, path)) ?? []
-  const errorMessages = errors.flatMap((error: { message: Array<Term> }) => error.message.flatMap((message: Term) => message.value))
+  const errorMessages = getErrorMessages(reportSignal, path)
 
   const setTerm = (value: Term) => {
     dataPointer = dataPointer.replace(value)
@@ -39,7 +37,7 @@ export default function PropertyObject({ shaclPointer, dataPointer, settings, se
         {/* The widget loads with a Promise */}
         {Widget ? (
           <Widget
-            className={errorMessages.length ? settings.cssClasses.hasErrors : ''}
+            hasErrorsClassName={errorMessages.length ? settings.cssClasses.hasErrors : ''}
             dataPointer={dataPointer}
             term={term}
             setTerm={setTerm}
@@ -54,11 +52,9 @@ export default function PropertyObject({ shaclPointer, dataPointer, settings, se
             onClick={() => {
               // Removes all quads that are one level deeper
               // TODO improve this logic.
-              const quads = [...dataPointer.out().quads()]
+              const quads = [...dataPointer.quads(), ...dataPointer.out().quads()]
               dataPointer.ptrs[0].dataset.removeQuads(quads)
-
-              // Set the current term to a blank one.
-              setTerm(widgetMeta!.createTerm!())
+              setObjectPointers()
             }}
             className={settings.cssClasses.button.remove}
           >
@@ -68,7 +64,7 @@ export default function PropertyObject({ shaclPointer, dataPointer, settings, se
       </div>
 
       {/* The SHACL errors */}
-      {errorMessages.length ? (
+      {errorMessages.length && settings.mode === 'edit' ? (
         <div className={settings.cssClasses.errorMessage} role="alert">
           {errorMessages.join('\n')}
         </div>

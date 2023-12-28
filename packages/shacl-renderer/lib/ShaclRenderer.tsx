@@ -9,7 +9,6 @@ import { DataFactory } from 'n3'
 import { loadWidgets } from '@/helpers/loadWidgets'
 import defaultCssClasses from '@/defaultCssClasses'
 import './style.css'
-import ReportContextProvider from './contexts/ReportContextProvider'
 
 export class ShaclRenderer extends HTMLElement {
   #root: Root
@@ -105,13 +104,11 @@ export class ShaclRenderer extends HTMLElement {
     shaclRoot.ptrs = [shaclRoot.ptrs[0]]
 
     this.#root.render(
-      <StrictMode>
-        <ReportContextProvider settings={this.settings}>
-          <form onSubmit={(event) => event.preventDefault()}>
-            <FormLevel htmlChildren={[...this.children]} shaclPointer={shaclRoot} dataPointer={this.dataPointer} settings={this.settings} />
-          </form>
-        </ReportContextProvider>
-      </StrictMode>
+      // <StrictMode>
+      <form onSubmit={(event) => event.preventDefault()}>
+        <FormLevel htmlChildren={[...this.children]} shaclPointer={shaclRoot} dataPointer={this.dataPointer} settings={this.settings} />
+      </form>
+      // </StrictMode>
     )
   }
 }
