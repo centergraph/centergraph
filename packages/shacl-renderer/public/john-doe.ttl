@@ -6,8 +6,8 @@
   schema:givenName "John" ;
   schema:familyName "Doe" ;
   schema:name "John Doe" ;
-  # schema:birthDate "1947-01-14"^^xsd:date ;
-  schema:birthDate "1947-01-14" ;
+  schema:birthDate "1947-01-14"^^xsd:date ;
+  # schema:birthDate "1947-01-14" ;
 
   schema:address [
     schema:streetAddress "Wagramer Strasse 5" ;

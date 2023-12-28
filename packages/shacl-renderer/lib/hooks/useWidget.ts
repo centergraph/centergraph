@@ -6,7 +6,7 @@ import { getBestWidget } from '@/helpers/getBestWidget'
 export const widgetCache = new Map()
 
 /**
- * TODO THis structure triggers re-renders
+ * TODO This structure triggers re-renders
  */
 export const useWidget = (settings: Settings, dataPointer: GrapoiPointer, shaclPointer: GrapoiPointer, load: boolean = false) => {
   const shWidget = settings.mode === 'edit' ? sh('editor') : sh('viewer')

@@ -13,4 +13,7 @@ export const score = (dataPointer: GrapoiPointer, shaclPointer: GrapoiPointer) =
   }
 }
 
-export const createTerm = () => DataFactory.literal('', xsd('date'))
+// TODO Empty date objects are not seen as valid by the SHACL validator.
+export const createTerm = () => {
+  return DataFactory.literal('', xsd('date'))
+}

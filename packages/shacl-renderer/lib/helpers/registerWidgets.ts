@@ -8,7 +8,7 @@ export type LoadWidgetsProps = {
   modulesGlob: Record<string, () => Promise<unknown>>
 }
 
-export const loadWidgets = ({ targetMetas, loaders, metasGlob, modulesGlob }: LoadWidgetsProps) => {
+export const registerWidgets = ({ targetMetas, loaders, metasGlob, modulesGlob }: LoadWidgetsProps) => {
   return Object.entries(metasGlob).map(async ([path, metaPromise]) => {
     const meta = (await metaPromise()) as WidgetMeta
     const pathParts = path.split('/')

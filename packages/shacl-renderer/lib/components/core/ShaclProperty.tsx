@@ -2,7 +2,6 @@ import { rdfs, schema, sh } from '@/helpers/namespaces'
 import parsePath from 'shacl-engine/lib/parsePath'
 import { Settings } from '@/types'
 import PropertyObject from './PropertyObject'
-import { DataFactory } from 'n3'
 import { useCallback, useEffect, useState } from 'react'
 import { useWidget } from '@/hooks/useWidget'
 import { Term } from '@rdfjs/types'
@@ -27,14 +26,14 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
 
   // Add an empty value so an empty widget displays for simple property paths
   useEffect(() => {
-    if (!widgetMeta) return
-    ensureTerm(settings, path, dataPointer, widgetMeta, setObjectPointers)
+    if (!widgetMeta || settings.mode !== 'edit') return
+    ensureTerm(path, dataPointer, widgetMeta, setObjectPointers)
   }, [widgetMeta, dataPointer, path, settings, shaclPointer, setObjectPointers])
 
-  // Sometimes the whole of the property can be hidden.
   const alternativePredicates = path[0].predicates
   const maxCount = shaclPointer.out(sh('maxCount')).value ? parseInt(shaclPointer.out(sh('maxCount')).value) : Infinity
 
+  // Sometimes the whole of the property can be hidden.
   const shouldShow =
     (widgetMeta && (!!objectPointers.ptrs.length || settings.mode === 'edit')) || (settings.mode === 'view' && !!objectPointers.ptrs.length)
 

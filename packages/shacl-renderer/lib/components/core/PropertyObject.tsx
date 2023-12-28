@@ -11,7 +11,7 @@ type PropertyObjectProps = {
   shaclPointer: GrapoiPointer
   dataPointer: GrapoiPointer
   settings: Settings
-  path: any
+  path: unknown
   setObjectPointers: () => void
 }
 
