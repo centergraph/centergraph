@@ -57,7 +57,7 @@ export default function ShaclPropertyObject({ shaclPointer, dataPointer, setting
               // Removes all quads that are one level deeper
               // TODO improve this logic.
               const quads = [...dataPointer.quads(), ...dataPointer.out().quads()]
-              dataPointer.ptrs[0].dataset.removeQuads(quads)
+              for (const quad of quads) dataPointer.ptrs[0].dataset.delete(quad)
               setObjectPointers()
             }}
             className={settings.cssClasses.button.remove}
