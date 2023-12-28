@@ -32,3 +32,4 @@ declare module 'grapoi' {
 }
 
 declare module 'shacl-engine/lib/parsePath'
+declare module 'shacl-engine'

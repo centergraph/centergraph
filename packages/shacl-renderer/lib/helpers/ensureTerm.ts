@@ -1,6 +1,5 @@
 import { Settings, WidgetMeta } from '@/types'
 import { Term } from '@rdfjs/types'
-import { DataFactory } from 'n3'
 
 export const ensureTerm = (
   settings: Settings,
@@ -10,7 +9,7 @@ export const ensureTerm = (
   callback: () => void
 ) => {
   if (settings.mode === 'edit' && !dataPointer.executeAll(path).ptrs.length && path.length === 1 && path[0].predicates?.length === 1) {
-    dataPointer.addOut(path[0].predicates[0], widgetMeta.createTerm ? widgetMeta.createTerm() : DataFactory.literal(''))
+    dataPointer.addOut(path[0].predicates[0], widgetMeta!.createTerm!())
     callback()
   }
 }

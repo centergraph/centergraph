@@ -55,7 +55,7 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
         ? alternativePredicates.map((predicate: Term) => (
             <button
               onClick={() => {
-                dataPointer.addOut(predicate, widgetMeta?.createTerm ? widgetMeta.createTerm() : DataFactory.literal(''))
+                dataPointer.addOut(predicate, widgetMeta!.createTerm!())
                 setObjectPointers()
               }}
               className={settings.cssClasses.button.secondary}
@@ -70,6 +70,7 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
       {/* The rendering of the widget happens inside the PropertyObject */}
       {[...objectPointers].map((objectPointer, index) => (
         <PropertyObject
+          path={path}
           key={JSON.stringify(path) + index} // TODO get the shortest representation of the path.
           setObjectPointers={setObjectPointers}
           dataPointer={objectPointer}

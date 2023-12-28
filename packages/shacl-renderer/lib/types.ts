@@ -18,8 +18,11 @@ export type Settings = {
     viewers: Array<WidgetMeta>
   }
   dataStore: Store
+  shaclStore: Store
   widgetLoaders: Map<string, () => Promise<{ default: ReactElement }>>
   cssClasses: {
+    hasErrors: string
+    errorMessage: string
     formLevel: string
     group: string
     label: string
@@ -41,4 +44,5 @@ export type WidgetProps = {
   shaclPointer: GrapoiPointer
   dataPointer: GrapoiPointer
   settings: Settings
+  className: string
 }

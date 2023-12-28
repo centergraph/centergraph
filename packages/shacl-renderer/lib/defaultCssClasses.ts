@@ -10,7 +10,9 @@ export default (mode: 'edit' | 'view'): Settings['cssClasses'] => ({
     primary: 'btn btn-primary',
     secondary: 'btn btn-sm btn-secondary ms-2',
     danger: 'btn btn-sm btn-danger',
-    remove: 'btn btn-sm btn-outline-danger',
+    remove: 'btn btn-sm btn-outline-danger remove-button',
   },
+  errorMessage: 'alert alert-danger mt-1',
+  hasErrors: 'is-invalid',
   input: 'form-control',
 })

@@ -9,6 +9,7 @@ import { DataFactory } from 'n3'
 import { loadWidgets } from '@/helpers/loadWidgets'
 import defaultCssClasses from '@/defaultCssClasses'
 import './style.css'
+import ReportContextProvider from './contexts/ReportContextProvider'
 
 export class ShaclRenderer extends HTMLElement {
   #root: Root
@@ -23,6 +24,7 @@ export class ShaclRenderer extends HTMLElement {
     },
     widgetLoaders: new Map(),
     dataStore: new Store(),
+    shaclStore: new Store(),
     cssClasses: defaultCssClasses('edit'),
   }
 
@@ -87,8 +89,8 @@ export class ShaclRenderer extends HTMLElement {
     const response = await this.settings.fetch(shaclShapesUrl).then((response) => response.text())
     const parser = new Parser()
     const quads = await parser.parse(response)
-    const dataset = new Store(quads)
-    this.shaclShapes = grapoi({ dataset, factory: DataFactory })
+    this.settings.shaclStore = new Store(quads)
+    this.shaclShapes = grapoi({ dataset: this.settings.shaclStore, factory: DataFactory })
   }
 
   async connectedCallback() {
@@ -104,9 +106,11 @@ export class ShaclRenderer extends HTMLElement {
 
     this.#root.render(
       <StrictMode>
-        <form onSubmit={(event) => event.preventDefault()}>
-          <FormLevel htmlChildren={[...this.children]} shaclPointer={shaclRoot} dataPointer={this.dataPointer} settings={this.settings} />
-        </form>
+        <ReportContextProvider settings={this.settings}>
+          <form onSubmit={(event) => event.preventDefault()}>
+            <FormLevel htmlChildren={[...this.children]} shaclPointer={shaclRoot} dataPointer={this.dataPointer} settings={this.settings} />
+          </form>
+        </ReportContextProvider>
       </StrictMode>
     )
   }

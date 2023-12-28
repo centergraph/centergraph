@@ -33,3 +33,7 @@
     }
   }
 }
+
+.form-control:not(.is-invalid) + .remove-button {
+  border-color: var(--bs-border-color);
+}

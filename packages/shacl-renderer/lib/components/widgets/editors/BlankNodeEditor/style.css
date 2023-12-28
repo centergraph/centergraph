@@ -1,3 +1,5 @@
-.blank-node-editor {
-  background-color: rgba(200, 225, 236, 0.1);
+.blank-node-editor .input-group {
+  background-color: rgba(200, 225, 236, 0.2);
+  flex-wrap: nowrap !important;
+  border-radius: var(--bs-border-radius);
 }
