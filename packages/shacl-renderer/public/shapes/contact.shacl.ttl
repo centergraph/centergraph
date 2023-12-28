@@ -4,6 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sr: <https://centergraph.danielbeeke.nl/sr#> .
+@prefix dash: <http://datashapes.org/dash#> .
 
 <>
   a sh:NodeShape ;
@@ -39,6 +40,7 @@
   sh:property [
     sh:name "Date of birth"@en ;
     sh:path schema:birthDate ;
+    sh:editor dash:DatePickerEditor ;
     sh:maxCount 1;
     sh:datatype xsd:date ;
   ];

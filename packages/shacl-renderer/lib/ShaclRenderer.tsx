@@ -9,6 +9,8 @@ import { DataFactory } from 'n3'
 import { loadWidgets } from '@/helpers/loadWidgets'
 import defaultCssClasses from '@/defaultCssClasses'
 import './style.css'
+import { getBestWidget } from './helpers/getBestWidget'
+import { widgetCache } from './hooks/useWidget'
 
 export class ShaclRenderer extends HTMLElement {
   #root: Root
@@ -90,6 +92,33 @@ export class ShaclRenderer extends HTMLElement {
     const quads = await parser.parse(response)
     this.settings.shaclStore = new Store(quads)
     this.shaclShapes = grapoi({ dataset: this.settings.shaclStore, factory: DataFactory })
+    await this.preloadWidgets()
+  }
+
+  /**
+   * TODO re-evaluate this structure
+   */
+  async preloadWidgets() {
+    const properties = this.shaclShapes.out([sh('property')])
+    const emptyGrapoi = grapoi({ dataset: new Store(), factory: DataFactory })
+    const shWidget = this.settings.mode === 'edit' ? 'editor' : 'viewer'
+    const widgets = this.settings.widgetMetas[this.settings.mode === 'edit' ? 'editors' : 'viewers']
+    for (const property of properties) {
+      if (property.hasOut(sh(shWidget)).value) continue
+      const iri = getBestWidget(widgets, emptyGrapoi, property)
+
+      if (iri) {
+        property.addOut(sh(shWidget), DataFactory.namedNode(iri))
+      }
+    }
+
+    const widgetIris = new Set(this.shaclShapes.out(sh('property')).out(sh(shWidget)).values)
+
+    for (const widgetIri of widgetIris) {
+      const widgetModule = this.settings.widgetLoaders.get(widgetIri)
+      if (!widgetModule) continue
+      widgetModule().then((module) => widgetCache.set(widgetIri, module.default))
+    }
   }
 
   async connectedCallback() {

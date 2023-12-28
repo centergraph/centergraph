@@ -3,7 +3,7 @@ import { sh } from '@/helpers/namespaces'
 import { Settings, WidgetProps } from '@/types'
 import { getBestWidget } from '@/helpers/getBestWidget'
 
-const widgetCache = new Map()
+export const widgetCache = new Map()
 
 /**
  * TODO THis structure triggers re-renders
