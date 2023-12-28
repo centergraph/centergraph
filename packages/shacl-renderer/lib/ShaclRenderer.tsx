@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import ReactDOM, { Root } from 'react-dom/client'
 import { Settings } from '@/types'
-import { Parser, Store } from 'n3'
+import { Parser } from 'n3'
+import datasetFactory from '@rdfjs/dataset'
 import grapoi from 'grapoi'
 import FormLevel from '@/components/core/FormLevel'
 import { rdf, sh } from '@/helpers/namespaces'
@@ -23,8 +24,8 @@ export class ShaclRenderer extends HTMLElement {
       viewers: [],
     },
     widgetLoaders: new Map(),
-    dataStore: new Store(),
-    shaclStore: new Store(),
+    dataDataset: datasetFactory.dataset(),
+    shaclDataset: datasetFactory.dataset(),
     cssClasses: defaultCssClasses('edit'),
   }
 
@@ -74,13 +75,13 @@ export class ShaclRenderer extends HTMLElement {
       const response = await this.settings.fetch(dataUrl).then((response) => response.text())
       const parser = new Parser({ baseIRI: dataUrl })
       const quads = await parser.parse(response)
-      this.settings.dataStore.addQuads(quads)
+      for (const quad of quads) this.settings.dataDataset.add(quad)
     }
 
     const subject = this.getAttribute('subject')
     if (!subject) throw new Error('Subject is required')
 
-    this.dataPointer = grapoi({ dataset: this.settings.dataStore, factory: DataFactory, term: DataFactory.namedNode(subject) })
+    this.dataPointer = grapoi({ dataset: this.settings.dataDataset, factory: DataFactory, term: DataFactory.namedNode(subject) })
   }
 
   async loadShaclShapes() {
@@ -89,14 +90,13 @@ export class ShaclRenderer extends HTMLElement {
     const response = await this.settings.fetch(shaclShapesUrl).then((response) => response.text())
     const parser = new Parser()
     const quads = await parser.parse(response)
-    this.settings.shaclStore = new Store(quads)
-    this.shaclShapes = grapoi({ dataset: this.settings.shaclStore, factory: DataFactory })
+    this.settings.shaclDataset = datasetFactory.dataset(quads)
+    this.shaclShapes = grapoi({ dataset: this.settings.shaclDataset, factory: DataFactory })
     await preloadWidgets(this.settings, this.shaclShapes)
   }
 
   async connectedCallback() {
-    await this.loadShaclShapes()
-    await this.loadData()
+    await Promise.all([this.loadShaclShapes(), this.loadData()])
 
     let shaclRoot = this.shaclShapes.hasOut(rdf('type'), sh('NodeShape'))
     if (this.settings.targetClass) shaclRoot = shaclRoot.hasOut(sh('targetClass'), DataFactory.namedNode(this.settings.targetClass))

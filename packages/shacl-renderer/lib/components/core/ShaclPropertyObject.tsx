@@ -15,7 +15,7 @@ type PropertyObjectProps = {
   setObjectPointers: () => void
 }
 
-export default function PropertyObject({ shaclPointer, dataPointer, settings, setObjectPointers, path }: PropertyObjectProps) {
+export default function ShaclPropertyObject({ shaclPointer, dataPointer, settings, setObjectPointers, path }: PropertyObjectProps) {
   const { Widget, widgetMeta } = useWidget(settings, dataPointer, shaclPointer, true)
   const [term, realSetTerm] = useState(dataPointer.term)
   const { getErrorMessages, reportSignal, validate } = useValidate(settings)
@@ -32,7 +32,11 @@ export default function PropertyObject({ shaclPointer, dataPointer, settings, se
   const widgetCssClassName = snakeCase(widgetMeta ? lastPart(widgetMeta.iri) ?? '' : '')
 
   return (
-    <div className={`${widgetCssClassName} ${errorMessages.length ? settings.cssClasses.hasErrors : ''}`}>
+    <div
+      className={`${widgetCssClassName} ${settings.cssClasses.propertyObjectWrapper} ${
+        errorMessages.length ? settings.cssClasses.hasErrors : ''
+      }`}
+    >
       <div className={settings.cssClasses.propertyObject}>
         {/* The widget loads with a Promise */}
         {Widget ? (

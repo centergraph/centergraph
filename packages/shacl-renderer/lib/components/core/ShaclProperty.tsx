@@ -1,13 +1,14 @@
 import { rdfs, schema, sh } from '@/helpers/namespaces'
 import parsePath from 'shacl-engine/lib/parsePath'
 import { Settings } from '@/types'
-import PropertyObject from './PropertyObject'
+import ShaclPropertyObject from './ShaclPropertyObject'
 import { useCallback, useEffect, useState } from 'react'
 import { useWidget } from '@/hooks/useWidget'
 import { Term } from '@rdfjs/types'
 import { lastPart } from '@/helpers/lastPart'
 import { ensureTerm } from '@/helpers/ensureTerm'
 import { snakeCase } from '@/helpers/snakeCase'
+import { Icon } from '@iconify/react'
 
 type ShaclPropertyProps = {
   shaclPointer: GrapoiPointer
@@ -66,9 +67,9 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
           ))
         : null}
 
-      {/* The rendering of the widget happens inside the PropertyObject */}
+      {/* The rendering of the widget happens inside the ShaclPropertyObject */}
       {[...objectPointers].map((objectPointer, index) => (
-        <PropertyObject
+        <ShaclPropertyObject
           path={path}
           key={JSON.stringify(path) + index} // TODO get the shortest representation of the path.
           setObjectPointers={setObjectPointers}
@@ -77,6 +78,19 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
           settings={settings}
         />
       ))}
+
+      {settings.mode === 'edit' && maxCount > [...objectPointers].length ? (
+        <button
+          type="button"
+          onClick={() => {
+            dataPointer.addOut([path[0].predicates[0]], [widgetMeta!.createTerm!()])
+            setObjectPointers()
+          }}
+          className={settings.cssClasses.button.add}
+        >
+          <Icon icon="octicon:plus-16" />
+        </button>
+      ) : null}
     </div>
   ) : null
 }

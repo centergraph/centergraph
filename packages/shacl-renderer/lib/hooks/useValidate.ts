@@ -3,22 +3,22 @@ import { Signal, signal } from '@preact/signals-react'
 import { Validator } from 'shacl-engine'
 import { Settings } from '@/types'
 import { DataFactory } from 'n3'
-import * as _ from 'lodash-es'
+import isEqual from 'lodash-es/isEqual'
 import { Term } from '@rdfjs/types'
 
 const reportSignal = signal<unknown>(null)
 let validate: undefined | (() => void) = undefined
 
 const getErrorMessages = (reportSignal: Signal<any>, path: unknown) => {
-  const errors = reportSignal.value?.results?.filter((result: { path: unknown }) => _.isEqual(result.path, path)) ?? []
+  const errors = reportSignal.value?.results?.filter((result: { path: unknown }) => isEqual(result.path, path)) ?? []
   return errors.flatMap((error: { message: Array<Term> }) => error.message.flatMap((message: Term) => message.value))
 }
 
 export const useValidate = (settings: Settings) => {
   if (!validate) {
-    const validator = new Validator(settings.shaclStore, { factory: DataFactory })
+    const validator = new Validator(settings.shaclDataset, { factory: DataFactory })
     validate = () => {
-      validator.validate({ dataset: settings.dataStore }).then((report: unknown) => {
+      validator.validate({ dataset: settings.dataDataset }).then((report: unknown) => {
         reportSignal.value = report
       })
     }

@@ -1,6 +1,7 @@
 import { Settings } from '@/types'
 import { sh } from './namespaces'
-import { DataFactory, Store } from 'n3'
+import { DataFactory } from 'n3'
+import datasetFactory from '@rdfjs/dataset'
 import { getBestWidget } from '@/helpers/getBestWidget'
 import { widgetCache } from '@/hooks/useWidget'
 import grapoi from 'grapoi'
@@ -10,7 +11,7 @@ import grapoi from 'grapoi'
  */
 export const preloadWidgets = async (settings: Settings, shaclPointer: GrapoiPointer) => {
   const properties = shaclPointer.out([sh('property')])
-  const emptyGrapoi = grapoi({ dataset: new Store(), factory: DataFactory })
+  const emptyGrapoi = grapoi({ dataset: datasetFactory.dataset(), factory: DataFactory })
   const shWidget = settings.mode === 'edit' ? 'editor' : 'viewer'
   const widgets = settings.widgetMetas[settings.mode === 'edit' ? 'editors' : 'viewers']
   for (const property of properties) {

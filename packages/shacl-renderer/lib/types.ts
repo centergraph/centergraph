@@ -1,5 +1,4 @@
-import { NamedNode, Term } from '@rdfjs/types'
-import { Store } from 'n3'
+import { NamedNode, Term, DatasetCore } from '@rdfjs/types'
 import { ReactElement } from 'react'
 
 export type WidgetMeta = {
@@ -17,8 +16,8 @@ export type Settings = {
     editors: Array<WidgetMeta>
     viewers: Array<WidgetMeta>
   }
-  dataStore: Store
-  shaclStore: Store
+  dataDataset: DatasetCore
+  shaclDataset: DatasetCore
   widgetLoaders: Map<string, () => Promise<{ default: ReactElement }>>
   cssClasses: {
     hasErrors: string
@@ -29,7 +28,9 @@ export type Settings = {
     input: string
     shaclProperty: string
     propertyObject: string
+    propertyObjectWrapper: string
     button: {
+      add: string
       remove: string
       primary: string
       secondary: string
@@ -45,4 +46,5 @@ export type WidgetProps = {
   dataPointer: GrapoiPointer
   settings: Settings
   hasErrorsClassName: string
+  cssClass: string
 }

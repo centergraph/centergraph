@@ -6,10 +6,6 @@
   }
 
   .group.horizontal {
-    .form-label {
-      flex: 100%;
-    }
-
     .property {
       flex: 10 10 30%;
     }
@@ -42,4 +38,8 @@
 .blank-node-editor.is-invalid:not(:hover) .form-level {
   border: 1px solid #dc3545;
   border-radius: var(--bs-border-radius);
+}
+
+.property-wrapper + .property-wrapper {
+  margin-top: 0.5rem;
 }
