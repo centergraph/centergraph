@@ -13,12 +13,11 @@ export default function Group({
   settings: Settings
 }) {
   const label = groupPointer.out([sh('name'), rdfs('label')]).values[0]
-  const className = lastPart(groupPointer.term)?.toLocaleLowerCase().replace(/ /g, '-')
-
+  const groupClassName = lastPart(groupPointer.term)?.toLocaleLowerCase().replace(/ /g, '-')
   const cssClasses = groupPointer.out(sr('class')).values.join(' ')
 
   return children ? (
-    <div className={`${settings.cssClasses.group}${className} ${cssClasses}`}>
+    <div className={`${settings.cssClasses.group}${groupClassName} ${cssClasses}`}>
       {label ? <h4 className="form-label">{label}</h4> : null}
       {children}
     </div>

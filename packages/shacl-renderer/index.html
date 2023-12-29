@@ -26,12 +26,17 @@
   <body class="p-5">
     <details name="demo" class="mb-3 container" open>
       <summary class="pb-3">Edit mode</summary>
-      <shacl-renderer shacl-shapes-url="./shapes/contact.shacl.ttl" subject="http://example.com/john-doe" data-url="./john-doe.ttl">
+      <shacl-renderer
+        shacl-shapes-url="./shapes/contact.shacl.ttl"
+        subject="http://example.com/john-doe"
+        data-url="./john-doe.ttl"
+        mode="edit"
+      >
         <button class="btn btn-primary" id="save">Save</button>
       </shacl-renderer>
     </details>
 
-    <details name="demo" class="mb-3 container">
+    <details name="demo" class="mb-3 container" open>
       <summary class="pb-3">View mode</summary>
       <shacl-renderer
         shacl-shapes-url="./shapes/contact.shacl.ttl"

@@ -17,7 +17,7 @@ export class ShaclRenderer extends HTMLElement {
 
   public settings: Settings = {
     fetch: fetch.bind(window),
-    mode: 'edit',
+    mode: 'view',
     targetClass: 'https://schema.org/Person',
     widgetMetas: {
       editors: [],
@@ -26,7 +26,7 @@ export class ShaclRenderer extends HTMLElement {
     widgetLoaders: new Map(),
     dataDataset: datasetFactory.dataset(),
     shaclDataset: datasetFactory.dataset(),
-    cssClasses: defaultCssClasses('edit'),
+    cssClasses: defaultCssClasses('view'),
   }
 
   public shaclShapes!: GrapoiPointer
@@ -36,7 +36,6 @@ export class ShaclRenderer extends HTMLElement {
     super()
     this.#root = ReactDOM.createRoot(this)
     this.initiateSettings().then(() => {
-      // Reflect the settings
       this.classList.add('shacl-renderer')
       this.classList.add(`mode-${this.settings.mode}`)
     })
