@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest'
-import { score } from './meta'
-import { schema } from '@/helpers/namespaces'
+import { score, createTerm } from './meta'
+import { schema, sh, xsd } from '@/helpers/namespaces'
 import { prepareScoreTest } from '@/helpers/prepareTestScore'
 
 test('it scores', async () => {
@@ -13,4 +13,19 @@ test('it does not score', async () => {
   const { dataPointer, shaclPointer } = await prepareScoreTest(schema('givenName'))
   const givenScore = score(dataPointer, shaclPointer)
   expect(givenScore).toBe(undefined)
+})
+
+test('it does not score', async () => {
+  const { dataPointer, shaclPointer } = await prepareScoreTest(schema('birthDate'))
+
+  shaclPointer.deleteOut(sh('datatype'))
+
+  const givenScore = score(dataPointer.node(), shaclPointer)
+  expect(givenScore).toBe(undefined)
+})
+
+test('it creates a date literal', async () => {
+  const term = createTerm()
+
+  expect(term.datatype.value).toBe(xsd('date').value)
 })
