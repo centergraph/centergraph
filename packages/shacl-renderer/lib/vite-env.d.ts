@@ -10,7 +10,7 @@ type GrapoiPointer = {
   trim(): GrapoiPointer
   distinct(): GrapoiPointer
   values: Array<string>
-  filter: (item: unknown) => boolean
+  filter: (item: unknown) => GrapoiPointer
   value: string
   isList: () => boolean
   deleteList: () => GrapoiPointer
