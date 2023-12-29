@@ -136,7 +136,7 @@ test('that it mails with no viewers', async () => {
   })
 })
 
-test('that it only continues if the module is available', async () => {
+test('that it continues if the module is available', async () => {
   const { shaclPointer, loaders } = await prepareTestState('view')
 
   const settings: Settings = {

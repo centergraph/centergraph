@@ -15,7 +15,7 @@ test('it does not score', async () => {
   expect(givenScore).toBe(-1)
 })
 
-test.only('it score for without', async () => {
+test('it score for without', async () => {
   const { dataPointer, shaclPointer } = await prepareScoreTest(schema('address'))
   const givenScore1 = score(dataPointer, shaclPointer)
   expect(givenScore1).toBe(1)
