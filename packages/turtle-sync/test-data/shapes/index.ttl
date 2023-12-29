@@ -1,9 +1,9 @@
 @prefix ldp: <http://www.w3.org/ns/ldp#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ffs: <https://centergraph.danielbeeke.nl/ffs#> .
+@prefix ts: <https://centergraph.danielbeeke.nl/turtle-sync#> .
 
 <> 
-  ffs:strategy ffs:DeleteInsert ;
+  ts:strategy ts:DeleteInsert ;
   
   a ldp:Container, ldp:BasicContainer ;
   rdfs:label "Shapes" .

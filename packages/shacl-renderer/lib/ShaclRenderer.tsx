@@ -77,8 +77,7 @@ export class ShaclRenderer extends HTMLElement {
       for (const quad of quads) this.settings.dataDataset.add(quad)
     }
 
-    const subject = this.getAttribute('subject')
-    if (!subject) throw new Error('Subject is required')
+    const subject = this.getAttribute('subject') ?? dataUrl
 
     this.dataPointer = grapoi({ dataset: this.settings.dataDataset, factory: DataFactory, term: DataFactory.namedNode(subject) })
   }

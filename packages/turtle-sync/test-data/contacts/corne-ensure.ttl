@@ -1,8 +1,8 @@
 @prefix schema: <https://schema.org/> .
-@prefix ffs: <https://centergraph.danielbeeke.nl/ffs#> .
+@prefix ts: <https://centergraph.danielbeeke.nl/turtle-sync#> .
 
 <>
-  ffs:strategy ffs:Ensure ;
+  ts:strategy ts:Ensure ;
   
   a schema:Person ;
   schema:givenName "Corne" ;

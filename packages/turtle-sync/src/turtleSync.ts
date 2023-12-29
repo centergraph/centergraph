@@ -1,6 +1,6 @@
 import { dataFactory, Parser, ShaclValidator, Store } from './deps.ts'
 import { lastPart } from './helpers/lastPart.ts'
-import { ffs } from './helpers/namespaces.ts'
+import { ts } from './helpers/namespaces.ts'
 import { shaclReportResultToString } from './helpers/shaclReportResultToString.ts'
 import { parseTurtleFile } from './parseTurtleFile.ts'
 import type { TurtleToStoreOptions } from './types.ts'
@@ -72,7 +72,7 @@ export default async function turtleSync(options: TurtleToStoreOptions) {
     }
 
     if (!errors.length) {
-      const [strategyTerm = 'DeleteInsert'] = metadata.getObjects(null, ffs('strategy'), null)
+      const [strategyTerm = 'DeleteInsert'] = metadata.getObjects(null, ts('strategy'), null)
       const strategy = await import(`./strategies/${lastPart(strategyTerm)}.ts`).then((module) => module.default)
       const iri = (options.baseIRI + file.relativePath).replace('/index', '')
       await strategy({ file, graphStore: store, metadata, iri, store: options.store, sparqlEndpoint: options.sparqlEndpoint, fetch })

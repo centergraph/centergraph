@@ -6,7 +6,7 @@ import defaultCssClasses from '@/defaultCssClasses'
 import { DataFactory } from 'n3'
 import { rdf, schema, sh } from '@/helpers/namespaces'
 import grapoi from 'grapoi'
-import { renderHook } from '@testing-library/react-hooks/dom'
+import { renderHook } from '@testing-library/react'
 import LiteralViewer from '@/components/widgets/viewers/LiteralViewer'
 import { prepareTestState } from '@/helpers/prepareTestState'
 

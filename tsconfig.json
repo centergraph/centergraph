@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "@centergraph/sdk": ["./packages/sdk/lib/CenterGraph"],
+      "@centergraph/shacl-renderer": ["./packages/shacl-renderer/lib/ShaclRenderer"]
+    }
+  }
+}

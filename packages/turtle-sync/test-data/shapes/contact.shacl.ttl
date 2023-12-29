@@ -2,10 +2,10 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ffs: <https://centergraph.danielbeeke.nl/ffs#> .
+@prefix ts: <https://centergraph.danielbeeke.nl/turtle-sync#> .
 
 <>
-  ffs:strategy ffs:DeleteInsert ;
+  ts:strategy ts:DeleteInsert ;
 
   a sh:NodeShape ;
   sh:targetClass schema:Person ;

@@ -1,5 +1,5 @@
 import { dataFactory, Parser, Quad, Store } from './deps.ts'
-import { ffs } from './helpers/namespaces.ts'
+import { ts } from './helpers/namespaces.ts'
 import type { FileEntry } from './types.ts'
 
 const parse = async (contents: string, baseIRI: string): Promise<{ quads: Quad[]; prefixes: unknown }> => {
@@ -39,8 +39,8 @@ export const parseTurtleFile = async (file: FileEntry, baseIRI: string) => {
     const specificBaseIRI = (baseIRI + file.relativePath).replace('/index', '')
     const { quads, prefixes: newPrefixes } = await parse(fileContents, specificBaseIRI)
     Object.assign(prefixes, newPrefixes)
-    metadata.addQuads(quads.filter((quad) => quad.predicate.value.startsWith(ffs().value)))
-    const filteredQuads = quads.filter((quad) => !quad.predicate.value.startsWith(ffs().value))
+    metadata.addQuads(quads.filter((quad) => quad.predicate.value.startsWith(ts().value)))
+    const filteredQuads = quads.filter((quad) => !quad.predicate.value.startsWith(ts().value))
     store = new Store(
       filteredQuads.map((quad: Quad) => dataFactory.quad(quad.subject, quad.predicate, quad.object, dataFactory.namedNode(specificBaseIRI)))
     )

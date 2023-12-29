@@ -12,7 +12,7 @@ import { turtle } from './routes/turtle.ts'
 const router = new Router()
 export const store = new Store()
 
-export const baseIRI = 'http://example.com'
+export const baseIRI = 'http://localhost:8080'
 
 export const { prefixes } = await turtleSync({
   store,
@@ -28,7 +28,7 @@ const { signal } = controller
 
 const app = new Application()
 
-app.use(turtle, notFound, error, oakCors(), saveCache, etag.factory())
+app.use(oakCors(), saveCache, turtle, notFound, error, etag.factory())
 app.use(router.routes(), router.allowedMethods())
 
 const listenPromise = app.listen({ port, signal })

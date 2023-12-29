@@ -16,5 +16,5 @@ export default (mode: 'edit' | 'view'): Settings['cssClasses'] => ({
   },
   errorMessage: 'alert alert-danger mt-1',
   hasErrors: 'is-invalid',
-  input: 'form-control',
+  input: mode === 'edit' ? 'form-control' : '',
 })

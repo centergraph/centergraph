@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest'
 import { useValidate, reportSignal } from './useValidate'
-import { renderHook } from '@testing-library/react-hooks/dom'
+import { renderHook } from '@testing-library/react'
 import datasetFactory from '@rdfjs/dataset'
 import { Settings } from '@/types'
 import defaultCssClasses from '@/defaultCssClasses'

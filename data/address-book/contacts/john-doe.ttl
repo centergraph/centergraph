@@ -1,8 +1,10 @@
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
 
 <>
   a schema:Person ;
+  sh:shapesGraph </shapes/contact.shacl> ;
   schema:givenName "John" ;
   schema:familyName "Doe" ;
   schema:name "John Doe" ;
