@@ -7,7 +7,7 @@ import defaultCssClasses from '@/defaultCssClasses'
 import { DataFactory } from 'n3'
 import { rdf, schema, sh } from '@/helpers/namespaces'
 import grapoi from 'grapoi'
-import { renderHook } from '@testing-library/react-hooks/server'
+import { renderHook } from '@testing-library/react-hooks/dom'
 import LiteralViewer from '@/components/widgets/viewers/LiteralViewer'
 
 test('that it gives the iri', async () => {
@@ -65,7 +65,6 @@ test('that it loads editors', async () => {
     .filter((pointer: GrapoiPointer) => pointer.hasOut(sh('path'), schema('birthDate')).value)
 
   const output = renderHook(() => useWidget(settings, dataPointer, specificShaclPointer, true))
-  output.hydrate()
   await output.waitForNextUpdate()
   expect(output.result.current.Widget.name).toBe('DatePickerEditor')
   expect(output.result.current.widgetIri).toBe('http://datashapes.org/dash#DatePickerEditor')
@@ -97,7 +96,6 @@ test('that it loads viewers', async () => {
     .filter((pointer: GrapoiPointer) => pointer.hasOut(sh('path'), schema('givenName')).value)
 
   const output = renderHook(() => useWidget(settings, dataPointer, specificShaclPointer, true))
-  output.hydrate()
   await output.waitForNextUpdate()
 
   expect(output.result.current.Widget.name).toBe('LiteralViewer')
@@ -130,7 +128,6 @@ test('that it mails with no viewers', async () => {
     .filter((pointer: GrapoiPointer) => pointer.hasOut(sh('path'), schema('givenName')).value)
 
   const output = renderHook(() => useWidget(settings, dataPointer, specificShaclPointer, true))
-  output.hydrate()
 
   expect(output.result.current).toStrictEqual({
     Widget: undefined,
@@ -167,7 +164,6 @@ test('that it only continues if the module is available', async () => {
   specificShaclPointer.addOut(sh('viewer'), sh('unknown'))
 
   const output = renderHook(() => useWidget(settings, dataPointer, specificShaclPointer, true))
-  output.hydrate()
 
   expect(output.result.current).toStrictEqual({
     Widget: undefined,
@@ -176,7 +172,7 @@ test('that it only continues if the module is available', async () => {
   })
 })
 
-test.only('that it uses cache if available', async () => {
+test('that it uses cache if available', async () => {
   const { shaclPointer, loaders } = await prepare('view')
 
   const settings: Settings = {
@@ -205,7 +201,6 @@ test.only('that it uses cache if available', async () => {
   widgetCache.set('http://www.w3.org/ns/shacl#unknown', LiteralViewer)
 
   const output = renderHook(() => useWidget(settings, dataPointer, specificShaclPointer, true))
-  output.hydrate()
 
   expect(output.result.current).toStrictEqual({
     Widget: LiteralViewer,

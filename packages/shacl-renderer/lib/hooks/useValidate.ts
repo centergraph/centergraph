@@ -6,7 +6,7 @@ import { DataFactory } from 'n3'
 import isEqual from 'lodash-es/isEqual'
 import { Term } from '@rdfjs/types'
 
-const reportSignal = signal<unknown>(null)
+export const reportSignal = signal<unknown>(null)
 let validate: undefined | (() => void) = undefined
 
 const getErrorMessages = (reportSignal: Signal<any>, path: unknown) => {
@@ -17,8 +17,8 @@ const getErrorMessages = (reportSignal: Signal<any>, path: unknown) => {
 export const useValidate = (settings: Settings) => {
   if (!validate) {
     const validator = new Validator(settings.shaclDataset, { factory: DataFactory })
-    validate = () => {
-      validator.validate({ dataset: settings.dataDataset }).then((report: unknown) => {
+    validate = async () => {
+      await validator.validate({ dataset: settings.dataDataset }).then((report: unknown) => {
         reportSignal.value = report
       })
     }

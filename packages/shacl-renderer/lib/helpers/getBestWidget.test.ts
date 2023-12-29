@@ -36,7 +36,7 @@ export const prepare = async (mode: 'edit' | 'view') => {
   const quads = await parser.parse(ContactShape)
   const shaclDataset = datasetFactory.dataset(quads)
   const shaclPointer = grapoi({ dataset: shaclDataset, factory: DataFactory })
-  return { dataPointer, shaclPointer, targetMetas, loaders }
+  return { dataPointer, shaclPointer, targetMetas, loaders, shaclDataset }
 }
 
 test('getting the best widget appropriate for a date field', async () => {
