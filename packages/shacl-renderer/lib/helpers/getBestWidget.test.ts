@@ -9,15 +9,21 @@ import { rdf, schema, sh } from './namespaces'
 import datasetFactory from '@rdfjs/dataset'
 import ContactShape from '@/../public/shapes/contact.shacl.ttl?raw'
 
-export const prepare = async () => {
+export const prepare = async (mode: 'edit' | 'view') => {
   const loaders: Map<string, () => Promise<{ default: ReactElement }>> = new Map()
   const targetMetas: Array<WidgetMeta> = []
 
   const editorPromises = registerWidgets({
     targetMetas,
     loaders,
-    metasGlob: import.meta.glob('@/components/widgets/editors/*/meta.ts'),
-    modulesGlob: import.meta.glob('@/components/widgets/editors/*/index.tsx'),
+    metasGlob:
+      mode === 'edit'
+        ? import.meta.glob('@/components/widgets/editors/*/meta.ts')
+        : import.meta.glob('@/components/widgets/viewers/*/meta.ts'),
+    modulesGlob:
+      mode === 'edit'
+        ? import.meta.glob('@/components/widgets/editors/*/index.tsx')
+        : import.meta.glob('@/components/widgets/viewers/*/index.tsx'),
   })
 
   await Promise.all(editorPromises)
@@ -34,7 +40,7 @@ export const prepare = async () => {
 }
 
 test('getting the best widget appropriate for a date field', async () => {
-  const { targetMetas, shaclPointer, dataPointer } = await prepare()
+  const { targetMetas, shaclPointer, dataPointer } = await prepare('edit')
   const specificShaclPointer = shaclPointer
     .hasOut(rdf('type'), sh('NodeShape'))
     .out(sh('property'))
@@ -45,7 +51,7 @@ test('getting the best widget appropriate for a date field', async () => {
 })
 
 test('getting the best widget appropriate for a text field', async () => {
-  const { targetMetas, shaclPointer, dataPointer } = await prepare()
+  const { targetMetas, shaclPointer, dataPointer } = await prepare('edit')
   const specificShaclPointer = shaclPointer
     .hasOut(rdf('type'), sh('NodeShape'))
     .out(sh('property'))

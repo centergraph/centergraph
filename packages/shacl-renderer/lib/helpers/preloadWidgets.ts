@@ -29,8 +29,7 @@ export const preloadWidgets = async (settings: Settings, shaclPointer: GrapoiPoi
   const promises = []
 
   for (const widgetIri of widgetIris) {
-    const widgetModule = settings.widgetLoaders.get(widgetIri)
-    if (!widgetModule) continue
+    const widgetModule = settings.widgetLoaders.get(widgetIri)!
     promises.push(widgetModule().then((module) => widgetCache.set(widgetIri, module.default)))
   }
 
