@@ -4,7 +4,7 @@ import { Term } from '@rdfjs/types'
 import { useWidget } from '@/hooks/useWidget'
 import { Icon } from '@iconify/react'
 import { lastPart } from '@/helpers/lastPart'
-import { snakeCase } from '@/helpers/snakeCase'
+import kebabCase from 'lodash-es/kebabCase'
 import { useValidate } from '@/hooks/useValidate'
 
 type PropertyObjectProps = {
@@ -29,7 +29,7 @@ export default function ShaclPropertyObject({ shaclPointer, dataPointer, setting
     validate()
   }
 
-  const widgetCssClassName = snakeCase(widgetMeta ? lastPart(widgetMeta.iri) ?? '' : '')
+  const widgetCssClassName = kebabCase(widgetMeta ? lastPart(widgetMeta.iri) ?? '' : '')
 
   return (
     <div

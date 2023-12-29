@@ -7,7 +7,7 @@ import { useWidget } from '@/hooks/useWidget'
 import { Term } from '@rdfjs/types'
 import { lastPart } from '@/helpers/lastPart'
 import { ensureTerm } from '@/helpers/ensureTerm'
-import { snakeCase } from '@/helpers/snakeCase'
+import kebabCase from 'lodash-es/kebabCase'
 import { Icon } from '@iconify/react'
 
 type ShaclPropertyProps = {
@@ -38,7 +38,7 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
   const shouldShow =
     (widgetMeta && (!!objectPointers.ptrs.length || settings.mode === 'edit')) || (settings.mode === 'view' && !!objectPointers.ptrs.length)
 
-  const propertyCssClassName = path[0]?.predicates?.[0] ? snakeCase(lastPart(path[0]?.predicates?.[0]) ?? '') : ''
+  const propertyCssClassName = path[0]?.predicates?.[0] ? kebabCase(lastPart(path[0]?.predicates?.[0]) ?? '') : ''
 
   return shouldShow ? (
     <div className={`${settings.cssClasses.shaclProperty} ${propertyCssClassName}`}>

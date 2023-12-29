@@ -9,7 +9,7 @@ import { rdf, schema, sh } from './namespaces'
 import datasetFactory from '@rdfjs/dataset'
 import ContactShape from '@/../public/shapes/contact.shacl.ttl?raw'
 
-const prepare = async () => {
+export const prepare = async () => {
   const loaders: Map<string, () => Promise<{ default: ReactElement }>> = new Map()
   const targetMetas: Array<WidgetMeta> = []
 
@@ -30,7 +30,7 @@ const prepare = async () => {
   const quads = await parser.parse(ContactShape)
   const shaclDataset = datasetFactory.dataset(quads)
   const shaclPointer = grapoi({ dataset: shaclDataset, factory: DataFactory })
-  return { dataPointer, shaclPointer, targetMetas }
+  return { dataPointer, shaclPointer, targetMetas, loaders }
 }
 
 test('getting the best widget appropriate for a date field', async () => {

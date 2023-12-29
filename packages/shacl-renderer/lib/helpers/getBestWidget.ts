@@ -13,7 +13,5 @@ export const getBestWidget = (widgets: Array<WidgetMeta>, dataPointer: GrapoiPoi
     .sort((a, b) => b.score - a.score)
     .filter(({ score }) => score > -1)
 
-  console.log(widgetMatches)
-
   return widgetMatches[0]?.iri.value
 }

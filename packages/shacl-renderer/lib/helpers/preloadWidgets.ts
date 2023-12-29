@@ -14,6 +14,7 @@ export const preloadWidgets = async (settings: Settings, shaclPointer: GrapoiPoi
   const emptyGrapoi = grapoi({ dataset: datasetFactory.dataset(), factory: DataFactory })
   const shWidget = settings.mode === 'edit' ? 'editor' : 'viewer'
   const widgets = settings.widgetMetas[settings.mode === 'edit' ? 'editors' : 'viewers']
+
   for (const property of properties) {
     if (property.hasOut(sh(shWidget)).value) continue
     const iri = getBestWidget(widgets, emptyGrapoi, property)
@@ -25,9 +26,13 @@ export const preloadWidgets = async (settings: Settings, shaclPointer: GrapoiPoi
 
   const widgetIris = new Set(shaclPointer.out(sh('property')).out(sh(shWidget)).values)
 
+  const promises = []
+
   for (const widgetIri of widgetIris) {
     const widgetModule = settings.widgetLoaders.get(widgetIri)
     if (!widgetModule) continue
-    widgetModule().then((module) => widgetCache.set(widgetIri, module.default))
+    promises.push(widgetModule().then((module) => widgetCache.set(widgetIri, module.default)))
   }
+
+  await Promise.all(promises)
 }
