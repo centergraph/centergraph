@@ -6,7 +6,7 @@ export default function DatePickerEditor({ term, setTerm, settings, hasErrorsCla
   return (
     <input
       type="date"
-      className={`${settings.cssClasses.input} ${hasErrorsClassName}`}
+      className={`${settings.cssClasses.input} ${hasErrorsClassName ?? ''}`.trim()}
       value={term.value}
       onChange={(event) => setTerm(DataFactory.literal(event.target.value, xsd('date')))}
     />

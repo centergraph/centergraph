@@ -5,7 +5,7 @@ import { DataFactory } from 'n3'
 import { createElement } from 'react'
 import { prepareComponentTest } from '@/helpers/prepareComponentTest'
 
-test('it renders a span', async () => {
+test('it renders a address div', async () => {
   const term = DataFactory.literal('Lorem')
   const { setTerm, dataPointer, shaclPointer, settings } = await prepareComponentTest()
 
@@ -19,5 +19,7 @@ test('it renders a span', async () => {
     })
   )
 
-  expect(output.baseElement.children[0].innerHTML).toBe('<span>Lorem</span>')
+  expect(output.baseElement.children[0].innerHTML).toBe(
+    '<div class="form-level flex-grow-1 p-3"><div class="group group-address address"></div></div>'
+  )
 })

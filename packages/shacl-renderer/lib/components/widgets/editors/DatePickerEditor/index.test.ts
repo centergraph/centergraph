@@ -4,9 +4,10 @@ import LiteralViewer from '.'
 import { DataFactory } from 'n3'
 import { createElement } from 'react'
 import { prepareComponentTest } from '@/helpers/prepareComponentTest'
+import { xsd } from '@/helpers/namespaces'
 
-test('it renders a span', async () => {
-  const term = DataFactory.literal('Lorem')
+test('it renders a date input', async () => {
+  const term = DataFactory.literal('1990-01-07', xsd('date'))
   const { setTerm, dataPointer, shaclPointer, settings } = await prepareComponentTest()
 
   const output = render(
@@ -19,5 +20,5 @@ test('it renders a span', async () => {
     })
   )
 
-  expect(output.baseElement.children[0].innerHTML).toBe('<span>Lorem</span>')
+  expect(output.baseElement.children[0].innerHTML).toBe('<input type="date" class="form-control" value="1990-01-07">')
 })
