@@ -4,14 +4,14 @@ import { renderHook } from '@testing-library/react-hooks/dom'
 import datasetFactory from '@rdfjs/dataset'
 import { Settings } from '@/types'
 import defaultCssClasses from '@/defaultCssClasses'
-import { prepare } from '@/helpers/getBestWidget.test'
 import { rdf, schema, sh } from '@/helpers/namespaces'
 import BrokenJohnDoe from '@/../public/broken-john-doe.ttl?raw'
 import { Parser } from 'n3'
 import parsePath from 'shacl-engine/lib/parsePath'
+import { prepareTestState } from '@/helpers/prepareTestState'
 
 test('that returns the signal', async () => {
-  const { shaclPointer, targetMetas, loaders, shaclDataset } = await prepare('edit')
+  const { shaclPointer, targetMetas, loaders, shaclDataset } = await prepareTestState('edit')
 
   const parser = new Parser()
   const quads = await parser.parse(BrokenJohnDoe)

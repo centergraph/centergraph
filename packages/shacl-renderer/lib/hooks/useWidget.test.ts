@@ -1,7 +1,6 @@
 import { expect, test } from 'vitest'
 import datasetFactory from '@rdfjs/dataset'
 import { useWidget, widgetCache } from './useWidget'
-import { prepare } from '@/helpers/getBestWidget.test'
 import { Settings } from '@/types'
 import defaultCssClasses from '@/defaultCssClasses'
 import { DataFactory } from 'n3'
@@ -9,9 +8,10 @@ import { rdf, schema, sh } from '@/helpers/namespaces'
 import grapoi from 'grapoi'
 import { renderHook } from '@testing-library/react-hooks/dom'
 import LiteralViewer from '@/components/widgets/viewers/LiteralViewer'
+import { prepareTestState } from '@/helpers/prepareTestState'
 
 test('that it gives the iri', async () => {
-  const { shaclPointer, targetMetas, loaders } = await prepare('edit')
+  const { shaclPointer, targetMetas, loaders } = await prepareTestState('edit')
 
   const settings: Settings = {
     fetch: fetch.bind(globalThis),
@@ -40,7 +40,7 @@ test('that it gives the iri', async () => {
 })
 
 test('that it loads editors', async () => {
-  const { shaclPointer, targetMetas, loaders } = await prepare('edit')
+  const { shaclPointer, targetMetas, loaders } = await prepareTestState('edit')
 
   const settings: Settings = {
     fetch: fetch.bind(globalThis),
@@ -71,7 +71,7 @@ test('that it loads editors', async () => {
 })
 
 test('that it loads viewers', async () => {
-  const { shaclPointer, targetMetas, loaders } = await prepare('view')
+  const { shaclPointer, targetMetas, loaders } = await prepareTestState('view')
 
   const settings: Settings = {
     fetch: fetch.bind(globalThis),
@@ -103,7 +103,7 @@ test('that it loads viewers', async () => {
 })
 
 test('that it mails with no viewers', async () => {
-  const { shaclPointer, loaders } = await prepare('view')
+  const { shaclPointer, loaders } = await prepareTestState('view')
 
   const settings: Settings = {
     fetch: fetch.bind(globalThis),
@@ -137,7 +137,7 @@ test('that it mails with no viewers', async () => {
 })
 
 test('that it only continues if the module is available', async () => {
-  const { shaclPointer, loaders } = await prepare('view')
+  const { shaclPointer, loaders } = await prepareTestState('view')
 
   const settings: Settings = {
     fetch: fetch.bind(globalThis),
@@ -173,7 +173,7 @@ test('that it only continues if the module is available', async () => {
 })
 
 test('that it uses cache if available', async () => {
-  const { shaclPointer, loaders } = await prepare('view')
+  const { shaclPointer, loaders } = await prepareTestState('view')
 
   const settings: Settings = {
     fetch: fetch.bind(globalThis),

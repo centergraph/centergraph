@@ -4,10 +4,10 @@ import { widgetCache } from '@/hooks/useWidget'
 import { preloadWidgets } from './preloadWidgets'
 import { Settings } from '@/types'
 import defaultCssClasses from '@/defaultCssClasses'
-import { prepare } from './getBestWidget.test'
+import { prepareTestState } from './prepareTestState'
 
 test('preloads editor widgets', async () => {
-  const { shaclPointer, targetMetas, loaders } = await prepare('edit')
+  const { shaclPointer, targetMetas, loaders } = await prepareTestState('edit')
 
   expect(widgetCache.size).toBe(0)
 
@@ -31,7 +31,7 @@ test('preloads editor widgets', async () => {
 })
 
 test('preloads viewer widgets', async () => {
-  const { shaclPointer, targetMetas, loaders } = await prepare('view')
+  const { shaclPointer, targetMetas, loaders } = await prepareTestState('view')
 
   expect(widgetCache.size).toBe(0)
 

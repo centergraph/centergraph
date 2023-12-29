@@ -45,6 +45,6 @@ export type WidgetProps = {
   shaclPointer: GrapoiPointer
   dataPointer: GrapoiPointer
   settings: Settings
-  hasErrorsClassName: string
-  cssClass: string
+  hasErrorsClassName?: string
+  cssClass?: string
 }
