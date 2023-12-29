@@ -1,14 +1,33 @@
-import { Store, Parser } from './deps.ts'
+import { dataFactory, Parser, Quad, Store } from './deps.ts'
 import { ffs } from './helpers/namespaces.ts'
 import type { FileEntry } from './types.ts'
+
+const parse = async (contents: string, baseIRI: string): Promise<{ quads: Quad[]; prefixes: unknown }> => {
+  const parser = new Parser({ baseIRI })
+
+  return new Promise((resolve, reject) => {
+    const quads: Quad[] = []
+    parser.parse(contents, (error, quad, prefixes) => {
+      if (error) reject(error)
+      if (quad) quads.push(quad)
+      if (prefixes) {
+        resolve({
+          quads,
+          prefixes,
+        })
+      }
+    })
+  })
+}
 
 /**
  * Contains rudimentary text parsing
  */
 export const parseTurtleFile = async (file: FileEntry, baseIRI: string) => {
-  const errors: Array<Error> = []
+  const errors: Error[] = []
   const metadata = new Store()
   let store: Store | undefined
+  const prefixes: { [key: string]: string } = {}
 
   const fileContents = file.contents
 
@@ -18,13 +37,15 @@ export const parseTurtleFile = async (file: FileEntry, baseIRI: string) => {
 
   try {
     const specificBaseIRI = (baseIRI + file.relativePath).replace('/index', '')
-    const parser = new Parser({ baseIRI: specificBaseIRI })
-    const quads = await parser.parse(fileContents)
+    const { quads, prefixes: newPrefixes } = await parse(fileContents, specificBaseIRI)
+    Object.assign(prefixes, newPrefixes)
     metadata.addQuads(quads.filter((quad) => quad.predicate.value.startsWith(ffs().value)))
     const filteredQuads = quads.filter((quad) => !quad.predicate.value.startsWith(ffs().value))
-    store = new Store(filteredQuads)
+    store = new Store(
+      filteredQuads.map((quad: Quad) => dataFactory.quad(quad.subject, quad.predicate, quad.object, dataFactory.namedNode(specificBaseIRI)))
+    )
   } catch (error) {
     errors.push(error)
   }
-  return { metadata, store, errors: errors.map((error) => error.message) }
+  return { metadata, store, prefixes, errors: errors.map((error) => error.message) }
 }

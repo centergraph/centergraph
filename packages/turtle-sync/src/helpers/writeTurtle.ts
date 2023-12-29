@@ -1,15 +1,17 @@
-import { Store, Writer, WriterOptions } from '../deps.ts'
+import { write } from 'npm:@jeswr/pretty-turtle'
 
-export const writeTurtle = (options: WriterOptions & { store: Store }) => {
-  return new Promise((resolve, reject) => {
-    try {
-      const writer = new Writer(options)
-      writer.addQuads([...options.store])
-      writer.end((_error, result) => {
-        resolve(result)
-      })
-    } catch (error) {
-      reject(error)
-    }
-  })
+import { dataFactory, Quad, Store } from '../deps.ts'
+
+export const writeTurtle = async ({
+  store,
+  prefixes = {},
+}: {
+  store: Store
+  lists?: Quad[]
+  prefixes?: { [key: string]: string }
+}): Promise<string> => {
+  return await write(
+    [...store].map((quad) => dataFactory.quad(quad.subject, quad.predicate, quad.object)),
+    { prefixes }
+  )
 }

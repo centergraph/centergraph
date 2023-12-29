@@ -1,5 +1,5 @@
 import { TestFolderAdapter } from './adapters/TestFolderAdapter_test.ts'
-import { Store, assertEquals } from './deps.ts'
+import { assertEquals, Store } from './deps.ts'
 import turtleSync from './turtleSync.ts'
 
 Deno.test('Test empty store', async () => {
@@ -33,7 +33,7 @@ Deno.test('Test parse error on SHACL shape', async () => {
 Deno.test('Test parse error on data', async () => {
   const store = new Store()
 
-  const errors = await turtleSync({
+  const { indexedErrors } = await turtleSync({
     store,
     baseIRI: 'http://example.com/',
     folderAdapter: new TestFolderAdapter({
@@ -42,13 +42,13 @@ Deno.test('Test parse error on data', async () => {
     }),
   })
 
-  assertEquals({ 'shapes/broken': ['Expected entity but got eof on line 1.'] }, errors)
+  assertEquals({ 'shapes/broken': ['Expected entity but got eof on line 1.'] }, indexedErrors)
 })
 
 Deno.test('Test shacl validation error store', async () => {
   const store = new Store()
 
-  const errors = await turtleSync({
+  const { indexedErrors } = await turtleSync({
     store,
     baseIRI: 'http://example.com/',
     folderAdapter: new TestFolderAdapter({
@@ -67,7 +67,7 @@ Deno.test('Test shacl validation error store', async () => {
     {
       'shapes/invalid': ['https://schema.org/familyName: Less than 1 values'],
     },
-    errors
+    indexedErrors
   )
 })
 const stubbedResponse1 = {
@@ -217,7 +217,9 @@ Deno.test('shapes fetching from endpoint', async () => {
         })
       },
     })
-  } catch (error) {}
+  } catch (error) {
+    /* empty */
+  }
 
   assertEquals(shaclStore.size, 60)
 })
@@ -240,7 +242,9 @@ Deno.test('shapes fetching from endpoint and added shapes', async () => {
         })
       },
     })
-  } catch (error) {}
+  } catch (error) {
+    /* empty */
+  }
 
   assertEquals(shaclStore.size, 60)
 })
@@ -258,7 +262,9 @@ Deno.test('unstubbed fetch', async () => {
         contents: '',
       }),
     })
-  } catch (error) {}
+  } catch (error) {
+    /* empty */
+  }
 
   assertEquals(shaclStore.size, 0)
 })

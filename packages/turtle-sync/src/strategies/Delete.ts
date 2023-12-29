@@ -1,5 +1,5 @@
-import { StrategyProps } from '../types.ts'
 import { DataFactory } from '../deps.ts'
+import { StrategyProps } from '../types.ts'
 
 export default async ({ iri, store, sparqlEndpoint, fetch }: StrategyProps) => {
   if (sparqlEndpoint) {

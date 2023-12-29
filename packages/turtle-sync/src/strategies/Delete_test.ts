@@ -1,6 +1,6 @@
-import Delete from './Delete.ts'
 import { assertEquals, dataFactory, Store } from '../deps.ts'
 import { ex, schema } from '../helpers/namespaces.ts'
+import Delete from './Delete.ts'
 
 Deno.test('Delete strategy', async () => {
   const store = new Store()

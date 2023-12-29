@@ -1,6 +1,6 @@
-import DeleteInsert from './DeleteInsert.ts'
 import { assertEquals, dataFactory, Store } from '../deps.ts'
 import { ex, schema } from '../helpers/namespaces.ts'
+import DeleteInsert from './DeleteInsert.ts'
 
 Deno.test('DeleteInsert strategy', async () => {
   const store = new Store()

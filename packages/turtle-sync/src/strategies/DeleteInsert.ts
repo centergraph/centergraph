@@ -1,8 +1,8 @@
+import { DataFactory } from '../deps.ts'
 import { writeTurtle } from '../helpers/writeTurtle.ts'
 import { StrategyProps } from '../types.ts'
-import { DataFactory } from '../deps.ts'
 
-export default async ({ graphStore, iri, store, sparqlEndpoint }: StrategyProps) => {
+export default async ({ graphStore, iri, store, sparqlEndpoint, fetch }: StrategyProps) => {
   if (sparqlEndpoint) {
     const turtle = await writeTurtle({ store: graphStore })
 

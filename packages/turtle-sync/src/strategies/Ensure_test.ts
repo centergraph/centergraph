@@ -1,8 +1,8 @@
-import Ensure from './Ensure.ts'
 import { assertEquals, dataFactory, Store } from '../deps.ts'
 import { ex, schema } from '../helpers/namespaces.ts'
+import Ensure from './Ensure.ts'
 
-Deno.test('Ensure strategy with only a store', async () => {
+Deno.test('Ensure strategy with a store', async () => {
   const store = new Store()
   const quad = dataFactory.quad(ex('john'), schema('name'), dataFactory.literal('John'), ex('john'))
 
@@ -24,7 +24,7 @@ Deno.test('Ensure strategy with only a store', async () => {
   assertEquals(store.size, 1)
 })
 
-Deno.test('Ensure strategy with only a SPARQL endpoint', async () => {
+Deno.test('Ensure strategy with a SPARQL endpoint', async () => {
   const store = new Store()
   const quad = dataFactory.quad(ex('john'), schema('name'), dataFactory.literal('John'), ex('john'))
   store.addQuad(quad)
@@ -65,7 +65,7 @@ Deno.test('Ensure strategy with only a SPARQL endpoint', async () => {
   })
 })
 
-Deno.test('Ensure strategy with only a SPARQL endpoint with data existing', async () => {
+Deno.test('Ensure strategy with a SPARQL endpoint with data existing', async () => {
   const store = new Store()
   const quad = dataFactory.quad(ex('john'), schema('name'), dataFactory.literal('John'), ex('john'))
   store.addQuad(quad)

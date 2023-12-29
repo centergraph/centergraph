@@ -1,12 +1,13 @@
-import { Store, ShaclValidator, dataFactory, Parser } from './deps.ts'
+import { dataFactory, Parser, ShaclValidator, Store } from './deps.ts'
 import { lastPart } from './helpers/lastPart.ts'
 import { ffs } from './helpers/namespaces.ts'
-import { parseTurtleFile } from './parseTurtleFile.ts'
 import { shaclReportResultToString } from './helpers/shaclReportResultToString.ts'
+import { parseTurtleFile } from './parseTurtleFile.ts'
 import type { TurtleToStoreOptions } from './types.ts'
 
 export default async function turtleSync(options: TurtleToStoreOptions) {
   const shaclStore = options.shaclStore ?? new Store()
+  const prefixes: { [key: string]: string } = {}
 
   if (options.sparqlEndpoint) {
     const fetch = options.fetch ?? globalThis.fetch
@@ -52,10 +53,12 @@ export default async function turtleSync(options: TurtleToStoreOptions) {
   }
 
   const validator = new ShaclValidator(shaclStore, { factory: dataFactory })
-  const indexedErrors: Record<string, Array<string>> = {}
+  const indexedErrors: Record<string, string[]> = {}
 
   for await (const file of options.folderAdapter.iterator('.ttl')) {
-    const { store, metadata, errors } = await parseTurtleFile(file, options.baseIRI)
+    const { store, metadata, errors, prefixes: newPrefixes } = await parseTurtleFile(file, options.baseIRI)
+    Object.assign(prefixes, newPrefixes)
+
     if (errors.length) {
       indexedErrors[file.relativePath] = errors
       continue
@@ -76,5 +79,8 @@ export default async function turtleSync(options: TurtleToStoreOptions) {
     }
   }
 
-  return indexedErrors
+  return {
+    indexedErrors,
+    prefixes,
+  }
 }

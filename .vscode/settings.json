@@ -1,6 +1,6 @@
 {
   "cSpell.words": ["Beeke", "centergraph", "Grapoi", "iconify", "Metas", "ptrs", "rdfjs", "rdfs", "shacl", "sparql"],
-  "deno.enablePaths": ["./packages/FlatFileStore", "./packages/turtle-sync"],
+  "deno.enablePaths": ["./packages/base", "./packages/turtle-sync"],
   "deno.lint": false,
   "deno.unstable": false,
   "editor.codeActionsOnSave": {
