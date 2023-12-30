@@ -6,6 +6,16 @@ export type QueryOptions = {
   base: string
   store: DatasetCore
   mode: 'local' | 'remote'
+  fetch?: (typeof globalThis)['fetch']
+}
+
+const flatten = (obj: Term) => {
+  const result = Object.create(obj)
+  for (const key in result) {
+    // eslint-disable-next-line no-self-assign
+    result[key] = result[key]
+  }
+  return result
 }
 
 export class QueryBuilder {
@@ -13,9 +23,11 @@ export class QueryBuilder {
   #filters: { predicate: Term; object?: Term }[] = []
   #sorters: { predicate: Term; order: 'ascending' | 'descending' }[] = []
   #paginate: { limit?: number; offset?: number } = {}
+  #fetch: (typeof globalThis)['fetch']
 
   constructor(options: QueryOptions) {
     this.#options = options
+    this.#fetch = options.fetch ?? globalThis.fetch
   }
 
   filter(predicate: Term, object?: Term) {
@@ -34,11 +46,11 @@ export class QueryBuilder {
   }
 
   then(resolve: (results: NamedNode[]) => void) {
-    if (this.#options.mode === 'local') return this.thenLocal(resolve)
-    return this.thenRemote(resolve)
+    if (this.#options.mode === 'local') return this.thenStoreLocal(resolve)
+    return this.thenApiRemote(resolve)
   }
 
-  thenLocal(resolve: (results: NamedNode[]) => void) {
+  thenStoreLocal(resolve: (results: NamedNode[]) => void) {
     let dataset = this.#options.store
 
     for (const { predicate, object } of this.#filters) {
@@ -60,17 +72,20 @@ export class QueryBuilder {
     resolve([...graphs.values()])
   }
 
-  async thenRemote(resolve: (results: NamedNode[]) => void) {
+  async thenApiRemote(resolve: (results: NamedNode[]) => void) {
     const query = new URLSearchParams()
     query.append(
       'query',
       JSON.stringify({
-        filters: this.#filters.map((filter) => ({ predicate: filter.predicate.value, object: filter.object?.value })),
-        sorters: this.#sorters.map((sorter) => ({ predicate: sorter.predicate.value, order: sorter.order })),
+        filters: this.#filters.map((filter) => ({
+          predicate: flatten(filter.predicate),
+          object: filter.object ? flatten(filter.object) : undefined,
+        })),
+        sorters: this.#sorters.map((sorter) => ({ predicate: flatten(sorter.predicate), order: sorter.order })),
         paginate: this.#paginate,
       })
     )
-    const response = await fetch(`${this.#options.base}/api/query?${query.toString()}`).then((response) => response.json())
+    const response = await this.#fetch(`${this.#options.base}/api/query?${query.toString()}`).then((response) => response.json())
     const graphs = response.map((graph: string) => DataFactory.namedNode(graph))
     resolve(graphs)
   }

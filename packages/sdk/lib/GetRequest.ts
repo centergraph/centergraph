@@ -3,16 +3,18 @@ import View from './components/View'
 
 export class GetRequest {
   #url: string
+  #fetch: (typeof globalThis)['fetch']
 
-  constructor(url: string) {
+  constructor(url: string, fetch?: (typeof globalThis)['fetch']) {
     this.#url = url
+    this.#fetch = fetch ?? globalThis.fetch
   }
 
   then<TResult = string, TRejection = never>(
     onfulfilled?: (value: string) => TResult | PromiseLike<TResult>,
     onrejected?: (reason: unknown) => TRejection | PromiseLike<TRejection>
   ): PromiseLike<TResult | TRejection> {
-    return fetch(this.#url)
+    return this.#fetch(this.#url)
       .then((response) => response.text())
       .then(onfulfilled, onrejected)
   }
@@ -25,6 +27,7 @@ export class GetRequest {
       url: this.#url,
       promise,
       key: this.#url,
+      fetch: this.#fetch,
     })
   }
 }

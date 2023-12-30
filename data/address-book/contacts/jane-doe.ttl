@@ -1,0 +1,19 @@
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+<>
+  a schema:Person ;
+  sh:shapesGraph </shapes/contact.shacl> ;
+  schema:givenName "Jane" ;
+  schema:familyName "Doe" ;
+  schema:name "Jane Doe" ;
+  schema:birthDate "1950-04-06"^^xsd:date ;
+
+  schema:address [
+    schema:streetAddress "Wagramer Strasse 5" ;
+    schema:postalCode "1220" ;
+    schema:addressRegion "Wien" ;
+    schema:addressLocality "Wien" ;
+    schema:addressCountry "Austria" ;
+  ] .

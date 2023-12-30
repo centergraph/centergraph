@@ -8,9 +8,10 @@ type ViewProps = {
   viewMode: string
   url: string
   promise: Promise<string>
+  fetch: (typeof globalThis)['fetch']
 }
 
-export default function View({ viewMode, url, promise }: ViewProps) {
+export default function View({ url, promise, fetch }: ViewProps) {
   const [shaclUrl, setShaclUrl] = useState('')
 
   useEffect(() => {
@@ -24,5 +25,16 @@ export default function View({ viewMode, url, promise }: ViewProps) {
     })
   })
 
-  return shaclUrl ? <shacl-renderer shacl-shapes-url={shaclUrl} data-url={url} mode="view"></shacl-renderer> : null
+  return shaclUrl ? (
+    <shacl-renderer
+      ref={(element: HTMLElement) => {
+        element.addEventListener('settings', (event: CustomEvent) => {
+          event.detail.settings.fetch = fetch
+        })
+      }}
+      shacl-shapes-url={shaclUrl}
+      data-url={url}
+      mode="view"
+    ></shacl-renderer>
+  ) : null
 }

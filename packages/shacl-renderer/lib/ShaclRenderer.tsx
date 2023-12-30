@@ -35,10 +35,6 @@ export class ShaclRenderer extends HTMLElement {
   constructor() {
     super()
     this.#root = ReactDOM.createRoot(this)
-    this.initiateSettings().then(() => {
-      this.classList.add('shacl-renderer')
-      this.classList.add(`mode-${this.settings.mode}`)
-    })
   }
 
   async initiateSettings() {
@@ -94,6 +90,9 @@ export class ShaclRenderer extends HTMLElement {
   }
 
   async connectedCallback() {
+    await this.initiateSettings()
+    this.classList.add('shacl-renderer')
+    this.classList.add(`mode-${this.settings.mode}`)
     await Promise.all([this.loadShaclShapes(), this.loadData()])
 
     let shaclRoot = this.shaclShapes.hasOut(rdf('type'), sh('NodeShape'))
