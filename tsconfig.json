@@ -6,6 +6,7 @@
     "baseUrl": "./",
     "paths": {
       "@centergraph/sdk": ["./packages/sdk/lib/CenterGraph"],
+      "@centergraph/shared/": ["./packages/shared/lib/"],
       "@centergraph/shacl-renderer": ["./packages/shacl-renderer/lib/ShaclRenderer"]
     }
   }

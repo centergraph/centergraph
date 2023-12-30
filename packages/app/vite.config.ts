@@ -5,6 +5,9 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    target: 'es2022',
+  },
   plugins: [
     react(),
     tsconfigPaths(),
@@ -16,7 +19,7 @@ export default defineConfig({
       workbox: {
         runtimeCaching: [
           {
-            urlPattern: /^http:\/\/localhost:8080\/.*/i,
+            urlPattern: /^http:\/\/localhost:8080\/[^api/].*/i,
             handler: 'CacheFirst',
             options: {
               cacheName: 'api',

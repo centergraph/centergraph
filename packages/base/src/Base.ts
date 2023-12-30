@@ -7,9 +7,11 @@ import turtleSync from '../../turtle-sync/src/turtleSync.ts'
 import { saveCache } from './middleware/cache.ts'
 import { error } from './middleware/error.ts'
 import { notFound } from './middleware/notFound.ts'
+import { query } from './routes/query.ts'
 import { turtle } from './routes/turtle.ts'
 
 const router = new Router()
+router.get('/api/query', query)
 export const store = new Store()
 
 export const baseIRI = 'http://localhost:8080'

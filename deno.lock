@@ -104,6 +104,8 @@
     }
   },
   "redirects": {
+    "https://esm.sh/@rdfjs/dataset": "https://esm.sh/@rdfjs/dataset@2.0.1",
+    "https://esm.sh/@rdfjs/types": "https://esm.sh/@rdfjs/types@1.1.0",
     "https://esm.sh/v135/@types/n3@^1/index.d.ts": "https://esm.sh/v135/@types/n3@1.16.4/index.d.ts",
     "https://esm.sh/v135/@types/rdfjs__data-model@~2.0/index.d.ts": "https://esm.sh/v135/@types/rdfjs__data-model@2.0.7/index.d.ts",
     "https://esm.sh/v135/@types/rdfjs__dataset@~2.0/DatasetCore~.d.ts": "https://esm.sh/v135/@types/rdfjs__dataset@2.0.7/DatasetCore~.d.ts",
@@ -323,6 +325,7 @@
     "https://deno.land/x/progressbar@v0.2.0/styles.ts": "2ba8cfb41688c0ca497ed740bda342f55e629043397eef43180665aa34ef2f01",
     "https://deno.land/x/progressbar@v0.2.0/widgets.ts": "73aa6d06b6a89a4dfd8d15e97ca634bc1e82c7993cd95ba56459f900d2e02838",
     "https://esm.sh/@rdfjs/data-model@2.0.1": "0850ccc84794be56815f35870dd55a2e4ececd59bea7586c328d494924da7605",
+    "https://esm.sh/@rdfjs/dataset@2.0.1": "92d4e87402d38291f456a8572284d06819cd10f884e9af6449a156ca8a513521",
     "https://esm.sh/@rdfjs/dataset@2.0.1/DatasetCore.js": "96ba19995e8bf4a52b8dd9479439687758b8e93cf75401055941a3f317352755",
     "https://esm.sh/@rdfjs/namespace@2.0.0": "ba786a8a11f62b6853bf0d5e5c3e5a8edd6fe5f3d86cacbadeb5e039990dc90e",
     "https://esm.sh/@rdfjs/types@1.1.0": "fabf6997a3adf11e45d11e3c4d58d0634ab98f9d72f3116f3694123818ccd457",
@@ -331,6 +334,7 @@
     "https://esm.sh/v135/@rdfjs/data-model@1.3.4/denonext/data-model.mjs": "2a0ca27e99a1a660ae609be83e131dd6c3e2f7f0f0498bbdb3a27a949226e9ab",
     "https://esm.sh/v135/@rdfjs/data-model@2.0.1/denonext/data-model.mjs": "be6f3537a52404e86e32417f511678fbc597e9705268adaa5dbcbe8aee5ac0f3",
     "https://esm.sh/v135/@rdfjs/dataset@2.0.1/denonext/DatasetCore.js": "b5a2d7eabd75311d1aab4b7f672e06dfd8a18867267cdb2b0f0ef3c57518e260",
+    "https://esm.sh/v135/@rdfjs/dataset@2.0.1/denonext/dataset.mjs": "76cbfcc37ec66dce5bc3b73680335a4cfcb09e0782e3cd7426c9fcaba25d8231",
     "https://esm.sh/v135/@rdfjs/namespace@1.1.0/denonext/namespace.mjs": "25e97df6239d3f0cd91fbf18b343545bfae92af494628be73af530d101440a8f",
     "https://esm.sh/v135/@rdfjs/namespace@2.0.0/denonext/namespace.mjs": "ec4fc61c2f57279280c3802102d438978fe2e8d92f51c60091be55dc49980c59",
     "https://esm.sh/v135/@rdfjs/term-map@2.0.0/denonext/term-map.mjs": "a3d43400932660cd5c7acb3db3d7c6bf81f7638c3563a9f7e7f6a79312f6be88",
