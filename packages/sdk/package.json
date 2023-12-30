@@ -5,6 +5,7 @@
   "type": "module",
   "main": "./dist/center-graph.umd.cjs",
   "module": "./dist/center-graph.js",
+  "types": "./dist/center-graph.d.ts",
   "dependencies": {
     "@centergraph/shacl-renderer": "*",
     "@centergraph/shared": "*"

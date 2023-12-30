@@ -5,6 +5,7 @@
   "type": "module",
   "main": "./dist/shacl-renderer.umd.cjs",
   "module": "./dist/shacl-renderer.js",
+  "types": "./dist/shacl-renderer.d.ts",
   "scripts": {
     "dev": "vite --port=8002",
     "build": "tsc && vite build",
@@ -12,5 +13,6 @@
     "coverage": "vitest run --coverage",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
-  }
+  },
+  "dependencies": {}
 }

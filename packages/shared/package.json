@@ -6,11 +6,13 @@
   "exports": {
     "./namespaces": {
       "import": "./dist/namespaces.js",
-      "require": "./dist/namespaces.cjs"
+      "require": "./dist/namespaces.cjs",
+      "types": "./dist/namespaces.d.ts"
     },
     "./QueryBuilder": {
       "import": "./dist/QueryBuilder.js",
-      "require": "./dist/QueryBuilder.cjs"
+      "require": "./dist/QueryBuilder.cjs",
+      "types": "./dist/QueryBuilder.d.ts"
     }
   },
   "scripts": {
