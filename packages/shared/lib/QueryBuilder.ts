@@ -46,11 +46,11 @@ export class QueryBuilder {
   }
 
   then(resolve: (results: NamedNode[]) => void) {
-    if (this.#options.mode === 'local') return this.thenStoreLocal(resolve)
-    return this.thenApiRemote(resolve)
+    if (this.#options.mode === 'local') return this.#thenStoreLocal(resolve)
+    return this.#thenApiRemote(resolve)
   }
 
-  thenStoreLocal(resolve: (results: NamedNode[]) => void) {
+  #thenStoreLocal(resolve: (results: NamedNode[]) => void) {
     let dataset = this.#options.store
 
     for (const { predicate, object } of this.#filters) {
@@ -72,7 +72,7 @@ export class QueryBuilder {
     resolve([...graphs.values()])
   }
 
-  async thenApiRemote(resolve: (results: NamedNode[]) => void) {
+  async #thenApiRemote(resolve: (results: NamedNode[]) => void) {
     const query = new URLSearchParams()
     query.append(
       'query',
@@ -89,4 +89,8 @@ export class QueryBuilder {
     const graphs = response.map((graph: string) => DataFactory.namedNode(graph))
     resolve(graphs)
   }
+
+  // TODO Implement a to SPARQL method.
+  // This is needed when CenterGraph is loaded with Apache Jena for example.
+  // async #thenSparqlLocal(resolve: (results: NamedNode[]) => void) {}
 }

@@ -3,6 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "exports": {
+    "./namespaces": {
+      "import": "./dist/namespaces.js",
+      "require": "./dist/namespaces.cjs"
+    },
+    "./QueryBuilder": {
+      "import": "./dist/QueryBuilder.js",
+      "require": "./dist/QueryBuilder.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

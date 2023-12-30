@@ -14,14 +14,14 @@ app.get('/api/query', query)
 app.use(turtle)
 
 export const store = new Store()
-export const baseIRI = 'http://localhost:8080'
+export const baseIRI = 'http://localhost:8000'
 export const { prefixes } = await turtleSync({
   store,
   baseIRI: baseIRI + '/',
   folderAdapter: new DenoFolderAdapter('../../data/address-book'),
 })
 
-const port = 8080
+const port = 8000
 app.listen(port, () => {
   console.log(`CenterGraph Base is running on http://localhost:${port}`)
 })

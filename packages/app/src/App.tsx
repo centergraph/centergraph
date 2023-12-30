@@ -1,20 +1,14 @@
-import { rdf, schema } from 'packages/sdk/lib/namespaces'
-import { centerGraph } from './centerGraph'
-import { useEffect, useState } from 'react'
-import { NamedNode } from '@rdfjs/types'
+import { rdf, schema } from '@centergraph/shared/namespaces'
+import { api } from './centerGraph'
 
 export default function App() {
-  const [urls, setUrls] = useState<NamedNode[]>([])
-
-  useEffect(() => {
-    centerGraph.query.filter(rdf('type'), schema('Person')).filter(schema('address')).then(setUrls)
-  }, [])
+  const urls = api.useDocumentUrls((query) => query.filter(rdf('type'), schema('Person')))
 
   return (
     <>
       <div>
         <h1>Hello</h1>
-        {urls.map((url) => centerGraph.get(url).as('card'))}
+        {urls.map((url) => api.get(url).viewAs('card'))}
       </div>
     </>
   )

@@ -75,6 +75,8 @@ export class ShaclRenderer extends HTMLElement {
 
     const subject = this.getAttribute('subject') ?? dataUrl
 
+    if (!subject) throw new Error('A subject is required, either by the data-url or by the subject attribute')
+
     this.dataPointer = grapoi({ dataset: this.settings.dataDataset, factory: DataFactory, term: DataFactory.namedNode(subject) })
   }
 

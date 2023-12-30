@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
-import tsconfigPaths from 'vite-tsconfig-paths'
 import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
@@ -10,7 +9,7 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    tsconfigPaths(),
+    // TODO Write a CenterGraph Vite plugin so wee can hide this complexity.
     VitePWA({
       registerType: 'autoUpdate',
       devOptions: {
@@ -19,8 +18,8 @@ export default defineConfig({
       workbox: {
         runtimeCaching: [
           {
-            urlPattern: /^http:\/\/localhost:8080\/[^api/].*/i,
-            handler: 'CacheFirst',
+            urlPattern: /^http:\/\/localhost:8000\/[^api/].*/i,
+            handler: 'NetworkFirst',
             options: {
               cacheName: 'api',
               expiration: {

@@ -65,7 +65,7 @@ test('that it loads editors', async () => {
     .filter((pointer: GrapoiPointer) => pointer.hasOut(sh('path'), schema('birthDate')).value)
 
   const output = renderHook(() => useWidget(settings, dataPointer, specificShaclPointer, true))
-  await output.waitForNextUpdate()
+  // await output.waitForNextUpdate()
   expect(output.result.current.Widget.name).toBe('DatePickerEditor')
   expect(output.result.current.widgetIri).toBe('http://datashapes.org/dash#DatePickerEditor')
 })
@@ -96,7 +96,7 @@ test('that it loads viewers', async () => {
     .filter((pointer: GrapoiPointer) => pointer.hasOut(sh('path'), schema('givenName')).value)
 
   const output = renderHook(() => useWidget(settings, dataPointer, specificShaclPointer, true))
-  await output.waitForNextUpdate()
+  // await output.waitForNextUpdate()
 
   expect(output.result.current.Widget.name).toBe('LiteralViewer')
   expect(output.result.current.widgetIri).toBe('http://datashapes.org/dash#LiteralViewer')

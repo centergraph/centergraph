@@ -8,6 +8,5 @@
     "@rdfjs/dataset": "https://esm.sh/@rdfjs/dataset",
     "@rdfjs/types": "https://esm.sh/@rdfjs/types@1.1.0",
     "@shared/": "./packages/shared/lib/"
-  },
-  "nodeModulesDir": false
+  }
 }

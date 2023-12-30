@@ -1,14 +1,13 @@
-import { QueryBuilder } from '../../shared/lib/QueryBuilder'
+import { QueryBuilder } from '@centergraph/shared/QueryBuilder'
 import datasetFactory from '@rdfjs/dataset'
 import { NamedNode } from '@rdfjs/types'
 import { GetRequest } from './GetRequest'
 import { populateStore } from './populateStore'
 
 import { D2LFetch } from 'd2l-fetch'
-// Only does inflight requests
 import { fetchDedupe } from 'd2l-fetch-dedupe'
-// Caches responses
 import { fetchSimpleCache } from 'd2l-fetch-simple-cache'
+import { useEffect, useState } from 'react'
 
 export type CenterGraphOptions = {
   base: string
@@ -37,12 +36,28 @@ export class CenterGraph {
     return new GetRequest(url, (input, init) => this.#d2LFetch.fetch(input, init))
   }
 
-  get query() {
+  get documentUrls() {
     return new QueryBuilder({
       base: this.#options.base,
-      mode: 'remote',
+      mode: navigator.onLine ? 'remote' : 'local',
       store: this.#store,
       fetch: (input, init) => this.#d2LFetch.fetch(input, init),
     })
+  }
+
+  /**
+   * A React hook which makes it easy to first get an empty array and then re-render when NamedNodes are available
+   */
+  get useDocumentUrls() {
+    return (queryCallback: (query: QueryBuilder) => QueryBuilder): NamedNode[] => {
+      const [urls, setUrls] = useState<NamedNode[]>([])
+
+      useEffect(() => {
+        queryCallback(this.documentUrls).then(setUrls)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+      }, [])
+
+      return urls
+    }
   }
 }

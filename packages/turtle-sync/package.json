@@ -1,7 +1,7 @@
 {
   "name": "@centergraph/turtle-sync",
   "scripts": {
-    "dev": "deno test --allow-read --allow-net --watch",
+    "dev-test": "deno test --allow-read --allow-net --watch",
     "test": "deno test --allow-read --allow-net",
     "coverage": "rm -rf .code-coverage && deno test --allow-read --allow-net --coverage=.code-coverage && deno coverage .code-coverage",
     "coverage-html": "rm -rf .code-coverage && deno test --allow-read --allow-net --coverage=.code-coverage && deno coverage .code-coverage --html"

@@ -3,8 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "./dist/shacl-renderer.umd.cjs",
+  "module": "./dist/shacl-renderer.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port=8002",
     "build": "tsc && vite build",
     "test": "vitest",
     "coverage": "vitest run --coverage",

@@ -1,7 +1,8 @@
 import { CenterGraph } from '@centergraph/sdk'
+import '@centergraph/sdk/dist/style.css'
 
-export const centerGraph = new CenterGraph({
-  base: 'http://localhost:8080',
+export const api = new CenterGraph({
+  base: 'http://localhost:8000',
 })
 
-await centerGraph.populateStore()
+await api.populateStore()
