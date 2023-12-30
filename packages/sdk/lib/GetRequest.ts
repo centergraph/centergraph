@@ -34,6 +34,10 @@ export class GetRequest {
     })
   }
 
+  asJSON () {
+    
+  }
+
   viewAs(viewMode: string) {
     return createElement(View, {
       viewMode,
