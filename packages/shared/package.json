@@ -4,6 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "exports": {
+    "./shaclToType": {
+      "import": "./dist/shaclToType.js",
+      "require": "./dist/shaclToType.cjs",
+      "types": "./dist/shaclToType.d.ts"
+    },
+    "./quadsToShapeObject": {
+      "import": "./dist/quadsToShapeObject.js",
+      "require": "./dist/quadsToShapeObject.cjs",
+      "types": "./dist/quadsToShapeObject.d.ts"
+    },
     "./namespaces": {
       "import": "./dist/namespaces.js",
       "require": "./dist/namespaces.cjs",

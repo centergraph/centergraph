@@ -22,6 +22,8 @@ export default defineConfig({
         resolve(__dirname, 'lib/namespaces.ts'),
         resolve(__dirname, 'lib/QueryBuilder.ts'),
         resolve(__dirname, 'lib/jsonLdNester.ts'),
+        resolve(__dirname, 'lib/quadsToShapeObject.ts'),
+        resolve(__dirname, 'lib/shaclToType.ts'),
       ],
     },
     rollupOptions: {

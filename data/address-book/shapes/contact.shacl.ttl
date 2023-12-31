@@ -3,11 +3,12 @@
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ts: <https://centergraph.danielbeeke.nl/turtle-sync#> .
+@prefix sr: <https://centergraph.danielbeeke.nl/shacl-renderer#> .
 
 <>
   ts:strategy ts:DeleteInsert ;
 
-  a sh:NodeShape ;
+  a sh:NodeShape, sr:MainShape ;
   sh:targetClass schema:Person ;
 
   sh:property [

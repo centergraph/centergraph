@@ -1,5 +1,5 @@
-import { FolderAdapter, FileEntry } from '../types.ts'
 import { walk } from '../deps.ts'
+import { FileEntry, FolderAdapter } from '../types.ts'
 
 export class DenoFolderAdapter implements FolderAdapter {
   #folder: string
