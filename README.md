@@ -8,3 +8,4 @@ It tries to abstract away RDf from the frontend developer. It does not hide it, 
 
 - Allow a React import of the SHACL renderer that does not use a customElement.
 - Create an easy way of showing a loader for populating the offline dataset.
+- Reflect the data types of js things in the typescript type such as Date.

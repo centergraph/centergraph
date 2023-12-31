@@ -39,7 +39,7 @@
   sh:property [
     sh:name "Address"@en ;
     sh:path schema:address ;
-    sh:maxCount 1 ;
+    sh:maxCount 3 ;
     sh:node <addressShape> ;
     sh:nodeKind sh:BlankNode ;
   ];

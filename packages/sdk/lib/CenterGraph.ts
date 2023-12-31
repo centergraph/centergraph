@@ -1,7 +1,7 @@
 import { QueryBuilder } from '@centergraph/shared/QueryBuilder'
 import datasetFactory from '@rdfjs/dataset'
 import { NamedNode } from '@rdfjs/types'
-import { GetRequest } from './GetRequest'
+import { Loader } from './Loader'
 import { populateStore } from './populateStore'
 
 import { D2LFetch } from 'd2l-fetch'
@@ -30,10 +30,10 @@ export class CenterGraph {
     return populateStore(this.#store)
   }
 
-  get(path: string | NamedNode) {
+  load<T>(path: string | NamedNode) {
     if (typeof path !== 'string') path = path.value
     const url = path.includes('http://') || path.includes('https://') ? path : this.#options.base + path
-    return new GetRequest(url, this.#options.base, (input, init) => this.#d2LFetch.fetch(input, init))
+    return new Loader<T>(url, this.#options.base, (input, init) => this.#d2LFetch.fetch(input, init))
   }
 
   get documentUrls() {

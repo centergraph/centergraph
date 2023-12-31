@@ -8,13 +8,13 @@ import '@centergraph/shacl-renderer'
 import grapoi from 'grapoi'
 import { quadsToShapeObject } from '@centergraph/shared/quadsToShapeObject'
 
-export class GetRequest {
-  #url: string
+export class Loader<T> {
+  url: string
   #base: string
   #fetch: (typeof globalThis)['fetch']
 
   constructor(url: string, base: string, fetch?: (typeof globalThis)['fetch']) {
-    this.#url = url
+    this.url = url
     this.#base = base
     this.#fetch = fetch ?? globalThis.fetch
   }
@@ -23,12 +23,12 @@ export class GetRequest {
     onfulfilled?: (value: string) => TResult | PromiseLike<TResult>,
     onrejected?: (reason: unknown) => TRejection | PromiseLike<TRejection>
   ): PromiseLike<TResult | TRejection> {
-    return this.#fetch(this.#url)
+    return this.#fetch(this.url)
       .then((response) => response.text())
       .then(onfulfilled, onrejected)
   }
 
-  async #shaclUrl(promise: GetRequest) {
+  async #shaclUrl(promise: Loader<T>) {
     return promise.then(async (turtle: string) => {
       const parser = new Parser()
       const quads = await parser.parse(turtle)
@@ -43,7 +43,7 @@ export class GetRequest {
     return this.#fetch(`${this.#base}/api/context`).then((response) => response.json())
   }
 
-  async as<T extends object>(): Promise<T> {
+  async asObject(): Promise<T> {
     const parser = new Parser()
 
     const dataTurtle = await this.then()
@@ -64,9 +64,9 @@ export class GetRequest {
   displayAs(viewMode: string) {
     return createElement(View, {
       viewMode,
-      url: this.#url,
+      url: this.url,
       shaclUrlPromise: this.#shaclUrl(this),
-      key: this.#url,
+      key: this.url,
       fetch: this.#fetch,
     })
   }
