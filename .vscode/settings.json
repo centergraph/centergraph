@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["Beeke", "centergraph", "Grapoi", "iconify", "Metas", "ptrs", "rdfjs", "rdfs", "shacl", "sparql"],
+  "cSpell.words": ["Beeke", "centergraph", "Grapoi", "iconify", "Metas", "ptrs", "rdfjs", "rdfs", "shacl", "sparql", "jsonld"],
   "deno.enablePaths": ["./packages/base", "./packages/turtle-sync"],
   "deno.lint": false,
   "deno.unstable": false,
