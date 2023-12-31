@@ -2,15 +2,20 @@ import { createElement } from 'react'
 import View from './components/View'
 import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
+import factory from '@rdfjs/data-model'
 import { sh } from '@centergraph/shared/namespaces'
 import '@centergraph/shacl-renderer'
+import grapoi from 'grapoi'
+import { quadsToShapeObject } from '@centergraph/shared/quadsToShapeObject'
 
 export class GetRequest {
   #url: string
+  #base: string
   #fetch: (typeof globalThis)['fetch']
 
-  constructor(url: string, fetch?: (typeof globalThis)['fetch']) {
+  constructor(url: string, base: string, fetch?: (typeof globalThis)['fetch']) {
     this.#url = url
+    this.#base = base
     this.#fetch = fetch ?? globalThis.fetch
   }
 
@@ -23,8 +28,8 @@ export class GetRequest {
       .then(onfulfilled, onrejected)
   }
 
-  async #shaclUrl() {
-    return this.then(async (turtle: string) => {
+  async #shaclUrl(promise: GetRequest) {
+    return promise.then(async (turtle: string) => {
       const parser = new Parser()
       const quads = await parser.parse(turtle)
       const dataset = datasetFactory.dataset(quads)
@@ -34,15 +39,33 @@ export class GetRequest {
     })
   }
 
-  asJSON () {
-    
+  #getContext() {
+    return this.#fetch(`${this.#base}/api/context`).then((response) => response.json())
   }
 
-  viewAs(viewMode: string) {
+  async as<T extends object>(): Promise<T> {
+    const parser = new Parser()
+
+    const dataTurtle = await this.then()
+
+    const shaclUrl = await this.#shaclUrl(this)
+    const shaclShape = await this.#fetch(shaclUrl).then((response) => response.text())
+    const shaclQuads = await parser.parse(shaclShape)
+    const shaclPointer = grapoi({ dataset: datasetFactory.dataset(shaclQuads), factory })
+
+    const dataQuads = await parser.parse(dataTurtle)
+    const dataPointer = grapoi({ dataset: datasetFactory.dataset(dataQuads), factory })
+
+    const context = await this.#getContext()
+
+    return await quadsToShapeObject(shaclPointer, dataPointer, context)
+  }
+
+  displayAs(viewMode: string) {
     return createElement(View, {
       viewMode,
       url: this.#url,
-      shaclUrlPromise: this.#shaclUrl(),
+      shaclUrlPromise: this.#shaclUrl(this),
       key: this.#url,
       fetch: this.#fetch,
     })

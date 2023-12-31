@@ -33,7 +33,7 @@ export class CenterGraph {
   get(path: string | NamedNode) {
     if (typeof path !== 'string') path = path.value
     const url = path.includes('http://') || path.includes('https://') ? path : this.#options.base + path
-    return new GetRequest(url, (input, init) => this.#d2LFetch.fetch(input, init))
+    return new GetRequest(url, this.#options.base, (input, init) => this.#d2LFetch.fetch(input, init))
   }
 
   get documentUrls() {
