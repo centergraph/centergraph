@@ -1,0 +1,9 @@
+.wrapper {
+  padding-bottom: 100px;
+  background-color: #eee;
+  margin-bottom: 2em;
+
+  &.is-over {
+    background-color: green;
+  }
+}

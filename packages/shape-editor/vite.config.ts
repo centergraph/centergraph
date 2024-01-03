@@ -19,12 +19,7 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: [
-        resolve(__dirname, 'lib/ShaclRenderer.tsx'),
-        resolve(__dirname, 'lib/ShaclRenderer.react.tsx'),
-        resolve(__dirname, 'lib/defaultSettings.ts'),
-        resolve(__dirname, 'lib/helpers/registerWidgets.ts'),
-      ],
+      entry: [resolve(__dirname, 'lib/ShapeEditor.tsx')],
     },
     rollupOptions: {
       external: [...Object.keys(Package.dependencies), ...Object.keys(OwnPackage.dependencies)],
