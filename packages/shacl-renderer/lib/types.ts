@@ -6,6 +6,7 @@ export type WidgetMeta = {
   score: (dataPointer: GrapoiPointer, shaclPointer: GrapoiPointer) => number
   createTerm?: () => Term
   loader?: Promise<ReactElement>
+  formParts?: string[]
 }
 
 export type Settings = {

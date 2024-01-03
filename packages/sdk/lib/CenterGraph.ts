@@ -47,8 +47,19 @@ export class CenterGraph {
   }
 
   get query() {
-    return new QueryBuilder({
+    return new QueryBuilder<NamedNode[]>({
       base: this.#options.base,
+      asCount: false,
+      mode: navigator.onLine ? 'remote' : 'local',
+      store: this.#store,
+      fetch: (input, init) => this.#d2LFetch.fetch(input, init),
+    })
+  }
+
+  get count() {
+    return new QueryBuilder<number>({
+      base: this.#options.base,
+      asCount: true,
       mode: navigator.onLine ? 'remote' : 'local',
       store: this.#store,
       fetch: (input, init) => this.#d2LFetch.fetch(input, init),

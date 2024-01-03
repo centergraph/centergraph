@@ -1,3 +1,4 @@
+import * as namespaces from '@centergraph/shared/lib/namespaces.ts'
 import cors from 'cors'
 import express from 'express'
 import { Store } from 'n3'
@@ -21,9 +22,10 @@ export const { prefixes } = await turtleSync({
 })
 
 const port = 8000
+const namespacesAsPrefixes = Object.fromEntries(Object.entries(namespaces).map(([prefix, builder]) => [prefix, builder().value]))
 export const context = JSON.parse(Deno.readTextFileSync(`${folder}/context.json`))
 export const jwks = JSON.parse(Deno.readTextFileSync(`${folder}/jwks.json`))
-Object.assign(context, prefixes)
+Object.assign(context, prefixes, namespacesAsPrefixes)
 const oidc = createProvider(baseIRI)
 
 const app: Express = express()

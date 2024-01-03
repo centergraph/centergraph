@@ -1,4 +1,4 @@
-import ShaclRenderer from '@/ShaclRenderer.react'
+import ShaclRenderer from '@/ShaclRenderer'
 import ReactDOM from 'react-dom/client'
 
 import { defaultSettings } from '@/defaultSettings'

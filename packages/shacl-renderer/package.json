@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "lib/ShaclRenderer.react.tsx",
-  "types": "lib/ShaclRenderer.react.tsx",
+  "main": "lib/ShaclRenderer.tsx",
+  "types": "lib/ShaclRenderer.tsx",
   "scripts": {
     "dev-old": "vite --port=8002",
     "build-old": "tsc && vite build",

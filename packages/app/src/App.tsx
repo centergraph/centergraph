@@ -5,14 +5,27 @@ import { useApi } from '@centergraph/sdk/lib/react/hooks/useApi'
 
 export default function App() {
   const { namespaces } = api
+
   const person = useApi(api.get<Person>('/contacts/john-doe'))
-  const contactUrls = useApi(api.query.filter(namespaces.rdf('type'), namespaces.schema('Person')))
+
+  const peopleQuery = api.query
+    .filter(namespaces.rdf('type'), namespaces.schema('Person'))
+    .filter(namespaces.schema('givenName'))
+    .sort(namespaces.schema('name'))
+  const contactUrls = useApi(peopleQuery)
+
+  const countQuery = api.count
+    .filter(namespaces.rdf('type'), namespaces.schema('Person'))
+    .filter(namespaces.schema('givenName'))
+    .sort(namespaces.schema('name'))
+  const count = useApi(countQuery)
 
   return (
     <>
       <h1>
         Hello {person?.givenName} {person?.familyName}
       </h1>
+      <em>{count} results...</em>
       <div>
         {contactUrls?.map((contactUrl) => (
           <View key={contactUrl.value} data={api.get<Person>(contactUrl)} as="card" />

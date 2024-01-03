@@ -1,0 +1,16 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sr: <https://centergraph.danielbeeke.nl/shacl-renderer#> .
+
+<>
+  a sh:NodeShape ;
+
+  sh:property [
+    sh:name "Show label"@en ;
+    sh:path sr:showLabel ;
+    sh:maxCount 1;
+    sh:datatype xsd:boolean ;
+  ];
+  
+.

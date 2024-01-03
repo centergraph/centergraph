@@ -6,6 +6,7 @@ export type QueryOptions = {
   base: string
   store: DatasetCore
   mode: 'local' | 'remote'
+  asCount: boolean
   fetch?: (typeof globalThis)['fetch']
 }
 
@@ -18,7 +19,7 @@ const flatten = (obj: Term) => {
   return result
 }
 
-export class QueryBuilder implements PromiseLike<NamedNode[]> {
+export class QueryBuilder<T extends NamedNode[] | number> implements PromiseLike<T> {
   #options: QueryOptions
   #filters: { predicate: Term; object?: Term }[] = []
   #sorters: { predicate: Term; order: 'ascending' | 'descending' }[] = []
@@ -35,7 +36,7 @@ export class QueryBuilder implements PromiseLike<NamedNode[]> {
     return this
   }
 
-  sort(predicate: Term, order: 'ascending' | 'descending') {
+  sort(predicate: Term, order: 'ascending' | 'descending' = 'ascending') {
     this.#sorters.push({ predicate, order })
     return this
   }
@@ -45,8 +46,8 @@ export class QueryBuilder implements PromiseLike<NamedNode[]> {
     return this
   }
 
-  then<TResult1 = NamedNode[], TResult2 = never>(
-    onfulfilled?: ((value: NamedNode[]) => TResult1 | PromiseLike<TResult1>) | undefined | null,
+  then<TResult1 = T, TResult2 = never>(
+    onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null,
     onrejected?: ((reason: unknown) => TResult2 | PromiseLike<TResult2>) | undefined | null
   ): PromiseLike<TResult1 | TResult2> {
     try {
@@ -57,7 +58,7 @@ export class QueryBuilder implements PromiseLike<NamedNode[]> {
     }
   }
 
-  async #thenStoreLocal(): Promise<NamedNode[]> {
+  async #thenStoreLocal(): Promise<T> {
     let dataset = this.#options.store
 
     for (const { predicate, object } of this.#filters) {
@@ -76,10 +77,14 @@ export class QueryBuilder implements PromiseLike<NamedNode[]> {
       graphs.set(quad.graph.value, quad.graph as unknown as NamedNode)
     }
 
-    return [...graphs.values()]
+    const graphNamedNodes = [...graphs.values()]
+
+    if (this.#options.asCount) return graphNamedNodes.length as T
+
+    return graphNamedNodes as T
   }
 
-  async #thenApiRemote(): Promise<NamedNode[]> {
+  async #thenApiRemote(): Promise<T> {
     const query = new URLSearchParams()
     query.append(
       'query',
@@ -90,11 +95,15 @@ export class QueryBuilder implements PromiseLike<NamedNode[]> {
         })),
         sorters: this.#sorters.map((sorter) => ({ predicate: flatten(sorter.predicate), order: sorter.order })),
         paginate: this.#paginate,
+        asCount: this.#options.asCount,
       })
     )
+
     const response = await this.#fetch(`${this.#options.base}/api/query?${query.toString()}`).then((response) => response.json())
-    const graphs = response.map((graph: string) => DataFactory.namedNode(graph))
-    return graphs
+
+    if (this.#options.asCount) return response.result
+
+    return response.map((graph: string) => DataFactory.namedNode(graph))
   }
 
   // TODO Implement a to SPARQL method.

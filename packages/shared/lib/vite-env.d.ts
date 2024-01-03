@@ -13,6 +13,7 @@ type GrapoiPointer = {
   filter: (item: unknown) => GrapoiPointer
   value: string
   isList: () => boolean
+  addList: (predicates: NamedNode[], items: Term[]) => GrapoiPointer
   deleteList: () => GrapoiPointer
   list: () => Array<GrapoiPointer>
   ptrs: Array<{ dataset: DatasetCore }>

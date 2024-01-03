@@ -6,12 +6,6 @@ import { Request, Response } from 'express'
 import { baseIRI, store } from '../Base.ts'
 
 export const query = async (request: Request, response: Response) => {
-  const queryBuilder = new QueryBuilder({
-    base: baseIRI,
-    store,
-    mode: 'local',
-  })
-
   const parsedUrl = new URL(baseIRI + request.url)
 
   const rawUrlQuery = parsedUrl.searchParams.get('query')
@@ -21,24 +15,34 @@ export const query = async (request: Request, response: Response) => {
     filters: { predicate: Term; object?: Term }[]
     sorters: { predicate: Term; order: 'ascending' | 'descending' }[]
     paginate: { limit?: number; offset?: number }
+    asCount?: boolean
   }
+
+  const queryBuilder = new QueryBuilder({
+    base: baseIRI,
+    store,
+    mode: 'local',
+    asCount: !!urlQuery.asCount,
+  })
 
   if (urlQuery.filters) {
     for (const { predicate, object } of urlQuery.filters) {
       queryBuilder.filter(dataFactory.fromTerm(predicate), object ? dataFactory.fromTerm(object) : undefined)
     }
+  }
 
+  if (urlQuery.sorters) {
     for (const { predicate, order } of urlQuery.sorters) {
       queryBuilder.sort(dataFactory.fromTerm(predicate), order)
     }
-
-    queryBuilder.paginate(urlQuery.paginate.limit, urlQuery.paginate.offset)
   }
 
-  const graphs = await queryBuilder
+  if (urlQuery.paginate) queryBuilder.paginate(urlQuery.paginate.limit, urlQuery.paginate.offset)
+
+  const result = await queryBuilder
 
   try {
-    response.send(graphs.map((graph) => graph.value))
+    response.send(urlQuery.asCount ? { result } : result.map((graph) => graph.value))
   } catch (error) {
     response.send(error.message)
   }
