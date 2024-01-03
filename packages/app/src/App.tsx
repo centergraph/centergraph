@@ -16,6 +16,11 @@ export default function App() {
   const countQuery = api.count.filter(rdf('type'), schema('Person')).filter(schema('givenName')).sort(schema('name'))
   const count = useApi(countQuery)
 
+  // const folderRequest = api.getFolder('/contacts/')
+  // const contents = useApi(folderRequest)
+
+  // console.log(contents)
+
   return (
     <>
       <h1>

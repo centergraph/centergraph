@@ -20,6 +20,7 @@ export const query = async (request: Request, response: Response) => {
 
   const queryBuilder = new QueryBuilder({
     base: baseIRI,
+    // TODO integrate a SPARQL way
     store,
     mode: 'local',
     asCount: !!urlQuery.asCount,

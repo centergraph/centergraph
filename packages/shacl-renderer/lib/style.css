@@ -30,12 +30,12 @@
   }
 }
 
-.blank-node-editor:not(.is-invalid) .form-level + .remove-button:not(:hover),
+.blank-node-editor:not(.is-invalid) .level + .remove-button:not(:hover),
 .form-control:not(.is-invalid) + .remove-button:not(:hover) {
   border-color: var(--bs-border-color);
 }
 
-.blank-node-editor.is-invalid:not(:hover) .form-level {
+.blank-node-editor.is-invalid:not(:hover) .level {
   border: 1px solid #dc3545;
   border-radius: var(--bs-border-radius);
 }

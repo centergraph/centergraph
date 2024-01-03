@@ -6,9 +6,12 @@ import { Quad_Graph } from '@rdfjs/types'
 import grapoi from 'grapoi'
 import { Request, Response } from 'types-express'
 
+// TODO integrate a SPARQL way
 import { context, store } from '../Base.ts'
 
-export const types = async (request: Request, response: Response) => {
+export const types = async (_request: Request, response: Response) => {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  /** @ts-ignore */
   const shapeGraphIris: Quad_Graph[] = [...store.match(null, rdf('type'), sr('MainShape'))].map((quad) => quad.graph)
 
   let output = ''

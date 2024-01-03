@@ -20,6 +20,6 @@ test('it renders a address div', async () => {
   )
 
   expect(output.baseElement.children[0].innerHTML).toBe(
-    '<div class="form-level flex-grow-1 p-3"><div class="group group-address address"></div></div>'
+    '<div class="level flex-grow-1 p-3"><div class="group group-address address"></div></div>'
   )
 })

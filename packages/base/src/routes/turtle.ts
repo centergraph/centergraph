@@ -9,6 +9,7 @@ export const turtle = async (request: Request, response: Response, next: NextFun
   const fullUrl = new URL(baseIRI + request.url)
   const iri = baseIRI + fullUrl.pathname
 
+  // TODO replace with abstraction that can do SPARQL and store.match
   const quads = store
     .getQuads(null, null, null, DataFactory.namedNode(iri))
     .map((quad) => DataFactory.quad(quad.subject, quad.predicate, quad.object))

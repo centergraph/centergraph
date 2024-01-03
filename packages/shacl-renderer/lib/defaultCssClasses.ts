@@ -1,7 +1,7 @@
 import { Settings } from './types'
 
 export default (mode: 'edit' | 'view'): Settings['cssClasses'] => ({
-  formLevel: `form-level flex-grow-1 ${mode === 'edit' ? 'p-3' : 'ps-3'}`,
+  formLevel: `level flex-grow-1 ${mode === 'edit' ? 'p-3' : 'ps-3'}`,
   group: 'group group-',
   label: `form-label ${mode === 'view' ? 'd-inline' : ''}`,
   shaclProperty: `property ${mode === 'edit' ? 'd-flex flex-column mb-3' : ''}`,

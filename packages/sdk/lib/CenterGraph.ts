@@ -10,6 +10,7 @@ import { defaultSettings } from '@centergraph/shacl-renderer/lib/defaultSettings
 import { registerCoreWidgets } from '@centergraph/shacl-renderer/lib/helpers/registerWidgets'
 import type { ShaclRendererProps } from '@centergraph/shacl-renderer'
 import { GetApiRequest } from './GetApiRequest'
+import { FolderApiRequest } from './FolderApiRequest'
 
 export type CenterGraphOptions = {
   base: string
@@ -44,6 +45,12 @@ export class CenterGraph {
     if (typeof path !== 'string') path = path.value
     const url = path.includes('http://') || path.includes('https://') ? path : this.#options.base + path
     return new GetApiRequest<T>((input, init) => this.#d2LFetch.fetch(input, init), this.#options.base, url)
+  }
+
+  getFolder(path: string | NamedNode) {
+    if (typeof path !== 'string') path = path.value
+    const url = path.includes('http://') || path.includes('https://') ? path : this.#options.base + path
+    return new FolderApiRequest((input, init) => this.#d2LFetch.fetch(input, init), url)
   }
 
   get query() {
