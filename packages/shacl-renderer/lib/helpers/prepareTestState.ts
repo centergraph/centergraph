@@ -1,11 +1,11 @@
 import { registerWidgets } from './registerWidgets'
-import { WidgetMeta } from '@/types'
+import { WidgetMeta } from '@centergraph/shacl-renderer/lib/types'
 import { ReactElement } from 'react'
 import grapoi from 'grapoi'
 import { DataFactory, Parser } from 'n3'
 import { schema } from './namespaces'
 import datasetFactory from '@rdfjs/dataset'
-import ContactShape from '@/../public/shapes/contact.shacl.ttl?raw'
+import ContactShape from '@centergraph/shacl-renderer/lib/../public/shapes/contact.shacl.ttl?raw'
 
 export const prepareTestState = async (mode: 'edit' | 'view') => {
   const loaders: Map<string, () => Promise<{ default: ReactElement }>> = new Map()
@@ -16,12 +16,12 @@ export const prepareTestState = async (mode: 'edit' | 'view') => {
     loaders,
     metasGlob:
       mode === 'edit'
-        ? import.meta.glob('@/components/widgets/editors/*/meta.ts')
-        : import.meta.glob('@/components/widgets/viewers/*/meta.ts'),
+        ? import.meta.glob('@centergraph/shacl-renderer/lib/components/widgets/editors/*/meta.ts', { eager: true })
+        : import.meta.glob('@centergraph/shacl-renderer/lib/components/widgets/viewers/*/meta.ts', { eager: true }),
     modulesGlob:
       mode === 'edit'
-        ? import.meta.glob('@/components/widgets/editors/*/index.tsx')
-        : import.meta.glob('@/components/widgets/viewers/*/index.tsx'),
+        ? import.meta.glob('@centergraph/shacl-renderer/lib/components/widgets/editors/*/index.tsx')
+        : import.meta.glob('@centergraph/shacl-renderer/lib/components/widgets/viewers/*/index.tsx'),
   })
 
   await Promise.all(editorPromises)

@@ -1,4 +1,4 @@
-import { dash, sh, xsd } from '@/helpers/namespaces'
+import { dash, sh, xsd } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
 
 export const iri = dash('LiteralViewer')
 

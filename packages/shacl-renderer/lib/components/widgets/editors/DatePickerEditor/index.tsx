@@ -1,6 +1,6 @@
 import { DataFactory } from 'n3'
-import { WidgetProps } from '@/types'
-import { xsd } from '@/helpers/namespaces'
+import { WidgetProps } from '@centergraph/shacl-renderer/lib/types'
+import { xsd } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
 
 export default function DatePickerEditor({ term, setTerm, settings, hasErrorsClassName }: WidgetProps) {
   return (

@@ -22,6 +22,7 @@
     "source.organizeImports": "never"
   },
   "editor.formatOnSave": true,
+  "files.autoSave": "off",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2
 }

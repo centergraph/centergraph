@@ -3,7 +3,7 @@ import { expect, test } from 'vitest'
 import LiteralViewer from '.'
 import { DataFactory } from 'n3'
 import { createElement } from 'react'
-import { prepareComponentTest } from '@/helpers/prepareComponentTest'
+import { prepareComponentTest } from '@centergraph/shacl-renderer/lib/helpers/prepareComponentTest'
 
 test('it renders a span', async () => {
   const term = DataFactory.literal('Lorem')

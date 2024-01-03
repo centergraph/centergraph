@@ -1,14 +1,14 @@
 import { expect, test } from 'vitest'
 import datasetFactory from '@rdfjs/dataset'
 import { useWidget, widgetCache } from './useWidget'
-import { Settings } from '@/types'
-import defaultCssClasses from '@/defaultCssClasses'
+import { Settings } from '@centergraph/shacl-renderer/lib/types'
+import defaultCssClasses from '@centergraph/shacl-renderer/lib/defaultCssClasses'
 import { DataFactory } from 'n3'
-import { rdf, schema, sh } from '@/helpers/namespaces'
+import { rdf, schema, sh } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
 import grapoi from 'grapoi'
 import { renderHook } from '@testing-library/react'
-import LiteralViewer from '@/components/widgets/viewers/LiteralViewer'
-import { prepareTestState } from '@/helpers/prepareTestState'
+import LiteralViewer from '@centergraph/shacl-renderer/lib/components/widgets/viewers/LiteralViewer'
+import { prepareTestState } from '@centergraph/shacl-renderer/lib/helpers/prepareTestState'
 
 test('that it gives the iri', async () => {
   const { shaclPointer, targetMetas, loaders } = await prepareTestState('edit')

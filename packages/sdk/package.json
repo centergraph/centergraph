@@ -3,9 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/center-graph.umd.cjs",
-  "module": "./dist/center-graph.js",
-  "types": "./dist/center-graph.d.ts",
+  "main": "lib/CenterGraph.ts",
+  "types": "lib/CenterGraph.ts",
   "dependencies": {
     "@centergraph/shacl-renderer": "*",
     "@centergraph/shared": "*"

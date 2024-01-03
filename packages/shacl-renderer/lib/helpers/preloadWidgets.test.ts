@@ -1,9 +1,9 @@
 import { expect, test } from 'vitest'
 import datasetFactory from '@rdfjs/dataset'
-import { widgetCache } from '@/hooks/useWidget'
+import { widgetCache } from '@centergraph/shacl-renderer/lib/hooks/useWidget'
 import { preloadWidgets } from './preloadWidgets'
-import { Settings } from '@/types'
-import defaultCssClasses from '@/defaultCssClasses'
+import { Settings } from '@centergraph/shacl-renderer/lib/types'
+import defaultCssClasses from '@centergraph/shacl-renderer/lib/defaultCssClasses'
 import { prepareTestState } from './prepareTestState'
 
 test('preloads editor widgets', async () => {

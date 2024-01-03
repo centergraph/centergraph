@@ -1,4 +1,4 @@
-import { WidgetMeta } from '@/types'
+import { WidgetMeta } from '@centergraph/shacl-renderer/lib/types'
 
 export const getBestWidget = (widgets: Array<WidgetMeta>, dataPointer: GrapoiPointer, shaclPointer: GrapoiPointer) => {
   const widgetMatches = widgets

@@ -3,8 +3,8 @@ import { expect, test } from 'vitest'
 import LiteralViewer from '.'
 import { DataFactory } from 'n3'
 import { createElement } from 'react'
-import { prepareComponentTest } from '@/helpers/prepareComponentTest'
-import { rdf, schema, sh } from '@/helpers/namespaces'
+import { prepareComponentTest } from '@centergraph/shacl-renderer/lib/helpers/prepareComponentTest'
+import { rdf, schema, sh } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
 
 test.only('it renders a FormLevel', async () => {
   const term = DataFactory.blankNode()

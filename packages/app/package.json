@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "@centergraph/app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@centergraph/sdk": "*",
-    "@centergraph/shared": "*"
+    "@centergraph/shared": "*",
+    "@centergraph/shacl-renderer": "*"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

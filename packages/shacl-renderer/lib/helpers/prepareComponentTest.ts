@@ -1,11 +1,11 @@
-import ContactShape from '@/../public/shapes/contact.shacl.ttl?raw'
+import ContactShape from '@centergraph/shacl-renderer/lib/../public/shapes/contact.shacl.ttl?raw'
 import { DataFactory, Parser } from 'n3'
 import { Term } from '@rdfjs/types'
 import datasetFactory from '@rdfjs/dataset'
 import grapoi from 'grapoi'
-import JohnDoe from '@/../public/john-doe.ttl?raw'
-import { Settings } from '@/types'
-import defaultCssClasses from '@/defaultCssClasses'
+import JohnDoe from '@centergraph/shacl-renderer/lib/../public/john-doe.ttl?raw'
+import { Settings } from '@centergraph/shacl-renderer/lib/types'
+import defaultCssClasses from '@centergraph/shacl-renderer/lib/defaultCssClasses'
 
 export const prepareComponentTest = async () => {
   const setTerm = (term: Term) => term

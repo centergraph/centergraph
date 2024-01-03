@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
     "paths": {
-      "@centergraph/shared/*": ["./packages/shared/lib/*"]
+      "@centergraph/shared/*": ["./packages/shared/lib/*"],
+      "@centergraph/shacl-renderer/*": ["./packages/shacl-renderer/lib/*"],
+      "@centergraph/sdk": ["./packages/sdk/lib/CenterGraph.ts"],
+      "@centergraph/sdk/*": ["./packages/sdk/lib/*"]
     }
   }
 }

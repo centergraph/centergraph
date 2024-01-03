@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
-import { rdfs, sh, sr } from '@/helpers/namespaces'
-import { lastPart } from '@/helpers/lastPart'
-import { Settings } from '@/types'
+import { rdfs, sh, sr } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
+import { lastPart } from '@centergraph/shacl-renderer/lib/helpers/lastPart'
+import { Settings } from '@centergraph/shacl-renderer/lib/types'
 
 export default function Group({
   children,

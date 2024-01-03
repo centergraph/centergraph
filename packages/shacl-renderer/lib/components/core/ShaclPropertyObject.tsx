@@ -1,11 +1,11 @@
-import { Settings } from '@/types'
+import { Settings } from '@centergraph/shacl-renderer/lib/types'
 import { useState } from 'react'
 import { Term } from '@rdfjs/types'
-import { useWidget } from '@/hooks/useWidget'
+import { useWidget } from '@centergraph/shacl-renderer/lib/hooks/useWidget'
 import { Icon } from '@iconify/react'
-import { lastPart } from '@/helpers/lastPart'
+import { lastPart } from '@centergraph/shacl-renderer/lib/helpers/lastPart'
 import kebabCase from 'lodash-es/kebabCase'
-import { useValidate } from '@/hooks/useValidate'
+import { useValidate } from '@centergraph/shacl-renderer/lib/hooks/useValidate'
 
 type PropertyObjectProps = {
   shaclPointer: GrapoiPointer

@@ -1,7 +1,7 @@
 import { JSXElementConstructor, useEffect, useMemo, useState } from 'react'
-import { sh } from '@/helpers/namespaces'
-import { Settings, WidgetProps } from '@/types'
-import { getBestWidget } from '@/helpers/getBestWidget'
+import { sh } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
+import { Settings, WidgetProps } from '@centergraph/shacl-renderer/lib/types'
+import { getBestWidget } from '@centergraph/shacl-renderer/lib/helpers/getBestWidget'
 
 export const widgetCache = new Map()
 

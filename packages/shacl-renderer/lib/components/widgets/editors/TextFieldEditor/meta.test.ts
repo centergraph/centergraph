@@ -1,7 +1,7 @@
 import { expect, test } from 'vitest'
 import { score } from './meta'
-import { schema } from '@/helpers/namespaces'
-import { prepareScoreTest } from '@/helpers/prepareTestScore'
+import { schema } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
+import { prepareScoreTest } from '@centergraph/shacl-renderer/lib/helpers/prepareTestScore'
 
 test('it scores', async () => {
   const { dataPointer, shaclPointer } = await prepareScoreTest(schema('givenName'))

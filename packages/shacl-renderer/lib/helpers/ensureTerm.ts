@@ -1,4 +1,4 @@
-import { WidgetMeta } from '@/types'
+import { WidgetMeta } from '@centergraph/shacl-renderer/lib/types'
 import { Term } from '@rdfjs/types'
 
 export const ensureTerm = (

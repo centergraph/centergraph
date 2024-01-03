@@ -1,22 +1,25 @@
-import { createElement } from 'react'
+import { ReactNode, createElement } from 'react'
 import View from './components/View'
 import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
 import factory from '@rdfjs/data-model'
-import { sh } from '@centergraph/shared/namespaces'
+import { sh } from '@centergraph/shared/lib/namespaces'
 import '@centergraph/shacl-renderer'
 import grapoi from 'grapoi'
-import { quadsToShapeObject } from '@centergraph/shared/quadsToShapeObject'
+import { quadsToShapeObject } from '@centergraph/shared/lib/quadsToShapeObject'
+import type { ShaclRendererProps } from '@centergraph/shacl-renderer'
 
 export class Loader<T> {
   url: string
   #base: string
   #fetch: (typeof globalThis)['fetch']
+  #viewSettings: ShaclRendererProps['settings']
 
-  constructor(url: string, base: string, fetch?: (typeof globalThis)['fetch']) {
+  constructor(url: string, base: string, fetch: (typeof globalThis)['fetch'], viewSettings: ShaclRendererProps['settings']) {
     this.url = url
     this.#base = base
     this.#fetch = fetch ?? globalThis.fetch
+    this.#viewSettings = viewSettings
   }
 
   then<TResult = string, TRejection = never>(
@@ -61,13 +64,13 @@ export class Loader<T> {
     return await quadsToShapeObject(shaclPointer, dataPointer, context)
   }
 
-  displayAs(viewMode: string) {
+  displayAs(viewMode: string): ReactNode {
     return createElement(View, {
       viewMode,
       url: this.url,
       shaclUrlPromise: this.#shaclUrl(this),
       key: this.url,
-      fetch: this.#fetch,
+      settings: this.#viewSettings,
     })
   }
 }

@@ -22,10 +22,16 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script src="./demo/demo.tsx" type="module"></script>
   </head>
   <body class="p-5">
     <details name="demo" class="mb-3 container" open>
-      <summary class="pb-3">Edit mode</summary>
+      <summary class="pb-3">Edit mode (React)</summary>
+      <div id="app"></div>
+    </details>
+
+    <!-- <details name="demo" class="mb-3 container">
+      <summary class="pb-3">Edit mode (customElement)</summary>
       <shacl-renderer
         shacl-shapes-url="./shapes/contact.shacl.ttl"
         subject="http://example.com/john-doe"
@@ -36,15 +42,15 @@
       </shacl-renderer>
     </details>
 
-    <details name="demo" class="mb-3 container" open>
-      <summary class="pb-3">View mode</summary>
+    <details name="demo" class="mb-3 container">
+      <summary class="pb-3">View mode (customElement)</summary>
       <shacl-renderer
         shacl-shapes-url="./shapes/contact.shacl.ttl"
         subject="http://example.com/john-doe"
         data-url="./john-doe.ttl"
         mode="view"
       ></shacl-renderer>
-    </details>
+    </details> -->
 
     <script>
       const shaclRenderer = document.querySelector('shacl-renderer')

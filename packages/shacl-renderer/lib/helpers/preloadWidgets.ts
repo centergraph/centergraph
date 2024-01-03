@@ -1,9 +1,9 @@
-import { Settings } from '@/types'
+import { Settings } from '@centergraph/shacl-renderer/lib/types'
 import { sh } from './namespaces'
 import { DataFactory } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
-import { getBestWidget } from '@/helpers/getBestWidget'
-import { widgetCache } from '@/hooks/useWidget'
+import { getBestWidget } from '@centergraph/shacl-renderer/lib/helpers/getBestWidget'
+import { widgetCache } from '@centergraph/shacl-renderer/lib/hooks/useWidget'
 import grapoi from 'grapoi'
 
 /**
@@ -30,7 +30,7 @@ export const preloadWidgets = async (settings: Settings, shaclPointer: GrapoiPoi
 
   for (const widgetIri of widgetIris) {
     const widgetModule = settings.widgetLoaders.get(widgetIri)!
-    promises.push(widgetModule().then((module) => widgetCache.set(widgetIri, module.default)))
+    if (widgetModule) promises.push(widgetModule().then((module) => widgetCache.set(widgetIri, module.default)))
   }
 
   await Promise.all(promises)

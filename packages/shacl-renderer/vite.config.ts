@@ -13,7 +13,7 @@ export default defineConfig({
   plugins: [react(), dts({ insertTypesEntry: true }), viteTsconfigPaths()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './lib'),
+      // '@centergraph/shacl-renderer': path.resolve(__dirname, './lib'),
     },
   },
   test: {
@@ -25,9 +25,12 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: resolve(__dirname, 'lib/ShaclRenderer.tsx'),
-      name: 'ShaclRenderer',
-      fileName: 'shacl-renderer',
+      entry: [
+        resolve(__dirname, 'lib/ShaclRenderer.tsx'),
+        resolve(__dirname, 'lib/ShaclRenderer.react.tsx'),
+        resolve(__dirname, 'lib/defaultSettings.ts'),
+        resolve(__dirname, 'lib/helpers/registerWidgets.ts'),
+      ],
     },
     rollupOptions: {
       external: [...Object.keys(Package.dependencies), ...Object.keys(OwnPackage.dependencies)],

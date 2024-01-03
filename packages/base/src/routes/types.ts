@@ -1,8 +1,8 @@
+import { rdf, sr } from '@centergraph/shared/lib/namespaces.ts'
+import { shaclToType } from '@centergraph/shared/lib/shaclToType.ts'
 import factory from '@rdfjs/data-model'
 import datasetFactory from '@rdfjs/dataset'
 import { Quad_Graph } from '@rdfjs/types'
-import { rdf, sr } from '@shared/namespaces.js'
-import { shaclToType } from '@shared/shaclToType.js'
 import grapoi from 'grapoi'
 import { Request, Response } from 'types-express'
 

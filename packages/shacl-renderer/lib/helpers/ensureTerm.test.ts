@@ -4,8 +4,8 @@ import { schema } from './namespaces'
 import grapoi from 'grapoi'
 import datasetFactory from '@rdfjs/dataset'
 import { DataFactory } from 'n3'
-import * as widgetMeta from '@/components/widgets/editors/TextFieldEditor/meta'
-import { WidgetMeta } from '@/types'
+import * as widgetMeta from '@centergraph/shacl-renderer/lib/components/widgets/editors/TextFieldEditor/meta'
+import { WidgetMeta } from '@centergraph/shacl-renderer/lib/types'
 
 test('it ensure a new term', () => {
   const path = [

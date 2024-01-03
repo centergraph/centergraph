@@ -1,6 +1,6 @@
 import ts, { factory, SyntaxKind } from 'typescript'
 import { ContextParser } from 'jsonld-context-parser'
-import { rdf, sh, sr } from './namespaces'
+import { rdf, sh, sr } from '@centergraph/shared/lib/namespaces'
 import parsePath from 'shacl-engine/lib/parsePath'
 
 export function shaclToType(shaclPointer: GrapoiPointer, context: { [key: string]: unknown }, nested: false): Promise<string>

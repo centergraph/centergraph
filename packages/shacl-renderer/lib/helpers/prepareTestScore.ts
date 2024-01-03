@@ -1,9 +1,9 @@
-import ContactShape from '@/../public/shapes/contact.shacl.ttl?raw'
+import ContactShape from '@centergraph/shacl-renderer/lib/../public/shapes/contact.shacl.ttl?raw'
 import { DataFactory, Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
 import grapoi from 'grapoi'
-import JohnDoe from '@/../public/john-doe.ttl?raw'
-import { rdf, sh } from '@/helpers/namespaces'
+import JohnDoe from '@centergraph/shacl-renderer/lib/../public/john-doe.ttl?raw'
+import { rdf, sh } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
 import { NamedNode } from '@rdfjs/types'
 
 export const prepareScoreTest = async (predicate: NamedNode) => {

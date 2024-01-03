@@ -1,27 +1,20 @@
 import { useEffect, useState } from 'react'
-import '@centergraph/shacl-renderer'
-import '@centergraph/shacl-renderer/dist/style.css'
+import ShaclRenderer, { ShaclRendererProps } from '@centergraph/shacl-renderer'
+import '@centergraph/shacl-renderer/lib/style.css'
 
 type ViewProps = {
   viewMode: string
   url: string
   shaclUrlPromise: Promise<string>
-  fetch: (typeof globalThis)['fetch']
+  settings: ShaclRendererProps['settings']
 }
 
-export default function View({ url, shaclUrlPromise, fetch }: ViewProps) {
+export default function View({ url, shaclUrlPromise, settings }: ViewProps) {
   const [shaclUrl, setShaclUrl] = useState('')
 
   useEffect(() => {
-    shaclUrlPromise.then(setShaclUrl)
+    Promise.all([shaclUrlPromise.then(setShaclUrl)])
   }, [shaclUrlPromise])
 
-  return shaclUrl ? (
-    <shacl-renderer
-      ref={(element: HTMLElement) => element?.addEventListener('settings', (event: CustomEvent) => (event.detail.settings.fetch = fetch))}
-      shacl-shapes-url={shaclUrl}
-      data-url={url}
-      mode="view"
-    ></shacl-renderer>
-  ) : null
+  return shaclUrl ? <ShaclRenderer settings={settings} shaclShapesUrl={shaclUrl} dataUrl={url}></ShaclRenderer> : null
 }

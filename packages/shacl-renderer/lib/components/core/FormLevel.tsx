@@ -1,6 +1,6 @@
 import { DataFactory } from 'n3'
-import { sh } from '@/helpers/namespaces'
-import { Settings } from '@/types'
+import { sh } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
+import { Settings } from '@centergraph/shacl-renderer/lib/types'
 import Group from './Group'
 import ShaclProperty from './ShaclProperty'
 import { ReactNode } from 'react'

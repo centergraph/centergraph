@@ -3,8 +3,8 @@ import { expect, test } from 'vitest'
 import LiteralViewer from '.'
 import { DataFactory } from 'n3'
 import { createElement } from 'react'
-import { prepareComponentTest } from '@/helpers/prepareComponentTest'
-import { xsd } from '@/helpers/namespaces'
+import { prepareComponentTest } from '@centergraph/shacl-renderer/lib/helpers/prepareComponentTest'
+import { xsd } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
 
 test('it renders a date input', async () => {
   const term = DataFactory.literal('1990-01-07', xsd('date'))

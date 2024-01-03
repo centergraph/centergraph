@@ -11,7 +11,10 @@
     "@rdfjs/namespace": "https://esm.sh/@rdfjs/namespace",
     "@rdfjs/types": "https://esm.sh/@rdfjs/types@1.1.0",
     "jsonld-context-parser": "https://esm.sh/jsonld-context-parser",
-    "@shared/": "./packages/shared/dist/",
+    "shacl-engine": "https://esm.sh/shacl-engine",
+    "typescript": "https://esm.sh/typescript",
+    "shacl-engine/lib/parsePath": "https://esm.sh/shacl-engine/lib/parsePath",
+    "@centergraph/shared/": "./packages/shared/",
     "oidc-provider": "npm:oidc-provider"
   }
 }

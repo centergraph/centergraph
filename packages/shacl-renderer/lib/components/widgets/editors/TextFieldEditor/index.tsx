@@ -1,5 +1,5 @@
 import { DataFactory } from 'n3'
-import { WidgetProps } from '@/types'
+import { WidgetProps } from '@centergraph/shacl-renderer/lib/types'
 
 export default function TextFieldEditor({ term, setTerm, settings, hasErrorsClassName }: WidgetProps) {
   return (

@@ -2,13 +2,13 @@ import { expect, test } from 'vitest'
 import { useValidate, reportSignal } from './useValidate'
 import { renderHook } from '@testing-library/react'
 import datasetFactory from '@rdfjs/dataset'
-import { Settings } from '@/types'
-import defaultCssClasses from '@/defaultCssClasses'
-import { rdf, schema, sh } from '@/helpers/namespaces'
-import BrokenJohnDoe from '@/../public/broken-john-doe.ttl?raw'
+import { Settings } from '@centergraph/shacl-renderer/lib/types'
+import defaultCssClasses from '@centergraph/shacl-renderer/lib/defaultCssClasses'
+import { rdf, schema, sh } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
+import BrokenJohnDoe from '@centergraph/shacl-renderer/lib/../public/broken-john-doe.ttl?raw'
 import { Parser } from 'n3'
 import parsePath from 'shacl-engine/lib/parsePath'
-import { prepareTestState } from '@/helpers/prepareTestState'
+import { prepareTestState } from '@centergraph/shacl-renderer/lib/helpers/prepareTestState'
 
 test('that returns the signal', async () => {
   const { shaclPointer, targetMetas, loaders, shaclDataset } = await prepareTestState('edit')

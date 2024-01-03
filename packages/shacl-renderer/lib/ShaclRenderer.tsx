@@ -1,14 +1,14 @@
 import { StrictMode } from 'react'
 import ReactDOM, { Root } from 'react-dom/client'
-import { Settings } from '@/types'
+import { Settings } from '@centergraph/shacl-renderer/lib/types'
 import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
 import grapoi from 'grapoi'
-import FormLevel from '@/components/core/FormLevel'
-import { rdf, sh } from '@/helpers/namespaces'
+import FormLevel from '@centergraph/shacl-renderer/lib/components/core/FormLevel'
+import { rdf, sh } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
 import { DataFactory } from 'n3'
-import { registerWidgets } from '@/helpers/registerWidgets'
-import defaultCssClasses from '@/defaultCssClasses'
+import { registerWidgets } from '@centergraph/shacl-renderer/lib/helpers/registerWidgets'
+import defaultCssClasses from '@centergraph/shacl-renderer/lib/defaultCssClasses'
 import { preloadWidgets } from './helpers/preloadWidgets'
 import './style.css'
 
@@ -41,14 +41,14 @@ export class ShaclRenderer extends HTMLElement {
     const editorPromises = registerWidgets({
       targetMetas: this.settings.widgetMetas.editors,
       loaders: this.settings.widgetLoaders,
-      metasGlob: import.meta.glob('./components/widgets/editors/*/meta.ts'),
+      metasGlob: import.meta.glob('./components/widgets/editors/*/meta.ts', { eager: true }),
       modulesGlob: import.meta.glob('./components/widgets/editors/*/index.tsx'),
     })
 
     const viewerPromises = registerWidgets({
       targetMetas: this.settings.widgetMetas.viewers,
       loaders: this.settings.widgetLoaders,
-      metasGlob: import.meta.glob('./components/widgets/viewers/*/meta.ts'),
+      metasGlob: import.meta.glob('./components/widgets/viewers/*/meta.ts', { eager: true }),
       modulesGlob: import.meta.glob('./components/widgets/viewers/*/index.tsx'),
     })
 

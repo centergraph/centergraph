@@ -1,4 +1,4 @@
-import http from 'node:http'
+import { OutgoingMessage } from 'node:http'
 
 const oldSet = Headers.prototype.set
 Headers.prototype.set = function set(key, value) {
@@ -10,7 +10,8 @@ Headers.prototype.set = function set(key, value) {
   }
 }
 
-http.OutgoingMessage.prototype.setHeader = function (name: string, value: string | number | readonly string[]) {
+OutgoingMessage.prototype.setHeader = function (name: string, value: string | number | readonly string[]) {
   /** @ts-expect-error The typing seems broken */
-  return this.set(name, value)
+  this.set(name, value)
+  return this
 }

@@ -1,6 +1,6 @@
+import { QueryBuilder } from '@centergraph/shared/lib/QueryBuilder.ts'
 import dataFactory from '@rdfjs/data-model'
 import { Term } from '@rdfjs/types'
-import { QueryBuilder } from '@shared/QueryBuilder.js'
 import { Request, Response } from 'express'
 
 import { baseIRI, store } from '../Base.ts'

@@ -4,9 +4,23 @@ import Provider, { errors } from 'oidc-provider'
 
 import { jwks } from '../Base.ts'
 
+const isOrigin = (value: string) => {
+  if (typeof value !== 'string') {
+    return false
+  }
+  try {
+    const { origin } = new URL(value)
+    // Origin: <scheme> "://" <hostname> [ ":" <port> ]
+    return value === origin
+  } catch (err) {
+    return false
+  }
+}
+
 export const createProvider = (baseIRI: string) => {
   // https://www.scottbrady91.com/openid-connect/getting-started-with-oidc-provider
   const corsProp = 'urn:custom:client:allowed-cors-origins'
+
   const configuration = {
     jwks, // Used https://mkjwk.org/
     scopes: ['openid', 'profile'],
@@ -33,9 +47,13 @@ export const createProvider = (baseIRI: string) => {
         },
       },
     },
+    pkce: {
+      required: true,
+    },
+    token_endpoint_auth_method: 'none',
     extraClientMetadata: {
       properties: [corsProp],
-      validator(_ctx: unknown, key: string, value: string, metadata: any) {
+      validator(ctx, key, value, metadata) {
         if (key === corsProp) {
           // set default (no CORS)
           if (value === undefined) {
@@ -43,20 +61,21 @@ export const createProvider = (baseIRI: string) => {
             return
           }
           // validate an array of Origin strings
-          if (!Array.isArray(value)) {
+          if (!Array.isArray(value) || !value.every(isOrigin)) {
             throw new errors.InvalidClientMetadata(`${corsProp} must be an array of origins`)
           }
         }
       },
     },
-    clientBasedCORS() {
-      return true
+    clientBasedCORS(ctx: unknown, origin: string, client: any) {
+      return client[corsProp].includes(origin)
     },
     clients: [
       {
-        client_id: 'oidc_client',
-        client_secret: 'a_different_secret',
+        client_id: 'centergraph',
+        client_secret: 'centergraph',
         grant_types: ['authorization_code'],
+        application_type: 'web',
         response_types: ['code'],
         redirect_uris: ['http://localhost:8001/redirect'],
       },

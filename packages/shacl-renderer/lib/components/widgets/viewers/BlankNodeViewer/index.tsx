@@ -1,6 +1,6 @@
-import { sh } from '@/helpers/namespaces'
-import { WidgetProps } from '@/types'
-import FormLevel from '@/components/core/FormLevel'
+import { sh } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
+import { WidgetProps } from '@centergraph/shacl-renderer/lib/types'
+import FormLevel from '@centergraph/shacl-renderer/lib/components/core/FormLevel'
 
 export default function BlankNodeViewer({ dataPointer, shaclPointer, settings }: WidgetProps) {
   const node = shaclPointer.out(sh('node')).term
