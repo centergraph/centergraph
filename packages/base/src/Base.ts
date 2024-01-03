@@ -12,7 +12,7 @@ import { query } from './routes/query.ts'
 import { turtle } from './routes/turtle.ts'
 import { types } from './routes/types.ts'
 
-const folder = '../../data/address-book'
+export const folder = '../../data/address-book'
 export const store = new Store()
 export const baseIRI = 'http://localhost:8000'
 export const { prefixes } = await turtleSync({

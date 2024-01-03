@@ -1,5 +1,6 @@
+import { writeTurtle } from '@centergraph/shared/lib/writeTurtle.ts'
+
 import { DataFactory } from '../deps.ts'
-import { writeTurtle } from '../helpers/writeTurtle.ts'
 import { StrategyProps } from '../types.ts'
 
 export default async ({ graphStore, iri, store, sparqlEndpoint, fetch }: StrategyProps) => {

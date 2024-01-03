@@ -1,6 +1,6 @@
-import { write } from 'npm:@jeswr/pretty-turtle'
+import { write } from '@jeswr/pretty-turtle'
 
-import { dataFactory, Quad, Store } from '../deps.ts'
+import { DataFactory, Quad, Store } from 'n3'
 
 export const writeTurtle = async ({
   store,
@@ -11,7 +11,7 @@ export const writeTurtle = async ({
   prefixes?: { [key: string]: string }
 }): Promise<string> => {
   return await write(
-    [...store].map((quad) => dataFactory.quad(quad.subject, quad.predicate, quad.object)),
+    [...store].map((quad) => DataFactory.quad(quad.subject, quad.predicate, quad.object)),
     { prefixes }
   )
 }
