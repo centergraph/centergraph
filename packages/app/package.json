@@ -4,16 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port=8001",
+    "dev": "wait-on http://localhost:8000 && curl http://localhost:8000/api/types > src/types.ts && vite --port=8001",
     "build": "vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview --port=8010",
     "inspect": "npx vite-bundle-visualizer -o inspect/*.html"
   },
   "dependencies": {
-    "@centergraph/sdk": "*",
-    "@centergraph/shared": "*",
-    "@centergraph/shacl-renderer": "*"
+    "@centergraph/sdk": "*"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

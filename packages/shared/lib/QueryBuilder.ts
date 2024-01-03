@@ -18,7 +18,7 @@ const flatten = (obj: Term) => {
   return result
 }
 
-export class QueryBuilder {
+export class QueryBuilder implements PromiseLike<NamedNode[]> {
   #options: QueryOptions
   #filters: { predicate: Term; object?: Term }[] = []
   #sorters: { predicate: Term; order: 'ascending' | 'descending' }[] = []
@@ -45,12 +45,19 @@ export class QueryBuilder {
     return this
   }
 
-  then(resolve: (results: NamedNode[]) => void) {
-    if (this.#options.mode === 'local') return this.#thenStoreLocal(resolve)
-    return this.#thenApiRemote(resolve)
+  then<TResult1 = NamedNode[], TResult2 = never>(
+    onfulfilled?: ((value: NamedNode[]) => TResult1 | PromiseLike<TResult1>) | undefined | null,
+    onrejected?: ((reason: unknown) => TResult2 | PromiseLike<TResult2>) | undefined | null
+  ): PromiseLike<TResult1 | TResult2> {
+    try {
+      if (this.#options.mode === 'local') return this.#thenStoreLocal().then(onfulfilled)
+      return this.#thenApiRemote().then(onfulfilled)
+    } catch (error) {
+      return Promise.reject(onrejected ? onrejected(error) : undefined)
+    }
   }
 
-  #thenStoreLocal(resolve: (results: NamedNode[]) => void) {
+  async #thenStoreLocal(): Promise<NamedNode[]> {
     let dataset = this.#options.store
 
     for (const { predicate, object } of this.#filters) {
@@ -69,10 +76,10 @@ export class QueryBuilder {
       graphs.set(quad.graph.value, quad.graph as unknown as NamedNode)
     }
 
-    resolve([...graphs.values()])
+    return [...graphs.values()]
   }
 
-  async #thenApiRemote(resolve: (results: NamedNode[]) => void) {
+  async #thenApiRemote(): Promise<NamedNode[]> {
     const query = new URLSearchParams()
     query.append(
       'query',
@@ -87,7 +94,7 @@ export class QueryBuilder {
     )
     const response = await this.#fetch(`${this.#options.base}/api/query?${query.toString()}`).then((response) => response.json())
     const graphs = response.map((graph: string) => DataFactory.namedNode(graph))
-    resolve(graphs)
+    return graphs
   }
 
   // TODO Implement a to SPARQL method.

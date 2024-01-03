@@ -19,7 +19,7 @@ type GrapoiPointer = {
   isList: () => boolean
   deleteList: () => GrapoiPointer
   list: () => Array<GrapoiPointer>
-  ptrs: Array<{ dataset: DatasetCore }>
+  ptrs: Array<{ dataset: DatasetCore } & GrapoiPointer>
   clone: (data?: unknown) => GrapoiPointer
   node: (pointers?: Array<unknown>) => GrapoiPointer
   execute: (paths: Array<unknown>) => GrapoiPointer

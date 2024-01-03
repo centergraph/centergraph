@@ -1,15 +1,23 @@
-import { rdf, schema } from '@centergraph/shared/namespaces'
-import { api } from './centerGraph'
 import { Person } from './types'
+import { api } from './centerGraph'
+import View from '@centergraph/sdk/lib/react/components/View'
+import { useApi } from '@centergraph/sdk/lib/react/hooks/useApi'
 
 export default function App() {
-  // const johnDoe = await api.load<Person>('/contacts/john-doe').asObject()
-  const contactUrls = api.useDocumentUrls((query) => query.filter(rdf('type'), schema('Person')))
+  const { namespaces } = api
+  const person = useApi(api.get<Person>('/contacts/john-doe'))
+  const contactUrls = useApi(api.query.filter(namespaces.rdf('type'), namespaces.schema('Person')))
 
   return (
     <>
-      <h1>Hello</h1>
-      {contactUrls.map((contactUrl) => api.load<Person>(contactUrl).displayAs('card'))}
+      <h1>
+        Hello {person?.givenName} {person?.familyName}
+      </h1>
+      <div>
+        {contactUrls?.map((contactUrl) => (
+          <View key={contactUrl.value} data={api.get<Person>(contactUrl)} as="card" />
+        ))}
+      </div>
     </>
   )
 }

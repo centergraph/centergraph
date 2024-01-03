@@ -1,7 +1,7 @@
 import cors from 'cors'
 import express from 'express'
 import { Store } from 'n3'
-import { Express } from 'types-express'
+import { Express, Request, Response } from 'types-express'
 
 import { DenoFolderAdapter } from '../../turtle-sync/src/adapters/DenoFolderAdapter.ts'
 import turtleSync from '../../turtle-sync/src/turtleSync.ts'
@@ -32,8 +32,10 @@ app.get('/api/query', query)
 app.get('/api/context', contextRoute)
 app.get('/api/types', types)
 app.use('/oidc', oidc.callback())
-
 app.use(turtle)
+app.get('/', (_request: Request, response: Response) => {
+  response.send('Hello, welcome to CenterGraph')
+})
 
 app.listen(port, () => {
   console.log(`CenterGraph Base is running on ${baseIRI}`)

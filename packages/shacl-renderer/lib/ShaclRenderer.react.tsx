@@ -59,10 +59,12 @@ export default function ShaclRenderer({ settings, shaclShapesUrl, dataUrl, subje
     if (shaclShapes && dataPointer && settings && !children) {
       let shaclRoot = shaclShapes.hasOut(rdf('type'), sh('NodeShape'))
       if (settings.targetClass) shaclRoot = shaclRoot.hasOut(sh('targetClass'), DataFactory.namedNode(settings.targetClass))
-      shaclRoot.ptrs = [shaclRoot.ptrs[0]]
+
+      const matchedPointer = shaclRoot.ptrs.find((ptr) => ptr.term.value === shaclShapesUrl)
+      shaclRoot.ptrs = [matchedPointer ?? shaclRoot.ptrs[0]]
       setChildren(<FormLevel shaclPointer={shaclRoot} dataPointer={dataPointer} settings={settings} />)
     }
-  }, [shaclShapes, dataPointer, settings, children])
+  }, [shaclShapes, dataPointer, settings, children, shaclShapesUrl])
 
   return children ? (
     <div className={`shacl-renderer mode-${settings.mode}`}>

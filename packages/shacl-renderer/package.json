@@ -6,7 +6,7 @@
   "main": "lib/ShaclRenderer.react.tsx",
   "types": "lib/ShaclRenderer.react.tsx",
   "scripts": {
-    "dev": "vite --port=8002",
+    "dev-old": "vite --port=8002",
     "build-old": "tsc && vite build",
     "test": "vitest",
     "coverage": "vitest run --coverage",
