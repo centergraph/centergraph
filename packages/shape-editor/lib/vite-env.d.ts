@@ -1,9 +1,10 @@
 /// <reference types="vite/client" />
 
 type GrapoiPointer = {
-  in: (predicates?: Array<NamedNode>, objects?: Array<NamedNode>) => GrapoiPointer
+  in: (predicates?: Array<NamedNode> | NamedNode, objects?: Array<NamedNode> | NamedNode) => GrapoiPointer
   out: (predicates?: Array<NamedNode | null> | NamedNode, subjects?: Array<NamedNode> | NamedNode) => GrapoiPointer
   hasOut: (predicates?: Array<NamedNode | null> | NamedNode, subjects?: Array<NamedNode> | NamedNode) => GrapoiPointer
+  hasIn: (predicates?: Array<NamedNode | null> | NamedNode, objects?: Array<NamedNode> | NamedNode) => GrapoiPointer
   deleteOut: (predicates?: Array<unknown> | unknown, objects?: Array<unknown> | unknown) => GrapoiPointer
   addOut: (predicates?: Array<unknown> | unknown, objects?: Array<unknown> | unknown) => GrapoiPointer
   quads: () => Array<Quad>
@@ -17,7 +18,7 @@ type GrapoiPointer = {
   list: () => Array<GrapoiPointer>
   ptrs: Array<{ dataset: DatasetCore } & GrapoiPointer>
   clone: (data?: unknown) => GrapoiPointer
-  node: (pointers?: Array<unknown>) => GrapoiPointer
+  node: (pointers?: Array<NamedNode> | NamedNode) => GrapoiPointer
   execute: (paths: Array<unknown>) => GrapoiPointer
   executeAll: (paths: Array<unknown>) => GrapoiPointer
   replace: (replacement: unknown) => GrapoiPointer
