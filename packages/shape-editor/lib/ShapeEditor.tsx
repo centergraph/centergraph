@@ -7,7 +7,7 @@ import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
 import factory from '@rdfjs/data-model'
 import grapoi from 'grapoi'
-import { sh } from '@centergraph/shared/lib/namespaces'
+import { sh, xsd } from '@centergraph/shared/lib/namespaces'
 import './style.css'
 
 type ShapeEditorProps = {
@@ -44,12 +44,26 @@ export default function ShapeEditor(props: ShapeEditorProps) {
     <div>
       <DndProvider backend={HTML5Backend}>
         {[...propertyGroups]?.map((propertyGroup) => {
-          const shaclProperties = [...propertyGroup.in()]
+          const shaclProperties = [...propertyGroup.in()].sort((a, b) => {
+            const shOrderA = a.out(sh('order')).value
+            const orderA = shOrderA ? parseFloat(shOrderA) : 0
+
+            const shOrderB = b.out(sh('order')).value
+            const orderB = shOrderB ? parseFloat(shOrderB) : 0
+
+            return orderB - orderA
+          })
+
+          if (renderCount === 1) {
+            shaclProperties.forEach((pointer, index) => {
+              pointer.deleteOut(sh('order')).addOut(sh('order'), [factory.literal(index.toString(), xsd('double'))])
+            })
+          }
 
           return (
             <PropertyGroup setRenderCount={setRenderCount} key={propertyGroup.term.value} pointer={propertyGroup}>
               {shaclProperties.map((shaclProperty) => (
-                <ShaclProperty key={shaclProperty.term.value} pointer={shaclProperty} />
+                <ShaclProperty setRenderCount={setRenderCount} key={shaclProperty.term.value} pointer={shaclProperty} />
               ))}
             </PropertyGroup>
           )

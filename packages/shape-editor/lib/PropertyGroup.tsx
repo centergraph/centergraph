@@ -15,7 +15,7 @@ export default function PropertyGroup({
   const [{ isOver }, drop] = useDrop(() => ({
     accept: 'ShaclProperty',
     drop: (shaclPropertyTerm: NamedNode) => {
-      pointer.node(shaclPropertyTerm).deleteOut(sh('group')).addOut(sh('group'), pointer.term)
+      pointer.node(shaclPropertyTerm)?.deleteOut(sh('group')).addOut(sh('group'), pointer.term)
       setRenderCount((value) => value + 1)
     },
     collect: (monitor) => ({
