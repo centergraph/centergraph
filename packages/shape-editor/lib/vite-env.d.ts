@@ -18,7 +18,7 @@ type GrapoiPointer = {
   list: () => Array<GrapoiPointer>
   ptrs: Array<{ dataset: DatasetCore } & GrapoiPointer>
   clone: (data?: unknown) => GrapoiPointer
-  node: (pointers?: Array<NamedNode> | NamedNode) => GrapoiPointer
+  node: (predicates?: Array<NamedNode | null> | NamedNode, subjects?: Array<NamedNode> | NamedNode) => GrapoiPointer
   execute: (paths: Array<unknown>) => GrapoiPointer
   executeAll: (paths: Array<unknown>) => GrapoiPointer
   replace: (replacement: unknown) => GrapoiPointer

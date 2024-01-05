@@ -1,7 +1,7 @@
 .shacl-group {
-  padding-bottom: 100px;
   background-color: #eee;
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
+  border: 1px solid rgb(126, 126, 126);
 
   &.is-over {
     background-color: #ccc;
@@ -9,7 +9,18 @@
 }
 
 .shacl-property {
-  border: 2px solid gray;
+  border: 1px solid gray;
   padding: 1em;
   margin: 10px;
+}
+
+.grid {
+  display: grid;
+  gap: 1em;
+}
+
+.grid-region {
+  border: 1px solid #ddd;
+  background-color: #eee;
+  padding: 1em;
 }

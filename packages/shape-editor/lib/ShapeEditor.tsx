@@ -7,8 +7,11 @@ import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
 import factory from '@rdfjs/data-model'
 import grapoi from 'grapoi'
-import { sh, xsd } from '@centergraph/shared/lib/namespaces'
+import { sh, xsd, sr } from '@centergraph/shared/lib/namespaces'
 import './style.css'
+import { sortPointersByShOrder } from './helpers/sortPointersByShOrder'
+import { getAllShapesFromShape } from './helpers/getAllShapesFromShape'
+import GridRegion from './GridRegion'
 
 type ShapeEditorProps = {
   shaclShapesUrl: string
@@ -33,42 +36,80 @@ export default function ShapeEditor(props: ShapeEditorProps) {
         })
         const quads = await parser.parse(turtle)
         const dataset = datasetFactory.dataset(quads)
-        setShaclPointer(grapoi({ dataset, factory, term: factory.namedNode(url.toString()) }))
-        return null
+        const pointer = grapoi({ dataset, factory, term: factory.namedNode(url.toString()) })
+        const propertyGroups = pointer?.node([sh('PropertyGroup')]).in() ?? []
+
+        for (const propertyGroup of [...propertyGroups]) {
+          const shaclProperties = [...propertyGroup.in()].sort(sortPointersByShOrder)
+
+          shaclProperties.forEach((pointer, index) => {
+            pointer.deleteOut(sh('order')).addOut(sh('order'), [factory.literal(index.toString(), xsd('double'))])
+          })
+        }
+
+        setShaclPointer(pointer)
       })
   }, [fetch, shaclShapesUrl])
 
-  const propertyGroups = shaclPointer?.node([sh('PropertyGroup')]).in() ?? []
+  const propertyGroups = [...(shaclPointer?.node([sh('PropertyGroup')]).in() ?? [])].sort(sortPointersByShOrder)
+
+  const grid = shaclPointer?.out(sr('grid'))
+  const regions = [...new Set(grid?.out(sr('grid-template-areas')).value?.replace(/'|"/g, ' ').split(' ').filter(Boolean) ?? [])]
+
+  const gridTemplateAreas = grid?.out(sr('grid-template-areas')).value
+  const gridTemplateRows = grid?.out(sr('grid-template-rows')).value
+  const gridTemplateColumns = grid?.out(sr('grid-template-columns')).value
+
+  const getPropertyGroups = (filterGridArea: string | undefined) =>
+    propertyGroups.filter((propertyGroup) => {
+      const gridArea = propertyGroup.out(sr('gridArea')).value
+      return gridArea === filterGridArea
+    })
+
+  const renderPropertyGroup = (propertyGroup: GrapoiPointer) => {
+    if (!shaclPointer) return null
+
+    const url = new URL(shaclShapesUrl, location.origin)
+    const shapeIris = getAllShapesFromShape(shaclPointer, factory.namedNode(url.toString()))
+    const shapes = shaclPointer.node(shapeIris)
+
+    const shaclProperties = [...shapes.out(sh('property'))].filter((property) => {
+      return property.out(sh('group')).value === propertyGroup?.term.value
+    })
+
+    return (
+      <PropertyGroup setRenderCount={setRenderCount} key={propertyGroup?.term.value ?? 'undefined'} pointer={propertyGroup ?? shaclPointer}>
+        {shaclProperties.map((shaclProperty) => (
+          <ShaclProperty setRenderCount={setRenderCount} key={shaclProperty.term.value} pointer={shaclProperty} />
+        ))}
+      </PropertyGroup>
+    )
+  }
 
   return shaclPointer && renderCount ? (
     <div>
-      <DndProvider backend={HTML5Backend}>
-        {[...propertyGroups]?.map((propertyGroup) => {
-          const shaclProperties = [...propertyGroup.in()].sort((a, b) => {
-            const shOrderA = a.out(sh('order')).value
-            const orderA = shOrderA ? parseFloat(shOrderA) : 0
+      <GridRegion name={'unassigned'} setRenderCount={setRenderCount}>
+        {(grid?.value ? getPropertyGroups(undefined) : propertyGroups).map(renderPropertyGroup)}
+      </GridRegion>
 
-            const shOrderB = b.out(sh('order')).value
-            const orderB = shOrderB ? parseFloat(shOrderB) : 0
-
-            return orderB - orderA
-          })
-
-          if (renderCount === 1) {
-            shaclProperties.forEach((pointer, index) => {
-              pointer.deleteOut(sh('order')).addOut(sh('order'), [factory.literal(index.toString(), xsd('double'))])
-            })
-          }
-
-          return (
-            <PropertyGroup setRenderCount={setRenderCount} key={propertyGroup.term.value} pointer={propertyGroup}>
-              {shaclProperties.map((shaclProperty) => (
-                <ShaclProperty setRenderCount={setRenderCount} key={shaclProperty.term.value} pointer={shaclProperty} />
-              ))}
-            </PropertyGroup>
-          )
-        })}
-      </DndProvider>
+      {regions.length ? (
+        <>
+          <div
+            className="grid mt-5"
+            style={{
+              gridTemplateAreas,
+              gridTemplateRows,
+              gridTemplateColumns,
+            }}
+          >
+            {regions.map((region) => (
+              <GridRegion key={region} name={region} setRenderCount={setRenderCount}>
+                {getPropertyGroups(region).map(renderPropertyGroup)}
+              </GridRegion>
+            ))}
+          </div>
+        </>
+      ) : null}
     </div>
   ) : null
 }

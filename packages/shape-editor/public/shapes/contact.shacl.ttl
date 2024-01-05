@@ -4,9 +4,18 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ts: <https://centergraph.danielbeeke.nl/turtle-sync#> .
 @prefix sr: <https://centergraph.danielbeeke.nl/shacl-renderer#> .
+@prefix se: <https://centergraph.danielbeeke.nl/shape-editor#> .
 
 <>
   ts:strategy ts:DeleteInsert ;
+
+  # TODO move to a seperate file that we always include
+  sr:grid [
+    schema:name "Sidebar" ;
+    sr:grid-template-columns "minmax(260px, 30%) 1fr" ;
+    sr:grid-template-areas "'top top' 'left right' 'bottom bottom'";
+    sr:grid-template-rows "minmax(100px, auto) auto auto" ;
+  ] ;
 
   a sh:NodeShape, sr:MainShape ;
   sh:targetClass schema:Person ;
@@ -43,7 +52,6 @@
     sh:name "Address"@en ;
     sh:path schema:address ;
     sh:maxCount 3 ;
-    sh:group <#other> ;
     sh:node <addressShape> ;
     sh:nodeKind sh:BlankNode ;
   ];
@@ -58,6 +66,7 @@
 <#name>
 	a sh:PropertyGroup ;
 	sh:order 0 ;
+  sr:gridArea "top" ;
   sr:class "horizontal" .
 
 
