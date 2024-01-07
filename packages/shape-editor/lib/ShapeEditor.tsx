@@ -1,7 +1,3 @@
-import ShaclProperty from './ShaclProperty'
-import { DndProvider } from 'react-dnd'
-import { HTML5Backend } from 'react-dnd-html5-backend'
-import PropertyGroup from './PropertyGroup'
 import { useEffect, useState } from 'react'
 import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
@@ -12,10 +8,35 @@ import './style.css'
 import { sortPointersByShOrder } from './helpers/sortPointersByShOrder'
 import { getAllShapesFromShape } from './helpers/getAllShapesFromShape'
 import GridRegion from './GridRegion'
+import {
+  DndContext,
+  closestCenter,
+  KeyboardSensor,
+  PointerSensor,
+  useSensor,
+  useSensors,
+  DragEndEvent,
+  DragOverEvent,
+  DragOverlay,
+  DragStartEvent,
+} from '@dnd-kit/core'
+import { sortableKeyboardCoordinates, arrayMove } from '@dnd-kit/sortable'
+import PropertyGroup from './PropertyGroup'
+import { ShaclProperty } from './ShaclProperty'
 
 type ShapeEditorProps = {
   shaclShapesUrl: string
   fetch?: typeof globalThis.fetch
+}
+
+const resetOrders = (propertyGroups: GrapoiPointer) => {
+  for (const propertyGroup of [...propertyGroups]) {
+    const shaclProperties = [...propertyGroup.in()].sort(sortPointersByShOrder)
+
+    shaclProperties.forEach((pointer, index) => {
+      pointer.deleteOut(sh('order')).addOut(sh('order'), [factory.literal((index + 1).toString(), xsd('double'))])
+    })
+  }
 }
 
 export default function ShapeEditor(props: ShapeEditorProps) {
@@ -24,6 +45,7 @@ export default function ShapeEditor(props: ShapeEditorProps) {
 
   const [shaclPointer, setShaclPointer] = useState<GrapoiPointer>()
   const [renderCount, setRenderCount] = useState<number>(1)
+  const [activeId, setActiveId] = useState<GrapoiPointer>()
 
   useEffect(() => {
     fetch(shaclShapesUrl.split('#')[0])
@@ -39,19 +61,13 @@ export default function ShapeEditor(props: ShapeEditorProps) {
         const pointer = grapoi({ dataset, factory, term: factory.namedNode(url.toString()) })
         const propertyGroups = pointer?.node([sh('PropertyGroup')]).in() ?? []
 
-        for (const propertyGroup of [...propertyGroups]) {
-          const shaclProperties = [...propertyGroup.in()].sort(sortPointersByShOrder)
-
-          shaclProperties.forEach((pointer, index) => {
-            pointer.deleteOut(sh('order')).addOut(sh('order'), [factory.literal(index.toString(), xsd('double'))])
-          })
-        }
+        resetOrders(propertyGroups)
 
         setShaclPointer(pointer)
       })
   }, [fetch, shaclShapesUrl])
 
-  const propertyGroups = [...(shaclPointer?.node([sh('PropertyGroup')]).in() ?? [])].sort(sortPointersByShOrder)
+  const allPropertyGroups = [...(shaclPointer?.node([sh('PropertyGroup')]).in() ?? [])]
 
   const grid = shaclPointer?.out(sr('grid'))
   const regions = [...new Set(grid?.out(sr('grid-template-areas')).value?.replace(/'|"/g, ' ').split(' ').filter(Boolean) ?? [])]
@@ -60,56 +76,99 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   const gridTemplateRows = grid?.out(sr('grid-template-rows')).value
   const gridTemplateColumns = grid?.out(sr('grid-template-columns')).value
 
+  const url = new URL(shaclShapesUrl, location.origin)
+  const shapeIris = shaclPointer ? getAllShapesFromShape(shaclPointer, factory.namedNode(url.toString())) : []
+  const shapes = shaclPointer?.node(shapeIris)
+
+  const sensors = useSensors(
+    useSensor(PointerSensor),
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
+  )
+
   const getPropertyGroups = (filterGridArea: string | undefined) =>
-    propertyGroups.filter((propertyGroup) => {
-      const gridArea = propertyGroup.out(sr('gridArea')).value
-      return gridArea === filterGridArea
-    })
+    allPropertyGroups
+      .filter((propertyGroup) => {
+        const gridArea = propertyGroup.out(sr('gridArea')).value
+        return gridArea === filterGridArea
+      })
+      .sort(sortPointersByShOrder)
 
-  const renderPropertyGroup = (propertyGroup: GrapoiPointer) => {
-    if (!shaclPointer) return null
+  function handleDragEnd(event: DragEndEvent) {
+    if (!shaclPointer || !shapes) return
+    const { active, over } = event
 
-    const url = new URL(shaclShapesUrl, location.origin)
-    const shapeIris = getAllShapesFromShape(shaclPointer, factory.namedNode(url.toString()))
-    const shapes = shaclPointer.node(shapeIris)
+    if (active && over && active.id !== over.id && active.data.current?.type === 'property' && over.data.current?.type === 'property') {
+      const group = active.data.current.pointer.out(sh('group')).value
+      const shaclProperties = [...shapes.out(sh('property'))]
+        .filter((property) => {
+          return property.out(sh('group')).value === group
+        })
+        .sort(sortPointersByShOrder)
 
-    const shaclProperties = [...shapes.out(sh('property'))].filter((property) => {
-      return property.out(sh('group')).value === propertyGroup?.term.value
-    })
+      const shaclPropertyIris = shaclProperties.map((shaclProperty) => shaclProperty.term.value)
+      const oldIndex = shaclPropertyIris.indexOf(active.data.current.pointer.term.value)
+      const newIndex = shaclPropertyIris.indexOf(over.data.current.pointer.term.value)
 
-    return (
-      <PropertyGroup setRenderCount={setRenderCount} key={propertyGroup?.term.value ?? 'undefined'} pointer={propertyGroup ?? shaclPointer}>
-        {shaclProperties.map((shaclProperty) => (
-          <ShaclProperty setRenderCount={setRenderCount} key={shaclProperty.term.value} pointer={shaclProperty} />
-        ))}
-      </PropertyGroup>
-    )
+      const sortedArray = arrayMove(shaclPropertyIris, oldIndex, newIndex)
+
+      setRenderCount((value) => value + 1)
+
+      for (const [index, id] of sortedArray.entries()) {
+        const pointer = shaclProperties.find((shaclProperty) => shaclProperty.term.value === id)
+        if (pointer) pointer.deleteOut(sh('order')).addOut(sh('order'), factory.literal(index.toString(), xsd('double')))
+      }
+    }
   }
 
-  return shaclPointer && renderCount ? (
-    <div>
-      <GridRegion name={'unassigned'} setRenderCount={setRenderCount}>
-        {(grid?.value ? getPropertyGroups(undefined) : propertyGroups).map(renderPropertyGroup)}
-      </GridRegion>
+  function handleDragOver(event: DragOverEvent) {
+    return
+  }
 
-      {regions.length ? (
-        <>
-          <div
-            className="grid mt-5"
-            style={{
-              gridTemplateAreas,
-              gridTemplateRows,
-              gridTemplateColumns,
-            }}
-          >
-            {regions.map((region) => (
-              <GridRegion key={region} name={region} setRenderCount={setRenderCount}>
-                {getPropertyGroups(region).map(renderPropertyGroup)}
-              </GridRegion>
-            ))}
-          </div>
-        </>
-      ) : null}
+  function handleDragStart(event: DragStartEvent) {
+    const { active } = event
+    setActiveId(active.data.current!.pointer)
+  }
+
+  return shaclPointer && renderCount && shapes ? (
+    <div>
+      <DndContext
+        sensors={sensors}
+        collisionDetection={closestCenter}
+        onDragOver={handleDragOver}
+        onDragStart={handleDragStart}
+        onDragEnd={handleDragEnd}
+      >
+        <GridRegion name={'unassigned'}>
+          {(grid?.value ? getPropertyGroups(undefined) : allPropertyGroups).map((propertyGroup) => (
+            <PropertyGroup key={propertyGroup?.term.value ?? 'undefined'} shapes={shapes} pointer={propertyGroup ?? shapes} />
+          ))}
+        </GridRegion>
+
+        {regions.length ? (
+          <>
+            <div
+              className="grid mt-5"
+              style={{
+                gridTemplateAreas,
+                gridTemplateRows,
+                gridTemplateColumns,
+              }}
+            >
+              {regions.map((region) => (
+                <GridRegion key={region} name={region}>
+                  {getPropertyGroups(region).map((propertyGroup) => (
+                    <PropertyGroup key={propertyGroup?.term.value ?? 'undefined'} shapes={shapes} pointer={propertyGroup ?? shapes} />
+                  ))}
+                </GridRegion>
+              ))}
+            </div>
+          </>
+        ) : null}
+
+        <DragOverlay>{activeId ? <ShaclProperty pointer={activeId} id={activeId.term.value} /> : null}</DragOverlay>
+      </DndContext>
     </div>
   ) : null
 }

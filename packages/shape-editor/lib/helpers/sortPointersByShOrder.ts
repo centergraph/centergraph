@@ -7,5 +7,5 @@ export const sortPointersByShOrder = (a: GrapoiPointer, b: GrapoiPointer) => {
   const shOrderB = b.out(sh('order')).value
   const orderB = shOrderB ? parseFloat(shOrderB) : 0
 
-  return orderB - orderA
+  return orderA - orderB
 }
