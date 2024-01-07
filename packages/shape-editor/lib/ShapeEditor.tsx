@@ -10,6 +10,7 @@ import factory from '@rdfjs/data-model'
 import PropertyGroup from './PropertyGroup'
 import ShaclProperty from './ShaclProperty'
 import { resetOrders } from './helpers/resetOrders'
+import { updateOrders } from './helpers/updateOrders'
 
 type ShapeEditorProps = {
   shaclShapesUrl: string
@@ -48,7 +49,7 @@ export default function ShapeEditor(props: ShapeEditorProps) {
         const shaclProperties = [...(shapes?.out(sh('property')) ?? [])].filter(
           (property) => property.out(sh('group')).value === propertyGroup.term.value
         )
-        return [propertyGroup.term.value, shaclProperties]
+        return [propertyGroup.term.value, shaclProperties.sort(sortPointersByShOrder)]
       }
 
       const getPropertyGroups = (filterGridArea: string) => {
@@ -88,13 +89,12 @@ export default function ShapeEditor(props: ShapeEditorProps) {
 
     if (start === end) {
       const list = start
-
       const startPointer = list[source.index]
 
       const newList = list.filter((pointer) => pointer.term.value !== startPointer.term.value)
       newList.splice(destination.index, 0, startPointer)
 
-      resetOrders(newList)
+      updateOrders(newList)
 
       setData((state) => ({
         ...state,
@@ -112,8 +112,8 @@ export default function ShapeEditor(props: ShapeEditorProps) {
       const newEndList = [...end]
       newEndList.splice(destination.index, 0, startPointer)
 
-      // resetOrders(newStartList)
-      // resetOrders(newEndList)
+      updateOrders(newStartList)
+      updateOrders(newEndList)
 
       if (startRegion === endRegion) {
         setData((state) => ({
