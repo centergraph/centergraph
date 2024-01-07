@@ -1,9 +1,9 @@
 import { ReactNode } from 'react'
 
-export default function GridRegion({ name, children }: { children: ReactNode; name: string }) {
+export default function GridRegion({ name, children }: { children?: ReactNode; name: string | undefined }) {
   return (
-    <div style={{ gridArea: name }} className={`grid-region grid-region-${name}`}>
-      <span className="name">Region: {name}</span>
+    <div style={{ gridArea: name ?? 'undefined' }} className={`grid-region grid-region-${name ?? 'undefined'}`}>
+      <span className="name">Region: {name ?? 'undefined'}</span>
       {children}
     </div>
   )
