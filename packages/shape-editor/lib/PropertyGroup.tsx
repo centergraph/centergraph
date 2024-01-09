@@ -8,15 +8,26 @@ export default function PropertyGroup({ region, pointer, children }: { region: s
   const order = shOrder ? parseFloat(shOrder) : 0
 
   return (
-    <Droppable droppableId={`${region}|${pointer?.term.value ?? '_undefined'}`}>
-      {(provided) => (
-        <details {...provided.droppableProps} ref={provided.innerRef} className={`shacl-group`}>
-          <summary className="title">Group: {label}</summary>
+    <Draggable draggableId={pointer.term.id} index={order}>
+      {(dragProvided) => (
+        <Droppable droppableId={`${region}|${pointer?.term.value ?? '_undefined'}`} type="property">
+          {(dropProvided) => (
+            <details
+              ref={dragProvided.innerRef}
+              {...dragProvided.draggableProps}
+              {...dragProvided.dragHandleProps}
+              className={`shacl-group`}
+            >
+              <summary className="title">Group: {label}</summary>
 
-          {children}
-          {provided.placeholder}
-        </details>
+              <div className="inner" {...dropProvided.droppableProps} ref={dropProvided.innerRef}>
+                {children}
+                {dropProvided.placeholder}
+              </div>
+            </details>
+          )}
+        </Droppable>
       )}
-    </Droppable>
+    </Draggable>
   )
 }

@@ -13,10 +13,10 @@ export const onDragEnd = (
   const [startRegion, startGroup] = source.droppableId.split('|')
   const [endRegion, endGroup] = destination.droppableId.split('|')
 
-  const start = data[startRegion][startGroup]
-  const end = data[endRegion][endGroup]
+  const start = data[startRegion]?.[startGroup]
+  const end = data[endRegion]?.[endGroup]
 
-  if (start === end) {
+  if (start && end && start === end) {
     const list = start
     const startPointer = list[source.index]
 
@@ -34,7 +34,7 @@ export const onDragEnd = (
     }))
 
     return null
-  } else {
+  } else if (start && end) {
     const startPointer = start[source.index]
 
     const newStartList = start.filter((pointer) => pointer.term.value !== startPointer.term.value)
@@ -64,6 +64,42 @@ export const onDragEnd = (
           ...state[endRegion],
           [endGroup]: newEndList,
         },
+      }))
+    }
+  }
+
+  // Group
+  if (startRegion && endRegion && !start && !end) {
+    const sourceList = data[startRegion]
+    const groupKeys = Object.keys(sourceList)
+    const sourceGroup = sourceList[groupKeys[source.index]]
+
+    if (startRegion !== endRegion) {
+      setData((state) => ({
+        ...state,
+        [startRegion]: Object.fromEntries(
+          Object.entries(sourceList).filter(([groupIri]) => {
+            return groupIri !== groupKeys[source.index]
+          })
+        ),
+        [endRegion]: {
+          ...state[endRegion],
+          [groupKeys[source.index]]: sourceGroup,
+        },
+      }))
+    } else {
+      const sourceList = data[startRegion]
+      const groupKeys = Object.keys(sourceList)
+      const sourceGroup = sourceList[groupKeys[source.index]]
+
+      const listEntries = Object.entries(sourceList)
+
+      listEntries.splice(source.index, 1)
+      listEntries.splice(destination.index, 0, [groupKeys[source.index], sourceGroup])
+
+      setData((state) => ({
+        ...state,
+        [startRegion]: Object.fromEntries(listEntries),
       }))
     }
   }

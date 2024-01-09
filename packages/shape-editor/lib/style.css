@@ -1,6 +1,12 @@
+:root {
+  --highlight: #e2f1fa;
+}
+
 .shacl-group {
   background-color: #eee;
   margin-bottom: 0.5em;
+  padding: 1em;
+  display: block;
   border: 1px solid rgb(126, 126, 126);
 
   &.is-over {
@@ -23,4 +29,9 @@
   border: 1px solid #ddd;
   background-color: #eee;
   padding: 1em;
+
+  &.is-dragging-over {
+    background-color: var(--highlight);
+    padding-bottom: 4em;
+  }
 }
