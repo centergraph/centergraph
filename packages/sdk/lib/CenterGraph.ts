@@ -14,14 +14,14 @@ import { FolderApiRequest } from './FolderApiRequest'
 
 export type CenterGraphOptions = {
   base: string
-  viewSettings?: ShaclRendererProps['settings']
+  shaclRendererSettings?: ShaclRendererProps['settings']
 }
 
 export class CenterGraph {
   #options: CenterGraphOptions
   #store = datasetFactory.dataset()
   #d2LFetch: typeof D2LFetch
-  viewSettings: ShaclRendererProps['settings']
+  public shaclRendererSettings: ShaclRendererProps['settings']
 
   namespaces = namespaces
 
@@ -32,9 +32,9 @@ export class CenterGraph {
     this.#d2LFetch.use({ name: 'simple-cache', fn: fetchSimpleCache })
     this.#d2LFetch.use({ name: 'dedupe', fn: fetchDedupe })
 
-    this.viewSettings = this.#options.viewSettings ?? defaultSettings('view')
-    registerCoreWidgets(this.viewSettings)
-    this.viewSettings.fetch = (input, init) => this.#d2LFetch.fetch(input, init)
+    this.shaclRendererSettings = this.#options.shaclRendererSettings ?? defaultSettings('view')
+    registerCoreWidgets(this.shaclRendererSettings)
+    this.shaclRendererSettings.fetch = (input, init) => this.#d2LFetch.fetch(input, init)
   }
 
   populateStore() {
@@ -72,4 +72,6 @@ export class CenterGraph {
       fetch: (input, init) => this.#d2LFetch.fetch(input, init),
     })
   }
+
+  centergraph = true
 }

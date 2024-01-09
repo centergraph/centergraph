@@ -6,11 +6,14 @@
 @prefix sr: <https://centergraph.danielbeeke.nl/shacl-renderer#> .
 @prefix se: <https://centergraph.danielbeeke.nl/shape-editor#> .
 @prefix srl: <https://centergraph.danielbeeke.nl/layouts#> .
+@prefix dash: <http://datashapes.org/dash#> .
 
 <>
   ts:strategy ts:DeleteInsert ;
 
   sr:grid srl:sidebar ;
+
+  se:app <http://localhost:8001/> ;
 
   a sh:NodeShape, sr:MainShape ;
   sh:targetClass schema:Person ;
@@ -90,6 +93,7 @@
         sh:path schema:streetAddress ;
         sh:datatype xsd:string ;
         sh:minCount 1 ;
+        dash:editor dash:TextFieldEditor ;
         sh:maxCount 1 ;
         sh:group <#address> ;
     ] ;

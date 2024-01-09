@@ -2,154 +2,21 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ts: <https://centergraph.danielbeeke.nl/turtle-sync#> .
 @prefix sr: <https://centergraph.danielbeeke.nl/shacl-renderer#> .
 @prefix se: <https://centergraph.danielbeeke.nl/shape-editor#> .
 @prefix srl: <https://centergraph.danielbeeke.nl/layouts#> .
 
 <>
-  ts:strategy ts:DeleteInsert ;
-
-  sr:grid srl:sidebar ;
-
-  a sh:NodeShape, sr:MainShape ;
-  sh:targetClass schema:Person ;
-
-  schema:name "Person" ;
-
-  sh:property [
-    sh:name "Given name"@en ;
-    sh:path schema:givenName ;
-    sh:minCount 1;
-    sh:group <#name> ;
-    sh:maxCount 1;
-    sh:datatype xsd:string ;
-  ];
-  
-  sh:property [
-    sh:name "Nick name"@en ;
-    sh:path schema:nickName ;
-    sh:minCount 1;
-    sh:maxCount 1;
-    sh:datatype xsd:string ;
-  ];
-
-  sh:property [
-    sh:name "Family name"@en ;
-    sh:path schema:familyName ;
-    sh:group <#name> ;
-    sh:minCount 1;
-    sh:maxCount 1;
-    sh:datatype xsd:string ;
-  ];
-
-  sh:property [
-    sh:name "Date of birth"@en ;
-    sh:path schema:birthDate ;
-    sh:maxCount 1;
-    sh:group <#other> ;
-    sh:datatype xsd:date ;
-  ];
-
-  sh:property [
-    sh:name "Address"@en ;
-    sh:path schema:address ;
-    sh:maxCount 3 ;
-    sh:node <addressShape> ;
-    sh:nodeKind sh:BlankNode ;
-  ];
-
-.
-<#other>
-	a sh:PropertyGroup ;
-	sh:order 1 ;
-  sr:class "horizontal" .
-
-
-<#name>
-	a sh:PropertyGroup ;
-	sh:order 0 ;
-  sr:gridArea "top" ;
-  sr:class "horizontal" .
-
-
-<#address>
-	a sh:PropertyGroup ;
-	sh:order 0 ;
-  sr:class "address" .
-
-
-<addressShape>
-    a sh:NodeShape ;
-    sh:targetClass schema:PostalAddress ;
-    
-    schema:name "Address" ;
-
-    sh:property [
-        sh:name "Street"@en ;
-        sh:path schema:streetAddress ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:group <#address> ;
-    ] ;
-
-    sh:property [
-        sh:name "Region"@en ;
-        sh:path schema:addressRegion ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:group <#address> ;
-    ] ;
-
-    sh:property [
-        sh:name "Locality"@en ;
-        sh:path schema:addressLocality ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:group <#address> ;
-    ] ;
-
-    sh:property [
-        sh:name "Postal code"@en ;
-        sh:path schema:postalCode ;
-        sh:or (
-            [ sh:datatype xsd:string ]
-            [ sh:datatype xsd:number ]
-        ) ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:group <#address> ;
-    ] ;
-
-    sh:property [
-        sh:name "Country"@en ;
-        sh:path schema:addressCountry ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:group <#address> ;
-    ] .
-
-# Views
-<#card>
   a sh:NodeShape ;
-  sh:targetClass schema:Person ;
-  schema:name "Person Card" ;
+  sh:targetClass sh:PropertyGroup ;
+
+  schema:name "Property" ;
 
   sh:property [
-    sh:path schema:givenName ;
-    sh:minCount 1;
-    sh:maxCount 1;
+    sh:name "Label"@en ;
+    sh:path sh:name ;
     sh:datatype xsd:string ;
   ];
+
   
-  sh:property [
-    sh:path schema:familyName ;
-    sh:minCount 1;
-    sh:maxCount 1;
-    sh:datatype xsd:string ;
-  ];
 .

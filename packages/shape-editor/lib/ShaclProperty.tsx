@@ -21,7 +21,7 @@ export default function ShaclProperty(
             </div>
             <span className="p-2">{label}</span>
             <div
-              className="d-inline ms-auto p-2"
+              className="d-inline ms-auto p-2 configure-button"
               onClick={(event) => {
                 event.preventDefault()
                 setActiveFormProperty(props)

@@ -4,10 +4,12 @@ import App from './App.tsx'
 import { api } from './centerGraph.ts'
 import CenterGraph from '@centergraph/sdk/lib/react/context/Provider'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <CenterGraph api={api}>
-      <App />
-    </CenterGraph>
-  </React.StrictMode>
-)
+window.addEventListener('DOMContentLoaded', () => {
+  ReactDOM.createRoot(document.getElementById('root')!).render(
+    <React.StrictMode>
+      <CenterGraph api={api}>
+        <App />
+      </CenterGraph>
+    </React.StrictMode>
+  )
+})

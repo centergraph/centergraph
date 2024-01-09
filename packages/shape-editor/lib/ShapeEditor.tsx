@@ -7,6 +7,8 @@ import PropertyGroup from './PropertyGroup'
 import ShaclProperty from './ShaclProperty'
 import { onDragEnd } from './onDragEnd'
 import Form from './Form'
+import { WidgetMeta } from '@centergraph/shacl-renderer/lib/types'
+import { fetchAppApi } from './helpers/fetchAppApi'
 
 export type ShapeEditorProps = {
   shaclShapesUrl: string
@@ -45,6 +47,8 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   const [shaclPointer, setShaclPointer] = useState<GrapoiPointer>()
   const [grid, setGrid] = useState<GridData>()
   const [data, setData] = useState<SortableState>([])
+  const [app, setApp] = useState<GrapoiPointer>()
+  const [widgetMetas, setWidgetMetas] = useState<Array<WidgetMeta>>()
 
   const [activeFormProperty, setActiveFormProperty] = useState<SortableStateItem | null>(null)
 
@@ -53,10 +57,15 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   useEffect(() => {
     if (isLoading) return
     isLoading = true
-    loadShapeEditorData(shaclShapesUrl).then(({ pointer, initialData, ...grid }) => {
+    loadShapeEditorData(shaclShapesUrl).then(({ pointer, initialData, app, ...grid }) => {
       setShaclPointer(pointer)
       setGrid(grid)
       setData(initialData)
+      setApp(app)
+      const appUrl = app.value
+      if (appUrl) {
+        fetchAppApi(appUrl).then(setWidgetMetas)
+      }
     })
   }, [fetch, shaclShapesUrl, grid?.hasGrid])
 
@@ -81,7 +90,7 @@ export default function ShapeEditor(props: ShapeEditorProps) {
 
   return grid && shaclPointer && regions ? (
     <>
-      {activeFormProperty ? <Form item={activeFormProperty} close={() => setActiveFormProperty(null)} /> : null}
+      {activeFormProperty ? <Form widgetMetas={widgetMetas} item={activeFormProperty} close={() => setActiveFormProperty(null)} /> : null}
 
       <DragDropContext onDragEnd={(event) => onDragEnd(shaclPointer, baseIRI, data, setData, event)}>
         <div>

@@ -4,7 +4,6 @@ import datasetFactory from '@rdfjs/dataset'
 export const defaultSettings = (mode: 'view' | 'edit') => ({
   fetch: fetch.bind(window),
   mode,
-  targetClass: 'https://schema.org/Person',
   widgetMetas: {
     editors: [],
     viewers: [],

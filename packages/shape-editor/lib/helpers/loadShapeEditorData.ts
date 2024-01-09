@@ -2,7 +2,7 @@ import grapoi from 'grapoi'
 import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
 import factory from '@rdfjs/data-model'
-import { sh, sr, srl } from '@centergraph/shared/lib/namespaces'
+import { sh, sr, srl, se } from '@centergraph/shared/lib/namespaces'
 import { resetOrders } from './resetOrders'
 import { SortableState } from '../ShapeEditor'
 import { getData } from './getData'
@@ -20,6 +20,7 @@ export const loadShapeEditorData = async (
 ): Promise<
   {
     pointer: GrapoiPointer
+    app: GrapoiPointer
     initialData: SortableState
   } & GridData
 > => {
@@ -36,7 +37,8 @@ export const loadShapeEditorData = async (
 
       resetOrders(propertyGroups)
 
-      const grid = pointer?.out(sr('grid'))
+      const grid = pointer.out(sr('grid'))
+      const app = pointer.out(se('app'))
 
       if (grid?.term.value.startsWith(srl().value)) {
         // TODO load it from the absolute URL.
@@ -64,6 +66,7 @@ export const loadShapeEditorData = async (
         gridTemplateColumns,
         regions,
         initialData,
+        app,
       }
     })
 }

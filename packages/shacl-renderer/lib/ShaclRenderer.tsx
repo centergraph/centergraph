@@ -11,16 +11,18 @@ import './style.css'
 
 export type ShaclRendererProps = {
   settings: Settings
-  shaclShapesUrl: string
+  shaclShapesUrl?: string
   dataUrl?: string
   subject?: string
 }
 
-const loadShaclShapes = async (settings: Settings, shaclShapesUrl: string) => {
-  const response = await settings.fetch(shaclShapesUrl.split('#')[0]).then((response) => response.text())
-  const parser = new Parser()
-  const quads = await parser.parse(response)
-  settings.shaclDataset = datasetFactory.dataset(quads)
+const loadShaclShapes = async (settings: Settings, shaclShapesUrl?: string) => {
+  if (shaclShapesUrl) {
+    const response = await settings.fetch(shaclShapesUrl.split('#')[0]).then((response) => response.text())
+    const parser = new Parser()
+    const quads = await parser.parse(response)
+    settings.shaclDataset = datasetFactory.dataset(quads)
+  }
   const shaclShapes = grapoi({ dataset: settings.shaclDataset, factory: DataFactory })
   await preloadWidgets(settings, shaclShapes)
   return shaclShapes
@@ -47,7 +49,7 @@ export default function ShaclRenderer({ settings, shaclShapesUrl, dataUrl, subje
   const [children, setChildren] = useState<ReactNode>(null)
 
   useEffect(() => {
-    if (dataUrl && settings && shaclShapesUrl) {
+    if (settings) {
       Promise.all([
         loadShaclShapes(settings, shaclShapesUrl).then(setShaclShapes),
         loadData(settings, dataUrl, subject).then(setDataPointer),

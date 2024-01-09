@@ -1,5 +1,6 @@
 import { DataFactory } from 'n3'
 import { dash, rdf, sh, xsd } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
+import widgetForm from '@centergraph/shacl-renderer/lib/widget.ttl?raw'
 
 export const iri = dash('TextFieldEditor')
 
@@ -21,3 +22,5 @@ export const score = (dataPointer: GrapoiPointer, shaclPointer: GrapoiPointer) =
 }
 
 export const createTerm = () => DataFactory.literal('')
+
+export const formParts = [widgetForm]

@@ -13,5 +13,5 @@ type ViewProps = {
 export default function View({ data, as }: ViewProps) {
   const { api } = useContext(centerGraphContext)
   const shaclUrl = useApi(data.shaclUrl(as))
-  return shaclUrl ? <ShaclRenderer dataUrl={data.url} shaclShapesUrl={shaclUrl} settings={api.viewSettings} /> : null
+  return shaclUrl ? <ShaclRenderer dataUrl={data.url} shaclShapesUrl={shaclUrl} settings={api.shaclRendererSettings} /> : null
 }

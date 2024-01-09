@@ -34,7 +34,7 @@ export default function PropertyGroup(
                 <Icon className="chevron" style={{ fontSize: '30px' }} icon="mdi:chevron-right"></Icon>
                 <span className="p-2">Group: {label}</span>
                 <div
-                  className="d-inline ms-auto p-2"
+                  className="d-inline ms-auto p-2 configure-button"
                   onClick={(event) => {
                     event.preventDefault()
                     setActiveFormProperty(props)
