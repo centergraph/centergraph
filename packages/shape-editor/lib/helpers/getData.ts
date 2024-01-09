@@ -16,9 +16,9 @@ export const getData = (pointer: GrapoiPointer, baseIRI: string): SortableState 
     return allPropertyGroups
       .filter((propertyGroup) => {
         const gridArea = propertyGroup.out(sr('gridArea')).value
-        if (filterGridArea === '_undefined' && !grid?.value) return true
+        if (filterGridArea === '_undefined' && (!grid?.value || !regions.includes(gridArea))) return true
         if (filterGridArea === '_undefined' && grid?.value) return gridArea === undefined
-        return gridArea === filterGridArea
+        return gridArea === filterGridArea && regions.includes(filterGridArea)
       })
       .sort(sortPointersByShOrder)
       .map((propertyGroup: GrapoiPointer) => {

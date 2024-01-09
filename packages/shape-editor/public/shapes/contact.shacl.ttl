@@ -5,17 +5,12 @@
 @prefix ts: <https://centergraph.danielbeeke.nl/turtle-sync#> .
 @prefix sr: <https://centergraph.danielbeeke.nl/shacl-renderer#> .
 @prefix se: <https://centergraph.danielbeeke.nl/shape-editor#> .
+@prefix srl: <https://centergraph.danielbeeke.nl/layouts#> .
 
 <>
   ts:strategy ts:DeleteInsert ;
 
-  # TODO move to a seperate file that we always include
-  sr:grid [
-    schema:name "Sidebar" ;
-    sr:grid-template-columns "minmax(260px, 30%) 1fr" ;
-    sr:grid-template-areas "'top top' 'left right' 'bottom bottom'";
-    sr:grid-template-rows "minmax(100px, auto) auto auto" ;
-  ] ;
+  sr:grid srl:sidebar ;
 
   a sh:NodeShape, sr:MainShape ;
   sh:targetClass schema:Person ;

@@ -40,7 +40,6 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   const fetch = props.fetch ?? globalThis.fetch
 
   const [shaclPointer, setShaclPointer] = useState<GrapoiPointer>()
-  const [renderCount, setRenderCount] = useState<number>(1)
   const [grid, setGrid] = useState<GridData>()
   const [data, setData] = useState<SortableState>([])
 
@@ -75,7 +74,7 @@ export default function ShapeEditor(props: ShapeEditorProps) {
     })
   }
 
-  return grid && shaclPointer && renderCount && regions ? (
+  return grid && shaclPointer && regions ? (
     <DragDropContext onDragEnd={(event) => onDragEnd(shaclPointer, baseIRI, data, setData, event)}>
       <div>
         {grid.regions ? (

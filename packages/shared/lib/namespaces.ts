@@ -12,3 +12,4 @@ export const sr = namespace('https://centergraph.danielbeeke.nl/shacl-renderer#'
 export const cg = namespace('https://centergraph.danielbeeke.nl/center-graph#')
 export const ldp = namespace('http://www.w3.org/ns/ldp#')
 export const se = namespace('https://centergraph.danielbeeke.nl/shape-editor#')
+export const srl = namespace('https://centergraph.danielbeeke.nl/layouts#')

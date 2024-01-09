@@ -1,0 +1,16 @@
+@base <https://centergraph.danielbeeke.nl/layouts#> .
+@prefix srl: <https://centergraph.danielbeeke.nl/layouts#> .
+@prefix sr: <https://centergraph.danielbeeke.nl/shacl-renderer#> .
+@prefix schema: <https://schema.org/> .
+
+<#sidebar>
+    schema:name "Sidebar" ;
+    sr:grid-template-columns "minmax(260px, 30%) 1fr" ;
+    sr:grid-template-areas "'top top' 'left right' 'bottom bottom'";
+    sr:grid-template-rows "minmax(100px, auto) auto auto" .
+
+<#two-columns>
+    schema:name "Two columns" ;
+    sr:grid-template-columns "50% 50%" ;
+    sr:grid-template-areas "'left right'";
+    sr:grid-template-rows "auto" .
