@@ -19,42 +19,42 @@ export const onDragEnd = (
   const [endRegion, endGroup] = destination.droppableId.split(':')
 
   if (startRegion && startGroup && endRegion && endGroup) {
-    if (startRegion === endRegion) {
+    /**
+     * A move of a SHACL property inside one group
+     */
+    if (startGroup === endGroup) {
+      const regionData = data.find((region) => region.id === startRegion)
+      if (!regionData) throw new Error('Could not find the region')
+      const groupData = regionData.children.find((group) => group.id === `${regionData.id}:${startGroup}`)
+      if (!groupData) throw new Error('Could not find the group')
+
+      const sourceProperty = groupData.children[source.index]
+      const newList = groupData.children.filter((item) => item.id !== sourceProperty.id)
+      newList.splice(destination.index, 0, sourceProperty)
+      updateOrders(newList.map((item) => item.pointer))
+
       /**
-       * A move of a SHACL property inside one group
+       * A move of a SHACL property inside one group to another group and possible a different region
        */
-      if (startGroup === endGroup) {
-        const regionData = data.find((region) => region.id === startRegion)
-        if (!regionData) throw new Error('Could not find the region')
-        const groupData = regionData.children.find((group) => group.id === `${regionData.id}:${startGroup}`)
-        if (!groupData) throw new Error('Could not find the group')
+    } else {
+      const startRegionData = data.find((region) => region.id === startRegion)
+      if (!startRegionData) throw new Error('Could not find the region')
+      const startGroupData = startRegionData.children.find((group) => group.id === `${startRegionData.id}:${startGroup}`)
+      if (!startGroupData) throw new Error('Could not find the starting group')
 
-        const sourceProperty = groupData.children[source.index]
-        const newList = groupData.children.filter((item) => item.id !== sourceProperty.id)
-        newList.splice(destination.index, 0, sourceProperty)
-        updateOrders(newList.map((item) => item.pointer))
+      const endRegionData = data.find((region) => region.id === endRegion)
+      if (!endRegionData) throw new Error('Could not find the region')
+      const endGroupData = endRegionData.children.find((group) => group.id === `${endRegionData.id}:${endGroup}`)
+      if (!endGroupData) throw new Error('Could not find the ending group')
 
-        /**
-         * A move of a SHACL property inside one group to another group
-         */
-      } else {
-        const regionData = data.find((region) => region.id === startRegion)
-        if (!regionData) throw new Error('Could not find the region')
-        const startGroupData = regionData.children.find((group) => group.id === `${regionData.id}:${startGroup}`)
-        if (!startGroupData) throw new Error('Could not find the starting group')
+      const sourceProperty = startGroupData.children[source.index]
+      sourceProperty.pointer.deleteOut(sh('group')).addOut(sh('group'), endGroupData.pointer.term)
+      const newStartList = startGroupData.children.filter((item) => item.id !== sourceProperty.id)
+      updateOrders(newStartList.map((item) => item.pointer))
 
-        const endGroupData = regionData.children.find((group) => group.id === `${regionData.id}:${endGroup}`)
-        if (!endGroupData) throw new Error('Could not find the ending group')
-
-        const sourceProperty = startGroupData.children[source.index]
-        sourceProperty.pointer.deleteOut(sh('group')).addOut(sh('group'), endGroupData.pointer.term)
-        const newStartList = startGroupData.children.filter((item) => item.id !== sourceProperty.id)
-        updateOrders(newStartList.map((item) => item.pointer))
-
-        const newEndList = [...endGroupData.children]
-        newEndList.splice(destination.index, 0, sourceProperty)
-        updateOrders(newEndList.map((item) => item.pointer))
-      }
+      const newEndList = [...endGroupData.children]
+      newEndList.splice(destination.index, 0, sourceProperty)
+      updateOrders(newEndList.map((item) => item.pointer))
     }
   } else if (startRegion && endRegion) {
     /**
