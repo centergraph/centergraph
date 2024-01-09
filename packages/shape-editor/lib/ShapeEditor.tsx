@@ -6,30 +6,33 @@ import GridRegion from './GridRegion'
 import PropertyGroup from './PropertyGroup'
 import ShaclProperty from './ShaclProperty'
 import { onDragEnd } from './onDragEnd'
+import Form from './Form'
 
-type ShapeEditorProps = {
+export type ShapeEditorProps = {
   shaclShapesUrl: string
   fetch?: typeof globalThis.fetch
 }
 
-type SortableStateItemRegion = {
+export type SortableStateItemRegion = {
   type: 'region'
   id: string
-  children: Array<SortableStateItemGroup>
+  items: Array<SortableStateItemGroup>
 }
 
-type SortableStateItemGroup = {
+export type SortableStateItemGroup = {
   type: 'group'
   pointer: GrapoiPointer
   id: string
-  children: Array<SortableStateItemProperty>
+  items: Array<SortableStateItemProperty>
 }
 
-type SortableStateItemProperty = {
+export type SortableStateItemProperty = {
   type: 'property'
   pointer: GrapoiPointer
   id: string
 }
+
+export type SortableStateItem = SortableStateItemGroup | SortableStateItemProperty
 
 export type SortableState = Array<SortableStateItemRegion>
 
@@ -42,6 +45,8 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   const [shaclPointer, setShaclPointer] = useState<GrapoiPointer>()
   const [grid, setGrid] = useState<GridData>()
   const [data, setData] = useState<SortableState>([])
+
+  const [activeFormProperty, setActiveFormProperty] = useState<SortableStateItem | null>(null)
 
   const baseIRI = new URL(shaclShapesUrl, location.origin).toString()
 
@@ -63,11 +68,11 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   const mapGroupRegion = (regionData: SortableStateItemRegion) => {
     if (!shaclPointer) return
 
-    return regionData.children.map((group) => {
+    return regionData.items.map((group) => {
       return (
-        <PropertyGroup key={group.id} id={group.id} pointer={group.pointer}>
-          {group.children.map((property) => (
-            <ShaclProperty key={property.id} id={property.id} pointer={property.pointer} />
+        <PropertyGroup setActiveFormProperty={setActiveFormProperty} key={group.id} {...group}>
+          {group.items.map((property) => (
+            <ShaclProperty setActiveFormProperty={setActiveFormProperty} key={property.id} {...property} />
           ))}
         </PropertyGroup>
       )
@@ -75,28 +80,32 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   }
 
   return grid && shaclPointer && regions ? (
-    <DragDropContext onDragEnd={(event) => onDragEnd(shaclPointer, baseIRI, data, setData, event)}>
-      <div>
-        {grid.regions ? (
-          <>
-            <GridRegion name={'_undefined'}>{mapGroupRegion(_undefined)}</GridRegion>
-            <div
-              className="grid mt-5"
-              style={{
-                gridTemplateAreas,
-                gridTemplateRows,
-                gridTemplateColumns,
-              }}
-            >
-              {regions.map((regionData) => (
-                <GridRegion key={regionData.id} name={regionData.id}>
-                  {mapGroupRegion(regionData)}
-                </GridRegion>
-              ))}
-            </div>
-          </>
-        ) : null}
-      </div>
-    </DragDropContext>
+    <>
+      {activeFormProperty ? <Form item={activeFormProperty} close={() => setActiveFormProperty(null)} /> : null}
+
+      <DragDropContext onDragEnd={(event) => onDragEnd(shaclPointer, baseIRI, data, setData, event)}>
+        <div>
+          {grid.regions ? (
+            <>
+              <GridRegion {..._undefined}>{mapGroupRegion(_undefined)}</GridRegion>
+              <div
+                className="grid mt-5"
+                style={{
+                  gridTemplateAreas,
+                  gridTemplateRows,
+                  gridTemplateColumns,
+                }}
+              >
+                {regions.map((regionData) => (
+                  <GridRegion key={regionData.id} {...regionData}>
+                    {mapGroupRegion(regionData)}
+                  </GridRegion>
+                ))}
+              </div>
+            </>
+          ) : null}
+        </div>
+      </DragDropContext>
+    </>
   ) : null
 }

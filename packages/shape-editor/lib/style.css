@@ -3,21 +3,27 @@
 }
 
 .shacl-group {
-  background-color: #eee;
-  margin-bottom: 0.5em;
-  padding: 1em;
   display: block;
-  border: 1px solid rgb(126, 126, 126);
+  border: 1px solid #b1b1b1;
+  background-color: #ddd;
 
-  &.is-over {
-    background-color: #ccc;
+  &.is-dragging-over {
+    background-color: var(--highlight);
+  }
+
+  .chevron {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &[open] {
+    .chevron {
+      transform: rotate(90deg);
+    }
   }
 }
 
 .shacl-property {
-  border: 1px solid gray;
-  padding: 1em;
-  margin: 10px;
+  background-color: #bbb;
 }
 
 .grid {
@@ -26,9 +32,7 @@
 }
 
 .grid-region {
-  border: 1px solid #ddd;
-  background-color: #eee;
-  padding: 1em;
+  background-color: #efefef;
 
   &.is-dragging-over {
     background-color: var(--highlight);
