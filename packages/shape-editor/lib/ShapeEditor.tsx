@@ -3,7 +3,6 @@ import './style.css'
 import { DragDropContext } from 'react-beautiful-dnd'
 import { GridData, loadShapeEditorData } from './helpers/loadShapeEditorData'
 import GridRegion from './GridRegion'
-import { sh } from '@centergraph/shared/lib/namespaces'
 import PropertyGroup from './PropertyGroup'
 import ShaclProperty from './ShaclProperty'
 import { onDragEnd } from './onDragEnd'
@@ -13,11 +12,26 @@ type ShapeEditorProps = {
   fetch?: typeof globalThis.fetch
 }
 
-export type SortableState = {
-  [region: string]: {
-    [group: string]: GrapoiPointer[]
-  }
+type SortableStateItemRegion = {
+  type: 'region'
+  id: string
+  children: Array<SortableStateItemGroup>
 }
+
+type SortableStateItemGroup = {
+  type: 'group'
+  pointer: GrapoiPointer
+  id: string
+  children: Array<SortableStateItemProperty>
+}
+
+type SortableStateItemProperty = {
+  type: 'property'
+  pointer: GrapoiPointer
+  id: string
+}
+
+export type SortableState = Array<SortableStateItemRegion>
 
 let isLoading = false
 
@@ -28,7 +42,9 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   const [shaclPointer, setShaclPointer] = useState<GrapoiPointer>()
   const [renderCount, setRenderCount] = useState<number>(1)
   const [grid, setGrid] = useState<GridData>()
-  const [data, setData] = useState<SortableState>({})
+  const [data, setData] = useState<SortableState>([])
+
+  const baseIRI = new URL(shaclShapesUrl, location.origin).toString()
 
   useEffect(() => {
     if (isLoading) return
@@ -42,31 +58,29 @@ export default function ShapeEditor(props: ShapeEditorProps) {
 
   const { gridTemplateAreas, gridTemplateRows, gridTemplateColumns } = grid ?? {}
 
-  const { _undefined, ...regions } = data
+  const _undefined = data.find((regionData) => regionData.id === '_undefined')!
+  const regions = data.filter((regionData) => regionData.id !== '_undefined')
 
-  const mapGroupRegion =
-    (region: string) =>
-    ([groupIri, shaclProperties]: [string, GrapoiPointer[]]) => {
-      if (!shaclPointer) return
-      const propertyGroup = [...(shaclPointer.node([sh('PropertyGroup')]).in() ?? [])].find(
-        (propertyGroup) => propertyGroup.term.value === groupIri
-      )!
+  const mapGroupRegion = (regionData: SortableStateItemRegion) => {
+    if (!shaclPointer) return
 
+    return regionData.children.map((group) => {
       return (
-        <PropertyGroup region={region} key={propertyGroup.term.value} pointer={propertyGroup}>
-          {shaclProperties.map((shaclProperty) => (
-            <ShaclProperty key={shaclProperty.term.value} pointer={shaclProperty} />
+        <PropertyGroup key={group.id} id={group.id} pointer={group.pointer}>
+          {group.children.map((property) => (
+            <ShaclProperty key={property.id} id={property.id} pointer={property.pointer} />
           ))}
         </PropertyGroup>
       )
-    }
+    })
+  }
 
-  return grid && shaclPointer && renderCount ? (
-    <DragDropContext onDragEnd={(event) => onDragEnd(data, setData, event)}>
+  return grid && shaclPointer && renderCount && regions ? (
+    <DragDropContext onDragEnd={(event) => onDragEnd(shaclPointer, baseIRI, data, setData, event)}>
       <div>
         {grid.regions ? (
           <>
-            <GridRegion name={'_undefined'}>{Object.entries(_undefined).map(mapGroupRegion('_undefined'))}</GridRegion>
+            <GridRegion name={'_undefined'}>{mapGroupRegion(_undefined)}</GridRegion>
             <div
               className="grid mt-5"
               style={{
@@ -75,9 +89,9 @@ export default function ShapeEditor(props: ShapeEditorProps) {
                 gridTemplateColumns,
               }}
             >
-              {Object.entries(regions).map(([region, groups]) => (
-                <GridRegion key={region} name={region}>
-                  {Object.entries(groups).map(mapGroupRegion(region))}
+              {regions.map((regionData) => (
+                <GridRegion key={regionData.id} name={regionData.id}>
+                  {mapGroupRegion(regionData)}
                 </GridRegion>
               ))}
             </div>

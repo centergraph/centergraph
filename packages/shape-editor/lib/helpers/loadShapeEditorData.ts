@@ -4,9 +4,8 @@ import datasetFactory from '@rdfjs/dataset'
 import factory from '@rdfjs/data-model'
 import { sh, sr } from '@centergraph/shared/lib/namespaces'
 import { resetOrders } from './resetOrders'
-import { getAllShapesFromShape } from './getAllShapesFromShape'
-import { sortPointersByShOrder } from './sortPointersByShOrder'
 import { SortableState } from '../ShapeEditor'
+import { getData } from './getData'
 
 export type GridData = {
   hasGrid: boolean
@@ -27,14 +26,12 @@ export const loadShapeEditorData = async (
   return fetch(shaclShapesUrl.split('#')[0])
     .then((response) => response.text())
     .then(async (turtle) => {
-      const url = new URL(shaclShapesUrl, location.origin)
+      const baseIRI = new URL(shaclShapesUrl, location.origin).toString()
 
-      const parser = new Parser({
-        baseIRI: url.toString(),
-      })
+      const parser = new Parser({ baseIRI })
       const quads = await parser.parse(turtle)
       const dataset = datasetFactory.dataset(quads)
-      const pointer = grapoi({ dataset, factory, term: factory.namedNode(url.toString()) })
+      const pointer = grapoi({ dataset, factory, term: factory.namedNode(baseIRI) })
       const propertyGroups = pointer?.node([sh('PropertyGroup')]).in() ?? []
 
       resetOrders(propertyGroups)
@@ -46,34 +43,7 @@ export const loadShapeEditorData = async (
       const gridTemplateRows = grid?.out(sr('grid-template-rows')).value
       const gridTemplateColumns = grid?.out(sr('grid-template-columns')).value
 
-      const shapeIris = getAllShapesFromShape(pointer, factory.namedNode(url.toString()))
-      const shapes = pointer?.node(shapeIris)
-
-      const mapPropertyGroup = (propertyGroup: GrapoiPointer) => {
-        const shaclProperties = [...(shapes?.out(sh('property')) ?? [])].filter(
-          (property) => property.out(sh('group')).value === propertyGroup.term.value
-        )
-        return [propertyGroup.term.value, shaclProperties.sort(sortPointersByShOrder)]
-      }
-
-      const getPropertyGroups = (filterGridArea: string) => {
-        const allPropertyGroups = [...(pointer?.node([sh('PropertyGroup')]).in() ?? [])]
-        return allPropertyGroups
-          .filter((propertyGroup) => {
-            const gridArea = propertyGroup.out(sr('gridArea')).value
-            if (filterGridArea === '_undefined' && !grid?.value) return true
-            if (filterGridArea === '_undefined' && grid?.value) return gridArea === undefined
-            return gridArea === filterGridArea
-          })
-          .sort(sortPointersByShOrder)
-          .map(mapPropertyGroup)
-      }
-
-      const initialData = Object.fromEntries(
-        ['_undefined', ...regions].map((region) => {
-          return [region, Object.fromEntries(getPropertyGroups(region))]
-        })
-      )
+      const initialData = getData(pointer, baseIRI)
 
       return {
         pointer,

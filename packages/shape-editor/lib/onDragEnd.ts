@@ -1,8 +1,13 @@
 import { DropResult } from 'react-beautiful-dnd'
-import { updateOrders } from './helpers/updateOrders'
 import { SortableState } from './ShapeEditor'
+import { sh, sr } from '@centergraph/shared/lib/namespaces'
+import { updateOrders } from './helpers/updateOrders'
+import { getData } from './helpers/getData'
+import factory from '@rdfjs/data-model'
 
 export const onDragEnd = (
+  shaclPointer: GrapoiPointer,
+  baseIRI: string,
   data: SortableState,
   setData: React.Dispatch<React.SetStateAction<SortableState>>,
   { source, destination }: DropResult
@@ -10,97 +15,80 @@ export const onDragEnd = (
   if (destination === undefined || destination === null) return null
   if (source.droppableId === destination.droppableId && destination.index === source.index) return null
 
-  const [startRegion, startGroup] = source.droppableId.split('|')
-  const [endRegion, endGroup] = destination.droppableId.split('|')
+  const [startRegion, startGroup] = source.droppableId.split(':')
+  const [endRegion, endGroup] = destination.droppableId.split(':')
 
-  const start = data[startRegion]?.[startGroup]
-  const end = data[endRegion]?.[endGroup]
-
-  if (start && end && start === end) {
-    const list = start
-    const startPointer = list[source.index]
-
-    const newList = list.filter((pointer) => pointer.term.value !== startPointer.term.value)
-    newList.splice(destination.index, 0, startPointer)
-
-    updateOrders(newList)
-
-    setData((state) => ({
-      ...state,
-      [startRegion]: {
-        ...state[startRegion],
-        [startGroup]: newList,
-      },
-    }))
-
-    return null
-  } else if (start && end) {
-    const startPointer = start[source.index]
-
-    const newStartList = start.filter((pointer) => pointer.term.value !== startPointer.term.value)
-    const newEndList = [...end]
-    newEndList.splice(destination.index, 0, startPointer)
-
-    updateOrders(newStartList)
-    updateOrders(newEndList)
-
+  if (startRegion && startGroup && endRegion && endGroup) {
     if (startRegion === endRegion) {
-      setData((state) => ({
-        ...state,
-        [startRegion]: {
-          ...state[startRegion],
-          [startGroup]: newStartList,
-          [endGroup]: newEndList,
-        },
-      }))
+      /**
+       * A move of a SHACL property inside one group
+       */
+      if (startGroup === endGroup) {
+        const regionData = data.find((region) => region.id === startRegion)
+        if (!regionData) throw new Error('Could not find the region')
+        const groupData = regionData.children.find((group) => group.id === `${regionData.id}:${startGroup}`)
+        if (!groupData) throw new Error('Could not find the group')
+
+        const sourceProperty = groupData.children[source.index]
+        const newList = groupData.children.filter((item) => item.id !== sourceProperty.id)
+        newList.splice(destination.index, 0, sourceProperty)
+        updateOrders(newList.map((item) => item.pointer))
+
+        /**
+         * A move of a SHACL property inside one group to another group
+         */
+      } else {
+        const regionData = data.find((region) => region.id === startRegion)
+        if (!regionData) throw new Error('Could not find the region')
+        const startGroupData = regionData.children.find((group) => group.id === `${regionData.id}:${startGroup}`)
+        if (!startGroupData) throw new Error('Could not find the starting group')
+
+        const endGroupData = regionData.children.find((group) => group.id === `${regionData.id}:${endGroup}`)
+        if (!endGroupData) throw new Error('Could not find the ending group')
+
+        const sourceProperty = startGroupData.children[source.index]
+        sourceProperty.pointer.deleteOut(sh('group')).addOut(sh('group'), endGroupData.pointer.term)
+        const newStartList = startGroupData.children.filter((item) => item.id !== sourceProperty.id)
+        updateOrders(newStartList.map((item) => item.pointer))
+
+        const newEndList = [...endGroupData.children]
+        newEndList.splice(destination.index, 0, sourceProperty)
+        updateOrders(newEndList.map((item) => item.pointer))
+      }
+    }
+  } else if (startRegion && endRegion) {
+    /**
+     * A move of a group inside one region
+     */
+    if (startRegion === endRegion) {
+      const regionData = data.find((region) => region.id === startRegion)
+      if (!regionData) throw new Error('Could not find the region')
+
+      const sourceGroup = regionData.children[source.index]
+
+      const newList = regionData.children.filter((item) => item.id !== sourceGroup.id)
+      newList.splice(destination.index, 0, sourceGroup)
+      updateOrders(newList.map((item) => item.pointer))
     } else {
-      setData((state) => ({
-        ...state,
-        [startRegion]: {
-          ...state[startRegion],
-          [startGroup]: newStartList,
-        },
-        [endRegion]: {
-          ...state[endRegion],
-          [endGroup]: newEndList,
-        },
-      }))
+      /**
+       * A move of a group inside one region to another region
+       */
+      const startRegionData = data.find((region) => region.id === startRegion)
+      if (!startRegionData) throw new Error('Could not find the starting region')
+      const endRegionData = data.find((region) => region.id === endRegion)
+      if (!endRegionData) throw new Error('Could not find the starting region')
+
+      const sourceGroup = startRegionData.children[source.index]
+      sourceGroup.pointer.deleteOut(sr('gridArea')).addOut(sr('gridArea'), factory.literal(endRegionData.id))
+      const newStartList = startRegionData.children.filter((item) => item.id !== sourceGroup.id)
+      updateOrders(newStartList.map((item) => item.pointer))
+
+      const newEndList = [...endRegionData.children]
+      newEndList.splice(destination.index, 0, sourceGroup)
+      updateOrders(newEndList.map((item) => item.pointer))
     }
   }
 
-  // Group
-  if (startRegion && endRegion && !start && !end) {
-    const sourceList = data[startRegion]
-    const groupKeys = Object.keys(sourceList)
-    const sourceGroup = sourceList[groupKeys[source.index]]
-
-    if (startRegion !== endRegion) {
-      setData((state) => ({
-        ...state,
-        [startRegion]: Object.fromEntries(
-          Object.entries(sourceList).filter(([groupIri]) => {
-            return groupIri !== groupKeys[source.index]
-          })
-        ),
-        [endRegion]: {
-          ...state[endRegion],
-          [groupKeys[source.index]]: sourceGroup,
-        },
-      }))
-    } else {
-      const sourceList = data[startRegion]
-      const groupKeys = Object.keys(sourceList)
-      const sourceGroup = sourceList[groupKeys[source.index]]
-
-      const listEntries = Object.entries(sourceList)
-
-      listEntries.splice(source.index, 1)
-      listEntries.splice(destination.index, 0, [groupKeys[source.index], sourceGroup])
-
-      setData((state) => ({
-        ...state,
-        [startRegion]: Object.fromEntries(listEntries),
-      }))
-    }
-  }
+  // Reflect the change in React
+  setData(getData(shaclPointer, baseIRI))
 }
