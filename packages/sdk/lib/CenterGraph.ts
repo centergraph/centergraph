@@ -18,7 +18,7 @@ export type CenterGraphOptions = {
 }
 
 export class CenterGraph {
-  #options: CenterGraphOptions
+  options: CenterGraphOptions
   #store = datasetFactory.dataset()
   #d2LFetch: typeof D2LFetch
   public shaclRendererSettings: ShaclRendererProps['settings']
@@ -26,13 +26,13 @@ export class CenterGraph {
   namespaces = namespaces
 
   constructor(options: CenterGraphOptions) {
-    this.#options = options
+    this.options = options
 
     this.#d2LFetch = new D2LFetch()
     this.#d2LFetch.use({ name: 'simple-cache', fn: fetchSimpleCache })
     this.#d2LFetch.use({ name: 'dedupe', fn: fetchDedupe })
 
-    this.shaclRendererSettings = this.#options.shaclRendererSettings ?? defaultSettings('view')
+    this.shaclRendererSettings = this.options.shaclRendererSettings ?? defaultSettings('view')
     registerCoreWidgets(this.shaclRendererSettings)
     this.shaclRendererSettings.fetch = (input, init) => this.#d2LFetch.fetch(input, init)
   }
@@ -43,19 +43,19 @@ export class CenterGraph {
 
   get<T>(path: string | NamedNode) {
     if (typeof path !== 'string') path = path.value
-    const url = path.includes('http://') || path.includes('https://') ? path : this.#options.base + path
-    return new GetApiRequest<T>((input, init) => this.#d2LFetch.fetch(input, init), this.#options.base, url)
+    const url = path.includes('http://') || path.includes('https://') ? path : this.options.base + path
+    return new GetApiRequest<T>((input, init) => this.#d2LFetch.fetch(input, init), this.options.base, url)
   }
 
   getFolder(path: string | NamedNode) {
     if (typeof path !== 'string') path = path.value
-    const url = path.includes('http://') || path.includes('https://') ? path : this.#options.base + path
+    const url = path.includes('http://') || path.includes('https://') ? path : this.options.base + path
     return new FolderApiRequest((input, init) => this.#d2LFetch.fetch(input, init), url)
   }
 
   get query() {
     return new QueryBuilder<NamedNode[]>({
-      base: this.#options.base,
+      base: this.options.base,
       asCount: false,
       mode: navigator.onLine ? 'remote' : 'local',
       store: this.#store,
@@ -65,7 +65,7 @@ export class CenterGraph {
 
   get count() {
     return new QueryBuilder<number>({
-      base: this.#options.base,
+      base: this.options.base,
       asCount: true,
       mode: navigator.onLine ? 'remote' : 'local',
       store: this.#store,

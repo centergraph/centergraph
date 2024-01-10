@@ -18,7 +18,8 @@ export const turtle = async (request: Request, response: Response, next: NextFun
     const folder = dataFolder + fullUrl.pathname
 
     try {
-      await Deno.stat(folder)
+      const stat = await Deno.stat(folder)
+      if (!stat.isDirectory) return next()
     } catch (error) {
       return next()
     }

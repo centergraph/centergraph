@@ -5,7 +5,7 @@ export const useApi = <T extends PromiseLike<Awaited<T>>>(input: T) => {
 
   useEffect(() => {
     input.then(setResult)
-  }, [])
+  }, [input])
 
   return result
 }
