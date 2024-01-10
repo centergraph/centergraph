@@ -25,6 +25,7 @@
     "swr": "^2.2.4"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.4.1",
     "@astrojs/mdx": "^2.0.3",
     "@preact/preset-vite": "^2.7.0",
     "@rdfjs/data-model": "^2.0.1",
