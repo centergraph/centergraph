@@ -6,7 +6,6 @@
   "main": "lib/CenterGraph.ts",
   "types": "lib/CenterGraph.ts",
   "dependencies": {
-    "@centergraph/shacl-renderer": "*",
     "@centergraph/shared": "*"
   },
   "scripts": {

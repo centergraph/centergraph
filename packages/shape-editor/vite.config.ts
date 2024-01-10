@@ -19,6 +19,7 @@ export default defineConfig({
   },
   build: {
     lib: {
+      name: 'ShapeEditor',
       entry: [resolve(__dirname, 'lib/ShapeEditor.tsx')],
     },
     rollupOptions: {

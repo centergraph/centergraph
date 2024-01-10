@@ -47,7 +47,8 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   const [shaclPointer, setShaclPointer] = useState<GrapoiPointer>()
   const [grid, setGrid] = useState<GridData>()
   const [data, setData] = useState<SortableState>([])
-  const [app, setApp] = useState<GrapoiPointer>()
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [_app, setApp] = useState<GrapoiPointer>()
   const [widgetMetas, setWidgetMetas] = useState<Array<WidgetMeta>>()
 
   const [activeFormProperty, setActiveFormProperty] = useState<SortableStateItem | null>(null)
