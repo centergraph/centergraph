@@ -20,4 +20,6 @@ export const populateStore = async (store: DatasetCore) => {
   } catch (error) {
     // This will not work in a private session
   }
+
+  return true
 }

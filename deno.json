@@ -34,6 +34,7 @@
     "@preact/signals-react/runtime": "npm:@preact/signals-react/runtime",
     "d2l-fetch-simple-cache": "npm:d2l-fetch-simple-cache",
     "d2l-fetch": "npm:d2l-fetch",
-    "d2l-fetch-dedupe": "npm:d2l-fetch-dedupe"
+    "d2l-fetch-dedupe": "npm:d2l-fetch-dedupe",
+    "swr": "npm:swr"
   }
 }

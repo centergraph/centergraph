@@ -1,6 +1,8 @@
-import { ReactNode, useEffect, useState } from 'react'
+import { ReactNode, Suspense } from 'react'
+import React from 'react'
 import { centerGraphContext } from './index'
 import { CenterGraph } from '../../CenterGraph'
+import useSWR from 'swr'
 
 type ContextProviderProps = {
   api: CenterGraph
@@ -8,23 +10,26 @@ type ContextProviderProps = {
 }
 
 export default function CenterGraphContextProvider({ children, api }: ContextProviderProps) {
-  const [ready, setReady] = useState(false)
+  const { data } = useSWR('populateStore', () => api.populateStore(), {
+    suspense: true,
+    fallbackData: true,
+  })
 
-  useEffect(() => {
-    api.populateStore().then(() => setReady(true))
-  }, [])
-
-  return ready ? (
-    <>
-      <centerGraphContext.Provider
-        value={{
-          api,
-        }}
-      >
-        {children}
-      </centerGraphContext.Provider>
-    </>
-  ) : (
-    'Loading...'
+  return (
+    <Suspense>
+      {data ? (
+        <>
+          <centerGraphContext.Provider
+            value={{
+              api,
+            }}
+          >
+            {children}
+          </centerGraphContext.Provider>
+        </>
+      ) : (
+        'Loading...'
+      )}
+    </Suspense>
   )
 }

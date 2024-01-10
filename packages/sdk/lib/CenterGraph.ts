@@ -41,7 +41,7 @@ export class CenterGraph {
   }
 
   populateStore() {
-    return navigator.onLine ? populateStore(this.#store) : Promise.resolve()
+    return navigator.onLine ? populateStore(this.#store) : Promise.resolve(true)
   }
 
   get<T>(path: string | NamedNode) {

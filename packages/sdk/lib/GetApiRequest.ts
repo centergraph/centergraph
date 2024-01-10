@@ -44,14 +44,20 @@ export class GetApiRequest<T> extends AbstractApiRequest<T> {
     return grapoi({ dataset: datasetFactory.dataset(shaclQuads), factory })
   }
 
-  async shaclUrl(viewMode?: string) {
-    const turtle = await this.fetch(this.fetchArguments().input).then((response) => response.text())
-    const parser = new Parser()
-    const quads = await parser.parse(turtle)
-    const dataset = datasetFactory.dataset(quads)
-    const shapesGraphs = [...dataset.match(null, sh('shapesGraph'))]
-    const shaclUrls = shapesGraphs.map((shapesGraph) => shapesGraph.object.value)
-    return `${shaclUrls[0]}${viewMode ? '#' + viewMode : ''}`
+  shaclUrl(viewMode?: string) {
+    const promise = async () => {
+      const turtle = await this.fetch(this.fetchArguments().input).then((response) => response.text())
+      const parser = new Parser()
+      const quads = await parser.parse(turtle)
+      const dataset = datasetFactory.dataset(quads)
+      const shapesGraphs = [...dataset.match(null, sh('shapesGraph'))]
+      const shaclUrls = shapesGraphs.map((shapesGraph) => shapesGraph.object.value)
+      return `${shaclUrls[0]}${viewMode ? '#' + viewMode : ''}`
+    }
+
+    promise.url = this.url + '::shacl'
+
+    return promise()
   }
 
   async #getContext() {
