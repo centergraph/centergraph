@@ -36,10 +36,8 @@ export default (config) => {
             rollupOptions: {
               output: {
                 manualChunks: (id) => {
-                  if (id.toString().includes(config.apiExport) || id.includes('packages/sdk/')) {
+                  if (id.toString().includes(config.apiExport) || (id.includes('packages/sdk/') && !id.includes('react'))) {
                     return 'center-graph'
-                  } else {
-                    return 'all'
                   }
                 },
               },
