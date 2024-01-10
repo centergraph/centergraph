@@ -1,6 +1,7 @@
 {
   "name": "@centergraph/sdk",
   "private": true,
+  "description": "The SDK for CenterGraph",
   "version": "0.0.0",
   "type": "module",
   "main": "lib/CenterGraph.ts",

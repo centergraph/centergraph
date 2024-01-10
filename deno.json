@@ -16,6 +16,11 @@
     "@jeswr/pretty-turtle": "npm:@jeswr/pretty-turtle",
     "shacl-engine/lib/parsePath": "https://esm.sh/shacl-engine/lib/parsePath",
     "@centergraph/shared/": "./packages/shared/",
-    "oidc-provider": "npm:oidc-provider"
+    "oidc-provider": "npm:oidc-provider",
+    "react": "npm:react",
+    "ink": "npm:ink",
+    "ink-task-list": "npm:ink-task-list",
+    "cli-spinners": "npm:cli-spinners",
+    "figlet": "npm:figlet"
   }
 }

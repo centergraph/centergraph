@@ -40,5 +40,5 @@ app.get('/', (_request: Request, response: Response) => {
 })
 
 app.listen(port, () => {
-  console.log(`CenterGraph Base is running on ${baseIRI}`)
+  console.log(`Ready: CenterGraph Base is running on ${baseIRI}/`)
 })

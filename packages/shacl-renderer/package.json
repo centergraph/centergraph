@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "A tool to render a form or a view by using SHACL",
   "main": "lib/ShaclRenderer.tsx",
   "types": "lib/ShaclRenderer.tsx",
   "scripts": {

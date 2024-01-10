@@ -1,6 +1,7 @@
 {
   "name": "@centergraph/docs",
   "type": "module",
+  "description": "The documentation of CenterGraph",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev --port=8004",

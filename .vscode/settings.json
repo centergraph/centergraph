@@ -14,7 +14,7 @@
     "shacl",
     "sparql"
   ],
-  "deno.enablePaths": ["./packages/base", "./packages/turtle-sync"],
+  "deno.enablePaths": ["./packages/base", "./packages/turtle-sync", "./packages/cli"],
   "deno.lint": false,
   "deno.unstable": false,
   "editor.codeActionsOnSave": {

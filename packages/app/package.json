@@ -1,6 +1,7 @@
 {
   "name": "@centergraph/app",
   "private": true,
+  "description": "The default frontend of CenterGraph",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

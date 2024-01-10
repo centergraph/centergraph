@@ -2,6 +2,7 @@
   "name": "@centergraph/shared",
   "private": true,
   "version": "0.0.0",
+  "description": "Shared utilities",
   "type": "module",
   "scripts": {
     "dev-old": "vite",

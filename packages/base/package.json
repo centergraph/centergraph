@@ -1,6 +1,7 @@
 {
   "name": "@centergraph/base",
   "private": true,
+  "description": "The backend of CenterGraph",
   "version": "0.0.0",
   "type": "module",
   "dependencies": {
