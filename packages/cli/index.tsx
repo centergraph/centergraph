@@ -50,7 +50,7 @@ export function Main() {
           .map((packageOutput) => {
             const label = packageOutput.ready ? (
               <Text>
-                <Text>{packageOutput.packageName}:</Text>
+                <Text>{packageOutput.packageName}</Text>
                 <Newline />
                 <Text color={'green'}>{packageOutput.url}</Text>
                 <Newline />

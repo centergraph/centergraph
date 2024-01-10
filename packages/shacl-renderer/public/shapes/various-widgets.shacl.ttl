@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sr: <https://centergraph.danielbeeke.nl/shacl-renderer#> .
+@prefix dash: <http://datashapes.org/dash#> .
+
+<>
+  a sh:NodeShape ;
+  sh:targetClass schema:Person ;
+
+  sh:property [
+    sh:name "Given name"@en ;
+    sh:path schema:givenName ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:group <#name> ;
+    sh:datatype xsd:string ;
+  ];
+  
+  sh:property [
+    sh:name "Family name"@en ;
+    sh:group <#name> ;
+    sh:path schema:familyName ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:datatype xsd:string ;
+  ];
+
+  sh:property [
+    sh:name "Has animals"@en ;
+    sh:path schema:hasAnimals ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:datatype xsd:boolean ;
+  ];
+
+  sh:property [
+    sh:name "Gender"@en ;
+    sh:path schema:gender ;
+    sh:maxCount 1;
+    sh:in ( schema:Male schema:Female ) ;
+  ];
+
+  sh:property [
+    sh:name "Date of birth"@en ;
+    sh:path schema:birthDate ;
+    sh:editor dash:DatePickerEditor ;
+    sh:maxCount 1;
+    sh:datatype xsd:date ;
+  ];
+
+.
+
+<#name>
+	a sh:PropertyGroup ;
+	sh:order 0 ;
+  sr:class "horizontal" .
+

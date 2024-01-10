@@ -31,6 +31,7 @@
 }
 
 .blank-node-editor:not(.is-invalid) .level + .remove-button:not(:hover),
+.form-select:not(.is-invalid) + .remove-button:not(:hover),
 .form-control:not(.is-invalid) + .remove-button:not(:hover) {
   border-color: var(--bs-border-color);
 }

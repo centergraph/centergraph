@@ -25,39 +25,6 @@
     <script src="./demo/demo.tsx" type="module"></script>
   </head>
   <body class="p-5">
-    <details name="demo" class="mb-3 container" open>
-      <summary class="pb-3">Edit mode (React)</summary>
-      <div id="app"></div>
-    </details>
-
-    <!-- <details name="demo" class="mb-3 container">
-      <summary class="pb-3">Edit mode (customElement)</summary>
-      <shacl-renderer
-        shacl-shapes-url="./shapes/contact.shacl.ttl"
-        subject="http://example.com/john-doe"
-        data-url="./john-doe.ttl"
-        mode="edit"
-      >
-        <button class="btn btn-primary" id="save">Save</button>
-      </shacl-renderer>
-    </details>
-
-    <details name="demo" class="mb-3 container">
-      <summary class="pb-3">View mode (customElement)</summary>
-      <shacl-renderer
-        shacl-shapes-url="./shapes/contact.shacl.ttl"
-        subject="http://example.com/john-doe"
-        data-url="./john-doe.ttl"
-        mode="view"
-      ></shacl-renderer>
-    </details> -->
-
-    <script>
-      const shaclRenderer = document.querySelector('shacl-renderer')
-      document.querySelector('#save')?.addEventListener('click', (event) => {
-        event.preventDefault()
-        console.log([...shaclRenderer.settings.dataStore])
-      })
-    </script>
+    <div id="app" class="container"></div>
   </body>
 </html>

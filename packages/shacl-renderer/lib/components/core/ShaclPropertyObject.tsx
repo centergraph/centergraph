@@ -20,7 +20,8 @@ export default function ShaclPropertyObject({ shaclPointer, dataPointer, setting
   const [term, realSetTerm] = useState(dataPointer.term)
   const { getErrorMessages, reportSignal, validate } = useValidate(settings)
 
-  const errorMessages = getErrorMessages(reportSignal, path)
+  // TODO how to deal with the required state?
+  const errorMessages = !term.isEmpty ? getErrorMessages(reportSignal, path) : []
 
   const setTerm = (value: Term) => {
     dataPointer = dataPointer.replace(value)

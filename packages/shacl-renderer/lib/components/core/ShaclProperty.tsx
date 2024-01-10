@@ -9,6 +9,7 @@ import { lastPart } from '@centergraph/shacl-renderer/lib/helpers/lastPart'
 import { ensureTerm } from '@centergraph/shacl-renderer/lib/helpers/ensureTerm'
 import kebabCase from 'lodash-es/kebabCase'
 import { Icon } from '@iconify/react'
+import { markTermAsEmpty } from '@centergraph/shacl-renderer/lib/helpers/markTermAsEmpty'
 
 type ShaclPropertyProps = {
   shaclPointer: GrapoiPointer
@@ -55,7 +56,7 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
         ? alternativePredicates.map((predicate: Term) => (
             <button
               onClick={() => {
-                dataPointer.addOut(predicate, widgetMeta!.createTerm!())
+                dataPointer.addOut(predicate, markTermAsEmpty(widgetMeta!.createTerm!()))
                 setObjectPointers()
               }}
               className={settings.cssClasses.button.secondary}
@@ -83,7 +84,7 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
         <button
           type="button"
           onClick={() => {
-            dataPointer.addOut([path[0].predicates[0]], [widgetMeta!.createTerm!()])
+            dataPointer.addOut([path[0].predicates[0]], [markTermAsEmpty(widgetMeta!.createTerm!())])
             setObjectPointers()
           }}
           className={settings.cssClasses.button.add}
