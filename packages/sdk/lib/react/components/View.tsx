@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import ShaclRenderer from '@centergraph/shacl-renderer'
-import '@centergraph/shacl-renderer/lib/style.css'
+// import '@centergraph/shacl-renderer/lib/style.css'
 import { GetApiRequest } from '../../GetApiRequest'
 import { centerGraphContext } from '../context'
 import { useApi } from '../hooks/useApi'

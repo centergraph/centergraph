@@ -1,5 +1,5 @@
 import { dash, sh, xsd } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
-import widgetForm from '@centergraph/shacl-renderer/lib/widget.ttl?raw'
+// import widgetForm from '@centergraph/shacl-renderer/lib/widget.ttl?raw'
 
 export const iri = dash('LiteralViewer')
 
@@ -15,4 +15,6 @@ export const score = (dataPointer: GrapoiPointer, shaclPointer: GrapoiPointer) =
   }
 }
 
-export const formParts = [widgetForm]
+export const formParts = [
+  // widgetForm
+]

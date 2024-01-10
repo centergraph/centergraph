@@ -1,0 +1,14 @@
+{
+  "name": "@centergraph/ssr",
+  "private": true,
+  "description": "The ssr version of the default app of CenterGraph",
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "@centergraph/shared": "*"
+  },
+  "scripts": {
+    "dev": "deno run -A --unstable-sloppy-imports --watch src/index.tsx",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  }
+}

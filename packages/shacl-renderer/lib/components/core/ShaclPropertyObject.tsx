@@ -4,7 +4,7 @@ import { Term } from '@rdfjs/types'
 import { useWidget } from '@centergraph/shacl-renderer/lib/hooks/useWidget'
 import { Icon } from '@iconify/react'
 import { lastPart } from '@centergraph/shacl-renderer/lib/helpers/lastPart'
-import kebabCase from 'lodash-es/kebabCase'
+import { kebabCase } from 'lodash-es'
 import { useValidate } from '@centergraph/shacl-renderer/lib/hooks/useValidate'
 
 type PropertyObjectProps = {

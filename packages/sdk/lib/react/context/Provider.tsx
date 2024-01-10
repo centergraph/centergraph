@@ -1,5 +1,5 @@
 import { ReactNode, useEffect, useState } from 'react'
-import { centerGraphContext } from '.'
+import { centerGraphContext } from './index'
 import { CenterGraph } from '../../CenterGraph'
 
 type ContextProviderProps = {

@@ -2,7 +2,7 @@ import spinners from 'cli-spinners'
 import figlet from 'figlet'
 import { Newline, render, Text } from 'ink'
 import { Task, TaskList } from 'ink-task-list'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'npm:react'
 
 import { command } from './command.ts'
 import { PackageOutputs } from './types.ts'

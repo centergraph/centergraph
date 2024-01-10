@@ -16,11 +16,24 @@
     "@jeswr/pretty-turtle": "npm:@jeswr/pretty-turtle",
     "shacl-engine/lib/parsePath": "https://esm.sh/shacl-engine/lib/parsePath",
     "@centergraph/shared/": "./packages/shared/",
+    "@centergraph/app/": "./packages/app/",
+    "@centergraph/shacl-renderer/": "./packages/shacl-renderer/",
+    "@centergraph/shacl-renderer": "./packages/shacl-renderer/lib/ShaclRenderer.tsx",
+    "@centergraph/sdk": "./packages/sdk/lib/CenterGraph.ts",
+    "@centergraph/sdk/": "./packages/sdk/",
     "oidc-provider": "npm:oidc-provider",
-    "react": "npm:react",
     "ink": "npm:ink",
     "ink-task-list": "npm:ink-task-list",
     "cli-spinners": "npm:cli-spinners",
-    "figlet": "npm:figlet"
+    "figlet": "npm:figlet",
+    "react": "npm:react",
+    "react-dom/server": "npm:react-dom/server",
+    "@iconify/react": "npm:@iconify/react",
+    "lodash-es": "npm:lodash-es",
+    "@preact/signals-react": "npm:@preact/signals-react",
+    "@preact/signals-react/runtime": "npm:@preact/signals-react/runtime",
+    "d2l-fetch-simple-cache": "npm:d2l-fetch-simple-cache",
+    "d2l-fetch": "npm:d2l-fetch",
+    "d2l-fetch-dedupe": "npm:d2l-fetch-dedupe"
   }
 }

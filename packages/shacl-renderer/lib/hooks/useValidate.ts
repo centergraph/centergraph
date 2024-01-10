@@ -3,7 +3,7 @@ import { Signal, signal } from '@preact/signals-react'
 import { Validator } from 'shacl-engine'
 import { Settings } from '@centergraph/shacl-renderer/lib/types'
 import { DataFactory } from 'n3'
-import isEqual from 'lodash-es/isEqual'
+import { isEqual } from 'lodash-es'
 import { Term } from '@rdfjs/types'
 
 export const reportSignal = signal<unknown>(null)

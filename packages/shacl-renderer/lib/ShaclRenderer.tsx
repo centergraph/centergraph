@@ -7,7 +7,7 @@ import FormLevel from '@centergraph/shacl-renderer/lib/components/core/FormLevel
 import { rdf, sh } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
 import { DataFactory } from 'n3'
 import { preloadWidgets } from './helpers/preloadWidgets'
-import './style.css'
+// import './style.css'
 
 export type ShaclRendererProps = {
   settings: Settings

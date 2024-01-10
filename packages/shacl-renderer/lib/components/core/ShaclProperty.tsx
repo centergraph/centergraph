@@ -7,7 +7,7 @@ import { useWidget } from '@centergraph/shacl-renderer/lib/hooks/useWidget'
 import { Term } from '@rdfjs/types'
 import { lastPart } from '@centergraph/shacl-renderer/lib/helpers/lastPart'
 import { ensureTerm } from '@centergraph/shacl-renderer/lib/helpers/ensureTerm'
-import kebabCase from 'lodash-es/kebabCase'
+import { kebabCase } from 'lodash-es'
 import { Icon } from '@iconify/react'
 import { markTermAsEmpty } from '@centergraph/shacl-renderer/lib/helpers/markTermAsEmpty'
 

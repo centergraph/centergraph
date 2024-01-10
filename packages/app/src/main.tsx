@@ -4,7 +4,7 @@ import App from './App.tsx'
 import { api } from './centerGraph.ts'
 import CenterGraph from '@centergraph/sdk/lib/react/context/Provider'
 
-window.addEventListener('DOMContentLoaded', () => {
+globalThis.addEventListener('DOMContentLoaded', () => {
   ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
       <CenterGraph api={api}>

@@ -21,6 +21,7 @@ export class CenterGraph {
   #options: CenterGraphOptions
   #store = datasetFactory.dataset()
   #d2LFetch: typeof D2LFetch
+  #fetch: (typeof globalThis)['fetch']
   public shaclRendererSettings: ShaclRendererProps['settings']
 
   namespaces = namespaces
@@ -32,9 +33,11 @@ export class CenterGraph {
     this.#d2LFetch.use({ name: 'simple-cache', fn: fetchSimpleCache })
     this.#d2LFetch.use({ name: 'dedupe', fn: fetchDedupe })
 
+    this.#fetch = (input, init) => ('Deno' in globalThis ? globalThis.fetch(input, init) : this.#d2LFetch.fetch(input, init))
+
     this.shaclRendererSettings = this.#options.shaclRendererSettings ?? defaultSettings('view')
     registerCoreWidgets(this.shaclRendererSettings)
-    this.shaclRendererSettings.fetch = (input, init) => this.#d2LFetch.fetch(input, init)
+    this.shaclRendererSettings.fetch = this.#fetch
   }
 
   populateStore() {
@@ -44,13 +47,13 @@ export class CenterGraph {
   get<T>(path: string | NamedNode) {
     if (typeof path !== 'string') path = path.value
     const url = path.includes('http://') || path.includes('https://') ? path : this.#options.base + path
-    return new GetApiRequest<T>((input, init) => this.#d2LFetch.fetch(input, init), this.#options.base, url)
+    return new GetApiRequest<T>(this.#fetch, this.#options.base, url)
   }
 
   getFolder(path: string | NamedNode) {
     if (typeof path !== 'string') path = path.value
     const url = path.includes('http://') || path.includes('https://') ? path : this.#options.base + path
-    return new FolderApiRequest((input, init) => this.#d2LFetch.fetch(input, init), url)
+    return new FolderApiRequest(this.#fetch, url)
   }
 
   get query() {
@@ -59,7 +62,7 @@ export class CenterGraph {
       asCount: false,
       mode: navigator.onLine ? 'remote' : 'local',
       store: this.#store,
-      fetch: (input, init) => this.#d2LFetch.fetch(input, init),
+      fetch: this.#fetch,
     })
   }
 
@@ -69,7 +72,7 @@ export class CenterGraph {
       asCount: true,
       mode: navigator.onLine ? 'remote' : 'local',
       store: this.#store,
-      fetch: (input, init) => this.#d2LFetch.fetch(input, init),
+      fetch: this.#fetch,
     })
   }
 
