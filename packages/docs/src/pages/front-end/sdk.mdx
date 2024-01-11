@@ -27,7 +27,7 @@ export const api = new CenterGraph({
 }
 ```
 
-It is recommended to use something similar to the above code sample. It fetches the types from the back-end and savees them in a local folder. If you are using Deno it is also possible to hot-link to the types.
+It is recommended to use something similar to the above code sample. It fetches the types from the back-end and saves them in a local folder. If you are using Deno it is also possible to hot-link to the types.
 
 All the types are in one file so it is easy to update the whole file.
 
@@ -74,10 +74,33 @@ function MyComponent() {
 
 ```
 
+## `api.query`
+
+A fluent API that will return `NamedNode<string>[]` ultimately. You can create a query by chaining more parts to it.
+
+```ts
+const count = api.count.filter(rdf('type'), schema('Person')).filter(schema('givenName')).sort(schema('name'))
+// Thenable
+
+const resource = count.asResource()
+// Resource
+
+const number = await count
+// 3
+```
+
+## `api.count`
+
+A fluent API that will return a number ultimately. You can create a query by chaining more parts to it.
+
+```ts
+const count = api.count.filter(rdf('type'), schema('Person')).filter(schema('givenName')).sort(schema('name'))
+```
+
 ## `<View data={api.get('/contacts/john-doe')} as="card" />`
 
 Uses the SHACL renderer to display data according to the SHACL shape that is referenced in the `sh:shapesGraph`. The `as="card"` specifies the sub graph that is references. Inside a SHACL shape document there can be multiple graphs each for displaying the data in a different way. There also will be a main shape to use for forms.
 
-## `<Form data={api.get('/contacts/john-doe')}/>`
+## `<Form data={api.get('/contacts/john-doe')} />`
 
 Uses the SHACL renderer to display data according to the SHACL shape that is referenced in the `sh:shapesGraph`.

@@ -58,14 +58,14 @@ export class GetApiRequest<T> extends AbstractApiRequest<T> {
     return `${shaclUrls[0]}${viewMode ? '#' + viewMode : ''}`
   }
 
-  asResource() {
+  asResource(): T {
     if (resourceCache.has(this.url)) return resourceCache.get(this.url).read()
 
     const promise = this.then()
     const resource = asResource(promise)
     resourceCache.set(this.url, resource)
 
-    return resource.read()
+    return resource.read() as T
   }
 
   async #getContext() {

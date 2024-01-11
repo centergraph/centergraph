@@ -49,6 +49,7 @@ export class CenterGraph {
 
   getFolder(path: string | NamedNode) {
     if (typeof path !== 'string') path = path.value
+    if (!path.endsWith('/')) throw new Error('The path must end with a slash')
     const url = path.includes('http://') || path.includes('https://') ? path : this.options.base + path
     return new FolderApiRequest((input, init) => this.#d2LFetch.fetch(input, init), url)
   }

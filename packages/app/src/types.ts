@@ -1,7 +1,7 @@
 export type Person = {
     givenName: string;
     familyName: string;
-    birthDate?: string;
+    birthDate?: Date;
     address?: {
         streetAddress: string;
         addressRegion: string;

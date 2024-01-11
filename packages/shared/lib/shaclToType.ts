@@ -61,7 +61,7 @@ export async function shaclToType(
     } else {
       let type: ts.TypeNode = factory.createKeywordTypeNode(ts.SyntaxKind.StringKeyword)
 
-      if (shaclProperty.out(sh('datatype')).term.equals(xsd('date'))) {
+      if (shaclProperty.out(sh('datatype')).term?.equals(xsd('date'))) {
         type = factory.createTypeReferenceNode('Date')
       }
 
