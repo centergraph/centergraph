@@ -1,11 +1,23 @@
 import ts, { factory, SyntaxKind } from 'typescript'
 import { ContextParser } from 'jsonld-context-parser'
-import { rdf, sh, sr } from '@centergraph/shared/lib/namespaces'
+import { rdf, sh, sr, xsd } from '@centergraph/shared/lib/namespaces'
 import parsePath from 'shacl-engine/lib/parsePath'
 
-export function shaclToType(shaclPointer: GrapoiPointer, context: { [key: string]: unknown }, nested: false): Promise<string>
-export function shaclToType(shaclPointer: GrapoiPointer, context: { [key: string]: unknown }, nested: true): Promise<ts.TypeLiteralNode>
-export async function shaclToType(shaclPointer: GrapoiPointer, context: { [key: string]: unknown }, nested: boolean = false) {
+export function shaclToType(
+  shaclPointer: GrapoiPointer,
+  context: { [key: string]: unknown },
+  nested: false
+): Promise<string>
+export function shaclToType(
+  shaclPointer: GrapoiPointer,
+  context: { [key: string]: unknown },
+  nested: true
+): Promise<ts.TypeLiteralNode>
+export async function shaclToType(
+  shaclPointer: GrapoiPointer,
+  context: { [key: string]: unknown },
+  nested: boolean = false
+) {
   const contextParser = new ContextParser()
 
   let shapePointer = shaclPointer.hasOut(rdf('type'), sh('NodeShape'))
@@ -27,7 +39,9 @@ export async function shaclToType(shaclPointer: GrapoiPointer, context: { [key: 
     const predicate = path[0].predicates[0]
     const compactedPredicate = parsedContext.compactIri(predicate.value, true)
     const isRequired = !!shaclProperty.out(sh('minCount')).value
-    const maxCount = (shaclProperty.out(sh('maxCount')).value ? parseInt(shaclProperty.out(sh('maxCount')).value) : Infinity) ?? Infinity
+    const maxCount =
+      (shaclProperty.out(sh('maxCount')).value ? parseInt(shaclProperty.out(sh('maxCount')).value) : Infinity) ??
+      Infinity
     const isMultiple = maxCount > 1
 
     const node = shaclProperty.out(sh('node')).term
@@ -45,14 +59,18 @@ export async function shaclToType(shaclPointer: GrapoiPointer, context: { [key: 
         )
       )
     } else {
+      let type: ts.TypeNode = factory.createKeywordTypeNode(ts.SyntaxKind.StringKeyword)
+
+      if (shaclProperty.out(sh('datatype')).term.equals(xsd('date'))) {
+        type = factory.createTypeReferenceNode('Date')
+      }
+
       props.push(
         factory.createPropertySignature(
           undefined,
           factory.createIdentifier(compactedPredicate),
           !isRequired ? factory.createToken(SyntaxKind.QuestionToken) : undefined,
-          isMultiple
-            ? factory.createArrayTypeNode(factory.createKeywordTypeNode(ts.SyntaxKind.StringKeyword))
-            : factory.createKeywordTypeNode(ts.SyntaxKind.StringKeyword)
+          isMultiple ? factory.createArrayTypeNode(type) : type
         )
       )
     }

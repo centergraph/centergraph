@@ -24,7 +24,7 @@ test('converting a SHACL shape to a TypeScript type', async () => {
     `export type Person = {
     givenName: string;
     familyName: string;
-    birthDate?: string;
+    birthDate?: Date;
     address?: {
         streetAddress: string;
         postalCode: string;
@@ -33,7 +33,6 @@ test('converting a SHACL shape to a TypeScript type', async () => {
         addressCountry: string;
     }[];
 };
-`,
-    type
-  )
+`
+  ).toBe(type)
 })
