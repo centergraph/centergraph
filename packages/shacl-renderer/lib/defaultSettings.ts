@@ -1,7 +1,7 @@
 import defaultCssClasses from './defaultCssClasses'
-import datasetFactory from '@rdfjs/dataset'
+import { Settings } from './types'
 
-export const defaultSettings = (mode: 'view' | 'edit') => ({
+export const defaultSettings = (mode: 'view' | 'edit'): Settings => ({
   fetch: fetch.bind(window),
   mode,
   widgetMetas: {
@@ -9,7 +9,8 @@ export const defaultSettings = (mode: 'view' | 'edit') => ({
     viewers: [],
   },
   widgetLoaders: new Map(),
-  dataDataset: datasetFactory.dataset(),
-  shaclDataset: datasetFactory.dataset(),
-  cssClasses: defaultCssClasses(mode),
+  cssClasses: {
+    edit: defaultCssClasses('edit'),
+    view: defaultCssClasses('view'),
+  },
 })

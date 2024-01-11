@@ -17,7 +17,7 @@ export default function Group({
   const cssClasses = groupPointer.out(sr('class')).values.join(' ')
 
   return children ? (
-    <div className={`${settings.cssClasses.group}${groupClassName} ${cssClasses}`}>
+    <div className={`${settings.cssClasses[settings.mode].group}${groupClassName} ${cssClasses}`}>
       {label ? <h4 className="form-label">{label}</h4> : null}
       {children}
     </div>

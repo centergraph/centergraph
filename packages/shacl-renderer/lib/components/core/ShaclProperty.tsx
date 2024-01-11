@@ -37,15 +37,16 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
 
   // Sometimes the whole of the property can be hidden.
   const shouldShow =
-    (widgetMeta && (!!objectPointers.ptrs.length || settings.mode === 'edit')) || (settings.mode === 'view' && !!objectPointers.ptrs.length)
+    (widgetMeta && (!!objectPointers.ptrs.length || settings.mode === 'edit')) ||
+    (settings.mode === 'view' && !!objectPointers.ptrs.length)
 
   const propertyCssClassName = path[0]?.predicates?.[0] ? kebabCase(lastPart(path[0]?.predicates?.[0]) ?? '') : ''
 
   return shouldShow ? (
-    <div className={`${settings.cssClasses.shaclProperty} ${propertyCssClassName}`}>
+    <div className={`${settings.cssClasses[settings.mode].shaclProperty} ${propertyCssClassName}`}>
       {/* The label of the field */}
       {label ? (
-        <label className={settings.cssClasses.label}>
+        <label className={settings.cssClasses[settings.mode].label}>
           {label}
           {settings.mode === 'view' ? ': ' : ''}
         </label>
@@ -59,7 +60,7 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
                 dataPointer.addOut(predicate, markTermAsEmpty(widgetMeta!.createTerm!()))
                 setObjectPointers()
               }}
-              className={settings.cssClasses.button.secondary}
+              className={settings.cssClasses[settings.mode].button.secondary}
               key={predicate.value}
               title={predicate.value}
             >
@@ -87,7 +88,7 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
             dataPointer.addOut([path[0].predicates[0]], [markTermAsEmpty(widgetMeta!.createTerm!())])
             setObjectPointers()
           }}
-          className={settings.cssClasses.button.add}
+          className={settings.cssClasses[settings.mode].button.add}
         >
           <Icon icon="octicon:plus-16" />
         </button>

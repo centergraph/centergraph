@@ -26,9 +26,12 @@ test('that returns the signal', async () => {
       viewers: [],
     },
     widgetLoaders: loaders,
-    dataDataset,
-    shaclDataset,
-    cssClasses: defaultCssClasses('edit'),
+    initialDataDataset: dataDataset,
+    initialShaclDataset: shaclDataset,
+    cssClasses: {
+      edit: defaultCssClasses('edit'),
+      view: defaultCssClasses('view'),
+    },
   }
 
   const output = renderHook(() => useValidate(settings))

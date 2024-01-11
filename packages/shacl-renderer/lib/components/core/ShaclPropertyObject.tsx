@@ -15,10 +15,16 @@ type PropertyObjectProps = {
   setObjectPointers: () => void
 }
 
-export default function ShaclPropertyObject({ shaclPointer, dataPointer, settings, setObjectPointers, path }: PropertyObjectProps) {
+export default function ShaclPropertyObject({
+  shaclPointer,
+  dataPointer,
+  settings,
+  setObjectPointers,
+  path,
+}: PropertyObjectProps) {
   const { Widget, widgetMeta } = useWidget(settings, dataPointer, shaclPointer, true)
   const [term, realSetTerm] = useState(dataPointer.term)
-  const { getErrorMessages, reportSignal, validate } = useValidate(settings)
+  const { getErrorMessages, reportSignal, validate } = useValidate()
 
   // TODO how to deal with the required state?
   const errorMessages = !term.isEmpty ? getErrorMessages(reportSignal, path) : []
@@ -34,15 +40,15 @@ export default function ShaclPropertyObject({ shaclPointer, dataPointer, setting
 
   return (
     <div
-      className={`${widgetCssClassName} ${settings.cssClasses.propertyObjectWrapper} ${
-        errorMessages.length ? settings.cssClasses.hasErrors : ''
+      className={`${widgetCssClassName} ${settings.cssClasses[settings.mode].propertyObjectWrapper} ${
+        errorMessages.length ? settings.cssClasses[settings.mode].hasErrors : ''
       }`}
     >
-      <div className={settings.cssClasses.propertyObject}>
+      <div className={settings.cssClasses[settings.mode].propertyObject}>
         {/* The widget loads with a Promise */}
         {Widget ? (
           <Widget
-            hasErrorsClassName={errorMessages.length ? settings.cssClasses.hasErrors : ''}
+            hasErrorsClassName={errorMessages.length ? settings.cssClasses[settings.mode].hasErrors : ''}
             dataPointer={dataPointer}
             term={term}
             setTerm={setTerm}
@@ -50,7 +56,7 @@ export default function ShaclPropertyObject({ shaclPointer, dataPointer, setting
             settings={settings}
           />
         ) : (
-          <div className={settings.cssClasses.input}></div>
+          <div className={settings.cssClasses[settings.mode].input}></div>
         )}
         {settings.mode === 'edit' ? (
           <button
@@ -61,7 +67,7 @@ export default function ShaclPropertyObject({ shaclPointer, dataPointer, setting
               for (const quad of quads) dataPointer.ptrs[0].dataset.delete(quad)
               setObjectPointers()
             }}
-            className={settings.cssClasses.button.remove}
+            className={settings.cssClasses[settings.mode].button.remove}
           >
             <Icon icon="octicon:trash-16" />
           </button>
@@ -70,7 +76,7 @@ export default function ShaclPropertyObject({ shaclPointer, dataPointer, setting
 
       {/* The SHACL errors */}
       {errorMessages.length && settings.mode === 'edit' ? (
-        <div className={settings.cssClasses.errorMessage} role="alert">
+        <div className={settings.cssClasses[settings.mode].errorMessage} role="alert">
           {errorMessages.join('\n')}
         </div>
       ) : null}

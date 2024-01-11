@@ -22,9 +22,10 @@ test('that it gives the iri', async () => {
       viewers: [],
     },
     widgetLoaders: loaders,
-    dataDataset: datasetFactory.dataset(),
-    shaclDataset: datasetFactory.dataset(),
-    cssClasses: defaultCssClasses('edit'),
+    cssClasses: {
+      edit: defaultCssClasses('edit'),
+      view: defaultCssClasses('view'),
+    },
   }
 
   const quad = DataFactory.quad(DataFactory.namedNode(''), schema('name'), DataFactory.literal('John'))
@@ -51,9 +52,10 @@ test('that it loads editors', async () => {
       viewers: [],
     },
     widgetLoaders: loaders,
-    dataDataset: datasetFactory.dataset(),
-    shaclDataset: datasetFactory.dataset(),
-    cssClasses: defaultCssClasses('edit'),
+    cssClasses: {
+      edit: defaultCssClasses('edit'),
+      view: defaultCssClasses('view'),
+    },
   }
 
   const quad = DataFactory.quad(DataFactory.namedNode(''), schema('name'), DataFactory.literal('John'))
@@ -82,9 +84,10 @@ test('that it loads viewers', async () => {
       viewers: targetMetas,
     },
     widgetLoaders: loaders,
-    dataDataset: datasetFactory.dataset(),
-    shaclDataset: datasetFactory.dataset(),
-    cssClasses: defaultCssClasses('view'),
+    cssClasses: {
+      edit: defaultCssClasses('edit'),
+      view: defaultCssClasses('view'),
+    },
   }
 
   const quad = DataFactory.quad(DataFactory.namedNode(''), schema('name'), DataFactory.literal('John'))
@@ -114,9 +117,10 @@ test('that it mails with no viewers', async () => {
       viewers: [],
     },
     widgetLoaders: loaders,
-    dataDataset: datasetFactory.dataset(),
-    shaclDataset: datasetFactory.dataset(),
-    cssClasses: defaultCssClasses('view'),
+    cssClasses: {
+      edit: defaultCssClasses('edit'),
+      view: defaultCssClasses('view'),
+    },
   }
 
   const quad = DataFactory.quad(DataFactory.namedNode(''), schema('name'), DataFactory.literal('John'))
@@ -148,9 +152,10 @@ test('that it continues if the module is available', async () => {
       viewers: [],
     },
     widgetLoaders: loaders,
-    dataDataset: datasetFactory.dataset(),
-    shaclDataset: datasetFactory.dataset(),
-    cssClasses: defaultCssClasses('view'),
+    cssClasses: {
+      edit: defaultCssClasses('edit'),
+      view: defaultCssClasses('view'),
+    },
   }
 
   const quad = DataFactory.quad(DataFactory.namedNode(''), schema('name'), DataFactory.literal('John'))
@@ -184,9 +189,10 @@ test('that it uses cache if available', async () => {
       viewers: [],
     },
     widgetLoaders: loaders,
-    dataDataset: datasetFactory.dataset(),
-    shaclDataset: datasetFactory.dataset(),
-    cssClasses: defaultCssClasses('view'),
+    cssClasses: {
+      edit: defaultCssClasses('edit'),
+      view: defaultCssClasses('view'),
+    },
   }
 
   const quad = DataFactory.quad(DataFactory.namedNode(''), schema('name'), DataFactory.literal('John'))

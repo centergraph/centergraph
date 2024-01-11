@@ -40,7 +40,7 @@ export default function FormLevel(props: FormLevelProps) {
 
   return (
     <div
-      className={settings.cssClasses.formLevel}
+      className={settings.cssClasses[settings.mode].formLevel}
       ref={(element) => {
         if (!htmlChildren) return
         htmlChildren.forEach((child) => element?.appendChild(child))

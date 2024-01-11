@@ -20,9 +20,10 @@ test('preloads editor widgets', async () => {
       viewers: [],
     },
     widgetLoaders: loaders,
-    dataDataset: datasetFactory.dataset(),
-    shaclDataset: datasetFactory.dataset(),
-    cssClasses: defaultCssClasses('edit'),
+    cssClasses: {
+      edit: defaultCssClasses('edit'),
+      view: defaultCssClasses('view'),
+    },
   }
 
   await preloadWidgets(settings, shaclPointer)
@@ -44,9 +45,12 @@ test('preloads viewer widgets', async () => {
       viewers: targetMetas,
     },
     widgetLoaders: loaders,
-    dataDataset: datasetFactory.dataset(),
-    shaclDataset: datasetFactory.dataset(),
-    cssClasses: defaultCssClasses('view'),
+    initialDataDataset: datasetFactory.dataset(),
+    initialShaclDataset: datasetFactory.dataset(),
+    cssClasses: {
+      edit: defaultCssClasses('edit'),
+      view: defaultCssClasses('view'),
+    },
   }
 
   await preloadWidgets(settings, shaclPointer)

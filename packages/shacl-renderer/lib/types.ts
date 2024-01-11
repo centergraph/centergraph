@@ -9,6 +9,25 @@ export type WidgetMeta = {
   formParts?: string[]
 }
 
+export type CssClasses = {
+  hasErrors: string
+  errorMessage: string
+  formLevel: string
+  group: string
+  label: string
+  input: string
+  shaclProperty: string
+  propertyObject: string
+  propertyObjectWrapper: string
+  button: {
+    add: string
+    remove: string
+    primary: string
+    secondary: string
+    danger: string
+  }
+}
+
 export type Settings = {
   mode: 'edit' | 'view'
   fetch: typeof globalThis.fetch
@@ -17,26 +36,12 @@ export type Settings = {
     editors: Array<WidgetMeta>
     viewers: Array<WidgetMeta>
   }
-  dataDataset: DatasetCore
-  shaclDataset: DatasetCore
+  initialDataDataset?: DatasetCore
+  initialShaclDataset?: DatasetCore
   widgetLoaders: Map<string, () => Promise<{ default: ReactElement }>>
   cssClasses: {
-    hasErrors: string
-    errorMessage: string
-    formLevel: string
-    group: string
-    label: string
-    input: string
-    shaclProperty: string
-    propertyObject: string
-    propertyObjectWrapper: string
-    button: {
-      add: string
-      remove: string
-      primary: string
-      secondary: string
-      danger: string
-    }
+    edit: CssClasses
+    view: CssClasses
   }
 }
 

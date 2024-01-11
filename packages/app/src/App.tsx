@@ -1,6 +1,7 @@
 import { Person } from './types'
 import { api } from './centerGraph'
 import View from '@centergraph/sdk/lib/react/components/View'
+import Form from '@centergraph/sdk/lib/react/components/Form'
 
 const { rdf, schema } = api.namespaces
 
@@ -37,7 +38,7 @@ export default function App() {
 
       <ul>
         {contents.map((contactUrl) => (
-          <li key={contactUrl.value}>{contactUrl.value}</li>
+          <Form key={contactUrl.value} data={api.get<Person>(contactUrl)} />
         ))}
       </ul>
     </>

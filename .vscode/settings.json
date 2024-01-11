@@ -12,6 +12,7 @@
     "ptrs",
     "rdfjs",
     "rdfs",
+    "Resourceable",
     "shacl",
     "sparql"
   ],

@@ -11,9 +11,9 @@
   schema:birthDate "1947-01-14"^^xsd:date ;
 
   schema:address [
-    schema:streetAddress "Wagramer Strasse 5" ;
-    schema:postalCode "1220" ;
-    schema:addressRegion "Wien" ;
-    schema:addressLocality "Wien" ;
-    schema:addressCountry "Austria" ;
+    schema:streetAddress "Wagramer Strasse 7" ;
+    schema:postalCode "1222" ;
+    schema:addressRegion "Wien2" ;
+    schema:addressLocality "Wien2" ;
+    schema:addressCountry "Austria2" ;
   ] .

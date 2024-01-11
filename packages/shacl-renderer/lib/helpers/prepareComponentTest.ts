@@ -28,9 +28,10 @@ export const prepareComponentTest = async () => {
       viewers: [],
     },
     widgetLoaders: new Map(),
-    dataDataset: datasetFactory.dataset(),
-    shaclDataset: datasetFactory.dataset(),
-    cssClasses: defaultCssClasses('edit'),
+    cssClasses: {
+      edit: defaultCssClasses('edit'),
+      view: defaultCssClasses('view'),
+    },
   }
 
   return {
