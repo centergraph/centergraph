@@ -1,46 +1,53 @@
 import { Person } from './types'
-import { api } from './centerGraph'
+import { api, base } from './centerGraph'
 import View from '@centergraph/sdk/lib/react/components/View'
-import Form from '@centergraph/sdk/lib/react/components/Form'
-
-const { rdf, schema } = api.namespaces
+import { Link, Outlet, useParams } from 'react-router-dom'
+import { Icon } from '@iconify/react'
 
 export default function App() {
-  const person = api.get<Person>('/contacts/john-doe').asResource()
-
-  const count = api.count
-    .filter(rdf('type'), schema('Person'))
-    .filter(schema('givenName'))
-    .sort(schema('name'))
-    .asResource()
-
-  const contactUrls = api.query
-    .filter(rdf('type'), schema('Person'))
-    .filter(schema('givenName'))
-    .sort(schema('name'))
-    .asResource()
-
   const contents = api.getFolder('/contacts/').asResource()
+  const { slug } = useParams()
 
   return (
     <>
-      <img src={api.options.base + '/logo.svg'} style={{ height: 200 }} />
+      <div className="container">
+        <header>
+          <h1>
+            <Link to="/">
+              <img src={base + '/logo.svg'} style={{ height: 50 }} />
+              &nbsp;Address book
+            </Link>
+          </h1>
+        </header>
+        <main className="row">
+          <aside className="col-3">
+            <em>{contents.length ?? '...'} contacts</em>
 
-      <h1>
-        {person.familyName} {person.givenName}
-      </h1>
+            <ul className="list-group">
+              {contents.map((contactUrl) => {
+                const contactSlug = contactUrl.value.split('/').pop()
 
-      <em>{count ?? '...'} results</em>
-
-      {contactUrls.map((contactUrl) => (
-        <View key={contactUrl.value} data={api.get<Person>(contactUrl)} as="card" />
-      ))}
-
-      <ul>
-        {contents.map((contactUrl) => (
-          <Form key={contactUrl.value} data={api.get<Person>(contactUrl)} />
-        ))}
-      </ul>
+                return (
+                  <li
+                    key={contactUrl.value}
+                    className={`d-flex list-group-item ${contactSlug === slug ? 'active' : ''}`}
+                  >
+                    <Link className={contactSlug === slug ? 'text-bg-dark' : ''} to={`/contact/${contactSlug}`}>
+                      <View data={api.get<Person>(contactUrl)} as="card" />
+                    </Link>
+                    <Link className="btn ms-auto btn-secondary btn-sm" to={`/contact/${contactSlug}/edit`}>
+                      <Icon icon="bx:edit" />
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul>
+          </aside>
+          <main className="col-9">
+            <Outlet />
+          </main>
+        </main>
+      </div>
     </>
   )
 }
