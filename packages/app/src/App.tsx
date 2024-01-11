@@ -1,29 +1,26 @@
 import { Person } from './types'
 import { api } from './centerGraph'
 import View from '@centergraph/sdk/lib/react/components/View'
-import { asResource } from '@centergraph/sdk/lib/asResource'
 
 const {
   namespaces: { rdf, schema },
 } = api
 
-const personResource = asResource(api.get<Person>('/contacts/john-doe'))
-
-const contactUrlsResource = asResource(
-  api.query.filter(rdf('type'), schema('Person')).filter(schema('givenName')).sort(schema('name'))
-)
-
-const countResource = asResource(
-  api.count.filter(rdf('type'), schema('Person')).filter(schema('givenName')).sort(schema('name'))
-)
-
 export default function App() {
-  const person = personResource()
-  const count = countResource()
-  const contactUrls = contactUrlsResource()
+  const person = api.get<Person>('/contacts/john-doe').asResource()
+  const count = api.count
+    .filter(rdf('type'), schema('Person'))
+    .filter(schema('givenName'))
+    .sort(schema('name'))
+    .asResource()
 
-  // const folderRequest = api.getFolder('/contacts/')
-  // const contents = useApi(folderRequest)
+  const contactUrls = api.query
+    .filter(rdf('type'), schema('Person'))
+    .filter(schema('givenName'))
+    .sort(schema('name'))
+    .asResource()
+
+  const contents = api.getFolder('/contacts/').asResource()
 
   return (
     <>
@@ -35,6 +32,12 @@ export default function App() {
       <div>
         {contactUrls.map((contactUrl) => (
           <View key={contactUrl.value} data={api.get<Person>(contactUrl)} as="card" />
+        ))}
+      </div>
+
+      <div>
+        {contents.map((contactUrl) => (
+          <li key={contactUrl.value}>{contactUrl.value}</li>
         ))}
       </div>
     </>

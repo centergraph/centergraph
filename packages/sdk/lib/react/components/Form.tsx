@@ -7,17 +7,16 @@ import { useApi } from '../hooks/useApi'
 
 type ViewProps = {
   data: GetApiRequest<unknown>
-  as: string
 }
 
-export default function View({ data, as }: ViewProps) {
+export default function Form({ data }: ViewProps) {
   const { api } = useContext(centerGraphContext)
-  const shaclUrl = useApi(data.shaclUrl(as))
+  const shaclUrl = useApi(data.shaclUrl())
   return shaclUrl ? (
     <ShaclRenderer
       dataUrl={data.url}
       shaclShapesUrl={shaclUrl}
-      settings={Object.assign({}, api.shaclRendererSettings, { mode: 'view' })}
+      settings={Object.assign({}, api.shaclRendererSettings, { mode: 'edit' })}
     />
   ) : null
 }

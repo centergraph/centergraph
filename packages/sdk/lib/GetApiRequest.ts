@@ -7,6 +7,10 @@ import { sh } from '@centergraph/shared/lib/namespaces'
 import '@centergraph/shacl-renderer'
 import grapoi from 'grapoi'
 import { quadsToShapeObject } from '@centergraph/shared/lib/quadsToShapeObject'
+import { LRUCache } from 'typescript-lru-cache'
+import { asResource } from './asResource'
+
+const resourceCache = new LRUCache()
 
 export class GetApiRequest<T> extends AbstractApiRequest<T> {
   url: string
@@ -52,6 +56,16 @@ export class GetApiRequest<T> extends AbstractApiRequest<T> {
     const shapesGraphs = [...dataset.match(null, sh('shapesGraph'))]
     const shaclUrls = shapesGraphs.map((shapesGraph) => shapesGraph.object.value)
     return `${shaclUrls[0]}${viewMode ? '#' + viewMode : ''}`
+  }
+
+  asResource() {
+    if (resourceCache.has(this.url)) return resourceCache.get(this.url).read()
+
+    const promise = this.then()
+    const resource = asResource(promise)
+    resourceCache.set(this.url, resource)
+
+    return resource.read()
   }
 
   async #getContext() {

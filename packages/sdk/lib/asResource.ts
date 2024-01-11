@@ -23,5 +23,5 @@ export function asResource<T>(promise: PromiseLike<T>) {
     }
   }
 
-  return read
+  return { read }
 }

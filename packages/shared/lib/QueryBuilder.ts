@@ -84,7 +84,7 @@ export class QueryBuilder<T extends NamedNode[] | number> implements PromiseLike
     return graphNamedNodes as T
   }
 
-  async #thenApiRemote(): Promise<T> {
+  get url() {
     const query = new URLSearchParams()
     query.append(
       'query',
@@ -99,7 +99,11 @@ export class QueryBuilder<T extends NamedNode[] | number> implements PromiseLike
       })
     )
 
-    const response = await this.#fetch(`${this.#options.base}/api/query?${query.toString()}`).then((response) => response.json())
+    return `${this.#options.base}/api/query?${query.toString()}`
+  }
+
+  async #thenApiRemote(): Promise<T> {
+    const response = await this.#fetch(this.url).then((response) => response.json())
 
     if (this.#options.asCount) return response.result
 

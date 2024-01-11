@@ -1,4 +1,3 @@
-import { QueryBuilder } from '@centergraph/shared/lib/QueryBuilder'
 import datasetFactory from '@rdfjs/dataset'
 import { NamedNode } from '@rdfjs/types'
 import * as namespaces from '@centergraph/shared/lib/namespaces'
@@ -11,6 +10,7 @@ import { registerCoreWidgets } from '@centergraph/shacl-renderer/lib/helpers/reg
 import type { ShaclRendererProps } from '@centergraph/shacl-renderer'
 import { GetApiRequest } from './GetApiRequest'
 import { FolderApiRequest } from './FolderApiRequest'
+import { ResourceableQueryBuilder } from './ResourceableQueryBuilder'
 
 export type CenterGraphOptions = {
   base: string
@@ -54,7 +54,7 @@ export class CenterGraph {
   }
 
   get query() {
-    return new QueryBuilder<NamedNode[]>({
+    return new ResourceableQueryBuilder<NamedNode[]>({
       base: this.options.base,
       asCount: false,
       mode: navigator.onLine ? 'remote' : 'local',
@@ -64,7 +64,7 @@ export class CenterGraph {
   }
 
   get count() {
-    return new QueryBuilder<number>({
+    return new ResourceableQueryBuilder<number>({
       base: this.options.base,
       asCount: true,
       mode: navigator.onLine ? 'remote' : 'local',

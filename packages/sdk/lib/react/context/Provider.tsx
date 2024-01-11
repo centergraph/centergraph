@@ -12,7 +12,7 @@ export default function CenterGraphContextProvider({ children, api }: ContextPro
 
   useEffect(() => {
     api.populateStore().then(() => setReady(true))
-  }, [])
+  }, [api])
 
   return ready ? (
     <>
@@ -24,7 +24,5 @@ export default function CenterGraphContextProvider({ children, api }: ContextPro
         {children}
       </centerGraphContext.Provider>
     </>
-  ) : (
-    'Loading...'
-  )
+  ) : null
 }

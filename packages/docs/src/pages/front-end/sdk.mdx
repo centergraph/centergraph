@@ -1,0 +1,83 @@
+---
+title: 'SDK'
+layout: ../../layouts/html.astro
+---
+
+CenterGraph comes with an SDK package. This package is somewhat geared towards React but the core functionality is also available as thenables.
+
+## `new CenterGraph(Options)`
+
+```ts
+import { CenterGraph } from '@centergraph/sdk'
+
+export const api = new CenterGraph({
+  base: 'http://my-centergraph-domain.com',
+})
+```
+
+- base: The domain where your CenterGraph server is hosted. In development mode this should be: http://localhost:8000.
+
+## Getting types for your data
+
+```json
+{
+  "scripts": {
+    "dev": "wait-on http://localhost:8000 && curl http://localhost:8000/api/types > src/types.ts && vite --port=8001"
+  }
+}
+```
+
+It is recommended to use something similar to the above code sample. It fetches the types from the back-end and savees them in a local folder. If you are using Deno it is also possible to hot-link to the types.
+
+All the types are in one file so it is easy to update the whole file.
+
+The [wait-on](https://www.npmjs.com/package/wait-on) tool can help you in waiting for the back-end server to come online. This is helpful for development where you might start all the tools at once.
+
+## `api.get<Type>(): Thenable<Type>`
+
+Fetch a document. This method does not understand what data is flowing through it, so it is to the developer to add the type.
+
+```ts
+import { Person } from './types'
+
+const person = api.get<Person>('/contacts/john-doe')
+```
+
+If you would like to have a resource that is possible by adding `.asResource()` to the chain.
+The technical details are quite well explained here: https://www.youtube.com/watch?v=uZnXwuhYZBc.
+
+The core idea of a Resource is that it throws a Promise instead of an Error as long as the promise is not resolved. React will resolve the promise and try again to render your component untill it does not catch a promise.
+
+The state and cache of the promise are inside the api.
+
+```ts
+function MyComponent() {
+  const person = api.get<Person>('/contacts/john-doe').asResource()
+  return <h1>Hi {person.name}</h1>
+}
+```
+
+## `api.getFolder(path: string): Thenable<NamedNode[]>`
+
+Retrieves the paths as `NamedNode<string>`s from a folder.
+If you would like to have a resource that is possible by adding `.asResource()` to the chain.
+
+```ts
+const folderUrls = await api.getFolder('/contacts/')
+
+...
+
+function MyComponent() {
+  const folderUrls = api.getFolder('/contacts/').asResource()
+  ...
+}
+
+```
+
+## `<View data={api.get('/contacts/john-doe')} as="card" />`
+
+Uses the SHACL renderer to display data according to the SHACL shape that is referenced in the `sh:shapesGraph`. The `as="card"` specifies the sub graph that is references. Inside a SHACL shape document there can be multiple graphs each for displaying the data in a different way. There also will be a main shape to use for forms.
+
+## `<Form data={api.get('/contacts/john-doe')}/>`
+
+Uses the SHACL renderer to display data according to the SHACL shape that is referenced in the `sh:shapesGraph`.
