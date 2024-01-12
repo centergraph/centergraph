@@ -12,20 +12,6 @@ export default (config) => {
   return [
     {
       name: 'add-centergraph',
-      // load () {
-
-      //   // this.addWatchFile()
-      // },
-      // handleHotUpdate({ file, server }) {
-      //   console.log(file)
-      //   // if (file.includes('locales') && file.endsWith('.json')) {
-      //   //   console.log('Locale file updated')
-      //   //   server.ws.send({
-      //   //     type: "custom",
-      //   //     event: "locales-update",
-      //   //   });
-      //   // }
-      // },
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
           // A CORS request possibly from our Shape Editor

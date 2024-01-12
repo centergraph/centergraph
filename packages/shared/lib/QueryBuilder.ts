@@ -1,6 +1,8 @@
 import datasetFactory from '@rdfjs/dataset'
 import type { DatasetCore, NamedNode, Term } from '@rdfjs/types'
 import { DataFactory } from 'n3'
+import df from '@rdfjs/data-model'
+import { cg } from './namespaces'
 
 export type QueryOptions = {
   base: string
@@ -46,6 +48,11 @@ export class QueryBuilder<T extends NamedNode[] | number> implements PromiseLike
     return this
   }
 
+  fullTextSearch(search: string) {
+    this.filter(cg('fullTextSearch'), df.literal(search))
+    return this
+  }
+
   then<TResult1 = T, TResult2 = never>(
     onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null,
     onrejected?: ((reason: unknown) => TResult2 | PromiseLike<TResult2>) | undefined | null
@@ -62,10 +69,26 @@ export class QueryBuilder<T extends NamedNode[] | number> implements PromiseLike
     let dataset = this.#options.store
 
     for (const { predicate, object } of this.#filters) {
-      const quads = dataset.match(null, predicate, object)
+      let graphs: string[] = []
+
+      if (predicate.equals(cg('fullTextSearch'))) {
+        const searchTerm = object?.value.toLocaleLowerCase()
+        if (!searchTerm) continue
+
+        graphs = [...dataset]
+          .filter(
+            (quad) => quad.object.termType === 'Literal' && quad.object.value.toLocaleLowerCase().includes(searchTerm)
+          )
+          .map((quad) => quad.graph.value)
+      } else {
+        graphs = [...dataset.match(null, predicate, object)].map((quad) => quad.graph.value)
+      }
+
+      graphs = [...new Set(graphs)]
+
       dataset = datasetFactory.dataset()
-      for (const quad of quads) {
-        const graphQuads = this.#options.store.match(null, null, null, quad.graph)
+      for (const graphIri of graphs) {
+        const graphQuads = this.#options.store.match(null, null, null, df.namedNode(graphIri))
         for (const graphQuad of graphQuads) dataset.add(graphQuad)
       }
     }
