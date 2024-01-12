@@ -7,10 +7,8 @@ import { ldp } from '@centergraph/shared/lib/namespaces'
 import '@centergraph/shacl-renderer'
 import grapoi from 'grapoi'
 import { NamedNode } from '@rdfjs/types'
-import { LRUCache } from 'typescript-lru-cache'
-import { asResource } from './asResource'
+import { cachedAsResource } from './asResource'
 
-const resourceCache = new LRUCache()
 export class FolderApiRequest extends AbstractApiRequest<NamedNode[]> {
   url: string
 
@@ -32,12 +30,8 @@ export class FolderApiRequest extends AbstractApiRequest<NamedNode[]> {
   }
 
   asResource(): NamedNode[] {
-    if (resourceCache.has(this.url)) return resourceCache.get(this.url).read()
-
     const promise = this.then()
-    const resource = asResource(promise)
-    resourceCache.set(this.url, resource)
-
+    const resource = cachedAsResource(promise, this.url)
     return resource.read()
   }
 }

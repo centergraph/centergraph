@@ -39,7 +39,9 @@ export default function ContactsList() {
       </div>
 
       <Suspense>
-        <em>{contents.length ?? '...'} contacts</em>
+        <em>
+          {contents.length ?? '...'} {search ? 'matches' : 'contacts'}
+        </em>
 
         <ul className="list-group">
           {contents.map((contactUrl) => {

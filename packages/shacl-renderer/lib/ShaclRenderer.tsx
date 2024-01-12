@@ -1,4 +1,4 @@
-import { ReactNode, useState } from 'react'
+import { ReactNode } from 'react'
 import { Settings } from '@centergraph/shacl-renderer/lib/types'
 import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
@@ -10,7 +10,7 @@ import { preloadWidgets } from './helpers/preloadWidgets'
 import './style.css'
 import { DatasetCore } from '@rdfjs/types'
 import { state } from './context/state'
-import { asResource } from '@centergraph/sdk/lib/asResource'
+import { cachedAsResource } from '@centergraph/sdk/lib/asResource'
 
 export type ShaclRendererProps = {
   settings: Settings
@@ -48,8 +48,6 @@ const loadData = async (settings: Settings, dataset: DatasetCore, dataUrl?: stri
   return grapoi({ dataset, factory: DataFactory, term: DataFactory.namedNode(subject) })
 }
 
-const resourceCache = new Map()
-
 const createShaclRendererResource = (
   settings: Settings,
   shaclShapesUrl?: string,
@@ -57,21 +55,18 @@ const createShaclRendererResource = (
   subject?: string
 ) => {
   const cid = JSON.stringify([shaclShapesUrl, dataUrl, subject, settings.mode])
-  if (resourceCache.has(cid)) return resourceCache.get(cid).read()
 
   const dataDataset = datasetFactory.dataset()
   const shaclDataset = datasetFactory.dataset()
-  const resource = asResource(
+  return cachedAsResource(
     Promise.all([
       loadShaclShapes(settings, shaclDataset, shaclShapesUrl),
       loadData(settings, dataDataset, dataUrl, subject),
     ]).then(([shaclShapes, dataPointer]) => {
       return { shaclShapes, dataPointer, dataDataset, shaclDataset }
-    })
+    }),
+    cid
   )
-
-  resourceCache.set(cid, resource)
-  return resource.read()
 }
 
 export default function ShaclRenderer({

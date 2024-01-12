@@ -1,7 +1,7 @@
 import { sh } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
 import { Settings } from '@centergraph/shacl-renderer/lib/types'
 import { getBestWidget } from '@centergraph/shacl-renderer/lib/helpers/getBestWidget'
-import { asResource } from '@centergraph/sdk/lib/asResource'
+import { cachedAsResource } from '@centergraph/sdk/lib/asResource'
 
 export const widgetCache = new Map()
 
@@ -32,8 +32,6 @@ const createWidgetPromise = async (
   }
 }
 
-const resourceCache = new Map()
-
 export const useWidget = (
   settings: Settings,
   dataPointer: GrapoiPointer,
@@ -44,9 +42,5 @@ export const useWidget = (
   const widgets = settings.mode === 'edit' ? settings.widgetMetas.editors : settings.widgetMetas.viewers
   const widgetIri = shaclPointer.out(shWidget).value ?? getBestWidget(widgets, dataPointer, shaclPointer)
 
-  if (resourceCache.has(widgetIri)) return resourceCache.get(widgetIri).read()
-
-  const resource = asResource(createWidgetPromise(settings, dataPointer, shaclPointer, load))
-  resourceCache.set(widgetIri, resource)
-  return resource.read()
+  return cachedAsResource(createWidgetPromise(settings, dataPointer, shaclPointer, load), widgetIri)
 }
