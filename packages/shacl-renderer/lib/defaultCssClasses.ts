@@ -2,11 +2,11 @@ import { CssClasses } from './types'
 
 export default (mode: 'edit' | 'view'): CssClasses => ({
   formLevel: `level flex-grow-1 ${mode === 'edit' ? 'p-3' : 'ps-3'}`,
-  group: 'group group-',
+  group: 'group group-[ID]',
   label: `form-label ${mode === 'view' ? 'd-inline' : ''}`,
-  shaclProperty: `property ${mode === 'edit' ? 'd-flex flex-column mb-3' : ''}`,
-  propertyObject: mode === 'edit' ? 'd-flex input-group' : 'd-inline',
-  propertyObjectWrapper: 'property-wrapper',
+  shaclProperty: mode === 'edit' ? `property [ID] d-flex flex-column mb-3` : '',
+  propertyObject: mode === 'edit' ? 'd-flex input-group' : '',
+  propertyObjectWrapper: mode === 'edit' ? 'property-wrapper [ID]' : '',
   button: {
     primary: 'btn btn-primary',
     secondary: 'btn btn-sm btn-secondary ms-2',

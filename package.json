@@ -69,7 +69,7 @@
     "node": "^20.0.0"
   },
   "scripts": {
-    "start": "cd packages/cli && deno run -A index.tsx",
+    "start": "cd packages/cli && deno run -A src/index.tsx",
     "dev": "turbo run dev",
     "build": "turbo run build"
   },

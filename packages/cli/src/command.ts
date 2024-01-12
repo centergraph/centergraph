@@ -2,7 +2,12 @@ import { PackageOutputs } from './types.ts'
 
 const urlRegex = /(http:\/\/\S+)[^\s,\.]/gi
 
-export const command = async (callback: () => void): Promise<PackageOutputs> => {
+export const command = async (
+  callback: () => void
+): Promise<{
+  packageOutputs: PackageOutputs
+  exit: () => void
+}> => {
   const command = new Deno.Command('npm', {
     args: ['run', 'dev'],
     cwd: Deno.cwd() + '/../..',
@@ -67,5 +72,8 @@ export const command = async (callback: () => void): Promise<PackageOutputs> => 
 
   getChunk()
 
-  return packageOutputs
+  return {
+    packageOutputs,
+    exit: () => child.stdin.close(),
+  }
 }

@@ -6,7 +6,6 @@ import React, { useEffect, useState } from 'react'
 
 import { command } from './command.ts'
 import { PackageOutputs } from './types.ts'
-
 console.clear()
 
 export function Main() {
@@ -31,7 +30,9 @@ export function Main() {
 
     command(() => {
       setRenderCount((value: number) => value + 1)
-    }).then(setPackageOutputs)
+    }).then(({ packageOutputs, exit }) => {
+      setPackageOutputs(packageOutputs)
+    })
   }, [])
 
   return renderCount ? (
@@ -42,7 +43,7 @@ export function Main() {
         {Object.values(packageOutputs as PackageOutputs)
           .sort((a, b) => {
             if (!a.ready && !b.ready) {
-              return a.packageName.localeCompare(b.packageName)
+              return a.packageName?.localeCompare(b.packageName)
             }
 
             return a.url.localeCompare(b.url)
@@ -75,4 +76,6 @@ export function Main() {
   ) : null
 }
 
-render(<Main />)
+render(<Main />, {
+  exitOnCtrlC: true,
+})

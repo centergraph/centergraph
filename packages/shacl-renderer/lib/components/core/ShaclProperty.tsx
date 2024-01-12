@@ -1,8 +1,8 @@
-import { rdfs, schema, sh } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
+import { rdfs, schema, sh, sr } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
 import parsePath from 'shacl-engine/lib/parsePath'
 import { Settings } from '@centergraph/shacl-renderer/lib/types'
 import ShaclPropertyObject from './ShaclPropertyObject'
-import { useCallback, useEffect, useState } from 'react'
+import { ReactNode, useCallback, useEffect, useState } from 'react'
 import { useWidget } from '@centergraph/shacl-renderer/lib/hooks/useWidget'
 import { Term } from '@rdfjs/types'
 import { lastPart } from '@centergraph/shacl-renderer/lib/helpers/lastPart'
@@ -42,57 +42,69 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
 
   const propertyCssClassName = path[0]?.predicates?.[0] ? kebabCase(lastPart(path[0]?.predicates?.[0]) ?? '') : ''
 
-  return shouldShow ? (
-    <div className={`${settings.cssClasses[settings.mode].shaclProperty} ${propertyCssClassName}`}>
-      {/* The label of the field */}
-      {label ? (
-        <label className={settings.cssClasses[settings.mode].label}>
-          {label}
-          {settings.mode === 'view' ? ': ' : ''}
-        </label>
-      ) : null}
+  const shaclCssClasses = shaclPointer.out(sr('class')).values.join(' ')
 
-      {/* Alternative predicates like schema:name | rdfs:label */}
-      {alternativePredicates?.length > 1 && [...objectPointers].length < maxCount
-        ? alternativePredicates.map((predicate: Term) => (
+  const cssClasses = `${settings.cssClasses[settings.mode].shaclProperty} ${shaclCssClasses} ${
+    label ? 'has-label' : ''
+  }`
+    .replace('[ID]', propertyCssClassName)
+    .trim()
+
+  const wrapper = (children: ReactNode) => (cssClasses ? <div className={cssClasses}>{children}</div> : <>{children}</>)
+
+  return shouldShow
+    ? wrapper(
+        <>
+          {/* The label of the field */}
+          {label ? (
+            <label className={settings.cssClasses[settings.mode].label}>
+              {label}
+              {settings.mode === 'view' ? ': ' : ''}
+            </label>
+          ) : null}
+
+          {/* Alternative predicates like schema:name | rdfs:label */}
+          {alternativePredicates?.length > 1 && [...objectPointers].length < maxCount
+            ? alternativePredicates.map((predicate: Term) => (
+                <button
+                  onClick={() => {
+                    dataPointer.addOut(predicate, markTermAsEmpty(widgetMeta!.createTerm!()))
+                    setObjectPointers()
+                  }}
+                  className={settings.cssClasses[settings.mode].button.secondary}
+                  key={predicate.value}
+                  title={predicate.value}
+                >
+                  + {lastPart(predicate)}
+                </button>
+              ))
+            : null}
+
+          {/* The rendering of the widget happens inside the ShaclPropertyObject */}
+          {[...objectPointers].map((objectPointer, index) => (
+            <ShaclPropertyObject
+              path={path}
+              key={JSON.stringify(path) + index} // TODO get the shortest representation of the path.
+              setObjectPointers={setObjectPointers}
+              dataPointer={objectPointer}
+              shaclPointer={shaclPointer}
+              settings={settings}
+            />
+          ))}
+
+          {settings.mode === 'edit' && maxCount > [...objectPointers].length ? (
             <button
+              type="button"
               onClick={() => {
-                dataPointer.addOut(predicate, markTermAsEmpty(widgetMeta!.createTerm!()))
+                dataPointer.addOut([path[0].predicates[0]], [markTermAsEmpty(widgetMeta!.createTerm!())])
                 setObjectPointers()
               }}
-              className={settings.cssClasses[settings.mode].button.secondary}
-              key={predicate.value}
-              title={predicate.value}
+              className={settings.cssClasses[settings.mode].button.add}
             >
-              + {lastPart(predicate)}
+              <Icon icon="octicon:plus-16" />
             </button>
-          ))
-        : null}
-
-      {/* The rendering of the widget happens inside the ShaclPropertyObject */}
-      {[...objectPointers].map((objectPointer, index) => (
-        <ShaclPropertyObject
-          path={path}
-          key={JSON.stringify(path) + index} // TODO get the shortest representation of the path.
-          setObjectPointers={setObjectPointers}
-          dataPointer={objectPointer}
-          shaclPointer={shaclPointer}
-          settings={settings}
-        />
-      ))}
-
-      {settings.mode === 'edit' && maxCount > [...objectPointers].length ? (
-        <button
-          type="button"
-          onClick={() => {
-            dataPointer.addOut([path[0].predicates[0]], [markTermAsEmpty(widgetMeta!.createTerm!())])
-            setObjectPointers()
-          }}
-          className={settings.cssClasses[settings.mode].button.add}
-        >
-          <Icon icon="octicon:plus-16" />
-        </button>
-      ) : null}
-    </div>
-  ) : null
+          ) : null}
+        </>
+      )
+    : null
 }

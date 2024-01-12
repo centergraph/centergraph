@@ -22,7 +22,9 @@ export const { prefixes } = await turtleSync({
 })
 
 const port = 8000
-const namespacesAsPrefixes = Object.fromEntries(Object.entries(namespaces).map(([prefix, builder]) => [prefix, builder().value]))
+const namespacesAsPrefixes = Object.fromEntries(
+  Object.entries(namespaces).map(([prefix, builder]: [string, () => { value: string }]) => [prefix, builder().value])
+)
 export const context = JSON.parse(Deno.readTextFileSync(`${folder}/context.json`))
 export const jwks = JSON.parse(Deno.readTextFileSync(`${folder}/jwks.json`))
 Object.assign(context, prefixes, namespacesAsPrefixes)
@@ -47,3 +49,11 @@ app.get('/', (_request: Request, response: Response) => {
 app.listen(port, () => {
   console.log(`Ready: CenterGraph Base is running on ${baseIRI}/`)
 })
+
+const watcher = Deno.watchFs(folder)
+
+for await (const event of watcher) {
+  if (event.kind === 'modify') {
+    Deno.run({ cmd: ['touch', new URL('', import.meta.url).pathname] })
+  }
+}

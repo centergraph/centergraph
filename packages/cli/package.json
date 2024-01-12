@@ -1,0 +1,8 @@
+{
+  "name": "@centergraph/cli",
+  "private": true,
+  "description": "The CLI of CenterGraph",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {}
+}

@@ -1,5 +1,5 @@
 import { Settings } from '@centergraph/shacl-renderer/lib/types'
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 import { Term } from '@rdfjs/types'
 import { useWidget } from '@centergraph/shacl-renderer/lib/hooks/useWidget'
 import { Icon } from '@iconify/react'
@@ -37,42 +37,47 @@ export default function ShaclPropertyObject({
   }
 
   const widgetCssClassName = kebabCase(widgetMeta ? lastPart(widgetMeta.iri) ?? '' : '')
+  const cssClasses = settings.cssClasses[settings.mode].propertyObjectWrapper.replace('[ID]', widgetCssClassName)
 
-  return (
-    <div
-      className={`${widgetCssClassName} ${settings.cssClasses[settings.mode].propertyObjectWrapper} ${
-        errorMessages.length ? settings.cssClasses[settings.mode].hasErrors : ''
-      }`}
-    >
-      <div className={settings.cssClasses[settings.mode].propertyObject}>
-        {/* The widget loads with a Promise */}
-        {Widget ? (
-          <Widget
-            hasErrorsClassName={errorMessages.length ? settings.cssClasses[settings.mode].hasErrors : ''}
-            dataPointer={dataPointer}
-            term={term}
-            setTerm={setTerm}
-            shaclPointer={shaclPointer}
-            settings={settings}
-          />
-        ) : (
-          <div className={settings.cssClasses[settings.mode].input}></div>
-        )}
-        {settings.mode === 'edit' ? (
-          <button
-            onClick={() => {
-              // Removes all quads that are one level deeper
-              // TODO improve this logic.
-              const quads = [...dataPointer.quads(), ...dataPointer.out().quads()]
-              for (const quad of quads) dataPointer.ptrs[0].dataset.delete(quad)
-              setObjectPointers()
-            }}
-            className={settings.cssClasses[settings.mode].button.remove}
-          >
-            <Icon icon="octicon:trash-16" />
-          </button>
-        ) : null}
-      </div>
+  const wrapper = (children: ReactNode) => (cssClasses ? <div className={cssClasses}>{children}</div> : <>{children}</>)
+
+  const innerCssClasses = settings.cssClasses[settings.mode].propertyObject
+  const inner = (children: ReactNode) =>
+    innerCssClasses ? <div className={innerCssClasses}>{children}</div> : <>{children}</>
+
+  return wrapper(
+    <>
+      {inner(
+        <>
+          {/* The widget loads with a Promise */}
+          {Widget ? (
+            <Widget
+              hasErrorsClassName={errorMessages.length ? settings.cssClasses[settings.mode].hasErrors : ''}
+              dataPointer={dataPointer}
+              term={term}
+              setTerm={setTerm}
+              shaclPointer={shaclPointer}
+              settings={settings}
+            />
+          ) : (
+            <div className={settings.cssClasses[settings.mode].input}></div>
+          )}
+          {settings.mode === 'edit' ? (
+            <button
+              onClick={() => {
+                // Removes all quads that are one level deeper
+                // TODO improve this logic.
+                const quads = [...dataPointer.quads(), ...dataPointer.out().quads()]
+                for (const quad of quads) dataPointer.ptrs[0].dataset.delete(quad)
+                setObjectPointers()
+              }}
+              className={settings.cssClasses[settings.mode].button.remove}
+            >
+              <Icon icon="octicon:trash-16" />
+            </button>
+          ) : null}
+        </>
+      )}
 
       {/* The SHACL errors */}
       {errorMessages.length && settings.mode === 'edit' ? (
@@ -80,6 +85,6 @@ export default function ShaclPropertyObject({
           {errorMessages.join('\n')}
         </div>
       ) : null}
-    </div>
+    </>
   )
 }

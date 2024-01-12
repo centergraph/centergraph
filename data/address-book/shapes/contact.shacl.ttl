@@ -16,13 +16,13 @@
     sh:path schema:givenName ;
     sh:minCount 1;
     sh:maxCount 1;
-    sh:group "name" ;
+    sh:group <#name> ;
     sh:datatype xsd:string ;
   ];
   
   sh:property [
     sh:name "Family name"@en ;
-    sh:group "name" ;
+    sh:group <#name> ;
     sh:path schema:familyName ;
     sh:minCount 1;
     sh:maxCount 1;
@@ -45,6 +45,14 @@
   ];
 
 .
+
+
+<#name>
+	a sh:PropertyGroup ;
+	sh:order 0 ;
+  sr:class "horizontal" .
+
+
 
 <addressShape>
     a sh:NodeShape ;
@@ -100,15 +108,52 @@
 
   sh:property [
     sh:path schema:givenName ;
-    sh:minCount 1;
     sh:maxCount 1;
+    sr:class "d-inline me-1" ;
     sh:datatype xsd:string ;
   ];
   
   sh:property [
     sh:path schema:familyName ;
-    sh:minCount 1;
     sh:maxCount 1;
+    sr:class "d-inline" ;
     sh:datatype xsd:string ;
   ];
 .
+
+<#full>
+  a sh:NodeShape ;
+  sh:targetClass schema:Person ;
+
+  sh:property [
+    sh:name "Given name"@en ;
+    sh:path schema:givenName ;
+    sh:maxCount 1;
+    sh:datatype xsd:string ;
+  ];
+  
+  sh:property [
+    sh:name "Family name"@en ;
+    sh:path schema:familyName ;
+    sh:maxCount 1;
+    sh:datatype xsd:string ;
+  ];
+
+    sh:property [
+    sh:name "Date of birth"@en ;
+    sh:path schema:birthDate ;
+    sh:maxCount 1;
+    sh:datatype xsd:date ;
+  ];
+
+  sh:property [
+    sh:name "Address"@en ;
+    sh:path schema:address ;
+    sh:maxCount 3 ;
+    sh:node <addressShape> ;
+    sh:nodeKind sh:BlankNode ;
+  ];
+.
+
+
+

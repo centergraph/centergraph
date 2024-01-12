@@ -9,12 +9,11 @@ type FormLevelProps = {
   shaclPointer: GrapoiPointer
   dataPointer: GrapoiPointer
   settings: Settings
+  isRoot?: boolean
   children?: ReactNode
-  htmlChildren?: Array<Element>
 }
 
-export default function FormLevel(props: FormLevelProps) {
-  const { shaclPointer, settings, dataPointer, children, htmlChildren } = props
+export default function FormLevel({ shaclPointer, settings, dataPointer, children, isRoot }: FormLevelProps) {
   const shaclProperties = [...shaclPointer.out(sh('property'))]
 
   const shaclPropertyWidgets = [...shaclProperties]
@@ -38,14 +37,13 @@ export default function FormLevel(props: FormLevelProps) {
     )
   })
 
-  return (
-    <div
-      className={settings.cssClasses[settings.mode].formLevel}
-      ref={(element) => {
-        if (!htmlChildren) return
-        htmlChildren.forEach((child) => element?.appendChild(child))
-      }}
-    >
+  return isRoot ? (
+    <>
+      {groups}
+      {children}
+    </>
+  ) : (
+    <div className={settings.cssClasses[settings.mode].formLevel}>
       {groups}
       {children}
     </div>

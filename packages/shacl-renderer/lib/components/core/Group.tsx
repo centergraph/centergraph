@@ -14,12 +14,22 @@ export default function Group({
 }) {
   const label = groupPointer.out([sh('name'), rdfs('label')]).values[0]
   const groupClassName = lastPart(groupPointer.term)?.toLocaleLowerCase().replace(/ /g, '-')
-  const cssClasses = groupPointer.out(sr('class')).values.join(' ')
+  const shaclCssClasses = groupPointer.out(sr('class')).values.join(' ')
+
+  const settingsCssClasses = settings.cssClasses[settings.mode].group.replace('[ID]', groupClassName ?? '')
+  const skipWrapper = groupPointer.term.value === 'default' || !settingsCssClasses
 
   return children ? (
-    <div className={`${settings.cssClasses[settings.mode].group}${groupClassName} ${cssClasses}`}>
-      {label ? <h4 className="form-label">{label}</h4> : null}
-      {children}
-    </div>
+    skipWrapper ? (
+      <>
+        {label ? <h4 className="form-label">{label}</h4> : null}
+        {children}
+      </>
+    ) : (
+      <div className={`${settingsCssClasses} ${shaclCssClasses}`}>
+        {label ? <h4 className="form-label">{label}</h4> : null}
+        {children}
+      </div>
+    )
   ) : null
 }

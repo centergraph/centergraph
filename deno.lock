@@ -1023,6 +1023,7 @@
     "https://deno.land/std@0.210.0/path/windows/from_file_url.ts": "d53335c12b0725893d768be3ac6bf0112cc5b639d2deb0171b35988493b46199",
     "https://deno.land/std@0.210.0/path/windows/join.ts": "e6600bf88edeeef4e2276e155b8de1d5dec0435fd526ba2dc4d37986b2882f16",
     "https://deno.land/std@0.210.0/path/windows/normalize.ts": "9deebbf40c81ef540b7b945d4ccd7a6a2c5a5992f791e6d3377043031e164e69",
+    "https://deno.land/x/keypress@0.0.11/mod.ts": "22fe0ea62136f3015149c639f891076a5b2312c0b8974c4a2bd8acaaded61c61",
     "https://deno.land/x/progressbar@v0.2.0/progressbar.ts": "d571c5505c2afd792d729f2467a017dd3a108c82ecb4421280fa86eec6d25a05",
     "https://deno.land/x/progressbar@v0.2.0/styles.ts": "2ba8cfb41688c0ca497ed740bda342f55e629043397eef43180665aa34ef2f01",
     "https://deno.land/x/progressbar@v0.2.0/widgets.ts": "73aa6d06b6a89a4dfd8d15e97ca634bc1e82c7993cd95ba56459f900d2e02838",

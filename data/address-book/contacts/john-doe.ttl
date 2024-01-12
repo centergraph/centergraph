@@ -17,3 +17,5 @@
     schema:addressLocality "Wien2" ;
     schema:addressCountry "Austria2" ;
   ] .
+
+  

@@ -69,16 +69,20 @@ export default function ShaclRenderer({ settings, shaclShapesUrl, dataUrl, subje
 
       const matchedPointer = shaclRoot.ptrs.find((ptr) => ptr.term.value === shaclShapesUrl)
       shaclRoot.ptrs = [matchedPointer ?? shaclRoot.ptrs[0]]
-      setChildren(<FormLevel shaclPointer={shaclRoot} dataPointer={dataPointer} settings={settings} />)
+      setChildren(<FormLevel isRoot={true} shaclPointer={shaclRoot} dataPointer={dataPointer} settings={settings} />)
     }
   }, [shaclShapes, dataPointer, settings, children, shaclShapesUrl])
 
   return (
     <state.Provider value={{ data: dataDataset, shacl: shaclDataset }}>
       {children ? (
-        <div className={`shacl-renderer mode-${settings.mode}`}>
-          {settings.mode === 'edit' ? <form onSubmit={(event) => event.preventDefault()}>{children}</form> : children}
-        </div>
+        settings.mode === 'edit' ? (
+          <div className={`shacl-renderer mode-${settings.mode}`}>
+            <form onSubmit={(event) => event.preventDefault()}>{children}</form>
+          </div>
+        ) : (
+          children
+        )
       ) : null}
     </state.Provider>
   )

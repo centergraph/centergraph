@@ -12,6 +12,20 @@ export default (config) => {
   return [
     {
       name: 'add-centergraph',
+      // load () {
+
+      //   // this.addWatchFile()
+      // },
+      // handleHotUpdate({ file, server }) {
+      //   console.log(file)
+      //   // if (file.includes('locales') && file.endsWith('.json')) {
+      //   //   console.log('Locale file updated')
+      //   //   server.ws.send({
+      //   //     type: "custom",
+      //   //     event: "locales-update",
+      //   //   });
+      //   // }
+      // },
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
           // A CORS request possibly from our Shape Editor
@@ -36,7 +50,10 @@ export default (config) => {
             rollupOptions: {
               output: {
                 manualChunks: (id) => {
-                  if (id.toString().includes(config.apiExport) || (id.includes('packages/sdk/') && !id.includes('react'))) {
+                  if (
+                    id.toString().includes(config.apiExport) ||
+                    (id.includes('packages/sdk/') && !id.includes('react'))
+                  ) {
                     return 'center-graph'
                   }
                 },
@@ -49,7 +66,9 @@ export default (config) => {
       transformIndexHtml(html) {
         return html.replace(
           '</head>',
-          `<meta name="centergraph-widgets" content="${centerGraphExport ? '/' + centerGraphExport : config.apiExport}"/>\n</head>`
+          `<meta name="centergraph-widgets" content="${
+            centerGraphExport ? '/' + centerGraphExport : config.apiExport
+          }"/>\n</head>`
         )
       },
       generateBundle(_options, bundle) {
