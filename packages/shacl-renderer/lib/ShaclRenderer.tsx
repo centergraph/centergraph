@@ -16,6 +16,8 @@ export type ShaclRendererProps = {
   shaclShapesUrl?: string
   dataUrl?: string
   subject?: string
+  children?: ReactNode
+  onSubmit: (dataset: DatasetCore) => void
 }
 
 const loadShaclShapes = async (settings: Settings, dataset: DatasetCore, shaclShapesUrl?: string) => {
@@ -45,12 +47,19 @@ const loadData = async (settings: Settings, dataset: DatasetCore, dataUrl?: stri
   return grapoi({ dataset, factory: DataFactory, term: DataFactory.namedNode(subject) })
 }
 
-export default function ShaclRenderer({ settings, shaclShapesUrl, dataUrl, subject }: ShaclRendererProps) {
+export default function ShaclRenderer({
+  settings,
+  shaclShapesUrl,
+  dataUrl,
+  subject,
+  children,
+  onSubmit,
+}: ShaclRendererProps) {
   const [dataDataset] = useState(() => datasetFactory.dataset())
   const [shaclDataset] = useState(() => datasetFactory.dataset())
   const [shaclShapes, setShaclShapes] = useState<GrapoiPointer>()
   const [dataPointer, setDataPointer] = useState<GrapoiPointer>()
-  const [children, setChildren] = useState<ReactNode>(null)
+  const [formChildren, setFormChildren] = useState<ReactNode>(null)
 
   useState(() => {
     if (shaclShapes || dataPointer) return
@@ -62,28 +71,42 @@ export default function ShaclRenderer({ settings, shaclShapesUrl, dataUrl, subje
   })
 
   useEffect(() => {
-    if (shaclShapes && dataPointer && settings && !children) {
+    if (shaclShapes && dataPointer && settings && !formChildren) {
       let shaclRoot = shaclShapes.hasOut(rdf('type'), sh('NodeShape'))
       if (settings.targetClass)
         shaclRoot = shaclRoot.hasOut(sh('targetClass'), DataFactory.namedNode(settings.targetClass))
 
       const matchedPointer = shaclRoot.ptrs.find((ptr) => ptr.term.value === shaclShapesUrl)
       shaclRoot.ptrs = [matchedPointer ?? shaclRoot.ptrs[0]]
-      setChildren(<FormLevel isRoot={true} shaclPointer={shaclRoot} dataPointer={dataPointer} settings={settings} />)
+      setFormChildren(
+        <FormLevel isRoot={true} shaclPointer={shaclRoot} dataPointer={dataPointer} settings={settings} />
+      )
     }
-  }, [shaclShapes, dataPointer, settings, children, shaclShapesUrl])
+  }, [shaclShapes, dataPointer, settings, formChildren, shaclShapesUrl])
+
+  const combinedChildren = (
+    <>
+      {formChildren}
+      {children}
+    </>
+  )
+
+  const formWrapper = (children: ReactNode) => (
+    <div className={`shacl-renderer mode-${settings.mode}`}>
+      <form
+        onSubmit={(event) => {
+          event.preventDefault()
+          onSubmit(dataDataset)
+        }}
+      >
+        {children}
+      </form>
+    </div>
+  )
 
   return (
     <state.Provider value={{ data: dataDataset, shacl: shaclDataset }}>
-      {children ? (
-        settings.mode === 'edit' ? (
-          <div className={`shacl-renderer mode-${settings.mode}`}>
-            <form onSubmit={(event) => event.preventDefault()}>{children}</form>
-          </div>
-        ) : (
-          children
-        )
-      ) : null}
+      {settings.mode === 'edit' ? formWrapper(combinedChildren) : combinedChildren}
     </state.Provider>
   )
 }

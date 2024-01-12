@@ -5,6 +5,20 @@ import { NextFunction, Request, Response } from 'types-express'
 
 import { baseIRI, context, folder as dataFolder, store } from '../Base.ts'
 
+const getFolderQuads = async (folder: string, iri: string) => {
+  const quads: Quad[] = []
+  quads.push(DataFactory.quad(DataFactory.namedNode(iri), rdf('type'), ldp('Container')))
+  quads.push(DataFactory.quad(DataFactory.namedNode(iri), rdf('type'), ldp('BasicContainer')))
+
+  for await (const fileEntry of Deno.readDir(folder)) {
+    if (!fileEntry.name.includes('.ttl')) continue
+    const uri = baseIRI + fullUrl.pathname + fileEntry.name.replace('.ttl', '')
+    quads.push(DataFactory.quad(DataFactory.namedNode(iri), ldp('contains'), DataFactory.namedNode(uri)))
+  }
+
+  return quads
+}
+
 export const turtle = async (request: Request, response: Response, next: NextFunction) => {
   const fullUrl = new URL(baseIRI + request.url)
   const iri = baseIRI + fullUrl.pathname
@@ -16,7 +30,6 @@ export const turtle = async (request: Request, response: Response, next: NextFun
 
   if (!quads.length) {
     const folder = dataFolder + fullUrl.pathname
-
     try {
       const stat = await Deno.stat(folder)
       if (!stat.isDirectory) return next()
@@ -24,14 +37,7 @@ export const turtle = async (request: Request, response: Response, next: NextFun
       return next()
     }
 
-    quads.push(DataFactory.quad(DataFactory.namedNode(iri), rdf('type'), ldp('Container')))
-    quads.push(DataFactory.quad(DataFactory.namedNode(iri), rdf('type'), ldp('BasicContainer')))
-
-    for await (const fileEntry of Deno.readDir(folder)) {
-      if (!fileEntry.name.includes('.ttl')) continue
-      const uri = baseIRI + fullUrl.pathname + fileEntry.name.replace('.ttl', '')
-      quads.push(DataFactory.quad(DataFactory.namedNode(iri), ldp('contains'), DataFactory.namedNode(uri)))
-    }
+    quads.push(...(await getFolderQuads(folder, iri)))
   }
 
   const writeStore = new Store(quads)

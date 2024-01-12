@@ -4,7 +4,7 @@ import View from '@centergraph/sdk/lib/react/components/View'
 import { Link, useParams } from 'react-router-dom'
 import { Icon } from '@iconify/react'
 import { Suspense, useEffect, useState, useTransition } from 'react'
-const { rdf, schema, cg } = api.namespaces
+const { rdf, schema } = api.namespaces
 
 export default function ContactsList() {
   const [, startTransition] = useTransition()
@@ -49,7 +49,7 @@ export default function ContactsList() {
               <Link
                 to={`/contact/${contactSlug}`}
                 key={contactUrl.value}
-                className={`d-flex list-group-item ${contactSlug === slug ? 'active' : ''}`}
+                className={`d-flex align-items-center list-group-item ${contactSlug === slug ? 'active' : ''}`}
               >
                 <View data={api.get<Person>(contactUrl)} as="card" />
                 <object className="ms-auto">

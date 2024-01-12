@@ -1,6 +1,6 @@
 import { AbstractApiRequest } from './AbstractApiRequest'
 
-import { Parser } from 'n3'
+import { Parser, Writer } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
 import factory from '@rdfjs/data-model'
 import { sh } from '@centergraph/shared/lib/namespaces'
@@ -9,6 +9,7 @@ import grapoi from 'grapoi'
 import { quadsToShapeObject } from '@centergraph/shared/lib/quadsToShapeObject'
 import { LRUCache } from 'typescript-lru-cache'
 import { asResource } from './asResource'
+import { DatasetCore } from '@rdfjs/types'
 
 const resourceCache = new LRUCache()
 
@@ -66,6 +67,24 @@ export class GetApiRequest<T> extends AbstractApiRequest<T> {
     resourceCache.set(this.url, resource)
 
     return resource.read() as T
+  }
+
+  update(dataset: DatasetCore): Promise<void>
+  update(input: DatasetCore | string): Promise<void> {
+    if (input instanceof datasetFactory.dataset().constructor) {
+      const writer = new Writer()
+      writer.addQuads([...input])
+      writer.end(async (_error: unknown, result: string) => {
+        const response = await this.fetch(this.url, {
+          method: 'PATCH',
+          body: result,
+        }).then((response) => response.text())
+
+        console.log(response)
+      })
+    }
+
+    return Promise.resolve()
   }
 
   async #getContext() {
