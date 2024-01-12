@@ -1,3 +1,5 @@
+const resourceCache = new Map()
+
 export function asResource<T>(promise: PromiseLike<T>) {
   let status = 'pending'
   let response: T
@@ -24,4 +26,11 @@ export function asResource<T>(promise: PromiseLike<T>) {
   }
 
   return { read }
+}
+
+export function cachedAsResource<T>(promise: PromiseLike<T>, cacheKey: string) {
+  if (resourceCache.has(cacheKey)) return resourceCache.get(cacheKey).read()
+  const resource = asResource(promise)
+  resourceCache.set(cacheKey, resource)
+  return resource.read()
 }

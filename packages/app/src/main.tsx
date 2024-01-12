@@ -1,34 +1,27 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { api } from './centerGraph.ts'
 import CenterGraph from '@centergraph/sdk/lib/react/context/Provider'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 import ViewContact from './ViewContact.tsx'
 import EditContact from './EditContact.tsx'
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    children: [
-      {
-        path: 'contact/:slug',
-        element: <ViewContact />,
-      },
-      {
-        path: 'contact/:slug/edit',
-        element: <EditContact />,
-      },
-    ],
-  },
-])
+import React, { Suspense } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import SuspenseRouter from '@centergraph/sdk/lib/react/components/SuspenseRouter'
 
 window.addEventListener('DOMContentLoaded', () => {
   ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
       <CenterGraph api={api}>
-        <RouterProvider router={router} />
+        <SuspenseRouter window={window}>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+              <Route path="/" element={<App />}>
+                <Route path="contact/:slug" element={<ViewContact />} />
+                <Route path="contact/:slug/edit" element={<EditContact />} />
+              </Route>
+            </Routes>
+          </Suspense>
+        </SuspenseRouter>
       </CenterGraph>
     </React.StrictMode>
   )

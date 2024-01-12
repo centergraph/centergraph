@@ -3,7 +3,7 @@ import ShaclRenderer from '@centergraph/shacl-renderer'
 import '@centergraph/shacl-renderer/lib/style.css'
 import { GetApiRequest } from '../../GetApiRequest'
 import { centerGraphContext } from '../context'
-import { useApi } from '../hooks/useApi'
+import { cachedAsResource } from '@centergraph/sdk/lib/asResource'
 
 type ViewProps = {
   data: GetApiRequest<unknown>
@@ -12,12 +12,13 @@ type ViewProps = {
 
 export default function View({ data, as }: ViewProps) {
   const { api } = useContext(centerGraphContext)
-  const shaclUrl = useApi(data.shaclUrl(as))
-  return shaclUrl ? (
+  const shaclUrl = cachedAsResource(data.shaclUrl(as), data.url + ':shacl:' + as)
+
+  return (
     <ShaclRenderer
       dataUrl={data.url}
       shaclShapesUrl={shaclUrl}
       settings={Object.assign({}, api.shaclRendererSettings, { mode: 'view' })}
     />
-  ) : null
+  )
 }

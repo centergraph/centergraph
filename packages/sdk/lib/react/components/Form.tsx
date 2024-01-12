@@ -3,7 +3,7 @@ import ShaclRenderer from '@centergraph/shacl-renderer'
 import '@centergraph/shacl-renderer/lib/style.css'
 import { GetApiRequest } from '../../GetApiRequest'
 import { centerGraphContext } from '../context'
-import { useApi } from '../hooks/useApi'
+import { cachedAsResource } from '@centergraph/sdk/lib/asResource'
 
 type FormProps = {
   data: GetApiRequest<unknown>
@@ -11,8 +11,9 @@ type FormProps = {
 
 export default function Form({ data }: FormProps) {
   const { api } = useContext(centerGraphContext)
-  const shaclUrl = useApi(data.shaclUrl())
-  return shaclUrl ? (
+  const shaclUrl = cachedAsResource(data.shaclUrl(), data.url + ':shacl')
+
+  return (
     <ShaclRenderer
       dataUrl={data.url}
       shaclShapesUrl={shaclUrl}
@@ -27,5 +28,5 @@ export default function Form({ data }: FormProps) {
     >
       <button className="btn mt-4 btn-primary btn-lg float-end">Save</button>
     </ShaclRenderer>
-  ) : null
+  )
 }

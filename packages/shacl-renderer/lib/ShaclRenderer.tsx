@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState } from 'react'
+import { ReactNode, useState } from 'react'
 import { Settings } from '@centergraph/shacl-renderer/lib/types'
 import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
@@ -10,6 +10,7 @@ import { preloadWidgets } from './helpers/preloadWidgets'
 import './style.css'
 import { DatasetCore } from '@rdfjs/types'
 import { state } from './context/state'
+import { asResource } from '@centergraph/sdk/lib/asResource'
 
 export type ShaclRendererProps = {
   settings: Settings
@@ -17,7 +18,7 @@ export type ShaclRendererProps = {
   dataUrl?: string
   subject?: string
   children?: ReactNode
-  onSubmit: (dataset: DatasetCore) => void
+  onSubmit?: (dataset: DatasetCore) => void
 }
 
 const loadShaclShapes = async (settings: Settings, dataset: DatasetCore, shaclShapesUrl?: string) => {
@@ -47,6 +48,32 @@ const loadData = async (settings: Settings, dataset: DatasetCore, dataUrl?: stri
   return grapoi({ dataset, factory: DataFactory, term: DataFactory.namedNode(subject) })
 }
 
+const resourceCache = new Map()
+
+const createShaclRendererResource = (
+  settings: Settings,
+  shaclShapesUrl?: string,
+  dataUrl?: string,
+  subject?: string
+) => {
+  const cid = JSON.stringify([shaclShapesUrl, dataUrl, subject, settings.mode])
+  if (resourceCache.has(cid)) return resourceCache.get(cid).read()
+
+  const dataDataset = datasetFactory.dataset()
+  const shaclDataset = datasetFactory.dataset()
+  const resource = asResource(
+    Promise.all([
+      loadShaclShapes(settings, shaclDataset, shaclShapesUrl),
+      loadData(settings, dataDataset, dataUrl, subject),
+    ]).then(([shaclShapes, dataPointer]) => {
+      return { shaclShapes, dataPointer, dataDataset, shaclDataset }
+    })
+  )
+
+  resourceCache.set(cid, resource)
+  return resource.read()
+}
+
 export default function ShaclRenderer({
   settings,
   shaclShapesUrl,
@@ -55,34 +82,21 @@ export default function ShaclRenderer({
   children,
   onSubmit,
 }: ShaclRendererProps) {
-  const [dataDataset] = useState(() => datasetFactory.dataset())
-  const [shaclDataset] = useState(() => datasetFactory.dataset())
-  const [shaclShapes, setShaclShapes] = useState<GrapoiPointer>()
-  const [dataPointer, setDataPointer] = useState<GrapoiPointer>()
-  const [formChildren, setFormChildren] = useState<ReactNode>(null)
+  const { shaclShapes, dataPointer, dataDataset, shaclDataset } = createShaclRendererResource(
+    settings,
+    shaclShapesUrl,
+    dataUrl,
+    subject
+  )
 
-  useState(() => {
-    if (shaclShapes || dataPointer) return
+  let shaclRoot = shaclShapes.hasOut(rdf('type'), sh('NodeShape'))
+  if (settings.targetClass) shaclRoot = shaclRoot.hasOut(sh('targetClass'), DataFactory.namedNode(settings.targetClass))
 
-    return Promise.all([
-      loadShaclShapes(settings, shaclDataset, shaclShapesUrl).then(setShaclShapes),
-      loadData(settings, dataDataset, dataUrl, subject).then(setDataPointer),
-    ])
-  })
-
-  useEffect(() => {
-    if (shaclShapes && dataPointer && settings && !formChildren) {
-      let shaclRoot = shaclShapes.hasOut(rdf('type'), sh('NodeShape'))
-      if (settings.targetClass)
-        shaclRoot = shaclRoot.hasOut(sh('targetClass'), DataFactory.namedNode(settings.targetClass))
-
-      const matchedPointer = shaclRoot.ptrs.find((ptr) => ptr.term.value === shaclShapesUrl)
-      shaclRoot.ptrs = [matchedPointer ?? shaclRoot.ptrs[0]]
-      setFormChildren(
-        <FormLevel isRoot={true} shaclPointer={shaclRoot} dataPointer={dataPointer} settings={settings} />
-      )
-    }
-  }, [shaclShapes, dataPointer, settings, formChildren, shaclShapesUrl])
+  const matchedPointer = shaclRoot.ptrs.find((ptr) => ptr.term.value === shaclShapesUrl)
+  shaclRoot.ptrs = [matchedPointer ?? shaclRoot.ptrs[0]]
+  const formChildren = (
+    <FormLevel isRoot={true} shaclPointer={shaclRoot} dataPointer={dataPointer} settings={settings} />
+  )
 
   const combinedChildren = (
     <>
@@ -96,7 +110,7 @@ export default function ShaclRenderer({
       <form
         onSubmit={(event) => {
           event.preventDefault()
-          onSubmit(dataDataset)
+          if (onSubmit) onSubmit(dataDataset)
         }}
       >
         {children}

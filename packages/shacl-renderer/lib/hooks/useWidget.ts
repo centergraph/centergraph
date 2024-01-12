@@ -1,38 +1,52 @@
-import { JSXElementConstructor, useEffect, useMemo, useState } from 'react'
 import { sh } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
-import { Settings, WidgetProps } from '@centergraph/shacl-renderer/lib/types'
+import { Settings } from '@centergraph/shacl-renderer/lib/types'
 import { getBestWidget } from '@centergraph/shacl-renderer/lib/helpers/getBestWidget'
+import { asResource } from '@centergraph/sdk/lib/asResource'
 
 export const widgetCache = new Map()
 
-/**
- * TODO This structure triggers re-renders
- */
-export const useWidget = (settings: Settings, dataPointer: GrapoiPointer, shaclPointer: GrapoiPointer, load: boolean = false) => {
+const createWidgetPromise = async (
+  settings: Settings,
+  dataPointer: GrapoiPointer,
+  shaclPointer: GrapoiPointer,
+  load: boolean = false
+) => {
   const shWidget = settings.mode === 'edit' ? sh('editor') : sh('viewer')
   const widgets = settings.mode === 'edit' ? settings.widgetMetas.editors : settings.widgetMetas.viewers
-
-  const [Widget, setWidget] = useState<JSXElementConstructor<WidgetProps>>()
-  const widgetIri = useMemo(() => {
-    return shaclPointer.out(shWidget).value ?? getBestWidget(widgets, dataPointer, shaclPointer)
-  }, [dataPointer, shWidget, shaclPointer, widgets])
+  const widgetIri = shaclPointer.out(shWidget).value ?? getBestWidget(widgets, dataPointer, shaclPointer)
   const widgetMeta = widgets.find((widgetMeta) => widgetMeta.iri.value === widgetIri)
+  let Widget = null
 
-  useEffect(() => {
-    if (!widgetIri || !load) return
-
-    if (widgetCache.has(widgetIri)) {
-      setWidget(() => widgetCache.get(widgetIri))
-      return
-    }
-
+  if (load) {
     const widgetModule = settings.widgetLoaders.get(widgetIri)
-    if (widgetModule)
-      widgetModule().then((module) => {
-        widgetCache.set(widgetIri, module.default)
-        setWidget(() => module.default)
-      })
-  }, [dataPointer, settings.widgetLoaders, shWidget, shaclPointer, widgets, load, widgetIri])
+    if (widgetModule) {
+      Widget = (await widgetModule()).default
+      widgetCache.set(widgetIri, Widget)
+    }
+  }
 
-  return { widgetIri, Widget: Widget ?? widgetCache.get(widgetIri), widgetMeta }
+  return {
+    widgetIri,
+    Widget: Widget ?? widgetCache.get(widgetIri),
+    widgetMeta,
+  }
+}
+
+const resourceCache = new Map()
+
+export const useWidget = (
+  settings: Settings,
+  dataPointer: GrapoiPointer,
+  shaclPointer: GrapoiPointer,
+  load: boolean = false
+) => {
+  const shWidget = settings.mode === 'edit' ? sh('editor') : sh('viewer')
+  const widgets = settings.mode === 'edit' ? settings.widgetMetas.editors : settings.widgetMetas.viewers
+  const widgetIri = shaclPointer.out(shWidget).value ?? getBestWidget(widgets, dataPointer, shaclPointer)
+
+  if (resourceCache.has(widgetIri)) return resourceCache.get(widgetIri).read()
+
+  const resource = asResource(createWidgetPromise(settings, dataPointer, shaclPointer, load))
+  resourceCache.set(widgetIri, resource)
+  return resource.read()
 }
