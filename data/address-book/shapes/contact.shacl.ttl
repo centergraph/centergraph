@@ -46,14 +46,11 @@
 
 .
 
-
 <#name>
 	a sh:PropertyGroup ;
 	sh:order 0 ;
   sr:class "horizontal" .
-
-
-
+  
 <addressShape>
     a sh:NodeShape ;
     sh:targetClass schema:PostalAddress ;
@@ -101,7 +98,6 @@
         sh:maxCount 1 ;
     ] .
 
-# Views
 <#card>
   a sh:NodeShape ;
   sh:targetClass schema:Person ;
@@ -109,14 +105,12 @@
   sh:property [
     sh:path schema:givenName ;
     sh:maxCount 1;
-    sr:class "d-inline me-1" ;
     sh:datatype xsd:string ;
   ];
   
   sh:property [
     sh:path schema:familyName ;
     sh:maxCount 1;
-    sr:class "d-inline" ;
     sh:datatype xsd:string ;
   ];
 .
@@ -126,14 +120,14 @@
   sh:targetClass schema:Person ;
 
   sh:property [
-    sh:name "Given name"@en ;
+    sh:group <#pageTitle> ;
     sh:path schema:givenName ;
     sh:maxCount 1;
     sh:datatype xsd:string ;
   ];
   
   sh:property [
-    sh:name "Family name"@en ;
+    sh:group <#pageTitle> ;
     sh:path schema:familyName ;
     sh:maxCount 1;
     sh:datatype xsd:string ;
@@ -154,6 +148,10 @@
     sh:nodeKind sh:BlankNode ;
   ];
 .
+
+<#pageTitle>
+	a sh:PropertyGroup ;
+  sr:element "h1" .
 
 
 

@@ -1,9 +1,9 @@
 import { useContext } from 'react'
 import ShaclRenderer from '@centergraph/shacl-renderer'
-import '@centergraph/shacl-renderer/lib/style.css'
 import { GetApiRequest } from '../../GetApiRequest'
 import { centerGraphContext } from '../context'
 import { cachedAsResource } from '@centergraph/sdk/lib/asResource'
+import '@centergraph/shacl-renderer/lib/style.css'
 
 type ViewProps = {
   data: GetApiRequest<unknown>

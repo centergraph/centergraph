@@ -3,7 +3,7 @@ import { api } from './centerGraph'
 import View from '@centergraph/sdk/lib/react/components/View'
 import { Link, useParams } from 'react-router-dom'
 import { Icon } from '@iconify/react'
-import { Suspense, useEffect, useState, useTransition } from 'react'
+import { useEffect, useState, useTransition } from 'react'
 const { rdf, schema } = api.namespaces
 
 export default function ContactsList() {
@@ -38,32 +38,30 @@ export default function ContactsList() {
         </span>
       </div>
 
-      <Suspense>
-        <em>
-          {contents.length ?? '...'} {search ? 'matches' : 'contacts'}
-        </em>
+      <em className="pb-2 d-block">
+        {contents.length ?? '...'} {search ? 'matches' : 'contacts'}
+      </em>
 
-        <ul className="list-group">
-          {contents.map((contactUrl) => {
-            const contactSlug = contactUrl.value.split('/').pop()
+      <ul className="list-group">
+        {contents.map((contactUrl) => {
+          const contactSlug = contactUrl.value.split('/').pop()
 
-            return (
-              <Link
-                to={`/contact/${contactSlug}`}
-                key={contactUrl.value}
-                className={`d-flex align-items-center list-group-item ${contactSlug === slug ? 'active' : ''}`}
-              >
-                <View data={api.get<Person>(contactUrl)} as="card" />
-                <object className="ms-auto">
-                  <Link className="btn btn-light btn-sm" to={`/contact/${contactSlug}/edit`}>
-                    <Icon icon="bx:edit" />
-                  </Link>
-                </object>
-              </Link>
-            )
-          })}
-        </ul>
-      </Suspense>
+          return (
+            <Link
+              to={`/contact/${contactSlug}`}
+              key={contactUrl.value}
+              className={`d-flex align-items-center list-group-item ${contactSlug === slug ? 'active' : ''}`}
+            >
+              <View data={api.get<Person>(contactUrl)} as="card" />
+              <object className="ms-auto">
+                <Link className="btn btn-light btn-sm" to={`/contact/${contactSlug}/edit`}>
+                  <Icon icon="bx:edit" />
+                </Link>
+              </object>
+            </Link>
+          )
+        })}
+      </ul>
     </>
   )
 }

@@ -3,4 +3,18 @@ title: 'Data & config'
 layout: ../../layouts/html.astro
 ---
 
-Data and config.
+When developing you have multiple types of data:
+
+- Configuration
+- Content / metadata
+
+## Configuration
+
+You can have multiple projects running in one repository.
+
+- /.env
+- /data/[project]/context.json
+- /data/[project]/jwks.json
+- /data/[project]/\*_/_.shacl.ttl
+
+Confguration in CenterGraph is mostly SHACL shape in turtle format.
