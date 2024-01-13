@@ -1,5 +1,5 @@
 import View from '@centergraph/sdk/lib/react/components/View'
-import { api } from './centerGraph'
+import { api } from '../centerGraph'
 import { useParams } from 'react-router-dom'
 
 export default function ViewContact() {

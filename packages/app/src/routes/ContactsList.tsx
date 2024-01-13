@@ -1,5 +1,5 @@
-import { Person } from './types'
-import { api } from './centerGraph'
+import { Person } from '../types'
+import { api } from '../centerGraph'
 import View from '@centergraph/sdk/lib/react/components/View'
 import { Link, useParams } from 'react-router-dom'
 import { Icon } from '@iconify/react'
