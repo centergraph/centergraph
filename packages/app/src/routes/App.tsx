@@ -1,4 +1,4 @@
-import { base } from './centerGraph'
+import { base } from '../centerGraph'
 import { Link, Outlet } from 'react-router-dom'
 import ContactsList from './ContactsList'
 
