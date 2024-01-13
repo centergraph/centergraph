@@ -25,7 +25,8 @@ export default function ContactsList() {
   }, [search])
 
   return (
-    <>
+    <div className="p-4 bg-light rounded-3  me-5">
+      <em className="pb-2 d-block">Search</em>
       <div className="input-group mb-3">
         <input
           type="text"
@@ -62,6 +63,6 @@ export default function ContactsList() {
           )
         })}
       </ul>
-    </>
+    </div>
   )
 }

@@ -58,8 +58,7 @@ export class GetApiRequest<T> extends AbstractApiRequest<T> {
 
   asResource(): T {
     const promise = this.then()
-    const resource = cachedAsResource(promise, this.url)
-    return resource.read() as T
+    return cachedAsResource(promise, this.url) as T
   }
 
   update(dataset: DatasetCore): Promise<void>
