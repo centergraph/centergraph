@@ -15,7 +15,7 @@ export default function Form({ data, children, afterUpdate }: FormProps) {
   const { api } = useContext(centerGraphContext)
   const shaclUrl = asResource(data.shaclUrl(), data.url + ':shacl')
 
-  return (
+  return shaclUrl ? (
     <ShaclRenderer
       dataUrl={data.url}
       shaclShapesUrl={shaclUrl}
@@ -32,5 +32,5 @@ export default function Form({ data, children, afterUpdate }: FormProps) {
     >
       {children ?? <button className="btn mt-4 btn-primary btn-lg float-end">Save</button>}
     </ShaclRenderer>
-  )
+  ) : null
 }

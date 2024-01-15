@@ -35,7 +35,12 @@ const loadShaclShapes = async (settings: Settings, dataset: DatasetCore, shaclSh
 
 const loadData = async (settings: Settings, dataset: DatasetCore, dataUrl?: string, subject?: string) => {
   if (dataUrl) {
-    const response = await settings.fetch(dataUrl.split('#')[0]).then((response) => response.text())
+    const response = await settings
+      .fetch(dataUrl.split('#')[0])
+      .then((response) => (response.status === 200 ? response.text() : null))
+
+    if (!response) return
+
     const parser = new Parser({ baseIRI: dataUrl })
     const quads = await parser.parse(response)
     for (const quad of quads) dataset.add(quad)

@@ -14,11 +14,11 @@ export default function View({ data, as }: ViewProps) {
   const { api } = useContext(centerGraphContext)
   const shaclUrl = asResource(data.shaclUrl(as), data.url + ':shacl:' + as)
 
-  return (
+  return shaclUrl ? (
     <ShaclRenderer
       dataUrl={data.url}
       shaclShapesUrl={shaclUrl}
       settings={Object.assign({}, api.shaclRendererSettings, { mode: 'view' })}
     />
-  )
+  ) : null
 }

@@ -72,7 +72,7 @@ export class QueryBuilder<T extends NamedNode[] | number> implements PromiseLike
       let graphs: string[] = []
 
       if (predicate.equals(cg('fullTextSearch'))) {
-        const searchTerm = object?.value.toLocaleLowerCase()
+        const searchTerm = object?.value?.toLocaleLowerCase()
         if (!searchTerm) continue
 
         graphs = [...dataset]

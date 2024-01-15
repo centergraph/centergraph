@@ -68,12 +68,23 @@ export const handleGet = async (request: Request, response: Response, next: Next
   response.send(outputTurtle)
 }
 
+export const handleDelete = async (request: Request, response: Response, next: NextFunction) => {
+  const fullUrl = new URL(baseIRI + request.url)
+  const iri = baseIRI + fullUrl.pathname
+  const oldQuads = store.getQuads(null, null, null, DataFactory.namedNode(iri))
+  for (const oldQuad of oldQuads) store.removeQuad(oldQuad)
+
+  response.status(204).send()
+}
+
 export const turtle = async (request: Request, response: Response, next: NextFunction) => {
   if (request.method === 'PATCH') {
     await handlePatch(request)
     return handleGet(request, response, next)
   } else if (['GET', 'OPTIONS', 'HEAD'].includes(request.method)) {
     return handleGet(request, response, next)
+  } else if (request.method === 'DELETE') {
+    return handleDelete(request, response, next)
   }
 
   throw new Error('Unhandled method')

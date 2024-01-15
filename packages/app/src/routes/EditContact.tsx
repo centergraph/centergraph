@@ -9,6 +9,8 @@ export default function EditContact() {
   const person = api.get<Person>(iri).asResource()
   const navigate = useNavigate()
 
+  if (!person) return null
+
   return (
     <>
       <h1>
@@ -27,9 +29,12 @@ export default function EditContact() {
         <div className="d-flex justify-content-end gap-2">
           <button
             type="button"
-            onClick={() => {
+            onClick={async () => {
               const confirmed = confirm('Are you sure?')
-              console.log(confirmed)
+              if (confirmed) {
+                await api.get(iri).delete()
+                navigate(`/`)
+              }
             }}
             className="btn mt-4 btn-danger"
           >

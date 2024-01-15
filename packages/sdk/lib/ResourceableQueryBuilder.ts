@@ -8,7 +8,6 @@ export class ResourceableQueryBuilder<T extends NamedNode[] | number> extends Qu
    * if you do not want to trigger resolving of the Promise.
    */
   asResource(): T {
-    const promise = this.then()
-    return asResource(promise, this.url)
+    return asResource(this, this.url)
   }
 }

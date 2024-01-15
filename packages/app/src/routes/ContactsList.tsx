@@ -8,8 +8,9 @@ const { rdf, schema } = api.namespaces
 
 export default function ContactsList() {
   const [, startTransition] = useTransition()
-  const [contents, setContents] = useState(() =>
-    api.query.filter(rdf('type'), schema('Person')).sort(schema('name')).asResource()
+
+  const [contents, setContents] = useState(
+    () => () => api.query.filter(rdf('type'), schema('Person')).sort(schema('name')).asResource()
   )
   const [search, setSearch] = useState('')
   const { slug } = useParams()
@@ -19,7 +20,7 @@ export default function ContactsList() {
       setContents(() => {
         const resource = api.query.filter(rdf('type'), schema('Person')).sort(schema('name'))
         if (search) resource.fullTextSearch(search)
-        return resource.asResource()
+        return () => resource.asResource()
       })
     })
   }, [search])
@@ -42,11 +43,11 @@ export default function ContactsList() {
       </div>
 
       <em className="pb-2 d-block">
-        {contents.length ?? '...'} {search ? 'matches' : 'contacts'}
+        {contents().length ?? '...'} {search ? 'matches' : 'contacts'}
       </em>
 
       <ul className="list-group">
-        {contents.map((contactUrl) => {
+        {contents().map((contactUrl) => {
           const contactSlug = contactUrl.value.split('/').pop()
 
           return (

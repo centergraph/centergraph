@@ -7,7 +7,7 @@ import { sh } from '@centergraph/shared/lib/namespaces'
 import '@centergraph/shacl-renderer'
 import grapoi from 'grapoi'
 import { quadsToShapeObject } from '@centergraph/shared/lib/quadsToShapeObject'
-import { asResource, setResource } from './asResource'
+import { asResource, updateResource, deleteResource } from './asResource'
 import { DatasetCore } from '@rdfjs/types'
 import { simpleCache } from './CenterGraph'
 import { writeTurtle } from './writeTurtle'
@@ -30,11 +30,15 @@ export class GetApiRequest<T> extends AbstractApiRequest<T> {
     const shaclPointer = await this.#shaclPointer()
     const dataPointer = await this.#dataPointer()
     const context = await this.#getContext()
-    return await quadsToShapeObject(shaclPointer, dataPointer, context)
+    return shaclPointer && dataPointer && context ? await quadsToShapeObject(shaclPointer, dataPointer, context) : null
   }
 
   async #dataPointer() {
-    const turtle = await this.fetch(this.fetchArguments().input).then((response) => response.text())
+    const turtle = await this.fetch(this.fetchArguments().input).then((response) =>
+      response.status === 200 ? response.text() : null
+    )
+    if (!turtle) return
+
     const parser = new Parser()
     const dataQuads = await parser.parse(turtle)
     return grapoi({ dataset: datasetFactory.dataset(dataQuads), factory })
@@ -42,6 +46,9 @@ export class GetApiRequest<T> extends AbstractApiRequest<T> {
 
   async #shaclPointer() {
     const shaclUrl = await this.shaclUrl()
+
+    if (!shaclUrl) return
+
     const parser = new Parser()
     const shaclShape = await this.fetch(shaclUrl).then((response) => response.text())
     const shaclQuads = await parser.parse(shaclShape)
@@ -49,7 +56,11 @@ export class GetApiRequest<T> extends AbstractApiRequest<T> {
   }
 
   async shaclUrl(viewMode?: string) {
-    const turtle = await this.fetch(this.fetchArguments().input).then((response) => response.text())
+    const turtle = await this.fetch(this.fetchArguments().input).then((response) =>
+      response.status === 200 ? response.text() : null
+    )
+    if (!turtle) return
+
     const parser = new Parser()
     const quads = await parser.parse(turtle)
     const dataset = datasetFactory.dataset(quads)
@@ -73,10 +84,18 @@ export class GetApiRequest<T> extends AbstractApiRequest<T> {
 
       delete simpleCache._simplyCachedRequests[`GET${this.url}`]
       const promise = this.then()
-      await setResource(promise, this.url)
+      await updateResource(promise, this.url)
     }
 
     return Promise.resolve()
+  }
+
+  async delete() {
+    await this.fetch(this.url, {
+      method: 'DELETE',
+    }).then((response) => response.text())
+    delete simpleCache._simplyCachedRequests[`GET${this.url}`]
+    await deleteResource(this.url)
   }
 
   async #getContext() {
