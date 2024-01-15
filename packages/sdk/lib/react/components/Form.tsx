@@ -21,8 +21,9 @@ export default function Form({ data, children, afterUpdate }: FormProps) {
       shaclShapesUrl={shaclUrl}
       onSubmit={(dataset) => {
         try {
-          data.update(dataset)
-          if (afterUpdate) afterUpdate()
+          data.update(dataset).then(() => {
+            if (afterUpdate) afterUpdate()
+          })
         } catch (error) {
           console.error(error)
         }

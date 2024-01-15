@@ -10,6 +10,7 @@ import { quadsToShapeObject } from '@centergraph/shared/lib/quadsToShapeObject'
 import { asResource, setResource } from './asResource'
 import { DatasetCore } from '@rdfjs/types'
 import { simpleCache } from './CenterGraph'
+import { writeTurtle } from './writeTurtle'
 
 export class GetApiRequest<T> extends AbstractApiRequest<T> {
   url: string
@@ -61,20 +62,18 @@ export class GetApiRequest<T> extends AbstractApiRequest<T> {
     return asResource(this.then(), this.url) as T
   }
 
-  update(dataset: DatasetCore): Promise<void>
-  update(input: DatasetCore | string): Promise<void> {
+  async update(dataset: DatasetCore): Promise<void>
+  async update(input: DatasetCore | string): Promise<void> {
     if (input instanceof datasetFactory.dataset().constructor) {
-      const writer = new Writer()
-      writer.addQuads([...input])
-      writer.end(async (_error: unknown, result: string) => {
-        await this.fetch(this.url, {
-          method: 'PATCH',
-          body: result,
-        }).then((response) => response.text())
+      const turtle = await writeTurtle([...input])
+      await this.fetch(this.url, {
+        method: 'PATCH',
+        body: turtle,
+      }).then((response) => response.text())
 
-        delete simpleCache._simplyCachedRequests[`GET${this.url}`]
-        setResource(this.then(), this.url)
-      })
+      delete simpleCache._simplyCachedRequests[`GET${this.url}`]
+      const promise = this.then()
+      await setResource(promise, this.url)
     }
 
     return Promise.resolve()
