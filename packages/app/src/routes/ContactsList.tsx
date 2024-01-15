@@ -42,8 +42,11 @@ export default function ContactsList() {
         </span>
       </div>
 
-      <em className="pb-2 d-block">
+      <em className="pb-2 d-block mb-2">
         {contents().length ?? '...'} {search ? 'matches' : 'contacts'}
+        <Link to="/contact/add" className="btn btn-secondary btn-sm float-end">
+          Add contact
+        </Link>
       </em>
 
       <ul className="list-group">

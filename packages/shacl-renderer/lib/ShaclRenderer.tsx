@@ -18,7 +18,7 @@ export type ShaclRendererProps = {
   dataUrl?: string
   subject?: string
   children?: ReactNode
-  onSubmit?: (dataset: DatasetCore) => void
+  onSubmit?: (dataset: DatasetCore, pointer: GrapoiPointer) => void
 }
 
 const loadShaclShapes = async (settings: Settings, dataset: DatasetCore, shaclShapesUrl?: string) => {
@@ -48,7 +48,7 @@ const loadData = async (settings: Settings, dataset: DatasetCore, dataUrl?: stri
 
   subject = subject ? subject : dataUrl
 
-  if (!subject) throw new Error('A subject is required, either by the data-url or by the subject attribute')
+  if (!subject) subject = ''
 
   return grapoi({ dataset, factory: DataFactory, term: DataFactory.namedNode(subject) })
 }
@@ -111,7 +111,7 @@ export default function ShaclRenderer({
       <form
         onSubmit={(event) => {
           event.preventDefault()
-          if (onSubmit) onSubmit(dataDataset)
+          if (onSubmit) onSubmit(dataDataset, dataPointer)
         }}
       >
         {children}

@@ -6,26 +6,38 @@ import { centerGraphContext } from '../context'
 import { asResource } from '@centergraph/sdk/lib/asResource'
 
 type FormProps = {
-  data: GetApiRequest<unknown>
+  data?: GetApiRequest<unknown>
+  shaclUrl?: string
   children?: ReactNode
-  afterUpdate?: () => void
+  pathCreator?: (pointer: GrapoiPointer) => string
+  afterSubmit?: () => void
 }
 
-export default function Form({ data, children, afterUpdate }: FormProps) {
+export default function Form({ data, children, shaclUrl, afterSubmit, pathCreator }: FormProps) {
   const { api } = useContext(centerGraphContext)
-  const shaclUrl = asResource(data.shaclUrl(), data.url + ':shacl')
+
+  if (!shaclUrl && data) shaclUrl = asResource(data.shaclUrl(), data.url + ':shacl')
 
   return shaclUrl ? (
     <ShaclRenderer
-      dataUrl={data.url}
+      dataUrl={data?.url}
       shaclShapesUrl={shaclUrl}
-      onSubmit={(dataset) => {
-        try {
-          data.update(dataset).then(() => {
-            if (afterUpdate) afterUpdate()
-          })
-        } catch (error) {
-          console.error(error)
+      onSubmit={(dataset, pointer) => {
+        // Update
+        if (data) {
+          try {
+            data.update(dataset).then(() => {
+              if (afterSubmit) afterSubmit()
+            })
+          } catch (error) {
+            console.error(error)
+          }
+        }
+        // Create
+        else {
+          if (!pathCreator) throw new Error('pathCreator is required for creating new items with the form')
+          const path = pathCreator(pointer).toLocaleLowerCase()
+          api.create(path, dataset)
         }
       }}
       settings={Object.assign({}, api.shaclRendererSettings, { mode: 'edit' })}

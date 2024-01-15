@@ -1,5 +1,5 @@
 import datasetFactory from '@rdfjs/dataset'
-import { NamedNode } from '@rdfjs/types'
+import { DatasetCore, NamedNode } from '@rdfjs/types'
 import * as namespaces from '@centergraph/shared/lib/namespaces'
 import { populateStore } from './populateStore'
 import { D2LFetch } from 'd2l-fetch'
@@ -50,6 +50,13 @@ export class CenterGraph {
     if (typeof path !== 'string') path = path.value
     const url = path.includes('http://') || path.includes('https://') ? path : this.options.base + path
     return new GetApiRequest<T>((input, init) => this.#d2LFetch.fetch(input, init), this.options.base, url)
+  }
+
+  create(path: string | NamedNode, dataset: DatasetCore) {
+    if (typeof path !== 'string') path = path.value
+    const iri = this.options.base + path
+
+    console.log(iri, dataset)
   }
 
   getFolder(path: string | NamedNode) {

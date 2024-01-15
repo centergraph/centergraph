@@ -22,7 +22,7 @@ export default function EditContact() {
       <Form
         key={iri}
         data={api.get(iri)}
-        afterUpdate={() => {
+        afterSubmit={() => {
           navigate(`/contact/${slug}`)
         }}
       >
