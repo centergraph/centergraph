@@ -1,6 +1,6 @@
 import { AbstractApiRequest } from './AbstractApiRequest'
 
-import { Parser, Writer } from 'n3'
+import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
 import factory from '@rdfjs/data-model'
 import { sh } from '@centergraph/shared/lib/namespaces'

@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { ReactNode, Suspense } from 'react'
 import { Settings } from '@centergraph/shacl-renderer/lib/types'
 import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
@@ -115,8 +115,10 @@ export default function ShaclRenderer({
   )
 
   return (
-    <state.Provider value={{ data: dataDataset, shacl: shaclDataset }}>
-      {settings.mode === 'edit' ? formWrapper(combinedChildren) : combinedChildren}
-    </state.Provider>
+    <Suspense>
+      <state.Provider value={{ data: dataDataset, shacl: shaclDataset }}>
+        {settings.mode === 'edit' ? formWrapper(combinedChildren) : combinedChildren}
+      </state.Provider>
+    </Suspense>
   )
 }

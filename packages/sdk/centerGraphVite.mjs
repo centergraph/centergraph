@@ -1,6 +1,7 @@
 import { VitePWA } from 'vite-plugin-pwa'
-import react from '@vitejs/plugin-react-swc'
 import viteTsconfigPaths from 'vite-tsconfig-paths'
+// import preact from '@preact/preset-vite' // Enable for Preact
+import react from '@vitejs/plugin-react-swc'
 
 const matchCb =
   (baseUrl) =>
@@ -34,6 +35,13 @@ export default (config) => {
       },
       config() {
         return {
+          // Enable for Preact
+          // resolve: {
+          //   alias: {
+          //     react: 'preact-compat',
+          //     'react-dom': 'preact-compat',
+          //   },
+          // },
           build: {
             rollupOptions: {
               output: {
@@ -67,6 +75,10 @@ export default (config) => {
       },
     },
     viteTsconfigPaths(),
+    // Enable for Preact
+    // preact({
+    //   plugins: [['@preact-signals/safe-react/swc', {}]],
+    // }),
     react({
       plugins: [['@preact-signals/safe-react/swc', {}]],
     }),

@@ -1,6 +1,6 @@
 import { rdf, sh, sr, xsd } from './namespaces'
 import parsePath from 'shacl-engine/lib/parsePath'
-import { ContextParser } from 'jsonld-context-parser'
+import { JsonLdContextNormalized } from 'jsonld-context-parser/lib/JsonLdContextNormalized'
 import { Term } from '@rdfjs/types'
 
 const mapValue = (term: Term) => {
@@ -19,8 +19,6 @@ export const quadsToShapeObject = async (
   context: { [key: string]: unknown },
   nested: boolean = false
 ) => {
-  const contextParser = new ContextParser()
-
   let shapePointer = shaclPointer.hasOut(rdf('type'), sh('NodeShape'))
   if (!nested) shapePointer = shapePointer.hasOut(rdf('type'), sr('MainShape'))
 
@@ -32,7 +30,7 @@ export const quadsToShapeObject = async (
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const returnObject: any = {}
-  const parsedContext = await contextParser.parse(context)
+  const parsedContext = new JsonLdContextNormalized(context)
 
   for (const shaclProperty of shaclProperties) {
     const path = parsePath(shaclProperty.out(sh('path')))
@@ -40,7 +38,9 @@ export const quadsToShapeObject = async (
     const predicate = path[0].predicates[0]
     const compactedPredicate = parsedContext.compactIri(predicate.value, true)
     // const isRequired = !!shaclProperty.out(sh('minCount')).value
-    const maxCount = (shaclProperty.out(sh('maxCount')).value ? parseInt(shaclProperty.out(sh('maxCount')).value) : Infinity) ?? Infinity
+    const maxCount =
+      (shaclProperty.out(sh('maxCount')).value ? parseInt(shaclProperty.out(sh('maxCount')).value) : Infinity) ??
+      Infinity
     const isMultiple = maxCount > 1
     const valuesPointer = dataPointer.executeAll(path)
 

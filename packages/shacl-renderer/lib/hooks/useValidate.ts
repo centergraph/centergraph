@@ -1,4 +1,4 @@
-import { Signal, signal } from '@preact/signals-react'
+import { signal, Signal } from '@preact-signals/safe-react'
 import { Validator } from 'shacl-engine'
 import { DataFactory } from 'n3'
 import isEqual from 'lodash-es/isEqual'
