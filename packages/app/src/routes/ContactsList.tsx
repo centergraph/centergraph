@@ -32,7 +32,9 @@ export default function ContactsList() {
           type="text"
           className="form-control"
           value={search}
-          onChange={(event) => setSearch(event.target.value)}
+          onChange={(event) => {
+            setSearch(event.target.value)
+          }}
         />
         <span className="input-group-text">
           <Icon icon="line-md:search" />

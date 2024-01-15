@@ -17,11 +17,11 @@ export default function CenterGraphContextProvider({ children, api }: ContextPro
 
   return ready ? (
     <>
-      <Suspense fallback={'Loading...'}>
-        <centerGraphContext.Provider value={{ api }}>
-          <SuspenseRouter window={window}>{children}</SuspenseRouter>
-        </centerGraphContext.Provider>
-      </Suspense>
+      <centerGraphContext.Provider value={{ api }}>
+        <SuspenseRouter window={window}>
+          <Suspense fallback={'Loading...'}>{children}</Suspense>
+        </SuspenseRouter>
+      </centerGraphContext.Provider>
     </>
   ) : null
 }
