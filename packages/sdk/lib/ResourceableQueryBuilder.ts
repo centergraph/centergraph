@@ -1,6 +1,6 @@
 import { QueryBuilder } from '@centergraph/shared/lib/QueryBuilder'
 import { NamedNode } from '@rdfjs/types'
-import { cachedAsResource } from './asResource'
+import { asResource } from './asResource'
 
 export class ResourceableQueryBuilder<T extends NamedNode[] | number> extends QueryBuilder<T> {
   /**
@@ -9,6 +9,6 @@ export class ResourceableQueryBuilder<T extends NamedNode[] | number> extends Qu
    */
   asResource(): T {
     const promise = this.then()
-    return cachedAsResource(promise, this.url)
+    return asResource(promise, this.url)
   }
 }

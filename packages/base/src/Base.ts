@@ -1,8 +1,9 @@
 import * as namespaces from '@centergraph/shared/lib/namespaces.ts'
+import bodyParser from 'body-parser'
 import cors from 'cors'
 import express from 'express'
+import { Express, Request, Response } from 'express'
 import { Store } from 'n3'
-import { Express, Request, Response } from 'types-express'
 
 import { DenoFolderAdapter } from '../../turtle-sync/src/adapters/DenoFolderAdapter.ts'
 import turtleSync from '../../turtle-sync/src/turtleSync.ts'
@@ -36,7 +37,7 @@ app.get('/api/query', query)
 app.get('/api/context', contextRoute)
 app.get('/api/types', types)
 app.use('/oidc', oidc.callback())
-app.use(turtle)
+app.use(bodyParser.text({ type: '*/*' }), turtle)
 app.use(
   express.static(folder, {
     extensions: ['svg'],

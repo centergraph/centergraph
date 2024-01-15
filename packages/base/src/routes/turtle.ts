@@ -1,7 +1,7 @@
 import { ldp, rdf } from '@centergraph/shared/lib/namespaces.ts'
 import { writeTurtle } from '@centergraph/shared/lib/writeTurtle.ts'
-import { DataFactory, Store } from 'n3'
-import { NextFunction, Request, Response } from 'types-express'
+import { NextFunction, Request, Response } from 'express'
+import { DataFactory, Parser, Quad, Store } from 'n3'
 
 import { baseIRI, context, folder as dataFolder, store } from '../Base.ts'
 
@@ -12,22 +12,41 @@ const getFolderQuads = async (folder: string, iri: string) => {
 
   for await (const fileEntry of Deno.readDir(folder)) {
     if (!fileEntry.name.includes('.ttl')) continue
-    const uri = baseIRI + fullUrl.pathname + fileEntry.name.replace('.ttl', '')
-    quads.push(DataFactory.quad(DataFactory.namedNode(iri), ldp('contains'), DataFactory.namedNode(uri)))
+    quads.push(DataFactory.quad(DataFactory.namedNode(iri), ldp('contains'), DataFactory.namedNode(iri)))
   }
 
   return quads
 }
 
-export const turtle = async (request: Request, response: Response, next: NextFunction) => {
-  const fullUrl = new URL(baseIRI + request.url)
-  const iri = baseIRI + fullUrl.pathname
-
-  // TODO replace with abstraction that can do SPARQL and store.match
+// TODO replace with abstraction that can do SPARQL and store.match
+const getDocumentQuads = async (iri: string) => {
   const quads = store
     .getQuads(null, null, null, DataFactory.namedNode(iri))
     .map((quad) => DataFactory.quad(quad.subject, quad.predicate, quad.object))
 
+  return quads
+}
+
+const handlePatch = async (request: Request) => {
+  const fullUrl = new URL(baseIRI + request.url)
+  const iri = baseIRI + fullUrl.pathname
+  const turtle = request.body
+  const parser = new Parser({ baseIRI: iri })
+  const quads = (await parser.parse(turtle)).map((quad) =>
+    DataFactory.quad(quad.subject, quad.predicate, quad.object, DataFactory.namedNode(iri))
+  )
+
+  const oldQuads = store.getQuads(null, null, null, DataFactory.namedNode(iri))
+  for (const oldQuad of oldQuads) store.removeQuad(oldQuad)
+
+  store.addQuads(quads)
+}
+
+export const handleGet = async (request: Request, response: Response, next: NextFunction) => {
+  const fullUrl = new URL(baseIRI + request.url)
+  const iri = baseIRI + fullUrl.pathname
+
+  const quads = await getDocumentQuads(iri)
   if (!quads.length) {
     const folder = dataFolder + fullUrl.pathname
     try {
@@ -47,4 +66,15 @@ export const turtle = async (request: Request, response: Response, next: NextFun
 
   response.set('Content-Type', 'text/turtle')
   response.send(outputTurtle)
+}
+
+export const turtle = async (request: Request, response: Response, next: NextFunction) => {
+  if (request.method === 'PATCH') {
+    await handlePatch(request)
+    return handleGet(request, response, next)
+  } else if (['GET', 'OPTIONS', 'HEAD'].includes(request.method)) {
+    return handleGet(request, response, next)
+  }
+
+  throw new Error('Unhandled method')
 }

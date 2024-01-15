@@ -31,9 +31,18 @@ type GrapoiPointer = {
 }
 
 declare module 'grapoi' {
-  function grapoi({ dataset, factory, term }: { dataset: Dataset; factory: DataFactory; term?: NamedNode }): GrapoiPointer
+  function grapoi({
+    dataset,
+    factory,
+    term,
+  }: {
+    dataset: Dataset
+    factory: DataFactory
+    term?: NamedNode
+  }): GrapoiPointer
   export = grapoi
 }
 
 declare module 'shacl-engine/lib/parsePath'
 declare module 'shacl-engine'
+declare module 'd2l-fetch-simple-cache/src/d2lfetch-simple-cache.js'

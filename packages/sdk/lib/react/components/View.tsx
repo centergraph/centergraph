@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import ShaclRenderer from '@centergraph/shacl-renderer'
 import { GetApiRequest } from '../../GetApiRequest'
 import { centerGraphContext } from '../context'
-import { cachedAsResource } from '@centergraph/sdk/lib/asResource'
+import { asResource } from '@centergraph/sdk/lib/asResource'
 import '@centergraph/shacl-renderer/lib/style.css'
 
 type ViewProps = {
@@ -12,7 +12,7 @@ type ViewProps = {
 
 export default function View({ data, as }: ViewProps) {
   const { api } = useContext(centerGraphContext)
-  const shaclUrl = cachedAsResource(data.shaclUrl(as), data.url + ':shacl:' + as)
+  const shaclUrl = asResource(data.shaclUrl(as), data.url + ':shacl:' + as)
 
   return (
     <ShaclRenderer

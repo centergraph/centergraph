@@ -7,8 +7,9 @@ import { sh } from '@centergraph/shared/lib/namespaces'
 import '@centergraph/shacl-renderer'
 import grapoi from 'grapoi'
 import { quadsToShapeObject } from '@centergraph/shared/lib/quadsToShapeObject'
-import { cachedAsResource } from './asResource'
+import { asResource, setResource } from './asResource'
 import { DatasetCore } from '@rdfjs/types'
+import { simpleCache } from './CenterGraph'
 
 export class GetApiRequest<T> extends AbstractApiRequest<T> {
   url: string
@@ -57,8 +58,7 @@ export class GetApiRequest<T> extends AbstractApiRequest<T> {
   }
 
   asResource(): T {
-    const promise = this.then()
-    return cachedAsResource(promise, this.url) as T
+    return asResource(this.then(), this.url) as T
   }
 
   update(dataset: DatasetCore): Promise<void>
@@ -67,12 +67,13 @@ export class GetApiRequest<T> extends AbstractApiRequest<T> {
       const writer = new Writer()
       writer.addQuads([...input])
       writer.end(async (_error: unknown, result: string) => {
-        const response = await this.fetch(this.url, {
+        await this.fetch(this.url, {
           method: 'PATCH',
           body: result,
         }).then((response) => response.text())
 
-        console.log(response)
+        delete simpleCache._simplyCachedRequests[`GET${this.url}`]
+        setResource(this.then(), this.url)
       })
     }
 

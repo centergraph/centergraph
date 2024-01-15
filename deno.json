@@ -1,7 +1,7 @@
 {
   "imports": {
     "express": "https://esm.sh/express@4.18.2",
-    "types-express": "npm:@types/express",
+    "body-parser": "npm:body-parser",
     "n3": "https://esm.sh/n3@1.17.2",
     "grapoi": "https://esm.sh/grapoi@1.1.0",
     "cors": "https://esm.sh/cors@2.8.5",

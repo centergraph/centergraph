@@ -1,4 +1,3 @@
-import { useSignals } from '@preact/signals-react/runtime'
 import { Signal, signal } from '@preact/signals-react'
 import { Validator } from 'shacl-engine'
 import { DataFactory } from 'n3'
@@ -28,7 +27,6 @@ export const useValidate = () => {
     validate()
   }
 
-  useSignals()
   return {
     reportSignal,
     validate,

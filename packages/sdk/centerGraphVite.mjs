@@ -1,4 +1,6 @@
 import { VitePWA } from 'vite-plugin-pwa'
+import react from '@vitejs/plugin-react-swc'
+import viteTsconfigPaths from 'vite-tsconfig-paths'
 
 const matchCb =
   (baseUrl) =>
@@ -64,6 +66,10 @@ export default (config) => {
         }
       },
     },
+    viteTsconfigPaths(),
+    react({
+      plugins: [['@preact-signals/safe-react/swc', {}]],
+    }),
     VitePWA({
       registerType: 'autoUpdate',
       devOptions: {

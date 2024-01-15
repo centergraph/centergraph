@@ -1,17 +1,19 @@
-import { useContext } from 'react'
+import { ReactNode, useContext } from 'react'
 import ShaclRenderer from '@centergraph/shacl-renderer'
 import '@centergraph/shacl-renderer/lib/style.css'
 import { GetApiRequest } from '../../GetApiRequest'
 import { centerGraphContext } from '../context'
-import { cachedAsResource } from '@centergraph/sdk/lib/asResource'
+import { asResource } from '@centergraph/sdk/lib/asResource'
 
 type FormProps = {
   data: GetApiRequest<unknown>
+  children?: ReactNode
+  afterUpdate?: () => void
 }
 
-export default function Form({ data }: FormProps) {
+export default function Form({ data, children, afterUpdate }: FormProps) {
   const { api } = useContext(centerGraphContext)
-  const shaclUrl = cachedAsResource(data.shaclUrl(), data.url + ':shacl')
+  const shaclUrl = asResource(data.shaclUrl(), data.url + ':shacl')
 
   return (
     <ShaclRenderer
@@ -20,13 +22,14 @@ export default function Form({ data }: FormProps) {
       onSubmit={(dataset) => {
         try {
           data.update(dataset)
+          if (afterUpdate) afterUpdate()
         } catch (error) {
           console.error(error)
         }
       }}
       settings={Object.assign({}, api.shaclRendererSettings, { mode: 'edit' })}
     >
-      <button className="btn mt-4 btn-primary btn-lg float-end">Save</button>
+      {children ?? <button className="btn mt-4 btn-primary btn-lg float-end">Save</button>}
     </ShaclRenderer>
   )
 }

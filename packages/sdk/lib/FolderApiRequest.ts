@@ -7,7 +7,7 @@ import { ldp } from '@centergraph/shared/lib/namespaces'
 import '@centergraph/shacl-renderer'
 import grapoi from 'grapoi'
 import { NamedNode } from '@rdfjs/types'
-import { cachedAsResource } from './asResource'
+import { asResource } from './asResource'
 
 export class FolderApiRequest extends AbstractApiRequest<NamedNode[]> {
   url: string
@@ -31,7 +31,7 @@ export class FolderApiRequest extends AbstractApiRequest<NamedNode[]> {
 
   asResource(): NamedNode[] {
     const promise = this.then()
-    const resource = cachedAsResource(promise, this.url)
+    const resource = asResource(promise, this.url)
     return resource.read()
   }
 }

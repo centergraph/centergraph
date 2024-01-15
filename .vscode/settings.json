@@ -9,6 +9,7 @@
     "jwks",
     "Metas",
     "oidc",
+    "preact",
     "ptrs",
     "rdfjs",
     "rdfs",

@@ -2,3 +2,4 @@ node_modules
 .turbo
 .code-coverage
 vite.config.ts.timestamp
+**/vite.config.ts.timestamp

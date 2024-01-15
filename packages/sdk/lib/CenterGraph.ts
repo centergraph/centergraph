@@ -4,17 +4,22 @@ import * as namespaces from '@centergraph/shared/lib/namespaces'
 import { populateStore } from './populateStore'
 import { D2LFetch } from 'd2l-fetch'
 import { fetchDedupe } from 'd2l-fetch-dedupe'
-import { fetchSimpleCache } from 'd2l-fetch-simple-cache'
 import { defaultSettings } from '@centergraph/shacl-renderer/lib/defaultSettings'
 import { registerCoreWidgets } from '@centergraph/shacl-renderer/lib/helpers/registerWidgets'
 import type { ShaclRendererProps } from '@centergraph/shacl-renderer'
 import { GetApiRequest } from './GetApiRequest'
 import { FolderApiRequest } from './FolderApiRequest'
 import { ResourceableQueryBuilder } from './ResourceableQueryBuilder'
+import { D2LFetchSimpleCache } from 'd2l-fetch-simple-cache/src/d2lfetch-simple-cache.js'
 
 export type CenterGraphOptions = {
   base: string
   shaclRendererSettings?: ShaclRendererProps['settings']
+}
+
+export const simpleCache = new D2LFetchSimpleCache()
+export function fetchSimpleCache(...args: unknown[]) {
+  return simpleCache.cache(...args)
 }
 
 export class CenterGraph {

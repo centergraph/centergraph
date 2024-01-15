@@ -10,7 +10,7 @@ import { preloadWidgets } from './helpers/preloadWidgets'
 import './style.css'
 import { DatasetCore } from '@rdfjs/types'
 import { state } from './context/state'
-import { cachedAsResource } from '@centergraph/sdk/lib/asResource'
+import { asResource } from '@centergraph/sdk/lib/asResource'
 
 export type ShaclRendererProps = {
   settings: Settings
@@ -54,13 +54,14 @@ const createShaclRendererResource = (
   dataUrl?: string,
   subject?: string
 ) => {
-  const cid = JSON.stringify([shaclShapesUrl, dataUrl, subject, settings.mode])
+  const cid = JSON.stringify([shaclShapesUrl, dataUrl, subject, settings.mode].join(':'))
 
   const dataDataset = datasetFactory.dataset()
   const shaclDataset = datasetFactory.dataset()
-  return cachedAsResource(
+  return asResource(
     Promise.all([
       loadShaclShapes(settings, shaclDataset, shaclShapesUrl),
+      // TODO Split up to use asResource, so that it is a signal?
       loadData(settings, dataDataset, dataUrl, subject),
     ]).then(([shaclShapes, dataPointer]) => {
       return { shaclShapes, dataPointer, dataDataset, shaclDataset }
