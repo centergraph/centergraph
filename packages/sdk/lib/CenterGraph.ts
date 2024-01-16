@@ -56,7 +56,7 @@ export class CenterGraph {
     if (typeof path !== 'string') path = path.value
     const iri = this.options.base + path
 
-    console.log(iri, dataset)
+    console.log(iri, [...dataset])
   }
 
   getFolder(path: string | NamedNode) {

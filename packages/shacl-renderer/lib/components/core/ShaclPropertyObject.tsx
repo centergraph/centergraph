@@ -1,11 +1,12 @@
 import { Settings } from '@centergraph/shacl-renderer/lib/types'
 import { ReactNode, useState } from 'react'
-import { Term } from '@rdfjs/types'
+import { DatasetCore, Quad_Object, Term } from '@rdfjs/types'
 import { useWidget } from '@centergraph/shacl-renderer/lib/hooks/useWidget'
 import { Icon } from '@iconify/react'
 import { lastPart } from '@centergraph/shacl-renderer/lib/helpers/lastPart'
 import kebabCase from 'lodash-es/kebabCase'
 import { useValidate } from '@centergraph/shacl-renderer/lib/hooks/useValidate'
+import factory from '@rdfjs/data-model'
 
 type PropertyObjectProps = {
   shaclPointer: GrapoiPointer
@@ -30,7 +31,11 @@ export default function ShaclPropertyObject({
   const errorMessages = !term.isEmpty ? getErrorMessages(reportSignal, path) : []
 
   const setTerm = (value: Term) => {
-    dataPointer = dataPointer.replace(value)
+    const dataset: DatasetCore = dataPointer.ptrs[0].dataset
+    const [quad] = [...dataPointer.quads()]
+    dataset.delete(quad)
+    dataset.add(factory.quad(quad.subject, quad.predicate, value as Quad_Object, quad.graph))
+
     realSetTerm(value)
     setObjectPointers()
     validate()

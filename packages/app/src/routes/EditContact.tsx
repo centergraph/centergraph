@@ -2,6 +2,7 @@ import Form from '@centergraph/sdk/lib/react/components/Form'
 import { api } from '../centerGraph'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Person } from '../types'
+import View from '@centergraph/sdk/lib/react/components/View'
 
 export default function EditContact() {
   const { slug } = useParams()
@@ -16,7 +17,7 @@ export default function EditContact() {
       <h1>
         Edit&nbsp;
         <em>
-          {person.givenName} {person.familyName}
+          <View data={api.get<Person>(iri)} as="card" />
         </em>
       </h1>
       <Form

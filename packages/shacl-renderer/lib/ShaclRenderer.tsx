@@ -1,4 +1,4 @@
-import { ReactNode, Suspense } from 'react'
+import { ReactNode } from 'react'
 import { Settings } from '@centergraph/shacl-renderer/lib/types'
 import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
