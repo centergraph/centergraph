@@ -93,7 +93,7 @@ export default function ShaclRenderer({
   let shaclRoot = shaclShapes.hasOut(rdf('type'), sh('NodeShape'))
   if (settings.targetClass) shaclRoot = shaclRoot.hasOut(sh('targetClass'), DataFactory.namedNode(settings.targetClass))
 
-  const matchedPointer = shaclRoot.ptrs.find((ptr) => ptr.term.value === shaclShapesUrl)
+  const matchedPointer = shaclRoot.ptrs.find((ptr: GrapoiPointer) => ptr.term.value === shaclShapesUrl)
   shaclRoot.ptrs = [matchedPointer ?? shaclRoot.ptrs[0]]
   const formChildren = (
     <FormLevel isRoot={true} shaclPointer={shaclRoot} dataPointer={dataPointer} settings={settings} />
@@ -120,10 +120,8 @@ export default function ShaclRenderer({
   )
 
   return (
-    <Suspense>
-      <state.Provider value={{ data: dataDataset, shacl: shaclDataset }}>
-        {settings.mode === 'edit' ? formWrapper(combinedChildren) : combinedChildren}
-      </state.Provider>
-    </Suspense>
+    <state.Provider value={{ data: dataDataset, shacl: shaclDataset }}>
+      {settings.mode === 'edit' ? formWrapper(combinedChildren) : combinedChildren}
+    </state.Provider>
   )
 }

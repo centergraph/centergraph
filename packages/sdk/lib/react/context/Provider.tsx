@@ -1,7 +1,6 @@
 import { Suspense, ReactNode, useEffect, useState } from 'react'
 import { centerGraphContext } from '.'
 import { CenterGraph } from '../../CenterGraph'
-import SuspenseRouter from '../components/SuspenseRouter'
 
 type ContextProviderProps = {
   api: CenterGraph
@@ -18,9 +17,7 @@ export default function CenterGraphContextProvider({ children, api }: ContextPro
   return ready ? (
     <>
       <centerGraphContext.Provider value={{ api }}>
-        <SuspenseRouter window={window}>
-          <Suspense fallback={'Loading...'}>{children}</Suspense>
-        </SuspenseRouter>
+        <Suspense>{children}</Suspense>
       </centerGraphContext.Provider>
     </>
   ) : null

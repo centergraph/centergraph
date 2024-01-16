@@ -4,6 +4,7 @@ import { GetApiRequest } from '../../GetApiRequest'
 import { centerGraphContext } from '../context'
 import { asResource } from '@centergraph/sdk/lib/asResource'
 import '@centergraph/shacl-renderer/lib/style.css'
+import { Suspense } from '@preact-signals/safe-react/react'
 
 type ViewProps = {
   data: GetApiRequest<unknown>
@@ -15,10 +16,12 @@ export default function View({ data, as }: ViewProps) {
   const shaclUrl = asResource(data.shaclUrl(as), data.url + ':shacl:' + as)
 
   return shaclUrl ? (
-    <ShaclRenderer
-      dataUrl={data.url}
-      shaclShapesUrl={shaclUrl}
-      settings={Object.assign({}, api.shaclRendererSettings, { mode: 'view' })}
-    />
+    <Suspense>
+      <ShaclRenderer
+        dataUrl={data.url}
+        shaclShapesUrl={shaclUrl}
+        settings={Object.assign({}, api.shaclRendererSettings, { mode: 'view' })}
+      />
+    </Suspense>
   ) : null
 }

@@ -28,6 +28,20 @@ const presets: {
       />
     ),
   },
+  'contact-card-form-empty': {
+    title: 'Contact card form empty',
+    element: (
+      <ShaclRenderer
+        settings={editSettings}
+        onSubmit={(dataset, pointer) => {
+          console.log([...dataset])
+        }}
+        shaclShapesUrl="./shapes/contact.shacl.ttl"
+      >
+        <button className="btn btn-primary">Save</button>
+      </ShaclRenderer>
+    ),
+  },
   'various-widgets-form': {
     title: 'Various widgets form',
     element: (

@@ -7,13 +7,15 @@ import EditContact from './routes/EditContact.tsx'
 import AddContact from './routes/AddContact.tsx'
 
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './routes/Home.tsx'
+import Header from './components/header.tsx'
 
-window.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.createRoot(document.getElementById('root')!).render(
-    <React.StrictMode>
-      <CenterGraph api={api}>
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <CenterGraph api={api}>
+      <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<ContactsLayout />}>
             <Route path="/" element={<Home />} />
@@ -22,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
             <Route path="contact/:slug/edit" element={<EditContact />} />
           </Route>
         </Routes>
-      </CenterGraph>
-    </React.StrictMode>
-  )
-})
+      </BrowserRouter>
+    </CenterGraph>
+  </React.StrictMode>
+)

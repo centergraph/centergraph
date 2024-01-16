@@ -4,6 +4,7 @@ import '@centergraph/shacl-renderer/lib/style.css'
 import { GetApiRequest } from '../../GetApiRequest'
 import { centerGraphContext } from '../context'
 import { asResource } from '@centergraph/sdk/lib/asResource'
+import { Suspense } from '@preact-signals/safe-react/react'
 
 type FormProps = {
   data?: GetApiRequest<unknown>
@@ -19,30 +20,32 @@ export default function Form({ data, children, shaclUrl, afterSubmit, pathCreato
   if (!shaclUrl && data) shaclUrl = asResource(data.shaclUrl(), data.url + ':shacl')
 
   return shaclUrl ? (
-    <ShaclRenderer
-      dataUrl={data?.url}
-      shaclShapesUrl={shaclUrl}
-      onSubmit={(dataset, pointer) => {
-        // Update
-        if (data) {
-          try {
-            data.update(dataset).then(() => {
-              if (afterSubmit) afterSubmit()
-            })
-          } catch (error) {
-            console.error(error)
+    <Suspense>
+      <ShaclRenderer
+        dataUrl={data?.url}
+        shaclShapesUrl={shaclUrl}
+        onSubmit={(dataset, pointer) => {
+          // Update
+          if (data) {
+            try {
+              data.update(dataset).then(() => {
+                if (afterSubmit) afterSubmit()
+              })
+            } catch (error) {
+              console.error(error)
+            }
           }
-        }
-        // Create
-        else {
-          if (!pathCreator) throw new Error('pathCreator is required for creating new items with the form')
-          const path = pathCreator(pointer).toLocaleLowerCase()
-          api.create(path, dataset)
-        }
-      }}
-      settings={Object.assign({}, api.shaclRendererSettings, { mode: 'edit' })}
-    >
-      {children ?? <button className="btn mt-4 btn-primary btn-lg float-end">Save</button>}
-    </ShaclRenderer>
+          // Create
+          else {
+            if (!pathCreator) throw new Error('pathCreator is required for creating new items with the form')
+            const path = pathCreator(pointer).toLocaleLowerCase()
+            api.create(path, dataset)
+          }
+        }}
+        settings={Object.assign({}, api.shaclRendererSettings, { mode: 'edit' })}
+      >
+        {children ?? <button className="btn mt-4 btn-primary btn-lg float-end">Save</button>}
+      </ShaclRenderer>
+    </Suspense>
   ) : null
 }

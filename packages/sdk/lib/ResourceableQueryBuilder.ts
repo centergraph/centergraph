@@ -10,4 +10,8 @@ export class ResourceableQueryBuilder<T extends NamedNode[] | number> extends Qu
   asResource(): T {
     return asResource(this, this.url)
   }
+
+  asResourceFunction(): () => T {
+    return () => asResource(this, this.url)
+  }
 }

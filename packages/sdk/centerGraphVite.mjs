@@ -3,7 +3,7 @@ import viteTsconfigPaths from 'vite-tsconfig-paths'
 import preact from '@preact/preset-vite'
 import react from '@vitejs/plugin-react-swc'
 
-const usePreact = false
+const usePreact = true
 
 const matchCb =
   (baseUrl) =>
