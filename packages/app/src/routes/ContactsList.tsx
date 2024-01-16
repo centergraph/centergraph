@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Icon } from '@iconify/react'
-import { useState } from 'react'
+import { Suspense, useState } from 'react'
 import ContactsListItems from '../components/ContactsListItems'
 
 export default function ContactsList() {
@@ -30,7 +30,9 @@ export default function ContactsList() {
           </Link>
         </em>
       </div>
-      <ContactsListItems search={search} />
+      <Suspense>
+        <ContactsListItems search={search} />
+      </Suspense>
     </div>
   )
 }
