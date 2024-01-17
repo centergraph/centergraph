@@ -96,6 +96,14 @@ export default function ShaclRenderer({
 
   if (!shaclRoot.ptrs.filter(Boolean).length) throw new Error('Did not find a SHACL shape')
 
+  if (shaclRoot.out(sh('targetClass')).terms.length && !dataPointer.out(rdf('type')).terms.length) {
+    dataPointer.addOut(rdf('type'), shaclRoot.out(sh('targetClass')).terms)
+  }
+
+  if (!dataPointer.out(sh('shapesGraph')).term && shaclShapesUrl) {
+    dataPointer.addOut(sh('shapesGraph'), DataFactory.namedNode(shaclShapesUrl))
+  }
+
   const formChildren = (
     <FormLevel isRoot={true} shaclPointer={shaclRoot} dataPointer={dataPointer} settings={settings} />
   )

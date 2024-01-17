@@ -11,7 +11,7 @@ type FormProps = {
   shaclUrl?: string
   children?: ReactNode
   pathCreator?: (pointer: GrapoiPointer) => string
-  afterSubmit?: () => void
+  afterSubmit?: (iri?: string) => void
 }
 
 export default function Form({ data, children, shaclUrl, afterSubmit, pathCreator }: FormProps) {
@@ -40,6 +40,7 @@ export default function Form({ data, children, shaclUrl, afterSubmit, pathCreato
             if (!pathCreator) throw new Error('pathCreator is required for creating new items with the form')
             const path = pathCreator(pointer).toLocaleLowerCase()
             api.create(path, dataset)
+            if (afterSubmit) afterSubmit(path)
           }
         }}
         settings={Object.assign({}, api.shaclRendererSettings, { mode: 'edit' })}

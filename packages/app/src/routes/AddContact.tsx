@@ -15,7 +15,9 @@ export default function AddContact() {
           `/contacts/${pointer.out(schema('givenName')).value}-${pointer.out(schema('familyName')).value}`
         }
         shaclUrl={`${base}/shapes/contact.shacl`}
-        afterSubmit={() => {}}
+        afterSubmit={() => {
+          navigate('/')
+        }}
       >
         <div className="d-flex justify-content-end gap-2">
           <button className="btn mt-4 btn-primary">Save</button>

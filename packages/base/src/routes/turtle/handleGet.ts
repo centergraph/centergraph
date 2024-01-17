@@ -11,8 +11,13 @@ const getFolderQuads = async (folder: string, iri: string) => {
   quads.push(DataFactory.quad(DataFactory.namedNode(iri), rdf('type'), ldp('BasicContainer')))
 
   for await (const fileEntry of Deno.readDir(folder)) {
-    if (!fileEntry.name.includes('.ttl')) continue
-    quads.push(DataFactory.quad(DataFactory.namedNode(iri), ldp('contains'), DataFactory.namedNode(iri)))
+    if (!fileEntry.name.includes('.ttl') || !fileEntry.isFile) continue
+    const newQuad = DataFactory.quad(
+      DataFactory.namedNode(iri),
+      ldp('contains'),
+      DataFactory.namedNode(iri + fileEntry.name.replace('.ttl', ''))
+    )
+    quads.push(newQuad)
   }
 
   return quads
@@ -48,6 +53,8 @@ export const handleGet = async (request: Request, response: Response, next: Next
   const contextWithoutVocab = Object.assign({}, context)
   delete contextWithoutVocab['@vocab']
   const outputTurtle = await writeTurtle({ store: writeStore, prefixes: contextWithoutVocab })
+
+  console.log(outputTurtle)
 
   response.set('Content-Type', 'text/turtle')
   response.send(outputTurtle)
