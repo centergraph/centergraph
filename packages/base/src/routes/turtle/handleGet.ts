@@ -54,8 +54,6 @@ export const handleGet = async (request: Request, response: Response, next: Next
   delete contextWithoutVocab['@vocab']
   const outputTurtle = await writeTurtle({ store: writeStore, prefixes: contextWithoutVocab })
 
-  console.log(outputTurtle)
-
   response.set('Content-Type', 'text/turtle')
   response.send(outputTurtle)
 }

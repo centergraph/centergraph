@@ -28,6 +28,7 @@ export class CenterGraph {
   #store = datasetFactory.dataset()
   #d2LFetch: typeof D2LFetch
   public shaclRendererSettings: ShaclRendererProps['settings']
+  public context: { [key: string]: string } = {}
 
   #fetch: (typeof globalThis)['fetch']
 
@@ -46,7 +47,8 @@ export class CenterGraph {
     this.shaclRendererSettings.fetch = this.#fetch
   }
 
-  populateStore() {
+  async init() {
+    this.context = await this.getContext()
     return !navigator.onLine ? populateStore(this.#store) : Promise.resolve()
   }
 
@@ -54,6 +56,10 @@ export class CenterGraph {
     if (typeof path !== 'string') path = path.value
     const url = path.includes('http://') || path.includes('https://') ? path : this.options.base + path
     return new GetApiRequest<T>(this.#fetch, this.options.base, url)
+  }
+
+  async getContext() {
+    return this.#fetch(`${this.options.base}/api/context`).then((response) => response.json())
   }
 
   async create(path: string | NamedNode, dataset: DatasetCore) {
@@ -77,6 +83,7 @@ export class CenterGraph {
   get query() {
     return new ResourceableQueryBuilder<NamedNode[]>({
       base: this.options.base,
+      prefixes: this.context,
       asCount: false,
       mode: navigator.onLine ? 'remote' : 'local',
       store: this.#store,
@@ -88,6 +95,7 @@ export class CenterGraph {
     return new ResourceableQueryBuilder<number>({
       base: this.options.base,
       asCount: true,
+      prefixes: this.context,
       mode: navigator.onLine ? 'remote' : 'local',
       store: this.#store,
       fetch: this.#fetch,

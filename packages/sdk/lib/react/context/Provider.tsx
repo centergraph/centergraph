@@ -11,7 +11,7 @@ export default function CenterGraphContextProvider({ children, api }: ContextPro
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
-    api.populateStore().then(() => setReady(true))
+    api.init().then(() => setReady(true))
   }, [api])
 
   return ready ? (

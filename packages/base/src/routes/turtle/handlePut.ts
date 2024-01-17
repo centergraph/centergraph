@@ -3,6 +3,7 @@ import { DataFactory, Parser } from 'n3'
 
 import { baseIRI, store } from '../../Base.ts'
 
+// TODO  Add SHACL validate.
 export const handlePut = async (request: Request, _response: Response, _next: NextFunction) => {
   const fullUrl = new URL(baseIRI + request.url)
   const iri = baseIRI + fullUrl.pathname

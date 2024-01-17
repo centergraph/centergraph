@@ -1,49 +1,62 @@
 import { QueryBuilder } from '@centergraph/shared/lib/QueryBuilder.ts'
 import dataFactory from '@rdfjs/data-model'
-import { Term } from '@rdfjs/types'
+import { NamedNode } from '@rdfjs/types'
 import { Request, Response } from 'express'
+import { JsonLdContextNormalized } from 'jsonld-context-parser'
 
-import { baseIRI, store } from '../Base.ts'
+import { baseIRI, context, store } from '../Base.ts'
 
 export const query = async (request: Request, response: Response) => {
   const parsedUrl = new URL(baseIRI + request.url)
+  const jsonLdContext = new JsonLdContextNormalized(context)
 
-  const rawUrlQuery = parsedUrl.searchParams.get('query')
-  if (!rawUrlQuery) throw new Error('Missing query')
+  const unflatten = (flattenedTerm: string) => {
+    if (flattenedTerm.startsWith('"') && flattenedTerm.endsWith('"')) {
+      return dataFactory.literal(flattenedTerm.substring(1, flattenedTerm.length - 1))
+    }
 
-  const urlQuery = JSON.parse(rawUrlQuery) as {
-    filters: { predicate: Term; object?: Term }[]
-    sorters: { predicate: Term; order: 'ascending' | 'descending' }[]
-    paginate: { limit?: number; offset?: number }
-    asCount?: boolean
+    if (flattenedTerm.startsWith('"') && flattenedTerm.includes('^^')) {
+      throw new Error('Implement data literal')
+    }
+
+    const expandedTerm = jsonLdContext.expandTerm(flattenedTerm, true)
+    return dataFactory.namedNode(expandedTerm)
   }
 
+  const asCount = parsedUrl.searchParams.get('asCount') ? JSON.parse(parsedUrl.searchParams.get('asCount')!) : false
+
+  // TODO integrate a SPARQL way
   const queryBuilder = new QueryBuilder({
     base: baseIRI,
-    // TODO integrate a SPARQL way
     store,
     mode: 'local',
-    asCount: !!urlQuery.asCount,
+    asCount: !!asCount,
   })
 
-  if (urlQuery.filters) {
-    for (const { predicate, object } of urlQuery.filters) {
-      queryBuilder.filter(dataFactory.fromTerm(predicate), object ? dataFactory.fromTerm(object) : undefined)
+  const filters = parsedUrl.searchParams.get('filters') ? JSON.parse(parsedUrl.searchParams.get('filters')!) : undefined
+  if (filters) {
+    for (const [predicate, object] of filters) {
+      const expandedPredicate = unflatten(predicate)
+      queryBuilder.filter(expandedPredicate, object ? unflatten(object) : undefined)
     }
   }
 
-  if (urlQuery.sorters) {
-    for (const { predicate, order } of urlQuery.sorters) {
-      queryBuilder.sort(dataFactory.fromTerm(predicate), order)
+  const sorters = parsedUrl.searchParams.get('sorters') ? JSON.parse(parsedUrl.searchParams.get('sorters')!) : undefined
+  if (sorters) {
+    for (const [predicate, order] of sorters) {
+      queryBuilder.sort(unflatten(predicate), order ?? 'ASC')
     }
   }
 
-  if (urlQuery.paginate) queryBuilder.paginate(urlQuery.paginate.limit, urlQuery.paginate.offset)
+  const paginate = parsedUrl.searchParams.get('paginate')
+    ? JSON.parse(parsedUrl.searchParams.get('paginate')!)
+    : undefined
+  if (paginate) queryBuilder.paginate(paginate.limit, paginate.offset)
 
   const result = await queryBuilder
 
   try {
-    response.send(urlQuery.asCount ? { result } : result.map((graph) => graph.value))
+    response.send(asCount ? { result } : (result as NamedNode[]).map((graph) => graph.value))
   } catch (error) {
     response.send(error.message)
   }

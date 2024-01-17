@@ -15,7 +15,8 @@
     "rdfs",
     "Resourceable",
     "shacl",
-    "sparql"
+    "sparql",
+    "unflatten"
   ],
   "deno.enablePaths": ["./packages/base", "./packages/turtle-sync", "./packages/cli"],
   "deno.lint": false,

@@ -11,6 +11,7 @@
     "@rdfjs/namespace": "https://esm.sh/@rdfjs/namespace",
     "@rdfjs/types": "https://esm.sh/@rdfjs/types@1.1.0",
     "jsonld-context-parser": "https://esm.sh/jsonld-context-parser",
+    "jsonld-context-parser/lib/JsonLdContextNormalized.js": "https://esm.sh/jsonld-context-parser",
     "shacl-engine": "https://esm.sh/shacl-engine",
     "typescript": "https://esm.sh/typescript",
     "@jeswr/pretty-turtle": "npm:@jeswr/pretty-turtle",

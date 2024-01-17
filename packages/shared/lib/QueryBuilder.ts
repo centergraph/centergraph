@@ -2,29 +2,41 @@ import datasetFactory from '@rdfjs/dataset'
 import type { DatasetCore, NamedNode, Term } from '@rdfjs/types'
 import { DataFactory } from 'n3'
 import df from '@rdfjs/data-model'
-import { cg } from './namespaces'
+import { cg, xsd } from './namespaces'
+import { JsonLdContextNormalized } from 'jsonld-context-parser/lib/JsonLdContextNormalized.js'
 
 export type QueryOptions = {
   base: string
   store: DatasetCore
   mode: 'local' | 'remote'
+  prefixes?: { [key: string]: string }
   asCount: boolean
   fetch?: (typeof globalThis)['fetch']
 }
 
-const flatten = (obj: Term) => {
-  const result = Object.create(obj)
-  for (const key in result) {
-    // eslint-disable-next-line no-self-assign
-    result[key] = result[key]
+const flatten = (obj: Term, context?: JsonLdContextNormalized): string => {
+  if (context) {
+    const compactedIri = context.compactIri(obj.value, true)
+    if (compactedIri !== obj.value) return compactedIri
   }
-  return result
+
+  if (obj.termType === 'NamedNode') {
+    return `<${obj.value}>`
+  }
+
+  if (obj.termType === 'Literal') {
+    return obj.datatype && !xsd('string').equals(obj.datatype)
+      ? `"${obj.value}"^^<${flatten(obj.datatype)}>`
+      : `"${obj.value}"`
+  }
+
+  throw new Error('Could not flatten the RDF term')
 }
 
 export class QueryBuilder<T extends NamedNode[] | number> implements PromiseLike<T> {
   #options: QueryOptions
   #filters: { predicate: Term; object?: Term }[] = []
-  #sorters: { predicate: Term; order: 'ascending' | 'descending' }[] = []
+  #sorters: { predicate: Term; order: 'ASC' | 'DESC' }[] = []
   #paginate: { limit?: number; offset?: number } = {}
   #fetch: (typeof globalThis)['fetch']
 
@@ -38,7 +50,7 @@ export class QueryBuilder<T extends NamedNode[] | number> implements PromiseLike
     return this
   }
 
-  sort(predicate: Term, order: 'ascending' | 'descending' = 'ascending') {
+  sort(predicate: Term, order: 'ASC' | 'DESC' = 'ASC') {
     this.#sorters.push({ predicate, order })
     return this
   }
@@ -108,19 +120,35 @@ export class QueryBuilder<T extends NamedNode[] | number> implements PromiseLike
   }
 
   get url() {
+    const context = new JsonLdContextNormalized(this.#options.prefixes ?? {})
     const query = new URLSearchParams()
-    query.append(
-      'query',
-      JSON.stringify({
-        filters: this.#filters.map((filter) => ({
-          predicate: flatten(filter.predicate),
-          object: filter.object ? flatten(filter.object) : undefined,
-        })),
-        sorters: this.#sorters.map((sorter) => ({ predicate: flatten(sorter.predicate), order: sorter.order })),
-        paginate: this.#paginate,
-        asCount: this.#options.asCount,
-      })
-    )
+
+    if (this.#filters.length) {
+      query.append(
+        'filters',
+        JSON.stringify(
+          this.#filters.map((filter) => [
+            flatten(filter.predicate, context),
+            filter.object ? flatten(filter.object, context) : undefined,
+          ])
+        )
+      )
+    }
+
+    if (this.#sorters.length) {
+      query.append(
+        'sorters',
+        JSON.stringify(this.#sorters.map((sorter) => [flatten(sorter.predicate, context), sorter.order]))
+      )
+    }
+
+    if (this.#options.asCount) {
+      query.append('asCount', JSON.stringify(true))
+    }
+
+    if (this.#paginate.limit || this.#paginate.offset) {
+      query.append('paginate', JSON.stringify(this.#paginate))
+    }
 
     return `${this.#options.base}/api/query?${query.toString()}`
   }

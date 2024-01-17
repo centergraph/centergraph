@@ -30,9 +30,7 @@ export function asResource<T>(promise: PromiseLike<T>, cacheKey: string, subscri
       }
 
       const resourceSignal = signals.get(cacheKey)!
-
       if (subscribeCallback) resourceSignal.subscribe(subscribeCallback)
-
       response = resourceSignal.value
     },
     (err) => {
@@ -91,3 +89,5 @@ export const updateResource = <T>(promise: PromiseLike<T>, cacheKey: string) => 
     resourceCache.delete(cacheKey)
   })
 }
+
+// TODO Add an insertResource or something similar which should acts on an SDK.create()
