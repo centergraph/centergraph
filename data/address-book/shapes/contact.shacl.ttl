@@ -36,13 +36,13 @@
     sh:datatype xsd:date ;
   ];
 
-  # sh:property [
-  #   sh:name "Address"@en ;
-  #   sh:path schema:address ;
-  #   sh:maxCount 3 ;
-  #   sh:node <addressShape> ;
-  #   sh:nodeKind sh:BlankNode ;
-  # ];
+  sh:property [
+    sh:name "Address"@en ;
+    sh:path schema:address ;
+    sh:maxCount 3 ;
+    sh:node <addressShape> ;
+    sh:nodeKind sh:BlankNode ;
+  ];
 
 .
 

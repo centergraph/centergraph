@@ -47,9 +47,7 @@ const loadData = async (settings: Settings, dataset: DatasetCore, dataUrl?: stri
   }
 
   subject = subject ? subject : dataUrl
-
   if (!subject) subject = ''
-
   return grapoi({ dataset, factory: DataFactory, term: DataFactory.namedNode(subject) })
 }
 
@@ -61,8 +59,8 @@ const createShaclRendererResource = (
 ) => {
   const cid = JSON.stringify([shaclShapesUrl, dataUrl, subject, settings.mode].join(':'))
 
-  const dataDataset = datasetFactory.dataset()
-  const shaclDataset = datasetFactory.dataset()
+  const dataDataset = settings.initialDataDataset ?? datasetFactory.dataset()
+  const shaclDataset = settings.initialShaclDataset ?? datasetFactory.dataset()
   return asResource(
     Promise.all([
       loadShaclShapes(settings, shaclDataset, shaclShapesUrl),
@@ -95,6 +93,9 @@ export default function ShaclRenderer({
 
   const matchedPointer = shaclRoot.ptrs.find((ptr: GrapoiPointer) => ptr.term.value === shaclShapesUrl)
   shaclRoot.ptrs = [matchedPointer ?? shaclRoot.ptrs[0]]
+
+  if (!shaclRoot.ptrs.filter(Boolean).length) throw new Error('Did not find a SHACL shape')
+
   const formChildren = (
     <FormLevel isRoot={true} shaclPointer={shaclRoot} dataPointer={dataPointer} settings={settings} />
   )

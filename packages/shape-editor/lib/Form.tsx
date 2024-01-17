@@ -23,21 +23,23 @@ export default function Form({
   const [ready, setReady] = useState<boolean>(false)
 
   const label =
-    item.pointer.out([sh('name'), rdfs('label'), schema('name')]).values[0] ?? item.pointer?.term.id.split(/\/|#/g).pop() ?? 'undefined'
+    item.pointer.out([sh('name'), rdfs('label'), schema('name')]).values[0] ??
+    item.pointer?.term.id.split(/\/|#/g).pop() ??
+    'undefined'
 
   useEffect(() => {
     const quads = item.pointer.distinct().out().quads()
     const settings = defaultSettings('edit')
     registerCoreWidgets(settings)
 
-    settings.dataDataset = datasetFactory.dataset(quads)
+    settings.initialDataDataset = datasetFactory.dataset(quads)
     setSettings(settings)
 
     const widgetMeta = widgetMetas?.find((widgetMeta) => widgetMeta.iri.equals(item.pointer.out(dash('editor')).term))
 
     if (widgetMeta?.formParts?.length) {
       const shaclDataset = datasetFactory.dataset()
-      settings.shaclDataset = shaclDataset
+      settings.initialShaclDataset = shaclDataset
       const parser = new Parser()
 
       fetch(`./shapes/${item.type}.shacl.ttl`)

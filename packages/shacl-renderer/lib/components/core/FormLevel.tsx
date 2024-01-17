@@ -14,7 +14,7 @@ type FormLevelProps = {
 }
 
 export default function FormLevel({ shaclPointer, settings, dataPointer, children, isRoot }: FormLevelProps) {
-  const shaclProperties = [...shaclPointer.out(sh('property'))]
+  const shaclProperties = [...(shaclPointer.out(sh('property')) ?? [])]
 
   const shaclPropertyWidgets = [...shaclProperties]
     .map((shaclProperty) => {
