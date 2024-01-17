@@ -1,6 +1,6 @@
 import { QueryBuilder } from '@centergraph/shared/lib/QueryBuilder'
 import { NamedNode } from '@rdfjs/types'
-import { asResource } from './asResource'
+import { asResource } from '../core/asResource'
 
 export class ResourceableQueryBuilder<T extends NamedNode[] | number> extends QueryBuilder<T> {
   /**

@@ -1,5 +1,5 @@
 import { signal, Signal } from '@preact-signals/safe-react'
-import { simpleCache } from './CenterGraph'
+import { simpleCache } from '../CenterGraph'
 
 const resourceCache = new Map()
 const signals: Map<string, Signal> = new Map()

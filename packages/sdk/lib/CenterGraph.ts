@@ -1,16 +1,17 @@
 import datasetFactory from '@rdfjs/dataset'
 import { DatasetCore, NamedNode } from '@rdfjs/types'
 import * as namespaces from '@centergraph/shared/lib/namespaces'
-import { populateStore } from './populateStore'
+import { populateStore } from './core/populateStore'
 import { D2LFetch } from 'd2l-fetch'
 import { fetchDedupe } from 'd2l-fetch-dedupe'
 import { defaultSettings } from '@centergraph/shacl-renderer/lib/defaultSettings'
 import { registerCoreWidgets } from '@centergraph/shacl-renderer/lib/helpers/registerWidgets'
 import type { ShaclRendererProps } from '@centergraph/shacl-renderer'
-import { GetApiRequest } from './GetApiRequest'
-import { FolderApiRequest } from './FolderApiRequest'
-import { ResourceableQueryBuilder } from './ResourceableQueryBuilder'
+import { GetApiRequest } from './requests/GetApiRequest'
+import { FolderApiRequest } from './requests/FolderApiRequest'
+import { ResourceableQueryBuilder } from './requests/ResourceableQueryBuilder'
 import { D2LFetchSimpleCache } from 'd2l-fetch-simple-cache/src/d2lfetch-simple-cache.js'
+import { writeTurtle } from './core/writeTurtle'
 
 export type CenterGraphOptions = {
   base: string
@@ -28,6 +29,8 @@ export class CenterGraph {
   #d2LFetch: typeof D2LFetch
   public shaclRendererSettings: ShaclRendererProps['settings']
 
+  #fetch: (typeof globalThis)['fetch']
+
   namespaces = namespaces
 
   constructor(options: CenterGraphOptions) {
@@ -39,7 +42,8 @@ export class CenterGraph {
 
     this.shaclRendererSettings = this.options.shaclRendererSettings ?? defaultSettings('view')
     registerCoreWidgets(this.shaclRendererSettings)
-    this.shaclRendererSettings.fetch = (input, init) => this.#d2LFetch.fetch(input, init)
+    this.#fetch = (input, init) => this.#d2LFetch.fetch(input, init)
+    this.shaclRendererSettings.fetch = this.#fetch
   }
 
   populateStore() {
@@ -49,21 +53,25 @@ export class CenterGraph {
   get<T>(path: string | NamedNode) {
     if (typeof path !== 'string') path = path.value
     const url = path.includes('http://') || path.includes('https://') ? path : this.options.base + path
-    return new GetApiRequest<T>((input, init) => this.#d2LFetch.fetch(input, init), this.options.base, url)
+    return new GetApiRequest<T>(this.#fetch, this.options.base, url)
   }
 
-  create(path: string | NamedNode, dataset: DatasetCore) {
+  async create(path: string | NamedNode, dataset: DatasetCore) {
     if (typeof path !== 'string') path = path.value
     const iri = this.options.base + path
-
-    console.log(iri, [...dataset])
+    const turtle = await writeTurtle([...dataset])
+    const result = await this.#fetch(iri, {
+      method: 'PUT',
+      body: turtle,
+    }).then((response) => response.text())
+    console.log(result)
   }
 
   getFolder(path: string | NamedNode) {
     if (typeof path !== 'string') path = path.value
     if (!path.endsWith('/')) throw new Error('The path must end with a slash')
     const url = path.includes('http://') || path.includes('https://') ? path : this.options.base + path
-    return new FolderApiRequest((input, init) => this.#d2LFetch.fetch(input, init), url)
+    return new FolderApiRequest(this.#fetch, url)
   }
 
   get query() {
@@ -72,7 +80,7 @@ export class CenterGraph {
       asCount: false,
       mode: navigator.onLine ? 'remote' : 'local',
       store: this.#store,
-      fetch: (input, init) => this.#d2LFetch.fetch(input, init),
+      fetch: this.#fetch,
     })
   }
 
@@ -82,7 +90,7 @@ export class CenterGraph {
       asCount: true,
       mode: navigator.onLine ? 'remote' : 'local',
       store: this.#store,
-      fetch: (input, init) => this.#d2LFetch.fetch(input, init),
+      fetch: this.#fetch,
     })
   }
 

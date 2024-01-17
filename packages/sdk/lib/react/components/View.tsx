@@ -1,8 +1,8 @@
 import { useContext } from 'react'
 import ShaclRenderer from '@centergraph/shacl-renderer'
-import { GetApiRequest } from '../../GetApiRequest'
+import { GetApiRequest } from '../../requests/GetApiRequest'
 import { centerGraphContext } from '../context'
-import { asResource } from '@centergraph/sdk/lib/asResource'
+import { asResource } from '@centergraph/sdk/lib/core/asResource'
 import '@centergraph/shacl-renderer/lib/style.css'
 import { Suspense } from '@preact-signals/safe-react/react'
 

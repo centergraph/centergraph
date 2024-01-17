@@ -10,7 +10,7 @@ import { preloadWidgets } from './helpers/preloadWidgets'
 import './style.css'
 import { DatasetCore } from '@rdfjs/types'
 import { state } from './context/state'
-import { asResource } from '@centergraph/sdk/lib/asResource'
+import { asResource } from '@centergraph/sdk/lib/core/asResource'
 
 export type ShaclRendererProps = {
   settings: Settings

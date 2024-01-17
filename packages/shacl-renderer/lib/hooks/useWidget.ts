@@ -1,7 +1,7 @@
 import { sh } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
 import { Settings } from '@centergraph/shacl-renderer/lib/types'
 import { getBestWidget } from '@centergraph/shacl-renderer/lib/helpers/getBestWidget'
-import { asResource } from '@centergraph/sdk/lib/asResource'
+import { asResource } from '@centergraph/sdk/lib/core/asResource'
 
 export const widgetCache = new Map()
 

@@ -7,7 +7,7 @@ import { ldp } from '@centergraph/shared/lib/namespaces'
 import '@centergraph/shacl-renderer'
 import grapoi from 'grapoi'
 import { NamedNode } from '@rdfjs/types'
-import { asResource } from './asResource'
+import { asResource } from '../core/asResource'
 
 export class FolderApiRequest extends AbstractApiRequest<NamedNode[]> {
   url: string

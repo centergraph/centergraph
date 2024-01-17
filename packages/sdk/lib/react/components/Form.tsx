@@ -1,9 +1,9 @@
 import { ReactNode, useContext } from 'react'
 import ShaclRenderer from '@centergraph/shacl-renderer'
 import '@centergraph/shacl-renderer/lib/style.css'
-import { GetApiRequest } from '../../GetApiRequest'
+import { GetApiRequest } from '../../requests/GetApiRequest'
 import { centerGraphContext } from '../context'
-import { asResource } from '@centergraph/sdk/lib/asResource'
+import { asResource } from '@centergraph/sdk/lib/core/asResource'
 import { Suspense } from '@preact-signals/safe-react/react'
 
 type FormProps = {

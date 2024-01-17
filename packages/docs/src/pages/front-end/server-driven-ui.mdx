@@ -1,0 +1,21 @@
+---
+title: 'Server Driven UI'
+layout: ../../layouts/html.astro
+---
+
+CenterGraph has a server driven UI at it's core. It enables you to define how forms and views look via the shape editor. The definitions of those views and forms are saved as SHACL in the database.
+The widgets that are used are modeled after [DASH](https://datashapes.org/forms.html).
+
+## How does it work?
+
+- There are three parts:
+  - **Your app** with declared widgets (and the core widgets)
+  - **The SHACL shape**, the definition of the view / form
+  - **The shape editor**
+    - The Shape Editor is a React element which you can load into a admin app. It would also be possible to have an admin section in the main app. It is still to be determined how to do this in the demo app. You can however look at the shape editor demo at http://localhost:8003.
+
+Inside the SHACL shape there can be a `se:app` predicate which should have an object like: `<http://localhost:8001/>`. This tells the shape editor when it loads it should get widget meta data from that application at localhost:8001. Every widget declared in the app will be available in shape editor. This means that you can have app specific views and forms. When a SHACL shape is loaded in an app that does not have the required widget he scoring algorythm kicks in and will find the best widget for that context.
+
+## What is a widget?
+
+## How to add a widget for the forms or views?

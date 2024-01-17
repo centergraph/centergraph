@@ -7,10 +7,10 @@ import { sh } from '@centergraph/shared/lib/namespaces'
 import '@centergraph/shacl-renderer'
 import grapoi from 'grapoi'
 import { quadsToShapeObject } from '@centergraph/shared/lib/quadsToShapeObject'
-import { asResource, updateResource, deleteResource } from './asResource'
+import { asResource, updateResource, deleteResource } from '../core/asResource'
 import { DatasetCore } from '@rdfjs/types'
-import { simpleCache } from './CenterGraph'
-import { writeTurtle } from './writeTurtle'
+import { simpleCache } from '../CenterGraph'
+import { writeTurtle } from '../core/writeTurtle'
 
 export class GetApiRequest<T> extends AbstractApiRequest<T> {
   url: string
