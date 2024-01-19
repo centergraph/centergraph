@@ -1,0 +1,12 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> schema:givenName "Jessie";
+    schema:familyName "Wolff";
+    schema:birthDate "1955-07-23"^^xsd:date;
+    schema:address _:b4.
+_:b4 schema:streetAddress "Amari Wells";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Rhiannonburgh";
+    schema:postalCode "59715";
+    schema:addressCountry "Greece".

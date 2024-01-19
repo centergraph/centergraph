@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Manuel";
+    schema:familyName "Welch";
+    schema:birthDate "1944-07-24"^^xsd:date;
+    schema:address _:b316.
+_:b316 a schema:PostalAddress;
+    schema:streetAddress "Beier Road";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Lake Jefferey";
+    schema:postalCode "44075-6046";
+    schema:addressCountry "Guinea".

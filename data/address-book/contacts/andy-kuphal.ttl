@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andy";
+    schema:familyName "Kuphal";
+    schema:birthDate "1994-12-25"^^xsd:date;
+    schema:address _:b273.
+_:b273 a schema:PostalAddress;
+    schema:streetAddress "Emard Parkway";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Juanitaberg";
+    schema:postalCode "25952-6356";
+    schema:addressCountry "Niger".

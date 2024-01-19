@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tracey";
+    schema:familyName "Berge";
+    schema:birthDate "1944-10-05"^^xsd:date;
+    schema:address _:b11.
+_:b11 a schema:PostalAddress;
+    schema:streetAddress "Marilie Junction";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Hesterland";
+    schema:postalCode "68272-4362";
+    schema:addressCountry "South Sudan".

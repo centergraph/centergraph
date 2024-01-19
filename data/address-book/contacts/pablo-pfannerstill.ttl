@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pablo";
+    schema:familyName "Pfannerstill";
+    schema:birthDate "1947-08-31"^^xsd:date;
+    schema:address _:b895.
+_:b895 a schema:PostalAddress;
+    schema:streetAddress "Division Street";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Fort Rodrickbury";
+    schema:postalCode "09816-2212";
+    schema:addressCountry "Vietnam".

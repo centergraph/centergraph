@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Russell";
+    schema:familyName "Kutch";
+    schema:birthDate "1947-08-23"^^xsd:date;
+    schema:address _:b920.
+_:b920 a schema:PostalAddress;
+    schema:streetAddress "Carmella Square";
+    schema:addressRegion "New York";
+    schema:addressLocality "Kesslerborough";
+    schema:postalCode "32665";
+    schema:addressCountry "New Zealand".

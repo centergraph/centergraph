@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ramon";
+    schema:familyName "Padberg";
+    schema:birthDate "1958-03-15"^^xsd:date;
+    schema:address _:b537.
+_:b537 a schema:PostalAddress;
+    schema:streetAddress "Mohamed Haven";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Reinholdburgh";
+    schema:postalCode "61327";
+    schema:addressCountry "Dominica".

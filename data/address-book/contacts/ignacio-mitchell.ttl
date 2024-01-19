@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ignacio";
+    schema:familyName "Mitchell";
+    schema:birthDate "2003-04-05"^^xsd:date;
+    schema:address _:b227.
+_:b227 a schema:PostalAddress;
+    schema:streetAddress "Concepcion Harbors";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "New Bradley";
+    schema:postalCode "91000-9503";
+    schema:addressCountry "Venezuela".

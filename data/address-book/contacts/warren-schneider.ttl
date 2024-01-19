@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Warren";
+    schema:familyName "Schneider";
+    schema:birthDate "1994-07-09"^^xsd:date;
+    schema:address _:b767.
+_:b767 a schema:PostalAddress;
+    schema:streetAddress "Manor Road";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Port Joanneshire";
+    schema:postalCode "11597";
+    schema:addressCountry "Uruguay".

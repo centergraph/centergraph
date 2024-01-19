@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lola";
+    schema:familyName "Botsford";
+    schema:birthDate "1953-03-05"^^xsd:date;
+    schema:address _:b834.
+_:b834 a schema:PostalAddress;
+    schema:streetAddress "Tremblay Radial";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "West Lisandro";
+    schema:postalCode "68375-2156";
+    schema:addressCountry "Martinique".

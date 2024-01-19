@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doris";
+    schema:familyName "Gutkowski";
+    schema:birthDate "1980-11-10"^^xsd:date;
+    schema:address _:b224.
+_:b224 a schema:PostalAddress;
+    schema:streetAddress "St Mary's Close";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Celiafurt";
+    schema:postalCode "65822";
+    schema:addressCountry "Micronesia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jimmy";
+    schema:familyName "Ruecker";
+    schema:birthDate "2000-01-18"^^xsd:date;
+    schema:address _:b59.
+_:b59 a schema:PostalAddress;
+    schema:streetAddress "Elm Close";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "New Ephraim";
+    schema:postalCode "43900-6041";
+    schema:addressCountry "Djibouti".

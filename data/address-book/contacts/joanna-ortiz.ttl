@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joanna";
+    schema:familyName "Ortiz";
+    schema:birthDate "1977-05-16"^^xsd:date;
+    schema:address _:b518.
+_:b518 a schema:PostalAddress;
+    schema:streetAddress "Somerset Road";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Fort Nashshire";
+    schema:postalCode "10509-1573";
+    schema:addressCountry "Comoros".

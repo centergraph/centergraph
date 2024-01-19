@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jack";
+    schema:familyName "Bartoletti";
+    schema:birthDate "2001-10-22"^^xsd:date;
+    schema:address _:b226.
+_:b226 a schema:PostalAddress;
+    schema:streetAddress "N East Street";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Fort Aleen";
+    schema:postalCode "13645";
+    schema:addressCountry "Belize".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mattie";
+    schema:familyName "Effertz";
+    schema:birthDate "1945-07-11"^^xsd:date;
+    schema:address _:b848.
+_:b848 a schema:PostalAddress;
+    schema:streetAddress "Prospect Place";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Bechtelarberg";
+    schema:postalCode "05873-0811";
+    schema:addressCountry "Virgin Islands, U.S.".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andrew";
+    schema:familyName "Kirlin";
+    schema:birthDate "1963-07-08"^^xsd:date;
+    schema:address _:b692.
+_:b692 a schema:PostalAddress;
+    schema:streetAddress "Russell Well";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Fort Daphnee";
+    schema:postalCode "47597";
+    schema:addressCountry "North Macedonia".

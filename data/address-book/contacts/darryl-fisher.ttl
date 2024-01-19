@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darryl";
+    schema:familyName "Fisher";
+    schema:birthDate "1980-09-11"^^xsd:date;
+    schema:address _:b354.
+_:b354 a schema:PostalAddress;
+    schema:streetAddress "Aliyah Shoals";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Suffolk";
+    schema:postalCode "44082-5808";
+    schema:addressCountry "Uzbekistan".

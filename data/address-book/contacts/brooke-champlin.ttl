@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brooke";
+    schema:familyName "Champlin";
+    schema:birthDate "1970-07-27"^^xsd:date;
+    schema:address _:b985.
+_:b985 a schema:PostalAddress;
+    schema:streetAddress "McClure Corners";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "East Leonberg";
+    schema:postalCode "58531";
+    schema:addressCountry "Slovakia".

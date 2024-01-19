@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Felix";
+    schema:familyName "Lebsack";
+    schema:birthDate "1951-07-23"^^xsd:date;
+    schema:address _:b196.
+_:b196 a schema:PostalAddress;
+    schema:streetAddress "E Broadway Street";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Fort Brittany";
+    schema:postalCode "44225";
+    schema:addressCountry "Guam".

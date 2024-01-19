@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Angelo";
+    schema:familyName "Parker";
+    schema:birthDate "1957-01-01"^^xsd:date;
+    schema:address _:b324.
+_:b324 a schema:PostalAddress;
+    schema:streetAddress "Abernathy Heights";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Spring";
+    schema:postalCode "10577-7503";
+    schema:addressCountry "Western Sahara".

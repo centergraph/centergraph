@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brendan";
+    schema:familyName "Glover";
+    schema:birthDate "1971-01-09"^^xsd:date;
+    schema:address _:b336.
+_:b336 a schema:PostalAddress;
+    schema:streetAddress "Mckayla Run";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "New Nicole";
+    schema:postalCode "98466-3260";
+    schema:addressCountry "Tunisia".

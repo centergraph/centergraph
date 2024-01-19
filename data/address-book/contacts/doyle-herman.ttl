@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doyle";
+    schema:familyName "Herman";
+    schema:birthDate "2000-08-05"^^xsd:date;
+    schema:address _:b651.
+_:b651 a schema:PostalAddress;
+    schema:streetAddress "Funk Forks";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "East Domingo";
+    schema:postalCode "93055";
+    schema:addressCountry "Cook Islands".

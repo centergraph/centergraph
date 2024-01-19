@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Agnes";
+    schema:familyName "Bosco";
+    schema:birthDate "1994-10-21"^^xsd:date;
+    schema:address _:b609.
+_:b609 a schema:PostalAddress;
+    schema:streetAddress "Schmidt Rapids";
+    schema:addressRegion "New York";
+    schema:addressLocality "Burlington";
+    schema:postalCode "97499-8181";
+    schema:addressCountry "Lao People's Democratic Republic".

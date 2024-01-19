@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laurence";
+    schema:familyName "Murphy";
+    schema:birthDate "1965-08-18"^^xsd:date;
+    schema:address _:b622.
+_:b622 a schema:PostalAddress;
+    schema:streetAddress "Harvey Walk";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "New Dayneton";
+    schema:postalCode "29681-4580";
+    schema:addressCountry "Tuvalu".

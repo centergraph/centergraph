@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alex";
+    schema:familyName "Hyatt";
+    schema:birthDate "1980-03-13"^^xsd:date;
+    schema:address _:b778.
+_:b778 a schema:PostalAddress;
+    schema:streetAddress "Waldo Forest";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Port Alvenachester";
+    schema:postalCode "38711-0142";
+    schema:addressCountry "Australia".

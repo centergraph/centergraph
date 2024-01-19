@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sadie";
+    schema:familyName "Steuber";
+    schema:birthDate "1964-09-28"^^xsd:date;
+    schema:address _:b169.
+_:b169 a schema:PostalAddress;
+    schema:streetAddress "Nader Green";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Caleighton";
+    schema:postalCode "36715";
+    schema:addressCountry "Oman".

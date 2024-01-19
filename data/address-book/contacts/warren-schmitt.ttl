@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Warren";
+    schema:familyName "Schmitt";
+    schema:birthDate "1969-09-01"^^xsd:date;
+    schema:address _:b32.
+_:b32 a schema:PostalAddress;
+    schema:streetAddress "Maci Heights";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Krisstead";
+    schema:postalCode "45639";
+    schema:addressCountry "Lithuania".

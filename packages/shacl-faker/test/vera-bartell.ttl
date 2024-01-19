@@ -1,0 +1,12 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> schema:givenName "Vera";
+    schema:familyName "Bartell";
+    schema:birthDate "1945-12-05"^^xsd:date;
+    schema:address _:b1.
+_:b1 schema:streetAddress "N Harrison Street";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "West Rosendo";
+    schema:postalCode "44317";
+    schema:addressCountry "Madagascar".

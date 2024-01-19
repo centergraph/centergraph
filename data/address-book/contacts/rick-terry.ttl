@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rick";
+    schema:familyName "Terry";
+    schema:birthDate "1944-08-23"^^xsd:date;
+    schema:address _:b722.
+_:b722 a schema:PostalAddress;
+    schema:streetAddress "Chestnut Street";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Jabarihaven";
+    schema:postalCode "34001-7540";
+    schema:addressCountry "Georgia".

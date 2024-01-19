@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andre";
+    schema:familyName "Franey";
+    schema:birthDate "1999-04-20"^^xsd:date;
+    schema:address _:b8.
+_:b8 a schema:PostalAddress;
+    schema:streetAddress "Balistreri Alley";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Devencester";
+    schema:postalCode "41707-3156";
+    schema:addressCountry "Costa Rica".

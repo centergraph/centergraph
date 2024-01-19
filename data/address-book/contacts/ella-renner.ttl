@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ella";
+    schema:familyName "Renner";
+    schema:birthDate "1996-02-06"^^xsd:date;
+    schema:address _:b566.
+_:b566 a schema:PostalAddress;
+    schema:streetAddress "Willow Grove";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Mitchellside";
+    schema:postalCode "83093-2650";
+    schema:addressCountry "Georgia".

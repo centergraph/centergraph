@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hubert";
+    schema:familyName "Carroll";
+    schema:birthDate "1992-03-04"^^xsd:date;
+    schema:address _:b396.
+_:b396 a schema:PostalAddress;
+    schema:streetAddress "Parisian Isle";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Hagenesstead";
+    schema:postalCode "36272";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

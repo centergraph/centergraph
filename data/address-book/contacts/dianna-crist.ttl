@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dianna";
+    schema:familyName "Crist";
+    schema:birthDate "1959-02-17"^^xsd:date;
+    schema:address _:b807.
+_:b807 a schema:PostalAddress;
+    schema:streetAddress "Parker Gardens";
+    schema:addressRegion "California";
+    schema:addressLocality "Casimerburgh";
+    schema:postalCode "13924";
+    schema:addressCountry "India".

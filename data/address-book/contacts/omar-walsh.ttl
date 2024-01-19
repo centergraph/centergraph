@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Omar";
+    schema:familyName "Walsh";
+    schema:birthDate "1961-09-16"^^xsd:date;
+    schema:address _:b614.
+_:b614 a schema:PostalAddress;
+    schema:streetAddress "Davin Keys";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "West Erickashire";
+    schema:postalCode "34730";
+    schema:addressCountry "Faroe Islands".

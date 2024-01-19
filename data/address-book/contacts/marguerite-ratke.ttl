@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marguerite";
+    schema:familyName "Ratke";
+    schema:birthDate "1975-11-24"^^xsd:date;
+    schema:address _:b222.
+_:b222 a schema:PostalAddress;
+    schema:streetAddress "Jacobi Village";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Hipolitochester";
+    schema:postalCode "48389-2246";
+    schema:addressCountry "United States Minor Outlying Islands".

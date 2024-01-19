@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Scott";
+    schema:familyName "Jacobi";
+    schema:birthDate "2004-06-04"^^xsd:date;
+    schema:address _:b564.
+_:b564 a schema:PostalAddress;
+    schema:streetAddress "Hilll Gardens";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Murfreesboro";
+    schema:postalCode "46718-2964";
+    schema:addressCountry "Republic of Korea".

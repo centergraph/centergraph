@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kim";
+    schema:familyName "Emard";
+    schema:birthDate "1961-09-26"^^xsd:date;
+    schema:address _:b37.
+_:b37 a schema:PostalAddress;
+    schema:streetAddress "Woodlands";
+    schema:addressRegion "Texas";
+    schema:addressLocality "South Cesar";
+    schema:postalCode "98259-4797";
+    schema:addressCountry "Guinea".

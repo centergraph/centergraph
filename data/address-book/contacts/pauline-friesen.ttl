@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pauline";
+    schema:familyName "Friesen";
+    schema:birthDate "1981-08-16"^^xsd:date;
+    schema:address _:b823.
+_:b823 a schema:PostalAddress;
+    schema:streetAddress "Upton Center";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Terryberg";
+    schema:postalCode "38937";
+    schema:addressCountry "Cuba".

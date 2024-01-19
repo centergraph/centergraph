@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rudy";
+    schema:familyName "Fay";
+    schema:birthDate "1984-10-04"^^xsd:date;
+    schema:address _:b750.
+_:b750 a schema:PostalAddress;
+    schema:streetAddress "Douglas Meadow";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Carloston";
+    schema:postalCode "04537";
+    schema:addressCountry "Honduras".

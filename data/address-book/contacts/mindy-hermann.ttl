@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mindy";
+    schema:familyName "Hermann";
+    schema:birthDate "1954-09-12"^^xsd:date;
+    schema:address _:b55.
+_:b55 a schema:PostalAddress;
+    schema:streetAddress "Garry Rapids";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Kelsiview";
+    schema:postalCode "39219";
+    schema:addressCountry "Albania".

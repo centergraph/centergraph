@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jonathan";
+    schema:familyName "Schultz";
+    schema:birthDate "1993-02-09"^^xsd:date;
+    schema:address _:b189.
+_:b189 a schema:PostalAddress;
+    schema:streetAddress "Rosemary Stream";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Fort Damaris";
+    schema:postalCode "05029";
+    schema:addressCountry "Saint Martin".

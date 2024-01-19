@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Donnie";
+    schema:familyName "Wisozk";
+    schema:birthDate "1968-10-22"^^xsd:date;
+    schema:address _:b359.
+_:b359 a schema:PostalAddress;
+    schema:streetAddress "Pollich Green";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Kunzeworth";
+    schema:postalCode "71711-7391";
+    schema:addressCountry "Papua New Guinea".

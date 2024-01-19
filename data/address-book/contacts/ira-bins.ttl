@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ira";
+    schema:familyName "Bins";
+    schema:birthDate "1993-05-26"^^xsd:date;
+    schema:address _:b688.
+_:b688 a schema:PostalAddress;
+    schema:streetAddress "E Bridge Street";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Lonniefort";
+    schema:postalCode "27317";
+    schema:addressCountry "Honduras".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eunice";
+    schema:familyName "Lemke";
+    schema:birthDate "1998-11-14"^^xsd:date;
+    schema:address _:b458.
+_:b458 a schema:PostalAddress;
+    schema:streetAddress "Murl Road";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Gilesfort";
+    schema:postalCode "95815";
+    schema:addressCountry "Cook Islands".

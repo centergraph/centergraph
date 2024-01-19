@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Denise";
+    schema:familyName "Kuhic";
+    schema:birthDate "1959-09-25"^^xsd:date;
+    schema:address _:b289.
+_:b289 a schema:PostalAddress;
+    schema:streetAddress "Melyssa Ramp";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Faustoborough";
+    schema:postalCode "63688";
+    schema:addressCountry "Republic of Korea".

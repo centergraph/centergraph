@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Matthew";
+    schema:familyName "Rogahn";
+    schema:birthDate "1971-08-10"^^xsd:date;
+    schema:address _:b756.
+_:b756 a schema:PostalAddress;
+    schema:streetAddress "William Street";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Nienowmouth";
+    schema:postalCode "11190";
+    schema:addressCountry "Curacao".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Judith";
+    schema:familyName "Moen";
+    schema:birthDate "2002-08-02"^^xsd:date;
+    schema:address _:b829.
+_:b829 a schema:PostalAddress;
+    schema:streetAddress "Smitham Throughway";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Considineview";
+    schema:postalCode "49450-4580";
+    schema:addressCountry "Poland".

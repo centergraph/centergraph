@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clifford";
+    schema:familyName "Davis";
+    schema:birthDate "1981-09-12"^^xsd:date;
+    schema:address _:b721.
+_:b721 a schema:PostalAddress;
+    schema:streetAddress "Welch Wall";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Barrowsland";
+    schema:postalCode "75717";
+    schema:addressCountry "Martinique".

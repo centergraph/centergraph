@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Michele";
+    schema:familyName "Dickens";
+    schema:birthDate "1982-04-07"^^xsd:date;
+    schema:address _:b906.
+_:b906 a schema:PostalAddress;
+    schema:streetAddress "W Elm Street";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Jenniferstad";
+    schema:postalCode "67765-6409";
+    schema:addressCountry "Kuwait".

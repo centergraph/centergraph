@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Debra";
+    schema:familyName "Leannon";
+    schema:birthDate "1948-02-25"^^xsd:date;
+    schema:address _:b973.
+_:b973 a schema:PostalAddress;
+    schema:streetAddress "Ervin Mountains";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "West Wardworth";
+    schema:postalCode "44670";
+    schema:addressCountry "Australia".

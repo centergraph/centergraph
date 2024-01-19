@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bruce";
+    schema:familyName "Blanda";
+    schema:birthDate "1974-10-11"^^xsd:date;
+    schema:address _:b188.
+_:b188 a schema:PostalAddress;
+    schema:streetAddress "E 4th Street";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Estherburgh";
+    schema:postalCode "14060";
+    schema:addressCountry "Lesotho".

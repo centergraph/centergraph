@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Boyd";
+    schema:familyName "Goodwin";
+    schema:birthDate "1995-08-27"^^xsd:date;
+    schema:address _:b371.
+_:b371 a schema:PostalAddress;
+    schema:streetAddress "Chapel Road";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Tamiami";
+    schema:postalCode "75357";
+    schema:addressCountry "Seychelles".

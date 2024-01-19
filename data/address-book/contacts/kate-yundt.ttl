@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kate";
+    schema:familyName "Yundt";
+    schema:birthDate "1965-07-25"^^xsd:date;
+    schema:address _:b714.
+_:b714 a schema:PostalAddress;
+    schema:streetAddress "Hilll Cape";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "New Adrian";
+    schema:postalCode "51205";
+    schema:addressCountry "Virgin Islands, U.S.".

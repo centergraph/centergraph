@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rick";
+    schema:familyName "Beatty";
+    schema:birthDate "1975-09-04"^^xsd:date;
+    schema:address _:b524.
+_:b524 a schema:PostalAddress;
+    schema:streetAddress "Edna Motorway";
+    schema:addressRegion "Maine";
+    schema:addressLocality "East Oceanefield";
+    schema:postalCode "65317";
+    schema:addressCountry "Pitcairn Islands".

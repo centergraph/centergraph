@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Yvonne";
+    schema:familyName "Feil";
+    schema:birthDate "2001-04-19"^^xsd:date;
+    schema:address _:b487.
+_:b487 a schema:PostalAddress;
+    schema:streetAddress "Kris Hill";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "New Marcellus";
+    schema:postalCode "39158";
+    schema:addressCountry "Gibraltar".

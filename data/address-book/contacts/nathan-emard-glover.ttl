@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nathan";
+    schema:familyName "Emard-Glover";
+    schema:birthDate "1972-03-16"^^xsd:date;
+    schema:address _:b691.
+_:b691 a schema:PostalAddress;
+    schema:streetAddress "Lempi Mount";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "East Donaldfurt";
+    schema:postalCode "74270";
+    schema:addressCountry "Oman".

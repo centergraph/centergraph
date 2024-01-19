@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorenzo";
+    schema:familyName "Quigley";
+    schema:birthDate "2004-09-30"^^xsd:date;
+    schema:address _:b488.
+_:b488 a schema:PostalAddress;
+    schema:streetAddress "Harrison Avenue";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Hartmannberg";
+    schema:postalCode "40727";
+    schema:addressCountry "Saint Pierre and Miquelon".

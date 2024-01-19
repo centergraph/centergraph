@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nelson";
+    schema:familyName "O'Connell";
+    schema:birthDate "1998-02-16"^^xsd:date;
+    schema:address _:b944.
+_:b944 a schema:PostalAddress;
+    schema:streetAddress "Rebekah Cape";
+    schema:addressRegion "Maine";
+    schema:addressLocality "New Sarahfort";
+    schema:postalCode "50696";
+    schema:addressCountry "Norway".

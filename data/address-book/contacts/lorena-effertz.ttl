@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorena";
+    schema:familyName "Effertz";
+    schema:birthDate "2004-03-01"^^xsd:date;
+    schema:address _:b130.
+_:b130 a schema:PostalAddress;
+    schema:streetAddress "Lind Point";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "East Alfonso";
+    schema:postalCode "11860";
+    schema:addressCountry "Heard Island and McDonald Islands".

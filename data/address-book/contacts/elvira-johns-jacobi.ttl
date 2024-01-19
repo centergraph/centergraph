@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elvira";
+    schema:familyName "Johns-Jacobi";
+    schema:birthDate "1963-03-15"^^xsd:date;
+    schema:address _:b216.
+_:b216 a schema:PostalAddress;
+    schema:streetAddress "E Maple Street";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Balistrerishire";
+    schema:postalCode "45848";
+    schema:addressCountry "Cuba".

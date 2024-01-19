@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Martha";
+    schema:familyName "Blanda";
+    schema:birthDate "2002-10-07"^^xsd:date;
+    schema:address _:b427.
+_:b427 a schema:PostalAddress;
+    schema:streetAddress "E River Road";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "North Asaport";
+    schema:postalCode "96127-6937";
+    schema:addressCountry "Fiji".

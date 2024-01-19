@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gary";
+    schema:familyName "Cormier";
+    schema:birthDate "1977-11-24"^^xsd:date;
+    schema:address _:b788.
+_:b788 a schema:PostalAddress;
+    schema:streetAddress "Morissette Way";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Fort Nichole";
+    schema:postalCode "05544";
+    schema:addressCountry "Liechtenstein".

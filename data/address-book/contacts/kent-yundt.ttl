@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kent";
+    schema:familyName "Yundt";
+    schema:birthDate "1989-07-06"^^xsd:date;
+    schema:address _:b601.
+_:b601 a schema:PostalAddress;
+    schema:streetAddress "Mante Crest";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "West Coltberg";
+    schema:postalCode "07950";
+    schema:addressCountry "Bermuda".

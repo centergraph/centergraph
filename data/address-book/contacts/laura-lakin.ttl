@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laura";
+    schema:familyName "Lakin";
+    schema:birthDate "1996-04-01"^^xsd:date;
+    schema:address _:b862.
+_:b862 a schema:PostalAddress;
+    schema:streetAddress "Adela Pine";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Lake Hubertport";
+    schema:postalCode "74134";
+    schema:addressCountry "Latvia".

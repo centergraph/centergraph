@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leo";
+    schema:familyName "Kilback-Boyle";
+    schema:birthDate "1969-04-07"^^xsd:date;
+    schema:address _:b605.
+_:b605 a schema:PostalAddress;
+    schema:streetAddress "Henry Street";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Kaitlynside";
+    schema:postalCode "07774-6680";
+    schema:addressCountry "Guyana".

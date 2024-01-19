@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Meghan";
+    schema:familyName "Bednar";
+    schema:birthDate "1995-02-06"^^xsd:date;
+    schema:address _:b436.
+_:b436 a schema:PostalAddress;
+    schema:streetAddress "Hackett Views";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Raynorstead";
+    schema:postalCode "21404";
+    schema:addressCountry "Philippines".

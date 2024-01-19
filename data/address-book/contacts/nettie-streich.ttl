@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nettie";
+    schema:familyName "Streich";
+    schema:birthDate "1973-10-20"^^xsd:date;
+    schema:address _:b963.
+_:b963 a schema:PostalAddress;
+    schema:streetAddress "Commercial Street";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Coeur d'Alene";
+    schema:postalCode "38295-7905";
+    schema:addressCountry "Somalia".

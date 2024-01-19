@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Thomas";
+    schema:familyName "Roberts";
+    schema:birthDate "1989-07-03"^^xsd:date;
+    schema:address _:b979.
+_:b979 a schema:PostalAddress;
+    schema:streetAddress "West Avenue";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "New Gennaroview";
+    schema:postalCode "41409-9064";
+    schema:addressCountry "Martinique".

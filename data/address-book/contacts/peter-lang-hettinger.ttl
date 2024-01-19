@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Peter";
+    schema:familyName "Lang-Hettinger";
+    schema:birthDate "1974-01-20"^^xsd:date;
+    schema:address _:b948.
+_:b948 a schema:PostalAddress;
+    schema:streetAddress "Magali Land";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Fort Merlinhaven";
+    schema:postalCode "42637-7005";
+    schema:addressCountry "Canada".

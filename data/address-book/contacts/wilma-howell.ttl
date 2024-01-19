@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wilma";
+    schema:familyName "Howell";
+    schema:birthDate "1945-10-24"^^xsd:date;
+    schema:address _:b46.
+_:b46 a schema:PostalAddress;
+    schema:streetAddress "Skyline Drive";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Normal";
+    schema:postalCode "01053-9186";
+    schema:addressCountry "Azerbaijan".

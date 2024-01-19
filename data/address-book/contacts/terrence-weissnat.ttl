@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terrence";
+    schema:familyName "Weissnat";
+    schema:birthDate "1968-07-23"^^xsd:date;
+    schema:address _:b738.
+_:b738 a schema:PostalAddress;
+    schema:streetAddress "Lyla Flat";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Pfannerstillburgh";
+    schema:postalCode "63611";
+    schema:addressCountry "Malta".

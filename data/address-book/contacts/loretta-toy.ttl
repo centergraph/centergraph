@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Loretta";
+    schema:familyName "Toy";
+    schema:birthDate "1947-03-06"^^xsd:date;
+    schema:address _:b992.
+_:b992 a schema:PostalAddress;
+    schema:streetAddress "N Harrison Street";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "New Addieview";
+    schema:postalCode "71876-6239";
+    schema:addressCountry "Pitcairn Islands".

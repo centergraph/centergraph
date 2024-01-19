@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rhonda";
+    schema:familyName "Kessler";
+    schema:birthDate "1980-03-25"^^xsd:date;
+    schema:address _:b191.
+_:b191 a schema:PostalAddress;
+    schema:streetAddress "Beechwood Avenue";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Schadenland";
+    schema:postalCode "41377-2375";
+    schema:addressCountry "Australia".

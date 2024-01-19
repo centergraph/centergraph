@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lisa";
+    schema:familyName "Purdy";
+    schema:birthDate "1953-07-18"^^xsd:date;
+    schema:address _:b31.
+_:b31 a schema:PostalAddress;
+    schema:streetAddress "Heron Close";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "South Karleeville";
+    schema:postalCode "29462";
+    schema:addressCountry "Ecuador".

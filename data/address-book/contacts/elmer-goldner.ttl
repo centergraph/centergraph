@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elmer";
+    schema:familyName "Goldner";
+    schema:birthDate "1993-10-09"^^xsd:date;
+    schema:address _:b982.
+_:b982 a schema:PostalAddress;
+    schema:streetAddress "Kutch Mill";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Shannaland";
+    schema:postalCode "02880";
+    schema:addressCountry "Antigua and Barbuda".

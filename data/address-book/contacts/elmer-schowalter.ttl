@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elmer";
+    schema:familyName "Schowalter";
+    schema:birthDate "1946-12-16"^^xsd:date;
+    schema:address _:b633.
+_:b633 a schema:PostalAddress;
+    schema:streetAddress "Herta Wall";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Elizabeth";
+    schema:postalCode "06835";
+    schema:addressCountry "Curacao".

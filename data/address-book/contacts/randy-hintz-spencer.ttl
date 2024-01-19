@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Randy";
+    schema:familyName "Hintz-Spencer";
+    schema:birthDate "1970-09-02"^^xsd:date;
+    schema:address _:b634.
+_:b634 a schema:PostalAddress;
+    schema:streetAddress "Chelsey Ports";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Port Art";
+    schema:postalCode "51808-8298";
+    schema:addressCountry "Ghana".

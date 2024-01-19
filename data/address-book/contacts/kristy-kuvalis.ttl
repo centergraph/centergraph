@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristy";
+    schema:familyName "Kuvalis";
+    schema:birthDate "1951-07-09"^^xsd:date;
+    schema:address _:b149.
+_:b149 a schema:PostalAddress;
+    schema:streetAddress "Garry Cape";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Port Janelle";
+    schema:postalCode "20186";
+    schema:addressCountry "United Arab Emirates".

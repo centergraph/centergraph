@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Damon";
+    schema:familyName "Ernser";
+    schema:birthDate "1959-11-21"^^xsd:date;
+    schema:address _:b625.
+_:b625 a schema:PostalAddress;
+    schema:streetAddress "McDermott Trace";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Jaimemouth";
+    schema:postalCode "13707";
+    schema:addressCountry "Kenya".

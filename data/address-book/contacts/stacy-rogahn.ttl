@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stacy";
+    schema:familyName "Rogahn";
+    schema:birthDate "1956-03-27"^^xsd:date;
+    schema:address _:b954.
+_:b954 a schema:PostalAddress;
+    schema:streetAddress "Leannon Pines";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Fontana";
+    schema:postalCode "87494-8253";
+    schema:addressCountry "Guyana".

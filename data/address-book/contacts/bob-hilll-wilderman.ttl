@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bob";
+    schema:familyName "Hilll-Wilderman";
+    schema:birthDate "2004-05-09"^^xsd:date;
+    schema:address _:b465.
+_:b465 a schema:PostalAddress;
+    schema:streetAddress "Cromwell Road";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Kearny";
+    schema:postalCode "85825-3503";
+    schema:addressCountry "Myanmar".

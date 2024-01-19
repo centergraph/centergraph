@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Anita";
+    schema:familyName "Morar";
+    schema:birthDate "1985-11-19"^^xsd:date;
+    schema:address _:b418.
+_:b418 a schema:PostalAddress;
+    schema:streetAddress "Schaden Tunnel";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "North Lowellbury";
+    schema:postalCode "75549-6314";
+    schema:addressCountry "Australia".

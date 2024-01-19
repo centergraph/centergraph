@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Toby";
+    schema:familyName "Halvorson";
+    schema:birthDate "1947-08-31"^^xsd:date;
+    schema:address _:b960.
+_:b960 a schema:PostalAddress;
+    schema:streetAddress "Schiller Circle";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Lakinworth";
+    schema:postalCode "95574-6994";
+    schema:addressCountry "Kyrgyz Republic".

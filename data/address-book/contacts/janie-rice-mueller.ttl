@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janie";
+    schema:familyName "Rice-Mueller";
+    schema:birthDate "1976-03-22"^^xsd:date;
+    schema:address _:b170.
+_:b170 a schema:PostalAddress;
+    schema:streetAddress "Easton Estates";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Heathcoteburgh";
+    schema:postalCode "21458-2270";
+    schema:addressCountry "Bulgaria".

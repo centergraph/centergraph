@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marilyn";
+    schema:familyName "Balistreri";
+    schema:birthDate "1999-04-20"^^xsd:date;
+    schema:address _:b540.
+_:b540 a schema:PostalAddress;
+    schema:streetAddress "Hertha Loop";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Fort Magdalena";
+    schema:postalCode "12514-9028";
+    schema:addressCountry "Western Sahara".

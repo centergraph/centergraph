@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nina";
+    schema:familyName "Conn";
+    schema:birthDate "1962-06-08"^^xsd:date;
+    schema:address _:b95.
+_:b95 a schema:PostalAddress;
+    schema:streetAddress "Somerset Road";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Schultzborough";
+    schema:postalCode "51496";
+    schema:addressCountry "Libyan Arab Jamahiriya".

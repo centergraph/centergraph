@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeanne";
+    schema:familyName "Treutel";
+    schema:birthDate "1974-07-06"^^xsd:date;
+    schema:address _:b727.
+_:b727 a schema:PostalAddress;
+    schema:streetAddress "Russel Inlet";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Coachella";
+    schema:postalCode "23086-1009";
+    schema:addressCountry "Somalia".

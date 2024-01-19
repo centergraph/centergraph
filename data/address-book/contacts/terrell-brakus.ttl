@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terrell";
+    schema:familyName "Brakus";
+    schema:birthDate "1968-11-04"^^xsd:date;
+    schema:address _:b974.
+_:b974 a schema:PostalAddress;
+    schema:streetAddress "Domenica Lock";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Sagechester";
+    schema:postalCode "66409";
+    schema:addressCountry "Bosnia and Herzegovina".

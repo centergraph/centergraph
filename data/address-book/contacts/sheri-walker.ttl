@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sheri";
+    schema:familyName "Walker";
+    schema:birthDate "1947-08-13"^^xsd:date;
+    schema:address _:b299.
+_:b299 a schema:PostalAddress;
+    schema:streetAddress "Abbott Turnpike";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "West Clotilde";
+    schema:postalCode "95038";
+    schema:addressCountry "Turks and Caicos Islands".

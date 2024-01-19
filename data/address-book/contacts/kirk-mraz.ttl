@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kirk";
+    schema:familyName "Mraz";
+    schema:birthDate "1997-12-24"^^xsd:date;
+    schema:address _:b445.
+_:b445 a schema:PostalAddress;
+    schema:streetAddress "Brook Lakes";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Wardfield";
+    schema:postalCode "68366";
+    schema:addressCountry "Belize".

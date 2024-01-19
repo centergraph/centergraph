@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ricardo";
+    schema:familyName "McCullough";
+    schema:birthDate "1960-05-14"^^xsd:date;
+    schema:address _:b686.
+_:b686 a schema:PostalAddress;
+    schema:streetAddress "Birch Road";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Oniefield";
+    schema:postalCode "58725";
+    schema:addressCountry "Kyrgyz Republic".

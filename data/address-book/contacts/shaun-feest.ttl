@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shaun";
+    schema:familyName "Feest";
+    schema:birthDate "1963-05-07"^^xsd:date;
+    schema:address _:b661.
+_:b661 a schema:PostalAddress;
+    schema:streetAddress "Murray Underpass";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Tyrellchester";
+    schema:postalCode "05307-0596";
+    schema:addressCountry "Kiribati".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dominick";
+    schema:familyName "Howe";
+    schema:birthDate "1977-06-05"^^xsd:date;
+    schema:address _:b361.
+_:b361 a schema:PostalAddress;
+    schema:streetAddress "Beatty Mills";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Hilbertbury";
+    schema:postalCode "46119-8577";
+    schema:addressCountry "Barbados".

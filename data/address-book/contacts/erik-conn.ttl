@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erik";
+    schema:familyName "Conn";
+    schema:birthDate "1999-09-11"^^xsd:date;
+    schema:address _:b856.
+_:b856 a schema:PostalAddress;
+    schema:streetAddress "Green Close";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Durganfield";
+    schema:postalCode "61302";
+    schema:addressCountry "Kiribati".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julia";
+    schema:familyName "Stoltenberg-Schimmel";
+    schema:birthDate "1972-09-02"^^xsd:date;
+    schema:address _:b7.
+_:b7 a schema:PostalAddress;
+    schema:streetAddress "Olin Mission";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "West Sadyechester";
+    schema:postalCode "82495";
+    schema:addressCountry "Moldova".

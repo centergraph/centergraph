@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ginger";
+    schema:familyName "Kertzmann";
+    schema:birthDate "1999-05-20"^^xsd:date;
+    schema:address _:b589.
+_:b589 a schema:PostalAddress;
+    schema:streetAddress "April Passage";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Taylor";
+    schema:postalCode "49337-6398";
+    schema:addressCountry "Sint Maarten".

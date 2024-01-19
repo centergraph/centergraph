@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Glen";
+    schema:familyName "Lesch";
+    schema:birthDate "1985-03-01"^^xsd:date;
+    schema:address _:b86.
+_:b86 a schema:PostalAddress;
+    schema:streetAddress "Skiles Center";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "North Giuseppeland";
+    schema:postalCode "63230";
+    schema:addressCountry "Burundi".

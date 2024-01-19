@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Krystal";
+    schema:familyName "Windler";
+    schema:birthDate "1948-08-29"^^xsd:date;
+    schema:address _:b666.
+_:b666 a schema:PostalAddress;
+    schema:streetAddress "Alyson Keys";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Lake Caleb";
+    schema:postalCode "56824";
+    schema:addressCountry "Jamaica".

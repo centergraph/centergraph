@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Arthur";
+    schema:familyName "Metz";
+    schema:birthDate "1981-02-27"^^xsd:date;
+    schema:address _:b281.
+_:b281 a schema:PostalAddress;
+    schema:streetAddress "Main";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Arthurview";
+    schema:postalCode "15780-6558";
+    schema:addressCountry "Croatia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jamie";
+    schema:familyName "Nader";
+    schema:birthDate "1958-05-10"^^xsd:date;
+    schema:address _:b671.
+_:b671 a schema:PostalAddress;
+    schema:streetAddress "E Maple Street";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "North Dedrickshire";
+    schema:postalCode "83328";
+    schema:addressCountry "Ecuador".

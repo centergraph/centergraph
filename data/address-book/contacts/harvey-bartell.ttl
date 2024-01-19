@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harvey";
+    schema:familyName "Bartell";
+    schema:birthDate "1944-03-22"^^xsd:date;
+    schema:address _:b638.
+_:b638 a schema:PostalAddress;
+    schema:streetAddress "Haley Inlet";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Jamarcustown";
+    schema:postalCode "24253-8797";
+    schema:addressCountry "Nigeria".

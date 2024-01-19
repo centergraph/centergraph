@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Francis";
+    schema:familyName "Gibson";
+    schema:birthDate "1987-10-16"^^xsd:date;
+    schema:address _:b526.
+_:b526 a schema:PostalAddress;
+    schema:streetAddress "Westfield Road";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "West Fidel";
+    schema:postalCode "60367";
+    schema:addressCountry "Luxembourg".

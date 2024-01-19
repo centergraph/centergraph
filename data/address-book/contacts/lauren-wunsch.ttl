@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lauren";
+    schema:familyName "Wunsch";
+    schema:birthDate "1992-05-26"^^xsd:date;
+    schema:address _:b673.
+_:b673 a schema:PostalAddress;
+    schema:streetAddress "Isai Throughway";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Aspen Hill";
+    schema:postalCode "72410-5743";
+    schema:addressCountry "Antigua and Barbuda".

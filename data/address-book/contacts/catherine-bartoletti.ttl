@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Catherine";
+    schema:familyName "Bartoletti";
+    schema:birthDate "1944-11-04"^^xsd:date;
+    schema:address _:b592.
+_:b592 a schema:PostalAddress;
+    schema:streetAddress "Jacobs Avenue";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Kuvalisstead";
+    schema:postalCode "82131-0546";
+    schema:addressCountry "Bulgaria".

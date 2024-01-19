@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brent";
+    schema:familyName "Beatty";
+    schema:birthDate "1962-04-10"^^xsd:date;
+    schema:address _:b152.
+_:b152 a schema:PostalAddress;
+    schema:streetAddress "N Franklin Street";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Redding";
+    schema:postalCode "29009";
+    schema:addressCountry "Cocos (Keeling) Islands".

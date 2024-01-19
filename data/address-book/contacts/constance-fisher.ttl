@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Constance";
+    schema:familyName "Fisher";
+    schema:birthDate "1983-10-02"^^xsd:date;
+    schema:address _:b489.
+_:b489 a schema:PostalAddress;
+    schema:streetAddress "Alexys Heights";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Tadboro";
+    schema:postalCode "08112-3017";
+    schema:addressCountry "Martinique".

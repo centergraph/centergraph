@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Percy";
+    schema:familyName "Runolfsdottir";
+    schema:birthDate "1963-05-07"^^xsd:date;
+    schema:address _:b56.
+_:b56 a schema:PostalAddress;
+    schema:streetAddress "Katrina Curve";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Alyshastad";
+    schema:postalCode "76423";
+    schema:addressCountry "Mongolia".

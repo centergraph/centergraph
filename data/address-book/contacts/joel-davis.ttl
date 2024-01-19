@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joel";
+    schema:familyName "Davis";
+    schema:birthDate "2000-09-02"^^xsd:date;
+    schema:address _:b935.
+_:b935 a schema:PostalAddress;
+    schema:streetAddress "MacGyver Plains";
+    schema:addressRegion "California";
+    schema:addressLocality "Fisherstead";
+    schema:postalCode "28363-4079";
+    schema:addressCountry "Antigua and Barbuda".

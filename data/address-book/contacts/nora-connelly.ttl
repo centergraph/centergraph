@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nora";
+    schema:familyName "Connelly";
+    schema:birthDate "1949-07-26"^^xsd:date;
+    schema:address _:b988.
+_:b988 a schema:PostalAddress;
+    schema:streetAddress "South Drive";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Herbertmouth";
+    schema:postalCode "23393-0275";
+    schema:addressCountry "Kiribati".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeff";
+    schema:familyName "Grimes";
+    schema:birthDate "1973-12-05"^^xsd:date;
+    schema:address _:b753.
+_:b753 a schema:PostalAddress;
+    schema:streetAddress "Cambridge Street";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "New Elroyhaven";
+    schema:postalCode "85309";
+    schema:addressCountry "Sri Lanka".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mike";
+    schema:familyName "Wisozk";
+    schema:birthDate "1987-12-02"^^xsd:date;
+    schema:address _:b325.
+_:b325 a schema:PostalAddress;
+    schema:streetAddress "McClure Circle";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Aubreymouth";
+    schema:postalCode "57957";
+    schema:addressCountry "Austria".

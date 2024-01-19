@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dominic";
+    schema:familyName "Howell";
+    schema:birthDate "1954-04-26"^^xsd:date;
+    schema:address _:b140.
+_:b140 a schema:PostalAddress;
+    schema:streetAddress "Ferne Brooks";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Paramount";
+    schema:postalCode "16151";
+    schema:addressCountry "France".

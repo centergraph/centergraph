@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bobbie";
+    schema:familyName "Hand-Kirlin";
+    schema:birthDate "1955-11-05"^^xsd:date;
+    schema:address _:b716.
+_:b716 a schema:PostalAddress;
+    schema:streetAddress "Tessie Circles";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Jonatanchester";
+    schema:postalCode "26164-2147";
+    schema:addressCountry "Hungary".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Warren";
+    schema:familyName "Ortiz";
+    schema:birthDate "1969-03-15"^^xsd:date;
+    schema:address _:b337.
+_:b337 a schema:PostalAddress;
+    schema:streetAddress "Lehner Knoll";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Rapid City";
+    schema:postalCode "12243";
+    schema:addressCountry "Lesotho".

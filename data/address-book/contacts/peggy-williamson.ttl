@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Peggy";
+    schema:familyName "Williamson";
+    schema:birthDate "1950-02-22"^^xsd:date;
+    schema:address _:b197.
+_:b197 a schema:PostalAddress;
+    schema:streetAddress "Dasia Mission";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "North Leopold";
+    schema:postalCode "91973";
+    schema:addressCountry "Vanuatu".

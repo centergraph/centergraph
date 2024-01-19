@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Angelina";
+    schema:familyName "Purdy";
+    schema:birthDate "1972-06-02"^^xsd:date;
+    schema:address _:b159.
+_:b159 a schema:PostalAddress;
+    schema:streetAddress "Saige Valleys";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Harveyland";
+    schema:postalCode "68676";
+    schema:addressCountry "Trinidad and Tobago".

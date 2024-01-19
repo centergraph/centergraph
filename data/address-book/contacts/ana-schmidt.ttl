@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ana";
+    schema:familyName "Schmidt";
+    schema:birthDate "1959-04-19"^^xsd:date;
+    schema:address _:b696.
+_:b696 a schema:PostalAddress;
+    schema:streetAddress "E 6th Street";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Thorafurt";
+    schema:postalCode "85912-2271";
+    schema:addressCountry "Croatia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Phillip";
+    schema:familyName "Rohan";
+    schema:birthDate "1972-06-07"^^xsd:date;
+    schema:address _:b872.
+_:b872 a schema:PostalAddress;
+    schema:streetAddress "Padberg Burg";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Jaydenton";
+    schema:postalCode "26385-7816";
+    schema:addressCountry "Kuwait".

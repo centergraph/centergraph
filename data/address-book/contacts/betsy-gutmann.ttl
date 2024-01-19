@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Betsy";
+    schema:familyName "Gutmann";
+    schema:birthDate "1977-01-27"^^xsd:date;
+    schema:address _:b294.
+_:b294 a schema:PostalAddress;
+    schema:streetAddress "Schiller Green";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Summerville";
+    schema:postalCode "17598-9842";
+    schema:addressCountry "Thailand".

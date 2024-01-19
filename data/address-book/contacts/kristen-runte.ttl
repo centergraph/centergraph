@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristen";
+    schema:familyName "Runte";
+    schema:birthDate "1989-01-22"^^xsd:date;
+    schema:address _:b290.
+_:b290 a schema:PostalAddress;
+    schema:streetAddress "McClure Mountains";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "North Austin";
+    schema:postalCode "57505-4174";
+    schema:addressCountry "Comoros".

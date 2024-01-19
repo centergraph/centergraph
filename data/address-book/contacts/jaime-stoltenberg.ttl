@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jaime";
+    schema:familyName "Stoltenberg";
+    schema:birthDate "1969-02-20"^^xsd:date;
+    schema:address _:b603.
+_:b603 a schema:PostalAddress;
+    schema:streetAddress "Lambert Highway";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Southfield";
+    schema:postalCode "54965-9698";
+    schema:addressCountry "Bermuda".

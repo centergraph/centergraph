@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erica";
+    schema:familyName "Dickens";
+    schema:birthDate "1989-12-16"^^xsd:date;
+    schema:address _:b795.
+_:b795 a schema:PostalAddress;
+    schema:streetAddress "Wehner Estates";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Herzogberg";
+    schema:postalCode "47432";
+    schema:addressCountry "Estonia".

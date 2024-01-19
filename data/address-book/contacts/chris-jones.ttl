@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Chris";
+    schema:familyName "Jones";
+    schema:birthDate "1979-05-04"^^xsd:date;
+    schema:address _:b411.
+_:b411 a schema:PostalAddress;
+    schema:streetAddress "Ruecker Avenue";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Fort Earlene";
+    schema:postalCode "92801";
+    schema:addressCountry "Estonia".

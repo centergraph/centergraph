@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ian";
+    schema:familyName "West";
+    schema:birthDate "1992-02-12"^^xsd:date;
+    schema:address _:b73.
+_:b73 a schema:PostalAddress;
+    schema:streetAddress "Coy Unions";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Lake Gissellehaven";
+    schema:postalCode "51659-2384";
+    schema:addressCountry "Jordan".

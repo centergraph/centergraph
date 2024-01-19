@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Maxine";
+    schema:familyName "Thompson";
+    schema:birthDate "1974-08-30"^^xsd:date;
+    schema:address _:b839.
+_:b839 a schema:PostalAddress;
+    schema:streetAddress "Durgan Ridge";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Port Arnoldofurt";
+    schema:postalCode "17394-4184";
+    schema:addressCountry "Germany".

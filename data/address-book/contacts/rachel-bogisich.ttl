@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rachel";
+    schema:familyName "Bogisich";
+    schema:birthDate "1965-11-07"^^xsd:date;
+    schema:address _:b940.
+_:b940 a schema:PostalAddress;
+    schema:streetAddress "Denis Streets";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Fort Evalyn";
+    schema:postalCode "26673";
+    schema:addressCountry "Latvia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eloise";
+    schema:familyName "Predovic";
+    schema:birthDate "1959-12-10"^^xsd:date;
+    schema:address _:b441.
+_:b441 a schema:PostalAddress;
+    schema:streetAddress "Zulauf Shore";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "South Asha";
+    schema:postalCode "36681-8448";
+    schema:addressCountry "Vanuatu".

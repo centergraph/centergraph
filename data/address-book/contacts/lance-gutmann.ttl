@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lance";
+    schema:familyName "Gutmann";
+    schema:birthDate "1961-01-26"^^xsd:date;
+    schema:address _:b99.
+_:b99 a schema:PostalAddress;
+    schema:streetAddress "S Grand Avenue";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Metzchester";
+    schema:postalCode "08394-9278";
+    schema:addressCountry "Virgin Islands, U.S.".

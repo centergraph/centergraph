@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terrell";
+    schema:familyName "Runolfsdottir";
+    schema:birthDate "1990-05-23"^^xsd:date;
+    schema:address _:b934.
+_:b934 a schema:PostalAddress;
+    schema:streetAddress "E 14th Street";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "New Hayley";
+    schema:postalCode "16512";
+    schema:addressCountry "Belize".

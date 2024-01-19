@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lela";
+    schema:familyName "Kemmer";
+    schema:birthDate "2005-05-21"^^xsd:date;
+    schema:address _:b13.
+_:b13 a schema:PostalAddress;
+    schema:streetAddress "D'angelo Rue";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Fort Lindsaycester";
+    schema:postalCode "23269-6012";
+    schema:addressCountry "Venezuela".

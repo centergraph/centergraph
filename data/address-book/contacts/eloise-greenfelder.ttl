@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eloise";
+    schema:familyName "Greenfelder";
+    schema:birthDate "1944-11-13"^^xsd:date;
+    schema:address _:b339.
+_:b339 a schema:PostalAddress;
+    schema:streetAddress "W State Street";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Lake Amy";
+    schema:postalCode "47850";
+    schema:addressCountry "Montenegro".

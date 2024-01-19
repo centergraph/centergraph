@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeanette";
+    schema:familyName "Yundt";
+    schema:birthDate "1964-04-29"^^xsd:date;
+    schema:address _:b100.
+_:b100 a schema:PostalAddress;
+    schema:streetAddress "Oxford Road";
+    schema:addressRegion "California";
+    schema:addressLocality "Ferryfurt";
+    schema:postalCode "15879";
+    schema:addressCountry "Thailand".

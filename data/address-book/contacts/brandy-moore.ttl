@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brandy";
+    schema:familyName "Moore";
+    schema:birthDate "1969-05-18"^^xsd:date;
+    schema:address _:b417.
+_:b417 a schema:PostalAddress;
+    schema:streetAddress "Maple Close";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "High Point";
+    schema:postalCode "34703-5578";
+    schema:addressCountry "Kuwait".

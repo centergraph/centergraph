@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nichole";
+    schema:familyName "Blanda";
+    schema:birthDate "1970-04-04"^^xsd:date;
+    schema:address _:b936.
+_:b936 a schema:PostalAddress;
+    schema:streetAddress "McCullough Keys";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Fort Ruben";
+    schema:postalCode "52756-8326";
+    schema:addressCountry "South Africa".

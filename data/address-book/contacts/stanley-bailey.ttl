@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stanley";
+    schema:familyName "Bailey";
+    schema:birthDate "1969-04-21"^^xsd:date;
+    schema:address _:b372.
+_:b372 a schema:PostalAddress;
+    schema:streetAddress "Woodlands Road";
+    schema:addressRegion "Maine";
+    schema:addressLocality "South Chesley";
+    schema:postalCode "62504";
+    schema:addressCountry "Finland".

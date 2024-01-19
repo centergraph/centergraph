@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Antoinette";
+    schema:familyName "Muller";
+    schema:birthDate "1987-01-11"^^xsd:date;
+    schema:address _:b891.
+_:b891 a schema:PostalAddress;
+    schema:streetAddress "Adrien Stravenue";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Castro Valley";
+    schema:postalCode "41937-1695";
+    schema:addressCountry "Brunei Darussalam".

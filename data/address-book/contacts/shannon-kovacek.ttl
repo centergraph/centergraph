@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shannon";
+    schema:familyName "Kovacek";
+    schema:birthDate "1946-09-04"^^xsd:date;
+    schema:address _:b162.
+_:b162 a schema:PostalAddress;
+    schema:streetAddress "Alexie Cliff";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "North Kadenville";
+    schema:postalCode "93035-6622";
+    schema:addressCountry "Tokelau".

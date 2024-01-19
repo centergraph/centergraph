@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruth";
+    schema:familyName "Lemke";
+    schema:birthDate "2005-05-25"^^xsd:date;
+    schema:address _:b889.
+_:b889 a schema:PostalAddress;
+    schema:streetAddress "The Sidings";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Salt Lake City";
+    schema:postalCode "76796";
+    schema:addressCountry "Libyan Arab Jamahiriya".

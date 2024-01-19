@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Angela";
+    schema:familyName "Moen";
+    schema:birthDate "2004-06-27"^^xsd:date;
+    schema:address _:b654.
+_:b654 a schema:PostalAddress;
+    schema:streetAddress "New Road";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Marksstad";
+    schema:postalCode "71698";
+    schema:addressCountry "Micronesia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ramon";
+    schema:familyName "Waelchi";
+    schema:birthDate "1998-10-18"^^xsd:date;
+    schema:address _:b903.
+_:b903 a schema:PostalAddress;
+    schema:streetAddress "Mayert Roads";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Cummeratabury";
+    schema:postalCode "76704";
+    schema:addressCountry "Egypt".

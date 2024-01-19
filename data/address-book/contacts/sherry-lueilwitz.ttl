@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sherry";
+    schema:familyName "Lueilwitz";
+    schema:birthDate "1960-12-21"^^xsd:date;
+    schema:address _:b315.
+_:b315 a schema:PostalAddress;
+    schema:streetAddress "Kristian Hill";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Fort Nobleville";
+    schema:postalCode "44806";
+    schema:addressCountry "Ukraine".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hugh";
+    schema:familyName "Roberts-Wolf";
+    schema:birthDate "1947-11-14"^^xsd:date;
+    schema:address _:b401.
+_:b401 a schema:PostalAddress;
+    schema:streetAddress "Reynold Ville";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "South Letha";
+    schema:postalCode "77257-3645";
+    schema:addressCountry "Jordan".

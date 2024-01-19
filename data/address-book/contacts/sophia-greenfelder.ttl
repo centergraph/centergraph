@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sophia";
+    schema:familyName "Greenfelder";
+    schema:birthDate "1959-09-01"^^xsd:date;
+    schema:address _:b521.
+_:b521 a schema:PostalAddress;
+    schema:streetAddress "Alphonso Fields";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Rogers";
+    schema:postalCode "64637-2670";
+    schema:addressCountry "Guatemala".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cindy";
+    schema:familyName "Stokes";
+    schema:birthDate "1973-06-26"^^xsd:date;
+    schema:address _:b90.
+_:b90 a schema:PostalAddress;
+    schema:streetAddress "Walter Lakes";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Quintonstead";
+    schema:postalCode "50390-6121";
+    schema:addressCountry "Tonga".

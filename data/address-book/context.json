@@ -1,3 +1,5 @@
 {
-  "@vocab": "https://schema.org/"
+  "@vocab": "https://schema.org/",
+  "schema": "https://schema.org/",
+  "xsd": "http://www.w3.org/2001/XMLSchema#"
 }

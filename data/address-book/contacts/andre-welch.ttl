@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andre";
+    schema:familyName "Welch";
+    schema:birthDate "1972-04-24"^^xsd:date;
+    schema:address _:b930.
+_:b930 a schema:PostalAddress;
+    schema:streetAddress "N State Street";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Hermannfurt";
+    schema:postalCode "14847-3597";
+    schema:addressCountry "Italy".

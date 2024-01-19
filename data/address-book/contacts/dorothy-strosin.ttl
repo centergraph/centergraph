@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dorothy";
+    schema:familyName "Strosin";
+    schema:birthDate "1992-05-13"^^xsd:date;
+    schema:address _:b835.
+_:b835 a schema:PostalAddress;
+    schema:streetAddress "Bashirian Heights";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Andersonstead";
+    schema:postalCode "76877";
+    schema:addressCountry "Togo".

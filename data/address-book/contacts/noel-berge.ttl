@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Noel";
+    schema:familyName "Berge";
+    schema:birthDate "2002-12-24"^^xsd:date;
+    schema:address _:b356.
+_:b356 a schema:PostalAddress;
+    schema:streetAddress "Schaefer Harbor";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Fort Eliezerville";
+    schema:postalCode "14810";
+    schema:addressCountry "Tonga".

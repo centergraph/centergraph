@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Milton";
+    schema:familyName "Borer";
+    schema:birthDate "1978-08-14"^^xsd:date;
+    schema:address _:b735.
+_:b735 a schema:PostalAddress;
+    schema:streetAddress "Chelsea Lane";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "East Marysetown";
+    schema:postalCode "88210-9201";
+    schema:addressCountry "Cameroon".

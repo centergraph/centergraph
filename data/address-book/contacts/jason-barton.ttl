@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jason";
+    schema:familyName "Barton";
+    schema:birthDate "2005-09-06"^^xsd:date;
+    schema:address _:b783.
+_:b783 a schema:PostalAddress;
+    schema:streetAddress "Barton Streets";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "New Alex";
+    schema:postalCode "07514";
+    schema:addressCountry "Taiwan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roberta";
+    schema:familyName "Blick";
+    schema:birthDate "1955-02-26"^^xsd:date;
+    schema:address _:b681.
+_:b681 a schema:PostalAddress;
+    schema:streetAddress "Cremin Spur";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Adelineville";
+    schema:postalCode "95175";
+    schema:addressCountry "Costa Rica".

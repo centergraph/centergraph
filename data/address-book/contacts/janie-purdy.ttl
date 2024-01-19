@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janie";
+    schema:familyName "Purdy";
+    schema:birthDate "2003-07-26"^^xsd:date;
+    schema:address _:b884.
+_:b884 a schema:PostalAddress;
+    schema:streetAddress "Cronin Knoll";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Fort Leif";
+    schema:postalCode "74236-9304";
+    schema:addressCountry "Kuwait".

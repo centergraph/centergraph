@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alonzo";
+    schema:familyName "Harvey";
+    schema:birthDate "1948-10-05"^^xsd:date;
+    schema:address _:b29.
+_:b29 a schema:PostalAddress;
+    schema:streetAddress "Curt Pine";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "North Jakob";
+    schema:postalCode "81206";
+    schema:addressCountry "Republic of Korea".

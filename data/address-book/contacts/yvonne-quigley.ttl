@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Yvonne";
+    schema:familyName "Quigley";
+    schema:birthDate "1969-11-03"^^xsd:date;
+    schema:address _:b846.
+_:b846 a schema:PostalAddress;
+    schema:streetAddress "Grady Passage";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Wiegandburgh";
+    schema:postalCode "30933-4435";
+    schema:addressCountry "Bahamas".

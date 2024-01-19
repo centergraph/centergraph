@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brendan";
+    schema:familyName "Murazik-Rosenbaum";
+    schema:birthDate "1945-07-19"^^xsd:date;
+    schema:address _:b402.
+_:b402 a schema:PostalAddress;
+    schema:streetAddress "Olson Place";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Bakersfield";
+    schema:postalCode "15056-8906";
+    schema:addressCountry "Saint Martin".

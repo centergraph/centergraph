@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Albert";
+    schema:familyName "O'Keefe";
+    schema:birthDate "1951-06-16"^^xsd:date;
+    schema:address _:b264.
+_:b264 a schema:PostalAddress;
+    schema:streetAddress "Harris Passage";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Deontestad";
+    schema:postalCode "99397";
+    schema:addressCountry "Republic of Korea".

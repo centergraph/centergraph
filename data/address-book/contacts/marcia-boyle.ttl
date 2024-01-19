@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marcia";
+    schema:familyName "Boyle";
+    schema:birthDate "1960-09-06"^^xsd:date;
+    schema:address _:b20.
+_:b20 a schema:PostalAddress;
+    schema:streetAddress "Herzog Crest";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Geraldinestad";
+    schema:postalCode "71459";
+    schema:addressCountry "Jamaica".

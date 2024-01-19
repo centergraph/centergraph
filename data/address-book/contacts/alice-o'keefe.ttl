@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alice";
+    schema:familyName "O'Keefe";
+    schema:birthDate "2005-05-03"^^xsd:date;
+    schema:address _:b801.
+_:b801 a schema:PostalAddress;
+    schema:streetAddress "Greenwood Road";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "New Scarlettboro";
+    schema:postalCode "58407-7189";
+    schema:addressCountry "Jordan".

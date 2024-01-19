@@ -1,5 +1,4 @@
 import { AbstractApiRequest } from './AbstractApiRequest'
-
 import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
 import factory from '@rdfjs/data-model'

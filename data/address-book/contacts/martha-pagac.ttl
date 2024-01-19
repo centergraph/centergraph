@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Martha";
+    schema:familyName "Pagac";
+    schema:birthDate "1973-08-20"^^xsd:date;
+    schema:address _:b789.
+_:b789 a schema:PostalAddress;
+    schema:streetAddress "Westgate";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Port Angelo";
+    schema:postalCode "31515-8804";
+    schema:addressCountry "Norfolk Island".

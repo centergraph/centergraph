@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Judith";
+    schema:familyName "Daniel";
+    schema:birthDate "1949-09-22"^^xsd:date;
+    schema:address _:b378.
+_:b378 a schema:PostalAddress;
+    schema:streetAddress "Batz Pines";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Arecibo";
+    schema:postalCode "38963";
+    schema:addressCountry "Mayotte".

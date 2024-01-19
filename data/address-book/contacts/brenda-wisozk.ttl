@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brenda";
+    schema:familyName "Wisozk";
+    schema:birthDate "2002-09-30"^^xsd:date;
+    schema:address _:b119.
+_:b119 a schema:PostalAddress;
+    schema:streetAddress "Alessandro Run";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Pleasanton";
+    schema:postalCode "07844";
+    schema:addressCountry "Honduras".

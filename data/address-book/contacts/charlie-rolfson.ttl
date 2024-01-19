@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Charlie";
+    schema:familyName "Rolfson";
+    schema:birthDate "2002-07-31"^^xsd:date;
+    schema:address _:b641.
+_:b641 a schema:PostalAddress;
+    schema:streetAddress "Myles Isle";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Constancestad";
+    schema:postalCode "56782-7092";
+    schema:addressCountry "Iraq".

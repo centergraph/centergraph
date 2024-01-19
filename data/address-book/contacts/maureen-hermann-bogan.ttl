@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Maureen";
+    schema:familyName "Hermann-Bogan";
+    schema:birthDate "1983-11-11"^^xsd:date;
+    schema:address _:b635.
+_:b635 a schema:PostalAddress;
+    schema:streetAddress "Nikolaus Manors";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Palm Beach Gardens";
+    schema:postalCode "77377-0802";
+    schema:addressCountry "Finland".

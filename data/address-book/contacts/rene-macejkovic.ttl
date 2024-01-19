@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rene";
+    schema:familyName "Macejkovic";
+    schema:birthDate "1945-01-23"^^xsd:date;
+    schema:address _:b36.
+_:b36 a schema:PostalAddress;
+    schema:streetAddress "Block Wells";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Cordelltown";
+    schema:postalCode "05519-4412";
+    schema:addressCountry "Uzbekistan".

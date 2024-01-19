@@ -1,0 +1,12 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> schema:givenName "Rex";
+    schema:familyName "Terry";
+    schema:birthDate "1968-02-18"^^xsd:date;
+    schema:address _:b2.
+_:b2 schema:streetAddress "S 3rd Street";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Cassinworth";
+    schema:postalCode "57890";
+    schema:addressCountry "Heard Island and McDonald Islands".

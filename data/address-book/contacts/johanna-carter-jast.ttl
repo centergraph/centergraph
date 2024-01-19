@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Johanna";
+    schema:familyName "Carter-Jast";
+    schema:birthDate "1986-11-13"^^xsd:date;
+    schema:address _:b486.
+_:b486 a schema:PostalAddress;
+    schema:streetAddress "Boehm Village";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Fort Mackport";
+    schema:postalCode "12035";
+    schema:addressCountry "Switzerland".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lela";
+    schema:familyName "Wehner";
+    schema:birthDate "1996-12-07"^^xsd:date;
+    schema:address _:b674.
+_:b674 a schema:PostalAddress;
+    schema:streetAddress "The Dell";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "West Susanna";
+    schema:postalCode "05120";
+    schema:addressCountry "Jordan".

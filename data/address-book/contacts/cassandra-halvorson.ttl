@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cassandra";
+    schema:familyName "Halvorson";
+    schema:birthDate "1993-09-10"^^xsd:date;
+    schema:address _:b134.
+_:b134 a schema:PostalAddress;
+    schema:streetAddress "Marguerite Fall";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Cupertino";
+    schema:postalCode "72258-9654";
+    schema:addressCountry "Belgium".

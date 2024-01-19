@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joy";
+    schema:familyName "Waters";
+    schema:birthDate "1961-07-10"^^xsd:date;
+    schema:address _:b927.
+_:b927 a schema:PostalAddress;
+    schema:streetAddress "McGlynn Corners";
+    schema:addressRegion "New York";
+    schema:addressLocality "Zulaufcester";
+    schema:postalCode "98727";
+    schema:addressCountry "Papua New Guinea".

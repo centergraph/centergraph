@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darrin";
+    schema:familyName "Lakin";
+    schema:birthDate "1973-01-30"^^xsd:date;
+    schema:address _:b390.
+_:b390 a schema:PostalAddress;
+    schema:streetAddress "Tyree Groves";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Port Russelside";
+    schema:postalCode "24764-7342";
+    schema:addressCountry "Canada".

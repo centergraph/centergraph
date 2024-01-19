@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gina";
+    schema:familyName "Schroeder";
+    schema:birthDate "1980-03-20"^^xsd:date;
+    schema:address _:b972.
+_:b972 a schema:PostalAddress;
+    schema:streetAddress "Bath Road";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Krajcikview";
+    schema:postalCode "51314";
+    schema:addressCountry "Costa Rica".

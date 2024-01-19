@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Loretta";
+    schema:familyName "Kozey";
+    schema:birthDate "1970-12-25"^^xsd:date;
+    schema:address _:b898.
+_:b898 a schema:PostalAddress;
+    schema:streetAddress "The Causeway";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Jerdeport";
+    schema:postalCode "00509-2134";
+    schema:addressCountry "Palau".

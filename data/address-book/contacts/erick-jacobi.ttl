@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erick";
+    schema:familyName "Jacobi";
+    schema:birthDate "1993-06-23"^^xsd:date;
+    schema:address _:b415.
+_:b415 a schema:PostalAddress;
+    schema:streetAddress "Auer Trace";
+    schema:addressRegion "New York";
+    schema:addressLocality "Lethaburgh";
+    schema:postalCode "50802-4818";
+    schema:addressCountry "Estonia".

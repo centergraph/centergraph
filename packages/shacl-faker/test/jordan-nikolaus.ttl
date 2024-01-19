@@ -1,0 +1,12 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> schema:givenName "Jordan";
+    schema:familyName "Nikolaus";
+    schema:birthDate "1991-02-24"^^xsd:date;
+    schema:address _:b3.
+_:b3 schema:streetAddress "N 6th Street";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Shanychester";
+    schema:postalCode "60517";
+    schema:addressCountry "Gibraltar".

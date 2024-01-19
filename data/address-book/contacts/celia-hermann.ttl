@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Celia";
+    schema:familyName "Hermann";
+    schema:birthDate "1984-10-19"^^xsd:date;
+    schema:address _:b245.
+_:b245 a schema:PostalAddress;
+    schema:streetAddress "Vergie Island";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Lake Trycia";
+    schema:postalCode "07870";
+    schema:addressCountry "Saint Vincent and the Grenadines".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Connie";
+    schema:familyName "Gerhold";
+    schema:birthDate "1969-12-15"^^xsd:date;
+    schema:address _:b499.
+_:b499 a schema:PostalAddress;
+    schema:streetAddress "Gleichner Lane";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Fort Jevonview";
+    schema:postalCode "81530";
+    schema:addressCountry "Gambia".

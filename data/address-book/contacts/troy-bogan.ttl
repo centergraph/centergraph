@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Troy";
+    schema:familyName "Bogan";
+    schema:birthDate "1995-11-04"^^xsd:date;
+    schema:address _:b498.
+_:b498 a schema:PostalAddress;
+    schema:streetAddress "Washington Boulevard";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "New Hulda";
+    schema:postalCode "93855";
+    schema:addressCountry "Guatemala".

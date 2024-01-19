@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Monica";
+    schema:familyName "Rau";
+    schema:birthDate "1950-01-15"^^xsd:date;
+    schema:address _:b785.
+_:b785 a schema:PostalAddress;
+    schema:streetAddress "Mill Road";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Port Dariusberg";
+    schema:postalCode "30256-3158";
+    schema:addressCountry "Paraguay".

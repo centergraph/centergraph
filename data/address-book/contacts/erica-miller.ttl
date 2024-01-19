@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erica";
+    schema:familyName "Miller";
+    schema:birthDate "1949-10-01"^^xsd:date;
+    schema:address _:b328.
+_:b328 a schema:PostalAddress;
+    schema:streetAddress "Kuvalis Plain";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Schinnerfield";
+    schema:postalCode "64712-9323";
+    schema:addressCountry "Mozambique".

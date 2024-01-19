@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brett";
+    schema:familyName "Emard";
+    schema:birthDate "1951-10-30"^^xsd:date;
+    schema:address _:b881.
+_:b881 a schema:PostalAddress;
+    schema:streetAddress "Golda Viaduct";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Port Eloy";
+    schema:postalCode "29199";
+    schema:addressCountry "Bangladesh".

@@ -81,6 +81,7 @@ export const deleteResource = async (cacheKey: string) => {
   resourceCache.delete(cacheKey)
 }
 
+// What do to when updating would change the sort order? A local only run?
 export const updateResource = <T>(promise: PromiseLike<T>, cacheKey: string) => {
   clearCache(cacheKey)
   return promise.then((result) => {
@@ -91,3 +92,4 @@ export const updateResource = <T>(promise: PromiseLike<T>, cacheKey: string) => 
 }
 
 // TODO Add an insertResource or something similar which should acts on an SDK.create()
+// TODO unload resource from heap when possible?

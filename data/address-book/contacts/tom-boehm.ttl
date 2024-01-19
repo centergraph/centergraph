@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tom";
+    schema:familyName "Boehm";
+    schema:birthDate "1953-06-06"^^xsd:date;
+    schema:address _:b282.
+_:b282 a schema:PostalAddress;
+    schema:streetAddress "Cade Cliff";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Conway";
+    schema:postalCode "95160-6476";
+    schema:addressCountry "Andorra".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vincent";
+    schema:familyName "Olson";
+    schema:birthDate "1985-08-10"^^xsd:date;
+    schema:address _:b660.
+_:b660 a schema:PostalAddress;
+    schema:streetAddress "Mertz Ferry";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Arvillaton";
+    schema:postalCode "48145-3341";
+    schema:addressCountry "Hong Kong".

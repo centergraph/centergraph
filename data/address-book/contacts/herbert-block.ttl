@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Herbert";
+    schema:familyName "Block";
+    schema:birthDate "1975-06-30"^^xsd:date;
+    schema:address _:b262.
+_:b262 a schema:PostalAddress;
+    schema:streetAddress "Kiara Estates";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Fort Greg";
+    schema:postalCode "61602";
+    schema:addressCountry "Gambia".

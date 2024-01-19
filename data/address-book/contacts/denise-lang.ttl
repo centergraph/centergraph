@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Denise";
+    schema:familyName "Lang";
+    schema:birthDate "1981-03-25"^^xsd:date;
+    schema:address _:b643.
+_:b643 a schema:PostalAddress;
+    schema:streetAddress "Yew Tree Close";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Kendallstead";
+    schema:postalCode "56548-9492";
+    schema:addressCountry "Uzbekistan".

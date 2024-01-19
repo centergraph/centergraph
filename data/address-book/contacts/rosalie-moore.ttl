@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosalie";
+    schema:familyName "Moore";
+    schema:birthDate "1956-01-02"^^xsd:date;
+    schema:address _:b996.
+_:b996 a schema:PostalAddress;
+    schema:streetAddress "Moen Lights";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "South Bufordfort";
+    schema:postalCode "14626-0137";
+    schema:addressCountry "Hong Kong".

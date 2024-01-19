@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shane";
+    schema:familyName "Tremblay";
+    schema:birthDate "2005-01-03"^^xsd:date;
+    schema:address _:b126.
+_:b126 a schema:PostalAddress;
+    schema:streetAddress "Cole Square";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "South Nichole";
+    schema:postalCode "20351-7900";
+    schema:addressCountry "Virgin Islands, British".

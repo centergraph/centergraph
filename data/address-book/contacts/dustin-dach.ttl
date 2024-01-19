@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dustin";
+    schema:familyName "Dach";
+    schema:birthDate "1995-02-27"^^xsd:date;
+    schema:address _:b748.
+_:b748 a schema:PostalAddress;
+    schema:streetAddress "Nitzsche Path";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Erdmanshire";
+    schema:postalCode "16629-9396";
+    schema:addressCountry "Brazil".

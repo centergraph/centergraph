@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stella";
+    schema:familyName "Watsica";
+    schema:birthDate "1983-01-25"^^xsd:date;
+    schema:address _:b123.
+_:b123 a schema:PostalAddress;
+    schema:streetAddress "Mittie Fords";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "East Sammie";
+    schema:postalCode "21894-0154";
+    schema:addressCountry "Grenada".

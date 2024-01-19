@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gerardo";
+    schema:familyName "Zemlak";
+    schema:birthDate "1965-04-11"^^xsd:date;
+    schema:address _:b19.
+_:b19 a schema:PostalAddress;
+    schema:streetAddress "Anderson Flats";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Santa Fe";
+    schema:postalCode "44258-0271";
+    schema:addressCountry "Bosnia and Herzegovina".

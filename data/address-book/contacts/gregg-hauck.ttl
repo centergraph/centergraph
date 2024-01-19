@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gregg";
+    schema:familyName "Hauck";
+    schema:birthDate "2004-03-15"^^xsd:date;
+    schema:address _:b26.
+_:b26 a schema:PostalAddress;
+    schema:streetAddress "Hazel Grove";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "West Covina";
+    schema:postalCode "69276-8026";
+    schema:addressCountry "South Georgia and the South Sandwich Islands".

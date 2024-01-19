@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Randal";
+    schema:familyName "Mohr";
+    schema:birthDate "1979-12-14"^^xsd:date;
+    schema:address _:b374.
+_:b374 a schema:PostalAddress;
+    schema:streetAddress "Adrianna Key";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Lake Laurenfield";
+    schema:postalCode "14412";
+    schema:addressCountry "Italy".

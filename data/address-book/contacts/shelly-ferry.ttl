@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shelly";
+    schema:familyName "Ferry";
+    schema:birthDate "1948-02-24"^^xsd:date;
+    schema:address _:b731.
+_:b731 a schema:PostalAddress;
+    schema:streetAddress "Aracely Branch";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Wilfridfield";
+    schema:postalCode "55633";
+    schema:addressCountry "Maldives".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Walter";
+    schema:familyName "Bode";
+    schema:birthDate "1960-12-20"^^xsd:date;
+    schema:address _:b569.
+_:b569 a schema:PostalAddress;
+    schema:streetAddress "Mary Street";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Mantefurt";
+    schema:postalCode "43047-2915";
+    schema:addressCountry "Finland".

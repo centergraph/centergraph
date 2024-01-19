@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Blanche";
+    schema:familyName "Lueilwitz";
+    schema:birthDate "1997-11-17"^^xsd:date;
+    schema:address _:b303.
+_:b303 a schema:PostalAddress;
+    schema:streetAddress "Cordie Well";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Downers Grove";
+    schema:postalCode "77912-4923";
+    schema:addressCountry "Lao People's Democratic Republic".

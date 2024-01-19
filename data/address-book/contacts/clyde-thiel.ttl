@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clyde";
+    schema:familyName "Thiel";
+    schema:birthDate "1994-08-17"^^xsd:date;
+    schema:address _:b590.
+_:b590 a schema:PostalAddress;
+    schema:streetAddress "S Lincoln Street";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Stefancester";
+    schema:postalCode "57714-2511";
+    schema:addressCountry "Northern Mariana Islands".

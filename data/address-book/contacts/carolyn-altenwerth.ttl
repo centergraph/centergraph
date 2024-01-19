@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carolyn";
+    schema:familyName "Altenwerth";
+    schema:birthDate "1957-01-08"^^xsd:date;
+    schema:address _:b780.
+_:b780 a schema:PostalAddress;
+    schema:streetAddress "Malachi Meadow";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "San Clemente";
+    schema:postalCode "63197";
+    schema:addressCountry "United Arab Emirates".

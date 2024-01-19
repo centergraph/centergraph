@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Delia";
+    schema:familyName "Denesik";
+    schema:birthDate "1978-06-13"^^xsd:date;
+    schema:address _:b520.
+_:b520 a schema:PostalAddress;
+    schema:streetAddress "Heller Mills";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Port Ali";
+    schema:postalCode "96485-8285";
+    schema:addressCountry "Republic of Korea".

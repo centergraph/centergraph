@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Noah";
+    schema:familyName "Barton";
+    schema:birthDate "2001-08-24"^^xsd:date;
+    schema:address _:b950.
+_:b950 a schema:PostalAddress;
+    schema:streetAddress "Stanton Locks";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Faheyland";
+    schema:postalCode "61783-4936";
+    schema:addressCountry "Bouvet Island".

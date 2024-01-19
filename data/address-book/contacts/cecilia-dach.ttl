@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cecilia";
+    schema:familyName "Dach";
+    schema:birthDate "2003-02-23"^^xsd:date;
+    schema:address _:b545.
+_:b545 a schema:PostalAddress;
+    schema:streetAddress "Riverside";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Estellafort";
+    schema:postalCode "92097-6633";
+    schema:addressCountry "Armenia".

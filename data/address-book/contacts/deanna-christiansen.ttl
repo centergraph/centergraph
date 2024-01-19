@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Deanna";
+    schema:familyName "Christiansen";
+    schema:birthDate "1945-08-13"^^xsd:date;
+    schema:address _:b912.
+_:b912 a schema:PostalAddress;
+    schema:streetAddress "Karina Greens";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Port Genesiscester";
+    schema:postalCode "98457-9604";
+    schema:addressCountry "Guatemala".

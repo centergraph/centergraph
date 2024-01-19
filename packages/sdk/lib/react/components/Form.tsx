@@ -38,7 +38,7 @@ export default function Form({ data, children, shaclUrl, afterSubmit, pathCreato
           // Create
           else {
             if (!pathCreator) throw new Error('pathCreator is required for creating new items with the form')
-            const path = pathCreator(pointer).toLocaleLowerCase()
+            const path = pathCreator(pointer).toLocaleLowerCase().replace(/ /g, '-')
             api.create(path, dataset)
             if (afterSubmit) afterSubmit(path)
           }

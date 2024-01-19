@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ida";
+    schema:familyName "Bauch";
+    schema:birthDate "1975-01-22"^^xsd:date;
+    schema:address _:b773.
+_:b773 a schema:PostalAddress;
+    schema:streetAddress "Gunner Plain";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Lake Julianaport";
+    schema:postalCode "65675";
+    schema:addressCountry "Turkey".

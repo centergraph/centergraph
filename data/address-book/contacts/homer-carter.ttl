@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Homer";
+    schema:familyName "Carter";
+    schema:birthDate "1958-02-17"^^xsd:date;
+    schema:address _:b620.
+_:b620 a schema:PostalAddress;
+    schema:streetAddress "Gottlieb Mount";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Pfefferburgh";
+    schema:postalCode "69480-8651";
+    schema:addressCountry "Mauritania".

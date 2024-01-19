@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jake";
+    schema:familyName "Murazik";
+    schema:birthDate "1974-06-10"^^xsd:date;
+    schema:address _:b168.
+_:b168 a schema:PostalAddress;
+    schema:streetAddress "Vinnie Views";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Fort Tadfield";
+    schema:postalCode "25559-3611";
+    schema:addressCountry "Zimbabwe".

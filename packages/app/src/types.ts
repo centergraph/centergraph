@@ -8,7 +8,7 @@ export type Person = {
         addressLocality: string;
         postalCode: string;
         addressCountry: string;
-    }[];
+    };
 };
 
 

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Holly";
+    schema:familyName "Zboncak";
+    schema:birthDate "1944-01-25"^^xsd:date;
+    schema:address _:b286.
+_:b286 a schema:PostalAddress;
+    schema:streetAddress "Dorthy Bypass";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Verlachester";
+    schema:postalCode "35606-4627";
+    schema:addressCountry "Solomon Islands".

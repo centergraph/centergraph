@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Colin";
+    schema:familyName "Douglas";
+    schema:birthDate "1969-10-24"^^xsd:date;
+    schema:address _:b918.
+_:b918 a schema:PostalAddress;
+    schema:streetAddress "Demario Skyway";
+    schema:addressRegion "California";
+    schema:addressLocality "Pagacport";
+    schema:postalCode "50255-5345";
+    schema:addressCountry "Sierra Leone".

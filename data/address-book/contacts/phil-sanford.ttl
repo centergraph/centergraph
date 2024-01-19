@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Phil";
+    schema:familyName "Sanford";
+    schema:birthDate "1955-08-05"^^xsd:date;
+    schema:address _:b332.
+_:b332 a schema:PostalAddress;
+    schema:streetAddress "Berta Mountains";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Midland";
+    schema:postalCode "72152-0667";
+    schema:addressCountry "Solomon Islands".

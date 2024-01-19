@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Woodrow";
+    schema:familyName "Beer";
+    schema:birthDate "1975-11-29"^^xsd:date;
+    schema:address _:b792.
+_:b792 a schema:PostalAddress;
+    schema:streetAddress "Patricia Falls";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Saginaw";
+    schema:postalCode "30120-1602";
+    schema:addressCountry "Cameroon".

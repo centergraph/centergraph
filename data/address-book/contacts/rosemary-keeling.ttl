@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosemary";
+    schema:familyName "Keeling";
+    schema:birthDate "1991-12-05"^^xsd:date;
+    schema:address _:b375.
+_:b375 a schema:PostalAddress;
+    schema:streetAddress "Stokes Estate";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Mireyaboro";
+    schema:postalCode "80772-9998";
+    schema:addressCountry "Samoa".

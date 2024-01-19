@@ -22,6 +22,7 @@
     "ink": "npm:ink",
     "ink-task-list": "npm:ink-task-list",
     "cli-spinners": "npm:cli-spinners",
-    "figlet": "npm:figlet"
+    "figlet": "npm:figlet",
+    "faker": "https://esm.sh/@faker-js/faker"
   }
 }

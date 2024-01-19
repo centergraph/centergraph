@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kirk";
+    schema:familyName "Bruen";
+    schema:birthDate "1945-07-20"^^xsd:date;
+    schema:address _:b899.
+_:b899 a schema:PostalAddress;
+    schema:streetAddress "Garrett Haven";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "South Juston";
+    schema:postalCode "97777-5520";
+    schema:addressCountry "Djibouti".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marcia";
+    schema:familyName "Bartell";
+    schema:birthDate "1967-08-20"^^xsd:date;
+    schema:address _:b574.
+_:b574 a schema:PostalAddress;
+    schema:streetAddress "Elda Oval";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "New Madisen";
+    schema:postalCode "77848-5080";
+    schema:addressCountry "Ireland".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lena";
+    schema:familyName "Abbott";
+    schema:birthDate "1993-03-31"^^xsd:date;
+    schema:address _:b391.
+_:b391 a schema:PostalAddress;
+    schema:streetAddress "Eleazar Forks";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Port Carissaborough";
+    schema:postalCode "93704-4135";
+    schema:addressCountry "Saint Martin".

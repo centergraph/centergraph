@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emma";
+    schema:familyName "Morar";
+    schema:birthDate "1957-03-29"^^xsd:date;
+    schema:address _:b639.
+_:b639 a schema:PostalAddress;
+    schema:streetAddress "Vicky Rest";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Mannmouth";
+    schema:postalCode "83204-2888";
+    schema:addressCountry "Tonga".

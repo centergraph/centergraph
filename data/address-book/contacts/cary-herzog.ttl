@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cary";
+    schema:familyName "Herzog";
+    schema:birthDate "1993-04-14"^^xsd:date;
+    schema:address _:b536.
+_:b536 a schema:PostalAddress;
+    schema:streetAddress "Santos Springs";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Zoilaton";
+    schema:postalCode "95551-9858";
+    schema:addressCountry "Sri Lanka".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harriet";
+    schema:familyName "Schinner";
+    schema:birthDate "1973-10-15"^^xsd:date;
+    schema:address _:b309.
+_:b309 a schema:PostalAddress;
+    schema:streetAddress "Alysa Pine";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "East Alexandrinefield";
+    schema:postalCode "48384";
+    schema:addressCountry "Montenegro".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Priscilla";
+    schema:familyName "Weimann";
+    schema:birthDate "1951-07-27"^^xsd:date;
+    schema:address _:b259.
+_:b259 a schema:PostalAddress;
+    schema:streetAddress "Nels Roads";
+    schema:addressRegion "Maine";
+    schema:addressLocality "New Justicefield";
+    schema:postalCode "81163";
+    schema:addressCountry "Gambia".

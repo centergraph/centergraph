@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carmen";
+    schema:familyName "Schmeler";
+    schema:birthDate "1954-06-01"^^xsd:date;
+    schema:address _:b579.
+_:b579 a schema:PostalAddress;
+    schema:streetAddress "Orn Oval";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Nedcester";
+    schema:postalCode "38265";
+    schema:addressCountry "Bahrain".

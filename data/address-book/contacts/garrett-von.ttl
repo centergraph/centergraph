@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Garrett";
+    schema:familyName "Von";
+    schema:birthDate "1962-05-17"^^xsd:date;
+    schema:address _:b16.
+_:b16 a schema:PostalAddress;
+    schema:streetAddress "Belmont Road";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "North Harmonboro";
+    schema:postalCode "29569";
+    schema:addressCountry "Saint Martin".

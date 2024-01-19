@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marcus";
+    schema:familyName "Schultz";
+    schema:birthDate "2004-05-04"^^xsd:date;
+    schema:address _:b976.
+_:b976 a schema:PostalAddress;
+    schema:streetAddress "Prospect Road";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Theoland";
+    schema:postalCode "90078-1236";
+    schema:addressCountry "Saint Pierre and Miquelon".

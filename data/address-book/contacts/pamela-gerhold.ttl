@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pamela";
+    schema:familyName "Gerhold";
+    schema:birthDate "1962-09-10"^^xsd:date;
+    schema:address _:b886.
+_:b886 a schema:PostalAddress;
+    schema:streetAddress "Grady Manor";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Bahringerview";
+    schema:postalCode "69690-2265";
+    schema:addressCountry "Norfolk Island".

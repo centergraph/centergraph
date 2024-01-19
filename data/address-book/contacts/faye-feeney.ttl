@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Faye";
+    schema:familyName "Feeney";
+    schema:birthDate "1945-09-06"^^xsd:date;
+    schema:address _:b60.
+_:b60 a schema:PostalAddress;
+    schema:streetAddress "Prospect Place";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Bartonburgh";
+    schema:postalCode "31984-6228";
+    schema:addressCountry "Belize".

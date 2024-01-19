@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Freda";
+    schema:familyName "Keeling";
+    schema:birthDate "1978-09-11"^^xsd:date;
+    schema:address _:b30.
+_:b30 a schema:PostalAddress;
+    schema:streetAddress "Dovie Radial";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Baumbachworth";
+    schema:postalCode "18876-5352";
+    schema:addressCountry "Tajikistan".

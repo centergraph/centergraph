@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Russell";
+    schema:familyName "Rau";
+    schema:birthDate "1954-02-05"^^xsd:date;
+    schema:address _:b796.
+_:b796 a schema:PostalAddress;
+    schema:streetAddress "Pacocha Green";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "New Elisha";
+    schema:postalCode "30843";
+    schema:addressCountry "United States Minor Outlying Islands".

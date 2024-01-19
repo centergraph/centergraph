@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stacey";
+    schema:familyName "Adams";
+    schema:birthDate "1958-02-20"^^xsd:date;
+    schema:address _:b527.
+_:b527 a schema:PostalAddress;
+    schema:streetAddress "Hessel Drive";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Chino Hills";
+    schema:postalCode "60648-3896";
+    schema:addressCountry "Lebanon".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elsie";
+    schema:familyName "Marks";
+    schema:birthDate "1976-01-19"^^xsd:date;
+    schema:address _:b874.
+_:b874 a schema:PostalAddress;
+    schema:streetAddress "E Center Street";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Rosarioville";
+    schema:postalCode "15068";
+    schema:addressCountry "Virgin Islands, U.S.".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gordon";
+    schema:familyName "Mohr";
+    schema:birthDate "1982-12-09"^^xsd:date;
+    schema:address _:b809.
+_:b809 a schema:PostalAddress;
+    schema:streetAddress "N State Street";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Blockstead";
+    schema:postalCode "19548-8368";
+    schema:addressCountry "Zimbabwe".

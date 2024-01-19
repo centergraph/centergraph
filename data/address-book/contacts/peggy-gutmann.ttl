@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Peggy";
+    schema:familyName "Gutmann";
+    schema:birthDate "1956-08-28"^^xsd:date;
+    schema:address _:b251.
+_:b251 a schema:PostalAddress;
+    schema:streetAddress "Presley Via";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Salinas";
+    schema:postalCode "11112";
+    schema:addressCountry "New Caledonia".

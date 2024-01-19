@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brett";
+    schema:familyName "McClure";
+    schema:birthDate "1990-03-04"^^xsd:date;
+    schema:address _:b984.
+_:b984 a schema:PostalAddress;
+    schema:streetAddress "Kraig Avenue";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Gradyville";
+    schema:postalCode "81053-5597";
+    schema:addressCountry "Austria".

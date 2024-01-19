@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rochelle";
+    schema:familyName "Johns-Becker";
+    schema:birthDate "1958-03-28"^^xsd:date;
+    schema:address _:b938.
+_:b938 a schema:PostalAddress;
+    schema:streetAddress "Kuhlman Run";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "South Bernadine";
+    schema:postalCode "02992-0601";
+    schema:addressCountry "Rwanda".

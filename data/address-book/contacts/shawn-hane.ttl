@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shawn";
+    schema:familyName "Hane";
+    schema:birthDate "1989-06-18"^^xsd:date;
+    schema:address _:b89.
+_:b89 a schema:PostalAddress;
+    schema:streetAddress "Wendell Mews";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Rempelside";
+    schema:postalCode "97479-7542";
+    schema:addressCountry "Bosnia and Herzegovina".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Earl";
+    schema:familyName "Wisozk";
+    schema:birthDate "1957-05-25"^^xsd:date;
+    schema:address _:b587.
+_:b587 a schema:PostalAddress;
+    schema:streetAddress "Brock Circles";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Anahihaven";
+    schema:postalCode "56874";
+    schema:addressCountry "Uzbekistan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ronald";
+    schema:familyName "Willms";
+    schema:birthDate "1974-01-31"^^xsd:date;
+    schema:address _:b9.
+_:b9 a schema:PostalAddress;
+    schema:streetAddress "Caleb Alley";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Kreigerstad";
+    schema:postalCode "94407";
+    schema:addressCountry "Japan".

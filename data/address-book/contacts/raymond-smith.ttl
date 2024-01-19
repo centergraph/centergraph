@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Raymond";
+    schema:familyName "Smith";
+    schema:birthDate "1950-05-09"^^xsd:date;
+    schema:address _:b244.
+_:b244 a schema:PostalAddress;
+    schema:streetAddress "Lind Passage";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Jasttown";
+    schema:postalCode "15472";
+    schema:addressCountry "Dominican Republic".

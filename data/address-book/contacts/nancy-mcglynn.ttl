@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nancy";
+    schema:familyName "McGlynn";
+    schema:birthDate "1972-11-01"^^xsd:date;
+    schema:address _:b802.
+_:b802 a schema:PostalAddress;
+    schema:streetAddress "Washington Road";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Stephoncester";
+    schema:postalCode "31837";
+    schema:addressCountry "Benin".

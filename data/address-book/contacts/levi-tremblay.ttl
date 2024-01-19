@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Levi";
+    schema:familyName "Tremblay";
+    schema:birthDate "1971-09-09"^^xsd:date;
+    schema:address _:b79.
+_:b79 a schema:PostalAddress;
+    schema:streetAddress "Highfield Close";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Rocky Mount";
+    schema:postalCode "21981-9381";
+    schema:addressCountry "Virgin Islands, U.S.".

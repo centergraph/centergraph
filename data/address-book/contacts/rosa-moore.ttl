@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosa";
+    schema:familyName "Moore";
+    schema:birthDate "1985-07-04"^^xsd:date;
+    schema:address _:b142.
+_:b142 a schema:PostalAddress;
+    schema:streetAddress "6th Avenue";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Passaic";
+    schema:postalCode "71559-7894";
+    schema:addressCountry "Reunion".

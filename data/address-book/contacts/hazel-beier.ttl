@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hazel";
+    schema:familyName "Beier";
+    schema:birthDate "1965-12-16"^^xsd:date;
+    schema:address _:b853.
+_:b853 a schema:PostalAddress;
+    schema:streetAddress "Lynch Port";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Thaddeusberg";
+    schema:postalCode "04386";
+    schema:addressCountry "Republic of Korea".

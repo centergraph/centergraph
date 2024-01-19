@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeffrey";
+    schema:familyName "Lind";
+    schema:birthDate "1986-04-28"^^xsd:date;
+    schema:address _:b319.
+_:b319 a schema:PostalAddress;
+    schema:streetAddress "Sauer Prairie";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Westleycester";
+    schema:postalCode "07540";
+    schema:addressCountry "Guatemala".

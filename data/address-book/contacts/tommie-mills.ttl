@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tommie";
+    schema:familyName "Mills";
+    schema:birthDate "1951-03-09"^^xsd:date;
+    schema:address _:b257.
+_:b257 a schema:PostalAddress;
+    schema:streetAddress "Kyla Route";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "New Osbornemouth";
+    schema:postalCode "21933";
+    schema:addressCountry "Nauru".

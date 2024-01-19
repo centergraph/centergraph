@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Saul";
+    schema:familyName "Nolan";
+    schema:birthDate "1980-02-02"^^xsd:date;
+    schema:address _:b212.
+_:b212 a schema:PostalAddress;
+    schema:streetAddress "Kuphal Loaf";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "West Willard";
+    schema:postalCode "85852";
+    schema:addressCountry "Timor-Leste".

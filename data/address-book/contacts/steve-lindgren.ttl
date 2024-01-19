@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Steve";
+    schema:familyName "Lindgren";
+    schema:birthDate "1965-08-06"^^xsd:date;
+    schema:address _:b476.
+_:b476 a schema:PostalAddress;
+    schema:streetAddress "Miller Harbor";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Annandale";
+    schema:postalCode "68284";
+    schema:addressCountry "Mozambique".

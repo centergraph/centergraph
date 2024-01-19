@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Neal";
+    schema:familyName "Murray";
+    schema:birthDate "1978-06-03"^^xsd:date;
+    schema:address _:b957.
+_:b957 a schema:PostalAddress;
+    schema:streetAddress "Kihn Mill";
+    schema:addressRegion "Washington";
+    schema:addressLocality "North Johnsonberg";
+    schema:postalCode "79228-1787";
+    schema:addressCountry "Antarctica".

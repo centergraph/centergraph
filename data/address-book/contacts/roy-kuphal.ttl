@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roy";
+    schema:familyName "Kuphal";
+    schema:birthDate "1996-03-03"^^xsd:date;
+    schema:address _:b209.
+_:b209 a schema:PostalAddress;
+    schema:streetAddress "Dillon Key";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Fort Alysa";
+    schema:postalCode "21524";
+    schema:addressCountry "Belgium".

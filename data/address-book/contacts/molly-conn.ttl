@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Molly";
+    schema:familyName "Conn";
+    schema:birthDate "1951-09-21"^^xsd:date;
+    schema:address _:b367.
+_:b367 a schema:PostalAddress;
+    schema:streetAddress "Ezequiel Well";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Janesville";
+    schema:postalCode "74555";
+    schema:addressCountry "Costa Rica".

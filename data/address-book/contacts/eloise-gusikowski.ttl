@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eloise";
+    schema:familyName "Gusikowski";
+    schema:birthDate "1985-09-07"^^xsd:date;
+    schema:address _:b713.
+_:b713 a schema:PostalAddress;
+    schema:streetAddress "Lansdowne Road";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Rio Rancho";
+    schema:postalCode "79410";
+    schema:addressCountry "Guam".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julie";
+    schema:familyName "Schmidt";
+    schema:birthDate "1963-12-23"^^xsd:date;
+    schema:address _:b330.
+_:b330 a schema:PostalAddress;
+    schema:streetAddress "Wehner Keys";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Susanmouth";
+    schema:postalCode "91799-3472";
+    schema:addressCountry "Canada".

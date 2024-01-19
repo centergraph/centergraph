@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sherry";
+    schema:familyName "Predovic";
+    schema:birthDate "1947-04-20"^^xsd:date;
+    schema:address _:b667.
+_:b667 a schema:PostalAddress;
+    schema:streetAddress "York Street";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Zachariahberg";
+    schema:postalCode "84595";
+    schema:addressCountry "Libyan Arab Jamahiriya".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorraine";
+    schema:familyName "Boyle";
+    schema:birthDate "1951-11-27"^^xsd:date;
+    schema:address _:b852.
+_:b852 a schema:PostalAddress;
+    schema:streetAddress "Lockman Ville";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Thaliastead";
+    schema:postalCode "76115-5832";
+    schema:addressCountry "United Arab Emirates".

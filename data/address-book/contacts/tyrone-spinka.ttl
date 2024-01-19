@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tyrone";
+    schema:familyName "Spinka";
+    schema:birthDate "1969-01-24"^^xsd:date;
+    schema:address _:b312.
+_:b312 a schema:PostalAddress;
+    schema:streetAddress "Kylee Ville";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Bahringerview";
+    schema:postalCode "28109";
+    schema:addressCountry "Macao".

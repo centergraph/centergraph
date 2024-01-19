@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristi";
+    schema:familyName "Bogan";
+    schema:birthDate "1948-04-30"^^xsd:date;
+    schema:address _:b736.
+_:b736 a schema:PostalAddress;
+    schema:streetAddress "Lindgren Cliffs";
+    schema:addressRegion "California";
+    schema:addressLocality "Fort Albina";
+    schema:postalCode "15528";
+    schema:addressCountry "Turkey".

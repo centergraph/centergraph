@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doreen";
+    schema:familyName "Rice";
+    schema:birthDate "1993-10-19"^^xsd:date;
+    schema:address _:b279.
+_:b279 a schema:PostalAddress;
+    schema:streetAddress "Brown Fork";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "East Astrid";
+    schema:postalCode "89376-4222";
+    schema:addressCountry "Slovakia".

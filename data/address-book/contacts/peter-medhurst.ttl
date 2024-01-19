@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Peter";
+    schema:familyName "Medhurst";
+    schema:birthDate "1960-05-28"^^xsd:date;
+    schema:address _:b926.
+_:b926 a schema:PostalAddress;
+    schema:streetAddress "Maple Road";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Ansleyborough";
+    schema:postalCode "91664-4736";
+    schema:addressCountry "Saint Helena".

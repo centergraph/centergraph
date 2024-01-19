@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelly";
+    schema:familyName "Romaguera";
+    schema:birthDate "2003-12-31"^^xsd:date;
+    schema:address _:b497.
+_:b497 a schema:PostalAddress;
+    schema:streetAddress "Bernita Garden";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Cristalport";
+    schema:postalCode "22449";
+    schema:addressCountry "Colombia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jack";
+    schema:familyName "Howell-Auer";
+    schema:birthDate "1982-12-17"^^xsd:date;
+    schema:address _:b135.
+_:b135 a schema:PostalAddress;
+    schema:streetAddress "Eduardo Cove";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Atascocita";
+    schema:postalCode "34115-2078";
+    schema:addressCountry "Eritrea".

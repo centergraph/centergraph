@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ellen";
+    schema:familyName "Gutmann";
+    schema:birthDate "1949-01-04"^^xsd:date;
+    schema:address _:b557.
+_:b557 a schema:PostalAddress;
+    schema:streetAddress "Ryder Crescent";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Sunnyburgh";
+    schema:postalCode "15724-7596";
+    schema:addressCountry "Solomon Islands".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marshall";
+    schema:familyName "Quitzon";
+    schema:birthDate "1958-01-31"^^xsd:date;
+    schema:address _:b907.
+_:b907 a schema:PostalAddress;
+    schema:streetAddress "N Bridge Street";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Pittsfield";
+    schema:postalCode "71739";
+    schema:addressCountry "Benin".

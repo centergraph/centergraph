@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vincent";
+    schema:familyName "Watsica-Denesik";
+    schema:birthDate "1991-04-01"^^xsd:date;
+    schema:address _:b523.
+_:b523 a schema:PostalAddress;
+    schema:streetAddress "Grove Street";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Conorville";
+    schema:postalCode "59636-0108";
+    schema:addressCountry "Curacao".

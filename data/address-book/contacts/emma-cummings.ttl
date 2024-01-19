@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emma";
+    schema:familyName "Cummings";
+    schema:birthDate "1952-09-02"^^xsd:date;
+    schema:address _:b594.
+_:b594 a schema:PostalAddress;
+    schema:streetAddress "W Bridge Street";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Lake Dudley";
+    schema:postalCode "19117";
+    schema:addressCountry "Saint Vincent and the Grenadines".

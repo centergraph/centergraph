@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Virgil";
+    schema:familyName "Pagac";
+    schema:birthDate "1969-01-24"^^xsd:date;
+    schema:address _:b353.
+_:b353 a schema:PostalAddress;
+    schema:streetAddress "Cedrick Harbor";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Vidalboro";
+    schema:postalCode "12425";
+    schema:addressCountry "Mongolia".

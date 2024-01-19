@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darrin";
+    schema:familyName "Powlowski";
+    schema:birthDate "2000-04-19"^^xsd:date;
+    schema:address _:b700.
+_:b700 a schema:PostalAddress;
+    schema:streetAddress "Gleason Keys";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Streichburgh";
+    schema:postalCode "44501-6103";
+    schema:addressCountry "Argentina".

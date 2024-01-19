@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pat";
+    schema:familyName "Kirlin";
+    schema:birthDate "2004-12-09"^^xsd:date;
+    schema:address _:b248.
+_:b248 a schema:PostalAddress;
+    schema:streetAddress "Maple Avenue";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Brownstad";
+    schema:postalCode "85654-8828";
+    schema:addressCountry "Australia".

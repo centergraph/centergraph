@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gregory";
+    schema:familyName "Waelchi";
+    schema:birthDate "2003-09-28"^^xsd:date;
+    schema:address _:b588.
+_:b588 a schema:PostalAddress;
+    schema:streetAddress "Eleazar Rest";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Richardson";
+    schema:postalCode "70165";
+    schema:addressCountry "Nicaragua".

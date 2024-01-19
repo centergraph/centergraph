@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alison";
+    schema:familyName "Kulas";
+    schema:birthDate "1994-04-30"^^xsd:date;
+    schema:address _:b732.
+_:b732 a schema:PostalAddress;
+    schema:streetAddress "Denesik Throughway";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Port Giovanna";
+    schema:postalCode "65670";
+    schema:addressCountry "Palestine".

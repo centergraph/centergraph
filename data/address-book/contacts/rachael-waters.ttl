@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rachael";
+    schema:familyName "Waters";
+    schema:birthDate "1958-07-13"^^xsd:date;
+    schema:address _:b968.
+_:b968 a schema:PostalAddress;
+    schema:streetAddress "Holly Close";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "East Freemanstad";
+    schema:postalCode "93249-7756";
+    schema:addressCountry "Uruguay".

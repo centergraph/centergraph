@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carole";
+    schema:familyName "Bashirian";
+    schema:birthDate "1946-03-21"^^xsd:date;
+    schema:address _:b326.
+_:b326 a schema:PostalAddress;
+    schema:streetAddress "Wisozk Junction";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Lake Arliemouth";
+    schema:postalCode "22123";
+    schema:addressCountry "Niger".

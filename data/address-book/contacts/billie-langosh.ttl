@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Billie";
+    schema:familyName "Langosh";
+    schema:birthDate "1989-12-15"^^xsd:date;
+    schema:address _:b991.
+_:b991 a schema:PostalAddress;
+    schema:streetAddress "Bath Street";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Florissant";
+    schema:postalCode "14801-1175";
+    schema:addressCountry "Belize".

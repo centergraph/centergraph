@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lois";
+    schema:familyName "Jacobs";
+    schema:birthDate "2003-01-02"^^xsd:date;
+    schema:address _:b403.
+_:b403 a schema:PostalAddress;
+    schema:streetAddress "Euclid Avenue";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "New Enochport";
+    schema:postalCode "07652-1413";
+    schema:addressCountry "Latvia".

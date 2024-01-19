@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rebecca";
+    schema:familyName "Glover-Harris";
+    schema:birthDate "1957-07-31"^^xsd:date;
+    schema:address _:b645.
+_:b645 a schema:PostalAddress;
+    schema:streetAddress "Main Avenue";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Nampa";
+    schema:postalCode "29831-1625";
+    schema:addressCountry "Iraq".

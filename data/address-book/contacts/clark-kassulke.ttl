@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clark";
+    schema:familyName "Kassulke";
+    schema:birthDate "1992-05-21"^^xsd:date;
+    schema:address _:b993.
+_:b993 a schema:PostalAddress;
+    schema:streetAddress "Anderson Villages";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Fort Frederickshire";
+    schema:postalCode "90038";
+    schema:addressCountry "Saint Martin".

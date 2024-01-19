@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Timothy";
+    schema:familyName "Baumbach";
+    schema:birthDate "1992-06-26"^^xsd:date;
+    schema:address _:b541.
+_:b541 a schema:PostalAddress;
+    schema:streetAddress "DuBuque Mews";
+    schema:addressRegion "New York";
+    schema:addressLocality "Fort Doris";
+    schema:postalCode "87765";
+    schema:addressCountry "Portugal".

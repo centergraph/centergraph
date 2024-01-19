@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marilyn";
+    schema:familyName "Bradtke";
+    schema:birthDate "2000-10-26"^^xsd:date;
+    schema:address _:b744.
+_:b744 a schema:PostalAddress;
+    schema:streetAddress "Gusikowski Gateway";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Edisonbury";
+    schema:postalCode "56079-3141";
+    schema:addressCountry "Papua New Guinea".

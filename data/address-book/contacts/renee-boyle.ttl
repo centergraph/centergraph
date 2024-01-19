@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Renee";
+    schema:familyName "Boyle";
+    schema:birthDate "1998-02-06"^^xsd:date;
+    schema:address _:b231.
+_:b231 a schema:PostalAddress;
+    schema:streetAddress "N Railroad Street";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Westland";
+    schema:postalCode "36607-0066";
+    schema:addressCountry "Mauritania".

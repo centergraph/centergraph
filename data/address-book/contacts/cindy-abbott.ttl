@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cindy";
+    schema:familyName "Abbott";
+    schema:birthDate "1960-07-04"^^xsd:date;
+    schema:address _:b62.
+_:b62 a schema:PostalAddress;
+    schema:streetAddress "Church Path";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Aliso Viejo";
+    schema:postalCode "92074-5640";
+    schema:addressCountry "United Arab Emirates".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laura";
+    schema:familyName "Wilderman";
+    schema:birthDate "2001-09-22"^^xsd:date;
+    schema:address _:b217.
+_:b217 a schema:PostalAddress;
+    schema:streetAddress "Hauck Gardens";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Buffalo";
+    schema:postalCode "81945-2117";
+    schema:addressCountry "Guadeloupe".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Susan";
+    schema:familyName "Casper";
+    schema:birthDate "1971-02-07"^^xsd:date;
+    schema:address _:b913.
+_:b913 a schema:PostalAddress;
+    schema:streetAddress "Blick Way";
+    schema:addressRegion "California";
+    schema:addressLocality "East Marguerite";
+    schema:postalCode "72383-1066";
+    schema:addressCountry "Colombia".

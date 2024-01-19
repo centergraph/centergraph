@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jerome";
+    schema:familyName "Frami";
+    schema:birthDate "1950-01-09"^^xsd:date;
+    schema:address _:b746.
+_:b746 a schema:PostalAddress;
+    schema:streetAddress "Hills Terrace";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "West Leslieport";
+    schema:postalCode "61844";
+    schema:addressCountry "Syrian Arab Republic".
