@@ -112,8 +112,23 @@ export class QueryBuilder<T extends NamedNode[] | number> implements PromiseLike
       graphs.set(quad.graph.value, quad.graph as unknown as NamedNode)
     }
 
-    const graphNamedNodes = [...graphs.values()]
+    let graphNamedNodes = [...graphs.values()]
 
+    for (const { predicate, order } of this.#sorters) {
+      graphNamedNodes.sort((a, b) => {
+        const [valueA] = [...dataset.match(null, predicate, null, a)]
+        const [valueB] = [...dataset.match(null, predicate, null, b)]
+
+        if (order === 'ASC') {
+          return valueA?.object?.value?.localeCompare(valueB?.object?.value)
+        } else {
+          return valueB?.object?.value?.localeCompare(valueA?.object?.value)
+        }
+      })
+    }
+
+    if (this.#paginate.offset) graphNamedNodes = graphNamedNodes.splice(this.#paginate.offset)
+    if (this.#paginate.limit) graphNamedNodes = graphNamedNodes.splice(0, this.#paginate.limit)
     if (this.#options.asCount) return graphNamedNodes.length as T
 
     return graphNamedNodes as T

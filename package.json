@@ -28,6 +28,8 @@
     "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "*",
+    "react-window": "^1.8.10",
+    "react-window-infinite-loader": "^1.0.9",
     "shacl-engine": "^0.1.1",
     "typescript-lru-cache": "^2.0.0"
   },
@@ -52,6 +54,8 @@
     "@types/react": "^18.2.43",
     "@types/react-beautiful-dnd": "^13.1.8",
     "@types/react-dom": "^18.2.17",
+    "@types/react-window": "^1.8.8",
+    "@types/react-window-infinite-loader": "^1.0.9",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react-swc": "^3.5.0",

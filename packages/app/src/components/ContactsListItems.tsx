@@ -5,8 +5,8 @@ import { Link, useParams } from 'react-router-dom'
 import { Icon } from '@iconify/react'
 const { rdf, schema } = api.namespaces
 
-export default function ContactsListItems({ search }: { search: string }) {
-  const resource = api.query.filter(rdf('type'), schema('Person')).sort(schema('name'))
+export default function ContactsListItems({ search, offset }: { search: string; offset: number }) {
+  const resource = api.query.filter(rdf('type'), schema('Person')).sort(schema('familyName')).paginate(10, offset)
   if (search) resource.fullTextSearch(search)
   const contents = resource.asResource()
   const { slug } = useParams()
