@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Phyllis";
+    schema:familyName "Strosin";
+    schema:birthDate "1976-02-14"^^xsd:date;
+    schema:address _:b2800.
+_:b2800 a schema:PostalAddress;
+    schema:streetAddress "Clarence Street";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Joesphton";
+    schema:postalCode "71949";
+    schema:addressCountry "Tunisia".

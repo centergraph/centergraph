@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lowell";
+    schema:familyName "Cummings";
+    schema:birthDate "1999-12-09"^^xsd:date;
+    schema:address _:b4518.
+_:b4518 a schema:PostalAddress;
+    schema:streetAddress "Cross Lane";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Beverlyport";
+    schema:postalCode "77337-6982";
+    schema:addressCountry "Sweden".

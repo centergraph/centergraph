@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clifford";
+    schema:familyName "Sipes-Towne";
+    schema:birthDate "1957-04-01"^^xsd:date;
+    schema:address _:b7428.
+_:b7428 a schema:PostalAddress;
+    schema:streetAddress "Roob Ports";
+    schema:addressRegion "New York";
+    schema:addressLocality "Fort Alvinaland";
+    schema:postalCode "64134-1316";
+    schema:addressCountry "Montserrat".

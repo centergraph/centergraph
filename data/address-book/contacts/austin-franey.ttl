@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Austin";
+    schema:familyName "Franey";
+    schema:birthDate "1959-04-16"^^xsd:date;
+    schema:address _:b5723.
+_:b5723 a schema:PostalAddress;
+    schema:streetAddress "Carleton Forge";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Jefferson City";
+    schema:postalCode "45786-8656";
+    schema:addressCountry "Saint Kitts and Nevis".

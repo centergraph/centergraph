@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jesus";
+    schema:familyName "McDermott";
+    schema:birthDate "1999-11-14"^^xsd:date;
+    schema:address _:b5513.
+_:b5513 a schema:PostalAddress;
+    schema:streetAddress "Aric Forks";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Lincoln";
+    schema:postalCode "96928";
+    schema:addressCountry "Egypt".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alex";
+    schema:familyName "Hahn";
+    schema:birthDate "1949-08-23"^^xsd:date;
+    schema:address _:b6380.
+_:b6380 a schema:PostalAddress;
+    schema:streetAddress "Highfield Avenue";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Mission Viejo";
+    schema:postalCode "38002-7908";
+    schema:addressCountry "Gabon".

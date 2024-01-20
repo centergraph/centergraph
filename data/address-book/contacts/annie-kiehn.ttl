@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Annie";
+    schema:familyName "Kiehn";
+    schema:birthDate "1992-04-26"^^xsd:date;
+    schema:address _:b3759.
+_:b3759 a schema:PostalAddress;
+    schema:streetAddress "Jaskolski Lights";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "West Reeseboro";
+    schema:postalCode "47386";
+    schema:addressCountry "United States of America".

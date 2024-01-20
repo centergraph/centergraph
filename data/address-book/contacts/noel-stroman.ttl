@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Noel";
+    schema:familyName "Stroman";
+    schema:birthDate "1991-05-30"^^xsd:date;
+    schema:address _:b6634.
+_:b6634 a schema:PostalAddress;
+    schema:streetAddress "Abelardo Well";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Ornboro";
+    schema:postalCode "51179-4051";
+    schema:addressCountry "Tajikistan".

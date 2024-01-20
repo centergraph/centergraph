@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elaine";
+    schema:familyName "Ruecker";
+    schema:birthDate "1973-01-07"^^xsd:date;
+    schema:address _:b7228.
+_:b7228 a schema:PostalAddress;
+    schema:streetAddress "Reanna Parkways";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Bradfordberg";
+    schema:postalCode "11877";
+    schema:addressCountry "Tokelau".

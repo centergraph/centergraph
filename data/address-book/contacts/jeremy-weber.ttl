@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeremy";
+    schema:familyName "Weber";
+    schema:birthDate "1953-01-11"^^xsd:date;
+    schema:address _:b5202.
+_:b5202 a schema:PostalAddress;
+    schema:streetAddress "Jed Club";
+    schema:addressRegion "New York";
+    schema:addressLocality "Fort Devynbury";
+    schema:postalCode "41816";
+    schema:addressCountry "Saint Kitts and Nevis".

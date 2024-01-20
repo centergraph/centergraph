@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Angelina";
+    schema:familyName "Rippin";
+    schema:birthDate "1957-01-24"^^xsd:date;
+    schema:address _:b8057.
+_:b8057 a schema:PostalAddress;
+    schema:streetAddress "Mann Viaduct";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Plano";
+    schema:postalCode "27978-8062";
+    schema:addressCountry "Ukraine".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Krystal";
+    schema:familyName "Lakin";
+    schema:birthDate "1999-01-11"^^xsd:date;
+    schema:address _:b3767.
+_:b3767 a schema:PostalAddress;
+    schema:streetAddress "The Croft";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Schmelerport";
+    schema:postalCode "69091-8047";
+    schema:addressCountry "Saint Helena".

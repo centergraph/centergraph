@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Judith";
+    schema:familyName "Wyman";
+    schema:birthDate "1946-11-15"^^xsd:date;
+    schema:address _:b3256.
+_:b3256 a schema:PostalAddress;
+    schema:streetAddress "Casimer Turnpike";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "New Vivianne";
+    schema:postalCode "19183";
+    schema:addressCountry "Austria".

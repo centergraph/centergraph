@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Paula";
+    schema:familyName "Schmitt";
+    schema:birthDate "1985-10-31"^^xsd:date;
+    schema:address _:b291.
+_:b291 a schema:PostalAddress;
+    schema:streetAddress "Melyna River";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Port Lawson";
+    schema:postalCode "89304-4363";
+    schema:addressCountry "Hong Kong".

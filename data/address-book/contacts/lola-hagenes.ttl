@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lola";
+    schema:familyName "Hagenes";
+    schema:birthDate "1958-04-20"^^xsd:date;
+    schema:address _:b6337.
+_:b6337 a schema:PostalAddress;
+    schema:streetAddress "Johnson Flat";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Lillyland";
+    schema:postalCode "80977-7926";
+    schema:addressCountry "Saint Martin".

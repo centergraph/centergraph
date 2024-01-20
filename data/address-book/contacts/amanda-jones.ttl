@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amanda";
+    schema:familyName "Jones";
+    schema:birthDate "1989-01-31"^^xsd:date;
+    schema:address _:b5450.
+_:b5450 a schema:PostalAddress;
+    schema:streetAddress "Hillside Avenue";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "East Tysontown";
+    schema:postalCode "73678";
+    schema:addressCountry "Sudan".

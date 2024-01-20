@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Susan";
+    schema:familyName "Gorczany";
+    schema:birthDate "1974-12-12"^^xsd:date;
+    schema:address _:b4506.
+_:b4506 a schema:PostalAddress;
+    schema:streetAddress "S Franklin Street";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "East Patriciahaven";
+    schema:postalCode "61098";
+    schema:addressCountry "Guam".

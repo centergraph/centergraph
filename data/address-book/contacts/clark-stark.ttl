@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clark";
+    schema:familyName "Stark";
+    schema:birthDate "2004-03-02"^^xsd:date;
+    schema:address _:b6519.
+_:b6519 a schema:PostalAddress;
+    schema:streetAddress "Koch Track";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Huelcester";
+    schema:postalCode "57635";
+    schema:addressCountry "Kazakhstan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terrell";
+    schema:familyName "Keeling";
+    schema:birthDate "1986-08-23"^^xsd:date;
+    schema:address _:b3682.
+_:b3682 a schema:PostalAddress;
+    schema:streetAddress "Victoria Harbor";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "West Babylon";
+    schema:postalCode "21852-1093";
+    schema:addressCountry "Azerbaijan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Earl";
+    schema:familyName "Orn";
+    schema:birthDate "1983-07-16"^^xsd:date;
+    schema:address _:b6206.
+_:b6206 a schema:PostalAddress;
+    schema:streetAddress "Kristoffer Dam";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Dollycester";
+    schema:postalCode "58879-3227";
+    schema:addressCountry "Mayotte".

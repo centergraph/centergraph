@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Danielle";
+    schema:familyName "Smitham";
+    schema:birthDate "1978-04-12"^^xsd:date;
+    schema:address _:b1988.
+_:b1988 a schema:PostalAddress;
+    schema:streetAddress "Wuckert Ford";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Claybury";
+    schema:postalCode "36780-2760";
+    schema:addressCountry "Cyprus".

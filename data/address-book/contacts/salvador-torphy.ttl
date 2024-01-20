@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Salvador";
+    schema:familyName "Torphy";
+    schema:birthDate "2003-01-09"^^xsd:date;
+    schema:address _:b5736.
+_:b5736 a schema:PostalAddress;
+    schema:streetAddress "Mante Tunnel";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Sunnyvale";
+    schema:postalCode "18273";
+    schema:addressCountry "Myanmar".

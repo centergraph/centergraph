@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marty";
+    schema:familyName "Mraz";
+    schema:birthDate "1970-09-10"^^xsd:date;
+    schema:address _:b6270.
+_:b6270 a schema:PostalAddress;
+    schema:streetAddress "Skiles Motorway";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "East Laverna";
+    schema:postalCode "31152-5210";
+    schema:addressCountry "Iceland".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Courtney";
+    schema:familyName "Welch";
+    schema:birthDate "1972-03-05"^^xsd:date;
+    schema:address _:b5515.
+_:b5515 a schema:PostalAddress;
+    schema:streetAddress "Jabari Station";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "East Elissaport";
+    schema:postalCode "75579";
+    schema:addressCountry "Cambodia".

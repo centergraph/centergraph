@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wayne";
+    schema:familyName "O'Reilly";
+    schema:birthDate "1972-01-15"^^xsd:date;
+    schema:address _:b6622.
+_:b6622 a schema:PostalAddress;
+    schema:streetAddress "Kathryn Avenue";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Redlands";
+    schema:postalCode "09628-6845";
+    schema:addressCountry "Bolivia".

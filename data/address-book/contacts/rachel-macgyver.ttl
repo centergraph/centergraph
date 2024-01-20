@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rachel";
+    schema:familyName "MacGyver";
+    schema:birthDate "1950-05-19"^^xsd:date;
+    schema:address _:b4866.
+_:b4866 a schema:PostalAddress;
+    schema:streetAddress "Beech Grove";
+    schema:addressRegion "California";
+    schema:addressLocality "New Roman";
+    schema:postalCode "07258-5629";
+    schema:addressCountry "Micronesia".

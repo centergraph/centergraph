@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cecil";
+    schema:familyName "Grant";
+    schema:birthDate "1966-01-19"^^xsd:date;
+    schema:address _:b2084.
+_:b2084 a schema:PostalAddress;
+    schema:streetAddress "Park Drive";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Shayneborough";
+    schema:postalCode "01502-7117";
+    schema:addressCountry "Venezuela".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Geoffrey";
+    schema:familyName "Koch";
+    schema:birthDate "1951-05-09"^^xsd:date;
+    schema:address _:b817.
+_:b817 a schema:PostalAddress;
+    schema:streetAddress "E High Street";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "East Patsyhaven";
+    schema:postalCode "11373-4863";
+    schema:addressCountry "Nepal".

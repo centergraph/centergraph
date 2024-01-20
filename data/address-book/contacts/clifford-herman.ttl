@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clifford";
+    schema:familyName "Herman";
+    schema:birthDate "1998-02-28"^^xsd:date;
+    schema:address _:b7013.
+_:b7013 a schema:PostalAddress;
+    schema:streetAddress "Hermann Courts";
+    schema:addressRegion "California";
+    schema:addressLocality "North Alivia";
+    schema:postalCode "32335-9916";
+    schema:addressCountry "Eritrea".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vanessa";
+    schema:familyName "Dicki";
+    schema:birthDate "1962-03-30"^^xsd:date;
+    schema:address _:b1369.
+_:b1369 a schema:PostalAddress;
+    schema:streetAddress "Waverley Road";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Mercedeston";
+    schema:postalCode "26361-0020";
+    schema:addressCountry "Taiwan".

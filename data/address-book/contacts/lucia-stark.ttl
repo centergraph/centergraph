@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lucia";
+    schema:familyName "Stark";
+    schema:birthDate "2001-12-28"^^xsd:date;
+    schema:address _:b8628.
+_:b8628 a schema:PostalAddress;
+    schema:streetAddress "N Elm Street";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Wesley Chapel";
+    schema:postalCode "11291-3342";
+    schema:addressCountry "Albania".

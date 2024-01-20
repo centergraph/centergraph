@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Norman";
+    schema:familyName "Johns";
+    schema:birthDate "1984-05-03"^^xsd:date;
+    schema:address _:b3025.
+_:b3025 a schema:PostalAddress;
+    schema:streetAddress "Castle Street";
+    schema:addressRegion "Maine";
+    schema:addressLocality "East Seamus";
+    schema:postalCode "03429";
+    schema:addressCountry "Jordan".

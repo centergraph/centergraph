@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vernon";
+    schema:familyName "McCullough";
+    schema:birthDate "1957-10-28"^^xsd:date;
+    schema:address _:b1592.
+_:b1592 a schema:PostalAddress;
+    schema:streetAddress "Zoe Loaf";
+    schema:addressRegion "Montana";
+    schema:addressLocality "West Hoyt";
+    schema:postalCode "85877";
+    schema:addressCountry "Poland".

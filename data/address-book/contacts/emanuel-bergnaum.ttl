@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emanuel";
+    schema:familyName "Bergnaum";
+    schema:birthDate "1996-03-23"^^xsd:date;
+    schema:address _:b761.
+_:b761 a schema:PostalAddress;
+    schema:streetAddress "West Lane";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Port Nasir";
+    schema:postalCode "30673-9822";
+    schema:addressCountry "Liberia".

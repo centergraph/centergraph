@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Courtney";
+    schema:familyName "Bins";
+    schema:birthDate "1972-12-21"^^xsd:date;
+    schema:address _:b6683.
+_:b6683 a schema:PostalAddress;
+    schema:streetAddress "Eriberto Streets";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "South Gate";
+    schema:postalCode "62857-0187";
+    schema:addressCountry "Maldives".

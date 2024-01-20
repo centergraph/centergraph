@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ian";
+    schema:familyName "Howe";
+    schema:birthDate "1953-05-09"^^xsd:date;
+    schema:address _:b8799.
+_:b8799 a schema:PostalAddress;
+    schema:streetAddress "Schneider Course";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Elishacester";
+    schema:postalCode "57330-4919";
+    schema:addressCountry "Saint Martin".

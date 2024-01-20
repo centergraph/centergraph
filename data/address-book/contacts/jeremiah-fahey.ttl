@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeremiah";
+    schema:familyName "Fahey";
+    schema:birthDate "1975-06-09"^^xsd:date;
+    schema:address _:b2149.
+_:b2149 a schema:PostalAddress;
+    schema:streetAddress "Chester Road";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Brandon";
+    schema:postalCode "16513";
+    schema:addressCountry "Paraguay".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Margaret";
+    schema:familyName "Monahan";
+    schema:birthDate "1997-03-07"^^xsd:date;
+    schema:address _:b5022.
+_:b5022 a schema:PostalAddress;
+    schema:streetAddress "Oak Avenue";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Emmerichberg";
+    schema:postalCode "44563-8151";
+    schema:addressCountry "France".

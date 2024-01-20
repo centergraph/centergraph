@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stacey";
+    schema:familyName "O'Connell";
+    schema:birthDate "1951-03-28"^^xsd:date;
+    schema:address _:b2154.
+_:b2154 a schema:PostalAddress;
+    schema:streetAddress "E Grand Avenue";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "MacGyverfurt";
+    schema:postalCode "34370-2348";
+    schema:addressCountry "Maldives".

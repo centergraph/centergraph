@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Constance";
+    schema:familyName "Wolf";
+    schema:birthDate "1985-11-13"^^xsd:date;
+    schema:address _:b6941.
+_:b6941 a schema:PostalAddress;
+    schema:streetAddress "Division Street";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Greentown";
+    schema:postalCode "61802";
+    schema:addressCountry "Iraq".

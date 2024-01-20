@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeanette";
+    schema:familyName "Muller";
+    schema:birthDate "1993-05-01"^^xsd:date;
+    schema:address _:b5909.
+_:b5909 a schema:PostalAddress;
+    schema:streetAddress "Dooley Summit";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Port Bryceville";
+    schema:postalCode "29537";
+    schema:addressCountry "Norway".

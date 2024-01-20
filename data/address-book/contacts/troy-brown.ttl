@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Troy";
+    schema:familyName "Brown";
+    schema:birthDate "1956-07-22"^^xsd:date;
+    schema:address _:b2231.
+_:b2231 a schema:PostalAddress;
+    schema:streetAddress "Heloise Gardens";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "East Luis";
+    schema:postalCode "07353";
+    schema:addressCountry "Antigua and Barbuda".

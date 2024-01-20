@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Antoinette";
+    schema:familyName "Bernhard";
+    schema:birthDate "2002-02-10"^^xsd:date;
+    schema:address _:b1851.
+_:b1851 a schema:PostalAddress;
+    schema:streetAddress "Ebony Shore";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Boston";
+    schema:postalCode "60478-3860";
+    schema:addressCountry "Lithuania".

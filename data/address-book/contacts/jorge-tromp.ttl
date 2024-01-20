@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jorge";
+    schema:familyName "Tromp";
+    schema:birthDate "1964-01-31"^^xsd:date;
+    schema:address _:b9798.
+_:b9798 a schema:PostalAddress;
+    schema:streetAddress "N Pearl Street";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Shannaburgh";
+    schema:postalCode "79135";
+    schema:addressCountry "Antarctica".

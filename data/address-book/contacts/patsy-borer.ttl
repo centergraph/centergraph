@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Patsy";
+    schema:familyName "Borer";
+    schema:birthDate "1987-12-09"^^xsd:date;
+    schema:address _:b1685.
+_:b1685 a schema:PostalAddress;
+    schema:streetAddress "S Monroe Street";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Filibertoborough";
+    schema:postalCode "06251-4561";
+    schema:addressCountry "Guatemala".

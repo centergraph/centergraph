@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Abraham";
+    schema:familyName "Wisozk";
+    schema:birthDate "1968-01-05"^^xsd:date;
+    schema:address _:b1856.
+_:b1856 a schema:PostalAddress;
+    schema:streetAddress "Monahan Courts";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "South Katarinaborough";
+    schema:postalCode "72692";
+    schema:addressCountry "Chile".

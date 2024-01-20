@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeffery";
+    schema:familyName "Runolfsdottir";
+    schema:birthDate "1952-12-08"^^xsd:date;
+    schema:address _:b2571.
+_:b2571 a schema:PostalAddress;
+    schema:streetAddress "Lula Meadows";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Lillianaland";
+    schema:postalCode "14703";
+    schema:addressCountry "Dominica".

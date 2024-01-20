@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cecilia";
+    schema:familyName "Wiegand";
+    schema:birthDate "1948-01-31"^^xsd:date;
+    schema:address _:b1148.
+_:b1148 a schema:PostalAddress;
+    schema:streetAddress "Beer Plains";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "McLean";
+    schema:postalCode "74222";
+    schema:addressCountry "Germany".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ricardo";
+    schema:familyName "Ernser";
+    schema:birthDate "1965-01-21"^^xsd:date;
+    schema:address _:b7642.
+_:b7642 a schema:PostalAddress;
+    schema:streetAddress "The Woodlands";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Temple";
+    schema:postalCode "19658-5572";
+    schema:addressCountry "Sweden".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shelley";
+    schema:familyName "Buckridge";
+    schema:birthDate "1965-05-03"^^xsd:date;
+    schema:address _:b3089.
+_:b3089 a schema:PostalAddress;
+    schema:streetAddress "Nikolas Views";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Sabinafield";
+    schema:postalCode "85856";
+    schema:addressCountry "Haiti".

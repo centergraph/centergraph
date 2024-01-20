@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jody";
+    schema:familyName "Hane";
+    schema:birthDate "1957-07-15"^^xsd:date;
+    schema:address _:b1600.
+_:b1600 a schema:PostalAddress;
+    schema:streetAddress "Tavares Villages";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Shreveport";
+    schema:postalCode "25590";
+    schema:addressCountry "Central African Republic".

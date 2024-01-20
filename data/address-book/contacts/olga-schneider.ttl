@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Olga";
+    schema:familyName "Schneider";
+    schema:birthDate "1984-01-12"^^xsd:date;
+    schema:address _:b2498.
+_:b2498 a schema:PostalAddress;
+    schema:streetAddress "Verner Forges";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Fort Rodrickboro";
+    schema:postalCode "44935";
+    schema:addressCountry "Kyrgyz Republic".

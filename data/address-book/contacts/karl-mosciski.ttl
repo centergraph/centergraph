@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Karl";
+    schema:familyName "Mosciski";
+    schema:birthDate "2000-06-27"^^xsd:date;
+    schema:address _:b1389.
+_:b1389 a schema:PostalAddress;
+    schema:streetAddress "Johnson Dam";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Erichside";
+    schema:postalCode "57627-4827";
+    schema:addressCountry "Zimbabwe".

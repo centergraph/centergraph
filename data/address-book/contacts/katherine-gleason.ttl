@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Katherine";
+    schema:familyName "Gleason";
+    schema:birthDate "1989-12-24"^^xsd:date;
+    schema:address _:b453.
+_:b453 a schema:PostalAddress;
+    schema:streetAddress "8th Avenue";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Jadonstead";
+    schema:postalCode "70151";
+    schema:addressCountry "Guernsey".

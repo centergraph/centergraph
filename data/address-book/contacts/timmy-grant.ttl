@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Timmy";
+    schema:familyName "Grant";
+    schema:birthDate "1955-07-08"^^xsd:date;
+    schema:address _:b6172.
+_:b6172 a schema:PostalAddress;
+    schema:streetAddress "Luettgen Forge";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Rethafort";
+    schema:postalCode "12846-2812";
+    schema:addressCountry "Central African Republic".

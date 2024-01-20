@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Malcolm";
+    schema:familyName "Homenick";
+    schema:birthDate "1991-09-06"^^xsd:date;
+    schema:address _:b5076.
+_:b5076 a schema:PostalAddress;
+    schema:streetAddress "Clifton Road";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "South David";
+    schema:postalCode "06438";
+    schema:addressCountry "Cyprus".

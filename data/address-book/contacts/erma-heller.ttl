@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erma";
+    schema:familyName "Heller";
+    schema:birthDate "1949-01-16"^^xsd:date;
+    schema:address _:b3354.
+_:b3354 a schema:PostalAddress;
+    schema:streetAddress "Fourth Avenue";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Port Javonteborough";
+    schema:postalCode "07161";
+    schema:addressCountry "Gibraltar".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Charles";
+    schema:familyName "Orn";
+    schema:birthDate "1958-09-20"^^xsd:date;
+    schema:address _:b3009.
+_:b3009 a schema:PostalAddress;
+    schema:streetAddress "Tatum Manor";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Fort Amelia";
+    schema:postalCode "63561";
+    schema:addressCountry "Guatemala".

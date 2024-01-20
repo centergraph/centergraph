@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Candace";
+    schema:familyName "Deckow";
+    schema:birthDate "1944-01-25"^^xsd:date;
+    schema:address _:b1007.
+_:b1007 a schema:PostalAddress;
+    schema:streetAddress "Lazaro Forest";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Lake Presleyburgh";
+    schema:postalCode "69823";
+    schema:addressCountry "Puerto Rico".

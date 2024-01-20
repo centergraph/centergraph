@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ervin";
+    schema:familyName "Koch";
+    schema:birthDate "1985-04-24"^^xsd:date;
+    schema:address _:b7645.
+_:b7645 a schema:PostalAddress;
+    schema:streetAddress "Padberg Expressway";
+    schema:addressRegion "California";
+    schema:addressLocality "Port Bernie";
+    schema:postalCode "74670";
+    schema:addressCountry "Zimbabwe".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vernon";
+    schema:familyName "Little";
+    schema:birthDate "1957-06-19"^^xsd:date;
+    schema:address _:b3083.
+_:b3083 a schema:PostalAddress;
+    schema:streetAddress "Euclid Avenue";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Elisaberg";
+    schema:postalCode "93090-7550";
+    schema:addressCountry "Libyan Arab Jamahiriya".

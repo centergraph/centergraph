@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Santiago";
+    schema:familyName "Kerluke";
+    schema:birthDate "1998-07-01"^^xsd:date;
+    schema:address _:b7034.
+_:b7034 a schema:PostalAddress;
+    schema:streetAddress "Taurean Course";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Lerahaven";
+    schema:postalCode "66439-4049";
+    schema:addressCountry "Nigeria".

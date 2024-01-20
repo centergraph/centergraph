@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Benjamin";
+    schema:familyName "Collins-Gleason";
+    schema:birthDate "1961-09-27"^^xsd:date;
+    schema:address _:b8290.
+_:b8290 a schema:PostalAddress;
+    schema:streetAddress "Eugene Port";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Parkerworth";
+    schema:postalCode "51251";
+    schema:addressCountry "Bonaire, Sint Eustatius and Saba".

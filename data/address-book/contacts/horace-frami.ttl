@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Horace";
+    schema:familyName "Frami";
+    schema:birthDate "1963-04-11"^^xsd:date;
+    schema:address _:b3890.
+_:b3890 a schema:PostalAddress;
+    schema:streetAddress "Kaia Forges";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "New Alyceview";
+    schema:postalCode "68439-4428";
+    schema:addressCountry "Turks and Caicos Islands".

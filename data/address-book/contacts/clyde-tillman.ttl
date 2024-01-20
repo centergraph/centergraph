@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clyde";
+    schema:familyName "Tillman";
+    schema:birthDate "1960-11-03"^^xsd:date;
+    schema:address _:b8560.
+_:b8560 a schema:PostalAddress;
+    schema:streetAddress "W 11th Street";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "North Cristalfurt";
+    schema:postalCode "19558-1154";
+    schema:addressCountry "Puerto Rico".

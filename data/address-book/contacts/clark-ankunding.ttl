@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clark";
+    schema:familyName "Ankunding";
+    schema:birthDate "1956-07-04"^^xsd:date;
+    schema:address _:b2378.
+_:b2378 a schema:PostalAddress;
+    schema:streetAddress "S Front Street";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Fort Bridgetfurt";
+    schema:postalCode "12995-0292";
+    schema:addressCountry "Aland Islands".

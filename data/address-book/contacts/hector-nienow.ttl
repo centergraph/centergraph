@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hector";
+    schema:familyName "Nienow";
+    schema:birthDate "2004-01-27"^^xsd:date;
+    schema:address _:b8107.
+_:b8107 a schema:PostalAddress;
+    schema:streetAddress "Queen's Road";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "East Eve";
+    schema:postalCode "89274-6231";
+    schema:addressCountry "Martinique".

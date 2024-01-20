@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Donna";
+    schema:familyName "Zulauf";
+    schema:birthDate "1962-03-17"^^xsd:date;
+    schema:address _:b462.
+_:b462 a schema:PostalAddress;
+    schema:streetAddress "Tyra Rapids";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Grand Prairie";
+    schema:postalCode "97791-7949";
+    schema:addressCountry "Mali".

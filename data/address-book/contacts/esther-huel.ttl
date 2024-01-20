@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Esther";
+    schema:familyName "Huel";
+    schema:birthDate "1980-05-25"^^xsd:date;
+    schema:address _:b3372.
+_:b3372 a schema:PostalAddress;
+    schema:streetAddress "Odell Ways";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Devontehaven";
+    schema:postalCode "40642";
+    schema:addressCountry "Turks and Caicos Islands".

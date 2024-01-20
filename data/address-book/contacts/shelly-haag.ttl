@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shelly";
+    schema:familyName "Haag";
+    schema:birthDate "1975-04-09"^^xsd:date;
+    schema:address _:b8262.
+_:b8262 a schema:PostalAddress;
+    schema:streetAddress "Maple Avenue";
+    schema:addressRegion "New York";
+    schema:addressLocality "Chesapeake";
+    schema:postalCode "58082";
+    schema:addressCountry "South Sudan".

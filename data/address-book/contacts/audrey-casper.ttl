@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Audrey";
+    schema:familyName "Casper";
+    schema:birthDate "1971-11-30"^^xsd:date;
+    schema:address _:b9897.
+_:b9897 a schema:PostalAddress;
+    schema:streetAddress "Valentina Course";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Fort Walterburgh";
+    schema:postalCode "49925-1824";
+    schema:addressCountry "Albania".

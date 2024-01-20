@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruben";
+    schema:familyName "Gottlieb";
+    schema:birthDate "1945-02-09"^^xsd:date;
+    schema:address _:b6276.
+_:b6276 a schema:PostalAddress;
+    schema:streetAddress "West Lane";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Prohaskaside";
+    schema:postalCode "57311";
+    schema:addressCountry "Micronesia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Blanche";
+    schema:familyName "Lowe";
+    schema:birthDate "1957-11-11"^^xsd:date;
+    schema:address _:b1234.
+_:b1234 a schema:PostalAddress;
+    schema:streetAddress "Jubilee Close";
+    schema:addressRegion "California";
+    schema:addressLocality "Lake Robin";
+    schema:postalCode "81140-2803";
+    schema:addressCountry "Paraguay".

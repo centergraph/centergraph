@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Essie";
+    schema:familyName "Lehner";
+    schema:birthDate "1971-07-02"^^xsd:date;
+    schema:address _:b5686.
+_:b5686 a schema:PostalAddress;
+    schema:streetAddress "Willow Drive";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Georgetown";
+    schema:postalCode "44796";
+    schema:addressCountry "Egypt".

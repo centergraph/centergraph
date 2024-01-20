@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Donald";
+    schema:familyName "Anderson";
+    schema:birthDate "1975-12-01"^^xsd:date;
+    schema:address _:b9240.
+_:b9240 a schema:PostalAddress;
+    schema:streetAddress "Sauer Loaf";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Port Tristin";
+    schema:postalCode "10521";
+    schema:addressCountry "Romania".

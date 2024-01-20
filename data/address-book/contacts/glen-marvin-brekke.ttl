@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Glen";
+    schema:familyName "Marvin-Brekke";
+    schema:birthDate "1990-01-27"^^xsd:date;
+    schema:address _:b2839.
+_:b2839 a schema:PostalAddress;
+    schema:streetAddress "Hoeger Rue";
+    schema:addressRegion "California";
+    schema:addressLocality "Cummingschester";
+    schema:postalCode "18682";
+    schema:addressCountry "Cote d'Ivoire".

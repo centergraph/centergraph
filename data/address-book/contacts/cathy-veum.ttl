@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cathy";
+    schema:familyName "Veum";
+    schema:birthDate "1992-05-31"^^xsd:date;
+    schema:address _:b6522.
+_:b6522 a schema:PostalAddress;
+    schema:streetAddress "Edwardo Creek";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "South Alyciaborough";
+    schema:postalCode "79799-9378";
+    schema:addressCountry "Poland".

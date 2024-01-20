@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Forrest";
+    schema:familyName "Rice";
+    schema:birthDate "1986-10-15"^^xsd:date;
+    schema:address _:b3059.
+_:b3059 a schema:PostalAddress;
+    schema:streetAddress "W Grand Avenue";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Fabianmouth";
+    schema:postalCode "43724-1177";
+    schema:addressCountry "Saint Lucia".

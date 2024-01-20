@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mitchell";
+    schema:familyName "Will";
+    schema:birthDate "1950-05-06"^^xsd:date;
+    schema:address _:b4925.
+_:b4925 a schema:PostalAddress;
+    schema:streetAddress "America Spur";
+    schema:addressRegion "California";
+    schema:addressLocality "Rohanchester";
+    schema:postalCode "90515";
+    schema:addressCountry "Comoros".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brenda";
+    schema:familyName "Auer";
+    schema:birthDate "1995-03-26"^^xsd:date;
+    schema:address _:b4563.
+_:b4563 a schema:PostalAddress;
+    schema:streetAddress "Gibson Port";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Las Cruces";
+    schema:postalCode "46065-6270";
+    schema:addressCountry "Solomon Islands".

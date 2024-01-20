@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Florence";
+    schema:familyName "Huels";
+    schema:birthDate "1991-07-10"^^xsd:date;
+    schema:address _:b2921.
+_:b2921 a schema:PostalAddress;
+    schema:streetAddress "Bailee Common";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Raoulfort";
+    schema:postalCode "89130";
+    schema:addressCountry "Vanuatu".

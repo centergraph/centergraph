@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pamela";
+    schema:familyName "Keeling-Konopelski";
+    schema:birthDate "1995-12-03"^^xsd:date;
+    schema:address _:b6279.
+_:b6279 a schema:PostalAddress;
+    schema:streetAddress "S Washington Street";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "West Tad";
+    schema:postalCode "44870-7616";
+    schema:addressCountry "Palestine".

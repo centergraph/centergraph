@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stacy";
+    schema:familyName "Morar-Price";
+    schema:birthDate "1968-02-10"^^xsd:date;
+    schema:address _:b7142.
+_:b7142 a schema:PostalAddress;
+    schema:streetAddress "Lemke Well";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Phoenix";
+    schema:postalCode "76328-7205";
+    schema:addressCountry "Ireland".

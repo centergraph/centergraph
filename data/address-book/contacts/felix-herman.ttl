@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Felix";
+    schema:familyName "Herman";
+    schema:birthDate "1985-04-24"^^xsd:date;
+    schema:address _:b5716.
+_:b5716 a schema:PostalAddress;
+    schema:streetAddress "Meta Walk";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "North Theodora";
+    schema:postalCode "94755";
+    schema:addressCountry "Anguilla".

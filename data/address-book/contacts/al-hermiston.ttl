@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Al";
+    schema:familyName "Hermiston";
+    schema:birthDate "1975-11-01"^^xsd:date;
+    schema:address _:b2533.
+_:b2533 a schema:PostalAddress;
+    schema:streetAddress "Devonte Square";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Lake Viva";
+    schema:postalCode "32807";
+    schema:addressCountry "Slovenia".

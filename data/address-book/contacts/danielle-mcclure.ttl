@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Danielle";
+    schema:familyName "McClure";
+    schema:birthDate "1945-03-28"^^xsd:date;
+    schema:address _:b2623.
+_:b2623 a schema:PostalAddress;
+    schema:streetAddress "Brooklyn Knolls";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "South Hans";
+    schema:postalCode "13258";
+    schema:addressCountry "Antarctica".

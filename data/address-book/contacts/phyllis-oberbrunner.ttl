@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Phyllis";
+    schema:familyName "Oberbrunner";
+    schema:birthDate "1959-10-05"^^xsd:date;
+    schema:address _:b2095.
+_:b2095 a schema:PostalAddress;
+    schema:streetAddress "Guiseppe Burgs";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "East Briana";
+    schema:postalCode "53098";
+    schema:addressCountry "Norway".

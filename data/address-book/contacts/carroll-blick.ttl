@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carroll";
+    schema:familyName "Blick";
+    schema:birthDate "1977-09-20"^^xsd:date;
+    schema:address _:b5938.
+_:b5938 a schema:PostalAddress;
+    schema:streetAddress "Samantha Harbor";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Wittingtown";
+    schema:postalCode "63343";
+    schema:addressCountry "Gibraltar".

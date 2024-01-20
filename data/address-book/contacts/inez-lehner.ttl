@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Inez";
+    schema:familyName "Lehner";
+    schema:birthDate "1998-03-31"^^xsd:date;
+    schema:address _:b9965.
+_:b9965 a schema:PostalAddress;
+    schema:streetAddress "Enoch Haven";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Port Norafurt";
+    schema:postalCode "35010";
+    schema:addressCountry "Central African Republic".

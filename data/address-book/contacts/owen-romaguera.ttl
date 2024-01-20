@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Owen";
+    schema:familyName "Romaguera";
+    schema:birthDate "1949-08-10"^^xsd:date;
+    schema:address _:b2352.
+_:b2352 a schema:PostalAddress;
+    schema:streetAddress "Little Turnpike";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Johnscester";
+    schema:postalCode "46993-0864";
+    schema:addressCountry "French Guiana".

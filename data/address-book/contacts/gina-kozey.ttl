@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gina";
+    schema:familyName "Kozey";
+    schema:birthDate "1970-12-17"^^xsd:date;
+    schema:address _:b6500.
+_:b6500 a schema:PostalAddress;
+    schema:streetAddress "Schuppe Isle";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Maricopa";
+    schema:postalCode "69259-8345";
+    schema:addressCountry "Eritrea".

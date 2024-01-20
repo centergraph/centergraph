@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mable";
+    schema:familyName "Metz";
+    schema:birthDate "1998-03-06"^^xsd:date;
+    schema:address _:b6947.
+_:b6947 a schema:PostalAddress;
+    schema:streetAddress "Barton Rapid";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Mantechester";
+    schema:postalCode "51600-5124";
+    schema:addressCountry "Sierra Leone".

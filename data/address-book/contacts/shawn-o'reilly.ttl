@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shawn";
+    schema:familyName "O'Reilly";
+    schema:birthDate "2002-06-23"^^xsd:date;
+    schema:address _:b1274.
+_:b1274 a schema:PostalAddress;
+    schema:streetAddress "Lelia Fort";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Fort Khalilview";
+    schema:postalCode "53048-2982";
+    schema:addressCountry "Eswatini".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bennie";
+    schema:familyName "Treutel";
+    schema:birthDate "1982-08-22"^^xsd:date;
+    schema:address _:b8991.
+_:b8991 a schema:PostalAddress;
+    schema:streetAddress "Emmitt Estates";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Cordellfurt";
+    schema:postalCode "09127";
+    schema:addressCountry "Timor-Leste".

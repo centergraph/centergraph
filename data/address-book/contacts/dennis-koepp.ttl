@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dennis";
+    schema:familyName "Koepp";
+    schema:birthDate "1945-01-16"^^xsd:date;
+    schema:address _:b7572.
+_:b7572 a schema:PostalAddress;
+    schema:streetAddress "Aurelia Oval";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Fort Jaronside";
+    schema:postalCode "80211-9123";
+    schema:addressCountry "Czechia".

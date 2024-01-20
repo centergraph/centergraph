@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Curtis";
+    schema:familyName "Lockman";
+    schema:birthDate "2004-09-29"^^xsd:date;
+    schema:address _:b3074.
+_:b3074 a schema:PostalAddress;
+    schema:streetAddress "Fritsch Hill";
+    schema:addressRegion "Maine";
+    schema:addressLocality "North Vivienstad";
+    schema:postalCode "86111-4237";
+    schema:addressCountry "Turkey".

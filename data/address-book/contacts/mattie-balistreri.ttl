@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mattie";
+    schema:familyName "Balistreri";
+    schema:birthDate "1988-10-18"^^xsd:date;
+    schema:address _:b1288.
+_:b1288 a schema:PostalAddress;
+    schema:streetAddress "Manor Drive";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "West Kade";
+    schema:postalCode "05744";
+    schema:addressCountry "China".

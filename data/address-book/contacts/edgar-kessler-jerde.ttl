@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edgar";
+    schema:familyName "Kessler-Jerde";
+    schema:birthDate "1971-06-12"^^xsd:date;
+    schema:address _:b7280.
+_:b7280 a schema:PostalAddress;
+    schema:streetAddress "Mount Street";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Fort Fred";
+    schema:postalCode "51778-9639";
+    schema:addressCountry "Djibouti".

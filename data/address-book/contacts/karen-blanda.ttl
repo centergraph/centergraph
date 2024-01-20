@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Karen";
+    schema:familyName "Blanda";
+    schema:birthDate "1987-10-15"^^xsd:date;
+    schema:address _:b3643.
+_:b3643 a schema:PostalAddress;
+    schema:streetAddress "Okuneva Mill";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Michaelhaven";
+    schema:postalCode "60700";
+    schema:addressCountry "Hong Kong".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carolyn";
+    schema:familyName "Kunze";
+    schema:birthDate "1957-02-08"^^xsd:date;
+    schema:address _:b7066.
+_:b7066 a schema:PostalAddress;
+    schema:streetAddress "Satterfield Light";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Mitchellboro";
+    schema:postalCode "51759-4355";
+    schema:addressCountry "South Sudan".

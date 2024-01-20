@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andrea";
+    schema:familyName "Ruecker";
+    schema:birthDate "1981-08-04"^^xsd:date;
+    schema:address _:b3978.
+_:b3978 a schema:PostalAddress;
+    schema:streetAddress "Terry Burgs";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "South Roselyn";
+    schema:postalCode "64549-8519";
+    schema:addressCountry "Bahamas".

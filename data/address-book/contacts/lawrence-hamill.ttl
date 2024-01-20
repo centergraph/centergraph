@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lawrence";
+    schema:familyName "Hamill";
+    schema:birthDate "1990-06-10"^^xsd:date;
+    schema:address _:b8234.
+_:b8234 a schema:PostalAddress;
+    schema:streetAddress "Janis Springs";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Carolinafurt";
+    schema:postalCode "60357-1095";
+    schema:addressCountry "Benin".

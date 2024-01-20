@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amelia";
+    schema:familyName "Volkman";
+    schema:birthDate "1944-08-27"^^xsd:date;
+    schema:address _:b4001.
+_:b4001 a schema:PostalAddress;
+    schema:streetAddress "Price Ramp";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Emersonmouth";
+    schema:postalCode "63444-3745";
+    schema:addressCountry "Saudi Arabia".

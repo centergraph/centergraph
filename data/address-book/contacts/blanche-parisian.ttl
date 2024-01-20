@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Blanche";
+    schema:familyName "Parisian";
+    schema:birthDate "1966-06-04"^^xsd:date;
+    schema:address _:b6608.
+_:b6608 a schema:PostalAddress;
+    schema:streetAddress "Lolita Squares";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Port Enaland";
+    schema:postalCode "20404-2072";
+    schema:addressCountry "Jordan".

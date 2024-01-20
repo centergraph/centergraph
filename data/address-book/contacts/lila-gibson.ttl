@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lila";
+    schema:familyName "Gibson";
+    schema:birthDate "1991-03-13"^^xsd:date;
+    schema:address _:b1489.
+_:b1489 a schema:PostalAddress;
+    schema:streetAddress "Karianne Bridge";
+    schema:addressRegion "Maine";
+    schema:addressLocality "O'Fallon";
+    schema:postalCode "17774-4261";
+    schema:addressCountry "Micronesia".

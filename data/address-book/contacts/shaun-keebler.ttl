@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shaun";
+    schema:familyName "Keebler";
+    schema:birthDate "1980-01-03"^^xsd:date;
+    schema:address _:b1598.
+_:b1598 a schema:PostalAddress;
+    schema:streetAddress "Quentin Ranch";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Ornshire";
+    schema:postalCode "96589-8561";
+    schema:addressCountry "Monaco".

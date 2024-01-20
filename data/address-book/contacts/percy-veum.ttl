@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Percy";
+    schema:familyName "Veum";
+    schema:birthDate "1977-03-06"^^xsd:date;
+    schema:address _:b3298.
+_:b3298 a schema:PostalAddress;
+    schema:streetAddress "Rice Ridge";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Gusikowskifield";
+    schema:postalCode "50167";
+    schema:addressCountry "Republic of Korea".

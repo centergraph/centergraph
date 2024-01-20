@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Omar";
+    schema:familyName "Rempel";
+    schema:birthDate "1972-06-01"^^xsd:date;
+    schema:address _:b174.
+_:b174 a schema:PostalAddress;
+    schema:streetAddress "Klein Corner";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Savionchester";
+    schema:postalCode "58887";
+    schema:addressCountry "Oman".

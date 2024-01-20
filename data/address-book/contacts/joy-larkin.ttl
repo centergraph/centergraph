@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joy";
+    schema:familyName "Larkin";
+    schema:birthDate "1975-03-29"^^xsd:date;
+    schema:address _:b442.
+_:b442 a schema:PostalAddress;
+    schema:streetAddress "Ondricka Trail";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Lake Earnestinebury";
+    schema:postalCode "66551-8106";
+    schema:addressCountry "Comoros".

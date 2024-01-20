@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Glenda";
+    schema:familyName "Auer";
+    schema:birthDate "2000-11-12"^^xsd:date;
+    schema:address _:b392.
+_:b392 a schema:PostalAddress;
+    schema:streetAddress "Fleta Ridges";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Gageport";
+    schema:postalCode "43653-2895";
+    schema:addressCountry "Afghanistan".

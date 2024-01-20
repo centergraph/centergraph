@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alfonso";
+    schema:familyName "Keeling";
+    schema:birthDate "1995-08-20"^^xsd:date;
+    schema:address _:b8654.
+_:b8654 a schema:PostalAddress;
+    schema:streetAddress "Zula Locks";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "South Coyworth";
+    schema:postalCode "51864";
+    schema:addressCountry "Sudan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kim";
+    schema:familyName "Dickinson";
+    schema:birthDate "1981-12-26"^^xsd:date;
+    schema:address _:b2892.
+_:b2892 a schema:PostalAddress;
+    schema:streetAddress "America Corner";
+    schema:addressRegion "Florida";
+    schema:addressLocality "North Aidantown";
+    schema:postalCode "11412";
+    schema:addressCountry "South Sudan".

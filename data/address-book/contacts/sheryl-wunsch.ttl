@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sheryl";
+    schema:familyName "Wunsch";
+    schema:birthDate "1998-04-05"^^xsd:date;
+    schema:address _:b6052.
+_:b6052 a schema:PostalAddress;
+    schema:streetAddress "Walnut Close";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Fort Arvidhaven";
+    schema:postalCode "07096";
+    schema:addressCountry "Palau".

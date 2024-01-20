@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hattie";
+    schema:familyName "Champlin";
+    schema:birthDate "1995-03-11"^^xsd:date;
+    schema:address _:b7995.
+_:b7995 a schema:PostalAddress;
+    schema:streetAddress "Henry Skyway";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Catalina Foothills";
+    schema:postalCode "99091-7042";
+    schema:addressCountry "United Arab Emirates".

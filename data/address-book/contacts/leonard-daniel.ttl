@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leonard";
+    schema:familyName "Daniel";
+    schema:birthDate "1959-06-14"^^xsd:date;
+    schema:address _:b8371.
+_:b8371 a schema:PostalAddress;
+    schema:streetAddress "Dorcas Ford";
+    schema:addressRegion "Washington";
+    schema:addressLocality "New Malcolm";
+    schema:postalCode "32024-7692";
+    schema:addressCountry "Cuba".

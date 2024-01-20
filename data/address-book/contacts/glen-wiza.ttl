@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Glen";
+    schema:familyName "Wiza";
+    schema:birthDate "1954-02-20"^^xsd:date;
+    schema:address _:b8007.
+_:b8007 a schema:PostalAddress;
+    schema:streetAddress "N Harrison Street";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Robertaborough";
+    schema:postalCode "75972-4079";
+    schema:addressCountry "Norfolk Island".

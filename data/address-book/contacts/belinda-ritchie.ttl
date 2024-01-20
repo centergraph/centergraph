@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Belinda";
+    schema:familyName "Ritchie";
+    schema:birthDate "1981-10-31"^^xsd:date;
+    schema:address _:b9816.
+_:b9816 a schema:PostalAddress;
+    schema:streetAddress "Blanda Trafficway";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Fort Antoniettastead";
+    schema:postalCode "88270-8952";
+    schema:addressCountry "Lao People's Democratic Republic".

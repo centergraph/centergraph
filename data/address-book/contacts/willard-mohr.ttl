@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Willard";
+    schema:familyName "Mohr";
+    schema:birthDate "1999-01-16"^^xsd:date;
+    schema:address _:b5441.
+_:b5441 a schema:PostalAddress;
+    schema:streetAddress "Koepp Road";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "West Dorthyborough";
+    schema:postalCode "90724";
+    schema:addressCountry "Uganda".

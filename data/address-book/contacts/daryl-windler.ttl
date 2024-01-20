@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Daryl";
+    schema:familyName "Windler";
+    schema:birthDate "1972-10-24"^^xsd:date;
+    schema:address _:b5761.
+_:b5761 a schema:PostalAddress;
+    schema:streetAddress "Meadow Close";
+    schema:addressRegion "Washington";
+    schema:addressLocality "New Karliview";
+    schema:postalCode "75413";
+    schema:addressCountry "Samoa".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kay";
+    schema:familyName "Rath";
+    schema:birthDate "1944-11-16"^^xsd:date;
+    schema:address _:b7148.
+_:b7148 a schema:PostalAddress;
+    schema:streetAddress "Celine Canyon";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Fort Emilestad";
+    schema:postalCode "63870";
+    schema:addressCountry "Jordan".

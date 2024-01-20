@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Betty";
+    schema:familyName "Sauer";
+    schema:birthDate "1998-05-06"^^xsd:date;
+    schema:address _:b9482.
+_:b9482 a schema:PostalAddress;
+    schema:streetAddress "Noel Wells";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "South Elwyncester";
+    schema:postalCode "23891-4410";
+    schema:addressCountry "Guyana".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emanuel";
+    schema:familyName "Goyette";
+    schema:birthDate "1997-04-25"^^xsd:date;
+    schema:address _:b5933.
+_:b5933 a schema:PostalAddress;
+    schema:streetAddress "Jaskolski Track";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Revere";
+    schema:postalCode "91809";
+    schema:addressCountry "Saint Helena".

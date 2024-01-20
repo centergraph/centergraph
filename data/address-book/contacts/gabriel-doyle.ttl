@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gabriel";
+    schema:familyName "Doyle";
+    schema:birthDate "1957-09-12"^^xsd:date;
+    schema:address _:b7616.
+_:b7616 a schema:PostalAddress;
+    schema:streetAddress "E Main Street";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Homestead";
+    schema:postalCode "36988";
+    schema:addressCountry "Antigua and Barbuda".

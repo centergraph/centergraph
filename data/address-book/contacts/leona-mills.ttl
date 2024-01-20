@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leona";
+    schema:familyName "Mills";
+    schema:birthDate "1956-06-01"^^xsd:date;
+    schema:address _:b8309.
+_:b8309 a schema:PostalAddress;
+    schema:streetAddress "Oxford Street";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "New Jeaniecester";
+    schema:postalCode "58969-4983";
+    schema:addressCountry "Poland".

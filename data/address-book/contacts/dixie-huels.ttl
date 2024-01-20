@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dixie";
+    schema:familyName "Huels";
+    schema:birthDate "1968-08-10"^^xsd:date;
+    schema:address _:b446.
+_:b446 a schema:PostalAddress;
+    schema:streetAddress "Predovic Key";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Samaraland";
+    schema:postalCode "48436";
+    schema:addressCountry "France".

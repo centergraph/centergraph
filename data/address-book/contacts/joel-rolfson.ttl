@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joel";
+    schema:familyName "Rolfson";
+    schema:birthDate "2000-06-20"^^xsd:date;
+    schema:address _:b4970.
+_:b4970 a schema:PostalAddress;
+    schema:streetAddress "Harvey Islands";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Rogershaven";
+    schema:postalCode "97330-6671";
+    schema:addressCountry "Western Sahara".

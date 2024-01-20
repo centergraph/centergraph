@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andre";
+    schema:familyName "Stark";
+    schema:birthDate "1969-07-06"^^xsd:date;
+    schema:address _:b1267.
+_:b1267 a schema:PostalAddress;
+    schema:streetAddress "Elm Close";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Independence";
+    schema:postalCode "42615";
+    schema:addressCountry "Australia".

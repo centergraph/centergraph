@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gilbert";
+    schema:familyName "Padberg";
+    schema:birthDate "1951-03-10"^^xsd:date;
+    schema:address _:b4789.
+_:b4789 a schema:PostalAddress;
+    schema:streetAddress "Green Close";
+    schema:addressRegion "Texas";
+    schema:addressLocality "West Evans";
+    schema:postalCode "78403";
+    schema:addressCountry "Azerbaijan".

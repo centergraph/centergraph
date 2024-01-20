@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amos";
+    schema:familyName "Von";
+    schema:birthDate "1962-10-14"^^xsd:date;
+    schema:address _:b131.
+_:b131 a schema:PostalAddress;
+    schema:streetAddress "Roman Road";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Earlineborough";
+    schema:postalCode "76109-4962";
+    schema:addressCountry "Democratic People's Republic of Korea".

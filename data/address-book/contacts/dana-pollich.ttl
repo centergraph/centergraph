@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dana";
+    schema:familyName "Pollich";
+    schema:birthDate "1959-10-08"^^xsd:date;
+    schema:address _:b8505.
+_:b8505 a schema:PostalAddress;
+    schema:streetAddress "Gregoria Oval";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "New Hertamouth";
+    schema:postalCode "13857-0075";
+    schema:addressCountry "Cayman Islands".

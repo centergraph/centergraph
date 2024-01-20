@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lucas";
+    schema:familyName "Lubowitz";
+    schema:birthDate "1990-03-13"^^xsd:date;
+    schema:address _:b7157.
+_:b7157 a schema:PostalAddress;
+    schema:streetAddress "S Market Street";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Hardyhaven";
+    schema:postalCode "11534";
+    schema:addressCountry "Spain".

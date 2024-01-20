@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shaun";
+    schema:familyName "Russel";
+    schema:birthDate "2001-11-08"^^xsd:date;
+    schema:address _:b8659.
+_:b8659 a schema:PostalAddress;
+    schema:streetAddress "Camille Circles";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "North Glenna";
+    schema:postalCode "09061-8199";
+    schema:addressCountry "Haiti".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Paulette";
+    schema:familyName "Steuber";
+    schema:birthDate "1956-03-03"^^xsd:date;
+    schema:address _:b3881.
+_:b3881 a schema:PostalAddress;
+    schema:streetAddress "Tudor Close";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Libbyfield";
+    schema:postalCode "95433";
+    schema:addressCountry "Republic of Korea".

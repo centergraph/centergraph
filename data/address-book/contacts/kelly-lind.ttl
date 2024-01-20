@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelly";
+    schema:familyName "Lind";
+    schema:birthDate "1982-01-26"^^xsd:date;
+    schema:address _:b5524.
+_:b5524 a schema:PostalAddress;
+    schema:streetAddress "Else Corner";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Port Humbertoland";
+    schema:postalCode "97846";
+    schema:addressCountry "Bahrain".

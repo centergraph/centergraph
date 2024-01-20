@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alison";
+    schema:familyName "Runolfsson";
+    schema:birthDate "2005-08-03"^^xsd:date;
+    schema:address _:b7557.
+_:b7557 a schema:PostalAddress;
+    schema:streetAddress "Hassie Corners";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Omaha";
+    schema:postalCode "15447-4348";
+    schema:addressCountry "Saint Kitts and Nevis".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sandy";
+    schema:familyName "Auer";
+    schema:birthDate "1984-12-04"^^xsd:date;
+    schema:address _:b2022.
+_:b2022 a schema:PostalAddress;
+    schema:streetAddress "Charles Skyway";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Lake Pierreside";
+    schema:postalCode "78544-4958";
+    schema:addressCountry "Holy See (Vatican City State)".

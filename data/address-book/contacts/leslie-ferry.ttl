@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leslie";
+    schema:familyName "Ferry";
+    schema:birthDate "1992-02-17"^^xsd:date;
+    schema:address _:b9710.
+_:b9710 a schema:PostalAddress;
+    schema:streetAddress "Greenfelder Mountains";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Fort Mallory";
+    schema:postalCode "00509";
+    schema:addressCountry "Djibouti".

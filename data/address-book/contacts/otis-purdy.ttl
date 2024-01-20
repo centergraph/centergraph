@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Otis";
+    schema:familyName "Purdy";
+    schema:birthDate "1959-06-14"^^xsd:date;
+    schema:address _:b5625.
+_:b5625 a schema:PostalAddress;
+    schema:streetAddress "McKenzie Summit";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Jacobiside";
+    schema:postalCode "38039";
+    schema:addressCountry "Austria".

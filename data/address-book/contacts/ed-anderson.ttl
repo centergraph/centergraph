@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ed";
+    schema:familyName "Anderson";
+    schema:birthDate "1982-12-23"^^xsd:date;
+    schema:address _:b2512.
+_:b2512 a schema:PostalAddress;
+    schema:streetAddress "Ferry Station";
+    schema:addressRegion "Texas";
+    schema:addressLocality "New Lynnberg";
+    schema:postalCode "59596";
+    schema:addressCountry "Aruba".

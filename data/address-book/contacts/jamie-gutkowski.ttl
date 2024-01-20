@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jamie";
+    schema:familyName "Gutkowski";
+    schema:birthDate "1997-05-02"^^xsd:date;
+    schema:address _:b9382.
+_:b9382 a schema:PostalAddress;
+    schema:streetAddress "Prospect Avenue";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Schinnerchester";
+    schema:postalCode "47337";
+    schema:addressCountry "South Georgia and the South Sandwich Islands".

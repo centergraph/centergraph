@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alice";
+    schema:familyName "Batz";
+    schema:birthDate "1951-08-14"^^xsd:date;
+    schema:address _:b4195.
+_:b4195 a schema:PostalAddress;
+    schema:streetAddress "Stephanie Orchard";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Nashside";
+    schema:postalCode "83015-4667";
+    schema:addressCountry "Chad".

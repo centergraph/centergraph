@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Saul";
+    schema:familyName "Kutch";
+    schema:birthDate "1989-08-28"^^xsd:date;
+    schema:address _:b4879.
+_:b4879 a schema:PostalAddress;
+    schema:streetAddress "Deanna Manor";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Lake Christianberg";
+    schema:postalCode "53702";
+    schema:addressCountry "Qatar".

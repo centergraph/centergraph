@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Herman";
+    schema:familyName "Terry";
+    schema:birthDate "1986-07-30"^^xsd:date;
+    schema:address _:b465.
+_:b465 a schema:PostalAddress;
+    schema:streetAddress "Lenna Port";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Penelopeburgh";
+    schema:postalCode "38173-3783";
+    schema:addressCountry "Bosnia and Herzegovina".

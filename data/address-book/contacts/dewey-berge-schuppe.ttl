@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dewey";
+    schema:familyName "Berge-Schuppe";
+    schema:birthDate "1980-01-14"^^xsd:date;
+    schema:address _:b7009.
+_:b7009 a schema:PostalAddress;
+    schema:streetAddress "12th Street";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "South Blazestead";
+    schema:postalCode "25387";
+    schema:addressCountry "Monaco".

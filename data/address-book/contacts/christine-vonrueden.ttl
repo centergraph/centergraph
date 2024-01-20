@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Christine";
+    schema:familyName "VonRueden";
+    schema:birthDate "1945-01-23"^^xsd:date;
+    schema:address _:b6966.
+_:b6966 a schema:PostalAddress;
+    schema:streetAddress "Oceane Divide";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Raucester";
+    schema:postalCode "11044-1522";
+    schema:addressCountry "Cyprus".

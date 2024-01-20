@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lynn";
+    schema:familyName "Bogan";
+    schema:birthDate "1949-06-13"^^xsd:date;
+    schema:address _:b3963.
+_:b3963 a schema:PostalAddress;
+    schema:streetAddress "Camylle Common";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Oak Park";
+    schema:postalCode "99839";
+    schema:addressCountry "Macao".

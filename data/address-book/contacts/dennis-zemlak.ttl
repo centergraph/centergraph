@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dennis";
+    schema:familyName "Zemlak";
+    schema:birthDate "1983-11-10"^^xsd:date;
+    schema:address _:b9820.
+_:b9820 a schema:PostalAddress;
+    schema:streetAddress "Brook Road";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Ferneboro";
+    schema:postalCode "06096-1422";
+    schema:addressCountry "Chad".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leland";
+    schema:familyName "Jacobs";
+    schema:birthDate "1947-09-08"^^xsd:date;
+    schema:address _:b8009.
+_:b8009 a schema:PostalAddress;
+    schema:streetAddress "Mozell Trail";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Darbystad";
+    schema:postalCode "26163";
+    schema:addressCountry "Ethiopia".

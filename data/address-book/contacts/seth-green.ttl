@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Seth";
+    schema:familyName "Green";
+    schema:birthDate "1999-08-12"^^xsd:date;
+    schema:address _:b2824.
+_:b2824 a schema:PostalAddress;
+    schema:streetAddress "Gutkowski Forks";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Fort Leda";
+    schema:postalCode "15269-2928";
+    schema:addressCountry "Poland".

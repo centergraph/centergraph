@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dwayne";
+    schema:familyName "Toy";
+    schema:birthDate "1978-12-28"^^xsd:date;
+    schema:address _:b5903.
+_:b5903 a schema:PostalAddress;
+    schema:streetAddress "Noe Pines";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "East Filibertofurt";
+    schema:postalCode "77570-3983";
+    schema:addressCountry "Aruba".

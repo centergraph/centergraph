@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Barbara";
+    schema:familyName "Schamberger";
+    schema:birthDate "1956-11-07"^^xsd:date;
+    schema:address _:b5475.
+_:b5475 a schema:PostalAddress;
+    schema:streetAddress "Brakus Walk";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Harrisburgh";
+    schema:postalCode "48800";
+    schema:addressCountry "Lao People's Democratic Republic".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Curtis";
+    schema:familyName "Koepp";
+    schema:birthDate "1969-10-15"^^xsd:date;
+    schema:address _:b631.
+_:b631 a schema:PostalAddress;
+    schema:streetAddress "E Broadway";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "East Los Angeles";
+    schema:postalCode "04638";
+    schema:addressCountry "Iran".

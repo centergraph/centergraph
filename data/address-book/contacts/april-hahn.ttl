@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "April";
+    schema:familyName "Hahn";
+    schema:birthDate "1988-12-03"^^xsd:date;
+    schema:address _:b2338.
+_:b2338 a schema:PostalAddress;
+    schema:streetAddress "N Locust Street";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Medaton";
+    schema:postalCode "04614";
+    schema:addressCountry "Jamaica".

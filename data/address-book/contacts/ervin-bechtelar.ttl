@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ervin";
+    schema:familyName "Bechtelar";
+    schema:birthDate "1997-08-12"^^xsd:date;
+    schema:address _:b513.
+_:b513 a schema:PostalAddress;
+    schema:streetAddress "Torphy Spring";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Hagenesworth";
+    schema:postalCode "23456";
+    schema:addressCountry "Slovakia".

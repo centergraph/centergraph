@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Danielle";
+    schema:familyName "Klocko";
+    schema:birthDate "1975-10-17"^^xsd:date;
+    schema:address _:b7658.
+_:b7658 a schema:PostalAddress;
+    schema:streetAddress "Alessandro Corner";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Bossier City";
+    schema:postalCode "49086";
+    schema:addressCountry "Kazakhstan".

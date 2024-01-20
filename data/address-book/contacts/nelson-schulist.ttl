@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nelson";
+    schema:familyName "Schulist";
+    schema:birthDate "2000-08-07"^^xsd:date;
+    schema:address _:b9517.
+_:b9517 a schema:PostalAddress;
+    schema:streetAddress "Runte Divide";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "East Humbertoside";
+    schema:postalCode "59884";
+    schema:addressCountry "Denmark".

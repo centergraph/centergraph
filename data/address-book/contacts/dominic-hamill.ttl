@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dominic";
+    schema:familyName "Hamill";
+    schema:birthDate "1969-05-27"^^xsd:date;
+    schema:address _:b4625.
+_:b4625 a schema:PostalAddress;
+    schema:streetAddress "Smith Land";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Fort Dallincester";
+    schema:postalCode "01733-5906";
+    schema:addressCountry "Denmark".

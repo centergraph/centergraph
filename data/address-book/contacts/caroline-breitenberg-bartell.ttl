@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Caroline";
+    schema:familyName "Breitenberg-Bartell";
+    schema:birthDate "1988-02-23"^^xsd:date;
+    schema:address _:b9636.
+_:b9636 a schema:PostalAddress;
+    schema:streetAddress "Lesch Via";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Marysville";
+    schema:postalCode "92747-6573";
+    schema:addressCountry "Antarctica".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Celia";
+    schema:familyName "Yost";
+    schema:birthDate "1974-02-19"^^xsd:date;
+    schema:address _:b4922.
+_:b4922 a schema:PostalAddress;
+    schema:streetAddress "Otha Terrace";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Stefanmouth";
+    schema:postalCode "00642";
+    schema:addressCountry "Fiji".

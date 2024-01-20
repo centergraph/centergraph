@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Howard";
+    schema:familyName "Bayer-Stracke";
+    schema:birthDate "1970-10-12"^^xsd:date;
+    schema:address _:b6312.
+_:b6312 a schema:PostalAddress;
+    schema:streetAddress "Smitham Courts";
+    schema:addressRegion "New York";
+    schema:addressLocality "South Jalyn";
+    schema:postalCode "07031-4976";
+    schema:addressCountry "Kenya".

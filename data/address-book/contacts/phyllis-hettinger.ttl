@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Phyllis";
+    schema:familyName "Hettinger";
+    schema:birthDate "1985-08-27"^^xsd:date;
+    schema:address _:b8657.
+_:b8657 a schema:PostalAddress;
+    schema:streetAddress "Braun Harbor";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Magdalenborough";
+    schema:postalCode "42468";
+    schema:addressCountry "Samoa".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Orville";
+    schema:familyName "Greenfelder";
+    schema:birthDate "1950-05-11"^^xsd:date;
+    schema:address _:b9615.
+_:b9615 a schema:PostalAddress;
+    schema:streetAddress "Wisozk Flats";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Mount Pleasant";
+    schema:postalCode "93875-0393";
+    schema:addressCountry "Djibouti".

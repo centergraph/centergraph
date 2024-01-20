@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Craig";
+    schema:familyName "Kihn";
+    schema:birthDate "1981-08-26"^^xsd:date;
+    schema:address _:b7599.
+_:b7599 a schema:PostalAddress;
+    schema:streetAddress "Meagan Stravenue";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Kuvaliscester";
+    schema:postalCode "92253-8667";
+    schema:addressCountry "Colombia".

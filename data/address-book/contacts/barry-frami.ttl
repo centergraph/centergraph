@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Barry";
+    schema:familyName "Frami";
+    schema:birthDate "1987-09-18"^^xsd:date;
+    schema:address _:b3839.
+_:b3839 a schema:PostalAddress;
+    schema:streetAddress "Washington Avenue";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Ritaworth";
+    schema:postalCode "59012";
+    schema:addressCountry "Comoros".

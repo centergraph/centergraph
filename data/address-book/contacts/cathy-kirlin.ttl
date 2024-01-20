@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cathy";
+    schema:familyName "Kirlin";
+    schema:birthDate "1975-04-08"^^xsd:date;
+    schema:address _:b8703.
+_:b8703 a schema:PostalAddress;
+    schema:streetAddress "N Central Avenue";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "St. Louis Park";
+    schema:postalCode "14300";
+    schema:addressCountry "Trinidad and Tobago".

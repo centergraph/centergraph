@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bryan";
+    schema:familyName "Spinka";
+    schema:birthDate "1987-08-31"^^xsd:date;
+    schema:address _:b2527.
+_:b2527 a schema:PostalAddress;
+    schema:streetAddress "Samir Trace";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Edaworth";
+    schema:postalCode "99725-0410";
+    schema:addressCountry "Sao Tome and Principe".

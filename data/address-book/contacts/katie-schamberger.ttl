@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Katie";
+    schema:familyName "Schamberger";
+    schema:birthDate "1949-06-13"^^xsd:date;
+    schema:address _:b1679.
+_:b1679 a schema:PostalAddress;
+    schema:streetAddress "Conroy Drives";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Reingerberg";
+    schema:postalCode "93606-6236";
+    schema:addressCountry "Albania".

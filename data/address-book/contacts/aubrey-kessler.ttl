@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Aubrey";
+    schema:familyName "Kessler";
+    schema:birthDate "1968-07-12"^^xsd:date;
+    schema:address _:b1334.
+_:b1334 a schema:PostalAddress;
+    schema:streetAddress "Brooklyn Flats";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "New Nathanbury";
+    schema:postalCode "54486";
+    schema:addressCountry "Hungary".

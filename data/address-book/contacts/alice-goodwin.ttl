@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alice";
+    schema:familyName "Goodwin";
+    schema:birthDate "1946-03-11"^^xsd:date;
+    schema:address _:b3867.
+_:b3867 a schema:PostalAddress;
+    schema:streetAddress "Union Avenue";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "McKinney";
+    schema:postalCode "79782-1832";
+    schema:addressCountry "Macao".

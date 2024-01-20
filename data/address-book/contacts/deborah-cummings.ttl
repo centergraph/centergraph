@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Deborah";
+    schema:familyName "Cummings";
+    schema:birthDate "1950-07-15"^^xsd:date;
+    schema:address _:b5392.
+_:b5392 a schema:PostalAddress;
+    schema:streetAddress "Pfeffer Terrace";
+    schema:addressRegion "New York";
+    schema:addressLocality "Gibsonburgh";
+    schema:postalCode "98318-6010";
+    schema:addressCountry "Lao People's Democratic Republic".

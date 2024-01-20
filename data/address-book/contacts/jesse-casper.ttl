@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jesse";
+    schema:familyName "Casper";
+    schema:birthDate "1971-12-20"^^xsd:date;
+    schema:address _:b8149.
+_:b8149 a schema:PostalAddress;
+    schema:streetAddress "Kulas Brooks";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Bashirianhaven";
+    schema:postalCode "84670";
+    schema:addressCountry "Tanzania".

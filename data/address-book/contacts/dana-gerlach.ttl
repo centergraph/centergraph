@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dana";
+    schema:familyName "Gerlach";
+    schema:birthDate "1977-09-15"^^xsd:date;
+    schema:address _:b5330.
+_:b5330 a schema:PostalAddress;
+    schema:streetAddress "Satterfield Square";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Gregorioside";
+    schema:postalCode "20932";
+    schema:addressCountry "Mauritius".

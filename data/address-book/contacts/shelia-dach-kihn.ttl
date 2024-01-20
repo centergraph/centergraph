@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shelia";
+    schema:familyName "Dach-Kihn";
+    schema:birthDate "1951-07-28"^^xsd:date;
+    schema:address _:b8056.
+_:b8056 a schema:PostalAddress;
+    schema:streetAddress "Emmerich Via";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "North Roslynview";
+    schema:postalCode "25033-2382";
+    schema:addressCountry "Poland".

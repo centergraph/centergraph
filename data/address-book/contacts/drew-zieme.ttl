@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Drew";
+    schema:familyName "Zieme";
+    schema:birthDate "1952-03-13"^^xsd:date;
+    schema:address _:b7639.
+_:b7639 a schema:PostalAddress;
+    schema:streetAddress "Greenholt Camp";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "South Nikolas";
+    schema:postalCode "44537";
+    schema:addressCountry "Jamaica".

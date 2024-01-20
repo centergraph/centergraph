@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terence";
+    schema:familyName "Price";
+    schema:birthDate "1957-03-08"^^xsd:date;
+    schema:address _:b9854.
+_:b9854 a schema:PostalAddress;
+    schema:streetAddress "Manchester Road";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Whitebury";
+    schema:postalCode "30158";
+    schema:addressCountry "Cyprus".

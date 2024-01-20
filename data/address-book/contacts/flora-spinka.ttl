@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Flora";
+    schema:familyName "Spinka";
+    schema:birthDate "2002-04-24"^^xsd:date;
+    schema:address _:b5203.
+_:b5203 a schema:PostalAddress;
+    schema:streetAddress "O'Kon Fall";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Lake Cayla";
+    schema:postalCode "54687-0594";
+    schema:addressCountry "Pitcairn Islands".

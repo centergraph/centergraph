@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Fredrick";
+    schema:familyName "Kuhlman";
+    schema:birthDate "2001-07-10"^^xsd:date;
+    schema:address _:b9595.
+_:b9595 a schema:PostalAddress;
+    schema:streetAddress "Efren Extension";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Lucileton";
+    schema:postalCode "93773";
+    schema:addressCountry "Brazil".

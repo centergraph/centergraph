@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Willie";
+    schema:familyName "O'Keefe";
+    schema:birthDate "1979-08-30"^^xsd:date;
+    schema:address _:b2372.
+_:b2372 a schema:PostalAddress;
+    schema:streetAddress "Maximilian Motorway";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "West Enola";
+    schema:postalCode "90258";
+    schema:addressCountry "Mozambique".

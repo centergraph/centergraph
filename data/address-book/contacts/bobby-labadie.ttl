@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bobby";
+    schema:familyName "Labadie";
+    schema:birthDate "1965-08-25"^^xsd:date;
+    schema:address _:b3925.
+_:b3925 a schema:PostalAddress;
+    schema:streetAddress "Wintheiser Rue";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Fort Riley";
+    schema:postalCode "64492-8794";
+    schema:addressCountry "Uganda".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Silvia";
+    schema:familyName "Ratke";
+    schema:birthDate "1991-04-03"^^xsd:date;
+    schema:address _:b975.
+_:b975 a schema:PostalAddress;
+    schema:streetAddress "Bauch Circle";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "North Freida";
+    schema:postalCode "20979";
+    schema:addressCountry "Antarctica".

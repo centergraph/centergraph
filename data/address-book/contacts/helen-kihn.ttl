@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Helen";
+    schema:familyName "Kihn";
+    schema:birthDate "1966-01-09"^^xsd:date;
+    schema:address _:b279.
+_:b279 a schema:PostalAddress;
+    schema:streetAddress "Fadel Fort";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Roweland";
+    schema:postalCode "35448-8431";
+    schema:addressCountry "Fiji".

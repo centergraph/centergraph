@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darnell";
+    schema:familyName "Koss-Beer";
+    schema:birthDate "1977-05-26"^^xsd:date;
+    schema:address _:b3446.
+_:b3446 a schema:PostalAddress;
+    schema:streetAddress "Silver Street";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Port Clovis";
+    schema:postalCode "16436";
+    schema:addressCountry "Holy See (Vatican City State)".

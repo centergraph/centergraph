@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeffrey";
+    schema:familyName "Stamm";
+    schema:birthDate "1985-01-03"^^xsd:date;
+    schema:address _:b9918.
+_:b9918 a schema:PostalAddress;
+    schema:streetAddress "Ash Close";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Lydatown";
+    schema:postalCode "88137-9536";
+    schema:addressCountry "Mayotte".

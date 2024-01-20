@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sharon";
+    schema:familyName "Sporer-Jones";
+    schema:birthDate "1986-08-11"^^xsd:date;
+    schema:address _:b779.
+_:b779 a schema:PostalAddress;
+    schema:streetAddress "Halvorson Gardens";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Port Hankton";
+    schema:postalCode "92400-0055";
+    schema:addressCountry "Aruba".

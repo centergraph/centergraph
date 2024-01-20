@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leland";
+    schema:familyName "Boyle";
+    schema:birthDate "1952-05-25"^^xsd:date;
+    schema:address _:b7786.
+_:b7786 a schema:PostalAddress;
+    schema:streetAddress "School Close";
+    schema:addressRegion "Washington";
+    schema:addressLocality "The Hammocks";
+    schema:postalCode "08948-6014";
+    schema:addressCountry "Micronesia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Johanna";
+    schema:familyName "Rolfson";
+    schema:birthDate "1974-02-08"^^xsd:date;
+    schema:address _:b210.
+_:b210 a schema:PostalAddress;
+    schema:streetAddress "Percival Lake";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "East Cathrine";
+    schema:postalCode "60967-6486";
+    schema:addressCountry "Eswatini".

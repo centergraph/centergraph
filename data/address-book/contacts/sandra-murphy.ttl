@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sandra";
+    schema:familyName "Murphy";
+    schema:birthDate "1951-03-01"^^xsd:date;
+    schema:address _:b25.
+_:b25 a schema:PostalAddress;
+    schema:streetAddress "N State Street";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Jerdeland";
+    schema:postalCode "55655-7996";
+    schema:addressCountry "Bahrain".

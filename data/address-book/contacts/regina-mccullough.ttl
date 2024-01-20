@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Regina";
+    schema:familyName "McCullough";
+    schema:birthDate "1961-06-29"^^xsd:date;
+    schema:address _:b1115.
+_:b1115 a schema:PostalAddress;
+    schema:streetAddress "Larson Extension";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "South Yessenia";
+    schema:postalCode "42245-5294";
+    schema:addressCountry "Poland".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruth";
+    schema:familyName "Weber-Swaniawski";
+    schema:birthDate "1995-10-09"^^xsd:date;
+    schema:address _:b847.
+_:b847 a schema:PostalAddress;
+    schema:streetAddress "State Line Road";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Abbottcester";
+    schema:postalCode "69724-1284";
+    schema:addressCountry "Slovakia".

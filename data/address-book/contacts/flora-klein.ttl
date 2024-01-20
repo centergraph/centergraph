@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Flora";
+    schema:familyName "Klein";
+    schema:birthDate "1959-01-13"^^xsd:date;
+    schema:address _:b8069.
+_:b8069 a schema:PostalAddress;
+    schema:streetAddress "Letitia Alley";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Taunton";
+    schema:postalCode "43523-0243";
+    schema:addressCountry "Sri Lanka".

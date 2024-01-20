@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stephanie";
+    schema:familyName "Hammes";
+    schema:birthDate "1998-10-07"^^xsd:date;
+    schema:address _:b7117.
+_:b7117 a schema:PostalAddress;
+    schema:streetAddress "Church Lane";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Spinkaworth";
+    schema:postalCode "95371";
+    schema:addressCountry "Jersey".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terrell";
+    schema:familyName "Williamson";
+    schema:birthDate "1994-02-14"^^xsd:date;
+    schema:address _:b9724.
+_:b9724 a schema:PostalAddress;
+    schema:streetAddress "Madonna Estate";
+    schema:addressRegion "Montana";
+    schema:addressLocality "West Karianne";
+    schema:postalCode "47729-6896";
+    schema:addressCountry "Democratic People's Republic of Korea".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gilbert";
+    schema:familyName "Bashirian";
+    schema:birthDate "1977-06-22"^^xsd:date;
+    schema:address _:b2810.
+_:b2810 a schema:PostalAddress;
+    schema:streetAddress "Oak Drive";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Elyssafort";
+    schema:postalCode "31876-8187";
+    schema:addressCountry "Western Sahara".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alexandra";
+    schema:familyName "Ondricka-Skiles";
+    schema:birthDate "1962-04-13"^^xsd:date;
+    schema:address _:b7729.
+_:b7729 a schema:PostalAddress;
+    schema:streetAddress "Deckow Ford";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "South Paxtonfurt";
+    schema:postalCode "89215-2969";
+    schema:addressCountry "Lithuania".

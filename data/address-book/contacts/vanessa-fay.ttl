@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vanessa";
+    schema:familyName "Fay";
+    schema:birthDate "1947-04-13"^^xsd:date;
+    schema:address _:b3167.
+_:b3167 a schema:PostalAddress;
+    schema:streetAddress "Tanya Port";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "North Mathewfield";
+    schema:postalCode "73908";
+    schema:addressCountry "Bahamas".

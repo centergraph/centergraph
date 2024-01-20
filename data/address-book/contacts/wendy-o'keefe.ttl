@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wendy";
+    schema:familyName "O'Keefe";
+    schema:birthDate "1950-10-28"^^xsd:date;
+    schema:address _:b1587.
+_:b1587 a schema:PostalAddress;
+    schema:streetAddress "Vivianne Dale";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Pagacmouth";
+    schema:postalCode "02606";
+    schema:addressCountry "Anguilla".

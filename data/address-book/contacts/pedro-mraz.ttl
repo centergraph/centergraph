@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pedro";
+    schema:familyName "Mraz";
+    schema:birthDate "2001-05-07"^^xsd:date;
+    schema:address _:b8101.
+_:b8101 a schema:PostalAddress;
+    schema:streetAddress "Zane Forks";
+    schema:addressRegion "New York";
+    schema:addressLocality "Donnellymouth";
+    schema:postalCode "26859";
+    schema:addressCountry "Christmas Island".

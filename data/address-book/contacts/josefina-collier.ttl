@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Josefina";
+    schema:familyName "Collier";
+    schema:birthDate "1989-04-22"^^xsd:date;
+    schema:address _:b3479.
+_:b3479 a schema:PostalAddress;
+    schema:streetAddress "W Main Street";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Lake Tamia";
+    schema:postalCode "05700";
+    schema:addressCountry "Palau".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rafael";
+    schema:familyName "Lynch";
+    schema:birthDate "2002-11-04"^^xsd:date;
+    schema:address _:b7383.
+_:b7383 a schema:PostalAddress;
+    schema:streetAddress "Magdalen Roads";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "North Elmoreworth";
+    schema:postalCode "28099-1649";
+    schema:addressCountry "North Macedonia".

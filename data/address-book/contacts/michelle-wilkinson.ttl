@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Michelle";
+    schema:familyName "Wilkinson";
+    schema:birthDate "1970-08-10"^^xsd:date;
+    schema:address _:b8687.
+_:b8687 a schema:PostalAddress;
+    schema:streetAddress "Long Lane";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Harveychester";
+    schema:postalCode "21747";
+    schema:addressCountry "Guinea-Bissau".

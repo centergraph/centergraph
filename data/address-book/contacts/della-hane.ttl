@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Della";
+    schema:familyName "Hane";
+    schema:birthDate "1967-09-10"^^xsd:date;
+    schema:address _:b9364.
+_:b9364 a schema:PostalAddress;
+    schema:streetAddress "Rosemary Oval";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Lednerchester";
+    schema:postalCode "76366";
+    schema:addressCountry "Cayman Islands".

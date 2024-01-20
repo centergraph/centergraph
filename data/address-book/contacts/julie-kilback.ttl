@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julie";
+    schema:familyName "Kilback";
+    schema:birthDate "1962-11-13"^^xsd:date;
+    schema:address _:b5963.
+_:b5963 a schema:PostalAddress;
+    schema:streetAddress "Tiana Shores";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Vladimirshire";
+    schema:postalCode "94449-2129";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

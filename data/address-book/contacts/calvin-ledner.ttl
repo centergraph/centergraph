@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Calvin";
+    schema:familyName "Ledner";
+    schema:birthDate "1998-04-12"^^xsd:date;
+    schema:address _:b3674.
+_:b3674 a schema:PostalAddress;
+    schema:streetAddress "Miller Rapid";
+    schema:addressRegion "Texas";
+    schema:addressLocality "O'Connellhaven";
+    schema:postalCode "43241-2785";
+    schema:addressCountry "Denmark".

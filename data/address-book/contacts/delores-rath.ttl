@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Delores";
+    schema:familyName "Rath";
+    schema:birthDate "1980-09-07"^^xsd:date;
+    schema:address _:b2248.
+_:b2248 a schema:PostalAddress;
+    schema:streetAddress "Stroman Landing";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Lake Rachelle";
+    schema:postalCode "17508-1020";
+    schema:addressCountry "Suriname".

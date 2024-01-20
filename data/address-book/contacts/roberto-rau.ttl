@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roberto";
+    schema:familyName "Rau";
+    schema:birthDate "1969-04-02"^^xsd:date;
+    schema:address _:b8684.
+_:b8684 a schema:PostalAddress;
+    schema:streetAddress "Armstrong Run";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Fort Rheaview";
+    schema:postalCode "10251";
+    schema:addressCountry "Fiji".

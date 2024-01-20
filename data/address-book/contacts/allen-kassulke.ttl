@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Allen";
+    schema:familyName "Kassulke";
+    schema:birthDate "1969-07-15"^^xsd:date;
+    schema:address _:b2310.
+_:b2310 a schema:PostalAddress;
+    schema:streetAddress "Maynard Bridge";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Marquardtworth";
+    schema:postalCode "52054-6036";
+    schema:addressCountry "Tonga".

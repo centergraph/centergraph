@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelley";
+    schema:familyName "Buckridge";
+    schema:birthDate "2002-01-25"^^xsd:date;
+    schema:address _:b812.
+_:b812 a schema:PostalAddress;
+    schema:streetAddress "Murray Place";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Waltermouth";
+    schema:postalCode "31071-7174";
+    schema:addressCountry "Fiji".

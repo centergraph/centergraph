@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sherman";
+    schema:familyName "Johns";
+    schema:birthDate "1970-03-22"^^xsd:date;
+    schema:address _:b8249.
+_:b8249 a schema:PostalAddress;
+    schema:streetAddress "S Main Avenue";
+    schema:addressRegion "New York";
+    schema:addressLocality "Lake Javonte";
+    schema:postalCode "67522";
+    schema:addressCountry "Eritrea".

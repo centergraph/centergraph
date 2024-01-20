@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Yvette";
+    schema:familyName "Romaguera";
+    schema:birthDate "1991-07-18"^^xsd:date;
+    schema:address _:b522.
+_:b522 a schema:PostalAddress;
+    schema:streetAddress "Grange Close";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "North Bethesda";
+    schema:postalCode "53685";
+    schema:addressCountry "Kenya".

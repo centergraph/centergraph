@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Christy";
+    schema:familyName "Kling";
+    schema:birthDate "1980-03-02"^^xsd:date;
+    schema:address _:b7870.
+_:b7870 a schema:PostalAddress;
+    schema:streetAddress "Windler Brooks";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Littelchester";
+    schema:postalCode "30083";
+    schema:addressCountry "Georgia".

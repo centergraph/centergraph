@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Beulah";
+    schema:familyName "Sipes";
+    schema:birthDate "1978-08-22"^^xsd:date;
+    schema:address _:b9024.
+_:b9024 a schema:PostalAddress;
+    schema:streetAddress "N Monroe Street";
+    schema:addressRegion "New York";
+    schema:addressLocality "Olafton";
+    schema:postalCode "29482-6965";
+    schema:addressCountry "Northern Mariana Islands".

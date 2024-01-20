@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jerry";
+    schema:familyName "Gibson";
+    schema:birthDate "2005-10-03"^^xsd:date;
+    schema:address _:b6307.
+_:b6307 a schema:PostalAddress;
+    schema:streetAddress "Mante Coves";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Lake Reynafield";
+    schema:postalCode "33599";
+    schema:addressCountry "Samoa".

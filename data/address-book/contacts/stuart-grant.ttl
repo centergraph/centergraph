@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stuart";
+    schema:familyName "Grant";
+    schema:birthDate "1995-03-07"^^xsd:date;
+    schema:address _:b101.
+_:b101 a schema:PostalAddress;
+    schema:streetAddress "Hawthorn Avenue";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Marianabury";
+    schema:postalCode "55596-1493";
+    schema:addressCountry "Zambia".

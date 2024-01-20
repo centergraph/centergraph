@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shari";
+    schema:familyName "Hartmann";
+    schema:birthDate "1977-10-17"^^xsd:date;
+    schema:address _:b2850.
+_:b2850 a schema:PostalAddress;
+    schema:streetAddress "Ankunding Union";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Treutelmouth";
+    schema:postalCode "85932";
+    schema:addressCountry "Saudi Arabia".

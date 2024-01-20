@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Albert";
+    schema:familyName "Dibbert";
+    schema:birthDate "1949-10-31"^^xsd:date;
+    schema:address _:b6596.
+_:b6596 a schema:PostalAddress;
+    schema:streetAddress "Alexzander Ranch";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Nienowport";
+    schema:postalCode "64203-5669";
+    schema:addressCountry "Albania".

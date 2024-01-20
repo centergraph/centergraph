@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Fannie";
+    schema:familyName "Lakin";
+    schema:birthDate "1979-01-09"^^xsd:date;
+    schema:address _:b552.
+_:b552 a schema:PostalAddress;
+    schema:streetAddress "N Church Street";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Lake Salmafield";
+    schema:postalCode "09538-8528";
+    schema:addressCountry "Bouvet Island".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mathew";
+    schema:familyName "West";
+    schema:birthDate "1990-08-08"^^xsd:date;
+    schema:address _:b5957.
+_:b5957 a schema:PostalAddress;
+    schema:streetAddress "W Church Street";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Cormierburgh";
+    schema:postalCode "97007";
+    schema:addressCountry "Kazakhstan".

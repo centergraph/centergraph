@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lula";
+    schema:familyName "Ward";
+    schema:birthDate "1963-07-05"^^xsd:date;
+    schema:address _:b6871.
+_:b6871 a schema:PostalAddress;
+    schema:streetAddress "Leonardo Ferry";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Zenaton";
+    schema:postalCode "87578";
+    schema:addressCountry "Canada".

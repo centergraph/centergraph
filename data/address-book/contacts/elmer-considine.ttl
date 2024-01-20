@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elmer";
+    schema:familyName "Considine";
+    schema:birthDate "1951-06-17"^^xsd:date;
+    schema:address _:b8526.
+_:b8526 a schema:PostalAddress;
+    schema:streetAddress "Castle Lane";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Waelchiburgh";
+    schema:postalCode "55350";
+    schema:addressCountry "Brunei Darussalam".

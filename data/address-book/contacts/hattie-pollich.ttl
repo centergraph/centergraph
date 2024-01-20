@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hattie";
+    schema:familyName "Pollich";
+    schema:birthDate "1948-04-25"^^xsd:date;
+    schema:address _:b3996.
+_:b3996 a schema:PostalAddress;
+    schema:streetAddress "Abernathy Branch";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Kannapolis";
+    schema:postalCode "82147-1255";
+    schema:addressCountry "Panama".

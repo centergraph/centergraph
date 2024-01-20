@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alice";
+    schema:familyName "Ebert";
+    schema:birthDate "1969-12-06"^^xsd:date;
+    schema:address _:b9227.
+_:b9227 a schema:PostalAddress;
+    schema:streetAddress "Rempel Squares";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Alexfurt";
+    schema:postalCode "74434-4120";
+    schema:addressCountry "Pakistan".

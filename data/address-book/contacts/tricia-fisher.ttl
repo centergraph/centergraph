@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tricia";
+    schema:familyName "Fisher";
+    schema:birthDate "1946-01-17"^^xsd:date;
+    schema:address _:b5919.
+_:b5919 a schema:PostalAddress;
+    schema:streetAddress "Von Islands";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "New Cadeboro";
+    schema:postalCode "70724-5576";
+    schema:addressCountry "Eritrea".

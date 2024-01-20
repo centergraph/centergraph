@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Perry";
+    schema:familyName "Ritchie";
+    schema:birthDate "1993-06-02"^^xsd:date;
+    schema:address _:b6793.
+_:b6793 a schema:PostalAddress;
+    schema:streetAddress "Friesen Route";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Cedar Park";
+    schema:postalCode "35405";
+    schema:addressCountry "Oman".

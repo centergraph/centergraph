@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brent";
+    schema:familyName "Kirlin";
+    schema:birthDate "1997-07-27"^^xsd:date;
+    schema:address _:b7100.
+_:b7100 a schema:PostalAddress;
+    schema:streetAddress "S Bridge Street";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "New Isadorebury";
+    schema:postalCode "45272";
+    schema:addressCountry "Solomon Islands".

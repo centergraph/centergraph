@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeannie";
+    schema:familyName "Kreiger";
+    schema:birthDate "1963-05-06"^^xsd:date;
+    schema:address _:b3525.
+_:b3525 a schema:PostalAddress;
+    schema:streetAddress "W Park Street";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Lake Amoston";
+    schema:postalCode "28191";
+    schema:addressCountry "Sint Maarten".

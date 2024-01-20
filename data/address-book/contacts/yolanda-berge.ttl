@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Yolanda";
+    schema:familyName "Berge";
+    schema:birthDate "1960-04-27"^^xsd:date;
+    schema:address _:b2865.
+_:b2865 a schema:PostalAddress;
+    schema:streetAddress "Betty Ports";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Samirworth";
+    schema:postalCode "85561-1139";
+    schema:addressCountry "Djibouti".

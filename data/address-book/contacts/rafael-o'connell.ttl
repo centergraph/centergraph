@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rafael";
+    schema:familyName "O'Connell";
+    schema:birthDate "1955-10-31"^^xsd:date;
+    schema:address _:b979.
+_:b979 a schema:PostalAddress;
+    schema:streetAddress "South Street";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Camronbury";
+    schema:postalCode "96250";
+    schema:addressCountry "El Salvador".

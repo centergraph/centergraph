@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brendan";
+    schema:familyName "Hand";
+    schema:birthDate "1968-01-13"^^xsd:date;
+    schema:address _:b9958.
+_:b9958 a schema:PostalAddress;
+    schema:streetAddress "Emard Island";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "West Alyssonstead";
+    schema:postalCode "84574";
+    schema:addressCountry "Equatorial Guinea".

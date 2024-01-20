@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edmond";
+    schema:familyName "Doyle";
+    schema:birthDate "1984-12-21"^^xsd:date;
+    schema:address _:b8798.
+_:b8798 a schema:PostalAddress;
+    schema:streetAddress "Elm Road";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Chapel Hill";
+    schema:postalCode "40379-2885";
+    schema:addressCountry "French Polynesia".

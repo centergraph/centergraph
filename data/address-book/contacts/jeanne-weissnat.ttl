@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeanne";
+    schema:familyName "Weissnat";
+    schema:birthDate "1969-06-01"^^xsd:date;
+    schema:address _:b6639.
+_:b6639 a schema:PostalAddress;
+    schema:streetAddress "Smith Passage";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "West Darleneburgh";
+    schema:postalCode "99309-8322";
+    schema:addressCountry "Virgin Islands, British".

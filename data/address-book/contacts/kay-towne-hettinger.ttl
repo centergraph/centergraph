@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kay";
+    schema:familyName "Towne-Hettinger";
+    schema:birthDate "1970-03-21"^^xsd:date;
+    schema:address _:b954.
+_:b954 a schema:PostalAddress;
+    schema:streetAddress "Smith Glen";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Lindgrenfield";
+    schema:postalCode "84884-7706";
+    schema:addressCountry "Paraguay".

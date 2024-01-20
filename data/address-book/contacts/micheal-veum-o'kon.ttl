@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Micheal";
+    schema:familyName "Veum-O'Kon";
+    schema:birthDate "1986-04-30"^^xsd:date;
+    schema:address _:b8186.
+_:b8186 a schema:PostalAddress;
+    schema:streetAddress "Windsor Close";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Weissnatboro";
+    schema:postalCode "11179-7499";
+    schema:addressCountry "Belgium".

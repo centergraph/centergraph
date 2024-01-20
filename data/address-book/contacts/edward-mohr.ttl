@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edward";
+    schema:familyName "Mohr";
+    schema:birthDate "1959-07-21"^^xsd:date;
+    schema:address _:b6301.
+_:b6301 a schema:PostalAddress;
+    schema:streetAddress "Lorine Garden";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "East Daphne";
+    schema:postalCode "92688";
+    schema:addressCountry "Malaysia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Candice";
+    schema:familyName "Pollich";
+    schema:birthDate "1987-01-30"^^xsd:date;
+    schema:address _:b5918.
+_:b5918 a schema:PostalAddress;
+    schema:streetAddress "Marks Mountain";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Ferryside";
+    schema:postalCode "59004-5398";
+    schema:addressCountry "Qatar".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Estelle";
+    schema:familyName "Dibbert";
+    schema:birthDate "1979-07-13"^^xsd:date;
+    schema:address _:b8522.
+_:b8522 a schema:PostalAddress;
+    schema:streetAddress "Kshlerin Hollow";
+    schema:addressRegion "New York";
+    schema:addressLocality "Joeside";
+    schema:postalCode "37458";
+    schema:addressCountry "Tanzania".

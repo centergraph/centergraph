@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tony";
+    schema:familyName "Kunde";
+    schema:birthDate "1993-09-06"^^xsd:date;
+    schema:address _:b6144.
+_:b6144 a schema:PostalAddress;
+    schema:streetAddress "Seamus Harbors";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "West Rosetta";
+    schema:postalCode "79278";
+    schema:addressCountry "Uzbekistan".

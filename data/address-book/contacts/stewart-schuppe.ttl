@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stewart";
+    schema:familyName "Schuppe";
+    schema:birthDate "1966-10-26"^^xsd:date;
+    schema:address _:b2458.
+_:b2458 a schema:PostalAddress;
+    schema:streetAddress "Hermiston Well";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Nickolasberg";
+    schema:postalCode "52360";
+    schema:addressCountry "Cape Verde".

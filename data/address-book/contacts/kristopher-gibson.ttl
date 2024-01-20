@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristopher";
+    schema:familyName "Gibson";
+    schema:birthDate "1972-05-28"^^xsd:date;
+    schema:address _:b3295.
+_:b3295 a schema:PostalAddress;
+    schema:streetAddress "Kailyn Fields";
+    schema:addressRegion "California";
+    schema:addressLocality "Mount Prospect";
+    schema:postalCode "00737-3444";
+    schema:addressCountry "Switzerland".

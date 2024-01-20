@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alvin";
+    schema:familyName "Emmerich";
+    schema:birthDate "1992-02-16"^^xsd:date;
+    schema:address _:b1167.
+_:b1167 a schema:PostalAddress;
+    schema:streetAddress "Waverley Road";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "New Clementworth";
+    schema:postalCode "01044-6877";
+    schema:addressCountry "Turks and Caicos Islands".

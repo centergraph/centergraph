@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clyde";
+    schema:familyName "Franecki";
+    schema:birthDate "1979-01-07"^^xsd:date;
+    schema:address _:b581.
+_:b581 a schema:PostalAddress;
+    schema:streetAddress "Jodie Points";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Harrisport";
+    schema:postalCode "81835";
+    schema:addressCountry "Afghanistan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cornelius";
+    schema:familyName "Connelly";
+    schema:birthDate "1946-08-15"^^xsd:date;
+    schema:address _:b1246.
+_:b1246 a schema:PostalAddress;
+    schema:streetAddress "E Main Street";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Mattburgh";
+    schema:postalCode "03810";
+    schema:addressCountry "Lebanon".

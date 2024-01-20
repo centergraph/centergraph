@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Chris";
+    schema:familyName "Kuvalis";
+    schema:birthDate "1968-09-24"^^xsd:date;
+    schema:address _:b8862.
+_:b8862 a schema:PostalAddress;
+    schema:streetAddress "Lindgren Walk";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Fort Zoilafield";
+    schema:postalCode "77561";
+    schema:addressCountry "Tonga".

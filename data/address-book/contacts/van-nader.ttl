@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Van";
+    schema:familyName "Nader";
+    schema:birthDate "1965-07-03"^^xsd:date;
+    schema:address _:b5874.
+_:b5874 a schema:PostalAddress;
+    schema:streetAddress "Green Run";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Jacquelynshire";
+    schema:postalCode "17331";
+    schema:addressCountry "Aruba".

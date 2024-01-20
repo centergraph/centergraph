@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gene";
+    schema:familyName "Raynor";
+    schema:birthDate "1974-06-22"^^xsd:date;
+    schema:address _:b1371.
+_:b1371 a schema:PostalAddress;
+    schema:streetAddress "Veterans Memorial Drive";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Strackeberg";
+    schema:postalCode "31741-6021";
+    schema:addressCountry "Bhutan".

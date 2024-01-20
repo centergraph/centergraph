@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carla";
+    schema:familyName "Torphy";
+    schema:birthDate "1972-03-05"^^xsd:date;
+    schema:address _:b5140.
+_:b5140 a schema:PostalAddress;
+    schema:streetAddress "Poplar Avenue";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Dearborn";
+    schema:postalCode "84700";
+    schema:addressCountry "Burundi".

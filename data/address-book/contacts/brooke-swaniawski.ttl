@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brooke";
+    schema:familyName "Swaniawski";
+    schema:birthDate "1990-02-23"^^xsd:date;
+    schema:address _:b9742.
+_:b9742 a schema:PostalAddress;
+    schema:streetAddress "Diana Cove";
+    schema:addressRegion "Montana";
+    schema:addressLocality "West Al";
+    schema:postalCode "93003";
+    schema:addressCountry "Belize".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Armando";
+    schema:familyName "Pacocha";
+    schema:birthDate "1970-12-04"^^xsd:date;
+    schema:address _:b7211.
+_:b7211 a schema:PostalAddress;
+    schema:streetAddress "Raynor Point";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Abelardoville";
+    schema:postalCode "94190-1583";
+    schema:addressCountry "Isle of Man".

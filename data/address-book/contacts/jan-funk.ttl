@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jan";
+    schema:familyName "Funk";
+    schema:birthDate "1964-04-09"^^xsd:date;
+    schema:address _:b2131.
+_:b2131 a schema:PostalAddress;
+    schema:streetAddress "Hector Skyway";
+    schema:addressRegion "California";
+    schema:addressLocality "Amayabury";
+    schema:postalCode "49121";
+    schema:addressCountry "United States of America".

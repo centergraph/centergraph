@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amos";
+    schema:familyName "Lebsack";
+    schema:birthDate "1980-05-05"^^xsd:date;
+    schema:address _:b5298.
+_:b5298 a schema:PostalAddress;
+    schema:streetAddress "St George's Road";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Johncester";
+    schema:postalCode "59929-0133";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

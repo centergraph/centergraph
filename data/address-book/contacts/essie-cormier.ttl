@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Essie";
+    schema:familyName "Cormier";
+    schema:birthDate "1996-03-21"^^xsd:date;
+    schema:address _:b849.
+_:b849 a schema:PostalAddress;
+    schema:streetAddress "N East Street";
+    schema:addressRegion "Washington";
+    schema:addressLocality "New Raymondbury";
+    schema:postalCode "68083";
+    schema:addressCountry "Barbados".

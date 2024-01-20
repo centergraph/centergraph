@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Fred";
+    schema:familyName "Goldner";
+    schema:birthDate "2004-06-29"^^xsd:date;
+    schema:address _:b8089.
+_:b8089 a schema:PostalAddress;
+    schema:streetAddress "Bettie River";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Emmerichbury";
+    schema:postalCode "98822";
+    schema:addressCountry "Kiribati".

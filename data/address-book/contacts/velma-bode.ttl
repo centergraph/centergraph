@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Velma";
+    schema:familyName "Bode";
+    schema:birthDate "1987-08-16"^^xsd:date;
+    schema:address _:b7517.
+_:b7517 a schema:PostalAddress;
+    schema:streetAddress "Grace Center";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "East Karistad";
+    schema:postalCode "89406";
+    schema:addressCountry "United Arab Emirates".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Earl";
+    schema:familyName "Ratke";
+    schema:birthDate "1983-03-27"^^xsd:date;
+    schema:address _:b4088.
+_:b4088 a schema:PostalAddress;
+    schema:streetAddress "Gus Road";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "South Marisoltown";
+    schema:postalCode "70272";
+    schema:addressCountry "Spain".

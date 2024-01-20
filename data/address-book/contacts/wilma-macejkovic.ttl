@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wilma";
+    schema:familyName "Macejkovic";
+    schema:birthDate "1952-09-20"^^xsd:date;
+    schema:address _:b9996.
+_:b9996 a schema:PostalAddress;
+    schema:streetAddress "The Laurels";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "South Helena";
+    schema:postalCode "21877";
+    schema:addressCountry "Heard Island and McDonald Islands".

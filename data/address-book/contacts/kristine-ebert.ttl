@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristine";
+    schema:familyName "Ebert";
+    schema:birthDate "1977-08-08"^^xsd:date;
+    schema:address _:b1368.
+_:b1368 a schema:PostalAddress;
+    schema:streetAddress "Idell Grove";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "South Wilfred";
+    schema:postalCode "44932";
+    schema:addressCountry "Democratic Republic of the Congo".

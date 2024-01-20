@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leah";
+    schema:familyName "Kshlerin";
+    schema:birthDate "2002-11-16"^^xsd:date;
+    schema:address _:b6252.
+_:b6252 a schema:PostalAddress;
+    schema:streetAddress "Strosin Hills";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Carrollchester";
+    schema:postalCode "62705-3257";
+    schema:addressCountry "Kyrgyz Republic".

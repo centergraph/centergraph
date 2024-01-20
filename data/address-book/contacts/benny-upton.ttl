@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Benny";
+    schema:familyName "Upton";
+    schema:birthDate "1986-09-08"^^xsd:date;
+    schema:address _:b7955.
+_:b7955 a schema:PostalAddress;
+    schema:streetAddress "Muller Loop";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Port Maximillianborough";
+    schema:postalCode "76959-7297";
+    schema:addressCountry "Nauru".

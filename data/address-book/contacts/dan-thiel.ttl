@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dan";
+    schema:familyName "Thiel";
+    schema:birthDate "1992-11-11"^^xsd:date;
+    schema:address _:b407.
+_:b407 a schema:PostalAddress;
+    schema:streetAddress "Torphy Stravenue";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Fort Irwinburgh";
+    schema:postalCode "57058";
+    schema:addressCountry "New Caledonia".

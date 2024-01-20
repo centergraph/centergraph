@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tonya";
+    schema:familyName "Huel";
+    schema:birthDate "1991-05-27"^^xsd:date;
+    schema:address _:b2834.
+_:b2834 a schema:PostalAddress;
+    schema:streetAddress "12th Street";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Fort Rosemarybury";
+    schema:postalCode "16294";
+    schema:addressCountry "Gabon".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Victor";
+    schema:familyName "Lowe";
+    schema:birthDate "1971-04-26"^^xsd:date;
+    schema:address _:b6230.
+_:b6230 a schema:PostalAddress;
+    schema:streetAddress "Astrid Rest";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Jastboro";
+    schema:postalCode "14891";
+    schema:addressCountry "Saint Kitts and Nevis".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sue";
+    schema:familyName "Collins";
+    schema:birthDate "1972-03-22"^^xsd:date;
+    schema:address _:b4505.
+_:b4505 a schema:PostalAddress;
+    schema:streetAddress "Chapel Close";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Luciousview";
+    schema:postalCode "89917-2994";
+    schema:addressCountry "Guinea-Bissau".

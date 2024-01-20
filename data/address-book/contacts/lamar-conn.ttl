@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lamar";
+    schema:familyName "Conn";
+    schema:birthDate "1997-08-31"^^xsd:date;
+    schema:address _:b832.
+_:b832 a schema:PostalAddress;
+    schema:streetAddress "Jubilee Close";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "West Margarett";
+    schema:postalCode "55095-8008";
+    schema:addressCountry "Cambodia".

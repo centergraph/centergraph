@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gwen";
+    schema:familyName "Parisian";
+    schema:birthDate "1974-08-22"^^xsd:date;
+    schema:address _:b4494.
+_:b4494 a schema:PostalAddress;
+    schema:streetAddress "Hollis Parks";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "West Jeramyboro";
+    schema:postalCode "77473";
+    schema:addressCountry "Malaysia".

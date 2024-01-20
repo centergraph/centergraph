@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doug";
+    schema:familyName "Bins";
+    schema:birthDate "1997-06-28"^^xsd:date;
+    schema:address _:b9370.
+_:b9370 a schema:PostalAddress;
+    schema:streetAddress "Corwin Lake";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "North Mayatown";
+    schema:postalCode "57079";
+    schema:addressCountry "Somalia".

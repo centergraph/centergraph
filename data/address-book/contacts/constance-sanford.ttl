@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Constance";
+    schema:familyName "Sanford";
+    schema:birthDate "1983-08-17"^^xsd:date;
+    schema:address _:b3276.
+_:b3276 a schema:PostalAddress;
+    schema:streetAddress "Aryanna Mills";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Kokomo";
+    schema:postalCode "18997-2751";
+    schema:addressCountry "Turkmenistan".

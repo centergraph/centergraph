@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tamara";
+    schema:familyName "Hilpert";
+    schema:birthDate "1969-10-29"^^xsd:date;
+    schema:address _:b8227.
+_:b8227 a schema:PostalAddress;
+    schema:streetAddress "Konopelski Bridge";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Novi";
+    schema:postalCode "29194-4584";
+    schema:addressCountry "Cuba".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Regina";
+    schema:familyName "Stokes";
+    schema:birthDate "2003-03-18"^^xsd:date;
+    schema:address _:b1927.
+_:b1927 a schema:PostalAddress;
+    schema:streetAddress "Blanche Greens";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Corona";
+    schema:postalCode "23368";
+    schema:addressCountry "Czechia".

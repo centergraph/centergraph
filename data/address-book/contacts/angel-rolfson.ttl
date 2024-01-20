@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Angel";
+    schema:familyName "Rolfson";
+    schema:birthDate "1993-03-25"^^xsd:date;
+    schema:address _:b4234.
+_:b4234 a schema:PostalAddress;
+    schema:streetAddress "Monroe Street";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Rialto";
+    schema:postalCode "69366-4484";
+    schema:addressCountry "Estonia".

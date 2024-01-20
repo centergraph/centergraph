@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Evelyn";
+    schema:familyName "Ledner";
+    schema:birthDate "1983-05-09"^^xsd:date;
+    schema:address _:b6258.
+_:b6258 a schema:PostalAddress;
+    schema:streetAddress "The Coppice";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Jesuston";
+    schema:postalCode "62712";
+    schema:addressCountry "Germany".

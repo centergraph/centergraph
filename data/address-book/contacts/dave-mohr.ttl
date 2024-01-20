@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dave";
+    schema:familyName "Mohr";
+    schema:birthDate "1983-02-15"^^xsd:date;
+    schema:address _:b645.
+_:b645 a schema:PostalAddress;
+    schema:streetAddress "Bonnie Path";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Port Delphia";
+    schema:postalCode "02481";
+    schema:addressCountry "Brazil".

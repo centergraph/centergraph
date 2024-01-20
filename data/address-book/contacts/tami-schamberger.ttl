@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tami";
+    schema:familyName "Schamberger";
+    schema:birthDate "1953-05-03"^^xsd:date;
+    schema:address _:b7857.
+_:b7857 a schema:PostalAddress;
+    schema:streetAddress "Poplar Street";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "New Pietro";
+    schema:postalCode "33909";
+    schema:addressCountry "Gabon".

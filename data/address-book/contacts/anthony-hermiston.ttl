@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Anthony";
+    schema:familyName "Hermiston";
+    schema:birthDate "1988-11-06"^^xsd:date;
+    schema:address _:b4567.
+_:b4567 a schema:PostalAddress;
+    schema:streetAddress "E North Street";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Shanestead";
+    schema:postalCode "45289";
+    schema:addressCountry "Saint Pierre and Miquelon".

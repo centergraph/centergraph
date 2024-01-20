@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lucille";
+    schema:familyName "Robel";
+    schema:birthDate "1977-11-13"^^xsd:date;
+    schema:address _:b8690.
+_:b8690 a schema:PostalAddress;
+    schema:streetAddress "Laverne Isle";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "East Luther";
+    schema:postalCode "69935-7335";
+    schema:addressCountry "Luxembourg".

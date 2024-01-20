@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brandon";
+    schema:familyName "Monahan";
+    schema:birthDate "1988-03-14"^^xsd:date;
+    schema:address _:b7918.
+_:b7918 a schema:PostalAddress;
+    schema:streetAddress "Linwood Glens";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "North Mortoncester";
+    schema:postalCode "72656-6769";
+    schema:addressCountry "Eritrea".

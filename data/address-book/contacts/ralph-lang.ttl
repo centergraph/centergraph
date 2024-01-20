@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ralph";
+    schema:familyName "Lang";
+    schema:birthDate "1993-08-05"^^xsd:date;
+    schema:address _:b9098.
+_:b9098 a schema:PostalAddress;
+    schema:streetAddress "Margaretta Place";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "South Jamarcuschester";
+    schema:postalCode "25505-6944";
+    schema:addressCountry "Iceland".

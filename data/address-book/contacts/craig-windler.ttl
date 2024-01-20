@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Craig";
+    schema:familyName "Windler";
+    schema:birthDate "1987-11-08"^^xsd:date;
+    schema:address _:b5379.
+_:b5379 a schema:PostalAddress;
+    schema:streetAddress "Jesus Creek";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Johnstonfield";
+    schema:postalCode "10995-4909";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

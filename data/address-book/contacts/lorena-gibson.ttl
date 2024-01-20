@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorena";
+    schema:familyName "Gibson";
+    schema:birthDate "1980-02-12"^^xsd:date;
+    schema:address _:b6207.
+_:b6207 a schema:PostalAddress;
+    schema:streetAddress "Kemmer View";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Orieboro";
+    schema:postalCode "79381-4789";
+    schema:addressCountry "Democratic Republic of the Congo".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Homer";
+    schema:familyName "Rohan";
+    schema:birthDate "1992-06-20"^^xsd:date;
+    schema:address _:b2719.
+_:b2719 a schema:PostalAddress;
+    schema:streetAddress "Nitzsche Locks";
+    schema:addressRegion "Florida";
+    schema:addressLocality "New Garrick";
+    schema:postalCode "43791";
+    schema:addressCountry "French Southern Territories".

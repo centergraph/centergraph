@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jean";
+    schema:familyName "McDermott";
+    schema:birthDate "1970-12-24"^^xsd:date;
+    schema:address _:b5490.
+_:b5490 a schema:PostalAddress;
+    schema:streetAddress "The Limes";
+    schema:addressRegion "California";
+    schema:addressLocality "Fadelborough";
+    schema:postalCode "49540-1931";
+    schema:addressCountry "Seychelles".

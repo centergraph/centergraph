@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marcia";
+    schema:familyName "Johnston";
+    schema:birthDate "1968-05-04"^^xsd:date;
+    schema:address _:b7801.
+_:b7801 a schema:PostalAddress;
+    schema:streetAddress "Gisselle Key";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "East Enid";
+    schema:postalCode "22033";
+    schema:addressCountry "Greenland".

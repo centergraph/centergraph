@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darren";
+    schema:familyName "Champlin";
+    schema:birthDate "1993-07-30"^^xsd:date;
+    schema:address _:b459.
+_:b459 a schema:PostalAddress;
+    schema:streetAddress "Dan Expressway";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Fort Karlie";
+    schema:postalCode "47506";
+    schema:addressCountry "Equatorial Guinea".

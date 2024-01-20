@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marvin";
+    schema:familyName "Pfeffer";
+    schema:birthDate "1975-07-09"^^xsd:date;
+    schema:address _:b9534.
+_:b9534 a schema:PostalAddress;
+    schema:streetAddress "Mohr Radial";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Thoraside";
+    schema:postalCode "99288-2572";
+    schema:addressCountry "Singapore".

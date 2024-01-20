@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lamar";
+    schema:familyName "Harris";
+    schema:birthDate "1983-04-03"^^xsd:date;
+    schema:address _:b5010.
+_:b5010 a schema:PostalAddress;
+    schema:streetAddress "New Lane";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Macieshire";
+    schema:postalCode "15649";
+    schema:addressCountry "Jamaica".

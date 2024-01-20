@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rudolph";
+    schema:familyName "Jaskolski";
+    schema:birthDate "1946-05-08"^^xsd:date;
+    schema:address _:b1593.
+_:b1593 a schema:PostalAddress;
+    schema:streetAddress "Dare Stream";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Deerfield Beach";
+    schema:postalCode "69184-1339";
+    schema:addressCountry "Sao Tome and Principe".

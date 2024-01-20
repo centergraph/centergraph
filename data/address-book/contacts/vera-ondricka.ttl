@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vera";
+    schema:familyName "Ondricka";
+    schema:birthDate "1950-01-07"^^xsd:date;
+    schema:address _:b2103.
+_:b2103 a schema:PostalAddress;
+    schema:streetAddress "Center Avenue";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "West Harmonworth";
+    schema:postalCode "33686-8425";
+    schema:addressCountry "Kuwait".

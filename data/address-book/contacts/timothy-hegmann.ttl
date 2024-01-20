@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Timothy";
+    schema:familyName "Hegmann";
+    schema:birthDate "1950-02-05"^^xsd:date;
+    schema:address _:b6850.
+_:b6850 a schema:PostalAddress;
+    schema:streetAddress "Pfeffer Glens";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Lewisville";
+    schema:postalCode "76551-0171";
+    schema:addressCountry "Marshall Islands".

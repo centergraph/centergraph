@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kara";
+    schema:familyName "Fay";
+    schema:birthDate "1984-06-10"^^xsd:date;
+    schema:address _:b469.
+_:b469 a schema:PostalAddress;
+    schema:streetAddress "Mario Crest";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Frederick";
+    schema:postalCode "98551";
+    schema:addressCountry "Equatorial Guinea".

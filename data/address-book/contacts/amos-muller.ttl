@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amos";
+    schema:familyName "Muller";
+    schema:birthDate "2004-01-02"^^xsd:date;
+    schema:address _:b171.
+_:b171 a schema:PostalAddress;
+    schema:streetAddress "Nathanial Roads";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Opalworth";
+    schema:postalCode "96908-5105";
+    schema:addressCountry "Uruguay".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carolyn";
+    schema:familyName "Hegmann";
+    schema:birthDate "2005-07-08"^^xsd:date;
+    schema:address _:b6139.
+_:b6139 a schema:PostalAddress;
+    schema:streetAddress "Randal Ferry";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Nicolettestad";
+    schema:postalCode "95997-7533";
+    schema:addressCountry "Central African Republic".

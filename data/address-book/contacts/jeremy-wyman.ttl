@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeremy";
+    schema:familyName "Wyman";
+    schema:birthDate "1979-12-17"^^xsd:date;
+    schema:address _:b2728.
+_:b2728 a schema:PostalAddress;
+    schema:streetAddress "Hickle Corner";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Lake Corinestead";
+    schema:postalCode "82487";
+    schema:addressCountry "Dominica".

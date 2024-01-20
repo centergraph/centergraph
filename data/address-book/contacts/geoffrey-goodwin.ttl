@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Geoffrey";
+    schema:familyName "Goodwin";
+    schema:birthDate "1971-04-23"^^xsd:date;
+    schema:address _:b4586.
+_:b4586 a schema:PostalAddress;
+    schema:streetAddress "Woodland Road";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Hilarioville";
+    schema:postalCode "46236-9214";
+    schema:addressCountry "Tokelau".

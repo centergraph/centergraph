@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ted";
+    schema:familyName "Wehner";
+    schema:birthDate "2004-03-03"^^xsd:date;
+    schema:address _:b5902.
+_:b5902 a schema:PostalAddress;
+    schema:streetAddress "White Lock";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "New Karelleworth";
+    schema:postalCode "17145-5512";
+    schema:addressCountry "Aland Islands".

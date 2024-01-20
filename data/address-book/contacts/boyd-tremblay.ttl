@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Boyd";
+    schema:familyName "Tremblay";
+    schema:birthDate "1948-10-14"^^xsd:date;
+    schema:address _:b7589.
+_:b7589 a schema:PostalAddress;
+    schema:streetAddress "William Street";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Alenaland";
+    schema:postalCode "70909-3608";
+    schema:addressCountry "Trinidad and Tobago".

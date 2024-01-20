@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jackie";
+    schema:familyName "Franey";
+    schema:birthDate "1951-04-25"^^xsd:date;
+    schema:address _:b4750.
+_:b4750 a schema:PostalAddress;
+    schema:streetAddress "E Central Avenue";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "West Cathyview";
+    schema:postalCode "57458-3807";
+    schema:addressCountry "Syrian Arab Republic".

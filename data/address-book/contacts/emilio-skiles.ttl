@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emilio";
+    schema:familyName "Skiles";
+    schema:birthDate "1989-03-11"^^xsd:date;
+    schema:address _:b3581.
+_:b3581 a schema:PostalAddress;
+    schema:streetAddress "Schmidt Meadow";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Kannapolis";
+    schema:postalCode "24646";
+    schema:addressCountry "Serbia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lynn";
+    schema:familyName "Crona";
+    schema:birthDate "1989-04-06"^^xsd:date;
+    schema:address _:b6668.
+_:b6668 a schema:PostalAddress;
+    schema:streetAddress "Trantow Green";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "St. Petersburg";
+    schema:postalCode "05604";
+    schema:addressCountry "Saint Martin".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Robin";
+    schema:familyName "Parker";
+    schema:birthDate "2001-08-05"^^xsd:date;
+    schema:address _:b8470.
+_:b8470 a schema:PostalAddress;
+    schema:streetAddress "E 11th Street";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "East Ashly";
+    schema:postalCode "10035";
+    schema:addressCountry "Comoros".

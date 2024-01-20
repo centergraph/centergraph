@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Michele";
+    schema:familyName "Kub";
+    schema:birthDate "1991-12-24"^^xsd:date;
+    schema:address _:b3311.
+_:b3311 a schema:PostalAddress;
+    schema:streetAddress "Bonita Lakes";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Corwinview";
+    schema:postalCode "18187-7885";
+    schema:addressCountry "United States Minor Outlying Islands".

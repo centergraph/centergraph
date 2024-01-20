@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darryl";
+    schema:familyName "Batz";
+    schema:birthDate "1998-09-15"^^xsd:date;
+    schema:address _:b3667.
+_:b3667 a schema:PostalAddress;
+    schema:streetAddress "W Main Street";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Lake Eldora";
+    schema:postalCode "94556-8610";
+    schema:addressCountry "Lithuania".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marlon";
+    schema:familyName "Ratke";
+    schema:birthDate "1983-06-21"^^xsd:date;
+    schema:address _:b475.
+_:b475 a schema:PostalAddress;
+    schema:streetAddress "Cedar Road";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Wisozkport";
+    schema:postalCode "07983-5638";
+    schema:addressCountry "Cook Islands".

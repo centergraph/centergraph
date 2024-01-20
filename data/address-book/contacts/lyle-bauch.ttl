@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lyle";
+    schema:familyName "Bauch";
+    schema:birthDate "1971-03-14"^^xsd:date;
+    schema:address _:b3093.
+_:b3093 a schema:PostalAddress;
+    schema:streetAddress "Brendan Square";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Woodland";
+    schema:postalCode "87575-6513";
+    schema:addressCountry "Congo".

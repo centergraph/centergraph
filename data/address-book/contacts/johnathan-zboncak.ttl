@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Johnathan";
+    schema:familyName "Zboncak";
+    schema:birthDate "1996-03-11"^^xsd:date;
+    schema:address _:b6544.
+_:b6544 a schema:PostalAddress;
+    schema:streetAddress "W Main Street";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Pico Rivera";
+    schema:postalCode "79704-3023";
+    schema:addressCountry "Brazil".

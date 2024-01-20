@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Minnie";
+    schema:familyName "Wintheiser";
+    schema:birthDate "1990-09-27"^^xsd:date;
+    schema:address _:b51.
+_:b51 a schema:PostalAddress;
+    schema:streetAddress "Cherry Tree Close";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Hermistonfurt";
+    schema:postalCode "66063-5384";
+    schema:addressCountry "Denmark".

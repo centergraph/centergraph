@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edgar";
+    schema:familyName "Howe";
+    schema:birthDate "1968-08-20"^^xsd:date;
+    schema:address _:b7782.
+_:b7782 a schema:PostalAddress;
+    schema:streetAddress "Lebsack Extensions";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "North Eastonmouth";
+    schema:postalCode "49635-6926";
+    schema:addressCountry "Montenegro".

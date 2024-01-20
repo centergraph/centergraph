@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Betsy";
+    schema:familyName "Schneider";
+    schema:birthDate "1988-04-23"^^xsd:date;
+    schema:address _:b5127.
+_:b5127 a schema:PostalAddress;
+    schema:streetAddress "Koelpin Shoals";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "East Trever";
+    schema:postalCode "54395-1895";
+    schema:addressCountry "Austria".

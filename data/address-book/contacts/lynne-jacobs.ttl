@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lynne";
+    schema:familyName "Jacobs";
+    schema:birthDate "1983-05-28"^^xsd:date;
+    schema:address _:b7068.
+_:b7068 a schema:PostalAddress;
+    schema:streetAddress "Jakayla Forge";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Fort Darrin";
+    schema:postalCode "60781";
+    schema:addressCountry "Palestine".

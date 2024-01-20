@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jordan";
+    schema:familyName "Fadel";
+    schema:birthDate "1987-08-28"^^xsd:date;
+    schema:address _:b3638.
+_:b3638 a schema:PostalAddress;
+    schema:streetAddress "Edison Groves";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "South Valley";
+    schema:postalCode "55504";
+    schema:addressCountry "Northern Mariana Islands".

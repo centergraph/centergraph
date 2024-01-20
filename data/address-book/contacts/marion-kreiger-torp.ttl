@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marion";
+    schema:familyName "Kreiger-Torp";
+    schema:birthDate "1949-11-09"^^xsd:date;
+    schema:address _:b2150.
+_:b2150 a schema:PostalAddress;
+    schema:streetAddress "King Ramp";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Fort Rudolphview";
+    schema:postalCode "21777";
+    schema:addressCountry "Tonga".

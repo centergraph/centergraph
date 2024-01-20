@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jessica";
+    schema:familyName "Hermiston";
+    schema:birthDate "1968-09-13"^^xsd:date;
+    schema:address _:b2795.
+_:b2795 a schema:PostalAddress;
+    schema:streetAddress "Huel Field";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Raleigh";
+    schema:postalCode "18373-5479";
+    schema:addressCountry "Tuvalu".

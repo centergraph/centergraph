@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Philip";
+    schema:familyName "Halvorson";
+    schema:birthDate "2002-03-16"^^xsd:date;
+    schema:address _:b3351.
+_:b3351 a schema:PostalAddress;
+    schema:streetAddress "Stoltenberg Light";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Clemenscester";
+    schema:postalCode "77132";
+    schema:addressCountry "Trinidad and Tobago".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Luther";
+    schema:familyName "Klocko";
+    schema:birthDate "1999-09-29"^^xsd:date;
+    schema:address _:b4126.
+_:b4126 a schema:PostalAddress;
+    schema:streetAddress "Upton Stream";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Wellington";
+    schema:postalCode "44573";
+    schema:addressCountry "Papua New Guinea".

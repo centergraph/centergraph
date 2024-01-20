@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roger";
+    schema:familyName "Kshlerin";
+    schema:birthDate "1957-04-27"^^xsd:date;
+    schema:address _:b2665.
+_:b2665 a schema:PostalAddress;
+    schema:streetAddress "Marcelo Pass";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Flagstaff";
+    schema:postalCode "79592-8484";
+    schema:addressCountry "Kazakhstan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristy";
+    schema:familyName "Bergnaum";
+    schema:birthDate "1971-07-29"^^xsd:date;
+    schema:address _:b7888.
+_:b7888 a schema:PostalAddress;
+    schema:streetAddress "Charlene Shoal";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Langhaven";
+    schema:postalCode "33365-8816";
+    schema:addressCountry "United States Minor Outlying Islands".

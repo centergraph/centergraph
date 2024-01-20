@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jake";
+    schema:familyName "Purdy";
+    schema:birthDate "1984-05-10"^^xsd:date;
+    schema:address _:b2204.
+_:b2204 a schema:PostalAddress;
+    schema:streetAddress "Shana Brook";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Mitchellborough";
+    schema:postalCode "89515";
+    schema:addressCountry "South Sudan".

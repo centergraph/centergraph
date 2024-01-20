@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Loren";
+    schema:familyName "Baumbach";
+    schema:birthDate "1944-04-09"^^xsd:date;
+    schema:address _:b1560.
+_:b1560 a schema:PostalAddress;
+    schema:streetAddress "Gordon Street";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "North Ameliaview";
+    schema:postalCode "75178";
+    schema:addressCountry "Ghana".

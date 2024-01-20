@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Genevieve";
+    schema:familyName "Conn";
+    schema:birthDate "1974-09-15"^^xsd:date;
+    schema:address _:b3189.
+_:b3189 a schema:PostalAddress;
+    schema:streetAddress "Kertzmann Wall";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Ankundingburgh";
+    schema:postalCode "14633";
+    schema:addressCountry "Namibia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosemarie";
+    schema:familyName "Koss";
+    schema:birthDate "1965-03-21"^^xsd:date;
+    schema:address _:b7590.
+_:b7590 a schema:PostalAddress;
+    schema:streetAddress "Koss Views";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Ottilieworth";
+    schema:postalCode "58745";
+    schema:addressCountry "Grenada".

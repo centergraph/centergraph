@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gretchen";
+    schema:familyName "Schimmel";
+    schema:birthDate "1966-07-30"^^xsd:date;
+    schema:address _:b827.
+_:b827 a schema:PostalAddress;
+    schema:streetAddress "S Center Street";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Novato";
+    schema:postalCode "63573-7960";
+    schema:addressCountry "Saint Kitts and Nevis".

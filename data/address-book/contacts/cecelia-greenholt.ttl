@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cecelia";
+    schema:familyName "Greenholt";
+    schema:birthDate "1951-05-09"^^xsd:date;
+    schema:address _:b7358.
+_:b7358 a schema:PostalAddress;
+    schema:streetAddress "N East Street";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Little Rock";
+    schema:postalCode "24082";
+    schema:addressCountry "Lao People's Democratic Republic".

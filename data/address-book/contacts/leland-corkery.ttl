@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leland";
+    schema:familyName "Corkery";
+    schema:birthDate "1990-05-09"^^xsd:date;
+    schema:address _:b8696.
+_:b8696 a schema:PostalAddress;
+    schema:streetAddress "Greenfelder Knoll";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Ankeny";
+    schema:postalCode "70605";
+    schema:addressCountry "Isle of Man".

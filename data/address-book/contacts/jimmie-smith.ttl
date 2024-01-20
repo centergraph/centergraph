@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jimmie";
+    schema:familyName "Smith";
+    schema:birthDate "1973-06-28"^^xsd:date;
+    schema:address _:b6925.
+_:b6925 a schema:PostalAddress;
+    schema:streetAddress "Milan Wall";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Brandtfort";
+    schema:postalCode "03640-6509";
+    schema:addressCountry "Morocco".

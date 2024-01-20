@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Irma";
+    schema:familyName "Streich";
+    schema:birthDate "1979-02-16"^^xsd:date;
+    schema:address _:b8906.
+_:b8906 a schema:PostalAddress;
+    schema:streetAddress "Price Neck";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Mullerhaven";
+    schema:postalCode "46740";
+    schema:addressCountry "Antigua and Barbuda".

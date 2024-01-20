@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Christy";
+    schema:familyName "Lehner";
+    schema:birthDate "1962-12-28"^^xsd:date;
+    schema:address _:b8391.
+_:b8391 a schema:PostalAddress;
+    schema:streetAddress "Trantow Lock";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "New Walker";
+    schema:postalCode "61634";
+    schema:addressCountry "Guinea".

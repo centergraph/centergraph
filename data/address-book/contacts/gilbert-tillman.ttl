@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gilbert";
+    schema:familyName "Tillman";
+    schema:birthDate "2005-01-02"^^xsd:date;
+    schema:address _:b3977.
+_:b3977 a schema:PostalAddress;
+    schema:streetAddress "Cambridge Street";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "West Alanisberg";
+    schema:postalCode "06916";
+    schema:addressCountry "Slovakia".

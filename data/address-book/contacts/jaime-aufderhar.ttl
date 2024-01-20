@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jaime";
+    schema:familyName "Aufderhar";
+    schema:birthDate "1958-01-13"^^xsd:date;
+    schema:address _:b1741.
+_:b1741 a schema:PostalAddress;
+    schema:streetAddress "Christop Isle";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Lake Cleve";
+    schema:postalCode "25314";
+    schema:addressCountry "Congo".

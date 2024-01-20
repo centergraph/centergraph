@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pat";
+    schema:familyName "Littel";
+    schema:birthDate "1961-10-30"^^xsd:date;
+    schema:address _:b9989.
+_:b9989 a schema:PostalAddress;
+    schema:streetAddress "Considine Path";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Pascalecester";
+    schema:postalCode "85395";
+    schema:addressCountry "Portugal".

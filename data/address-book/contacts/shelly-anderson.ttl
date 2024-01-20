@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shelly";
+    schema:familyName "Anderson";
+    schema:birthDate "1975-08-04"^^xsd:date;
+    schema:address _:b6481.
+_:b6481 a schema:PostalAddress;
+    schema:streetAddress "Watsica Lane";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Pearland";
+    schema:postalCode "04602-4103";
+    schema:addressCountry "Japan".

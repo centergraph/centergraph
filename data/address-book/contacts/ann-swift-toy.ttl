@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ann";
+    schema:familyName "Swift-Toy";
+    schema:birthDate "1994-02-04"^^xsd:date;
+    schema:address _:b8427.
+_:b8427 a schema:PostalAddress;
+    schema:streetAddress "Susie Spur";
+    schema:addressRegion "New York";
+    schema:addressLocality "New Nash";
+    schema:postalCode "23838";
+    schema:addressCountry "Tuvalu".

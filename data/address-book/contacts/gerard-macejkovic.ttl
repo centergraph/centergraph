@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gerard";
+    schema:familyName "Macejkovic";
+    schema:birthDate "2001-11-16"^^xsd:date;
+    schema:address _:b4150.
+_:b4150 a schema:PostalAddress;
+    schema:streetAddress "A Street";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Kaylahshire";
+    schema:postalCode "60077-8462";
+    schema:addressCountry "South Georgia and the South Sandwich Islands".

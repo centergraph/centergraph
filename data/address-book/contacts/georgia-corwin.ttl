@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Georgia";
+    schema:familyName "Corwin";
+    schema:birthDate "1973-02-06"^^xsd:date;
+    schema:address _:b9092.
+_:b9092 a schema:PostalAddress;
+    schema:streetAddress "James Street";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "North Ebonyburgh";
+    schema:postalCode "04382";
+    schema:addressCountry "Kiribati".

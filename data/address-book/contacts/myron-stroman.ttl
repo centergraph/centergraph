@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Myron";
+    schema:familyName "Stroman";
+    schema:birthDate "1947-06-27"^^xsd:date;
+    schema:address _:b9841.
+_:b9841 a schema:PostalAddress;
+    schema:streetAddress "Brown Courts";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "West Doylefurt";
+    schema:postalCode "45047-2560";
+    schema:addressCountry "Nauru".

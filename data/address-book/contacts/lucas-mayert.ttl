@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lucas";
+    schema:familyName "Mayert";
+    schema:birthDate "1950-05-29"^^xsd:date;
+    schema:address _:b6426.
+_:b6426 a schema:PostalAddress;
+    schema:streetAddress "S Main";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Fredyberg";
+    schema:postalCode "11670";
+    schema:addressCountry "Virgin Islands, U.S.".

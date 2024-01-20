@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Isaac";
+    schema:familyName "Rosenbaum";
+    schema:birthDate "1993-02-06"^^xsd:date;
+    schema:address _:b2151.
+_:b2151 a schema:PostalAddress;
+    schema:streetAddress "Amaya Park";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Maxieburgh";
+    schema:postalCode "68069-2707";
+    schema:addressCountry "Congo".

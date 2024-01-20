@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terrell";
+    schema:familyName "Armstrong";
+    schema:birthDate "1969-04-01"^^xsd:date;
+    schema:address _:b3383.
+_:b3383 a schema:PostalAddress;
+    schema:streetAddress "Purdy Ridge";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "North Rickey";
+    schema:postalCode "01300";
+    schema:addressCountry "Central African Republic".

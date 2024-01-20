@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jack";
+    schema:familyName "Cormier";
+    schema:birthDate "1971-02-21"^^xsd:date;
+    schema:address _:b254.
+_:b254 a schema:PostalAddress;
+    schema:streetAddress "N 6th Street";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "South Walton";
+    schema:postalCode "62762-0721";
+    schema:addressCountry "Russian Federation".

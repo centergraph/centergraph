@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Viola";
+    schema:familyName "Bartoletti";
+    schema:birthDate "1971-12-15"^^xsd:date;
+    schema:address _:b8897.
+_:b8897 a schema:PostalAddress;
+    schema:streetAddress "Denesik Glens";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Lafayette";
+    schema:postalCode "42221";
+    schema:addressCountry "Djibouti".

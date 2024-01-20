@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marco";
+    schema:familyName "Kunze";
+    schema:birthDate "1944-12-09"^^xsd:date;
+    schema:address _:b4403.
+_:b4403 a schema:PostalAddress;
+    schema:streetAddress "Green Close";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Toms River";
+    schema:postalCode "93601-6402";
+    schema:addressCountry "Barbados".

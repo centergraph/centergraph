@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Troy";
+    schema:familyName "Gutmann";
+    schema:birthDate "1953-05-17"^^xsd:date;
+    schema:address _:b5024.
+_:b5024 a schema:PostalAddress;
+    schema:streetAddress "Hilll Alley";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Margueritebury";
+    schema:postalCode "28901-8543";
+    schema:addressCountry "Italy".

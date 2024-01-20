@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sue";
+    schema:familyName "Towne";
+    schema:birthDate "1963-05-25"^^xsd:date;
+    schema:address _:b8822.
+_:b8822 a schema:PostalAddress;
+    schema:streetAddress "Ankunding Gardens";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "New Sheridanbury";
+    schema:postalCode "44755-3434";
+    schema:addressCountry "Tokelau".

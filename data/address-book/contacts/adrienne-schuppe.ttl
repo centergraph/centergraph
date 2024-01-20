@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Adrienne";
+    schema:familyName "Schuppe";
+    schema:birthDate "1983-10-19"^^xsd:date;
+    schema:address _:b7916.
+_:b7916 a schema:PostalAddress;
+    schema:streetAddress "Durgan Manor";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Charlottesville";
+    schema:postalCode "14507-3339";
+    schema:addressCountry "Fiji".

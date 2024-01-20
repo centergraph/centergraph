@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Violet";
+    schema:familyName "Stiedemann";
+    schema:birthDate "2002-12-01"^^xsd:date;
+    schema:address _:b7298.
+_:b7298 a schema:PostalAddress;
+    schema:streetAddress "Broadway Avenue";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "South Karianeside";
+    schema:postalCode "06230";
+    schema:addressCountry "Democratic People's Republic of Korea".

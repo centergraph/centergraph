@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Robert";
+    schema:familyName "Schamberger";
+    schema:birthDate "1954-02-13"^^xsd:date;
+    schema:address _:b6841.
+_:b6841 a schema:PostalAddress;
+    schema:streetAddress "Corkery Loop";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Randalshire";
+    schema:postalCode "94648-6012";
+    schema:addressCountry "Western Sahara".

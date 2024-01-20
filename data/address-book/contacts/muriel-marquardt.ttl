@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Muriel";
+    schema:familyName "Marquardt";
+    schema:birthDate "1973-02-02"^^xsd:date;
+    schema:address _:b1134.
+_:b1134 a schema:PostalAddress;
+    schema:streetAddress "Vilma Flats";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "New Eladiofurt";
+    schema:postalCode "04544-7423";
+    schema:addressCountry "Western Sahara".

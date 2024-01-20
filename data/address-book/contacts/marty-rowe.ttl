@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marty";
+    schema:familyName "Rowe";
+    schema:birthDate "1995-04-16"^^xsd:date;
+    schema:address _:b5209.
+_:b5209 a schema:PostalAddress;
+    schema:streetAddress "Smith Street";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Osbornefurt";
+    schema:postalCode "64605";
+    schema:addressCountry "Timor-Leste".

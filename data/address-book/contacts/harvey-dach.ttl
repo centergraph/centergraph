@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harvey";
+    schema:familyName "Dach";
+    schema:birthDate "1967-01-06"^^xsd:date;
+    schema:address _:b7052.
+_:b7052 a schema:PostalAddress;
+    schema:streetAddress "Ratke Divide";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Florin";
+    schema:postalCode "73450-4590";
+    schema:addressCountry "South Africa".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Thomas";
+    schema:familyName "Kemmer";
+    schema:birthDate "1988-08-23"^^xsd:date;
+    schema:address _:b8789.
+_:b8789 a schema:PostalAddress;
+    schema:streetAddress "Abernathy Island";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Glovertown";
+    schema:postalCode "55191";
+    schema:addressCountry "Venezuela".

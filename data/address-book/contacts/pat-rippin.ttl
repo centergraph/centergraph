@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pat";
+    schema:familyName "Rippin";
+    schema:birthDate "1982-08-06"^^xsd:date;
+    schema:address _:b8623.
+_:b8623 a schema:PostalAddress;
+    schema:streetAddress "Jacobson Village";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Mission Viejo";
+    schema:postalCode "55729";
+    schema:addressCountry "Dominica".

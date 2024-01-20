@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Neil";
+    schema:familyName "Reilly";
+    schema:birthDate "1959-12-22"^^xsd:date;
+    schema:address _:b4603.
+_:b4603 a schema:PostalAddress;
+    schema:streetAddress "Aufderhar Spring";
+    schema:addressRegion "California";
+    schema:addressLocality "Kuhicshire";
+    schema:postalCode "02571-7338";
+    schema:addressCountry "Nicaragua".

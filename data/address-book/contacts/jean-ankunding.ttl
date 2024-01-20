@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jean";
+    schema:familyName "Ankunding";
+    schema:birthDate "1957-02-07"^^xsd:date;
+    schema:address _:b5529.
+_:b5529 a schema:PostalAddress;
+    schema:streetAddress "County Line Road";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Elwintown";
+    schema:postalCode "91804-0167";
+    schema:addressCountry "Bosnia and Herzegovina".

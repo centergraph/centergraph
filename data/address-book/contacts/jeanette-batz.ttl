@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeanette";
+    schema:familyName "Batz";
+    schema:birthDate "1967-03-09"^^xsd:date;
+    schema:address _:b3424.
+_:b3424 a schema:PostalAddress;
+    schema:streetAddress "Zieme Heights";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "East Jarrod";
+    schema:postalCode "11506-9579";
+    schema:addressCountry "Micronesia".

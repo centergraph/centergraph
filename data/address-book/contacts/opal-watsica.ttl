@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Opal";
+    schema:familyName "Watsica";
+    schema:birthDate "1949-03-22"^^xsd:date;
+    schema:address _:b8809.
+_:b8809 a schema:PostalAddress;
+    schema:streetAddress "Sam Ridges";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Alessiatown";
+    schema:postalCode "97297";
+    schema:addressCountry "Philippines".

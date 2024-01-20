@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosemarie";
+    schema:familyName "Lueilwitz";
+    schema:birthDate "1971-05-21"^^xsd:date;
+    schema:address _:b5132.
+_:b5132 a schema:PostalAddress;
+    schema:streetAddress "Lansdowne Road";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Valentineville";
+    schema:postalCode "60259-3903";
+    schema:addressCountry "Guam".

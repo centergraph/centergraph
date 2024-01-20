@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Karla";
+    schema:familyName "D'Amore";
+    schema:birthDate "1952-11-04"^^xsd:date;
+    schema:address _:b3204.
+_:b3204 a schema:PostalAddress;
+    schema:streetAddress "Jacinthe Ranch";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Lake Alfreda";
+    schema:postalCode "01751-6909";
+    schema:addressCountry "Bulgaria".

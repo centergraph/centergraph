@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terrence";
+    schema:familyName "Mitchell";
+    schema:birthDate "1953-12-21"^^xsd:date;
+    schema:address _:b905.
+_:b905 a schema:PostalAddress;
+    schema:streetAddress "E Bridge Street";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Upland";
+    schema:postalCode "80636-1935";
+    schema:addressCountry "Thailand".

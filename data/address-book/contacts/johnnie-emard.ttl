@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Johnnie";
+    schema:familyName "Emard";
+    schema:birthDate "1958-12-24"^^xsd:date;
+    schema:address _:b6533.
+_:b6533 a schema:PostalAddress;
+    schema:streetAddress "Laurel Close";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Fort Harvey";
+    schema:postalCode "34471";
+    schema:addressCountry "Mozambique".

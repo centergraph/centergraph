@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julie";
+    schema:familyName "Cormier";
+    schema:birthDate "1960-10-21"^^xsd:date;
+    schema:address _:b7832.
+_:b7832 a schema:PostalAddress;
+    schema:streetAddress "Ilene Fields";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Lake Mariah";
+    schema:postalCode "07318";
+    schema:addressCountry "Qatar".

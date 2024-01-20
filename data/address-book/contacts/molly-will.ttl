@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Molly";
+    schema:familyName "Will";
+    schema:birthDate "1978-01-30"^^xsd:date;
+    schema:address _:b5750.
+_:b5750 a schema:PostalAddress;
+    schema:streetAddress "S Washington Avenue";
+    schema:addressRegion "California";
+    schema:addressLocality "Folsom";
+    schema:postalCode "38792";
+    schema:addressCountry "Jordan".

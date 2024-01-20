@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marlene";
+    schema:familyName "O'Connell";
+    schema:birthDate "2004-01-03"^^xsd:date;
+    schema:address _:b5744.
+_:b5744 a schema:PostalAddress;
+    schema:streetAddress "Barry Course";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Altamonte Springs";
+    schema:postalCode "28618-1923";
+    schema:addressCountry "Gabon".

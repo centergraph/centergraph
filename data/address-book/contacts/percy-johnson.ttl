@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Percy";
+    schema:familyName "Johnson";
+    schema:birthDate "2004-08-09"^^xsd:date;
+    schema:address _:b4559.
+_:b4559 a schema:PostalAddress;
+    schema:streetAddress "Dixie Point";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "South Nyasiaborough";
+    schema:postalCode "86544-6630";
+    schema:addressCountry "Guinea".

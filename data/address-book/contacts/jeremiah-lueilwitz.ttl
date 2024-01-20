@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeremiah";
+    schema:familyName "Lueilwitz";
+    schema:birthDate "1982-04-11"^^xsd:date;
+    schema:address _:b7140.
+_:b7140 a schema:PostalAddress;
+    schema:streetAddress "Schimmel Ridges";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "East Maurinebury";
+    schema:postalCode "90715-9748";
+    schema:addressCountry "Holy See (Vatican City State)".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Minnie";
+    schema:familyName "Thiel";
+    schema:birthDate "1987-04-19"^^xsd:date;
+    schema:address _:b500.
+_:b500 a schema:PostalAddress;
+    schema:streetAddress "Church Walk";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Aloha";
+    schema:postalCode "83185-2816";
+    schema:addressCountry "Isle of Man".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elisa";
+    schema:familyName "Shanahan";
+    schema:birthDate "1973-09-07"^^xsd:date;
+    schema:address _:b5530.
+_:b5530 a schema:PostalAddress;
+    schema:streetAddress "Kay Keys";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Manhattan";
+    schema:postalCode "01089-3125";
+    schema:addressCountry "Sudan".

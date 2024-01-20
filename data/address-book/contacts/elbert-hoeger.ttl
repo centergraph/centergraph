@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elbert";
+    schema:familyName "Hoeger";
+    schema:birthDate "1952-05-29"^^xsd:date;
+    schema:address _:b5976.
+_:b5976 a schema:PostalAddress;
+    schema:streetAddress "Sporer Mountains";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Toms River";
+    schema:postalCode "91283";
+    schema:addressCountry "Eritrea".

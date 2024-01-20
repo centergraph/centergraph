@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alexis";
+    schema:familyName "Ritchie";
+    schema:birthDate "1967-02-20"^^xsd:date;
+    schema:address _:b9076.
+_:b9076 a schema:PostalAddress;
+    schema:streetAddress "Cortney Burgs";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Littlebury";
+    schema:postalCode "83671-5864";
+    schema:addressCountry "Mali".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andy";
+    schema:familyName "Skiles";
+    schema:birthDate "1977-02-13"^^xsd:date;
+    schema:address _:b8099.
+_:b8099 a schema:PostalAddress;
+    schema:streetAddress "Ullrich Cape";
+    schema:addressRegion "California";
+    schema:addressLocality "East Burleyview";
+    schema:postalCode "84412-3282";
+    schema:addressCountry "Cameroon".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leon";
+    schema:familyName "Larkin";
+    schema:birthDate "1958-10-09"^^xsd:date;
+    schema:address _:b7785.
+_:b7785 a schema:PostalAddress;
+    schema:streetAddress "Weissnat Corners";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Santee";
+    schema:postalCode "52007";
+    schema:addressCountry "Saint Pierre and Miquelon".

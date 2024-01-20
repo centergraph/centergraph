@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Reginald";
+    schema:familyName "Renner";
+    schema:birthDate "1946-09-10"^^xsd:date;
+    schema:address _:b1271.
+_:b1271 a schema:PostalAddress;
+    schema:streetAddress "Old State Road";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Port Hazel";
+    schema:postalCode "61185-1597";
+    schema:addressCountry "French Polynesia".

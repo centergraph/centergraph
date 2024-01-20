@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Justin";
+    schema:familyName "Grimes";
+    schema:birthDate "1997-05-09"^^xsd:date;
+    schema:address _:b870.
+_:b870 a schema:PostalAddress;
+    schema:streetAddress "Wiegand Well";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Santa Clarita";
+    schema:postalCode "41467";
+    schema:addressCountry "Niue".

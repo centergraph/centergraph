@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harry";
+    schema:familyName "Leffler";
+    schema:birthDate "1980-01-18"^^xsd:date;
+    schema:address _:b5505.
+_:b5505 a schema:PostalAddress;
+    schema:streetAddress "Vella Freeway";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Alhambra";
+    schema:postalCode "25287";
+    schema:addressCountry "Mexico".

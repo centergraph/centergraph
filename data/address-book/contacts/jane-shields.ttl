@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jane";
+    schema:familyName "Shields";
+    schema:birthDate "1994-07-10"^^xsd:date;
+    schema:address _:b5871.
+_:b5871 a schema:PostalAddress;
+    schema:streetAddress "Brando Shoals";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Schusterborough";
+    schema:postalCode "97860-1772";
+    schema:addressCountry "Papua New Guinea".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cameron";
+    schema:familyName "Osinski";
+    schema:birthDate "2004-05-22"^^xsd:date;
+    schema:address _:b1233.
+_:b1233 a schema:PostalAddress;
+    schema:streetAddress "Howell Shores";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Kendall";
+    schema:postalCode "83899-4125";
+    schema:addressCountry "Iraq".

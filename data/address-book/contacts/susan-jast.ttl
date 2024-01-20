@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Susan";
+    schema:familyName "Jast";
+    schema:birthDate "1944-03-13"^^xsd:date;
+    schema:address _:b5098.
+_:b5098 a schema:PostalAddress;
+    schema:streetAddress "Diamond Run";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Damarisworth";
+    schema:postalCode "06574-4713";
+    schema:addressCountry "Greece".

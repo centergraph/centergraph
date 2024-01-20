@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tricia";
+    schema:familyName "Thiel";
+    schema:birthDate "1984-09-27"^^xsd:date;
+    schema:address _:b5622.
+_:b5622 a schema:PostalAddress;
+    schema:streetAddress "Princes Street";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "South Devonteland";
+    schema:postalCode "51271-7989";
+    schema:addressCountry "Saint Barthelemy".

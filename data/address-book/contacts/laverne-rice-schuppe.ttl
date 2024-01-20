@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laverne";
+    schema:familyName "Rice-Schuppe";
+    schema:birthDate "1952-08-31"^^xsd:date;
+    schema:address _:b1414.
+_:b1414 a schema:PostalAddress;
+    schema:streetAddress "Braun Views";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Deangelofurt";
+    schema:postalCode "72137";
+    schema:addressCountry "Uzbekistan".

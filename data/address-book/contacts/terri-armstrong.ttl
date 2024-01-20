@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terri";
+    schema:familyName "Armstrong";
+    schema:birthDate "1999-09-26"^^xsd:date;
+    schema:address _:b4578.
+_:b4578 a schema:PostalAddress;
+    schema:streetAddress "Hoppe Ramp";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "West Jude";
+    schema:postalCode "38296";
+    schema:addressCountry "Martinique".

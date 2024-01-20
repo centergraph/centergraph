@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kim";
+    schema:familyName "Gerhold";
+    schema:birthDate "1985-10-18"^^xsd:date;
+    schema:address _:b4.
+_:b4 a schema:PostalAddress;
+    schema:streetAddress "Jefferey Green";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Lake Idellaside";
+    schema:postalCode "47614-2144";
+    schema:addressCountry "Faroe Islands".

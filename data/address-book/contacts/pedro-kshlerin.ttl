@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pedro";
+    schema:familyName "Kshlerin";
+    schema:birthDate "1979-07-26"^^xsd:date;
+    schema:address _:b935.
+_:b935 a schema:PostalAddress;
+    schema:streetAddress "Walnut Close";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Ahmedhaven";
+    schema:postalCode "98992";
+    schema:addressCountry "Algeria".

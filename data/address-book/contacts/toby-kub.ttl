@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Toby";
+    schema:familyName "Kub";
+    schema:birthDate "1990-02-22"^^xsd:date;
+    schema:address _:b1070.
+_:b1070 a schema:PostalAddress;
+    schema:streetAddress "Manor Gardens";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Ethanhaven";
+    schema:postalCode "88495-9028";
+    schema:addressCountry "Myanmar".

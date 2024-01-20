@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dwight";
+    schema:familyName "Herzog";
+    schema:birthDate "1952-02-18"^^xsd:date;
+    schema:address _:b5143.
+_:b5143 a schema:PostalAddress;
+    schema:streetAddress "S 8th Street";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Fort Maiya";
+    schema:postalCode "53848";
+    schema:addressCountry "Virgin Islands, British".

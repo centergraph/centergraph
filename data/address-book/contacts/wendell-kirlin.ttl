@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wendell";
+    schema:familyName "Kirlin";
+    schema:birthDate "1982-08-18"^^xsd:date;
+    schema:address _:b6345.
+_:b6345 a schema:PostalAddress;
+    schema:streetAddress "Medhurst Crossroad";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "West Ressieworth";
+    schema:postalCode "09524";
+    schema:addressCountry "Palestine".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emanuel";
+    schema:familyName "Hahn";
+    schema:birthDate "1967-04-15"^^xsd:date;
+    schema:address _:b6443.
+_:b6443 a schema:PostalAddress;
+    schema:streetAddress "N Main Avenue";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Dylanmouth";
+    schema:postalCode "26546";
+    schema:addressCountry "Russian Federation".

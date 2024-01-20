@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Camille";
+    schema:familyName "Douglas";
+    schema:birthDate "1977-03-24"^^xsd:date;
+    schema:address _:b9672.
+_:b9672 a schema:PostalAddress;
+    schema:streetAddress "Newton Crossroad";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Edfort";
+    schema:postalCode "05719";
+    schema:addressCountry "Northern Mariana Islands".

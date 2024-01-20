@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Earnest";
+    schema:familyName "Grady";
+    schema:birthDate "1967-01-09"^^xsd:date;
+    schema:address _:b5552.
+_:b5552 a schema:PostalAddress;
+    schema:streetAddress "Darren Gateway";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Carmel";
+    schema:postalCode "75652";
+    schema:addressCountry "Saint Pierre and Miquelon".

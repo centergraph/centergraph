@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joe";
+    schema:familyName "Lemke";
+    schema:birthDate "2002-01-04"^^xsd:date;
+    schema:address _:b7502.
+_:b7502 a schema:PostalAddress;
+    schema:streetAddress "S Washington Street";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Fort Tremayne";
+    schema:postalCode "95415";
+    schema:addressCountry "Pakistan".

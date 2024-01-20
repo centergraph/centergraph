@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tommy";
+    schema:familyName "Durgan";
+    schema:birthDate "1952-07-18"^^xsd:date;
+    schema:address _:b8963.
+_:b8963 a schema:PostalAddress;
+    schema:streetAddress "S Walnut Street";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Carlottafort";
+    schema:postalCode "78807";
+    schema:addressCountry "Marshall Islands".

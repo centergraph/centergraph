@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sophie";
+    schema:familyName "Ernser";
+    schema:birthDate "1953-03-25"^^xsd:date;
+    schema:address _:b6891.
+_:b6891 a schema:PostalAddress;
+    schema:streetAddress "Liberty Street";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Port Zena";
+    schema:postalCode "39245";
+    schema:addressCountry "Czechia".

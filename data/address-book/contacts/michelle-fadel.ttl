@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Michelle";
+    schema:familyName "Fadel";
+    schema:birthDate "1989-04-26"^^xsd:date;
+    schema:address _:b2001.
+_:b2001 a schema:PostalAddress;
+    schema:streetAddress "Lansdowne Road";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Leschworth";
+    schema:postalCode "40961-3804";
+    schema:addressCountry "Italy".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mona";
+    schema:familyName "Rolfson";
+    schema:birthDate "1968-07-06"^^xsd:date;
+    schema:address _:b2641.
+_:b2641 a schema:PostalAddress;
+    schema:streetAddress "Anjali Trace";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "West Archibaldton";
+    schema:postalCode "60652-8647";
+    schema:addressCountry "Uruguay".

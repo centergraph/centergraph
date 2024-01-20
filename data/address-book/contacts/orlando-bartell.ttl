@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Orlando";
+    schema:familyName "Bartell";
+    schema:birthDate "1966-03-10"^^xsd:date;
+    schema:address _:b405.
+_:b405 a schema:PostalAddress;
+    schema:streetAddress "Eusebio Streets";
+    schema:addressRegion "Washington";
+    schema:addressLocality "East Jaylenside";
+    schema:postalCode "37672-8793";
+    schema:addressCountry "Syrian Arab Republic".

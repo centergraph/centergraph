@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Byron";
+    schema:familyName "Harris";
+    schema:birthDate "1972-05-31"^^xsd:date;
+    schema:address _:b4827.
+_:b4827 a schema:PostalAddress;
+    schema:streetAddress "DuBuque Meadow";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Goldnershire";
+    schema:postalCode "59849";
+    schema:addressCountry "British Indian Ocean Territory (Chagos Archipelago)".

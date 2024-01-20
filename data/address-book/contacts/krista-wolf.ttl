@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Krista";
+    schema:familyName "Wolf";
+    schema:birthDate "1970-03-28"^^xsd:date;
+    schema:address _:b7404.
+_:b7404 a schema:PostalAddress;
+    schema:streetAddress "Clarence Street";
+    schema:addressRegion "California";
+    schema:addressLocality "South Theresiaborough";
+    schema:postalCode "60127-6650";
+    schema:addressCountry "Sudan".

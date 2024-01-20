@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Juanita";
+    schema:familyName "Koepp";
+    schema:birthDate "1980-05-15"^^xsd:date;
+    schema:address _:b8980.
+_:b8980 a schema:PostalAddress;
+    schema:streetAddress "Hahn Via";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Beierburgh";
+    schema:postalCode "13362-2269";
+    schema:addressCountry "British Indian Ocean Territory (Chagos Archipelago)".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Claudia";
+    schema:familyName "Feeney";
+    schema:birthDate "1952-02-23"^^xsd:date;
+    schema:address _:b2377.
+_:b2377 a schema:PostalAddress;
+    schema:streetAddress "Sydni Station";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Millcreek";
+    schema:postalCode "08638";
+    schema:addressCountry "Chad".

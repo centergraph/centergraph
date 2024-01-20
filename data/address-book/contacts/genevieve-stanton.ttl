@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Genevieve";
+    schema:familyName "Stanton";
+    schema:birthDate "1962-07-28"^^xsd:date;
+    schema:address _:b4751.
+_:b4751 a schema:PostalAddress;
+    schema:streetAddress "Alejandrin Mount";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Alicester";
+    schema:postalCode "67806";
+    schema:addressCountry "China".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ginger";
+    schema:familyName "Weber";
+    schema:birthDate "1962-04-02"^^xsd:date;
+    schema:address _:b8563.
+_:b8563 a schema:PostalAddress;
+    schema:streetAddress "Gutmann Drives";
+    schema:addressRegion "Washington";
+    schema:addressLocality "West Jackson";
+    schema:postalCode "27839-2373";
+    schema:addressCountry "Guatemala".

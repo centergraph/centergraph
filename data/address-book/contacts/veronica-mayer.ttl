@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Veronica";
+    schema:familyName "Mayer";
+    schema:birthDate "1993-04-02"^^xsd:date;
+    schema:address _:b7260.
+_:b7260 a schema:PostalAddress;
+    schema:streetAddress "Greenwood Road";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "East Tylershire";
+    schema:postalCode "93838";
+    schema:addressCountry "El Salvador".

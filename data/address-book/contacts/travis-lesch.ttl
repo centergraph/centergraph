@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Travis";
+    schema:familyName "Lesch";
+    schema:birthDate "1987-06-25"^^xsd:date;
+    schema:address _:b4717.
+_:b4717 a schema:PostalAddress;
+    schema:streetAddress "Roob Isle";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "East Alysson";
+    schema:postalCode "20126-2948";
+    schema:addressCountry "Malaysia".

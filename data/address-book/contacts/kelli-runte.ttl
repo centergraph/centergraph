@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelli";
+    schema:familyName "Runte";
+    schema:birthDate "1990-07-08"^^xsd:date;
+    schema:address _:b8979.
+_:b8979 a schema:PostalAddress;
+    schema:streetAddress "Alice Skyway";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Oberbrunnerhaven";
+    schema:postalCode "32155-8296";
+    schema:addressCountry "Antarctica".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Judith";
+    schema:familyName "Roob-Gutmann";
+    schema:birthDate "1964-09-03"^^xsd:date;
+    schema:address _:b8876.
+_:b8876 a schema:PostalAddress;
+    schema:streetAddress "Broad Street";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Hartmannchester";
+    schema:postalCode "94385";
+    schema:addressCountry "Vietnam".

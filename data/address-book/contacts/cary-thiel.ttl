@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cary";
+    schema:familyName "Thiel";
+    schema:birthDate "1948-04-18"^^xsd:date;
+    schema:address _:b1646.
+_:b1646 a schema:PostalAddress;
+    schema:streetAddress "Fahey Neck";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Everett";
+    schema:postalCode "06184-6301";
+    schema:addressCountry "Pitcairn Islands".

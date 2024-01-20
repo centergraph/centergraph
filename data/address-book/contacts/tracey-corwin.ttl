@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tracey";
+    schema:familyName "Corwin";
+    schema:birthDate "2002-06-13"^^xsd:date;
+    schema:address _:b3826.
+_:b3826 a schema:PostalAddress;
+    schema:streetAddress "Zieme Divide";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Lubowitzmouth";
+    schema:postalCode "33854-5581";
+    schema:addressCountry "Gibraltar".

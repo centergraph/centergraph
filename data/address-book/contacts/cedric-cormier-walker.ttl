@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cedric";
+    schema:familyName "Cormier-Walker";
+    schema:birthDate "1951-06-28"^^xsd:date;
+    schema:address _:b8975.
+_:b8975 a schema:PostalAddress;
+    schema:streetAddress "Fay Rapids";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Pearland";
+    schema:postalCode "80348";
+    schema:addressCountry "Serbia".

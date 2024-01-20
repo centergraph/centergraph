@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kent";
+    schema:familyName "Hodkiewicz";
+    schema:birthDate "1944-11-01"^^xsd:date;
+    schema:address _:b7161.
+_:b7161 a schema:PostalAddress;
+    schema:streetAddress "Veterans Memorial Drive";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "North Bulahshire";
+    schema:postalCode "72136-9276";
+    schema:addressCountry "Bahamas".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marilyn";
+    schema:familyName "Upton-Purdy";
+    schema:birthDate "1961-10-24"^^xsd:date;
+    schema:address _:b5974.
+_:b5974 a schema:PostalAddress;
+    schema:streetAddress "Conor Plaza";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Klingberg";
+    schema:postalCode "87278-6161";
+    schema:addressCountry "Nicaragua".

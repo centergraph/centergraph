@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lola";
+    schema:familyName "Tremblay";
+    schema:birthDate "1983-10-02"^^xsd:date;
+    schema:address _:b3462.
+_:b3462 a schema:PostalAddress;
+    schema:streetAddress "Gia Coves";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "South Gretafield";
+    schema:postalCode "75698-6956";
+    schema:addressCountry "Argentina".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mamie";
+    schema:familyName "Okuneva";
+    schema:birthDate "1966-12-12"^^xsd:date;
+    schema:address _:b4399.
+_:b4399 a schema:PostalAddress;
+    schema:streetAddress "Grant Track";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Mayertport";
+    schema:postalCode "28643";
+    schema:addressCountry "Paraguay".

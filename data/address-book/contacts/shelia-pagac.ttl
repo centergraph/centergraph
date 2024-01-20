@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shelia";
+    schema:familyName "Pagac";
+    schema:birthDate "1944-07-01"^^xsd:date;
+    schema:address _:b7890.
+_:b7890 a schema:PostalAddress;
+    schema:streetAddress "Highland Avenue";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Adriannaview";
+    schema:postalCode "60333-5293";
+    schema:addressCountry "Botswana".

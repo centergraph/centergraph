@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Armando";
+    schema:familyName "Pfannerstill";
+    schema:birthDate "2001-02-03"^^xsd:date;
+    schema:address _:b2299.
+_:b2299 a schema:PostalAddress;
+    schema:streetAddress "Jules Prairie";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "West Emmanuel";
+    schema:postalCode "40627-1317";
+    schema:addressCountry "Czechia".

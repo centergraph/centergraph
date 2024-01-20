@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Oliver";
+    schema:familyName "Robel";
+    schema:birthDate "1993-10-27"^^xsd:date;
+    schema:address _:b14.
+_:b14 a schema:PostalAddress;
+    schema:streetAddress "Jefferson Street";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Levittown";
+    schema:postalCode "02700-6493";
+    schema:addressCountry "Nauru".

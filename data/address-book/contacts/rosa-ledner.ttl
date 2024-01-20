@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosa";
+    schema:familyName "Ledner";
+    schema:birthDate "2000-06-17"^^xsd:date;
+    schema:address _:b9305.
+_:b9305 a schema:PostalAddress;
+    schema:streetAddress "Lowe Club";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Antoninaberg";
+    schema:postalCode "06057-1247";
+    schema:addressCountry "Iraq".

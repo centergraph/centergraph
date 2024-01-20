@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Willie";
+    schema:familyName "Huel";
+    schema:birthDate "1973-03-21"^^xsd:date;
+    schema:address _:b6382.
+_:b6382 a schema:PostalAddress;
+    schema:streetAddress "Linnea Oval";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "East Ferminborough";
+    schema:postalCode "09743";
+    schema:addressCountry "Luxembourg".

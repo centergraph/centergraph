@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Diane";
+    schema:familyName "Cole";
+    schema:birthDate "1947-07-21"^^xsd:date;
+    schema:address _:b5336.
+_:b5336 a schema:PostalAddress;
+    schema:streetAddress "Audreanne Lodge";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Margeberg";
+    schema:postalCode "37683-2244";
+    schema:addressCountry "Nauru".

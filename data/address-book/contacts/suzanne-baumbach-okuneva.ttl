@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Suzanne";
+    schema:familyName "Baumbach-Okuneva";
+    schema:birthDate "1988-05-22"^^xsd:date;
+    schema:address _:b3863.
+_:b3863 a schema:PostalAddress;
+    schema:streetAddress "Bethany Spring";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "East Maggie";
+    schema:postalCode "86184-8765";
+    schema:addressCountry "Antarctica".

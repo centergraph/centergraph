@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Winifred";
+    schema:familyName "Fay";
+    schema:birthDate "1954-05-23"^^xsd:date;
+    schema:address _:b2657.
+_:b2657 a schema:PostalAddress;
+    schema:streetAddress "Carmelo Isle";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Port Ninabury";
+    schema:postalCode "80548-4903";
+    schema:addressCountry "Monaco".

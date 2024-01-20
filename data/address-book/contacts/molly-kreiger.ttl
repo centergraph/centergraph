@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Molly";
+    schema:familyName "Kreiger";
+    schema:birthDate "1961-09-12"^^xsd:date;
+    schema:address _:b7266.
+_:b7266 a schema:PostalAddress;
+    schema:streetAddress "N 8th Street";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Romachester";
+    schema:postalCode "35880";
+    schema:addressCountry "South Africa".

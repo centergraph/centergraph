@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leigh";
+    schema:familyName "Harvey";
+    schema:birthDate "1969-12-04"^^xsd:date;
+    schema:address _:b6002.
+_:b6002 a schema:PostalAddress;
+    schema:streetAddress "Maverick Dam";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Weststead";
+    schema:postalCode "62876-9373";
+    schema:addressCountry "Gibraltar".

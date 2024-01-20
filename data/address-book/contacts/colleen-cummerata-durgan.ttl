@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Colleen";
+    schema:familyName "Cummerata-Durgan";
+    schema:birthDate "1977-03-25"^^xsd:date;
+    schema:address _:b7172.
+_:b7172 a schema:PostalAddress;
+    schema:streetAddress "Harber Junction";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Jakubowskitown";
+    schema:postalCode "02203";
+    schema:addressCountry "Afghanistan".

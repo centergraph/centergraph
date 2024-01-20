@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Antonio";
+    schema:familyName "Howe";
+    schema:birthDate "1984-06-25"^^xsd:date;
+    schema:address _:b9260.
+_:b9260 a schema:PostalAddress;
+    schema:streetAddress "Cloyd Streets";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Austin";
+    schema:postalCode "55448";
+    schema:addressCountry "Greenland".

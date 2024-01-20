@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vivian";
+    schema:familyName "O'Connell";
+    schema:birthDate "1971-10-31"^^xsd:date;
+    schema:address _:b8576.
+_:b8576 a schema:PostalAddress;
+    schema:streetAddress "Aida Branch";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "South Brian";
+    schema:postalCode "05328";
+    schema:addressCountry "Timor-Leste".

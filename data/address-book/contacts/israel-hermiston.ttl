@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Israel";
+    schema:familyName "Hermiston";
+    schema:birthDate "1950-12-20"^^xsd:date;
+    schema:address _:b7300.
+_:b7300 a schema:PostalAddress;
+    schema:streetAddress "Marianna Mills";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Wintheiserfield";
+    schema:postalCode "35605";
+    schema:addressCountry "Japan".

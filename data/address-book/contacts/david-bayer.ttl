@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "David";
+    schema:familyName "Bayer";
+    schema:birthDate "2000-02-13"^^xsd:date;
+    schema:address _:b4091.
+_:b4091 a schema:PostalAddress;
+    schema:streetAddress "Nicolas Forks";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Magnoliafield";
+    schema:postalCode "08898";
+    schema:addressCountry "Bahamas".

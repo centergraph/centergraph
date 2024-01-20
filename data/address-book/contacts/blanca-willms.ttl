@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Blanca";
+    schema:familyName "Willms";
+    schema:birthDate "1992-06-22"^^xsd:date;
+    schema:address _:b8161.
+_:b8161 a schema:PostalAddress;
+    schema:streetAddress "Jones Wall";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "South Alvahland";
+    schema:postalCode "33371-9727";
+    schema:addressCountry "Singapore".

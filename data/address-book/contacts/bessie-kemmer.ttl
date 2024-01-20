@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bessie";
+    schema:familyName "Kemmer";
+    schema:birthDate "1993-01-29"^^xsd:date;
+    schema:address _:b6563.
+_:b6563 a schema:PostalAddress;
+    schema:streetAddress "Bins Port";
+    schema:addressRegion "Montana";
+    schema:addressLocality "East Ila";
+    schema:postalCode "95289";
+    schema:addressCountry "United States Minor Outlying Islands".

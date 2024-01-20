@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Randall";
+    schema:familyName "Cummings";
+    schema:birthDate "1950-02-28"^^xsd:date;
+    schema:address _:b1918.
+_:b1918 a schema:PostalAddress;
+    schema:streetAddress "E Main";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Port Kailyn";
+    schema:postalCode "08164-8543";
+    schema:addressCountry "Chile".

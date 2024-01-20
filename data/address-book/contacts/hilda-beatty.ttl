@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hilda";
+    schema:familyName "Beatty";
+    schema:birthDate "1989-05-05"^^xsd:date;
+    schema:address _:b67.
+_:b67 a schema:PostalAddress;
+    schema:streetAddress "N Market Street";
+    schema:addressRegion "New York";
+    schema:addressLocality "Cranston";
+    schema:postalCode "35918-7243";
+    schema:addressCountry "Slovakia".

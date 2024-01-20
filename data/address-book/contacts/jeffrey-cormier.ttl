@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeffrey";
+    schema:familyName "Cormier";
+    schema:birthDate "1997-10-27"^^xsd:date;
+    schema:address _:b1002.
+_:b1002 a schema:PostalAddress;
+    schema:streetAddress "Washington Street";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Millsburgh";
+    schema:postalCode "88433";
+    schema:addressCountry "Guinea-Bissau".

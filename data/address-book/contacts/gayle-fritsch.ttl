@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gayle";
+    schema:familyName "Fritsch";
+    schema:birthDate "1959-03-13"^^xsd:date;
+    schema:address _:b9716.
+_:b9716 a schema:PostalAddress;
+    schema:streetAddress "Pfeffer Mission";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "New Tate";
+    schema:postalCode "82332";
+    schema:addressCountry "Eswatini".

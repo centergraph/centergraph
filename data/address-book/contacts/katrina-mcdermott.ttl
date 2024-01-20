@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Katrina";
+    schema:familyName "McDermott";
+    schema:birthDate "1979-04-21"^^xsd:date;
+    schema:address _:b6699.
+_:b6699 a schema:PostalAddress;
+    schema:streetAddress "Hal Heights";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "South Loniefield";
+    schema:postalCode "72617";
+    schema:addressCountry "North Macedonia".

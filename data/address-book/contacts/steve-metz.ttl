@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Steve";
+    schema:familyName "Metz";
+    schema:birthDate "1992-07-25"^^xsd:date;
+    schema:address _:b5205.
+_:b5205 a schema:PostalAddress;
+    schema:streetAddress "Cornelius Centers";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Emiliehaven";
+    schema:postalCode "92336";
+    schema:addressCountry "Honduras".

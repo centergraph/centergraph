@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cecilia";
+    schema:familyName "Mertz";
+    schema:birthDate "1966-06-08"^^xsd:date;
+    schema:address _:b7384.
+_:b7384 a schema:PostalAddress;
+    schema:streetAddress "Camylle Lodge";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Durwardworth";
+    schema:postalCode "02097";
+    schema:addressCountry "Holy See (Vatican City State)".

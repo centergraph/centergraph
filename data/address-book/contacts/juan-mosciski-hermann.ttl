@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Juan";
+    schema:familyName "Mosciski-Hermann";
+    schema:birthDate "1987-01-15"^^xsd:date;
+    schema:address _:b4302.
+_:b4302 a schema:PostalAddress;
+    schema:streetAddress "Camylle Spurs";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Carrollstead";
+    schema:postalCode "13206";
+    schema:addressCountry "Australia".

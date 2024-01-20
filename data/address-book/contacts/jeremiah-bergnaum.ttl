@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeremiah";
+    schema:familyName "Bergnaum";
+    schema:birthDate "2002-10-17"^^xsd:date;
+    schema:address _:b6633.
+_:b6633 a schema:PostalAddress;
+    schema:streetAddress "Keeling Square";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Vivacester";
+    schema:postalCode "78538-6717";
+    schema:addressCountry "Faroe Islands".

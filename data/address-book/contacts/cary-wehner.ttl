@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cary";
+    schema:familyName "Wehner";
+    schema:birthDate "1959-12-15"^^xsd:date;
+    schema:address _:b3686.
+_:b3686 a schema:PostalAddress;
+    schema:streetAddress "Hudson Rapids";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Killeen";
+    schema:postalCode "77743";
+    schema:addressCountry "Ecuador".

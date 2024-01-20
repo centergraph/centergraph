@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Javier";
+    schema:familyName "Corkery";
+    schema:birthDate "1993-01-13"^^xsd:date;
+    schema:address _:b9319.
+_:b9319 a schema:PostalAddress;
+    schema:streetAddress "Church Road";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Vivianeburgh";
+    schema:postalCode "45702";
+    schema:addressCountry "Seychelles".

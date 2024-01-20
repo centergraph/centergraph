@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Toni";
+    schema:familyName "Brown";
+    schema:birthDate "1945-10-27"^^xsd:date;
+    schema:address _:b6670.
+_:b6670 a schema:PostalAddress;
+    schema:streetAddress "Springfield Road";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Marvinshire";
+    schema:postalCode "05619";
+    schema:addressCountry "Mayotte".

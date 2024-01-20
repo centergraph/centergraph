@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gregg";
+    schema:familyName "Predovic";
+    schema:birthDate "2001-07-15"^^xsd:date;
+    schema:address _:b8080.
+_:b8080 a schema:PostalAddress;
+    schema:streetAddress "Roberts Isle";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Fort Hilariofield";
+    schema:postalCode "17497-0763";
+    schema:addressCountry "Suriname".

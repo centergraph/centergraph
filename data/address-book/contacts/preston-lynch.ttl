@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Preston";
+    schema:familyName "Lynch";
+    schema:birthDate "1978-11-11"^^xsd:date;
+    schema:address _:b3726.
+_:b3726 a schema:PostalAddress;
+    schema:streetAddress "Tianna Dale";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Rancho Palos Verdes";
+    schema:postalCode "64104-7101";
+    schema:addressCountry "Bermuda".

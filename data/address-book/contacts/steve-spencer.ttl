@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Steve";
+    schema:familyName "Spencer";
+    schema:birthDate "1993-04-29"^^xsd:date;
+    schema:address _:b476.
+_:b476 a schema:PostalAddress;
+    schema:streetAddress "Zane Stream";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "North Lambert";
+    schema:postalCode "35099";
+    schema:addressCountry "Ghana".

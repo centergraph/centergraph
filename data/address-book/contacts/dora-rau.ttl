@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dora";
+    schema:familyName "Rau";
+    schema:birthDate "1977-11-25"^^xsd:date;
+    schema:address _:b2893.
+_:b2893 a schema:PostalAddress;
+    schema:streetAddress "Juniper Close";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Deonworth";
+    schema:postalCode "12506";
+    schema:addressCountry "Belgium".

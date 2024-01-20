@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eugene";
+    schema:familyName "Hand";
+    schema:birthDate "1967-11-29"^^xsd:date;
+    schema:address _:b6339.
+_:b6339 a schema:PostalAddress;
+    schema:streetAddress "Madyson Crossroad";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Fort Aletha";
+    schema:postalCode "22819-0726";
+    schema:addressCountry "Papua New Guinea".

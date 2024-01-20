@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Calvin";
+    schema:familyName "Schimmel";
+    schema:birthDate "1973-02-01"^^xsd:date;
+    schema:address _:b3481.
+_:b3481 a schema:PostalAddress;
+    schema:streetAddress "Manor Gardens";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Port Myrtieville";
+    schema:postalCode "88385-6742";
+    schema:addressCountry "Guinea-Bissau".

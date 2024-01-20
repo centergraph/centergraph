@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shannon";
+    schema:familyName "Huels";
+    schema:birthDate "1962-05-17"^^xsd:date;
+    schema:address _:b9876.
+_:b9876 a schema:PostalAddress;
+    schema:streetAddress "Cloyd Extension";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Marksport";
+    schema:postalCode "33846";
+    schema:addressCountry "Djibouti".

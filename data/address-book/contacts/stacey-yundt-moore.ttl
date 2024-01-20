@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stacey";
+    schema:familyName "Yundt-Moore";
+    schema:birthDate "1970-03-13"^^xsd:date;
+    schema:address _:b6585.
+_:b6585 a schema:PostalAddress;
+    schema:streetAddress "Aufderhar Streets";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Fort Aisha";
+    schema:postalCode "50751";
+    schema:addressCountry "Vanuatu".

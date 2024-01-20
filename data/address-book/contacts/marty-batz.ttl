@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marty";
+    schema:familyName "Batz";
+    schema:birthDate "1999-05-14"^^xsd:date;
+    schema:address _:b5697.
+_:b5697 a schema:PostalAddress;
+    schema:streetAddress "Birch Avenue";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Melynatown";
+    schema:postalCode "60859-7966";
+    schema:addressCountry "Peru".

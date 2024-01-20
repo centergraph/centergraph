@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bethany";
+    schema:familyName "Shields";
+    schema:birthDate "1949-07-08"^^xsd:date;
+    schema:address _:b664.
+_:b664 a schema:PostalAddress;
+    schema:streetAddress "S Washington Avenue";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "West New York";
+    schema:postalCode "32787";
+    schema:addressCountry "Fiji".

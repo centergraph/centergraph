@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jake";
+    schema:familyName "Runte-Stoltenberg";
+    schema:birthDate "1980-01-24"^^xsd:date;
+    schema:address _:b3776.
+_:b3776 a schema:PostalAddress;
+    schema:streetAddress "N Church Street";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "The Hammocks";
+    schema:postalCode "33842-4853";
+    schema:addressCountry "Trinidad and Tobago".

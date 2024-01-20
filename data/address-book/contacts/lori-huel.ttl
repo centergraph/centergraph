@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lori";
+    schema:familyName "Huel";
+    schema:birthDate "1986-02-01"^^xsd:date;
+    schema:address _:b4457.
+_:b4457 a schema:PostalAddress;
+    schema:streetAddress "Jena Avenue";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "White Plains";
+    schema:postalCode "21194";
+    schema:addressCountry "Cambodia".

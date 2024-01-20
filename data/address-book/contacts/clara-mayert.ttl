@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clara";
+    schema:familyName "Mayert";
+    schema:birthDate "1951-08-17"^^xsd:date;
+    schema:address _:b7264.
+_:b7264 a schema:PostalAddress;
+    schema:streetAddress "Jacobs Fords";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Lessieside";
+    schema:postalCode "60819-4481";
+    schema:addressCountry "Burundi".

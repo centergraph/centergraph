@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cameron";
+    schema:familyName "O'Keefe";
+    schema:birthDate "1958-05-21"^^xsd:date;
+    schema:address _:b6162.
+_:b6162 a schema:PostalAddress;
+    schema:streetAddress "The Green";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "East Enochside";
+    schema:postalCode "13549-9506";
+    schema:addressCountry "Italy".

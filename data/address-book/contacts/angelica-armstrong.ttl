@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Angelica";
+    schema:familyName "Armstrong";
+    schema:birthDate "1975-03-24"^^xsd:date;
+    schema:address _:b7944.
+_:b7944 a schema:PostalAddress;
+    schema:streetAddress "Owen Junctions";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Johnstonhaven";
+    schema:postalCode "78692";
+    schema:addressCountry "Gibraltar".

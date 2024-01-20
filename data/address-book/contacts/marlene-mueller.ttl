@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marlene";
+    schema:familyName "Mueller";
+    schema:birthDate "1977-12-24"^^xsd:date;
+    schema:address _:b7550.
+_:b7550 a schema:PostalAddress;
+    schema:streetAddress "Beier Forges";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "East Celestine";
+    schema:postalCode "49206";
+    schema:addressCountry "Uganda".

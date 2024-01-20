@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Victoria";
+    schema:familyName "Schmidt-Bashirian";
+    schema:birthDate "1954-01-25"^^xsd:date;
+    schema:address _:b5285.
+_:b5285 a schema:PostalAddress;
+    schema:streetAddress "Walter Park";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Hellerview";
+    schema:postalCode "04982";
+    schema:addressCountry "Papua New Guinea".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Victoria";
+    schema:familyName "Huels";
+    schema:birthDate "1951-06-14"^^xsd:date;
+    schema:address _:b9053.
+_:b9053 a schema:PostalAddress;
+    schema:streetAddress "Edward Street";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Keeblerside";
+    schema:postalCode "84199";
+    schema:addressCountry "Nepal".

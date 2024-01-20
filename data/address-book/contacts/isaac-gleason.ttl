@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Isaac";
+    schema:familyName "Gleason";
+    schema:birthDate "2002-07-31"^^xsd:date;
+    schema:address _:b8390.
+_:b8390 a schema:PostalAddress;
+    schema:streetAddress "Dangelo Brooks";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Fort Price";
+    schema:postalCode "26831";
+    schema:addressCountry "Bahrain".

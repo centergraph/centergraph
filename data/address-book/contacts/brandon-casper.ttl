@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brandon";
+    schema:familyName "Casper";
+    schema:birthDate "1954-01-06"^^xsd:date;
+    schema:address _:b6483.
+_:b6483 a schema:PostalAddress;
+    schema:streetAddress "Gladys Rapids";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Allieburgh";
+    schema:postalCode "91033";
+    schema:addressCountry "Cyprus".

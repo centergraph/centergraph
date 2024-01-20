@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Steven";
+    schema:familyName "Lueilwitz";
+    schema:birthDate "1985-08-22"^^xsd:date;
+    schema:address _:b5064.
+_:b5064 a schema:PostalAddress;
+    schema:streetAddress "Kamren Mews";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Vanburgh";
+    schema:postalCode "50686-3793";
+    schema:addressCountry "Burundi".

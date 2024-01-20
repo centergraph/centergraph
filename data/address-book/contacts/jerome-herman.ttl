@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jerome";
+    schema:familyName "Herman";
+    schema:birthDate "2005-08-12"^^xsd:date;
+    schema:address _:b9107.
+_:b9107 a schema:PostalAddress;
+    schema:streetAddress "Yost Fords";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "South Godfrey";
+    schema:postalCode "85877-9272";
+    schema:addressCountry "Norfolk Island".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eduardo";
+    schema:familyName "Waelchi";
+    schema:birthDate "1986-01-26"^^xsd:date;
+    schema:address _:b1326.
+_:b1326 a schema:PostalAddress;
+    schema:streetAddress "W Front Street";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Dearborn";
+    schema:postalCode "54726";
+    schema:addressCountry "Taiwan".

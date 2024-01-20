@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Santos";
+    schema:familyName "Hand";
+    schema:birthDate "1947-10-18"^^xsd:date;
+    schema:address _:b5198.
+_:b5198 a schema:PostalAddress;
+    schema:streetAddress "Hagenes Stravenue";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "East Leonora";
+    schema:postalCode "69473";
+    schema:addressCountry "Russian Federation".

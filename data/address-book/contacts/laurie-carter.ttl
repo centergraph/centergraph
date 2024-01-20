@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laurie";
+    schema:familyName "Carter";
+    schema:birthDate "1950-10-15"^^xsd:date;
+    schema:address _:b7788.
+_:b7788 a schema:PostalAddress;
+    schema:streetAddress "Quarry Lane";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "South Mallie";
+    schema:postalCode "14128";
+    schema:addressCountry "French Guiana".

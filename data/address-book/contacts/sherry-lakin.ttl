@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sherry";
+    schema:familyName "Lakin";
+    schema:birthDate "1994-07-09"^^xsd:date;
+    schema:address _:b5793.
+_:b5793 a schema:PostalAddress;
+    schema:streetAddress "Myrl Path";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Lake Melisastad";
+    schema:postalCode "35167-4709";
+    schema:addressCountry "Bosnia and Herzegovina".

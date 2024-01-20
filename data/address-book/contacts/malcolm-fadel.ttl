@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Malcolm";
+    schema:familyName "Fadel";
+    schema:birthDate "1953-02-02"^^xsd:date;
+    schema:address _:b4521.
+_:b4521 a schema:PostalAddress;
+    schema:streetAddress "Dante Parkway";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "New Cassie";
+    schema:postalCode "12289";
+    schema:addressCountry "Guadeloupe".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elvira";
+    schema:familyName "Kub";
+    schema:birthDate "1966-11-30"^^xsd:date;
+    schema:address _:b3893.
+_:b3893 a schema:PostalAddress;
+    schema:streetAddress "Randall Crossing";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "New Austinborough";
+    schema:postalCode "87315-6388";
+    schema:addressCountry "Dominican Republic".

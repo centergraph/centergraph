@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brenda";
+    schema:familyName "McGlynn-O'Hara";
+    schema:birthDate "1994-07-25"^^xsd:date;
+    schema:address _:b5823.
+_:b5823 a schema:PostalAddress;
+    schema:streetAddress "Jaskolski Brooks";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "West Mary";
+    schema:postalCode "02627-6319";
+    schema:addressCountry "Isle of Man".

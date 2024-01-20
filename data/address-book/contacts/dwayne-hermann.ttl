@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dwayne";
+    schema:familyName "Hermann";
+    schema:birthDate "1970-10-10"^^xsd:date;
+    schema:address _:b2037.
+_:b2037 a schema:PostalAddress;
+    schema:streetAddress "Madison Street";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Bechtelarview";
+    schema:postalCode "07716-6345";
+    schema:addressCountry "Falkland Islands (Malvinas)".

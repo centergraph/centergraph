@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cody";
+    schema:familyName "Herman";
+    schema:birthDate "1994-11-25"^^xsd:date;
+    schema:address _:b4711.
+_:b4711 a schema:PostalAddress;
+    schema:streetAddress "Sheridan Avenue";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Earleneberg";
+    schema:postalCode "48994";
+    schema:addressCountry "Iceland".

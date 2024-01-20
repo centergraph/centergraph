@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ora";
+    schema:familyName "Wyman";
+    schema:birthDate "1972-08-18"^^xsd:date;
+    schema:address _:b6748.
+_:b6748 a schema:PostalAddress;
+    schema:streetAddress "Velda Light";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Fort Johannabury";
+    schema:postalCode "40105-2267";
+    schema:addressCountry "Italy".

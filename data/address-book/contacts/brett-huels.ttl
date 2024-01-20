@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brett";
+    schema:familyName "Huels";
+    schema:birthDate "1971-07-10"^^xsd:date;
+    schema:address _:b1658.
+_:b1658 a schema:PostalAddress;
+    schema:streetAddress "The Willows";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "East Brain";
+    schema:postalCode "17598-9827";
+    schema:addressCountry "Puerto Rico".

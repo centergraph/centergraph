@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nora";
+    schema:familyName "Mayert-Carroll";
+    schema:birthDate "1998-07-08"^^xsd:date;
+    schema:address _:b4957.
+_:b4957 a schema:PostalAddress;
+    schema:streetAddress "Veterans Memorial Highway";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Lake Deondrefort";
+    schema:postalCode "85684-0202";
+    schema:addressCountry "Congo".

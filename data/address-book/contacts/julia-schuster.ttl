@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julia";
+    schema:familyName "Schuster";
+    schema:birthDate "1969-11-30"^^xsd:date;
+    schema:address _:b2732.
+_:b2732 a schema:PostalAddress;
+    schema:streetAddress "Church Avenue";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Hassanfurt";
+    schema:postalCode "59349-0729";
+    schema:addressCountry "Eritrea".

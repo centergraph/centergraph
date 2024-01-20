@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Peggy";
+    schema:familyName "Gorczany";
+    schema:birthDate "1998-08-21"^^xsd:date;
+    schema:address _:b1651.
+_:b1651 a schema:PostalAddress;
+    schema:streetAddress "Hills Cove";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Handport";
+    schema:postalCode "61277-0346";
+    schema:addressCountry "Afghanistan".

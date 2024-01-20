@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Austin";
+    schema:familyName "Marquardt";
+    schema:birthDate "1947-12-24"^^xsd:date;
+    schema:address _:b4192.
+_:b4192 a schema:PostalAddress;
+    schema:streetAddress "Kolby Landing";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Rahulhaven";
+    schema:postalCode "51581";
+    schema:addressCountry "Spain".

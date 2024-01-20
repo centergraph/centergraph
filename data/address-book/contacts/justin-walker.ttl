@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Justin";
+    schema:familyName "Walker";
+    schema:birthDate "1950-04-07"^^xsd:date;
+    schema:address _:b5488.
+_:b5488 a schema:PostalAddress;
+    schema:streetAddress "Emie Mills";
+    schema:addressRegion "New York";
+    schema:addressLocality "Lake Joannieworth";
+    schema:postalCode "63382";
+    schema:addressCountry "Gambia".

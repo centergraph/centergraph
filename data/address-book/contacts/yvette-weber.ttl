@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Yvette";
+    schema:familyName "Weber";
+    schema:birthDate "1978-03-14"^^xsd:date;
+    schema:address _:b6994.
+_:b6994 a schema:PostalAddress;
+    schema:streetAddress "Connelly Bridge";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "VonRuedenbury";
+    schema:postalCode "54519-4547";
+    schema:addressCountry "Saint Pierre and Miquelon".

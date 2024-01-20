@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doris";
+    schema:familyName "Koss";
+    schema:birthDate "1947-04-13"^^xsd:date;
+    schema:address _:b724.
+_:b724 a schema:PostalAddress;
+    schema:streetAddress "Wiley Park";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Mayside";
+    schema:postalCode "13733";
+    schema:addressCountry "Curacao".

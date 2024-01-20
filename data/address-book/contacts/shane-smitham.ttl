@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shane";
+    schema:familyName "Smitham";
+    schema:birthDate "1987-11-14"^^xsd:date;
+    schema:address _:b4274.
+_:b4274 a schema:PostalAddress;
+    schema:streetAddress "Heller Tunnel";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "North Brandi";
+    schema:postalCode "13665";
+    schema:addressCountry "South Georgia and the South Sandwich Islands".

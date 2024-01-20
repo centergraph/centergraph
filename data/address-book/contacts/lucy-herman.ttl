@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lucy";
+    schema:familyName "Herman";
+    schema:birthDate "1965-05-01"^^xsd:date;
+    schema:address _:b5291.
+_:b5291 a schema:PostalAddress;
+    schema:streetAddress "Sydnee Landing";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Fort Collins";
+    schema:postalCode "36945-4180";
+    schema:addressCountry "Costa Rica".

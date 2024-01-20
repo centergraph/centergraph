@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elmer";
+    schema:familyName "Kirlin";
+    schema:birthDate "1979-12-28"^^xsd:date;
+    schema:address _:b2108.
+_:b2108 a schema:PostalAddress;
+    schema:streetAddress "Roob Glen";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Fargo";
+    schema:postalCode "34452-4154";
+    schema:addressCountry "Eswatini".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terry";
+    schema:familyName "Bashirian";
+    schema:birthDate "1988-09-14"^^xsd:date;
+    schema:address _:b5373.
+_:b5373 a schema:PostalAddress;
+    schema:streetAddress "Emile Gardens";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Deltona";
+    schema:postalCode "25870";
+    schema:addressCountry "Albania".

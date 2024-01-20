@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kim";
+    schema:familyName "Mante";
+    schema:birthDate "1991-02-18"^^xsd:date;
+    schema:address _:b2837.
+_:b2837 a schema:PostalAddress;
+    schema:streetAddress "Cruickshank Well";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Bergstromfield";
+    schema:postalCode "91457-2179";
+    schema:addressCountry "Eswatini".

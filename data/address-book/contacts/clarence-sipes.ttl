@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clarence";
+    schema:familyName "Sipes";
+    schema:birthDate "1952-12-12"^^xsd:date;
+    schema:address _:b8122.
+_:b8122 a schema:PostalAddress;
+    schema:streetAddress "Marvin Gateway";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Justynshire";
+    schema:postalCode "17846-0340";
+    schema:addressCountry "Nigeria".

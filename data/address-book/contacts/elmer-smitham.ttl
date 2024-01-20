@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elmer";
+    schema:familyName "Smitham";
+    schema:birthDate "1984-06-26"^^xsd:date;
+    schema:address _:b2720.
+_:b2720 a schema:PostalAddress;
+    schema:streetAddress "S Mill Street";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Boulder";
+    schema:postalCode "45891-7220";
+    schema:addressCountry "Peru".

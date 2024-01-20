@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marcia";
+    schema:familyName "Thiel";
+    schema:birthDate "1984-01-29"^^xsd:date;
+    schema:address _:b9805.
+_:b9805 a schema:PostalAddress;
+    schema:streetAddress "White View";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Port Mosheworth";
+    schema:postalCode "92371-2420";
+    schema:addressCountry "Haiti".

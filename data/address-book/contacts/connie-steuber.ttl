@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Connie";
+    schema:familyName "Steuber";
+    schema:birthDate "1972-07-06"^^xsd:date;
+    schema:address _:b8900.
+_:b8900 a schema:PostalAddress;
+    schema:streetAddress "Triston Summit";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Tonawanda";
+    schema:postalCode "10889";
+    schema:addressCountry "Bahamas".

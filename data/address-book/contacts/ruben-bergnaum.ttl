@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruben";
+    schema:familyName "Bergnaum";
+    schema:birthDate "1973-06-02"^^xsd:date;
+    schema:address _:b3549.
+_:b3549 a schema:PostalAddress;
+    schema:streetAddress "Xander Extensions";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Port Calebborough";
+    schema:postalCode "51788-5087";
+    schema:addressCountry "Bahrain".

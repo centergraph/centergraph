@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ian";
+    schema:familyName "Kub";
+    schema:birthDate "1980-08-26"^^xsd:date;
+    schema:address _:b357.
+_:b357 a schema:PostalAddress;
+    schema:streetAddress "The Laurels";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Lake Patrick";
+    schema:postalCode "51674";
+    schema:addressCountry "Ghana".

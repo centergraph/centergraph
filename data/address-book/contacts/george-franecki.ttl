@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "George";
+    schema:familyName "Franecki";
+    schema:birthDate "1962-10-15"^^xsd:date;
+    schema:address _:b3463.
+_:b3463 a schema:PostalAddress;
+    schema:streetAddress "Prospect Place";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Fort Enochville";
+    schema:postalCode "28800-6930";
+    schema:addressCountry "Bangladesh".

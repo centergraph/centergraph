@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Josefina";
+    schema:familyName "Little";
+    schema:birthDate "1981-02-23"^^xsd:date;
+    schema:address _:b2518.
+_:b2518 a schema:PostalAddress;
+    schema:streetAddress "County Road";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "La Crosse";
+    schema:postalCode "52789";
+    schema:addressCountry "Bhutan".

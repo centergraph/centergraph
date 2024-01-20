@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kate";
+    schema:familyName "Steuber";
+    schema:birthDate "1973-03-16"^^xsd:date;
+    schema:address _:b8034.
+_:b8034 a schema:PostalAddress;
+    schema:streetAddress "Jamie Row";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Nicholecester";
+    schema:postalCode "76992-1972";
+    schema:addressCountry "Burundi".

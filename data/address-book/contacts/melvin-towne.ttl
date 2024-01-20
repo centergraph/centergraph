@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Melvin";
+    schema:familyName "Towne";
+    schema:birthDate "1966-02-21"^^xsd:date;
+    schema:address _:b2431.
+_:b2431 a schema:PostalAddress;
+    schema:streetAddress "Gibson Light";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "South Louveniafurt";
+    schema:postalCode "44943";
+    schema:addressCountry "Taiwan".

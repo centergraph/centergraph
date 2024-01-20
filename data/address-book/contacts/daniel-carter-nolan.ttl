@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Daniel";
+    schema:familyName "Carter-Nolan";
+    schema:birthDate "1968-12-27"^^xsd:date;
+    schema:address _:b7640.
+_:b7640 a schema:PostalAddress;
+    schema:streetAddress "Pacocha Causeway";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Enterprise";
+    schema:postalCode "61018-5732";
+    schema:addressCountry "Nepal".

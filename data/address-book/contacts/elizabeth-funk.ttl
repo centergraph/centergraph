@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elizabeth";
+    schema:familyName "Funk";
+    schema:birthDate "1977-07-20"^^xsd:date;
+    schema:address _:b7917.
+_:b7917 a schema:PostalAddress;
+    schema:streetAddress "Santa Parks";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Lake Hertha";
+    schema:postalCode "86877-5668";
+    schema:addressCountry "Belgium".

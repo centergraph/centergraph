@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pedro";
+    schema:familyName "Bartell";
+    schema:birthDate "1975-09-05"^^xsd:date;
+    schema:address _:b2361.
+_:b2361 a schema:PostalAddress;
+    schema:streetAddress "Rosa Neck";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "South Rossstead";
+    schema:postalCode "95123-0685";
+    schema:addressCountry "Mauritius".

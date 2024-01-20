@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joyce";
+    schema:familyName "Trantow";
+    schema:birthDate "1999-04-19"^^xsd:date;
+    schema:address _:b3758.
+_:b3758 a schema:PostalAddress;
+    schema:streetAddress "Audrey Mount";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Tracy";
+    schema:postalCode "15684";
+    schema:addressCountry "Virgin Islands, British".

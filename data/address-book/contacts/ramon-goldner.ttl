@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ramon";
+    schema:familyName "Goldner";
+    schema:birthDate "1969-06-07"^^xsd:date;
+    schema:address _:b1260.
+_:b1260 a schema:PostalAddress;
+    schema:streetAddress "Dimitri Vista";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Longview";
+    schema:postalCode "18560";
+    schema:addressCountry "Grenada".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wm";
+    schema:familyName "Dooley";
+    schema:birthDate "1991-10-20"^^xsd:date;
+    schema:address _:b876.
+_:b876 a schema:PostalAddress;
+    schema:streetAddress "Hintz Fords";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Buddyfurt";
+    schema:postalCode "28694";
+    schema:addressCountry "Morocco".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Juana";
+    schema:familyName "O'Hara";
+    schema:birthDate "1988-09-10"^^xsd:date;
+    schema:address _:b8351.
+_:b8351 a schema:PostalAddress;
+    schema:streetAddress "Kendra Way";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "West Tatyanaburgh";
+    schema:postalCode "81682-5990";
+    schema:addressCountry "Qatar".

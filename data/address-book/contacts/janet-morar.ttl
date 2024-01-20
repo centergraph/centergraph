@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janet";
+    schema:familyName "Morar";
+    schema:birthDate "1965-03-28"^^xsd:date;
+    schema:address _:b3861.
+_:b3861 a schema:PostalAddress;
+    schema:streetAddress "Church View";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Oberbrunnerworth";
+    schema:postalCode "24366";
+    schema:addressCountry "French Guiana".

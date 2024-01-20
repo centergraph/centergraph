@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Melba";
+    schema:familyName "Cronin";
+    schema:birthDate "1945-05-04"^^xsd:date;
+    schema:address _:b1848.
+_:b1848 a schema:PostalAddress;
+    schema:streetAddress "Stark Street";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Alafaya";
+    schema:postalCode "96770-3962";
+    schema:addressCountry "Ethiopia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vincent";
+    schema:familyName "Mayert";
+    schema:birthDate "1952-02-27"^^xsd:date;
+    schema:address _:b4127.
+_:b4127 a schema:PostalAddress;
+    schema:streetAddress "Mueller Trace";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Johnson City";
+    schema:postalCode "95124";
+    schema:addressCountry "Seychelles".

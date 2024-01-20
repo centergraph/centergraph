@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Toni";
+    schema:familyName "Ernser";
+    schema:birthDate "1944-02-05"^^xsd:date;
+    schema:address _:b7980.
+_:b7980 a schema:PostalAddress;
+    schema:streetAddress "Adams Street";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Lake Leanna";
+    schema:postalCode "56599-3315";
+    schema:addressCountry "Northern Mariana Islands".

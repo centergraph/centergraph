@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Owen";
+    schema:familyName "Bernhard";
+    schema:birthDate "2001-09-14"^^xsd:date;
+    schema:address _:b2714.
+_:b2714 a schema:PostalAddress;
+    schema:streetAddress "N 1st Street";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Turcotteborough";
+    schema:postalCode "08566-2875";
+    schema:addressCountry "Ireland".

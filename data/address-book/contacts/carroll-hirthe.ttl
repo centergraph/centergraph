@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carroll";
+    schema:familyName "Hirthe";
+    schema:birthDate "1946-10-18"^^xsd:date;
+    schema:address _:b47.
+_:b47 a schema:PostalAddress;
+    schema:streetAddress "E South Street";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Bashirianberg";
+    schema:postalCode "97692-1646";
+    schema:addressCountry "Honduras".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brooke";
+    schema:familyName "Runolfsson";
+    schema:birthDate "1944-01-08"^^xsd:date;
+    schema:address _:b2441.
+_:b2441 a schema:PostalAddress;
+    schema:streetAddress "Stark Canyon";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Harrisonburg";
+    schema:postalCode "90723-0389";
+    schema:addressCountry "Curacao".

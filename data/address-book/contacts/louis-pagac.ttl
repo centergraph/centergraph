@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Louis";
+    schema:familyName "Pagac";
+    schema:birthDate "1998-04-11"^^xsd:date;
+    schema:address _:b7912.
+_:b7912 a schema:PostalAddress;
+    schema:streetAddress "N Front Street";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Chino Hills";
+    schema:postalCode "58724-9215";
+    schema:addressCountry "French Southern Territories".

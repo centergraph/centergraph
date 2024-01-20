@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Timmy";
+    schema:familyName "Davis";
+    schema:birthDate "1967-05-10"^^xsd:date;
+    schema:address _:b9449.
+_:b9449 a schema:PostalAddress;
+    schema:streetAddress "Boyle Corner";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Mount Prospect";
+    schema:postalCode "36599";
+    schema:addressCountry "Austria".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mindy";
+    schema:familyName "Paucek";
+    schema:birthDate "1968-03-24"^^xsd:date;
+    schema:address _:b9810.
+_:b9810 a schema:PostalAddress;
+    schema:streetAddress "Breana River";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Fort Minnie";
+    schema:postalCode "45669";
+    schema:addressCountry "Czechia".

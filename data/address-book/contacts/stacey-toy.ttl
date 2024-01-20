@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stacey";
+    schema:familyName "Toy";
+    schema:birthDate "1981-12-06"^^xsd:date;
+    schema:address _:b8395.
+_:b8395 a schema:PostalAddress;
+    schema:streetAddress "Sigurd Corner";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "North Lizethberg";
+    schema:postalCode "33286";
+    schema:addressCountry "Antarctica".

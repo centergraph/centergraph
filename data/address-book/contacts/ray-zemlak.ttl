@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Ray";
     schema:familyName "Zemlak";
-    schema:birthDate "2003-05-30"^^xsd:date;
-    schema:address _:b437.
-_:b437 a schema:PostalAddress;
-    schema:streetAddress "Elian Row";
-    schema:addressRegion "West Virginia";
-    schema:addressLocality "Boscostad";
-    schema:postalCode "01933-5061";
-    schema:addressCountry "Netherlands".
+    schema:birthDate "1970-02-19"^^xsd:date;
+    schema:address _:b5327.
+_:b5327 a schema:PostalAddress;
+    schema:streetAddress "Diego Ferry";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Hartmannport";
+    schema:postalCode "76247";
+    schema:addressCountry "Qatar".

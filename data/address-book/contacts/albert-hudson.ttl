@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Albert";
+    schema:familyName "Hudson";
+    schema:birthDate "1986-07-07"^^xsd:date;
+    schema:address _:b6901.
+_:b6901 a schema:PostalAddress;
+    schema:streetAddress "Park Lane";
+    schema:addressRegion "Florida";
+    schema:addressLocality "New Destineystad";
+    schema:postalCode "53292-5811";
+    schema:addressCountry "Bosnia and Herzegovina".

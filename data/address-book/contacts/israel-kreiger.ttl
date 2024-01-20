@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Israel";
+    schema:familyName "Kreiger";
+    schema:birthDate "1986-11-13"^^xsd:date;
+    schema:address _:b154.
+_:b154 a schema:PostalAddress;
+    schema:streetAddress "Leannon Pike";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Collierville";
+    schema:postalCode "75181";
+    schema:addressCountry "Seychelles".

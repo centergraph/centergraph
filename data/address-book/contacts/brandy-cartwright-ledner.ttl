@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brandy";
+    schema:familyName "Cartwright-Ledner";
+    schema:birthDate "1990-07-09"^^xsd:date;
+    schema:address _:b2172.
+_:b2172 a schema:PostalAddress;
+    schema:streetAddress "Elna Tunnel";
+    schema:addressRegion "California";
+    schema:addressLocality "South Adolfoport";
+    schema:postalCode "60828-7444";
+    schema:addressCountry "Maldives".

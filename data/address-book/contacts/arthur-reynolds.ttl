@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Arthur";
+    schema:familyName "Reynolds";
+    schema:birthDate "1976-10-24"^^xsd:date;
+    schema:address _:b4888.
+_:b4888 a schema:PostalAddress;
+    schema:streetAddress "Lenore Parks";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Tillmanstad";
+    schema:postalCode "40645";
+    schema:addressCountry "Hong Kong".

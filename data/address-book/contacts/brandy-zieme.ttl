@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brandy";
+    schema:familyName "Zieme";
+    schema:birthDate "1947-07-09"^^xsd:date;
+    schema:address _:b2666.
+_:b2666 a schema:PostalAddress;
+    schema:streetAddress "Kaden Shore";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Port Jaceland";
+    schema:postalCode "26522-5544";
+    schema:addressCountry "Falkland Islands (Malvinas)".

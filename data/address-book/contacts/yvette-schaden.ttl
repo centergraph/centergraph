@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Yvette";
+    schema:familyName "Schaden";
+    schema:birthDate "1998-09-16"^^xsd:date;
+    schema:address _:b116.
+_:b116 a schema:PostalAddress;
+    schema:streetAddress "Coy Shore";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Fort Kiarra";
+    schema:postalCode "67129";
+    schema:addressCountry "Gibraltar".

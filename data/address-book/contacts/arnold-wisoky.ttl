@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Arnold";
+    schema:familyName "Wisoky";
+    schema:birthDate "1978-05-23"^^xsd:date;
+    schema:address _:b9253.
+_:b9253 a schema:PostalAddress;
+    schema:streetAddress "Alma Street";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Stephaniehaven";
+    schema:postalCode "92568";
+    schema:addressCountry "Italy".

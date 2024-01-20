@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joanne";
+    schema:familyName "Lubowitz-Legros";
+    schema:birthDate "2003-08-13"^^xsd:date;
+    schema:address _:b2802.
+_:b2802 a schema:PostalAddress;
+    schema:streetAddress "Quitzon Fords";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Faheyfurt";
+    schema:postalCode "88063-1590";
+    schema:addressCountry "Taiwan".

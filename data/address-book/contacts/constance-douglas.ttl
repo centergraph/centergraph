@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Constance";
+    schema:familyName "Douglas";
+    schema:birthDate "1999-05-05"^^xsd:date;
+    schema:address _:b8787.
+_:b8787 a schema:PostalAddress;
+    schema:streetAddress "Thaddeus Highway";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "York";
+    schema:postalCode "26163-4792";
+    schema:addressCountry "Montserrat".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Garrett";
+    schema:familyName "Beer-Feil";
+    schema:birthDate "1970-06-04"^^xsd:date;
+    schema:address _:b4839.
+_:b4839 a schema:PostalAddress;
+    schema:streetAddress "Schamberger Cliff";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Pensacola";
+    schema:postalCode "53646-6558";
+    schema:addressCountry "Kenya".

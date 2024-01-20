@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rudy";
+    schema:familyName "Johns";
+    schema:birthDate "1964-03-14"^^xsd:date;
+    schema:address _:b3626.
+_:b3626 a schema:PostalAddress;
+    schema:streetAddress "Church Hill";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Ullrichworth";
+    schema:postalCode "66401-6346";
+    schema:addressCountry "Antigua and Barbuda".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eva";
+    schema:familyName "Kovacek";
+    schema:birthDate "1987-05-11"^^xsd:date;
+    schema:address _:b4959.
+_:b4959 a schema:PostalAddress;
+    schema:streetAddress "Ceasar Manor";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Bothell";
+    schema:postalCode "37091-0011";
+    schema:addressCountry "Guernsey".

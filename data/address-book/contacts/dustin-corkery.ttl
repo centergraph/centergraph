@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dustin";
+    schema:familyName "Corkery";
+    schema:birthDate "2003-10-15"^^xsd:date;
+    schema:address _:b4686.
+_:b4686 a schema:PostalAddress;
+    schema:streetAddress "Mazie Landing";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Hendersonville";
+    schema:postalCode "19261-6496";
+    schema:addressCountry "Bermuda".

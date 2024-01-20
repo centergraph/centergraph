@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Valerie";
+    schema:familyName "Champlin";
+    schema:birthDate "1997-02-09"^^xsd:date;
+    schema:address _:b1853.
+_:b1853 a schema:PostalAddress;
+    schema:streetAddress "Jessyca Shore";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "North Earnestfort";
+    schema:postalCode "50728";
+    schema:addressCountry "Djibouti".

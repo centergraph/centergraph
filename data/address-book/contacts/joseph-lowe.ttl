@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joseph";
+    schema:familyName "Lowe";
+    schema:birthDate "1980-08-31"^^xsd:date;
+    schema:address _:b4821.
+_:b4821 a schema:PostalAddress;
+    schema:streetAddress "Everette Route";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Port Dan";
+    schema:postalCode "38010";
+    schema:addressCountry "Liberia".

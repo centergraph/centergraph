@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Delores";
+    schema:familyName "Altenwerth";
+    schema:birthDate "1999-04-02"^^xsd:date;
+    schema:address _:b5673.
+_:b5673 a schema:PostalAddress;
+    schema:streetAddress "Grant Point";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "North Baileyfort";
+    schema:postalCode "87129";
+    schema:addressCountry "Kenya".

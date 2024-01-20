@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laura";
+    schema:familyName "O'Reilly";
+    schema:birthDate "1996-01-24"^^xsd:date;
+    schema:address _:b8941.
+_:b8941 a schema:PostalAddress;
+    schema:streetAddress "Jairo Point";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Lake Antwonview";
+    schema:postalCode "37954-8004";
+    schema:addressCountry "United States Minor Outlying Islands".

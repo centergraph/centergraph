@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Noel";
+    schema:familyName "Harris";
+    schema:birthDate "2001-12-06"^^xsd:date;
+    schema:address _:b1780.
+_:b1780 a schema:PostalAddress;
+    schema:streetAddress "Raleigh Island";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "East Shawna";
+    schema:postalCode "88033";
+    schema:addressCountry "Lao People's Democratic Republic".

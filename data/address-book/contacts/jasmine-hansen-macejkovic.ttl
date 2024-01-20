@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jasmine";
+    schema:familyName "Hansen-Macejkovic";
+    schema:birthDate "1999-08-18"^^xsd:date;
+    schema:address _:b6630.
+_:b6630 a schema:PostalAddress;
+    schema:streetAddress "Amiya Cove";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Doyleside";
+    schema:postalCode "24085";
+    schema:addressCountry "Saint Vincent and the Grenadines".

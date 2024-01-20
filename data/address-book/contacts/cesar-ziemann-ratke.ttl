@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cesar";
+    schema:familyName "Ziemann-Ratke";
+    schema:birthDate "1994-01-04"^^xsd:date;
+    schema:address _:b1973.
+_:b1973 a schema:PostalAddress;
+    schema:streetAddress "Dedrick Port";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Priscillaside";
+    schema:postalCode "72448-3902";
+    schema:addressCountry "Timor-Leste".

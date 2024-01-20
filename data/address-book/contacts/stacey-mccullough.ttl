@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stacey";
+    schema:familyName "McCullough";
+    schema:birthDate "1976-07-29"^^xsd:date;
+    schema:address _:b4397.
+_:b4397 a schema:PostalAddress;
+    schema:streetAddress "Klocko Pine";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Lanceview";
+    schema:postalCode "74351-3317";
+    schema:addressCountry "Burundi".

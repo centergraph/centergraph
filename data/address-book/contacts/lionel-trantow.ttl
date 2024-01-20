@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lionel";
+    schema:familyName "Trantow";
+    schema:birthDate "1964-01-20"^^xsd:date;
+    schema:address _:b6101.
+_:b6101 a schema:PostalAddress;
+    schema:streetAddress "Riverside";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Plainfield";
+    schema:postalCode "37880-1627";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

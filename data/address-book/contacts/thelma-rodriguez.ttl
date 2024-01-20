@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Thelma";
+    schema:familyName "Rodriguez";
+    schema:birthDate "1954-01-13"^^xsd:date;
+    schema:address _:b9398.
+_:b9398 a schema:PostalAddress;
+    schema:streetAddress "Elm Close";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Annafurt";
+    schema:postalCode "86628";
+    schema:addressCountry "Mexico".

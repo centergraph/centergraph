@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Willard";
+    schema:familyName "Schmitt";
+    schema:birthDate "2000-02-08"^^xsd:date;
+    schema:address _:b5454.
+_:b5454 a schema:PostalAddress;
+    schema:streetAddress "Herzog Valley";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "South Celia";
+    schema:postalCode "09809";
+    schema:addressCountry "Anguilla".

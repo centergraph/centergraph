@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Misty";
+    schema:familyName "Padberg";
+    schema:birthDate "1954-07-11"^^xsd:date;
+    schema:address _:b6914.
+_:b6914 a schema:PostalAddress;
+    schema:streetAddress "Alfred Street";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Atascocita";
+    schema:postalCode "74103-3356";
+    schema:addressCountry "Saint Martin".

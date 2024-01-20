@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joe";
+    schema:familyName "Kertzmann";
+    schema:birthDate "1996-10-17"^^xsd:date;
+    schema:address _:b1335.
+_:b1335 a schema:PostalAddress;
+    schema:streetAddress "Pound Lane";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Modesto";
+    schema:postalCode "22945";
+    schema:addressCountry "Rwanda".

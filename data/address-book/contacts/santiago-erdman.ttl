@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Santiago";
+    schema:familyName "Erdman";
+    schema:birthDate "1972-08-22"^^xsd:date;
+    schema:address _:b6691.
+_:b6691 a schema:PostalAddress;
+    schema:streetAddress "Antonio Route";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Oakland Park";
+    schema:postalCode "02685";
+    schema:addressCountry "Bhutan".

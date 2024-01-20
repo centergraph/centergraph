@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Michele";
+    schema:familyName "Crist";
+    schema:birthDate "1946-06-14"^^xsd:date;
+    schema:address _:b7653.
+_:b7653 a schema:PostalAddress;
+    schema:streetAddress "Clovis Crossing";
+    schema:addressRegion "California";
+    schema:addressLocality "Oakland Park";
+    schema:postalCode "52764-2885";
+    schema:addressCountry "Zambia".

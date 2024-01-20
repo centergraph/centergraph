@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Preston";
+    schema:familyName "Schaefer";
+    schema:birthDate "1947-11-21"^^xsd:date;
+    schema:address _:b4017.
+_:b4017 a schema:PostalAddress;
+    schema:streetAddress "Queen's Road";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Jonescester";
+    schema:postalCode "29911";
+    schema:addressCountry "Madagascar".

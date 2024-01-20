@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ann";
+    schema:familyName "Bernier";
+    schema:birthDate "2004-08-27"^^xsd:date;
+    schema:address _:b9641.
+_:b9641 a schema:PostalAddress;
+    schema:streetAddress "Cemetery Road";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Fort Erik";
+    schema:postalCode "39308";
+    schema:addressCountry "Afghanistan".

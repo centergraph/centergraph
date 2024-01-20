@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marcos";
+    schema:familyName "Denesik";
+    schema:birthDate "1964-07-11"^^xsd:date;
+    schema:address _:b1644.
+_:b1644 a schema:PostalAddress;
+    schema:streetAddress "Clement Dam";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Roanoke";
+    schema:postalCode "15663-4408";
+    schema:addressCountry "Norfolk Island".

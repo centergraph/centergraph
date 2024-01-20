@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Guadalupe";
+    schema:familyName "Hudson";
+    schema:birthDate "2003-05-04"^^xsd:date;
+    schema:address _:b8850.
+_:b8850 a schema:PostalAddress;
+    schema:streetAddress "Lynch Flat";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "New Jana";
+    schema:postalCode "16092";
+    schema:addressCountry "Burundi".

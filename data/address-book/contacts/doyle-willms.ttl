@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doyle";
+    schema:familyName "Willms";
+    schema:birthDate "1973-12-13"^^xsd:date;
+    schema:address _:b511.
+_:b511 a schema:PostalAddress;
+    schema:streetAddress "Wellington Street";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Javonteworth";
+    schema:postalCode "50223";
+    schema:addressCountry "Romania".

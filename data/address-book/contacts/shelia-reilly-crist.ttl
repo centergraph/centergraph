@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shelia";
+    schema:familyName "Reilly-Crist";
+    schema:birthDate "1966-12-12"^^xsd:date;
+    schema:address _:b3183.
+_:b3183 a schema:PostalAddress;
+    schema:streetAddress "Conn Lights";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Harveyboro";
+    schema:postalCode "61918";
+    schema:addressCountry "Netherlands".

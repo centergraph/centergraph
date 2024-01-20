@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gene";
+    schema:familyName "Connelly";
+    schema:birthDate "1959-06-29"^^xsd:date;
+    schema:address _:b304.
+_:b304 a schema:PostalAddress;
+    schema:streetAddress "Grove Road";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Lake Rosamondberg";
+    schema:postalCode "58574-8618";
+    schema:addressCountry "Argentina".

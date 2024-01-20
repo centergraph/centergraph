@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Viola";
+    schema:familyName "Gerhold";
+    schema:birthDate "1992-07-10"^^xsd:date;
+    schema:address _:b9027.
+_:b9027 a schema:PostalAddress;
+    schema:streetAddress "Harrison Avenue";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "South Bonitaland";
+    schema:postalCode "15019-5544";
+    schema:addressCountry "Northern Mariana Islands".

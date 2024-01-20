@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ivan";
+    schema:familyName "Hettinger";
+    schema:birthDate "2003-04-15"^^xsd:date;
+    schema:address _:b4825.
+_:b4825 a schema:PostalAddress;
+    schema:streetAddress "Euclid Avenue";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Tonawanda";
+    schema:postalCode "42587-3525";
+    schema:addressCountry "Yemen".

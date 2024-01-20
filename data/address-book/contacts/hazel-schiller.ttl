@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hazel";
+    schema:familyName "Schiller";
+    schema:birthDate "1984-01-25"^^xsd:date;
+    schema:address _:b9159.
+_:b9159 a schema:PostalAddress;
+    schema:streetAddress "Michele Burg";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Fort Ashleigh";
+    schema:postalCode "17460-6803";
+    schema:addressCountry "Angola".

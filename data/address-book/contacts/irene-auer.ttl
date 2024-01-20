@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Irene";
+    schema:familyName "Auer";
+    schema:birthDate "1957-12-19"^^xsd:date;
+    schema:address _:b5597.
+_:b5597 a schema:PostalAddress;
+    schema:streetAddress "Lura Lake";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Pinellas Park";
+    schema:postalCode "47629-0613";
+    schema:addressCountry "Qatar".

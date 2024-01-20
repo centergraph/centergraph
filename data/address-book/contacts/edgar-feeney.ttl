@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edgar";
+    schema:familyName "Feeney";
+    schema:birthDate "1992-11-05"^^xsd:date;
+    schema:address _:b4041.
+_:b4041 a schema:PostalAddress;
+    schema:streetAddress "W Franklin Street";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Fort Favianmouth";
+    schema:postalCode "62479";
+    schema:addressCountry "Isle of Man".

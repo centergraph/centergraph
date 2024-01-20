@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Velma";
+    schema:familyName "Bartoletti";
+    schema:birthDate "2004-04-29"^^xsd:date;
+    schema:address _:b2404.
+_:b2404 a schema:PostalAddress;
+    schema:streetAddress "Fore Street";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Port Wilfred";
+    schema:postalCode "21407-6203";
+    schema:addressCountry "Myanmar".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roosevelt";
+    schema:familyName "Metz";
+    schema:birthDate "1995-06-16"^^xsd:date;
+    schema:address _:b5413.
+_:b5413 a schema:PostalAddress;
+    schema:streetAddress "Kuhn Point";
+    schema:addressRegion "Florida";
+    schema:addressLocality "South Phyllis";
+    schema:postalCode "01911-9200";
+    schema:addressCountry "United States Minor Outlying Islands".

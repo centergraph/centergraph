@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brooke";
+    schema:familyName "Grimes";
+    schema:birthDate "1949-08-02"^^xsd:date;
+    schema:address _:b7227.
+_:b7227 a schema:PostalAddress;
+    schema:streetAddress "Poplar Close";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Metairie";
+    schema:postalCode "11514-8501";
+    schema:addressCountry "United States of America".

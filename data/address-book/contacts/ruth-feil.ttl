@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Ruth";
     schema:familyName "Feil";
-    schema:birthDate "1997-07-30"^^xsd:date;
-    schema:address _:b572.
-_:b572 a schema:PostalAddress;
-    schema:streetAddress "Church Close";
-    schema:addressRegion "Missouri";
-    schema:addressLocality "Cortezport";
-    schema:postalCode "65207-9644";
-    schema:addressCountry "Ecuador".
+    schema:birthDate "1948-10-31"^^xsd:date;
+    schema:address _:b9746.
+_:b9746 a schema:PostalAddress;
+    schema:streetAddress "Feeney Alley";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Des Plaines";
+    schema:postalCode "17141-9939";
+    schema:addressCountry "Kiribati".

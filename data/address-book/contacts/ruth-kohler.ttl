@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruth";
+    schema:familyName "Kohler";
+    schema:birthDate "1955-04-30"^^xsd:date;
+    schema:address _:b280.
+_:b280 a schema:PostalAddress;
+    schema:streetAddress "Mill Road";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Schambergerhaven";
+    schema:postalCode "63623-6062";
+    schema:addressCountry "Anguilla".

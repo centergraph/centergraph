@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Fredrick";
+    schema:familyName "Veum";
+    schema:birthDate "2004-04-27"^^xsd:date;
+    schema:address _:b7749.
+_:b7749 a schema:PostalAddress;
+    schema:streetAddress "Lilly Stream";
+    schema:addressRegion "California";
+    schema:addressLocality "Ryannworth";
+    schema:postalCode "49305-2401";
+    schema:addressCountry "Slovenia".

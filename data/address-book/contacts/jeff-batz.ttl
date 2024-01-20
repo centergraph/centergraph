@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeff";
+    schema:familyName "Batz";
+    schema:birthDate "1996-04-11"^^xsd:date;
+    schema:address _:b6208.
+_:b6208 a schema:PostalAddress;
+    schema:streetAddress "Rollin Lights";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Lowecester";
+    schema:postalCode "84573-9589";
+    schema:addressCountry "Uganda".

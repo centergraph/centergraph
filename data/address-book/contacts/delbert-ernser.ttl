@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Delbert";
+    schema:familyName "Ernser";
+    schema:birthDate "1988-01-11"^^xsd:date;
+    schema:address _:b9130.
+_:b9130 a schema:PostalAddress;
+    schema:streetAddress "Abigayle Camp";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Tinley Park";
+    schema:postalCode "25320-8659";
+    schema:addressCountry "Pakistan".

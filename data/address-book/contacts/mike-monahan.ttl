@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mike";
+    schema:familyName "Monahan";
+    schema:birthDate "1978-12-04"^^xsd:date;
+    schema:address _:b6812.
+_:b6812 a schema:PostalAddress;
+    schema:streetAddress "E 2nd Street";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Federal Way";
+    schema:postalCode "18365-1583";
+    schema:addressCountry "Belgium".

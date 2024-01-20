@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jim";
+    schema:familyName "Smitham";
+    schema:birthDate "1945-05-04"^^xsd:date;
+    schema:address _:b1111.
+_:b1111 a schema:PostalAddress;
+    schema:streetAddress "Angeline Ferry";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Luettgenville";
+    schema:postalCode "95395-4706";
+    schema:addressCountry "Senegal".

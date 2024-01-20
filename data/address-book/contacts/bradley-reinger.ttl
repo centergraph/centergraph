@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bradley";
+    schema:familyName "Reinger";
+    schema:birthDate "1985-08-14"^^xsd:date;
+    schema:address _:b3673.
+_:b3673 a schema:PostalAddress;
+    schema:streetAddress "Oak Road";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Fort Giabury";
+    schema:postalCode "81159-7707";
+    schema:addressCountry "Palau".

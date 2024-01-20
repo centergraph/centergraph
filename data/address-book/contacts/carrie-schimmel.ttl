@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carrie";
+    schema:familyName "Schimmel";
+    schema:birthDate "1967-12-08"^^xsd:date;
+    schema:address _:b1787.
+_:b1787 a schema:PostalAddress;
+    schema:streetAddress "Cavendish Road";
+    schema:addressRegion "Maine";
+    schema:addressLocality "South Ellietown";
+    schema:postalCode "49786-8730";
+    schema:addressCountry "New Zealand".

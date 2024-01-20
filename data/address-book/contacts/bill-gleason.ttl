@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bill";
+    schema:familyName "Gleason";
+    schema:birthDate "1955-11-03"^^xsd:date;
+    schema:address _:b4147.
+_:b4147 a schema:PostalAddress;
+    schema:streetAddress "Loyce Mission";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Fort Alexandrea";
+    schema:postalCode "54540-7445";
+    schema:addressCountry "Somalia".

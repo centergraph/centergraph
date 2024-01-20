@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Owen";
+    schema:familyName "Bashirian";
+    schema:birthDate "2004-05-12"^^xsd:date;
+    schema:address _:b8316.
+_:b8316 a schema:PostalAddress;
+    schema:streetAddress "Assunta Spurs";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Jamisonstad";
+    schema:postalCode "15236";
+    schema:addressCountry "Armenia".

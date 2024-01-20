@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Judith";
+    schema:familyName "Effertz";
+    schema:birthDate "1990-03-30"^^xsd:date;
+    schema:address _:b9403.
+_:b9403 a schema:PostalAddress;
+    schema:streetAddress "Davion Burg";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Emmaleeworth";
+    schema:postalCode "32771-5510";
+    schema:addressCountry "Norway".

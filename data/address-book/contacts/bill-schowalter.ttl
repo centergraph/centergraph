@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bill";
+    schema:familyName "Schowalter";
+    schema:birthDate "1981-10-05"^^xsd:date;
+    schema:address _:b9257.
+_:b9257 a schema:PostalAddress;
+    schema:streetAddress "Dolly Lane";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Evalynberg";
+    schema:postalCode "87963-4840";
+    schema:addressCountry "Portugal".

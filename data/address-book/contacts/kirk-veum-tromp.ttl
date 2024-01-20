@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kirk";
+    schema:familyName "Veum-Tromp";
+    schema:birthDate "1963-01-14"^^xsd:date;
+    schema:address _:b7347.
+_:b7347 a schema:PostalAddress;
+    schema:streetAddress "Ericka Track";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Aurora";
+    schema:postalCode "45342-5284";
+    schema:addressCountry "Falkland Islands (Malvinas)".

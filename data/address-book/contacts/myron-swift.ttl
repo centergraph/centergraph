@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Myron";
+    schema:familyName "Swift";
+    schema:birthDate "1992-12-30"^^xsd:date;
+    schema:address _:b7113.
+_:b7113 a schema:PostalAddress;
+    schema:streetAddress "S 6th Street";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Gresham";
+    schema:postalCode "50549-6902";
+    schema:addressCountry "Antarctica".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Todd";
+    schema:familyName "Lindgren";
+    schema:birthDate "1984-06-10"^^xsd:date;
+    schema:address _:b3002.
+_:b3002 a schema:PostalAddress;
+    schema:streetAddress "Volkman Camp";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Pine Bluff";
+    schema:postalCode "73868-3386";
+    schema:addressCountry "Honduras".

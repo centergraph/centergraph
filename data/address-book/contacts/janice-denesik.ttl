@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janice";
+    schema:familyName "Denesik";
+    schema:birthDate "1946-03-08"^^xsd:date;
+    schema:address _:b896.
+_:b896 a schema:PostalAddress;
+    schema:streetAddress "Hayden Pass";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Fort Sadie";
+    schema:postalCode "04526";
+    schema:addressCountry "Falkland Islands (Malvinas)".

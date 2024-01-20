@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Becky";
+    schema:familyName "Smith";
+    schema:birthDate "1990-01-02"^^xsd:date;
+    schema:address _:b7485.
+_:b7485 a schema:PostalAddress;
+    schema:streetAddress "Kuhlman Inlet";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "West Gustaveview";
+    schema:postalCode "61864-3948";
+    schema:addressCountry "Australia".

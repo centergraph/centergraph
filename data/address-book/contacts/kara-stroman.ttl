@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kara";
+    schema:familyName "Stroman";
+    schema:birthDate "1996-07-03"^^xsd:date;
+    schema:address _:b6931.
+_:b6931 a schema:PostalAddress;
+    schema:streetAddress "West Lane";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Kathryneberg";
+    schema:postalCode "13903-2759";
+    schema:addressCountry "Japan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jermaine";
+    schema:familyName "Crooks";
+    schema:birthDate "1951-04-13"^^xsd:date;
+    schema:address _:b1650.
+_:b1650 a schema:PostalAddress;
+    schema:streetAddress "The Mews";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Runolfssonboro";
+    schema:postalCode "15500-5355";
+    schema:addressCountry "Marshall Islands".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Simon";
+    schema:familyName "Tromp";
+    schema:birthDate "1965-10-20"^^xsd:date;
+    schema:address _:b6191.
+_:b6191 a schema:PostalAddress;
+    schema:streetAddress "Shields Summit";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "North Francisfort";
+    schema:postalCode "91380-1161";
+    schema:addressCountry "Greece".

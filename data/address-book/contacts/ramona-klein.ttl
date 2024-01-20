@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ramona";
+    schema:familyName "Klein";
+    schema:birthDate "2003-10-16"^^xsd:date;
+    schema:address _:b2125.
+_:b2125 a schema:PostalAddress;
+    schema:streetAddress "Walker Overpass";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Kennithville";
+    schema:postalCode "19775";
+    schema:addressCountry "Syrian Arab Republic".

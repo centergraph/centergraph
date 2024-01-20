@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jackie";
+    schema:familyName "Batz";
+    schema:birthDate "1960-05-21"^^xsd:date;
+    schema:address _:b2523.
+_:b2523 a schema:PostalAddress;
+    schema:streetAddress "Ortiz Spring";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Lynwood";
+    schema:postalCode "89497-2811";
+    schema:addressCountry "Trinidad and Tobago".

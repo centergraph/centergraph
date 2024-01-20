@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ricky";
+    schema:familyName "Torp";
+    schema:birthDate "1962-12-19"^^xsd:date;
+    schema:address _:b8679.
+_:b8679 a schema:PostalAddress;
+    schema:streetAddress "Nightingale Close";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Lowell";
+    schema:postalCode "98868-7273";
+    schema:addressCountry "Singapore".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mona";
+    schema:familyName "Purdy";
+    schema:birthDate "1955-10-14"^^xsd:date;
+    schema:address _:b4987.
+_:b4987 a schema:PostalAddress;
+    schema:streetAddress "Don Street";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Nienowboro";
+    schema:postalCode "92251-4411";
+    schema:addressCountry "Gambia".

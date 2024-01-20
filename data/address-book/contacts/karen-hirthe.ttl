@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Karen";
+    schema:familyName "Hirthe";
+    schema:birthDate "1949-10-02"^^xsd:date;
+    schema:address _:b8060.
+_:b8060 a schema:PostalAddress;
+    schema:streetAddress "Mill Road";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Fritschworth";
+    schema:postalCode "55097-6873";
+    schema:addressCountry "Marshall Islands".

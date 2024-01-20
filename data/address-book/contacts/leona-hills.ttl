@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leona";
+    schema:familyName "Hills";
+    schema:birthDate "1955-09-25"^^xsd:date;
+    schema:address _:b3565.
+_:b3565 a schema:PostalAddress;
+    schema:streetAddress "Gino Run";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Noemimouth";
+    schema:postalCode "78397";
+    schema:addressCountry "Oman".

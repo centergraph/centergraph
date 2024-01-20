@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Patrick";
+    schema:familyName "Keebler";
+    schema:birthDate "1998-04-13"^^xsd:date;
+    schema:address _:b6065.
+_:b6065 a schema:PostalAddress;
+    schema:streetAddress "Jacobi Streets";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Paytonside";
+    schema:postalCode "39638";
+    schema:addressCountry "Colombia".

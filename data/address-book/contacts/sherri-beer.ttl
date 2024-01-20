@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sherri";
+    schema:familyName "Beer";
+    schema:birthDate "1988-08-02"^^xsd:date;
+    schema:address _:b3452.
+_:b3452 a schema:PostalAddress;
+    schema:streetAddress "Robel Key";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Haverhill";
+    schema:postalCode "41926-3523";
+    schema:addressCountry "Micronesia".

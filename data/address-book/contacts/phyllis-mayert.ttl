@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Phyllis";
+    schema:familyName "Mayert";
+    schema:birthDate "1964-04-18"^^xsd:date;
+    schema:address _:b7971.
+_:b7971 a schema:PostalAddress;
+    schema:streetAddress "Yost Crossing";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Camarillo";
+    schema:postalCode "85390-0336";
+    schema:addressCountry "Bulgaria".

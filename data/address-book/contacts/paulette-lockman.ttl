@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Paulette";
+    schema:familyName "Lockman";
+    schema:birthDate "1976-04-19"^^xsd:date;
+    schema:address _:b9016.
+_:b9016 a schema:PostalAddress;
+    schema:streetAddress "Pacocha Bypass";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Roweport";
+    schema:postalCode "04182-6406";
+    schema:addressCountry "Tunisia".

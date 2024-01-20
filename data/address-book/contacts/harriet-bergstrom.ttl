@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harriet";
+    schema:familyName "Bergstrom";
+    schema:birthDate "1972-08-28"^^xsd:date;
+    schema:address _:b8111.
+_:b8111 a schema:PostalAddress;
+    schema:streetAddress "Beechwood Avenue";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Braunton";
+    schema:postalCode "06858-4661";
+    schema:addressCountry "Taiwan".

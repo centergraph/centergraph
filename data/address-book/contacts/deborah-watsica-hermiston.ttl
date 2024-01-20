@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Deborah";
+    schema:familyName "Watsica-Hermiston";
+    schema:birthDate "1975-05-01"^^xsd:date;
+    schema:address _:b2961.
+_:b2961 a schema:PostalAddress;
+    schema:streetAddress "Sauer Shore";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "West Jazmyne";
+    schema:postalCode "92487-2215";
+    schema:addressCountry "Northern Mariana Islands".

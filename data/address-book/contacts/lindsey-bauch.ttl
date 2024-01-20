@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lindsey";
+    schema:familyName "Bauch";
+    schema:birthDate "1982-08-27"^^xsd:date;
+    schema:address _:b7687.
+_:b7687 a schema:PostalAddress;
+    schema:streetAddress "St Mary's Close";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Lynchport";
+    schema:postalCode "06415-0810";
+    schema:addressCountry "Turks and Caicos Islands".

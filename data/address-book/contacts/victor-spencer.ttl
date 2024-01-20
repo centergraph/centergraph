@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Victor";
+    schema:familyName "Spencer";
+    schema:birthDate "1982-07-30"^^xsd:date;
+    schema:address _:b5781.
+_:b5781 a schema:PostalAddress;
+    schema:streetAddress "Jaycee Prairie";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Cathrineshire";
+    schema:postalCode "64460";
+    schema:addressCountry "Sint Maarten".

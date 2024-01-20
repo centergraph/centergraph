@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Spencer";
+    schema:familyName "Murazik";
+    schema:birthDate "1948-07-09"^^xsd:date;
+    schema:address _:b3784.
+_:b3784 a schema:PostalAddress;
+    schema:streetAddress "Lula Branch";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "East Ethashire";
+    schema:postalCode "84723-6226";
+    schema:addressCountry "El Salvador".

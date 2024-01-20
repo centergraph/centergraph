@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ramiro";
+    schema:familyName "Kshlerin";
+    schema:birthDate "1991-05-02"^^xsd:date;
+    schema:address _:b3575.
+_:b3575 a schema:PostalAddress;
+    schema:streetAddress "Maple Road";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Warner Robins";
+    schema:postalCode "72205";
+    schema:addressCountry "Equatorial Guinea".

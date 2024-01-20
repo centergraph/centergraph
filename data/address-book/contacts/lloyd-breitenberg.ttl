@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lloyd";
+    schema:familyName "Breitenberg";
+    schema:birthDate "1984-12-08"^^xsd:date;
+    schema:address _:b2246.
+_:b2246 a schema:PostalAddress;
+    schema:streetAddress "Curtis Crest";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "South Rodrigoview";
+    schema:postalCode "81836-3842";
+    schema:addressCountry "Burundi".

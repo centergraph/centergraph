@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erica";
+    schema:familyName "Altenwerth";
+    schema:birthDate "1983-02-20"^^xsd:date;
+    schema:address _:b6158.
+_:b6158 a schema:PostalAddress;
+    schema:streetAddress "Harris Pines";
+    schema:addressRegion "Florida";
+    schema:addressLocality "North Destineebury";
+    schema:postalCode "54980";
+    schema:addressCountry "Kazakhstan".

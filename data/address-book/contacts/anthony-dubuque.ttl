@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Anthony";
+    schema:familyName "DuBuque";
+    schema:birthDate "1999-09-29"^^xsd:date;
+    schema:address _:b5959.
+_:b5959 a schema:PostalAddress;
+    schema:streetAddress "Pfannerstill Mission";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "West Yazminland";
+    schema:postalCode "58798-5733";
+    schema:addressCountry "Dominican Republic".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shawn";
+    schema:familyName "Ondricka";
+    schema:birthDate "1946-12-25"^^xsd:date;
+    schema:address _:b5993.
+_:b5993 a schema:PostalAddress;
+    schema:streetAddress "Brekke Creek";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "North Lacyburgh";
+    schema:postalCode "20254-2695";
+    schema:addressCountry "Saint Helena".

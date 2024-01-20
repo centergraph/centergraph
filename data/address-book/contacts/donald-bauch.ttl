@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Donald";
+    schema:familyName "Bauch";
+    schema:birthDate "1953-12-10"^^xsd:date;
+    schema:address _:b7414.
+_:b7414 a schema:PostalAddress;
+    schema:streetAddress "Mraz Fords";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "West Breana";
+    schema:postalCode "93895";
+    schema:addressCountry "Madagascar".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Blanche";
+    schema:familyName "Powlowski";
+    schema:birthDate "1980-07-06"^^xsd:date;
+    schema:address _:b1416.
+_:b1416 a schema:PostalAddress;
+    schema:streetAddress "Tyrese Villages";
+    schema:addressRegion "New York";
+    schema:addressLocality "Port Thurman";
+    schema:postalCode "93138";
+    schema:addressCountry "Italy".

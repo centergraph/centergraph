@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edith";
+    schema:familyName "Blanda";
+    schema:birthDate "1982-12-11"^^xsd:date;
+    schema:address _:b7077.
+_:b7077 a schema:PostalAddress;
+    schema:streetAddress "S 6th Street";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Leonorabury";
+    schema:postalCode "52572";
+    schema:addressCountry "Liechtenstein".

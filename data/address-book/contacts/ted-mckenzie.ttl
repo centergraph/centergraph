@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ted";
+    schema:familyName "McKenzie";
+    schema:birthDate "1973-09-19"^^xsd:date;
+    schema:address _:b2887.
+_:b2887 a schema:PostalAddress;
+    schema:streetAddress "Pagac Unions";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Logan";
+    schema:postalCode "90886-4037";
+    schema:addressCountry "Cayman Islands".

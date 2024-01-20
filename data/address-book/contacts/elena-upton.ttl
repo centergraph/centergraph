@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elena";
+    schema:familyName "Upton";
+    schema:birthDate "1944-11-19"^^xsd:date;
+    schema:address _:b6613.
+_:b6613 a schema:PostalAddress;
+    schema:streetAddress "Davis Street";
+    schema:addressRegion "California";
+    schema:addressLocality "North Vernon";
+    schema:postalCode "54158-9971";
+    schema:addressCountry "Benin".

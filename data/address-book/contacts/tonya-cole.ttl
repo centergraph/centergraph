@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tonya";
+    schema:familyName "Cole";
+    schema:birthDate "1961-07-26"^^xsd:date;
+    schema:address _:b4560.
+_:b4560 a schema:PostalAddress;
+    schema:streetAddress "McDermott Plains";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Cadenmouth";
+    schema:postalCode "71353-8273";
+    schema:addressCountry "Lao People's Democratic Republic".

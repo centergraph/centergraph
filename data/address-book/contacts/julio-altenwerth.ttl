@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julio";
+    schema:familyName "Altenwerth";
+    schema:birthDate "1962-03-08"^^xsd:date;
+    schema:address _:b1500.
+_:b1500 a schema:PostalAddress;
+    schema:streetAddress "Windsor Avenue";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "West Carolanneport";
+    schema:postalCode "91165";
+    schema:addressCountry "El Salvador".

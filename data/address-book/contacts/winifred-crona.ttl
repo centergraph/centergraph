@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Winifred";
+    schema:familyName "Crona";
+    schema:birthDate "1951-11-29"^^xsd:date;
+    schema:address _:b5742.
+_:b5742 a schema:PostalAddress;
+    schema:streetAddress "Francis Common";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Beahanchester";
+    schema:postalCode "55087-2290";
+    schema:addressCountry "United Arab Emirates".

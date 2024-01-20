@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leland";
+    schema:familyName "Boyer";
+    schema:birthDate "1989-01-07"^^xsd:date;
+    schema:address _:b5375.
+_:b5375 a schema:PostalAddress;
+    schema:streetAddress "Bernhard Drives";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Strosinborough";
+    schema:postalCode "50235-6637";
+    schema:addressCountry "Iraq".

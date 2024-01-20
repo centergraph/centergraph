@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "May";
+    schema:familyName "Herzog";
+    schema:birthDate "1957-12-27"^^xsd:date;
+    schema:address _:b5113.
+_:b5113 a schema:PostalAddress;
+    schema:streetAddress "Wren Close";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Myronview";
+    schema:postalCode "35975-6083";
+    schema:addressCountry "Burundi".

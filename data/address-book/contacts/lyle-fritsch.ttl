@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lyle";
+    schema:familyName "Fritsch";
+    schema:birthDate "1955-05-19"^^xsd:date;
+    schema:address _:b782.
+_:b782 a schema:PostalAddress;
+    schema:streetAddress "Pat Spring";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "East Kyleland";
+    schema:postalCode "31850";
+    schema:addressCountry "Cote d'Ivoire".

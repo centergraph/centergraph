@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Frank";
+    schema:familyName "Hansen";
+    schema:birthDate "1966-05-15"^^xsd:date;
+    schema:address _:b1737.
+_:b1737 a schema:PostalAddress;
+    schema:streetAddress "Ardith Field";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Beckermouth";
+    schema:postalCode "85251-1342";
+    schema:addressCountry "Samoa".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gwen";
+    schema:familyName "Block-Pfeffer";
+    schema:birthDate "1947-04-03"^^xsd:date;
+    schema:address _:b2280.
+_:b2280 a schema:PostalAddress;
+    schema:streetAddress "Johnson Forges";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "North Stephany";
+    schema:postalCode "11891";
+    schema:addressCountry "Thailand".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gretchen";
+    schema:familyName "Nitzsche-Collins";
+    schema:birthDate "1986-06-10"^^xsd:date;
+    schema:address _:b8018.
+_:b8018 a schema:PostalAddress;
+    schema:streetAddress "Jamar Way";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Rockwall";
+    schema:postalCode "58312-5170";
+    schema:addressCountry "El Salvador".

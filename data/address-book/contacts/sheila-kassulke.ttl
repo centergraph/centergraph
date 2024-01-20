@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sheila";
+    schema:familyName "Kassulke";
+    schema:birthDate "1981-04-18"^^xsd:date;
+    schema:address _:b9418.
+_:b9418 a schema:PostalAddress;
+    schema:streetAddress "W 4th Avenue";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "West Bridiemouth";
+    schema:postalCode "25312-2628";
+    schema:addressCountry "Gabon".

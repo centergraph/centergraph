@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Olga";
+    schema:familyName "Kerluke";
+    schema:birthDate "1980-12-13"^^xsd:date;
+    schema:address _:b4926.
+_:b4926 a schema:PostalAddress;
+    schema:streetAddress "Stiedemann Shoal";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "South Kurtis";
+    schema:postalCode "61548-8861";
+    schema:addressCountry "Chile".

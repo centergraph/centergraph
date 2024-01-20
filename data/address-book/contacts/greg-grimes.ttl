@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Greg";
+    schema:familyName "Grimes";
+    schema:birthDate "2003-09-04"^^xsd:date;
+    schema:address _:b4459.
+_:b4459 a schema:PostalAddress;
+    schema:streetAddress "Edward Street";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "West Wavahaven";
+    schema:postalCode "62624";
+    schema:addressCountry "Aland Islands".

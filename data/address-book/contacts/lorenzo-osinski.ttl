@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorenzo";
+    schema:familyName "Osinski";
+    schema:birthDate "1992-01-03"^^xsd:date;
+    schema:address _:b4871.
+_:b4871 a schema:PostalAddress;
+    schema:streetAddress "Abernathy Isle";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Bahringerfort";
+    schema:postalCode "80093";
+    schema:addressCountry "Malta".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roy";
+    schema:familyName "Abbott";
+    schema:birthDate "2001-11-14"^^xsd:date;
+    schema:address _:b2907.
+_:b2907 a schema:PostalAddress;
+    schema:streetAddress "Grove Road";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "North Adriel";
+    schema:postalCode "65848-2515";
+    schema:addressCountry "United States of America".

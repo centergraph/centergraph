@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ramiro";
+    schema:familyName "Hackett-Kuhic";
+    schema:birthDate "1988-11-07"^^xsd:date;
+    schema:address _:b483.
+_:b483 a schema:PostalAddress;
+    schema:streetAddress "Watery Lane";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "South Lysannefield";
+    schema:postalCode "02978";
+    schema:addressCountry "South Sudan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stuart";
+    schema:familyName "Hayes";
+    schema:birthDate "1971-10-08"^^xsd:date;
+    schema:address _:b9057.
+_:b9057 a schema:PostalAddress;
+    schema:streetAddress "Sandy Lane";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Fort Hyman";
+    schema:postalCode "35623-9649";
+    schema:addressCountry "Hong Kong".

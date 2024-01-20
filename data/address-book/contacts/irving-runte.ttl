@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Irving";
+    schema:familyName "Runte";
+    schema:birthDate "1958-06-30"^^xsd:date;
+    schema:address _:b4285.
+_:b4285 a schema:PostalAddress;
+    schema:streetAddress "Washington Boulevard";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Glendale";
+    schema:postalCode "68752";
+    schema:addressCountry "Saint Kitts and Nevis".

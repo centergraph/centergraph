@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Victor";
+    schema:familyName "Ondricka";
+    schema:birthDate "1996-03-13"^^xsd:date;
+    schema:address _:b8448.
+_:b8448 a schema:PostalAddress;
+    schema:streetAddress "Feeney Dale";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Jacksonville";
+    schema:postalCode "99799-9692";
+    schema:addressCountry "Uganda".

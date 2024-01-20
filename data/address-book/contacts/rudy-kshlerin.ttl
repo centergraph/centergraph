@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rudy";
+    schema:familyName "Kshlerin";
+    schema:birthDate "1948-04-23"^^xsd:date;
+    schema:address _:b7611.
+_:b7611 a schema:PostalAddress;
+    schema:streetAddress "Marco Stravenue";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Idellaborough";
+    schema:postalCode "43536-7747";
+    schema:addressCountry "Bahamas".

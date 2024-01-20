@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rhonda";
+    schema:familyName "Medhurst";
+    schema:birthDate "1972-04-21"^^xsd:date;
+    schema:address _:b4119.
+_:b4119 a schema:PostalAddress;
+    schema:streetAddress "N High Street";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Wittingstad";
+    schema:postalCode "27769-8923";
+    schema:addressCountry "Cyprus".

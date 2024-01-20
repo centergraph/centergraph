@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Katie";
+    schema:familyName "Little";
+    schema:birthDate "1979-10-14"^^xsd:date;
+    schema:address _:b2130.
+_:b2130 a schema:PostalAddress;
+    schema:streetAddress "Haley Circles";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "New Heatherville";
+    schema:postalCode "42022-1215";
+    schema:addressCountry "Eswatini".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Derek";
+    schema:familyName "Dietrich";
+    schema:birthDate "2002-11-27"^^xsd:date;
+    schema:address _:b4810.
+_:b4810 a schema:PostalAddress;
+    schema:streetAddress "Balmoral Road";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Patville";
+    schema:postalCode "82746";
+    schema:addressCountry "Latvia".

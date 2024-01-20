@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leigh";
+    schema:familyName "Schuster";
+    schema:birthDate "1973-03-16"^^xsd:date;
+    schema:address _:b655.
+_:b655 a schema:PostalAddress;
+    schema:streetAddress "Ernestine Hill";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Hahnland";
+    schema:postalCode "18663";
+    schema:addressCountry "Seychelles".

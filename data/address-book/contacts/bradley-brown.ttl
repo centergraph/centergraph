@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bradley";
+    schema:familyName "Brown";
+    schema:birthDate "1996-06-25"^^xsd:date;
+    schema:address _:b9895.
+_:b9895 a schema:PostalAddress;
+    schema:streetAddress "Shanahan Village";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Rudymouth";
+    schema:postalCode "65253-6271";
+    schema:addressCountry "Nicaragua".

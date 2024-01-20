@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Abel";
+    schema:familyName "Fahey";
+    schema:birthDate "1984-03-02"^^xsd:date;
+    schema:address _:b9680.
+_:b9680 a schema:PostalAddress;
+    schema:streetAddress "Wellington Street";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "West Deven";
+    schema:postalCode "75692";
+    schema:addressCountry "Saint Martin".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sylvester";
+    schema:familyName "Romaguera";
+    schema:birthDate "1954-01-23"^^xsd:date;
+    schema:address _:b6240.
+_:b6240 a schema:PostalAddress;
+    schema:streetAddress "Lexie Well";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Tigard";
+    schema:postalCode "84141";
+    schema:addressCountry "Denmark".

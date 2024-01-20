@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joanne";
+    schema:familyName "Simonis";
+    schema:birthDate "1969-10-27"^^xsd:date;
+    schema:address _:b8020.
+_:b8020 a schema:PostalAddress;
+    schema:streetAddress "Lang View";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Makaylaberg";
+    schema:postalCode "45640";
+    schema:addressCountry "Eswatini".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Michelle";
+    schema:familyName "Marks-Leffler";
+    schema:birthDate "1974-04-14"^^xsd:date;
+    schema:address _:b8220.
+_:b8220 a schema:PostalAddress;
+    schema:streetAddress "Rodrigo Prairie";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Port Chanelle";
+    schema:postalCode "59533-9283";
+    schema:addressCountry "France".

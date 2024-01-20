@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Antonio";
+    schema:familyName "Kuphal";
+    schema:birthDate "1960-12-02"^^xsd:date;
+    schema:address _:b5400.
+_:b5400 a schema:PostalAddress;
+    schema:streetAddress "Schaefer Locks";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Johnsbury";
+    schema:postalCode "67665-0445";
+    schema:addressCountry "El Salvador".

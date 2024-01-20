@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sara";
+    schema:familyName "Welch";
+    schema:birthDate "1977-08-08"^^xsd:date;
+    schema:address _:b7316.
+_:b7316 a schema:PostalAddress;
+    schema:streetAddress "S Union Street";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Fort Nelda";
+    schema:postalCode "85234-2698";
+    schema:addressCountry "French Guiana".

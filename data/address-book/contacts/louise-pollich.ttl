@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Louise";
+    schema:familyName "Pollich";
+    schema:birthDate "1980-02-09"^^xsd:date;
+    schema:address _:b9125.
+_:b9125 a schema:PostalAddress;
+    schema:streetAddress "Friesen Route";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Herzogburgh";
+    schema:postalCode "21998";
+    schema:addressCountry "Holy See (Vatican City State)".

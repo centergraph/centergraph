@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Evelyn";
+    schema:familyName "Feeney";
+    schema:birthDate "1974-06-03"^^xsd:date;
+    schema:address _:b4366.
+_:b4366 a schema:PostalAddress;
+    schema:streetAddress "Sporer Junctions";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Spokane";
+    schema:postalCode "82920";
+    schema:addressCountry "Vietnam".

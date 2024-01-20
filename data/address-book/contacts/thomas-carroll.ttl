@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Thomas";
+    schema:familyName "Carroll";
+    schema:birthDate "1974-04-17"^^xsd:date;
+    schema:address _:b906.
+_:b906 a schema:PostalAddress;
+    schema:streetAddress "Prohaska Gateway";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "New Joelle";
+    schema:postalCode "88538";
+    schema:addressCountry "Ghana".

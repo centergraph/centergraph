@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nora";
+    schema:familyName "Spencer";
+    schema:birthDate "1968-11-22"^^xsd:date;
+    schema:address _:b1000.
+_:b1000 a schema:PostalAddress;
+    schema:streetAddress "Zemlak Junction";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Sanfordbury";
+    schema:postalCode "46285-6803";
+    schema:addressCountry "Saint Lucia".

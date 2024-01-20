@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mildred";
+    schema:familyName "McCullough";
+    schema:birthDate "1967-08-26"^^xsd:date;
+    schema:address _:b3284.
+_:b3284 a schema:PostalAddress;
+    schema:streetAddress "Hagenes Junction";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Robbieland";
+    schema:postalCode "68710";
+    schema:addressCountry "Andorra".

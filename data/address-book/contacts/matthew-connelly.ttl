@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Matthew";
+    schema:familyName "Connelly";
+    schema:birthDate "1961-02-02"^^xsd:date;
+    schema:address _:b9000.
+_:b9000 a schema:PostalAddress;
+    schema:streetAddress "Adonis Tunnel";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Briancester";
+    schema:postalCode "79117-8643";
+    schema:addressCountry "Virgin Islands, British".

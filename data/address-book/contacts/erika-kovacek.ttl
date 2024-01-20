@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erika";
+    schema:familyName "Kovacek";
+    schema:birthDate "1952-09-19"^^xsd:date;
+    schema:address _:b4458.
+_:b4458 a schema:PostalAddress;
+    schema:streetAddress "Brendon Lodge";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "New Kenny";
+    schema:postalCode "95695-2522";
+    schema:addressCountry "Denmark".

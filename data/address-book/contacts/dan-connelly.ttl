@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dan";
+    schema:familyName "Connelly";
+    schema:birthDate "1967-10-14"^^xsd:date;
+    schema:address _:b9174.
+_:b9174 a schema:PostalAddress;
+    schema:streetAddress "Old Lane";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "West Tesschester";
+    schema:postalCode "77691-9164";
+    schema:addressCountry "Botswana".

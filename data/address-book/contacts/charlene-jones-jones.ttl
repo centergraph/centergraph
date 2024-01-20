@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Charlene";
+    schema:familyName "Jones-Jones";
+    schema:birthDate "1955-03-31"^^xsd:date;
+    schema:address _:b168.
+_:b168 a schema:PostalAddress;
+    schema:streetAddress "O'Connell Stravenue";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Fort Jaden";
+    schema:postalCode "74017";
+    schema:addressCountry "Montserrat".

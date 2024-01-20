@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kellie";
+    schema:familyName "Fisher";
+    schema:birthDate "1979-01-06"^^xsd:date;
+    schema:address _:b1758.
+_:b1758 a schema:PostalAddress;
+    schema:streetAddress "Jazmyne Skyway";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Boscoville";
+    schema:postalCode "35914-3534";
+    schema:addressCountry "Maldives".

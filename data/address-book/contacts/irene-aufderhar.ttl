@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Irene";
+    schema:familyName "Aufderhar";
+    schema:birthDate "1996-03-24"^^xsd:date;
+    schema:address _:b2220.
+_:b2220 a schema:PostalAddress;
+    schema:streetAddress "The Maltings";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Dessieboro";
+    schema:postalCode "23765";
+    schema:addressCountry "Chile".

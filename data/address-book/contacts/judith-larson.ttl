@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Judith";
+    schema:familyName "Larson";
+    schema:birthDate "1998-07-18"^^xsd:date;
+    schema:address _:b9851.
+_:b9851 a schema:PostalAddress;
+    schema:streetAddress "Micah Loaf";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Gislasonbury";
+    schema:postalCode "62841-4038";
+    schema:addressCountry "Uzbekistan".

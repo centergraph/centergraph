@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rose";
+    schema:familyName "Ortiz";
+    schema:birthDate "1988-10-08"^^xsd:date;
+    schema:address _:b2473.
+_:b2473 a schema:PostalAddress;
+    schema:streetAddress "Klein Row";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Destiniport";
+    schema:postalCode "98293-0642";
+    schema:addressCountry "Haiti".

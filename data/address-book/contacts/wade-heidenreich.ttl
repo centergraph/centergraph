@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wade";
+    schema:familyName "Heidenreich";
+    schema:birthDate "1993-09-30"^^xsd:date;
+    schema:address _:b1154.
+_:b1154 a schema:PostalAddress;
+    schema:streetAddress "Brekke Fort";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Hahnchester";
+    schema:postalCode "40292-9211";
+    schema:addressCountry "Finland".

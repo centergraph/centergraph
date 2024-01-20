@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ellis";
+    schema:familyName "Boyer";
+    schema:birthDate "2003-08-05"^^xsd:date;
+    schema:address _:b2451.
+_:b2451 a schema:PostalAddress;
+    schema:streetAddress "The Fairway";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Pfannerstillboro";
+    schema:postalCode "00195";
+    schema:addressCountry "Lao People's Democratic Republic".

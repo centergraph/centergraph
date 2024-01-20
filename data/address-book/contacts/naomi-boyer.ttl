@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Naomi";
+    schema:familyName "Boyer";
+    schema:birthDate "1986-10-23"^^xsd:date;
+    schema:address _:b42.
+_:b42 a schema:PostalAddress;
+    schema:streetAddress "Maegan Brook";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Denver";
+    schema:postalCode "43353";
+    schema:addressCountry "Argentina".

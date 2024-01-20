@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kimberly";
+    schema:familyName "Mosciski";
+    schema:birthDate "1954-12-27"^^xsd:date;
+    schema:address _:b1025.
+_:b1025 a schema:PostalAddress;
+    schema:streetAddress "Cormier Centers";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Lake Winfield";
+    schema:postalCode "17255-9729";
+    schema:addressCountry "Tonga".

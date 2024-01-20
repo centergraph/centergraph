@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sarah";
+    schema:familyName "Lind";
+    schema:birthDate "1947-06-07"^^xsd:date;
+    schema:address _:b9616.
+_:b9616 a schema:PostalAddress;
+    schema:streetAddress "Homenick Harbor";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "South Elbertview";
+    schema:postalCode "84579-6937";
+    schema:addressCountry "Norfolk Island".

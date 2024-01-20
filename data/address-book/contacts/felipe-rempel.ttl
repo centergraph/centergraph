@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Felipe";
+    schema:familyName "Rempel";
+    schema:birthDate "1985-07-24"^^xsd:date;
+    schema:address _:b6159.
+_:b6159 a schema:PostalAddress;
+    schema:streetAddress "Dorothea Mall";
+    schema:addressRegion "New York";
+    schema:addressLocality "East Eldridge";
+    schema:postalCode "83160-9256";
+    schema:addressCountry "Finland".

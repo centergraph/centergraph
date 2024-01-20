@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosemarie";
+    schema:familyName "Conn";
+    schema:birthDate "1985-06-24"^^xsd:date;
+    schema:address _:b7761.
+_:b7761 a schema:PostalAddress;
+    schema:streetAddress "Jenkins Bridge";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "North Sunny";
+    schema:postalCode "70934-3166";
+    schema:addressCountry "Grenada".

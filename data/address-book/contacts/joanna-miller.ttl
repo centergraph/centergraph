@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joanna";
+    schema:familyName "Miller";
+    schema:birthDate "1968-01-08"^^xsd:date;
+    schema:address _:b3202.
+_:b3202 a schema:PostalAddress;
+    schema:streetAddress "Demario View";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Fort Alexa";
+    schema:postalCode "96430-4734";
+    schema:addressCountry "Thailand".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Candice";
+    schema:familyName "Reinger";
+    schema:birthDate "1994-12-10"^^xsd:date;
+    schema:address _:b618.
+_:b618 a schema:PostalAddress;
+    schema:streetAddress "S Park Street";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Rutherfordport";
+    schema:postalCode "22497";
+    schema:addressCountry "Azerbaijan".

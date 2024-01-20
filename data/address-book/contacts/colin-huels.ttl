@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Colin";
+    schema:familyName "Huels";
+    schema:birthDate "2001-10-27"^^xsd:date;
+    schema:address _:b5899.
+_:b5899 a schema:PostalAddress;
+    schema:streetAddress "6th Avenue";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "East Lansing";
+    schema:postalCode "59593-5778";
+    schema:addressCountry "Niger".

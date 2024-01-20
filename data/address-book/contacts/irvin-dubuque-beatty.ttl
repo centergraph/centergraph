@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Irvin";
+    schema:familyName "DuBuque-Beatty";
+    schema:birthDate "1988-07-21"^^xsd:date;
+    schema:address _:b9387.
+_:b9387 a schema:PostalAddress;
+    schema:streetAddress "3rd Avenue";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Bettyeborough";
+    schema:postalCode "74701";
+    schema:addressCountry "Tokelau".

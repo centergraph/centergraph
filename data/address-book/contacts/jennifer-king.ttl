@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jennifer";
+    schema:familyName "King";
+    schema:birthDate "1965-10-30"^^xsd:date;
+    schema:address _:b7546.
+_:b7546 a schema:PostalAddress;
+    schema:streetAddress "Jerel Valleys";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Port Michealside";
+    schema:postalCode "65315-5691";
+    schema:addressCountry "Guadeloupe".

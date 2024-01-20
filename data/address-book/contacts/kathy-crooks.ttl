@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kathy";
+    schema:familyName "Crooks";
+    schema:birthDate "1958-05-11"^^xsd:date;
+    schema:address _:b3043.
+_:b3043 a schema:PostalAddress;
+    schema:streetAddress "Weissnat Terrace";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Treutelcester";
+    schema:postalCode "07137";
+    schema:addressCountry "Barbados".

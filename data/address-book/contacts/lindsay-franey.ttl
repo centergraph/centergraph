@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lindsay";
+    schema:familyName "Franey";
+    schema:birthDate "1962-10-30"^^xsd:date;
+    schema:address _:b1360.
+_:b1360 a schema:PostalAddress;
+    schema:streetAddress "Carolyn Lakes";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Lake Brielleton";
+    schema:postalCode "36278-4158";
+    schema:addressCountry "Cyprus".

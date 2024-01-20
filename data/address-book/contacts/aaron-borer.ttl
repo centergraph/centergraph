@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Aaron";
+    schema:familyName "Borer";
+    schema:birthDate "1973-01-23"^^xsd:date;
+    schema:address _:b9707.
+_:b9707 a schema:PostalAddress;
+    schema:streetAddress "Hirthe Port";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Jacquestown";
+    schema:postalCode "40520-4862";
+    schema:addressCountry "Benin".

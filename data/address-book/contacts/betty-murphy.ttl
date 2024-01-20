@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Betty";
+    schema:familyName "Murphy";
+    schema:birthDate "1963-02-01"^^xsd:date;
+    schema:address _:b7823.
+_:b7823 a schema:PostalAddress;
+    schema:streetAddress "Western Road";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Marvinhaven";
+    schema:postalCode "37661";
+    schema:addressCountry "Cyprus".

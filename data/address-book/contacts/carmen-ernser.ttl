@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carmen";
+    schema:familyName "Ernser";
+    schema:birthDate "1990-11-13"^^xsd:date;
+    schema:address _:b1262.
+_:b1262 a schema:PostalAddress;
+    schema:streetAddress "Moor Lane";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Cleveland";
+    schema:postalCode "66368-5280";
+    schema:addressCountry "Bangladesh".

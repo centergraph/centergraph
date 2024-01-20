@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edward";
+    schema:familyName "Hessel";
+    schema:birthDate "2000-08-25"^^xsd:date;
+    schema:address _:b3891.
+_:b3891 a schema:PostalAddress;
+    schema:streetAddress "Church Path";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Lake Darian";
+    schema:postalCode "94044";
+    schema:addressCountry "Algeria".

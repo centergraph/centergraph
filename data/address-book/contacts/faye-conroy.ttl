@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Faye";
+    schema:familyName "Conroy";
+    schema:birthDate "1948-04-24"^^xsd:date;
+    schema:address _:b7375.
+_:b7375 a schema:PostalAddress;
+    schema:streetAddress "Lockman Way";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "New Jeffrey";
+    schema:postalCode "07562";
+    schema:addressCountry "Mauritania".

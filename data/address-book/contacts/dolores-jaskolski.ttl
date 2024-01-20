@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dolores";
+    schema:familyName "Jaskolski";
+    schema:birthDate "1995-04-16"^^xsd:date;
+    schema:address _:b5272.
+_:b5272 a schema:PostalAddress;
+    schema:streetAddress "Dion Camp";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Amiyaboro";
+    schema:postalCode "54959-0127";
+    schema:addressCountry "Australia".

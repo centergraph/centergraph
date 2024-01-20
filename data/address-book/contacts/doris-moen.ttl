@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doris";
+    schema:familyName "Moen";
+    schema:birthDate "1961-12-12"^^xsd:date;
+    schema:address _:b9617.
+_:b9617 a schema:PostalAddress;
+    schema:streetAddress "Zelma Avenue";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Augusta-Richmond County";
+    schema:postalCode "28926-9792";
+    schema:addressCountry "Puerto Rico".

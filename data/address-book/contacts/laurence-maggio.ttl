@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laurence";
+    schema:familyName "Maggio";
+    schema:birthDate "1992-11-11"^^xsd:date;
+    schema:address _:b5431.
+_:b5431 a schema:PostalAddress;
+    schema:streetAddress "North Avenue";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Cassieworth";
+    schema:postalCode "50963";
+    schema:addressCountry "Bahamas".

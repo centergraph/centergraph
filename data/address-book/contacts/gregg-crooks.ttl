@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gregg";
+    schema:familyName "Crooks";
+    schema:birthDate "1951-12-14"^^xsd:date;
+    schema:address _:b8032.
+_:b8032 a schema:PostalAddress;
+    schema:streetAddress "Park Drive";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "New Leopold";
+    schema:postalCode "75276-1710";
+    schema:addressCountry "Uganda".

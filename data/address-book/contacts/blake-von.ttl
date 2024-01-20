@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Blake";
+    schema:familyName "Von";
+    schema:birthDate "1946-08-06"^^xsd:date;
+    schema:address _:b1858.
+_:b1858 a schema:PostalAddress;
+    schema:streetAddress "Weimann View";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Noeliafort";
+    schema:postalCode "14564";
+    schema:addressCountry "Puerto Rico".

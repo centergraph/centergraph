@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Miriam";
+    schema:familyName "Trantow";
+    schema:birthDate "1944-08-19"^^xsd:date;
+    schema:address _:b7843.
+_:b7843 a schema:PostalAddress;
+    schema:streetAddress "Roman Road";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Lake Ova";
+    schema:postalCode "83008-6757";
+    schema:addressCountry "Iceland".

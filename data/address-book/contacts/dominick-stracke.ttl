@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dominick";
+    schema:familyName "Stracke";
+    schema:birthDate "1977-10-18"^^xsd:date;
+    schema:address _:b7189.
+_:b7189 a schema:PostalAddress;
+    schema:streetAddress "Flatley Centers";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Fritschmouth";
+    schema:postalCode "80982-6915";
+    schema:addressCountry "Comoros".

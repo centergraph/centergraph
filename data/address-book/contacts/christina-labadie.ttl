@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Christina";
+    schema:familyName "Labadie";
+    schema:birthDate "1995-04-23"^^xsd:date;
+    schema:address _:b2503.
+_:b2503 a schema:PostalAddress;
+    schema:streetAddress "Highfield Close";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "North Glenmouth";
+    schema:postalCode "46797-8610";
+    schema:addressCountry "Christmas Island".

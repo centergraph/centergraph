@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cedric";
+    schema:familyName "Sauer";
+    schema:birthDate "1977-03-03"^^xsd:date;
+    schema:address _:b4675.
+_:b4675 a schema:PostalAddress;
+    schema:streetAddress "E Walnut Street";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "New Braulioton";
+    schema:postalCode "06493";
+    schema:addressCountry "Slovakia".

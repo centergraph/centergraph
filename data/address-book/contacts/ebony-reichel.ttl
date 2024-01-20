@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ebony";
+    schema:familyName "Reichel";
+    schema:birthDate "1952-10-26"^^xsd:date;
+    schema:address _:b3464.
+_:b3464 a schema:PostalAddress;
+    schema:streetAddress "Laurence Port";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Santa Maria";
+    schema:postalCode "01256-5792";
+    schema:addressCountry "Brunei Darussalam".

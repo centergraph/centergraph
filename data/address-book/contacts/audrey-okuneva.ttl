@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Audrey";
+    schema:familyName "Okuneva";
+    schema:birthDate "1944-04-05"^^xsd:date;
+    schema:address _:b4189.
+_:b4189 a schema:PostalAddress;
+    schema:streetAddress "Oak Road";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "North Jayden";
+    schema:postalCode "96033-2194";
+    schema:addressCountry "French Guiana".

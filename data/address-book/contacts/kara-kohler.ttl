@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kara";
+    schema:familyName "Kohler";
+    schema:birthDate "1992-06-11"^^xsd:date;
+    schema:address _:b2609.
+_:b2609 a schema:PostalAddress;
+    schema:streetAddress "Leopoldo Camp";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "East Laurine";
+    schema:postalCode "73316";
+    schema:addressCountry "Ukraine".

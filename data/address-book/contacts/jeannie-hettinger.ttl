@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeannie";
+    schema:familyName "Hettinger";
+    schema:birthDate "1969-06-28"^^xsd:date;
+    schema:address _:b925.
+_:b925 a schema:PostalAddress;
+    schema:streetAddress "The Sidings";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Carlottafurt";
+    schema:postalCode "67040";
+    schema:addressCountry "North Macedonia".

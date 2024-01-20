@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sylvia";
+    schema:familyName "Bernier";
+    schema:birthDate "2003-02-15"^^xsd:date;
+    schema:address _:b4713.
+_:b4713 a schema:PostalAddress;
+    schema:streetAddress "Woodlands Avenue";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "South Layla";
+    schema:postalCode "48432";
+    schema:addressCountry "Mayotte".

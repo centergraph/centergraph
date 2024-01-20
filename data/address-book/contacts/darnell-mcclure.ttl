@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darnell";
+    schema:familyName "McClure";
+    schema:birthDate "1944-11-05"^^xsd:date;
+    schema:address _:b815.
+_:b815 a schema:PostalAddress;
+    schema:streetAddress "Effertz Key";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Bartellstead";
+    schema:postalCode "32579";
+    schema:addressCountry "Greenland".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janice";
+    schema:familyName "Powlowski";
+    schema:birthDate "1989-10-23"^^xsd:date;
+    schema:address _:b8338.
+_:b8338 a schema:PostalAddress;
+    schema:streetAddress "Forrest Place";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Dooleyboro";
+    schema:postalCode "74495";
+    schema:addressCountry "Belize".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Isaac";
+    schema:familyName "Yundt";
+    schema:birthDate "1966-11-15"^^xsd:date;
+    schema:address _:b663.
+_:b663 a schema:PostalAddress;
+    schema:streetAddress "Daugherty Knoll";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Kulasville";
+    schema:postalCode "73626";
+    schema:addressCountry "Lesotho".

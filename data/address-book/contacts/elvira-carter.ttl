@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elvira";
+    schema:familyName "Carter";
+    schema:birthDate "1986-12-29"^^xsd:date;
+    schema:address _:b4777.
+_:b4777 a schema:PostalAddress;
+    schema:streetAddress "Roberto Greens";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Port Roosevelt";
+    schema:postalCode "75845";
+    schema:addressCountry "Burundi".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laurence";
+    schema:familyName "Wunsch-Pollich";
+    schema:birthDate "1999-06-30"^^xsd:date;
+    schema:address _:b7524.
+_:b7524 a schema:PostalAddress;
+    schema:streetAddress "Fore Street";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Roslynfield";
+    schema:postalCode "07403-0598";
+    schema:addressCountry "Ethiopia".

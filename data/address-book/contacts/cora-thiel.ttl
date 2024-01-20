@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cora";
+    schema:familyName "Thiel";
+    schema:birthDate "1953-08-07"^^xsd:date;
+    schema:address _:b3524.
+_:b3524 a schema:PostalAddress;
+    schema:streetAddress "Station Road";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Everardoview";
+    schema:postalCode "54636";
+    schema:addressCountry "Suriname".

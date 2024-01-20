@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shawna";
+    schema:familyName "Rodriguez";
+    schema:birthDate "1989-06-27"^^xsd:date;
+    schema:address _:b3827.
+_:b3827 a schema:PostalAddress;
+    schema:streetAddress "Daugherty Shoal";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Kieranboro";
+    schema:postalCode "52250";
+    schema:addressCountry "Jordan".

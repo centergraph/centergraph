@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terry";
+    schema:familyName "Pfeffer";
+    schema:birthDate "1957-12-29"^^xsd:date;
+    schema:address _:b3605.
+_:b3605 a schema:PostalAddress;
+    schema:streetAddress "Stacey Harbor";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Mountain View";
+    schema:postalCode "38166";
+    schema:addressCountry "Democratic People's Republic of Korea".

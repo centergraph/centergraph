@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Irving";
+    schema:familyName "Hansen";
+    schema:birthDate "1982-05-24"^^xsd:date;
+    schema:address _:b2997.
+_:b2997 a schema:PostalAddress;
+    schema:streetAddress "The Paddock";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Fort Damianbury";
+    schema:postalCode "58123";
+    schema:addressCountry "Heard Island and McDonald Islands".

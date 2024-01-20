@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lindsey";
+    schema:familyName "Lebsack";
+    schema:birthDate "1990-08-20"^^xsd:date;
+    schema:address _:b3373.
+_:b3373 a schema:PostalAddress;
+    schema:streetAddress "Doyle Fall";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Lake Kenyattaview";
+    schema:postalCode "30791";
+    schema:addressCountry "Greenland".

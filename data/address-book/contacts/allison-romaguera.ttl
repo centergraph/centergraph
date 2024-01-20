@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Allison";
+    schema:familyName "Romaguera";
+    schema:birthDate "1969-04-23"^^xsd:date;
+    schema:address _:b7095.
+_:b7095 a schema:PostalAddress;
+    schema:streetAddress "Howe Roads";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Bakersfield";
+    schema:postalCode "54460";
+    schema:addressCountry "Angola".

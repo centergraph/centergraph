@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Melanie";
+    schema:familyName "Schoen";
+    schema:birthDate "1949-01-02"^^xsd:date;
+    schema:address _:b6929.
+_:b6929 a schema:PostalAddress;
+    schema:streetAddress "Abernathy Coves";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Cadenchester";
+    schema:postalCode "56319";
+    schema:addressCountry "Lao People's Democratic Republic".

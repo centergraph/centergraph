@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brandi";
+    schema:familyName "Muller";
+    schema:birthDate "1999-03-08"^^xsd:date;
+    schema:address _:b8582.
+_:b8582 a schema:PostalAddress;
+    schema:streetAddress "Donny Forest";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Jeromyville";
+    schema:postalCode "41128-6979";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

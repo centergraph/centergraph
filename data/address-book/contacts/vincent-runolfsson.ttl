@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vincent";
+    schema:familyName "Runolfsson";
+    schema:birthDate "2001-08-03"^^xsd:date;
+    schema:address _:b6510.
+_:b6510 a schema:PostalAddress;
+    schema:streetAddress "Feest Trace";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "North Carley";
+    schema:postalCode "97674-4862";
+    schema:addressCountry "Rwanda".

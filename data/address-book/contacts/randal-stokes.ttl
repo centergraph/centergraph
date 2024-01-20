@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Randal";
+    schema:familyName "Stokes";
+    schema:birthDate "1982-07-31"^^xsd:date;
+    schema:address _:b5044.
+_:b5044 a schema:PostalAddress;
+    schema:streetAddress "Windler Rest";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Port Lysannetown";
+    schema:postalCode "97408-4736";
+    schema:addressCountry "Cuba".

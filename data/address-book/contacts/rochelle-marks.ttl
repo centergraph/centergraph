@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rochelle";
+    schema:familyName "Marks";
+    schema:birthDate "1974-05-05"^^xsd:date;
+    schema:address _:b5144.
+_:b5144 a schema:PostalAddress;
+    schema:streetAddress "Chesley Mountain";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Reymundotown";
+    schema:postalCode "33752";
+    schema:addressCountry "British Indian Ocean Territory (Chagos Archipelago)".

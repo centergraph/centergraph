@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rufus";
+    schema:familyName "Schoen";
+    schema:birthDate "1950-03-08"^^xsd:date;
+    schema:address _:b7950.
+_:b7950 a schema:PostalAddress;
+    schema:streetAddress "Maryam Viaduct";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Maritzashire";
+    schema:postalCode "14009";
+    schema:addressCountry "Cameroon".

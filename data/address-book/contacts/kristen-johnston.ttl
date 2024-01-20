@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristen";
+    schema:familyName "Johnston";
+    schema:birthDate "1948-05-03"^^xsd:date;
+    schema:address _:b196.
+_:b196 a schema:PostalAddress;
+    schema:streetAddress "Nienow Street";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Weberview";
+    schema:postalCode "03059-1843";
+    schema:addressCountry "Bonaire, Sint Eustatius and Saba".

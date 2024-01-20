@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carroll";
+    schema:familyName "Langworth";
+    schema:birthDate "1977-07-13"^^xsd:date;
+    schema:address _:b4311.
+_:b4311 a schema:PostalAddress;
+    schema:streetAddress "Davin Walk";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "South Reid";
+    schema:postalCode "98108";
+    schema:addressCountry "Honduras".

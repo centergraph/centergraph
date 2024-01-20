@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mandy";
+    schema:familyName "Renner";
+    schema:birthDate "1987-06-27"^^xsd:date;
+    schema:address _:b448.
+_:b448 a schema:PostalAddress;
+    schema:streetAddress "West Manor";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Nelleview";
+    schema:postalCode "98425-6394";
+    schema:addressCountry "Paraguay".

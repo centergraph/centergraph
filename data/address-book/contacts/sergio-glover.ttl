@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sergio";
+    schema:familyName "Glover";
+    schema:birthDate "1985-11-30"^^xsd:date;
+    schema:address _:b8726.
+_:b8726 a schema:PostalAddress;
+    schema:streetAddress "N Center Street";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Unahaven";
+    schema:postalCode "08774";
+    schema:addressCountry "Australia".

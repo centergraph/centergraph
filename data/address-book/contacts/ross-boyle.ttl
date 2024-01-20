@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ross";
+    schema:familyName "Boyle";
+    schema:birthDate "1983-01-04"^^xsd:date;
+    schema:address _:b9034.
+_:b9034 a schema:PostalAddress;
+    schema:streetAddress "Wiegand Lakes";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "New Giuseppeside";
+    schema:postalCode "52374";
+    schema:addressCountry "Netherlands".

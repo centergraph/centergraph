@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Karl";
+    schema:familyName "Reinger";
+    schema:birthDate "1963-11-15"^^xsd:date;
+    schema:address _:b7655.
+_:b7655 a schema:PostalAddress;
+    schema:streetAddress "Gina Pines";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Schaeferstead";
+    schema:postalCode "97855";
+    schema:addressCountry "Turks and Caicos Islands".

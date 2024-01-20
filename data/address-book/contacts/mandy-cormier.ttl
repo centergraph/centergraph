@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mandy";
+    schema:familyName "Cormier";
+    schema:birthDate "1960-03-14"^^xsd:date;
+    schema:address _:b6885.
+_:b6885 a schema:PostalAddress;
+    schema:streetAddress "Kautzer Mews";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Rogahnville";
+    schema:postalCode "91165";
+    schema:addressCountry "Bolivia".

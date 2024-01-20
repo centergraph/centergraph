@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brooke";
+    schema:familyName "Kessler";
+    schema:birthDate "1986-01-18"^^xsd:date;
+    schema:address _:b9723.
+_:b9723 a schema:PostalAddress;
+    schema:streetAddress "Ruthe Ridge";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "South Barbara";
+    schema:postalCode "62579";
+    schema:addressCountry "Lithuania".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jasmine";
+    schema:familyName "Cremin";
+    schema:birthDate "1990-12-22"^^xsd:date;
+    schema:address _:b2039.
+_:b2039 a schema:PostalAddress;
+    schema:streetAddress "Funk Vista";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Jazmynecester";
+    schema:postalCode "61259";
+    schema:addressCountry "Chad".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rebecca";
+    schema:familyName "McLaughlin";
+    schema:birthDate "1952-04-02"^^xsd:date;
+    schema:address _:b9789.
+_:b9789 a schema:PostalAddress;
+    schema:streetAddress "Becker Forest";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Nicolasmouth";
+    schema:postalCode "05779";
+    schema:addressCountry "Sao Tome and Principe".

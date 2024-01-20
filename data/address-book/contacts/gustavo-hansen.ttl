@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gustavo";
+    schema:familyName "Hansen";
+    schema:birthDate "1982-03-30"^^xsd:date;
+    schema:address _:b6826.
+_:b6826 a schema:PostalAddress;
+    schema:streetAddress "Grange Road";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Kanecester";
+    schema:postalCode "08748-6861";
+    schema:addressCountry "Indonesia".

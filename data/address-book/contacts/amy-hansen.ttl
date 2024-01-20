@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amy";
+    schema:familyName "Hansen";
+    schema:birthDate "1993-02-09"^^xsd:date;
+    schema:address _:b2430.
+_:b2430 a schema:PostalAddress;
+    schema:streetAddress "Simonis Camp";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "East Milford";
+    schema:postalCode "28238";
+    schema:addressCountry "Qatar".

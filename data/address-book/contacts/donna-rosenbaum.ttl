@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Donna";
+    schema:familyName "Rosenbaum";
+    schema:birthDate "1974-11-15"^^xsd:date;
+    schema:address _:b6642.
+_:b6642 a schema:PostalAddress;
+    schema:streetAddress "Funk Terrace";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Concord";
+    schema:postalCode "76419";
+    schema:addressCountry "Andorra".

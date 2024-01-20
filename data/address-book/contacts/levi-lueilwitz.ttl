@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Levi";
+    schema:familyName "Lueilwitz";
+    schema:birthDate "1999-08-03"^^xsd:date;
+    schema:address _:b1725.
+_:b1725 a schema:PostalAddress;
+    schema:streetAddress "Weber Vista";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Sanfordville";
+    schema:postalCode "44442-9427";
+    schema:addressCountry "Cocos (Keeling) Islands".

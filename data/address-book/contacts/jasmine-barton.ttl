@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jasmine";
+    schema:familyName "Barton";
+    schema:birthDate "1979-11-10"^^xsd:date;
+    schema:address _:b248.
+_:b248 a schema:PostalAddress;
+    schema:streetAddress "Cordie Pike";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Lake Ezekiel";
+    schema:postalCode "72399-3678";
+    schema:addressCountry "Hungary".

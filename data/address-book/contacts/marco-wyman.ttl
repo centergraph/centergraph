@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marco";
+    schema:familyName "Wyman";
+    schema:birthDate "1980-12-25"^^xsd:date;
+    schema:address _:b3730.
+_:b3730 a schema:PostalAddress;
+    schema:streetAddress "2nd Avenue";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Jailynview";
+    schema:postalCode "13712-0941";
+    schema:addressCountry "Gambia".

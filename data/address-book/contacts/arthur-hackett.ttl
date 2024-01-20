@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Arthur";
+    schema:familyName "Hackett";
+    schema:birthDate "1976-08-15"^^xsd:date;
+    schema:address _:b9603.
+_:b9603 a schema:PostalAddress;
+    schema:streetAddress "S 6th Street";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "New Kyler";
+    schema:postalCode "11667";
+    schema:addressCountry "Saint Martin".

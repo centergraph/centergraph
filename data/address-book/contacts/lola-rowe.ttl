@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lola";
+    schema:familyName "Rowe";
+    schema:birthDate "1987-10-31"^^xsd:date;
+    schema:address _:b8714.
+_:b8714 a schema:PostalAddress;
+    schema:streetAddress "Sebastian Pine";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Croninboro";
+    schema:postalCode "90303";
+    schema:addressCountry "Solomon Islands".

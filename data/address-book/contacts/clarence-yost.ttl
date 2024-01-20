@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clarence";
+    schema:familyName "Yost";
+    schema:birthDate "1984-05-28"^^xsd:date;
+    schema:address _:b1947.
+_:b1947 a schema:PostalAddress;
+    schema:streetAddress "Schuppe Lock";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "New Alexandre";
+    schema:postalCode "63150";
+    schema:addressCountry "Yemen".

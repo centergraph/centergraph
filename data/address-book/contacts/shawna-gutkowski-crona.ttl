@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shawna";
+    schema:familyName "Gutkowski-Crona";
+    schema:birthDate "1952-01-17"^^xsd:date;
+    schema:address _:b541.
+_:b541 a schema:PostalAddress;
+    schema:streetAddress "Alayna Path";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Doyleborough";
+    schema:postalCode "54970-5512";
+    schema:addressCountry "Brunei Darussalam".

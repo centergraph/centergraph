@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alicia";
+    schema:familyName "Hackett";
+    schema:birthDate "1963-10-03"^^xsd:date;
+    schema:address _:b8358.
+_:b8358 a schema:PostalAddress;
+    schema:streetAddress "Broad Lane";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Langoshfort";
+    schema:postalCode "43557-4660";
+    schema:addressCountry "Dominican Republic".

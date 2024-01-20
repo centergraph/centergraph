@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sue";
+    schema:familyName "Hayes";
+    schema:birthDate "1973-08-08"^^xsd:date;
+    schema:address _:b6247.
+_:b6247 a schema:PostalAddress;
+    schema:streetAddress "Sawayn Forest";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Haltom City";
+    schema:postalCode "49172-4442";
+    schema:addressCountry "Greenland".

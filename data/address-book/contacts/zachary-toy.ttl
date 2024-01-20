@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Zachary";
+    schema:familyName "Toy";
+    schema:birthDate "1978-01-09"^^xsd:date;
+    schema:address _:b3770.
+_:b3770 a schema:PostalAddress;
+    schema:streetAddress "S Center Street";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Quitzonchester";
+    schema:postalCode "86747-3680";
+    schema:addressCountry "Croatia".

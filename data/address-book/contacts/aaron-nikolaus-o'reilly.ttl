@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Aaron";
+    schema:familyName "Nikolaus-O'Reilly";
+    schema:birthDate "1991-02-03"^^xsd:date;
+    schema:address _:b2583.
+_:b2583 a schema:PostalAddress;
+    schema:streetAddress "Hansen Pines";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Fort Magnoliaton";
+    schema:postalCode "67444-5787";
+    schema:addressCountry "Bosnia and Herzegovina".

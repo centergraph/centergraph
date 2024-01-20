@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tracey";
+    schema:familyName "Lehner";
+    schema:birthDate "1969-09-24"^^xsd:date;
+    schema:address _:b5047.
+_:b5047 a schema:PostalAddress;
+    schema:streetAddress "Zoe Lane";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Schmittchester";
+    schema:postalCode "66588-0740";
+    schema:addressCountry "Egypt".

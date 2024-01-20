@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rodney";
+    schema:familyName "Schmeler";
+    schema:birthDate "1952-12-18"^^xsd:date;
+    schema:address _:b7726.
+_:b7726 a schema:PostalAddress;
+    schema:streetAddress "Ulices Skyway";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Lake Kenna";
+    schema:postalCode "40598-0730";
+    schema:addressCountry "Northern Mariana Islands".

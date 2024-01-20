@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Boyd";
+    schema:familyName "Bode";
+    schema:birthDate "1965-12-27"^^xsd:date;
+    schema:address _:b8715.
+_:b8715 a schema:PostalAddress;
+    schema:streetAddress "Martina Park";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "New Lelaburgh";
+    schema:postalCode "83837-3018";
+    schema:addressCountry "Barbados".

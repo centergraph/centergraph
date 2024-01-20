@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laverne";
+    schema:familyName "Kulas";
+    schema:birthDate "1999-10-23"^^xsd:date;
+    schema:address _:b3507.
+_:b3507 a schema:PostalAddress;
+    schema:streetAddress "Runolfsson Ferry";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Durganland";
+    schema:postalCode "06366-9388";
+    schema:addressCountry "Botswana".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harvey";
+    schema:familyName "Brakus-Buckridge";
+    schema:birthDate "1995-02-19"^^xsd:date;
+    schema:address _:b9549.
+_:b9549 a schema:PostalAddress;
+    schema:streetAddress "Marian Centers";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Rohnert Park";
+    schema:postalCode "98037";
+    schema:addressCountry "Aland Islands".

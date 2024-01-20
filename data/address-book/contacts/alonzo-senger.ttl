@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alonzo";
+    schema:familyName "Senger";
+    schema:birthDate "1972-10-18"^^xsd:date;
+    schema:address _:b4353.
+_:b4353 a schema:PostalAddress;
+    schema:streetAddress "Smitham Streets";
+    schema:addressRegion "California";
+    schema:addressLocality "Kundehaven";
+    schema:postalCode "12480-5624";
+    schema:addressCountry "Chile".

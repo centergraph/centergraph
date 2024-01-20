@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jesse";
+    schema:familyName "Willms";
+    schema:birthDate "1970-02-10"^^xsd:date;
+    schema:address _:b615.
+_:b615 a schema:PostalAddress;
+    schema:streetAddress "E 6th Avenue";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Kerlukeboro";
+    schema:postalCode "31860-8601";
+    schema:addressCountry "Ethiopia".

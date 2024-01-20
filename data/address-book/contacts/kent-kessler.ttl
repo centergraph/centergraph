@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kent";
+    schema:familyName "Kessler";
+    schema:birthDate "1992-03-11"^^xsd:date;
+    schema:address _:b9696.
+_:b9696 a schema:PostalAddress;
+    schema:streetAddress "W North Street";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Fort Libbie";
+    schema:postalCode "57785-0815";
+    schema:addressCountry "Georgia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janis";
+    schema:familyName "Swaniawski";
+    schema:birthDate "1946-07-07"^^xsd:date;
+    schema:address _:b9409.
+_:b9409 a schema:PostalAddress;
+    schema:streetAddress "Cicero Plain";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Arvada";
+    schema:postalCode "45826";
+    schema:addressCountry "Northern Mariana Islands".

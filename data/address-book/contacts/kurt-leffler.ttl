@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kurt";
+    schema:familyName "Leffler";
+    schema:birthDate "1983-05-07"^^xsd:date;
+    schema:address _:b8934.
+_:b8934 a schema:PostalAddress;
+    schema:streetAddress "Kuhn Burgs";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Lebsackburgh";
+    schema:postalCode "68676-0111";
+    schema:addressCountry "Aruba".

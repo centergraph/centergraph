@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sonja";
+    schema:familyName "O'Kon";
+    schema:birthDate "1985-07-27"^^xsd:date;
+    schema:address _:b775.
+_:b775 a schema:PostalAddress;
+    schema:streetAddress "Gorczany Track";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "North Geovanyfurt";
+    schema:postalCode "21408";
+    schema:addressCountry "Mauritania".

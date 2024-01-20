@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Meghan";
+    schema:familyName "Senger";
+    schema:birthDate "1962-02-19"^^xsd:date;
+    schema:address _:b7098.
+_:b7098 a schema:PostalAddress;
+    schema:streetAddress "Armand Courts";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Fort Rachelport";
+    schema:postalCode "63306-8644";
+    schema:addressCountry "Slovakia".

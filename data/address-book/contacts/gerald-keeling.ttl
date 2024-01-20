@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gerald";
+    schema:familyName "Keeling";
+    schema:birthDate "1981-04-05"^^xsd:date;
+    schema:address _:b6710.
+_:b6710 a schema:PostalAddress;
+    schema:streetAddress "Chapel Hill";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "East Roscoe";
+    schema:postalCode "23793-9447";
+    schema:addressCountry "Sri Lanka".

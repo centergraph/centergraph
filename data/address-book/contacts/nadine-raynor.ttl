@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nadine";
+    schema:familyName "Raynor";
+    schema:birthDate "1988-10-16"^^xsd:date;
+    schema:address _:b2191.
+_:b2191 a schema:PostalAddress;
+    schema:streetAddress "Victoria Place";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Reading";
+    schema:postalCode "65003";
+    schema:addressCountry "Sint Maarten".

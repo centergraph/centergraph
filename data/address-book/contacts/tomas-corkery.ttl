@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tomas";
+    schema:familyName "Corkery";
+    schema:birthDate "1962-09-06"^^xsd:date;
+    schema:address _:b1073.
+_:b1073 a schema:PostalAddress;
+    schema:streetAddress "Talon Pine";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "South Lindseyburgh";
+    schema:postalCode "23768-9159";
+    schema:addressCountry "Sierra Leone".

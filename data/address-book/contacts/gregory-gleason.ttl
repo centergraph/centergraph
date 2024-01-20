@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gregory";
+    schema:familyName "Gleason";
+    schema:birthDate "1950-12-30"^^xsd:date;
+    schema:address _:b7849.
+_:b7849 a schema:PostalAddress;
+    schema:streetAddress "Waverley Road";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Bayamon";
+    schema:postalCode "34287";
+    schema:addressCountry "Puerto Rico".

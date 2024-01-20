@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ira";
+    schema:familyName "Murphy";
+    schema:birthDate "1992-06-23"^^xsd:date;
+    schema:address _:b8304.
+_:b8304 a schema:PostalAddress;
+    schema:streetAddress "Brendon Course";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Juliofield";
+    schema:postalCode "62175";
+    schema:addressCountry "Israel".

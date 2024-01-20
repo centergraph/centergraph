@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Homer";
+    schema:familyName "Wyman";
+    schema:birthDate "1988-03-23"^^xsd:date;
+    schema:address _:b9881.
+_:b9881 a schema:PostalAddress;
+    schema:streetAddress "High Road";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "West Hollyville";
+    schema:postalCode "68297-0892";
+    schema:addressCountry "Liechtenstein".

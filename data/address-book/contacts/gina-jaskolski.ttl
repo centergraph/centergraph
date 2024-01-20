@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gina";
+    schema:familyName "Jaskolski";
+    schema:birthDate "1949-05-17"^^xsd:date;
+    schema:address _:b2487.
+_:b2487 a schema:PostalAddress;
+    schema:streetAddress "Kemmer Springs";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Lake Jackyberg";
+    schema:postalCode "67956-3033";
+    schema:addressCountry "Aland Islands".

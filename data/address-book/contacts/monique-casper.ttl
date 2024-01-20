@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Monique";
+    schema:familyName "Casper";
+    schema:birthDate "2002-05-23"^^xsd:date;
+    schema:address _:b5085.
+_:b5085 a schema:PostalAddress;
+    schema:streetAddress "Terry Lake";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Gaithersburg";
+    schema:postalCode "48442";
+    schema:addressCountry "Isle of Man".

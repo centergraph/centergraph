@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sara";
+    schema:familyName "McDermott";
+    schema:birthDate "1977-02-18"^^xsd:date;
+    schema:address _:b9919.
+_:b9919 a schema:PostalAddress;
+    schema:streetAddress "Zachariah Fords";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Port Charlotte";
+    schema:postalCode "04100-3400";
+    schema:addressCountry "Portugal".

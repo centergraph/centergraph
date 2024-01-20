@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marilyn";
+    schema:familyName "King";
+    schema:birthDate "2001-02-21"^^xsd:date;
+    schema:address _:b9868.
+_:b9868 a schema:PostalAddress;
+    schema:streetAddress "12th Street";
+    schema:addressRegion "California";
+    schema:addressLocality "East Alethashire";
+    schema:postalCode "05471";
+    schema:addressCountry "Saint Vincent and the Grenadines".

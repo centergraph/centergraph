@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Albert";
+    schema:familyName "Nienow";
+    schema:birthDate "1977-05-22"^^xsd:date;
+    schema:address _:b4728.
+_:b4728 a schema:PostalAddress;
+    schema:streetAddress "Vada Lakes";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "New Nick";
+    schema:postalCode "85871-8204";
+    schema:addressCountry "Kuwait".

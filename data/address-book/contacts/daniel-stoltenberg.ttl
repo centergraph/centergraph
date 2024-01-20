@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Daniel";
+    schema:familyName "Stoltenberg";
+    schema:birthDate "2001-01-13"^^xsd:date;
+    schema:address _:b7184.
+_:b7184 a schema:PostalAddress;
+    schema:streetAddress "Destini Turnpike";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Duluth";
+    schema:postalCode "05436";
+    schema:addressCountry "Lithuania".

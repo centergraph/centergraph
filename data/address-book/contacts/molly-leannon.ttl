@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Molly";
+    schema:familyName "Leannon";
+    schema:birthDate "1979-05-12"^^xsd:date;
+    schema:address _:b9297.
+_:b9297 a schema:PostalAddress;
+    schema:streetAddress "Nelson Street";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Guyside";
+    schema:postalCode "92977";
+    schema:addressCountry "Mali".

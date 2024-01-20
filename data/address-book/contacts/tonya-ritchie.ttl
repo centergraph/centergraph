@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tonya";
+    schema:familyName "Ritchie";
+    schema:birthDate "1966-11-12"^^xsd:date;
+    schema:address _:b7561.
+_:b7561 a schema:PostalAddress;
+    schema:streetAddress "Western Road";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Chasityton";
+    schema:postalCode "51757";
+    schema:addressCountry "Guam".

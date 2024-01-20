@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Beth";
+    schema:familyName "Ortiz";
+    schema:birthDate "1944-06-02"^^xsd:date;
+    schema:address _:b9389.
+_:b9389 a schema:PostalAddress;
+    schema:streetAddress "Cortney Fords";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Perth Amboy";
+    schema:postalCode "51360-1082";
+    schema:addressCountry "Bahrain".

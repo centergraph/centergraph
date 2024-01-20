@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "John";
+    schema:familyName "Wuckert";
+    schema:birthDate "1998-06-23"^^xsd:date;
+    schema:address _:b1312.
+_:b1312 a schema:PostalAddress;
+    schema:streetAddress "E 12th Street";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Jasonstead";
+    schema:postalCode "61073";
+    schema:addressCountry "Saint Pierre and Miquelon".

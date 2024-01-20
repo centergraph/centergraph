@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elisa";
+    schema:familyName "Heaney";
+    schema:birthDate "1980-01-28"^^xsd:date;
+    schema:address _:b4327.
+_:b4327 a schema:PostalAddress;
+    schema:streetAddress "Woodlands Avenue";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Manleyshire";
+    schema:postalCode "27072";
+    schema:addressCountry "Saint Martin".

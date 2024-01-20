@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leslie";
+    schema:familyName "Stracke-Maggio";
+    schema:birthDate "1965-08-02"^^xsd:date;
+    schema:address _:b3543.
+_:b3543 a schema:PostalAddress;
+    schema:streetAddress "Valley Road";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Osbaldobury";
+    schema:postalCode "22991";
+    schema:addressCountry "Saint Pierre and Miquelon".

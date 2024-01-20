@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Casey";
     schema:familyName "Stracke";
-    schema:birthDate "1944-06-26"^^xsd:date;
-    schema:address _:b364.
-_:b364 a schema:PostalAddress;
-    schema:streetAddress "Green Lock";
-    schema:addressRegion "North Dakota";
-    schema:addressLocality "North Michale";
-    schema:postalCode "02534";
-    schema:addressCountry "Republic of Korea".
+    schema:birthDate "1964-12-27"^^xsd:date;
+    schema:address _:b5107.
+_:b5107 a schema:PostalAddress;
+    schema:streetAddress "Albion Street";
+    schema:addressRegion "Florida";
+    schema:addressLocality "North Cicerocester";
+    schema:postalCode "24282";
+    schema:addressCountry "Curacao".

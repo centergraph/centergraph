@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tricia";
+    schema:familyName "Schmidt";
+    schema:birthDate "1963-02-07"^^xsd:date;
+    schema:address _:b9273.
+_:b9273 a schema:PostalAddress;
+    schema:streetAddress "Sipes Parkways";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "West Dewayne";
+    schema:postalCode "16114-4647";
+    schema:addressCountry "Liberia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Genevieve";
+    schema:familyName "Hammes-Ernser";
+    schema:birthDate "1947-07-29"^^xsd:date;
+    schema:address _:b479.
+_:b479 a schema:PostalAddress;
+    schema:streetAddress "Brook Road";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "East Tamia";
+    schema:postalCode "48749";
+    schema:addressCountry "Jamaica".

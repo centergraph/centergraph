@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rodolfo";
+    schema:familyName "Ledner";
+    schema:birthDate "1944-12-27"^^xsd:date;
+    schema:address _:b9255.
+_:b9255 a schema:PostalAddress;
+    schema:streetAddress "Orn Garden";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "South Luigi";
+    schema:postalCode "17325";
+    schema:addressCountry "Taiwan".

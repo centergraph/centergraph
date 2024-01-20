@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Paulette";
+    schema:familyName "Greenholt";
+    schema:birthDate "1991-10-30"^^xsd:date;
+    schema:address _:b8103.
+_:b8103 a schema:PostalAddress;
+    schema:streetAddress "Walker Ramp";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "South Laury";
+    schema:postalCode "31778-0752";
+    schema:addressCountry "Moldova".

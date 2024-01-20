@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Woodrow";
+    schema:familyName "Wunsch";
+    schema:birthDate "1994-10-12"^^xsd:date;
+    schema:address _:b5554.
+_:b5554 a schema:PostalAddress;
+    schema:streetAddress "Andreane Knoll";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Considinefort";
+    schema:postalCode "94405";
+    schema:addressCountry "Bulgaria".

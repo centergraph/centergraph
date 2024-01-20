@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Arnold";
+    schema:familyName "Ratke";
+    schema:birthDate "1984-07-12"^^xsd:date;
+    schema:address _:b9298.
+_:b9298 a schema:PostalAddress;
+    schema:streetAddress "Rath Falls";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Ottoview";
+    schema:postalCode "37828-4171";
+    schema:addressCountry "Nauru".

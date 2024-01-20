@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stephen";
+    schema:familyName "Farrell";
+    schema:birthDate "1988-01-03"^^xsd:date;
+    schema:address _:b2072.
+_:b2072 a schema:PostalAddress;
+    schema:streetAddress "Beech Drive";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Port Laneytown";
+    schema:postalCode "24013-0864";
+    schema:addressCountry "Mauritania".

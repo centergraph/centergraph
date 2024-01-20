@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Caleb";
+    schema:familyName "Powlowski";
+    schema:birthDate "1969-12-24"^^xsd:date;
+    schema:address _:b9302.
+_:b9302 a schema:PostalAddress;
+    schema:streetAddress "N 9th Street";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "North Little Rock";
+    schema:postalCode "67079-6354";
+    schema:addressCountry "French Polynesia".

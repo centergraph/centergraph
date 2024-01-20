@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Percy";
+    schema:familyName "Dibbert";
+    schema:birthDate "1993-11-13"^^xsd:date;
+    schema:address _:b3865.
+_:b3865 a schema:PostalAddress;
+    schema:streetAddress "Gordon Road";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Bashirianshire";
+    schema:postalCode "40146-6004";
+    schema:addressCountry "Denmark".

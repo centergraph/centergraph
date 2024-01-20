@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Johanna";
+    schema:familyName "Wisoky";
+    schema:birthDate "1950-04-04"^^xsd:date;
+    schema:address _:b8223.
+_:b8223 a schema:PostalAddress;
+    schema:streetAddress "Schinner Landing";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Willisborough";
+    schema:postalCode "93591";
+    schema:addressCountry "Mali".

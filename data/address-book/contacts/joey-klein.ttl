@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joey";
+    schema:familyName "Klein";
+    schema:birthDate "1964-11-26"^^xsd:date;
+    schema:address _:b6465.
+_:b6465 a schema:PostalAddress;
+    schema:streetAddress "High Road";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Fort Nick";
+    schema:postalCode "23759-6921";
+    schema:addressCountry "Jamaica".

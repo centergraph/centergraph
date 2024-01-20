@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Oscar";
+    schema:familyName "Ratke";
+    schema:birthDate "1946-04-25"^^xsd:date;
+    schema:address _:b5034.
+_:b5034 a schema:PostalAddress;
+    schema:streetAddress "Shanahan Ramp";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Lake Ladarius";
+    schema:postalCode "40729-9053";
+    schema:addressCountry "Argentina".

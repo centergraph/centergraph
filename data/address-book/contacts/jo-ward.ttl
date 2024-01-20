@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jo";
+    schema:familyName "Ward";
+    schema:birthDate "2002-05-20"^^xsd:date;
+    schema:address _:b6384.
+_:b6384 a schema:PostalAddress;
+    schema:streetAddress "Therese Motorway";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Warren";
+    schema:postalCode "35290-9192";
+    schema:addressCountry "Bolivia".

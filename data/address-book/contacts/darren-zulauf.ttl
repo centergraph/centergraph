@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darren";
+    schema:familyName "Zulauf";
+    schema:birthDate "1957-06-25"^^xsd:date;
+    schema:address _:b9568.
+_:b9568 a schema:PostalAddress;
+    schema:streetAddress "Ash Close";
+    schema:addressRegion "Texas";
+    schema:addressLocality "South Maxime";
+    schema:postalCode "73014-7575";
+    schema:addressCountry "Brazil".

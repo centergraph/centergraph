@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sara";
+    schema:familyName "Brakus";
+    schema:birthDate "1968-11-08"^^xsd:date;
+    schema:address _:b7509.
+_:b7509 a schema:PostalAddress;
+    schema:streetAddress "Lenora Hill";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Rogahnshire";
+    schema:postalCode "53792-2316";
+    schema:addressCountry "Montenegro".

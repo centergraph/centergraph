@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tyrone";
+    schema:familyName "Fisher";
+    schema:birthDate "1955-11-10"^^xsd:date;
+    schema:address _:b1068.
+_:b1068 a schema:PostalAddress;
+    schema:streetAddress "Rosenbaum Lights";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "South Jamaalland";
+    schema:postalCode "41788-9264";
+    schema:addressCountry "Lebanon".

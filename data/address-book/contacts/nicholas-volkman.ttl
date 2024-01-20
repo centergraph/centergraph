@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nicholas";
+    schema:familyName "Volkman";
+    schema:birthDate "1957-02-03"^^xsd:date;
+    schema:address _:b2914.
+_:b2914 a schema:PostalAddress;
+    schema:streetAddress "N Main Street";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Goyettemouth";
+    schema:postalCode "53453";
+    schema:addressCountry "Curacao".

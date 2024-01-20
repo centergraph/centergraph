@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dave";
+    schema:familyName "Gorczany";
+    schema:birthDate "1958-05-11"^^xsd:date;
+    schema:address _:b8493.
+_:b8493 a schema:PostalAddress;
+    schema:streetAddress "Skyline Drive";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Rockwall";
+    schema:postalCode "41920";
+    schema:addressCountry "Tuvalu".

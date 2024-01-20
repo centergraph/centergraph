@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vincent";
+    schema:familyName "McClure";
+    schema:birthDate "1974-01-10"^^xsd:date;
+    schema:address _:b1316.
+_:b1316 a schema:PostalAddress;
+    schema:streetAddress "Queenie Station";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Chandlerstead";
+    schema:postalCode "46596";
+    schema:addressCountry "Brunei Darussalam".

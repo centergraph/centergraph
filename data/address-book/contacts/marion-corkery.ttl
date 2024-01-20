@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marion";
+    schema:familyName "Corkery";
+    schema:birthDate "1959-12-24"^^xsd:date;
+    schema:address _:b967.
+_:b967 a schema:PostalAddress;
+    schema:streetAddress "State Avenue";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Reichelstead";
+    schema:postalCode "17871";
+    schema:addressCountry "Martinique".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elsie";
+    schema:familyName "Koepp";
+    schema:birthDate "1948-12-22"^^xsd:date;
+    schema:address _:b126.
+_:b126 a schema:PostalAddress;
+    schema:streetAddress "Rosenbaum Rue";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Hoover";
+    schema:postalCode "70833-4751";
+    schema:addressCountry "Liechtenstein".

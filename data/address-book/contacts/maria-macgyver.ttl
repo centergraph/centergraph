@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Maria";
+    schema:familyName "MacGyver";
+    schema:birthDate "1965-08-03"^^xsd:date;
+    schema:address _:b767.
+_:b767 a schema:PostalAddress;
+    schema:streetAddress "Commerce Street";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Berniceworth";
+    schema:postalCode "91841-3793";
+    schema:addressCountry "Mauritius".

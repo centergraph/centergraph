@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hattie";
+    schema:familyName "Hayes";
+    schema:birthDate "1996-12-28"^^xsd:date;
+    schema:address _:b7067.
+_:b7067 a schema:PostalAddress;
+    schema:streetAddress "Hills Road";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "East Abbie";
+    schema:postalCode "55257-4590";
+    schema:addressCountry "Sweden".

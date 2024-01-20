@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Antonia";
+    schema:familyName "Nikolaus";
+    schema:birthDate "1978-11-12"^^xsd:date;
+    schema:address _:b8860.
+_:b8860 a schema:PostalAddress;
+    schema:streetAddress "Mary Street";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "New Sheridan";
+    schema:postalCode "24283-4328";
+    schema:addressCountry "Niger".

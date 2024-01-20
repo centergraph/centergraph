@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Willard";
     schema:familyName "Gorczany";
-    schema:birthDate "1952-12-22"^^xsd:date;
-    schema:address _:b471.
-_:b471 a schema:PostalAddress;
-    schema:streetAddress "Jailyn Stream";
-    schema:addressRegion "Kansas";
-    schema:addressLocality "Wilkinsonside";
-    schema:postalCode "33685-6162";
-    schema:addressCountry "Micronesia".
+    schema:birthDate "1947-12-10"^^xsd:date;
+    schema:address _:b234.
+_:b234 a schema:PostalAddress;
+    schema:streetAddress "Senger Shoals";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Lake Charles";
+    schema:postalCode "87051";
+    schema:addressCountry "Pakistan".

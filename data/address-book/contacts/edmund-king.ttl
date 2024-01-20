@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edmund";
+    schema:familyName "King";
+    schema:birthDate "1953-11-28"^^xsd:date;
+    schema:address _:b8019.
+_:b8019 a schema:PostalAddress;
+    schema:streetAddress "Parisian Garden";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Fort Jordyland";
+    schema:postalCode "69070-7932";
+    schema:addressCountry "South Sudan".

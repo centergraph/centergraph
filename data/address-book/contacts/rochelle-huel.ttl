@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rochelle";
+    schema:familyName "Huel";
+    schema:birthDate "1980-06-09"^^xsd:date;
+    schema:address _:b7420.
+_:b7420 a schema:PostalAddress;
+    schema:streetAddress "Sycamore Street";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Alfredworth";
+    schema:postalCode "88882";
+    schema:addressCountry "Estonia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janice";
+    schema:familyName "Moen";
+    schema:birthDate "1962-04-03"^^xsd:date;
+    schema:address _:b4102.
+_:b4102 a schema:PostalAddress;
+    schema:streetAddress "Brayan Union";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Port Virgilstad";
+    schema:postalCode "79078-6373";
+    schema:addressCountry "Iran".

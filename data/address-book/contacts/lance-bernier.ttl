@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lance";
+    schema:familyName "Bernier";
+    schema:birthDate "1952-12-23"^^xsd:date;
+    schema:address _:b5664.
+_:b5664 a schema:PostalAddress;
+    schema:streetAddress "Norris Grove";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Langworthville";
+    schema:postalCode "14632-8434";
+    schema:addressCountry "Lithuania".

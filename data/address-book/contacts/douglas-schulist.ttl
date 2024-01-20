@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Douglas";
+    schema:familyName "Schulist";
+    schema:birthDate "1962-09-26"^^xsd:date;
+    schema:address _:b9892.
+_:b9892 a schema:PostalAddress;
+    schema:streetAddress "Herman Loaf";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Fort Casimirfield";
+    schema:postalCode "14814-8551";
+    schema:addressCountry "Eswatini".

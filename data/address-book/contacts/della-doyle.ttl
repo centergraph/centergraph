@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Della";
+    schema:familyName "Doyle";
+    schema:birthDate "1968-08-02"^^xsd:date;
+    schema:address _:b3919.
+_:b3919 a schema:PostalAddress;
+    schema:streetAddress "State Line Road";
+    schema:addressRegion "California";
+    schema:addressLocality "Port Fidelchester";
+    schema:postalCode "81119";
+    schema:addressCountry "Namibia".

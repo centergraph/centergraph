@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terrance";
+    schema:familyName "Bradtke";
+    schema:birthDate "2002-06-02"^^xsd:date;
+    schema:address _:b1337.
+_:b1337 a schema:PostalAddress;
+    schema:streetAddress "Orchard Drive";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Port Franco";
+    schema:postalCode "31160";
+    schema:addressCountry "Bosnia and Herzegovina".

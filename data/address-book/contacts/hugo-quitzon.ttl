@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hugo";
+    schema:familyName "Quitzon";
+    schema:birthDate "2002-08-28"^^xsd:date;
+    schema:address _:b2580.
+_:b2580 a schema:PostalAddress;
+    schema:streetAddress "Prospect Street";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Port Lamont";
+    schema:postalCode "36651";
+    schema:addressCountry "Armenia".

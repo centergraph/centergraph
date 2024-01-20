@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Willie";
+    schema:familyName "Stroman";
+    schema:birthDate "1999-05-21"^^xsd:date;
+    schema:address _:b4092.
+_:b4092 a schema:PostalAddress;
+    schema:streetAddress "The Mount";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "North Davin";
+    schema:postalCode "13250-0092";
+    schema:addressCountry "Myanmar".

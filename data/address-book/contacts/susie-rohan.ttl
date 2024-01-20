@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Susie";
+    schema:familyName "Rohan";
+    schema:birthDate "1945-04-23"^^xsd:date;
+    schema:address _:b4932.
+_:b4932 a schema:PostalAddress;
+    schema:streetAddress "Melody Neck";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Trinityview";
+    schema:postalCode "29457";
+    schema:addressCountry "Cyprus".

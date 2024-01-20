@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nichole";
+    schema:familyName "Schultz";
+    schema:birthDate "1956-12-31"^^xsd:date;
+    schema:address _:b4374.
+_:b4374 a schema:PostalAddress;
+    schema:streetAddress "Orchard Drive";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Fort Mellie";
+    schema:postalCode "32680";
+    schema:addressCountry "Bhutan".

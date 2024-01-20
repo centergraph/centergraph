@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carla";
+    schema:familyName "Kreiger";
+    schema:birthDate "1963-12-20"^^xsd:date;
+    schema:address _:b2179.
+_:b2179 a schema:PostalAddress;
+    schema:streetAddress "Pine Street";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "New Ophelia";
+    schema:postalCode "16418-3704";
+    schema:addressCountry "Guam".

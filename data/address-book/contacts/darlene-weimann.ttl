@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darlene";
+    schema:familyName "Weimann";
+    schema:birthDate "1969-02-12"^^xsd:date;
+    schema:address _:b6341.
+_:b6341 a schema:PostalAddress;
+    schema:streetAddress "Hilma Hollow";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Pfannerstillview";
+    schema:postalCode "90886";
+    schema:addressCountry "Guatemala".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Herman";
+    schema:familyName "White";
+    schema:birthDate "1948-09-05"^^xsd:date;
+    schema:address _:b561.
+_:b561 a schema:PostalAddress;
+    schema:streetAddress "Boyer Drive";
+    schema:addressRegion "New York";
+    schema:addressLocality "Laurencefield";
+    schema:postalCode "38905";
+    schema:addressCountry "Andorra".

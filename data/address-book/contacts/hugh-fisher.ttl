@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hugh";
+    schema:familyName "Fisher";
+    schema:birthDate "1965-03-29"^^xsd:date;
+    schema:address _:b9392.
+_:b9392 a schema:PostalAddress;
+    schema:streetAddress "Adams Ville";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Shannaburgh";
+    schema:postalCode "37242-5603";
+    schema:addressCountry "Belize".

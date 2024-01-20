@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sharon";
+    schema:familyName "Glover";
+    schema:birthDate "1984-01-10"^^xsd:date;
+    schema:address _:b6389.
+_:b6389 a schema:PostalAddress;
+    schema:streetAddress "Sharon Cliffs";
+    schema:addressRegion "California";
+    schema:addressLocality "West Vladimirborough";
+    schema:postalCode "60208-2271";
+    schema:addressCountry "Uruguay".

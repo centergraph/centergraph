@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ann";
+    schema:familyName "O'Conner";
+    schema:birthDate "2005-01-23"^^xsd:date;
+    schema:address _:b9559.
+_:b9559 a schema:PostalAddress;
+    schema:streetAddress "Kameron Fork";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "South Josefinaburgh";
+    schema:postalCode "12209-4821";
+    schema:addressCountry "Belarus".

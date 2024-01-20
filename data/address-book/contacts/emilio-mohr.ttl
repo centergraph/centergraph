@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emilio";
+    schema:familyName "Mohr";
+    schema:birthDate "1964-08-31"^^xsd:date;
+    schema:address _:b6233.
+_:b6233 a schema:PostalAddress;
+    schema:streetAddress "1st Street";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Mrazville";
+    schema:postalCode "96760-8014";
+    schema:addressCountry "Sweden".

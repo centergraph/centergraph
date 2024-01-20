@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mack";
+    schema:familyName "Von";
+    schema:birthDate "1969-08-01"^^xsd:date;
+    schema:address _:b2786.
+_:b2786 a schema:PostalAddress;
+    schema:streetAddress "5th Avenue";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Arlington";
+    schema:postalCode "62414";
+    schema:addressCountry "Micronesia".

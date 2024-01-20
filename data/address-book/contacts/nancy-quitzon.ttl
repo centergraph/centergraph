@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nancy";
+    schema:familyName "Quitzon";
+    schema:birthDate "1949-01-10"^^xsd:date;
+    schema:address _:b1701.
+_:b1701 a schema:PostalAddress;
+    schema:streetAddress "High Road";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Langoshstead";
+    schema:postalCode "27757";
+    schema:addressCountry "Yemen".

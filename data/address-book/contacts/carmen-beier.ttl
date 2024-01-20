@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carmen";
+    schema:familyName "Beier";
+    schema:birthDate "1945-03-12"^^xsd:date;
+    schema:address _:b5009.
+_:b5009 a schema:PostalAddress;
+    schema:streetAddress "Weissnat Bridge";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Moiseschester";
+    schema:postalCode "41084-0029";
+    schema:addressCountry "Tonga".

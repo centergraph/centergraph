@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shawn";
+    schema:familyName "Mueller";
+    schema:birthDate "1975-11-15"^^xsd:date;
+    schema:address _:b2005.
+_:b2005 a schema:PostalAddress;
+    schema:streetAddress "Lincoln Street";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "North Carletontown";
+    schema:postalCode "10272-3180";
+    schema:addressCountry "Honduras".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Thelma";
+    schema:familyName "Crist";
+    schema:birthDate "1982-09-09"^^xsd:date;
+    schema:address _:b3366.
+_:b3366 a schema:PostalAddress;
+    schema:streetAddress "Alf Motorway";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Port Hortensefurt";
+    schema:postalCode "28788";
+    schema:addressCountry "French Polynesia".

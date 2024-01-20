@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gloria";
+    schema:familyName "Kling";
+    schema:birthDate "1984-12-09"^^xsd:date;
+    schema:address _:b2676.
+_:b2676 a schema:PostalAddress;
+    schema:streetAddress "Morissette Brooks";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Bernhardboro";
+    schema:postalCode "84617";
+    schema:addressCountry "Macao".

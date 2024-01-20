@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Robin";
+    schema:familyName "D'Amore-Yundt";
+    schema:birthDate "1948-09-14"^^xsd:date;
+    schema:address _:b5492.
+_:b5492 a schema:PostalAddress;
+    schema:streetAddress "Sydney Mountains";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Howehaven";
+    schema:postalCode "34888";
+    schema:addressCountry "Australia".

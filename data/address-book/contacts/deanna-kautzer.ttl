@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Deanna";
+    schema:familyName "Kautzer";
+    schema:birthDate "1971-08-15"^^xsd:date;
+    schema:address _:b9781.
+_:b9781 a schema:PostalAddress;
+    schema:streetAddress "W Monroe Street";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Moore";
+    schema:postalCode "35407-8018";
+    schema:addressCountry "Italy".

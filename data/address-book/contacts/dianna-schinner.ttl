@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dianna";
+    schema:familyName "Schinner";
+    schema:birthDate "1991-03-12"^^xsd:date;
+    schema:address _:b1496.
+_:b1496 a schema:PostalAddress;
+    schema:streetAddress "Hodkiewicz Crescent";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Lake Flossie";
+    schema:postalCode "38727-9645";
+    schema:addressCountry "Zimbabwe".

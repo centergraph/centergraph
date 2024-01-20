@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Maureen";
+    schema:familyName "Ruecker";
+    schema:birthDate "1985-01-22"^^xsd:date;
+    schema:address _:b1157.
+_:b1157 a schema:PostalAddress;
+    schema:streetAddress "Hank Light";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Bahringermouth";
+    schema:postalCode "34144-3831";
+    schema:addressCountry "Bahamas".

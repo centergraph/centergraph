@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alexander";
+    schema:familyName "Bernhard-Considine";
+    schema:birthDate "1997-01-24"^^xsd:date;
+    schema:address _:b3510.
+_:b3510 a schema:PostalAddress;
+    schema:streetAddress "Esteban Fords";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Towneview";
+    schema:postalCode "73010";
+    schema:addressCountry "Hungary".

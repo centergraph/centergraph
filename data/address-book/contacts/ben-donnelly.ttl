@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ben";
+    schema:familyName "Donnelly";
+    schema:birthDate "1981-08-09"^^xsd:date;
+    schema:address _:b3801.
+_:b3801 a schema:PostalAddress;
+    schema:streetAddress "S Lincoln Street";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Strongsville";
+    schema:postalCode "32143-8435";
+    schema:addressCountry "Saint Lucia".

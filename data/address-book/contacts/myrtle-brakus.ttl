@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Myrtle";
+    schema:familyName "Brakus";
+    schema:birthDate "1948-12-11"^^xsd:date;
+    schema:address _:b4880.
+_:b4880 a schema:PostalAddress;
+    schema:streetAddress "Rutherford Orchard";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Rickeyville";
+    schema:postalCode "10752-4888";
+    schema:addressCountry "Nepal".

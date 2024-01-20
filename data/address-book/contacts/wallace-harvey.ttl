@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wallace";
+    schema:familyName "Harvey";
+    schema:birthDate "1969-09-11"^^xsd:date;
+    schema:address _:b2436.
+_:b2436 a schema:PostalAddress;
+    schema:streetAddress "Dickens Row";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Burnsville";
+    schema:postalCode "75452-7901";
+    schema:addressCountry "New Zealand".

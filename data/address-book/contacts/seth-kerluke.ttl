@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Seth";
+    schema:familyName "Kerluke";
+    schema:birthDate "1968-06-20"^^xsd:date;
+    schema:address _:b6035.
+_:b6035 a schema:PostalAddress;
+    schema:streetAddress "W 6th Avenue";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Rogahnfort";
+    schema:postalCode "86481";
+    schema:addressCountry "Isle of Man".

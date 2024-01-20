@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lula";
+    schema:familyName "Johnson-Rippin";
+    schema:birthDate "1977-12-31"^^xsd:date;
+    schema:address _:b4471.
+_:b4471 a schema:PostalAddress;
+    schema:streetAddress "The Oval";
+    schema:addressRegion "California";
+    schema:addressLocality "Hettingershire";
+    schema:postalCode "63052";
+    schema:addressCountry "Barbados".

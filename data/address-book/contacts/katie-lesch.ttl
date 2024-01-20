@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Katie";
+    schema:familyName "Lesch";
+    schema:birthDate "1975-04-01"^^xsd:date;
+    schema:address _:b9652.
+_:b9652 a schema:PostalAddress;
+    schema:streetAddress "Rectory Lane";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Blanchestead";
+    schema:postalCode "18493-2363";
+    schema:addressCountry "Guinea".

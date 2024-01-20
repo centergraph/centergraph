@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jordan";
+    schema:familyName "Roob";
+    schema:birthDate "1984-03-27"^^xsd:date;
+    schema:address _:b993.
+_:b993 a schema:PostalAddress;
+    schema:streetAddress "Kristian Stream";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Reillyland";
+    schema:postalCode "49559";
+    schema:addressCountry "Liberia".

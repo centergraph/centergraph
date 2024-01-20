@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Domingo";
+    schema:familyName "Legros";
+    schema:birthDate "1959-07-18"^^xsd:date;
+    schema:address _:b1566.
+_:b1566 a schema:PostalAddress;
+    schema:streetAddress "W Grand Avenue";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "North Elza";
+    schema:postalCode "13062-4076";
+    schema:addressCountry "Mali".

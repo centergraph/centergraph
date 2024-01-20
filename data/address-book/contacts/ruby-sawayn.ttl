@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruby";
+    schema:familyName "Sawayn";
+    schema:birthDate "1984-08-08"^^xsd:date;
+    schema:address _:b2626.
+_:b2626 a schema:PostalAddress;
+    schema:streetAddress "Railroad Avenue";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "La Habra";
+    schema:postalCode "50318-8703";
+    schema:addressCountry "Afghanistan".

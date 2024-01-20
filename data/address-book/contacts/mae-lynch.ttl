@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mae";
+    schema:familyName "Lynch";
+    schema:birthDate "2002-01-26"^^xsd:date;
+    schema:address _:b5696.
+_:b5696 a schema:PostalAddress;
+    schema:streetAddress "Rocio Crescent";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Cathedral City";
+    schema:postalCode "04327";
+    schema:addressCountry "Barbados".

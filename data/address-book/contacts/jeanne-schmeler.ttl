@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeanne";
+    schema:familyName "Schmeler";
+    schema:birthDate "1957-04-12"^^xsd:date;
+    schema:address _:b8818.
+_:b8818 a schema:PostalAddress;
+    schema:streetAddress "Casimer Heights";
+    schema:addressRegion "California";
+    schema:addressLocality "Jurupa Valley";
+    schema:postalCode "94799-6385";
+    schema:addressCountry "Kyrgyz Republic".

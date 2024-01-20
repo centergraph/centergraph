@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Penny";
+    schema:familyName "Ryan";
+    schema:birthDate "1966-04-02"^^xsd:date;
+    schema:address _:b23.
+_:b23 a schema:PostalAddress;
+    schema:streetAddress "Tromp Branch";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Fort Millietown";
+    schema:postalCode "09232-8101";
+    schema:addressCountry "Australia".

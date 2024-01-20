@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Winston";
+    schema:familyName "Cummerata";
+    schema:birthDate "1951-11-30"^^xsd:date;
+    schema:address _:b5414.
+_:b5414 a schema:PostalAddress;
+    schema:streetAddress "Nitzsche Heights";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Lake Catherine";
+    schema:postalCode "27497";
+    schema:addressCountry "Tajikistan".

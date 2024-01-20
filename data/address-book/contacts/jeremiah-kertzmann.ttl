@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeremiah";
+    schema:familyName "Kertzmann";
+    schema:birthDate "1979-12-17"^^xsd:date;
+    schema:address _:b9706.
+_:b9706 a schema:PostalAddress;
+    schema:streetAddress "Funk Common";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Adamsville";
+    schema:postalCode "53108-3322";
+    schema:addressCountry "Holy See (Vatican City State)".

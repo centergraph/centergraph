@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Velma";
+    schema:familyName "Grant";
+    schema:birthDate "1961-02-12"^^xsd:date;
+    schema:address _:b9697.
+_:b9697 a schema:PostalAddress;
+    schema:streetAddress "Bergnaum Shores";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Fort Ryley";
+    schema:postalCode "87006";
+    schema:addressCountry "Tokelau".

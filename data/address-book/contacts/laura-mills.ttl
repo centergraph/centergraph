@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laura";
+    schema:familyName "Mills";
+    schema:birthDate "1961-02-06"^^xsd:date;
+    schema:address _:b4070.
+_:b4070 a schema:PostalAddress;
+    schema:streetAddress "Deonte Points";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Springdale";
+    schema:postalCode "59455";
+    schema:addressCountry "Cameroon".

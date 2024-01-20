@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Garry";
+    schema:familyName "Gibson";
+    schema:birthDate "1948-12-04"^^xsd:date;
+    schema:address _:b5273.
+_:b5273 a schema:PostalAddress;
+    schema:streetAddress "Dawson Coves";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Hesselchester";
+    schema:postalCode "88529-6116";
+    schema:addressCountry "Togo".

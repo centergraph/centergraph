@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gina";
+    schema:familyName "Mertz";
+    schema:birthDate "1944-05-07"^^xsd:date;
+    schema:address _:b5667.
+_:b5667 a schema:PostalAddress;
+    schema:streetAddress "Okey Light";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Tamiami";
+    schema:postalCode "21022-9777";
+    schema:addressCountry "Martinique".

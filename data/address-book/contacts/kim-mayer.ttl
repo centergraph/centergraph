@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kim";
+    schema:familyName "Mayer";
+    schema:birthDate "1955-10-11"^^xsd:date;
+    schema:address _:b3266.
+_:b3266 a schema:PostalAddress;
+    schema:streetAddress "E South Street";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Cummingsworth";
+    schema:postalCode "41864";
+    schema:addressCountry "French Southern Territories".

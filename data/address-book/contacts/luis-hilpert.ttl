@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Luis";
+    schema:familyName "Hilpert";
+    schema:birthDate "1963-09-30"^^xsd:date;
+    schema:address _:b32.
+_:b32 a schema:PostalAddress;
+    schema:streetAddress "Veterans Memorial Drive";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Theresefurt";
+    schema:postalCode "73041-3798";
+    schema:addressCountry "Montenegro".

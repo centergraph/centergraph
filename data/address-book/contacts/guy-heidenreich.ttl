@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Guy";
+    schema:familyName "Heidenreich";
+    schema:birthDate "1980-03-08"^^xsd:date;
+    schema:address _:b3238.
+_:b3238 a schema:PostalAddress;
+    schema:streetAddress "Thurman Street";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Blandaboro";
+    schema:postalCode "98886";
+    schema:addressCountry "Sudan".

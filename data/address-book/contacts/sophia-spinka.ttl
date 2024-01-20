@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sophia";
+    schema:familyName "Spinka";
+    schema:birthDate "1981-06-24"^^xsd:date;
+    schema:address _:b4369.
+_:b4369 a schema:PostalAddress;
+    schema:streetAddress "Aniyah Square";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "East Natasha";
+    schema:postalCode "15448-9418";
+    schema:addressCountry "Guyana".

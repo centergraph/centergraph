@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terri";
+    schema:familyName "Heaney";
+    schema:birthDate "1956-09-05"^^xsd:date;
+    schema:address _:b2708.
+_:b2708 a schema:PostalAddress;
+    schema:streetAddress "Nolan Lake";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "New Brycehaven";
+    schema:postalCode "10612";
+    schema:addressCountry "Curacao".

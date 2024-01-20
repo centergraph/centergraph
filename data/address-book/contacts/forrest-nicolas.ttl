@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Forrest";
+    schema:familyName "Nicolas";
+    schema:birthDate "1984-03-24"^^xsd:date;
+    schema:address _:b9544.
+_:b9544 a schema:PostalAddress;
+    schema:streetAddress "Marsh Lane";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Casperport";
+    schema:postalCode "82040-4022";
+    schema:addressCountry "Latvia".

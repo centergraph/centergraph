@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bertha";
+    schema:familyName "Becker";
+    schema:birthDate "1975-02-20"^^xsd:date;
+    schema:address _:b4430.
+_:b4430 a schema:PostalAddress;
+    schema:streetAddress "Leonel Vista";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Port Mozelle";
+    schema:postalCode "09578";
+    schema:addressCountry "Egypt".

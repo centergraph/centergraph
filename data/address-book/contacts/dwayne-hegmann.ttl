@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dwayne";
+    schema:familyName "Hegmann";
+    schema:birthDate "1981-01-21"^^xsd:date;
+    schema:address _:b6778.
+_:b6778 a schema:PostalAddress;
+    schema:streetAddress "Kunde Camp";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Ornfield";
+    schema:postalCode "94847-6131";
+    schema:addressCountry "Slovenia".

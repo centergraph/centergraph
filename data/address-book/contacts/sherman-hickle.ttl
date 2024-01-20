@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sherman";
+    schema:familyName "Hickle";
+    schema:birthDate "1946-07-19"^^xsd:date;
+    schema:address _:b6314.
+_:b6314 a schema:PostalAddress;
+    schema:streetAddress "Hartmann Stream";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "New Darrin";
+    schema:postalCode "55973";
+    schema:addressCountry "Antarctica".

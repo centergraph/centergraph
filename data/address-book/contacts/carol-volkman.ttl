@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carol";
+    schema:familyName "Volkman";
+    schema:birthDate "1945-03-08"^^xsd:date;
+    schema:address _:b3277.
+_:b3277 a schema:PostalAddress;
+    schema:streetAddress "Aspen Close";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "New Therese";
+    schema:postalCode "54725-1244";
+    schema:addressCountry "Suriname".

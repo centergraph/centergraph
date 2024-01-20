@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lois";
+    schema:familyName "Kunze";
+    schema:birthDate "2000-03-24"^^xsd:date;
+    schema:address _:b3140.
+_:b3140 a schema:PostalAddress;
+    schema:streetAddress "Candelario Neck";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Cape Coral";
+    schema:postalCode "60950-7731";
+    schema:addressCountry "Nauru".

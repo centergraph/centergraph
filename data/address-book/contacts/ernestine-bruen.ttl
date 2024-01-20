@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ernestine";
+    schema:familyName "Bruen";
+    schema:birthDate "1984-10-05"^^xsd:date;
+    schema:address _:b1044.
+_:b1044 a schema:PostalAddress;
+    schema:streetAddress "W 1st Street";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "South Randall";
+    schema:postalCode "46741";
+    schema:addressCountry "Samoa".

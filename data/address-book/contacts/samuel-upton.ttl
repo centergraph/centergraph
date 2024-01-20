@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Samuel";
+    schema:familyName "Upton";
+    schema:birthDate "1964-02-13"^^xsd:date;
+    schema:address _:b9591.
+_:b9591 a schema:PostalAddress;
+    schema:streetAddress "Corkery Course";
+    schema:addressRegion "New York";
+    schema:addressLocality "Nayeliberg";
+    schema:postalCode "95790-5104";
+    schema:addressCountry "Italy".

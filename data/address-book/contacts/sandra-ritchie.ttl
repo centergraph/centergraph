@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sandra";
+    schema:familyName "Ritchie";
+    schema:birthDate "1947-02-09"^^xsd:date;
+    schema:address _:b6998.
+_:b6998 a schema:PostalAddress;
+    schema:streetAddress "Ryan Coves";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "South Felton";
+    schema:postalCode "14981";
+    schema:addressCountry "Vanuatu".

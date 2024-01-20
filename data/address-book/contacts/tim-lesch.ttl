@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tim";
+    schema:familyName "Lesch";
+    schema:birthDate "1954-11-13"^^xsd:date;
+    schema:address _:b5764.
+_:b5764 a schema:PostalAddress;
+    schema:streetAddress "S College Street";
+    schema:addressRegion "New York";
+    schema:addressLocality "South Elsieville";
+    schema:postalCode "72370-2856";
+    schema:addressCountry "Bolivia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ivan";
+    schema:familyName "Wehner";
+    schema:birthDate "2000-01-31"^^xsd:date;
+    schema:address _:b770.
+_:b770 a schema:PostalAddress;
+    schema:streetAddress "Valentina Pike";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "East Yazmin";
+    schema:postalCode "24174-5155";
+    schema:addressCountry "Saint Pierre and Miquelon".

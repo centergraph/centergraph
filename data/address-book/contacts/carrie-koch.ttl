@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carrie";
+    schema:familyName "Koch";
+    schema:birthDate "1987-06-22"^^xsd:date;
+    schema:address _:b3698.
+_:b3698 a schema:PostalAddress;
+    schema:streetAddress "Monroe Street";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Sheldonberg";
+    schema:postalCode "50489-2836";
+    schema:addressCountry "Northern Mariana Islands".

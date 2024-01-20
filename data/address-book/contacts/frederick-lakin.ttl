@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Frederick";
+    schema:familyName "Lakin";
+    schema:birthDate "1946-08-25"^^xsd:date;
+    schema:address _:b1286.
+_:b1286 a schema:PostalAddress;
+    schema:streetAddress "Cassin Lodge";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Port Tanner";
+    schema:postalCode "13819-2983";
+    schema:addressCountry "Nauru".

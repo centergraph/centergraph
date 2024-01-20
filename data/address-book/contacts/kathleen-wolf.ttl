@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kathleen";
+    schema:familyName "Wolf";
+    schema:birthDate "1958-05-18"^^xsd:date;
+    schema:address _:b142.
+_:b142 a schema:PostalAddress;
+    schema:streetAddress "Jaskolski Lakes";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "North Amely";
+    schema:postalCode "78749";
+    schema:addressCountry "Holy See (Vatican City State)".

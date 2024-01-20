@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Michael";
+    schema:familyName "Thiel";
+    schema:birthDate "1989-06-17"^^xsd:date;
+    schema:address _:b5478.
+_:b5478 a schema:PostalAddress;
+    schema:streetAddress "High Street";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Jeanieborough";
+    schema:postalCode "63084";
+    schema:addressCountry "Vietnam".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Salvatore";
+    schema:familyName "Schoen";
+    schema:birthDate "1985-09-13"^^xsd:date;
+    schema:address _:b5388.
+_:b5388 a schema:PostalAddress;
+    schema:streetAddress "Morar Wall";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Dachworth";
+    schema:postalCode "64645";
+    schema:addressCountry "Chile".

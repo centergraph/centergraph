@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jim";
+    schema:familyName "Gerlach";
+    schema:birthDate "2002-01-30"^^xsd:date;
+    schema:address _:b7435.
+_:b7435 a schema:PostalAddress;
+    schema:streetAddress "Treutel Ridges";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "New Jalyn";
+    schema:postalCode "57556";
+    schema:addressCountry "Christmas Island".

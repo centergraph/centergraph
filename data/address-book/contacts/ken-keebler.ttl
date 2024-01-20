@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ken";
+    schema:familyName "Keebler";
+    schema:birthDate "1983-11-26"^^xsd:date;
+    schema:address _:b4388.
+_:b4388 a schema:PostalAddress;
+    schema:streetAddress "Barton Crossing";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Ursulafort";
+    schema:postalCode "19107";
+    schema:addressCountry "Falkland Islands (Malvinas)".

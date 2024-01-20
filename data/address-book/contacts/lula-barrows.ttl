@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lula";
+    schema:familyName "Barrows";
+    schema:birthDate "1961-05-30"^^xsd:date;
+    schema:address _:b6814.
+_:b6814 a schema:PostalAddress;
+    schema:streetAddress "Sydney Plain";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Jorgebury";
+    schema:postalCode "62426";
+    schema:addressCountry "Greenland".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Debbie";
+    schema:familyName "Crona";
+    schema:birthDate "1953-07-11"^^xsd:date;
+    schema:address _:b7123.
+_:b7123 a schema:PostalAddress;
+    schema:streetAddress "Wood Street";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "New Monserrat";
+    schema:postalCode "20473";
+    schema:addressCountry "Montenegro".

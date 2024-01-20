@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Krystal";
+    schema:familyName "Daugherty";
+    schema:birthDate "1966-10-07"^^xsd:date;
+    schema:address _:b6201.
+_:b6201 a schema:PostalAddress;
+    schema:streetAddress "Jackson Street";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Port Nora";
+    schema:postalCode "11075";
+    schema:addressCountry "Malawi".

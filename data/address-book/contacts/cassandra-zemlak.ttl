@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cassandra";
+    schema:familyName "Zemlak";
+    schema:birthDate "1990-06-03"^^xsd:date;
+    schema:address _:b4060.
+_:b4060 a schema:PostalAddress;
+    schema:streetAddress "S 14th Street";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Fort Gail";
+    schema:postalCode "05832-3458";
+    schema:addressCountry "Finland".

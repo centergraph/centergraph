@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kellie";
+    schema:familyName "Ledner-Connelly";
+    schema:birthDate "1993-04-21"^^xsd:date;
+    schema:address _:b5929.
+_:b5929 a schema:PostalAddress;
+    schema:streetAddress "Devonte Trafficway";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Nathanialtown";
+    schema:postalCode "56326";
+    schema:addressCountry "Bhutan".

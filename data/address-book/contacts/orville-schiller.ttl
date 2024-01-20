@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Orville";
+    schema:familyName "Schiller";
+    schema:birthDate "1994-06-05"^^xsd:date;
+    schema:address _:b2236.
+_:b2236 a schema:PostalAddress;
+    schema:streetAddress "Johnpaul Ridge";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Mobile";
+    schema:postalCode "70296-5384";
+    schema:addressCountry "Tajikistan".

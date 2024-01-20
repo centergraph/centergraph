@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Robin";
+    schema:familyName "Shanahan";
+    schema:birthDate "1983-09-18"^^xsd:date;
+    schema:address _:b7425.
+_:b7425 a schema:PostalAddress;
+    schema:streetAddress "Station Road";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Tucson";
+    schema:postalCode "94748-5984";
+    schema:addressCountry "Thailand".

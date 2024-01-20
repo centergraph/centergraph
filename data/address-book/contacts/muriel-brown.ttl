@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Muriel";
+    schema:familyName "Brown";
+    schema:birthDate "1966-10-14"^^xsd:date;
+    schema:address _:b3471.
+_:b3471 a schema:PostalAddress;
+    schema:streetAddress "Elm Close";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Gradyfurt";
+    schema:postalCode "55022";
+    schema:addressCountry "Kenya".

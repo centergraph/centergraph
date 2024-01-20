@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shannon";
+    schema:familyName "Gottlieb";
+    schema:birthDate "1959-02-05"^^xsd:date;
+    schema:address _:b8771.
+_:b8771 a schema:PostalAddress;
+    schema:streetAddress "Eve Island";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Lake Chesterbury";
+    schema:postalCode "06271-3941";
+    schema:addressCountry "New Zealand".

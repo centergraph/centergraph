@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jessie";
+    schema:familyName "Nitzsche";
+    schema:birthDate "1969-04-16"^^xsd:date;
+    schema:address _:b3591.
+_:b3591 a schema:PostalAddress;
+    schema:streetAddress "Wunsch Freeway";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Bettyhaven";
+    schema:postalCode "89327";
+    schema:addressCountry "Togo".

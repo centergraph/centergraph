@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pablo";
+    schema:familyName "Dooley";
+    schema:birthDate "1978-04-11"^^xsd:date;
+    schema:address _:b9942.
+_:b9942 a schema:PostalAddress;
+    schema:streetAddress "Miller Forge";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "North Bradleyside";
+    schema:postalCode "47516-7338";
+    schema:addressCountry "India".

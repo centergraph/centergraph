@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Belinda";
+    schema:familyName "Becker";
+    schema:birthDate "1983-09-15"^^xsd:date;
+    schema:address _:b5401.
+_:b5401 a schema:PostalAddress;
+    schema:streetAddress "W Franklin Street";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Larkinfort";
+    schema:postalCode "80550";
+    schema:addressCountry "Andorra".

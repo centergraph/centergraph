@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doyle";
+    schema:familyName "Cassin";
+    schema:birthDate "1991-04-30"^^xsd:date;
+    schema:address _:b9395.
+_:b9395 a schema:PostalAddress;
+    schema:streetAddress "Nelson Road";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Juwantown";
+    schema:postalCode "09951-2369";
+    schema:addressCountry "Venezuela".

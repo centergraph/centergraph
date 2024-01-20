@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joann";
+    schema:familyName "Hane-King";
+    schema:birthDate "1985-07-08"^^xsd:date;
+    schema:address _:b5789.
+_:b5789 a schema:PostalAddress;
+    schema:streetAddress "W 5th Street";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "West Jack";
+    schema:postalCode "15232";
+    schema:addressCountry "Slovenia".

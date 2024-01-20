@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gayle";
+    schema:familyName "Nolan";
+    schema:birthDate "1992-04-12"^^xsd:date;
+    schema:address _:b7191.
+_:b7191 a schema:PostalAddress;
+    schema:streetAddress "Zieme Plain";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Nadertown";
+    schema:postalCode "15982";
+    schema:addressCountry "Mongolia".

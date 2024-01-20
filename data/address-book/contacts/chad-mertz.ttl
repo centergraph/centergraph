@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Chad";
+    schema:familyName "Mertz";
+    schema:birthDate "1972-11-25"^^xsd:date;
+    schema:address _:b8938.
+_:b8938 a schema:PostalAddress;
+    schema:streetAddress "Berge Forks";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Portland";
+    schema:postalCode "95168";
+    schema:addressCountry "Lithuania".

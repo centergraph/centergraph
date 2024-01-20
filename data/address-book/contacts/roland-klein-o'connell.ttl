@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roland";
+    schema:familyName "Klein-O'Connell";
+    schema:birthDate "1951-05-20"^^xsd:date;
+    schema:address _:b4469.
+_:b4469 a schema:PostalAddress;
+    schema:streetAddress "W 10th Street";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Hattiesburg";
+    schema:postalCode "43352";
+    schema:addressCountry "French Southern Territories".

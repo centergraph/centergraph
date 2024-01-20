@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bertha";
+    schema:familyName "Stehr";
+    schema:birthDate "1963-09-11"^^xsd:date;
+    schema:address _:b8201.
+_:b8201 a schema:PostalAddress;
+    schema:streetAddress "Luettgen Drive";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Gislasontown";
+    schema:postalCode "80808-2967";
+    schema:addressCountry "Niger".

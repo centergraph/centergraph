@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shane";
+    schema:familyName "Sauer";
+    schema:birthDate "1954-02-14"^^xsd:date;
+    schema:address _:b8138.
+_:b8138 a schema:PostalAddress;
+    schema:streetAddress "Gardner Mews";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Pollichberg";
+    schema:postalCode "36069-1920";
+    schema:addressCountry "Somalia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sharon";
+    schema:familyName "Kiehn";
+    schema:birthDate "1966-06-28"^^xsd:date;
+    schema:address _:b861.
+_:b861 a schema:PostalAddress;
+    schema:streetAddress "Dare Fork";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "West Monique";
+    schema:postalCode "62605";
+    schema:addressCountry "Slovakia".

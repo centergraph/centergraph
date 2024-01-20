@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marcella";
+    schema:familyName "Rempel";
+    schema:birthDate "1983-02-24"^^xsd:date;
+    schema:address _:b3196.
+_:b3196 a schema:PostalAddress;
+    schema:streetAddress "Esmeralda Oval";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "North Gillian";
+    schema:postalCode "38625-4069";
+    schema:addressCountry "Iraq".

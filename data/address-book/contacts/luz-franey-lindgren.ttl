@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Luz";
+    schema:familyName "Franey-Lindgren";
+    schema:birthDate "1970-09-03"^^xsd:date;
+    schema:address _:b3259.
+_:b3259 a schema:PostalAddress;
+    schema:streetAddress "Main Street";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "West Mckenzie";
+    schema:postalCode "42417";
+    schema:addressCountry "Gabon".

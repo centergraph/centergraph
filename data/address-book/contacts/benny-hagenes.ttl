@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Benny";
+    schema:familyName "Hagenes";
+    schema:birthDate "1985-12-10"^^xsd:date;
+    schema:address _:b2825.
+_:b2825 a schema:PostalAddress;
+    schema:streetAddress "Bath Road";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Montebello";
+    schema:postalCode "60315-6079";
+    schema:addressCountry "Nigeria".

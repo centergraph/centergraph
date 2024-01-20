@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lauren";
+    schema:familyName "McGlynn";
+    schema:birthDate "1947-09-13"^^xsd:date;
+    schema:address _:b7525.
+_:b7525 a schema:PostalAddress;
+    schema:streetAddress "Braun Landing";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Jonatanside";
+    schema:postalCode "93067";
+    schema:addressCountry "Saudi Arabia".

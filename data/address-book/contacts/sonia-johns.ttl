@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sonia";
+    schema:familyName "Johns";
+    schema:birthDate "1965-08-29"^^xsd:date;
+    schema:address _:b6854.
+_:b6854 a schema:PostalAddress;
+    schema:streetAddress "Lebsack Crossroad";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Kasandraburgh";
+    schema:postalCode "51607-6080";
+    schema:addressCountry "Jersey".

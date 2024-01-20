@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelli";
+    schema:familyName "Brekke";
+    schema:birthDate "1949-09-17"^^xsd:date;
+    schema:address _:b2956.
+_:b2956 a schema:PostalAddress;
+    schema:streetAddress "Willms Garden";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Fort Hassan";
+    schema:postalCode "05408";
+    schema:addressCountry "Moldova".

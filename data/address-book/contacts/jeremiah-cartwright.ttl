@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeremiah";
+    schema:familyName "Cartwright";
+    schema:birthDate "1984-04-25"^^xsd:date;
+    schema:address _:b8051.
+_:b8051 a schema:PostalAddress;
+    schema:streetAddress "Kassulke Villages";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Lake Genesiston";
+    schema:postalCode "93554";
+    schema:addressCountry "Ukraine".

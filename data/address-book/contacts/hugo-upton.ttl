@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hugo";
+    schema:familyName "Upton";
+    schema:birthDate "1985-12-27"^^xsd:date;
+    schema:address _:b8363.
+_:b8363 a schema:PostalAddress;
+    schema:streetAddress "Smith Stream";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Fort Arthurburgh";
+    schema:postalCode "29746";
+    schema:addressCountry "Dominican Republic".

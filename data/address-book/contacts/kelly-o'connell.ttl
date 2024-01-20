@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelly";
+    schema:familyName "O'Connell";
+    schema:birthDate "1952-06-20"^^xsd:date;
+    schema:address _:b2370.
+_:b2370 a schema:PostalAddress;
+    schema:streetAddress "Schuster Avenue";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "McKinney";
+    schema:postalCode "15839-1300";
+    schema:addressCountry "American Samoa".

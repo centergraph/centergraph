@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rachael";
+    schema:familyName "Hodkiewicz";
+    schema:birthDate "1952-06-20"^^xsd:date;
+    schema:address _:b1941.
+_:b1941 a schema:PostalAddress;
+    schema:streetAddress "Abelardo Crossing";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "North Cristopher";
+    schema:postalCode "54320-9111";
+    schema:addressCountry "Saint Kitts and Nevis".

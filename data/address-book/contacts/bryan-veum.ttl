@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bryan";
+    schema:familyName "Veum";
+    schema:birthDate "2004-02-10"^^xsd:date;
+    schema:address _:b9908.
+_:b9908 a schema:PostalAddress;
+    schema:streetAddress "King Street";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Kallieside";
+    schema:postalCode "66043";
+    schema:addressCountry "Montserrat".

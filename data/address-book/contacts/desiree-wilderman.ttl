@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Desiree";
+    schema:familyName "Wilderman";
+    schema:birthDate "1975-08-26"^^xsd:date;
+    schema:address _:b6616.
+_:b6616 a schema:PostalAddress;
+    schema:streetAddress "Harley Plaza";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Hilllfurt";
+    schema:postalCode "91493";
+    schema:addressCountry "Cote d'Ivoire".

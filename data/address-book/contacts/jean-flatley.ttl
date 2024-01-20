@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jean";
+    schema:familyName "Flatley";
+    schema:birthDate "1963-02-18"^^xsd:date;
+    schema:address _:b372.
+_:b372 a schema:PostalAddress;
+    schema:streetAddress "Lind Springs";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "West Tate";
+    schema:postalCode "18112";
+    schema:addressCountry "South Africa".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marcus";
+    schema:familyName "Rogahn";
+    schema:birthDate "1950-10-08"^^xsd:date;
+    schema:address _:b5487.
+_:b5487 a schema:PostalAddress;
+    schema:streetAddress "Padberg Manor";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Raynorstead";
+    schema:postalCode "96453-4048";
+    schema:addressCountry "San Marino".

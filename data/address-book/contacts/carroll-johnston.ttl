@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carroll";
+    schema:familyName "Johnston";
+    schema:birthDate "1984-10-07"^^xsd:date;
+    schema:address _:b9863.
+_:b9863 a schema:PostalAddress;
+    schema:streetAddress "College Avenue";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Lake Neomaside";
+    schema:postalCode "81800-2375";
+    schema:addressCountry "Falkland Islands (Malvinas)".

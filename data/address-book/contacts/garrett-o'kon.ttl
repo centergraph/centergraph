@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Garrett";
+    schema:familyName "O'Kon";
+    schema:birthDate "1969-01-26"^^xsd:date;
+    schema:address _:b1748.
+_:b1748 a schema:PostalAddress;
+    schema:streetAddress "Princes Street";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Effertzhaven";
+    schema:postalCode "82222-3245";
+    schema:addressCountry "Norfolk Island".

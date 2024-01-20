@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Salvatore";
+    schema:familyName "Corwin-Buckridge";
+    schema:birthDate "1946-03-01"^^xsd:date;
+    schema:address _:b6288.
+_:b6288 a schema:PostalAddress;
+    schema:streetAddress "Zboncak Walks";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Lake Johnnystad";
+    schema:postalCode "73923";
+    schema:addressCountry "Palau".

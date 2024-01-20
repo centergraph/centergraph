@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Homer";
+    schema:familyName "Lakin";
+    schema:birthDate "1976-05-02"^^xsd:date;
+    schema:address _:b2213.
+_:b2213 a schema:PostalAddress;
+    schema:streetAddress "Senger Mount";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "New Lelahside";
+    schema:postalCode "42606-0391";
+    schema:addressCountry "Ukraine".

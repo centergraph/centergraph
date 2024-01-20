@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Francisco";
+    schema:familyName "Moore";
+    schema:birthDate "1973-02-19"^^xsd:date;
+    schema:address _:b4766.
+_:b4766 a schema:PostalAddress;
+    schema:streetAddress "Heidenreich Fork";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "West Arthurborough";
+    schema:postalCode "74140";
+    schema:addressCountry "Serbia".

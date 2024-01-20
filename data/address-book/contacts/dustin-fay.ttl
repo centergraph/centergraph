@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dustin";
+    schema:familyName "Fay";
+    schema:birthDate "1977-07-06"^^xsd:date;
+    schema:address _:b3950.
+_:b3950 a schema:PostalAddress;
+    schema:streetAddress "Alfred Street";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Hawthorne";
+    schema:postalCode "53875-2569";
+    schema:addressCountry "American Samoa".

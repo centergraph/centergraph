@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jasmine";
+    schema:familyName "Franecki";
+    schema:birthDate "1960-07-03"^^xsd:date;
+    schema:address _:b8751.
+_:b8751 a schema:PostalAddress;
+    schema:streetAddress "Mann Lodge";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Anselside";
+    schema:postalCode "97632";
+    schema:addressCountry "Guinea-Bissau".

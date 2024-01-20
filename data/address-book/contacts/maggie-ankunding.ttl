@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Maggie";
+    schema:familyName "Ankunding";
+    schema:birthDate "1954-03-14"^^xsd:date;
+    schema:address _:b5619.
+_:b5619 a schema:PostalAddress;
+    schema:streetAddress "Alek Divide";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Steuberburgh";
+    schema:postalCode "18330";
+    schema:addressCountry "Belarus".

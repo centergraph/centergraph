@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bernice";
+    schema:familyName "Schamberger";
+    schema:birthDate "1972-03-14"^^xsd:date;
+    schema:address _:b901.
+_:b901 a schema:PostalAddress;
+    schema:streetAddress "Meadow Lane";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Tayaport";
+    schema:postalCode "08954";
+    schema:addressCountry "Gabon".

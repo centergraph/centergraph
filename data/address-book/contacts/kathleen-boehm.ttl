@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kathleen";
+    schema:familyName "Boehm";
+    schema:birthDate "1993-05-25"^^xsd:date;
+    schema:address _:b996.
+_:b996 a schema:PostalAddress;
+    schema:streetAddress "The Paddocks";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Kautzerstad";
+    schema:postalCode "55003-1161";
+    schema:addressCountry "Thailand".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelley";
+    schema:familyName "Douglas";
+    schema:birthDate "1984-07-17"^^xsd:date;
+    schema:address _:b3211.
+_:b3211 a schema:PostalAddress;
+    schema:streetAddress "Victoria Road";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "East Lukas";
+    schema:postalCode "42756-7316";
+    schema:addressCountry "Lebanon".

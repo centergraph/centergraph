@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Michelle";
+    schema:familyName "Auer";
+    schema:birthDate "1984-05-10"^^xsd:date;
+    schema:address _:b9104.
+_:b9104 a schema:PostalAddress;
+    schema:streetAddress "Wilderman Wells";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Millerfort";
+    schema:postalCode "01890";
+    schema:addressCountry "Cuba".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosemarie";
+    schema:familyName "Fay";
+    schema:birthDate "1969-02-28"^^xsd:date;
+    schema:address _:b5614.
+_:b5614 a schema:PostalAddress;
+    schema:streetAddress "Boyer Throughway";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Fort Enochstad";
+    schema:postalCode "49970";
+    schema:addressCountry "Martinique".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Miguel";
+    schema:familyName "Quitzon";
+    schema:birthDate "1969-05-28"^^xsd:date;
+    schema:address _:b8561.
+_:b8561 a schema:PostalAddress;
+    schema:streetAddress "King Terrace";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "San Rafael";
+    schema:postalCode "49630-2613";
+    schema:addressCountry "Russian Federation".

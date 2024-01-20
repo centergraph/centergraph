@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elena";
+    schema:familyName "Windler";
+    schema:birthDate "1973-06-02"^^xsd:date;
+    schema:address _:b9846.
+_:b9846 a schema:PostalAddress;
+    schema:streetAddress "River Street";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "North Douglas";
+    schema:postalCode "93127-1108";
+    schema:addressCountry "Guernsey".

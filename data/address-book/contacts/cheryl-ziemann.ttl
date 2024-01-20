@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cheryl";
+    schema:familyName "Ziemann";
+    schema:birthDate "1972-02-21"^^xsd:date;
+    schema:address _:b9187.
+_:b9187 a schema:PostalAddress;
+    schema:streetAddress "Grant Shores";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Miami Gardens";
+    schema:postalCode "92756";
+    schema:addressCountry "Norfolk Island".

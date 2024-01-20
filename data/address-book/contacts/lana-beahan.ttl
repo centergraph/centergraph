@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lana";
+    schema:familyName "Beahan";
+    schema:birthDate "1956-11-27"^^xsd:date;
+    schema:address _:b9386.
+_:b9386 a schema:PostalAddress;
+    schema:streetAddress "Bailey Mall";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "North Rita";
+    schema:postalCode "08249";
+    schema:addressCountry "Portugal".

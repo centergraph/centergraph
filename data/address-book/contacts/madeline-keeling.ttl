@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Madeline";
+    schema:familyName "Keeling";
+    schema:birthDate "1958-03-25"^^xsd:date;
+    schema:address _:b874.
+_:b874 a schema:PostalAddress;
+    schema:streetAddress "Tanner Turnpike";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "South Jadyn";
+    schema:postalCode "33107-4958";
+    schema:addressCountry "Hong Kong".

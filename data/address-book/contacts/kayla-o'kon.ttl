@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kayla";
+    schema:familyName "O'Kon";
+    schema:birthDate "1973-03-13"^^xsd:date;
+    schema:address _:b5005.
+_:b5005 a schema:PostalAddress;
+    schema:streetAddress "2nd Avenue";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Leonelfurt";
+    schema:postalCode "20207-8217";
+    schema:addressCountry "Guinea".

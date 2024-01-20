@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kara";
+    schema:familyName "Lebsack";
+    schema:birthDate "1972-08-06"^^xsd:date;
+    schema:address _:b5239.
+_:b5239 a schema:PostalAddress;
+    schema:streetAddress "Mary Street";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Port Romaine";
+    schema:postalCode "19891";
+    schema:addressCountry "Saint Helena".

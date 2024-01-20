@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gary";
+    schema:familyName "Ruecker";
+    schema:birthDate "1964-10-31"^^xsd:date;
+    schema:address _:b7392.
+_:b7392 a schema:PostalAddress;
+    schema:streetAddress "Lind Ridge";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Carson City";
+    schema:postalCode "15674-2345";
+    schema:addressCountry "Bouvet Island".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sarah";
+    schema:familyName "Ferry";
+    schema:birthDate "1952-07-19"^^xsd:date;
+    schema:address _:b4230.
+_:b4230 a schema:PostalAddress;
+    schema:streetAddress "Garland Brook";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "East Lansing";
+    schema:postalCode "45048";
+    schema:addressCountry "Honduras".

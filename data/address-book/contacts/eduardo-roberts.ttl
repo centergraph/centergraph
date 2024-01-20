@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eduardo";
+    schema:familyName "Roberts";
+    schema:birthDate "1981-08-16"^^xsd:date;
+    schema:address _:b3001.
+_:b3001 a schema:PostalAddress;
+    schema:streetAddress "Benny Trafficway";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Lake Cristianfurt";
+    schema:postalCode "48610";
+    schema:addressCountry "Philippines".

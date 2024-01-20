@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Warren";
+    schema:familyName "Lubowitz";
+    schema:birthDate "1973-03-22"^^xsd:date;
+    schema:address _:b9258.
+_:b9258 a schema:PostalAddress;
+    schema:streetAddress "Corkery Prairie";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Upland";
+    schema:postalCode "20905-5687";
+    schema:addressCountry "Mauritania".

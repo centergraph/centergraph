@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Robyn";
+    schema:familyName "Farrell";
+    schema:birthDate "1987-01-02"^^xsd:date;
+    schema:address _:b9236.
+_:b9236 a schema:PostalAddress;
+    schema:streetAddress "Manor Road";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "East Rubenborough";
+    schema:postalCode "05982-4620";
+    schema:addressCountry "Falkland Islands (Malvinas)".

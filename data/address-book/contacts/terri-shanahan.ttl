@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terri";
+    schema:familyName "Shanahan";
+    schema:birthDate "1959-03-17"^^xsd:date;
+    schema:address _:b6958.
+_:b6958 a schema:PostalAddress;
+    schema:streetAddress "Reese Curve";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Lake Llewellyn";
+    schema:postalCode "79253";
+    schema:addressCountry "Seychelles".

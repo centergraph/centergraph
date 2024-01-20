@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Van";
+    schema:familyName "Romaguera";
+    schema:birthDate "1973-11-22"^^xsd:date;
+    schema:address _:b624.
+_:b624 a schema:PostalAddress;
+    schema:streetAddress "Cherry Street";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Lake Elsinore";
+    schema:postalCode "66360";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

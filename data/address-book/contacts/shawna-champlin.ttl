@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shawna";
+    schema:familyName "Champlin";
+    schema:birthDate "1971-06-14"^^xsd:date;
+    schema:address _:b5077.
+_:b5077 a schema:PostalAddress;
+    schema:streetAddress "Malika Knolls";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "North Elise";
+    schema:postalCode "67281-7945";
+    schema:addressCountry "Comoros".

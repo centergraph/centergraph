@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lloyd";
+    schema:familyName "Shields-Runolfsson";
+    schema:birthDate "1971-02-13"^^xsd:date;
+    schema:address _:b440.
+_:b440 a schema:PostalAddress;
+    schema:streetAddress "Victoria Street";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Rocklin";
+    schema:postalCode "54238";
+    schema:addressCountry "South Georgia and the South Sandwich Islands".

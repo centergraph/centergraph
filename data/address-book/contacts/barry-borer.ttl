@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Barry";
+    schema:familyName "Borer";
+    schema:birthDate "1975-12-15"^^xsd:date;
+    schema:address _:b9441.
+_:b9441 a schema:PostalAddress;
+    schema:streetAddress "Jack Cliffs";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Daniellebury";
+    schema:postalCode "61326-1679";
+    schema:addressCountry "Turkmenistan".

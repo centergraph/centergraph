@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Warren";
     schema:familyName "Schneider";
-    schema:birthDate "1994-07-09"^^xsd:date;
-    schema:address _:b767.
-_:b767 a schema:PostalAddress;
-    schema:streetAddress "Manor Road";
-    schema:addressRegion "North Carolina";
-    schema:addressLocality "Port Joanneshire";
-    schema:postalCode "11597";
-    schema:addressCountry "Uruguay".
+    schema:birthDate "1972-04-12"^^xsd:date;
+    schema:address _:b5849.
+_:b5849 a schema:PostalAddress;
+    schema:streetAddress "Lang Lights";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "New Kip";
+    schema:postalCode "46280-3090";
+    schema:addressCountry "Chad".

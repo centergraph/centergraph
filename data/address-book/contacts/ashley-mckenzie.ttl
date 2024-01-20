@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ashley";
+    schema:familyName "McKenzie";
+    schema:birthDate "1997-04-23"^^xsd:date;
+    schema:address _:b5729.
+_:b5729 a schema:PostalAddress;
+    schema:streetAddress "Medhurst Fort";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Schinnerland";
+    schema:postalCode "12342";
+    schema:addressCountry "Tunisia".

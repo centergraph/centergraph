@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Karla";
+    schema:familyName "Runolfsson";
+    schema:birthDate "1949-11-04"^^xsd:date;
+    schema:address _:b3738.
+_:b3738 a schema:PostalAddress;
+    schema:streetAddress "Hawthorn Avenue";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Linneaville";
+    schema:postalCode "33598-5254";
+    schema:addressCountry "Qatar".

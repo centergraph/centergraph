@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Victor";
+    schema:familyName "Crona";
+    schema:birthDate "1991-09-12"^^xsd:date;
+    schema:address _:b331.
+_:b331 a schema:PostalAddress;
+    schema:streetAddress "Pat Row";
+    schema:addressRegion "California";
+    schema:addressLocality "Jaysonbury";
+    schema:postalCode "60206-9387";
+    schema:addressCountry "Jersey".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Randal";
+    schema:familyName "Hartmann";
+    schema:birthDate "1987-04-26"^^xsd:date;
+    schema:address _:b4182.
+_:b4182 a schema:PostalAddress;
+    schema:streetAddress "Market Square";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Pharr";
+    schema:postalCode "02039";
+    schema:addressCountry "Zimbabwe".

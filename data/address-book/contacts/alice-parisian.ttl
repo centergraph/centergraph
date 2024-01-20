@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alice";
+    schema:familyName "Parisian";
+    schema:birthDate "2003-03-31"^^xsd:date;
+    schema:address _:b1232.
+_:b1232 a schema:PostalAddress;
+    schema:streetAddress "Otha Trafficway";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "South Zackeryborough";
+    schema:postalCode "86527";
+    schema:addressCountry "Spain".

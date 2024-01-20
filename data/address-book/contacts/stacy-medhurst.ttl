@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stacy";
+    schema:familyName "Medhurst";
+    schema:birthDate "1982-09-17"^^xsd:date;
+    schema:address _:b7276.
+_:b7276 a schema:PostalAddress;
+    schema:streetAddress "Bergstrom Mountains";
+    schema:addressRegion "Montana";
+    schema:addressLocality "St. Louis";
+    schema:postalCode "76838";
+    schema:addressCountry "Saint Lucia".

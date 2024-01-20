@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jill";
+    schema:familyName "Champlin";
+    schema:birthDate "1982-10-23"^^xsd:date;
+    schema:address _:b6145.
+_:b6145 a schema:PostalAddress;
+    schema:streetAddress "Post Road";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Schmittport";
+    schema:postalCode "47708-6198";
+    schema:addressCountry "Cape Verde".

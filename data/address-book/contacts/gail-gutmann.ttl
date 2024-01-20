@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gail";
+    schema:familyName "Gutmann";
+    schema:birthDate "1950-11-13"^^xsd:date;
+    schema:address _:b6150.
+_:b6150 a schema:PostalAddress;
+    schema:streetAddress "Lawson Forks";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "South Royborough";
+    schema:postalCode "26891-6143";
+    schema:addressCountry "Belgium".

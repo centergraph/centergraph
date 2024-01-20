@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Meghan";
+    schema:familyName "Kemmer";
+    schema:birthDate "1968-12-10"^^xsd:date;
+    schema:address _:b7547.
+_:b7547 a schema:PostalAddress;
+    schema:streetAddress "Yasmin Place";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Ceres";
+    schema:postalCode "65559-8575";
+    schema:addressCountry "Honduras".

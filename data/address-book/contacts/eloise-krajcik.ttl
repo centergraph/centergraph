@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eloise";
+    schema:familyName "Krajcik";
+    schema:birthDate "1990-09-03"^^xsd:date;
+    schema:address _:b6342.
+_:b6342 a schema:PostalAddress;
+    schema:streetAddress "Carroll Flat";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Lake Jamisonton";
+    schema:postalCode "01574-8634";
+    schema:addressCountry "Kenya".

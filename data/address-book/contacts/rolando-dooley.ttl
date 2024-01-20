@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rolando";
+    schema:familyName "Dooley";
+    schema:birthDate "1980-05-03"^^xsd:date;
+    schema:address _:b1929.
+_:b1929 a schema:PostalAddress;
+    schema:streetAddress "Candice Highway";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Ankundingside";
+    schema:postalCode "94165-4974";
+    schema:addressCountry "Portugal".

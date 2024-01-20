@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Angela";
+    schema:familyName "Harris";
+    schema:birthDate "1989-01-10"^^xsd:date;
+    schema:address _:b918.
+_:b918 a schema:PostalAddress;
+    schema:streetAddress "Cruickshank Road";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Jacintoport";
+    schema:postalCode "30385";
+    schema:addressCountry "Thailand".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lee";
+    schema:familyName "Farrell";
+    schema:birthDate "1963-03-07"^^xsd:date;
+    schema:address _:b8079.
+_:b8079 a schema:PostalAddress;
+    schema:streetAddress "Greenville Road";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "North Charleston";
+    schema:postalCode "73134";
+    schema:addressCountry "Cameroon".

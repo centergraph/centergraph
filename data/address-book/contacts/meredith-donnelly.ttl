@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Meredith";
+    schema:familyName "Donnelly";
+    schema:birthDate "2000-07-30"^^xsd:date;
+    schema:address _:b1379.
+_:b1379 a schema:PostalAddress;
+    schema:streetAddress "Schuster Lake";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Raufurt";
+    schema:postalCode "10677-1081";
+    schema:addressCountry "Aruba".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Genevieve";
+    schema:familyName "Kuvalis";
+    schema:birthDate "1998-07-25"^^xsd:date;
+    schema:address _:b4944.
+_:b4944 a schema:PostalAddress;
+    schema:streetAddress "Hartmann Shoals";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Huelsstad";
+    schema:postalCode "51228";
+    schema:addressCountry "Gibraltar".

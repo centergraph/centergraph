@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elvira";
+    schema:familyName "Baumbach";
+    schema:birthDate "1948-11-18"^^xsd:date;
+    schema:address _:b1098.
+_:b1098 a schema:PostalAddress;
+    schema:streetAddress "Schultz Haven";
+    schema:addressRegion "Maine";
+    schema:addressLocality "South Phyllismouth";
+    schema:postalCode "02081-6233";
+    schema:addressCountry "Grenada".

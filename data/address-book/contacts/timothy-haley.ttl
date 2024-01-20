@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Timothy";
+    schema:familyName "Haley";
+    schema:birthDate "1950-02-04"^^xsd:date;
+    schema:address _:b1429.
+_:b1429 a schema:PostalAddress;
+    schema:streetAddress "Tracey Pass";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Boise City";
+    schema:postalCode "77531-6686";
+    schema:addressCountry "Haiti".

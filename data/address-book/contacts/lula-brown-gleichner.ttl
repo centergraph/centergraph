@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lula";
+    schema:familyName "Brown-Gleichner";
+    schema:birthDate "1984-03-28"^^xsd:date;
+    schema:address _:b3401.
+_:b3401 a schema:PostalAddress;
+    schema:streetAddress "Okuneva Burg";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "New Bettyecester";
+    schema:postalCode "91065";
+    schema:addressCountry "Central African Republic".

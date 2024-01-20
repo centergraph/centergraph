@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pat";
+    schema:familyName "Casper";
+    schema:birthDate "1977-11-02"^^xsd:date;
+    schema:address _:b3646.
+_:b3646 a schema:PostalAddress;
+    schema:streetAddress "Mosciski Villages";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "North Camrynstead";
+    schema:postalCode "78627-1984";
+    schema:addressCountry "Bangladesh".

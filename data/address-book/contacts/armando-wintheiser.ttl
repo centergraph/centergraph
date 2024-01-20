@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Armando";
+    schema:familyName "Wintheiser";
+    schema:birthDate "1962-11-23"^^xsd:date;
+    schema:address _:b8924.
+_:b8924 a schema:PostalAddress;
+    schema:streetAddress "Flossie Freeway";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Oberbrunnerberg";
+    schema:postalCode "64160-8938";
+    schema:addressCountry "Greece".

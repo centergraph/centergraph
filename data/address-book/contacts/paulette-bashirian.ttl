@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Paulette";
+    schema:familyName "Bashirian";
+    schema:birthDate "1975-01-23"^^xsd:date;
+    schema:address _:b3409.
+_:b3409 a schema:PostalAddress;
+    schema:streetAddress "Greenwood Road";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "East Sibyl";
+    schema:postalCode "96534-1861";
+    schema:addressCountry "Guinea".

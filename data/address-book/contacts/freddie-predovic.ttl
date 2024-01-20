@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Freddie";
+    schema:familyName "Predovic";
+    schema:birthDate "1957-11-08"^^xsd:date;
+    schema:address _:b2965.
+_:b2965 a schema:PostalAddress;
+    schema:streetAddress "Grady Views";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Angelinamouth";
+    schema:postalCode "22550";
+    schema:addressCountry "Afghanistan".

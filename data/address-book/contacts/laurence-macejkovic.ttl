@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laurence";
+    schema:familyName "Macejkovic";
+    schema:birthDate "1973-12-09"^^xsd:date;
+    schema:address _:b8400.
+_:b8400 a schema:PostalAddress;
+    schema:streetAddress "Eleazar Key";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Port Rexland";
+    schema:postalCode "85951";
+    schema:addressCountry "Kuwait".

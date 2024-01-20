@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Delbert";
+    schema:familyName "MacGyver";
+    schema:birthDate "1965-04-09"^^xsd:date;
+    schema:address _:b8903.
+_:b8903 a schema:PostalAddress;
+    schema:streetAddress "Hazle Key";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Cheektowaga";
+    schema:postalCode "20795-9339";
+    schema:addressCountry "Bosnia and Herzegovina".

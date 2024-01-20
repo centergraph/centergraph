@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Candice";
+    schema:familyName "Hickle";
+    schema:birthDate "1957-12-08"^^xsd:date;
+    schema:address _:b6107.
+_:b6107 a schema:PostalAddress;
+    schema:streetAddress "Wellington Road";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "New Samantha";
+    schema:postalCode "90654-6570";
+    schema:addressCountry "Brunei Darussalam".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Constance";
+    schema:familyName "Okuneva";
+    schema:birthDate "1965-12-20"^^xsd:date;
+    schema:address _:b9286.
+_:b9286 a schema:PostalAddress;
+    schema:streetAddress "S 3rd Street";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Donhaven";
+    schema:postalCode "55765-2238";
+    schema:addressCountry "Anguilla".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Arthur";
+    schema:familyName "Roberts";
+    schema:birthDate "1975-05-09"^^xsd:date;
+    schema:address _:b7724.
+_:b7724 a schema:PostalAddress;
+    schema:streetAddress "Cassin Villages";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Lexington-Fayette";
+    schema:postalCode "62115";
+    schema:addressCountry "Dominica".

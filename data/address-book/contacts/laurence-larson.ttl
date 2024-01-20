@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laurence";
+    schema:familyName "Larson";
+    schema:birthDate "1953-07-21"^^xsd:date;
+    schema:address _:b45.
+_:b45 a schema:PostalAddress;
+    schema:streetAddress "Tavares Fork";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Kameronberg";
+    schema:postalCode "36602";
+    schema:addressCountry "India".

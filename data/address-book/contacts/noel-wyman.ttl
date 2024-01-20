@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Noel";
+    schema:familyName "Wyman";
+    schema:birthDate "1958-12-11"^^xsd:date;
+    schema:address _:b2788.
+_:b2788 a schema:PostalAddress;
+    schema:streetAddress "Elinor Forest";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Port Viviane";
+    schema:postalCode "12467";
+    schema:addressCountry "Faroe Islands".

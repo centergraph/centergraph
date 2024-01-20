@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carl";
+    schema:familyName "Streich";
+    schema:birthDate "1967-02-25"^^xsd:date;
+    schema:address _:b3473.
+_:b3473 a schema:PostalAddress;
+    schema:streetAddress "Purdy Wells";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Nicoletteview";
+    schema:postalCode "39280-7518";
+    schema:addressCountry "Rwanda".

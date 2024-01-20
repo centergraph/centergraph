@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emilio";
+    schema:familyName "Graham";
+    schema:birthDate "1953-03-11"^^xsd:date;
+    schema:address _:b5266.
+_:b5266 a schema:PostalAddress;
+    schema:streetAddress "Kohler Row";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Ferryworth";
+    schema:postalCode "85855";
+    schema:addressCountry "Guatemala".

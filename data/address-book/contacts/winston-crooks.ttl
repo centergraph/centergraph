@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Winston";
+    schema:familyName "Crooks";
+    schema:birthDate "1946-01-17"^^xsd:date;
+    schema:address _:b2987.
+_:b2987 a schema:PostalAddress;
+    schema:streetAddress "Danial Villages";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "College Station";
+    schema:postalCode "03277";
+    schema:addressCountry "Central African Republic".

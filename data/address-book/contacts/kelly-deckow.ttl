@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelly";
+    schema:familyName "Deckow";
+    schema:birthDate "1999-03-01"^^xsd:date;
+    schema:address _:b5428.
+_:b5428 a schema:PostalAddress;
+    schema:streetAddress "Dolly Cove";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Hamillborough";
+    schema:postalCode "20490-6752";
+    schema:addressCountry "Mauritania".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clyde";
+    schema:familyName "Hoeger";
+    schema:birthDate "1949-01-04"^^xsd:date;
+    schema:address _:b3071.
+_:b3071 a schema:PostalAddress;
+    schema:streetAddress "Rogahn Lakes";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Hutchinson";
+    schema:postalCode "95474";
+    schema:addressCountry "Austria".

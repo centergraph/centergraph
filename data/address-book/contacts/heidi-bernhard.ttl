@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Heidi";
+    schema:familyName "Bernhard";
+    schema:birthDate "1984-08-10"^^xsd:date;
+    schema:address _:b3998.
+_:b3998 a schema:PostalAddress;
+    schema:streetAddress "Huel Ramp";
+    schema:addressRegion "New York";
+    schema:addressLocality "Kaleighberg";
+    schema:postalCode "64587";
+    schema:addressCountry "Barbados".

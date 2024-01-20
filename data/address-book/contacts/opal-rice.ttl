@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Opal";
+    schema:familyName "Rice";
+    schema:birthDate "1978-06-25"^^xsd:date;
+    schema:address _:b6222.
+_:b6222 a schema:PostalAddress;
+    schema:streetAddress "Dark Lane";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Buddyside";
+    schema:postalCode "04679-8504";
+    schema:addressCountry "Montserrat".

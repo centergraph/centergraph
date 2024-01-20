@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosie";
+    schema:familyName "O'Connell";
+    schema:birthDate "1983-06-06"^^xsd:date;
+    schema:address _:b4556.
+_:b4556 a schema:PostalAddress;
+    schema:streetAddress "Cronin Place";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Lake Myrtie";
+    schema:postalCode "77493-6900";
+    schema:addressCountry "Serbia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nancy";
+    schema:familyName "Satterfield";
+    schema:birthDate "1991-05-25"^^xsd:date;
+    schema:address _:b5322.
+_:b5322 a schema:PostalAddress;
+    schema:streetAddress "Steuber Knoll";
+    schema:addressRegion "Washington";
+    schema:addressLocality "East Lourdes";
+    schema:postalCode "57831";
+    schema:addressCountry "Guinea".

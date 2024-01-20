@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Renee";
+    schema:familyName "Ritchie";
+    schema:birthDate "1966-05-23"^^xsd:date;
+    schema:address _:b4570.
+_:b4570 a schema:PostalAddress;
+    schema:streetAddress "Carmela Roads";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "West Alysson";
+    schema:postalCode "69329-6380";
+    schema:addressCountry "Curacao".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dale";
+    schema:familyName "Ward";
+    schema:birthDate "1986-12-24"^^xsd:date;
+    schema:address _:b3800.
+_:b3800 a schema:PostalAddress;
+    schema:streetAddress "Waelchi Drives";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "West Emmetborough";
+    schema:postalCode "46042";
+    schema:addressCountry "San Marino".

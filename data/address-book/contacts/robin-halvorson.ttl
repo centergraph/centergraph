@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Robin";
+    schema:familyName "Halvorson";
+    schema:birthDate "1946-12-25"^^xsd:date;
+    schema:address _:b8238.
+_:b8238 a schema:PostalAddress;
+    schema:streetAddress "Braun Place";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Kuhnmouth";
+    schema:postalCode "74202-3472";
+    schema:addressCountry "French Guiana".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jimmie";
+    schema:familyName "Wiza";
+    schema:birthDate "1966-08-26"^^xsd:date;
+    schema:address _:b1595.
+_:b1595 a schema:PostalAddress;
+    schema:streetAddress "Walnut Close";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Sterlingborough";
+    schema:postalCode "14297";
+    schema:addressCountry "Western Sahara".

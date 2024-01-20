@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doug";
+    schema:familyName "Green";
+    schema:birthDate "1969-11-27"^^xsd:date;
+    schema:address _:b5276.
+_:b5276 a schema:PostalAddress;
+    schema:streetAddress "Railroad Avenue";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Port Eddport";
+    schema:postalCode "47419-8203";
+    schema:addressCountry "Liechtenstein".

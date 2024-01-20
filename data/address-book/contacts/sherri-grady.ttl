@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sherri";
+    schema:familyName "Grady";
+    schema:birthDate "1959-10-03"^^xsd:date;
+    schema:address _:b9526.
+_:b9526 a schema:PostalAddress;
+    schema:streetAddress "Wolf Club";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "West Vella";
+    schema:postalCode "16702";
+    schema:addressCountry "Azerbaijan".

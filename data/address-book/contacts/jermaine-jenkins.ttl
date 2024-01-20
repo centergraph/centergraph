@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jermaine";
+    schema:familyName "Jenkins";
+    schema:birthDate "1991-12-04"^^xsd:date;
+    schema:address _:b326.
+_:b326 a schema:PostalAddress;
+    schema:streetAddress "Elm Road";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Enid";
+    schema:postalCode "70320-5577";
+    schema:addressCountry "Guinea".

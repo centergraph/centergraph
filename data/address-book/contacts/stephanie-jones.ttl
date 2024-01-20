@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stephanie";
+    schema:familyName "Jones";
+    schema:birthDate "1991-11-10"^^xsd:date;
+    schema:address _:b9953.
+_:b9953 a schema:PostalAddress;
+    schema:streetAddress "Larkin Creek";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "New Moniqueville";
+    schema:postalCode "75663-7543";
+    schema:addressCountry "Eritrea".

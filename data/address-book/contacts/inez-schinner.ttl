@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Inez";
+    schema:familyName "Schinner";
+    schema:birthDate "1957-09-15"^^xsd:date;
+    schema:address _:b572.
+_:b572 a schema:PostalAddress;
+    schema:streetAddress "Price Common";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Vidalside";
+    schema:postalCode "88013-6500";
+    schema:addressCountry "Burundi".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Margaret";
+    schema:familyName "Hessel";
+    schema:birthDate "1983-08-09"^^xsd:date;
+    schema:address _:b8671.
+_:b8671 a schema:PostalAddress;
+    schema:streetAddress "Daniella Turnpike";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Germantown";
+    schema:postalCode "58384";
+    schema:addressCountry "Philippines".

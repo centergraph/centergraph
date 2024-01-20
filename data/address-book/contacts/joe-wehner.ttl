@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joe";
+    schema:familyName "Wehner";
+    schema:birthDate "1963-10-20"^^xsd:date;
+    schema:address _:b3641.
+_:b3641 a schema:PostalAddress;
+    schema:streetAddress "Windermere Road";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Rueckerberg";
+    schema:postalCode "10623-6029";
+    schema:addressCountry "Slovakia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "June";
+    schema:familyName "Okuneva";
+    schema:birthDate "1960-12-15"^^xsd:date;
+    schema:address _:b7526.
+_:b7526 a schema:PostalAddress;
+    schema:streetAddress "Martin Luther King Drive";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Royalburgh";
+    schema:postalCode "44288-8691";
+    schema:addressCountry "Luxembourg".

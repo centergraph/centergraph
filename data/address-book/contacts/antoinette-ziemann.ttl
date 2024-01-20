@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Antoinette";
+    schema:familyName "Ziemann";
+    schema:birthDate "1972-02-29"^^xsd:date;
+    schema:address _:b8713.
+_:b8713 a schema:PostalAddress;
+    schema:streetAddress "Mueller Roads";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Lorain";
+    schema:postalCode "82106-6187";
+    schema:addressCountry "Maldives".

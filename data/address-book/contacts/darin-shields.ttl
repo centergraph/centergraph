@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darin";
+    schema:familyName "Shields";
+    schema:birthDate "1998-04-08"^^xsd:date;
+    schema:address _:b4696.
+_:b4696 a schema:PostalAddress;
+    schema:streetAddress "Gleichner Ways";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Fort Jaunita";
+    schema:postalCode "45028";
+    schema:addressCountry "Bouvet Island".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tiffany";
+    schema:familyName "Bauch";
+    schema:birthDate "1992-05-28"^^xsd:date;
+    schema:address _:b4341.
+_:b4341 a schema:PostalAddress;
+    schema:streetAddress "Jermey Lights";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "North Nikkiton";
+    schema:postalCode "86731";
+    schema:addressCountry "Bosnia and Herzegovina".

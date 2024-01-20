@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jonathan";
+    schema:familyName "Towne";
+    schema:birthDate "1960-03-20"^^xsd:date;
+    schema:address _:b4514.
+_:b4514 a schema:PostalAddress;
+    schema:streetAddress "Lang Ridge";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Twin Falls";
+    schema:postalCode "54096-4634";
+    schema:addressCountry "Denmark".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Delbert";
+    schema:familyName "DuBuque";
+    schema:birthDate "1990-07-01"^^xsd:date;
+    schema:address _:b5541.
+_:b5541 a schema:PostalAddress;
+    schema:streetAddress "Mann Burg";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Arvada";
+    schema:postalCode "17163-7390";
+    schema:addressCountry "Burundi".

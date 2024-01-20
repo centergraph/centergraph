@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marcia";
+    schema:familyName "Medhurst-Tillman";
+    schema:birthDate "1976-07-17"^^xsd:date;
+    schema:address _:b4157.
+_:b4157 a schema:PostalAddress;
+    schema:streetAddress "Simeon Islands";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Lake Kassandraworth";
+    schema:postalCode "26394-8822";
+    schema:addressCountry "Heard Island and McDonald Islands".

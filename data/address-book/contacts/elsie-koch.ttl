@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elsie";
+    schema:familyName "Koch";
+    schema:birthDate "1945-03-14"^^xsd:date;
+    schema:address _:b3390.
+_:b3390 a schema:PostalAddress;
+    schema:streetAddress "Savannah Corner";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Independence";
+    schema:postalCode "82096-9284";
+    schema:addressCountry "Ukraine".

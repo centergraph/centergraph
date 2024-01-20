@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Craig";
+    schema:familyName "Herman";
+    schema:birthDate "1999-04-17"^^xsd:date;
+    schema:address _:b7497.
+_:b7497 a schema:PostalAddress;
+    schema:streetAddress "Verona Manors";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Royal Oak";
+    schema:postalCode "76720";
+    schema:addressCountry "Gabon".

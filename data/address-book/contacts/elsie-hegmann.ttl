@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elsie";
+    schema:familyName "Hegmann";
+    schema:birthDate "1985-11-28"^^xsd:date;
+    schema:address _:b5534.
+_:b5534 a schema:PostalAddress;
+    schema:streetAddress "Eli Track";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Port Newellview";
+    schema:postalCode "01832-5053";
+    schema:addressCountry "Pitcairn Islands".

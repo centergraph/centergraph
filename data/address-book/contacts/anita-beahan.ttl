@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Anita";
+    schema:familyName "Beahan";
+    schema:birthDate "2000-03-03"^^xsd:date;
+    schema:address _:b1202.
+_:b1202 a schema:PostalAddress;
+    schema:streetAddress "Maureen Crossing";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Kariannetown";
+    schema:postalCode "15413-9329";
+    schema:addressCountry "Pitcairn Islands".

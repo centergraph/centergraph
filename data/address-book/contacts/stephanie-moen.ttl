@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stephanie";
+    schema:familyName "Moen";
+    schema:birthDate "1969-11-25"^^xsd:date;
+    schema:address _:b9600.
+_:b9600 a schema:PostalAddress;
+    schema:streetAddress "Jacklyn Mission";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "North Micaelashire";
+    schema:postalCode "07438";
+    schema:addressCountry "British Indian Ocean Territory (Chagos Archipelago)".

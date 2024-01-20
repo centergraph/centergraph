@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Ryan";
     schema:familyName "Rippin";
-    schema:birthDate "1946-01-29"^^xsd:date;
-    schema:address _:b482.
-_:b482 a schema:PostalAddress;
-    schema:streetAddress "Solon Mews";
-    schema:addressRegion "Idaho";
-    schema:addressLocality "North Fritzstead";
-    schema:postalCode "33135-3878";
-    schema:addressCountry "Curacao".
+    schema:birthDate "1999-09-18"^^xsd:date;
+    schema:address _:b3218.
+_:b3218 a schema:PostalAddress;
+    schema:streetAddress "Gislason Way";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Meaganburgh";
+    schema:postalCode "19008";
+    schema:addressCountry "Cambodia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Victor";
+    schema:familyName "Friesen";
+    schema:birthDate "1946-12-25"^^xsd:date;
+    schema:address _:b1713.
+_:b1713 a schema:PostalAddress;
+    schema:streetAddress "Theron Trail";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "West Thomasberg";
+    schema:postalCode "41425-7426";
+    schema:addressCountry "French Polynesia".

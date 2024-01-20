@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Minnie";
+    schema:familyName "Stanton";
+    schema:birthDate "2000-09-12"^^xsd:date;
+    schema:address _:b8409.
+_:b8409 a schema:PostalAddress;
+    schema:streetAddress "Norris Harbors";
+    schema:addressRegion "California";
+    schema:addressLocality "Fort Cristal";
+    schema:postalCode "42595-5125";
+    schema:addressCountry "Ghana".

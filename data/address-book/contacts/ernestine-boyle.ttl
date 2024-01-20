@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ernestine";
+    schema:familyName "Boyle";
+    schema:birthDate "1945-10-02"^^xsd:date;
+    schema:address _:b4422.
+_:b4422 a schema:PostalAddress;
+    schema:streetAddress "Witting Villages";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Mosciskiside";
+    schema:postalCode "86684";
+    schema:addressCountry "Slovenia".

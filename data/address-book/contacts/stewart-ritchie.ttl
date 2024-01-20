@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stewart";
+    schema:familyName "Ritchie";
+    schema:birthDate "1960-07-29"^^xsd:date;
+    schema:address _:b3559.
+_:b3559 a schema:PostalAddress;
+    schema:streetAddress "Alexandra Road";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Kaylafurt";
+    schema:postalCode "76988";
+    schema:addressCountry "Rwanda".

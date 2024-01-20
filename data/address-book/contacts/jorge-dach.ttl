@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jorge";
+    schema:familyName "Dach";
+    schema:birthDate "2000-04-29"^^xsd:date;
+    schema:address _:b1094.
+_:b1094 a schema:PostalAddress;
+    schema:streetAddress "Cronin Wall";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Herthaboro";
+    schema:postalCode "50383";
+    schema:addressCountry "Bonaire, Sint Eustatius and Saba".

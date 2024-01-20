@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Willie";
+    schema:familyName "Schiller";
+    schema:birthDate "1965-05-16"^^xsd:date;
+    schema:address _:b7996.
+_:b7996 a schema:PostalAddress;
+    schema:streetAddress "Lincoln Stream";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "North Ophelia";
+    schema:postalCode "39380-2485";
+    schema:addressCountry "Saint Vincent and the Grenadines".

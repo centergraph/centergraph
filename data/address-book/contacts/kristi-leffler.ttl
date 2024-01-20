@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristi";
+    schema:familyName "Leffler";
+    schema:birthDate "1989-02-12"^^xsd:date;
+    schema:address _:b6053.
+_:b6053 a schema:PostalAddress;
+    schema:streetAddress "Braxton Parks";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Johnsonstad";
+    schema:postalCode "75633";
+    schema:addressCountry "Turkey".

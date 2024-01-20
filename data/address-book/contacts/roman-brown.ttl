@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roman";
+    schema:familyName "Brown";
+    schema:birthDate "1992-10-19"^^xsd:date;
+    schema:address _:b6791.
+_:b6791 a schema:PostalAddress;
+    schema:streetAddress "Waverley Road";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Demarcoland";
+    schema:postalCode "17134";
+    schema:addressCountry "Dominica".

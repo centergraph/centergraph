@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sarah";
+    schema:familyName "Wisoky";
+    schema:birthDate "1961-02-13"^^xsd:date;
+    schema:address _:b6000.
+_:b6000 a schema:PostalAddress;
+    schema:streetAddress "Ellsworth Plains";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "East Trentworth";
+    schema:postalCode "87455-3073";
+    schema:addressCountry "Georgia".

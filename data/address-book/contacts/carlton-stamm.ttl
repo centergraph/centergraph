@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carlton";
+    schema:familyName "Stamm";
+    schema:birthDate "1949-10-17"^^xsd:date;
+    schema:address _:b2545.
+_:b2545 a schema:PostalAddress;
+    schema:streetAddress "Raina Club";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Virginiaworth";
+    schema:postalCode "96690-0340";
+    schema:addressCountry "Antigua and Barbuda".

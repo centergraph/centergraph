@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Violet";
+    schema:familyName "Bahringer";
+    schema:birthDate "1946-03-30"^^xsd:date;
+    schema:address _:b6546.
+_:b6546 a schema:PostalAddress;
+    schema:streetAddress "Hills Path";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Stehrburgh";
+    schema:postalCode "53194";
+    schema:addressCountry "Italy".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dianna";
+    schema:familyName "Schulist";
+    schema:birthDate "1989-02-08"^^xsd:date;
+    schema:address _:b6132.
+_:b6132 a schema:PostalAddress;
+    schema:streetAddress "Canal Street";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Bel Air South";
+    schema:postalCode "50010-2561";
+    schema:addressCountry "Democratic People's Republic of Korea".

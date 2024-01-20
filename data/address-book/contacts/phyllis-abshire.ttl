@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Phyllis";
+    schema:familyName "Abshire";
+    schema:birthDate "1982-10-10"^^xsd:date;
+    schema:address _:b7972.
+_:b7972 a schema:PostalAddress;
+    schema:streetAddress "Lehner Cliffs";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Rowlandbury";
+    schema:postalCode "20421-3801";
+    schema:addressCountry "Eritrea".

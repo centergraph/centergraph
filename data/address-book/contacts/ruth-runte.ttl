@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruth";
+    schema:familyName "Runte";
+    schema:birthDate "1989-08-05"^^xsd:date;
+    schema:address _:b162.
+_:b162 a schema:PostalAddress;
+    schema:streetAddress "Charlene Underpass";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "New Alessandro";
+    schema:postalCode "49869";
+    schema:addressCountry "Tonga".

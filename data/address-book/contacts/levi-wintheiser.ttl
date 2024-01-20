@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Levi";
+    schema:familyName "Wintheiser";
+    schema:birthDate "1959-03-31"^^xsd:date;
+    schema:address _:b8373.
+_:b8373 a schema:PostalAddress;
+    schema:streetAddress "E 14th Street";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Lake Lawrence";
+    schema:postalCode "91658-8809";
+    schema:addressCountry "Mauritius".

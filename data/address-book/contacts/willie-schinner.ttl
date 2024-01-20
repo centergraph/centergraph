@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Willie";
+    schema:familyName "Schinner";
+    schema:birthDate "1979-10-25"^^xsd:date;
+    schema:address _:b6478.
+_:b6478 a schema:PostalAddress;
+    schema:streetAddress "Alana Knolls";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Ortizfurt";
+    schema:postalCode "76000-8009";
+    schema:addressCountry "Central African Republic".

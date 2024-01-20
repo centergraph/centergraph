@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clarence";
+    schema:familyName "Bartoletti";
+    schema:birthDate "1959-12-19"^^xsd:date;
+    schema:address _:b2093.
+_:b2093 a schema:PostalAddress;
+    schema:streetAddress "Robel Summit";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Boyleboro";
+    schema:postalCode "65103-5375";
+    schema:addressCountry "Lithuania".

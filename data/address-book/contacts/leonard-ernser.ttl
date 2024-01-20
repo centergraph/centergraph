@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leonard";
+    schema:familyName "Ernser";
+    schema:birthDate "1978-09-23"^^xsd:date;
+    schema:address _:b9555.
+_:b9555 a schema:PostalAddress;
+    schema:streetAddress "Johann Bypass";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Salt Lake City";
+    schema:postalCode "52179-5176";
+    schema:addressCountry "Central African Republic".

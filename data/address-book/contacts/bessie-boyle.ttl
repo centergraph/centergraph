@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bessie";
+    schema:familyName "Boyle";
+    schema:birthDate "1991-11-12"^^xsd:date;
+    schema:address _:b2878.
+_:b2878 a schema:PostalAddress;
+    schema:streetAddress "Adams Avenue";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Salem";
+    schema:postalCode "19606";
+    schema:addressCountry "Trinidad and Tobago".

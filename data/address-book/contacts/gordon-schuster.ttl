@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gordon";
+    schema:familyName "Schuster";
+    schema:birthDate "1973-03-23"^^xsd:date;
+    schema:address _:b6803.
+_:b6803 a schema:PostalAddress;
+    schema:streetAddress "Rohan Course";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Fargo";
+    schema:postalCode "47546";
+    schema:addressCountry "Montserrat".

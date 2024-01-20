@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Geneva";
+    schema:familyName "Aufderhar";
+    schema:birthDate "1957-03-17"^^xsd:date;
+    schema:address _:b3864.
+_:b3864 a schema:PostalAddress;
+    schema:streetAddress "Highfield Close";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Heidenreichstad";
+    schema:postalCode "39755-1448";
+    schema:addressCountry "Belgium".

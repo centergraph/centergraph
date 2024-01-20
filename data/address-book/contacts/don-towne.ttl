@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Don";
+    schema:familyName "Towne";
+    schema:birthDate "1948-07-03"^^xsd:date;
+    schema:address _:b2882.
+_:b2882 a schema:PostalAddress;
+    schema:streetAddress "Dwight Hills";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Buffalo Grove";
+    schema:postalCode "30598-4988";
+    schema:addressCountry "Portugal".

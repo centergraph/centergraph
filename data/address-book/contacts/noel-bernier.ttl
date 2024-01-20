@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Noel";
+    schema:familyName "Bernier";
+    schema:birthDate "1988-07-23"^^xsd:date;
+    schema:address _:b2287.
+_:b2287 a schema:PostalAddress;
+    schema:streetAddress "Joshuah Crossroad";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "New Arvillabury";
+    schema:postalCode "92316-9019";
+    schema:addressCountry "British Indian Ocean Territory (Chagos Archipelago)".

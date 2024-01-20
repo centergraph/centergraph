@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eileen";
+    schema:familyName "Miller";
+    schema:birthDate "1970-04-16"^^xsd:date;
+    schema:address _:b7873.
+_:b7873 a schema:PostalAddress;
+    schema:streetAddress "Cow Lane";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Cassintown";
+    schema:postalCode "99584";
+    schema:addressCountry "Seychelles".

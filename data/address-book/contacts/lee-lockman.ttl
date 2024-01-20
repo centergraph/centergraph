@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lee";
+    schema:familyName "Lockman";
+    schema:birthDate "1995-02-25"^^xsd:date;
+    schema:address _:b8286.
+_:b8286 a schema:PostalAddress;
+    schema:streetAddress "Franey Pine";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Christiansenmouth";
+    schema:postalCode "54113";
+    schema:addressCountry "Democratic Republic of the Congo".

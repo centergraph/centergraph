@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Louis";
+    schema:familyName "Boyer";
+    schema:birthDate "1983-05-08"^^xsd:date;
+    schema:address _:b3984.
+_:b3984 a schema:PostalAddress;
+    schema:streetAddress "Gia Lake";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "South Ward";
+    schema:postalCode "30036-3733";
+    schema:addressCountry "Palau".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelley";
+    schema:familyName "Champlin";
+    schema:birthDate "1971-06-05"^^xsd:date;
+    schema:address _:b7794.
+_:b7794 a schema:PostalAddress;
+    schema:streetAddress "Oakfield Road";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Fort Lillyworth";
+    schema:postalCode "60671";
+    schema:addressCountry "Jersey".

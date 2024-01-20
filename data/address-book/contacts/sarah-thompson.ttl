@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sarah";
+    schema:familyName "Thompson";
+    schema:birthDate "1953-06-04"^^xsd:date;
+    schema:address _:b6632.
+_:b6632 a schema:PostalAddress;
+    schema:streetAddress "Rowe Haven";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Victorville";
+    schema:postalCode "90766";
+    schema:addressCountry "Russian Federation".

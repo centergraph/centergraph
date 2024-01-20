@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Phil";
+    schema:familyName "Hyatt";
+    schema:birthDate "1990-06-11"^^xsd:date;
+    schema:address _:b8923.
+_:b8923 a schema:PostalAddress;
+    schema:streetAddress "Oak Drive";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "New Rocioside";
+    schema:postalCode "29367-2964";
+    schema:addressCountry "Equatorial Guinea".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alyssa";
+    schema:familyName "Ferry";
+    schema:birthDate "1962-06-02"^^xsd:date;
+    schema:address _:b3851.
+_:b3851 a schema:PostalAddress;
+    schema:streetAddress "Hazle Lights";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Norwalk";
+    schema:postalCode "39575-3737";
+    schema:addressCountry "Guadeloupe".

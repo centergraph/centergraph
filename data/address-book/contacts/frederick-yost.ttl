@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Frederick";
+    schema:familyName "Yost";
+    schema:birthDate "1945-04-18"^^xsd:date;
+    schema:address _:b2749.
+_:b2749 a schema:PostalAddress;
+    schema:streetAddress "Dooley Pine";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Sauerstead";
+    schema:postalCode "48867-1613";
+    schema:addressCountry "Timor-Leste".

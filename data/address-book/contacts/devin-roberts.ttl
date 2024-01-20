@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Devin";
+    schema:familyName "Roberts";
+    schema:birthDate "1994-12-05"^^xsd:date;
+    schema:address _:b9683.
+_:b9683 a schema:PostalAddress;
+    schema:streetAddress "Mayer Pines";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "West Macey";
+    schema:postalCode "81846";
+    schema:addressCountry "Indonesia".

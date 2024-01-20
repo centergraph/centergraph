@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dewey";
+    schema:familyName "Hackett";
+    schema:birthDate "1983-01-23"^^xsd:date;
+    schema:address _:b8546.
+_:b8546 a schema:PostalAddress;
+    schema:streetAddress "Merle Wall";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "North Broderickcester";
+    schema:postalCode "21538-6029";
+    schema:addressCountry "Zimbabwe".

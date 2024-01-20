@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kendra";
+    schema:familyName "Bartell";
+    schema:birthDate "1944-05-20"^^xsd:date;
+    schema:address _:b8451.
+_:b8451 a schema:PostalAddress;
+    schema:streetAddress "Runolfsson Circles";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Mauriciotown";
+    schema:postalCode "68277-1879";
+    schema:addressCountry "Armenia".

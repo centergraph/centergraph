@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darrel";
+    schema:familyName "Kris";
+    schema:birthDate "2003-09-10"^^xsd:date;
+    schema:address _:b6686.
+_:b6686 a schema:PostalAddress;
+    schema:streetAddress "Jaylen Ville";
+    schema:addressRegion "New York";
+    schema:addressLocality "Port Cassiefurt";
+    schema:postalCode "97596-7012";
+    schema:addressCountry "Guyana".

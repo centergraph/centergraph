@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terence";
+    schema:familyName "Hartmann";
+    schema:birthDate "1977-12-31"^^xsd:date;
+    schema:address _:b7585.
+_:b7585 a schema:PostalAddress;
+    schema:streetAddress "Eriberto Mount";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Huntersville";
+    schema:postalCode "60889-0995";
+    schema:addressCountry "Rwanda".

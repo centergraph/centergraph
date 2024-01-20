@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brandi";
+    schema:familyName "Walker";
+    schema:birthDate "1970-03-11"^^xsd:date;
+    schema:address _:b7137.
+_:b7137 a schema:PostalAddress;
+    schema:streetAddress "Ahmad Rapid";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Arnaldoworth";
+    schema:postalCode "74696-2993";
+    schema:addressCountry "Benin".

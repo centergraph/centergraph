@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Guadalupe";
+    schema:familyName "Rippin";
+    schema:birthDate "1962-12-04"^^xsd:date;
+    schema:address _:b6375.
+_:b6375 a schema:PostalAddress;
+    schema:streetAddress "Fisher Lock";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "New Ansley";
+    schema:postalCode "06928";
+    schema:addressCountry "Bangladesh".

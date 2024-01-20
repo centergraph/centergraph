@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lucas";
+    schema:familyName "Gerhold";
+    schema:birthDate "1983-11-17"^^xsd:date;
+    schema:address _:b5265.
+_:b5265 a schema:PostalAddress;
+    schema:streetAddress "Tina Ferry";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "South Octaviafurt";
+    schema:postalCode "29480-9185";
+    schema:addressCountry "Mali".

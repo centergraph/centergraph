@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pedro";
+    schema:familyName "Rau";
+    schema:birthDate "1961-08-29"^^xsd:date;
+    schema:address _:b7104.
+_:b7104 a schema:PostalAddress;
+    schema:streetAddress "Connelly Shore";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Torphyborough";
+    schema:postalCode "78485";
+    schema:addressCountry "Burkina Faso".

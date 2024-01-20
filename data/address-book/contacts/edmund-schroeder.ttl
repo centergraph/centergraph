@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edmund";
+    schema:familyName "Schroeder";
+    schema:birthDate "1988-11-26"^^xsd:date;
+    schema:address _:b8944.
+_:b8944 a schema:PostalAddress;
+    schema:streetAddress "Maximillia Ranch";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Carissafield";
+    schema:postalCode "87071";
+    schema:addressCountry "Sierra Leone".

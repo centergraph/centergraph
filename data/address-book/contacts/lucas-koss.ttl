@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lucas";
+    schema:familyName "Koss";
+    schema:birthDate "1952-01-23"^^xsd:date;
+    schema:address _:b5588.
+_:b5588 a schema:PostalAddress;
+    schema:streetAddress "Frank Mountains";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Elverastead";
+    schema:postalCode "00028";
+    schema:addressCountry "Israel".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gregory";
+    schema:familyName "Cartwright";
+    schema:birthDate "1997-07-25"^^xsd:date;
+    schema:address _:b9242.
+_:b9242 a schema:PostalAddress;
+    schema:streetAddress "Marquardt Light";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Apple Valley";
+    schema:postalCode "46412-1826";
+    schema:addressCountry "Czechia".

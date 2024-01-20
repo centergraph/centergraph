@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joanna";
+    schema:familyName "Schmidt";
+    schema:birthDate "1956-07-02"^^xsd:date;
+    schema:address _:b6757.
+_:b6757 a schema:PostalAddress;
+    schema:streetAddress "Mayert Brook";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "New Eliseoberg";
+    schema:postalCode "25112-1555";
+    schema:addressCountry "Australia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joy";
+    schema:familyName "Cormier";
+    schema:birthDate "1947-07-25"^^xsd:date;
+    schema:address _:b7365.
+_:b7365 a schema:PostalAddress;
+    schema:streetAddress "Lesch Lodge";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Fort Florine";
+    schema:postalCode "01555";
+    schema:addressCountry "British Indian Ocean Territory (Chagos Archipelago)".

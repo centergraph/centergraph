@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Victor";
+    schema:familyName "Sanford";
+    schema:birthDate "1973-03-20"^^xsd:date;
+    schema:address _:b949.
+_:b949 a schema:PostalAddress;
+    schema:streetAddress "Wuckert Oval";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "East Elsa";
+    schema:postalCode "12334";
+    schema:addressCountry "Brunei Darussalam".

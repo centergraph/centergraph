@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Caleb";
+    schema:familyName "Kessler";
+    schema:birthDate "2001-02-28"^^xsd:date;
+    schema:address _:b6441.
+_:b6441 a schema:PostalAddress;
+    schema:streetAddress "S Broadway";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Conroe";
+    schema:postalCode "78769-2309";
+    schema:addressCountry "Senegal".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dianne";
+    schema:familyName "McGlynn";
+    schema:birthDate "1944-11-05"^^xsd:date;
+    schema:address _:b4820.
+_:b4820 a schema:PostalAddress;
+    schema:streetAddress "Willow Drive";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Vickyworth";
+    schema:postalCode "28775";
+    schema:addressCountry "Zambia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wendell";
+    schema:familyName "Thompson";
+    schema:birthDate "1963-02-17"^^xsd:date;
+    schema:address _:b871.
+_:b871 a schema:PostalAddress;
+    schema:streetAddress "Cali Meadow";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Torrance";
+    schema:postalCode "99231";
+    schema:addressCountry "Liberia".

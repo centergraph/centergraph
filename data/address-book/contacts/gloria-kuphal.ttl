@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gloria";
+    schema:familyName "Kuphal";
+    schema:birthDate "1976-07-21"^^xsd:date;
+    schema:address _:b3717.
+_:b3717 a schema:PostalAddress;
+    schema:streetAddress "Ziemann Burgs";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Conway";
+    schema:postalCode "43843-3690";
+    schema:addressCountry "Bosnia and Herzegovina".

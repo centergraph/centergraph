@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Charles";
+    schema:familyName "Bayer";
+    schema:birthDate "2004-04-12"^^xsd:date;
+    schema:address _:b489.
+_:b489 a schema:PostalAddress;
+    schema:streetAddress "Bramble Close";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Yorba Linda";
+    schema:postalCode "21083";
+    schema:addressCountry "Republic of Korea".

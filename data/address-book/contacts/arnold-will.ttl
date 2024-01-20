@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Arnold";
+    schema:familyName "Will";
+    schema:birthDate "1965-01-28"^^xsd:date;
+    schema:address _:b4071.
+_:b4071 a schema:PostalAddress;
+    schema:streetAddress "Nia Ford";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Ogden";
+    schema:postalCode "82303-0870";
+    schema:addressCountry "Montserrat".

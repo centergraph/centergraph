@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terry";
+    schema:familyName "Daugherty";
+    schema:birthDate "1953-09-10"^^xsd:date;
+    schema:address _:b8068.
+_:b8068 a schema:PostalAddress;
+    schema:streetAddress "W River Road";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Wymanside";
+    schema:postalCode "11511-2444";
+    schema:addressCountry "Holy See (Vatican City State)".

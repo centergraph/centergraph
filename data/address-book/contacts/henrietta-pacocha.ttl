@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Henrietta";
+    schema:familyName "Pacocha";
+    schema:birthDate "2003-08-26"^^xsd:date;
+    schema:address _:b3118.
+_:b3118 a schema:PostalAddress;
+    schema:streetAddress "Wolf Radial";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Gislasonshire";
+    schema:postalCode "49687-6289";
+    schema:addressCountry "India".

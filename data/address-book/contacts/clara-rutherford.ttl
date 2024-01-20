@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clara";
+    schema:familyName "Rutherford";
+    schema:birthDate "1998-04-02"^^xsd:date;
+    schema:address _:b592.
+_:b592 a schema:PostalAddress;
+    schema:streetAddress "N 5th Street";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "McKinney";
+    schema:postalCode "94234";
+    schema:addressCountry "Central African Republic".

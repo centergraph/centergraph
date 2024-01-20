@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cedric";
+    schema:familyName "Shields";
+    schema:birthDate "1997-06-28"^^xsd:date;
+    schema:address _:b6663.
+_:b6663 a schema:PostalAddress;
+    schema:streetAddress "Elm Road";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "North Caesartown";
+    schema:postalCode "05468";
+    schema:addressCountry "Italy".

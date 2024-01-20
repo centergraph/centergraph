@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alan";
+    schema:familyName "Yundt";
+    schema:birthDate "1981-08-16"^^xsd:date;
+    schema:address _:b6185.
+_:b6185 a schema:PostalAddress;
+    schema:streetAddress "Jerod Via";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Bothell";
+    schema:postalCode "37311";
+    schema:addressCountry "Puerto Rico".

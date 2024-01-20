@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jake";
+    schema:familyName "Hudson";
+    schema:birthDate "1946-02-15"^^xsd:date;
+    schema:address _:b9282.
+_:b9282 a schema:PostalAddress;
+    schema:streetAddress "W Pine Street";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Brentwood";
+    schema:postalCode "37855-9885";
+    schema:addressCountry "Haiti".

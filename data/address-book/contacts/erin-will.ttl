@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erin";
+    schema:familyName "Will";
+    schema:birthDate "1966-09-04"^^xsd:date;
+    schema:address _:b243.
+_:b243 a schema:PostalAddress;
+    schema:streetAddress "Collins Green";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Boscoton";
+    schema:postalCode "76052";
+    schema:addressCountry "New Zealand".

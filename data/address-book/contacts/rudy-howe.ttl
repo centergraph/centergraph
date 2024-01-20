@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rudy";
+    schema:familyName "Howe";
+    schema:birthDate "1980-04-08"^^xsd:date;
+    schema:address _:b222.
+_:b222 a schema:PostalAddress;
+    schema:streetAddress "Luna Camp";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Jacobsonberg";
+    schema:postalCode "06433-4379";
+    schema:addressCountry "Nauru".

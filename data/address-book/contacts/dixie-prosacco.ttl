@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dixie";
+    schema:familyName "Prosacco";
+    schema:birthDate "1962-02-06"^^xsd:date;
+    schema:address _:b9623.
+_:b9623 a schema:PostalAddress;
+    schema:streetAddress "Schroeder Way";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Jacksonville";
+    schema:postalCode "55735";
+    schema:addressCountry "Ghana".

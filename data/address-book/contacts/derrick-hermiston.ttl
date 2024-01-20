@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Derrick";
+    schema:familyName "Hermiston";
+    schema:birthDate "1975-08-06"^^xsd:date;
+    schema:address _:b8188.
+_:b8188 a schema:PostalAddress;
+    schema:streetAddress "Jones Ridges";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Fort Lyda";
+    schema:postalCode "31500";
+    schema:addressCountry "Antigua and Barbuda".

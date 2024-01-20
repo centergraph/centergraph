@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Derrick";
+    schema:familyName "Raynor";
+    schema:birthDate "1990-03-21"^^xsd:date;
+    schema:address _:b8456.
+_:b8456 a schema:PostalAddress;
+    schema:streetAddress "E Union Street";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Boside";
+    schema:postalCode "00119";
+    schema:addressCountry "Denmark".

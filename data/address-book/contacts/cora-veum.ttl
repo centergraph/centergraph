@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cora";
+    schema:familyName "Veum";
+    schema:birthDate "1972-12-28"^^xsd:date;
+    schema:address _:b8689.
+_:b8689 a schema:PostalAddress;
+    schema:streetAddress "King Street";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Mohrbury";
+    schema:postalCode "99685";
+    schema:addressCountry "Chad".

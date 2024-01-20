@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marlene";
+    schema:familyName "Thompson";
+    schema:birthDate "1947-04-12"^^xsd:date;
+    schema:address _:b8540.
+_:b8540 a schema:PostalAddress;
+    schema:streetAddress "E Elm Street";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Fort Nikolasworth";
+    schema:postalCode "86693";
+    schema:addressCountry "Nicaragua".

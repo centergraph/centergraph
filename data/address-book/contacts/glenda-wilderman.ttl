@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Glenda";
+    schema:familyName "Wilderman";
+    schema:birthDate "1950-10-16"^^xsd:date;
+    schema:address _:b5.
+_:b5 a schema:PostalAddress;
+    schema:streetAddress "Novella Junction";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "West Raphaelle";
+    schema:postalCode "72214";
+    schema:addressCountry "Costa Rica".

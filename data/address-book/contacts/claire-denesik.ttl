@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Claire";
+    schema:familyName "Denesik";
+    schema:birthDate "2003-02-21"^^xsd:date;
+    schema:address _:b4162.
+_:b4162 a schema:PostalAddress;
+    schema:streetAddress "Dock Spurs";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "East Rahulshire";
+    schema:postalCode "46153-3325";
+    schema:addressCountry "Puerto Rico".

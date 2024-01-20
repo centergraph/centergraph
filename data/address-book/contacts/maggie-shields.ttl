@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Maggie";
+    schema:familyName "Shields";
+    schema:birthDate "1966-09-04"^^xsd:date;
+    schema:address _:b3152.
+_:b3152 a schema:PostalAddress;
+    schema:streetAddress "Harvey Fall";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "North Lindsayview";
+    schema:postalCode "53700-7361";
+    schema:addressCountry "Cape Verde".

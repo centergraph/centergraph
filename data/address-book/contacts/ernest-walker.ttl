@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ernest";
+    schema:familyName "Walker";
+    schema:birthDate "1991-05-09"^^xsd:date;
+    schema:address _:b7250.
+_:b7250 a schema:PostalAddress;
+    schema:streetAddress "Reggie Glen";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Lawton";
+    schema:postalCode "09624";
+    schema:addressCountry "Marshall Islands".

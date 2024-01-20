@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clifton";
+    schema:familyName "Erdman";
+    schema:birthDate "1998-06-24"^^xsd:date;
+    schema:address _:b8163.
+_:b8163 a schema:PostalAddress;
+    schema:streetAddress "Adams Shoal";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Port Bettyeton";
+    schema:postalCode "19706-2474";
+    schema:addressCountry "Libyan Arab Jamahiriya".

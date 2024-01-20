@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Enrique";
+    schema:familyName "McKenzie";
+    schema:birthDate "1959-03-22"^^xsd:date;
+    schema:address _:b7771.
+_:b7771 a schema:PostalAddress;
+    schema:streetAddress "Bessie Bypass";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Lake Linwood";
+    schema:postalCode "61107-0489";
+    schema:addressCountry "Venezuela".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "John";
+    schema:familyName "Feeney";
+    schema:birthDate "1945-01-03"^^xsd:date;
+    schema:address _:b7203.
+_:b7203 a schema:PostalAddress;
+    schema:streetAddress "Neal Neck";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "New Zachary";
+    schema:postalCode "54134-0779";
+    schema:addressCountry "Spain".

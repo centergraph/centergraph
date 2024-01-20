@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Levi";
+    schema:familyName "Wiegand";
+    schema:birthDate "1953-11-23"^^xsd:date;
+    schema:address _:b4847.
+_:b4847 a schema:PostalAddress;
+    schema:streetAddress "Teagan Cliff";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Fort Jakobbury";
+    schema:postalCode "89534-8003";
+    schema:addressCountry "Curacao".

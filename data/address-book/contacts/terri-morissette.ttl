@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terri";
+    schema:familyName "Morissette";
+    schema:birthDate "1959-02-05"^^xsd:date;
+    schema:address _:b4921.
+_:b4921 a schema:PostalAddress;
+    schema:streetAddress "Hamill Pine";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "New Robertaberg";
+    schema:postalCode "21208-4711";
+    schema:addressCountry "Somalia".

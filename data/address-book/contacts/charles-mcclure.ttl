@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Charles";
+    schema:familyName "McClure";
+    schema:birthDate "1998-09-29"^^xsd:date;
+    schema:address _:b5784.
+_:b5784 a schema:PostalAddress;
+    schema:streetAddress "Bradley Island";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Kunzeborough";
+    schema:postalCode "57786-8784";
+    schema:addressCountry "Bahrain".

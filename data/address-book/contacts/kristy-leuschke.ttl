@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristy";
+    schema:familyName "Leuschke";
+    schema:birthDate "1944-11-11"^^xsd:date;
+    schema:address _:b2941.
+_:b2941 a schema:PostalAddress;
+    schema:streetAddress "Lois Falls";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Downey";
+    schema:postalCode "09282-8789";
+    schema:addressCountry "Maldives".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vera";
+    schema:familyName "Bosco";
+    schema:birthDate "1950-03-01"^^xsd:date;
+    schema:address _:b1916.
+_:b1916 a schema:PostalAddress;
+    schema:streetAddress "Jonas Ridges";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "North Xander";
+    schema:postalCode "84831-2117";
+    schema:addressCountry "Norfolk Island".

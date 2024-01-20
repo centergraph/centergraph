@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andrea";
+    schema:familyName "Turner";
+    schema:birthDate "1963-12-26"^^xsd:date;
+    schema:address _:b8905.
+_:b8905 a schema:PostalAddress;
+    schema:streetAddress "Jose Groves";
+    schema:addressRegion "California";
+    schema:addressLocality "Vicentafurt";
+    schema:postalCode "22613";
+    schema:addressCountry "Dominica".

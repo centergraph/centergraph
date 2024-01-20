@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "May";
+    schema:familyName "Kerluke";
+    schema:birthDate "1990-06-28"^^xsd:date;
+    schema:address _:b5384.
+_:b5384 a schema:PostalAddress;
+    schema:streetAddress "Edwina Grove";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Austintown";
+    schema:postalCode "39652-6875";
+    schema:addressCountry "Tonga".

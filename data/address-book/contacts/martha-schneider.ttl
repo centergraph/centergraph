@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Martha";
+    schema:familyName "Schneider";
+    schema:birthDate "1959-08-17"^^xsd:date;
+    schema:address _:b1196.
+_:b1196 a schema:PostalAddress;
+    schema:streetAddress "Rae Junction";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Watersborough";
+    schema:postalCode "05172";
+    schema:addressCountry "Ireland".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristen";
+    schema:familyName "Ledner";
+    schema:birthDate "1986-12-15"^^xsd:date;
+    schema:address _:b1464.
+_:b1464 a schema:PostalAddress;
+    schema:streetAddress "Franey Lock";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Fort Noble";
+    schema:postalCode "30560";
+    schema:addressCountry "Moldova".

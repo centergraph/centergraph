@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wilfred";
+    schema:familyName "Schamberger";
+    schema:birthDate "1996-02-16"^^xsd:date;
+    schema:address _:b203.
+_:b203 a schema:PostalAddress;
+    schema:streetAddress "Melvina Highway";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Port Colefort";
+    schema:postalCode "10121";
+    schema:addressCountry "Reunion".

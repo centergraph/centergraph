@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jacqueline";
+    schema:familyName "Balistreri";
+    schema:birthDate "1979-06-18"^^xsd:date;
+    schema:address _:b6057.
+_:b6057 a schema:PostalAddress;
+    schema:streetAddress "Cavendish Road";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Edytheview";
+    schema:postalCode "65088-5644";
+    schema:addressCountry "Pitcairn Islands".

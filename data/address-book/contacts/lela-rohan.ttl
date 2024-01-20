@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lela";
+    schema:familyName "Rohan";
+    schema:birthDate "1993-02-08"^^xsd:date;
+    schema:address _:b7332.
+_:b7332 a schema:PostalAddress;
+    schema:streetAddress "Somerset Road";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Lake Tiana";
+    schema:postalCode "03484";
+    schema:addressCountry "Suriname".

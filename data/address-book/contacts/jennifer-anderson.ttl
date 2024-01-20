@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jennifer";
+    schema:familyName "Anderson";
+    schema:birthDate "1953-07-31"^^xsd:date;
+    schema:address _:b1733.
+_:b1733 a schema:PostalAddress;
+    schema:streetAddress "Dare Court";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Port Chet";
+    schema:postalCode "19604-4663";
+    schema:addressCountry "Turkmenistan".

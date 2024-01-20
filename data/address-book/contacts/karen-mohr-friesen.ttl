@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Karen";
+    schema:familyName "Mohr-Friesen";
+    schema:birthDate "1967-09-10"^^xsd:date;
+    schema:address _:b6313.
+_:b6313 a schema:PostalAddress;
+    schema:streetAddress "Bart Cliffs";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Brekkeville";
+    schema:postalCode "93230-9557";
+    schema:addressCountry "France".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Caroline";
+    schema:familyName "Larkin";
+    schema:birthDate "1959-02-08"^^xsd:date;
+    schema:address _:b3803.
+_:b3803 a schema:PostalAddress;
+    schema:streetAddress "The Causeway";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "New Deangelocester";
+    schema:postalCode "30593";
+    schema:addressCountry "Jordan".

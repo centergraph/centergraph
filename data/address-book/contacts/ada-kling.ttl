@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ada";
+    schema:familyName "Kling";
+    schema:birthDate "1991-05-17"^^xsd:date;
+    schema:address _:b7993.
+_:b7993 a schema:PostalAddress;
+    schema:streetAddress "N Cedar Street";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Stokescester";
+    schema:postalCode "45796-7907";
+    schema:addressCountry "Saint Pierre and Miquelon".

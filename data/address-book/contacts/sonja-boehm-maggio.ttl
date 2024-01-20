@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sonja";
+    schema:familyName "Boehm-Maggio";
+    schema:birthDate "1951-10-25"^^xsd:date;
+    schema:address _:b9312.
+_:b9312 a schema:PostalAddress;
+    schema:streetAddress "Macejkovic Forest";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Doyleshire";
+    schema:postalCode "25886";
+    schema:addressCountry "Poland".

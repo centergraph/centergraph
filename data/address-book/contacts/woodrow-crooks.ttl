@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Woodrow";
+    schema:familyName "Crooks";
+    schema:birthDate "1946-04-24"^^xsd:date;
+    schema:address _:b8096.
+_:b8096 a schema:PostalAddress;
+    schema:streetAddress "Adams Overpass";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Port Kole";
+    schema:postalCode "76450-4842";
+    schema:addressCountry "South Georgia and the South Sandwich Islands".

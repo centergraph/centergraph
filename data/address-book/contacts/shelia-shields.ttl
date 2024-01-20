@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shelia";
+    schema:familyName "Shields";
+    schema:birthDate "2003-10-13"^^xsd:date;
+    schema:address _:b5892.
+_:b5892 a schema:PostalAddress;
+    schema:streetAddress "Maple Close";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Port Rosario";
+    schema:postalCode "73120";
+    schema:addressCountry "Mexico".

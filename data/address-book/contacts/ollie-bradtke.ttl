@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ollie";
+    schema:familyName "Bradtke";
+    schema:birthDate "1952-04-22"^^xsd:date;
+    schema:address _:b6403.
+_:b6403 a schema:PostalAddress;
+    schema:streetAddress "W Bridge Street";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "New Felton";
+    schema:postalCode "91314";
+    schema:addressCountry "Turkmenistan".

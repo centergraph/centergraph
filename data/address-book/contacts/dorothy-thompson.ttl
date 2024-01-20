@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dorothy";
+    schema:familyName "Thompson";
+    schema:birthDate "2000-08-26"^^xsd:date;
+    schema:address _:b2479.
+_:b2479 a schema:PostalAddress;
+    schema:streetAddress "W 12th Street";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Andersonbury";
+    schema:postalCode "23158-3646";
+    schema:addressCountry "Republic of Korea".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mack";
+    schema:familyName "Graham";
+    schema:birthDate "2000-01-08"^^xsd:date;
+    schema:address _:b73.
+_:b73 a schema:PostalAddress;
+    schema:streetAddress "Middle Street";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Port Edwinabury";
+    schema:postalCode "69308-0482";
+    schema:addressCountry "Saint Kitts and Nevis".

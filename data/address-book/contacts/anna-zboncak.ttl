@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Anna";
+    schema:familyName "Zboncak";
+    schema:birthDate "1959-11-16"^^xsd:date;
+    schema:address _:b611.
+_:b611 a schema:PostalAddress;
+    schema:streetAddress "Abbey Parkway";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "West Julesfort";
+    schema:postalCode "41391-6016";
+    schema:addressCountry "Italy".

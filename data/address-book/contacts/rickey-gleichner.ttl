@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rickey";
+    schema:familyName "Gleichner";
+    schema:birthDate "1966-01-25"^^xsd:date;
+    schema:address _:b8031.
+_:b8031 a schema:PostalAddress;
+    schema:streetAddress "Kiehn Via";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "East Eloy";
+    schema:postalCode "44173-0195";
+    schema:addressCountry "Seychelles".

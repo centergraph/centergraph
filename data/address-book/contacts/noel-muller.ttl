@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Noel";
+    schema:familyName "Muller";
+    schema:birthDate "1958-09-09"^^xsd:date;
+    schema:address _:b8710.
+_:b8710 a schema:PostalAddress;
+    schema:streetAddress "Tudor Close";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Marastead";
+    schema:postalCode "05305-0884";
+    schema:addressCountry "Lithuania".

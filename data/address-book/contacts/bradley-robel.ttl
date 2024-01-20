@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bradley";
+    schema:familyName "Robel";
+    schema:birthDate "1999-03-15"^^xsd:date;
+    schema:address _:b6318.
+_:b6318 a schema:PostalAddress;
+    schema:streetAddress "Romaguera Mews";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Lake Maxieshire";
+    schema:postalCode "93474-9157";
+    schema:addressCountry "Madagascar".

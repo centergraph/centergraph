@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doyle";
+    schema:familyName "Emmerich";
+    schema:birthDate "1950-01-30"^^xsd:date;
+    schema:address _:b2595.
+_:b2595 a schema:PostalAddress;
+    schema:streetAddress "Amani Tunnel";
+    schema:addressRegion "California";
+    schema:addressLocality "Plymouth";
+    schema:postalCode "25089-9515";
+    schema:addressCountry "Finland".

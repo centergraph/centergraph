@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leon";
+    schema:familyName "Conroy";
+    schema:birthDate "1978-01-08"^^xsd:date;
+    schema:address _:b1131.
+_:b1131 a schema:PostalAddress;
+    schema:streetAddress "Watsica Terrace";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Bartville";
+    schema:postalCode "83175-1626";
+    schema:addressCountry "Heard Island and McDonald Islands".

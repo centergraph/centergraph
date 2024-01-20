@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lester";
+    schema:familyName "Hansen";
+    schema:birthDate "1988-02-06"^^xsd:date;
+    schema:address _:b5295.
+_:b5295 a schema:PostalAddress;
+    schema:streetAddress "Crescent Road";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Aliamouth";
+    schema:postalCode "85471-9652";
+    schema:addressCountry "Congo".

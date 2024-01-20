@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rick";
+    schema:familyName "Haag";
+    schema:birthDate "1985-12-31"^^xsd:date;
+    schema:address _:b689.
+_:b689 a schema:PostalAddress;
+    schema:streetAddress "Kiara Springs";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Shanonville";
+    schema:postalCode "01607-4013";
+    schema:addressCountry "Antarctica".

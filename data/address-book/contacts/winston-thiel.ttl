@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Winston";
+    schema:familyName "Thiel";
+    schema:birthDate "1966-11-01"^^xsd:date;
+    schema:address _:b4638.
+_:b4638 a schema:PostalAddress;
+    schema:streetAddress "Clarendon Road";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Daughertystad";
+    schema:postalCode "07539-3234";
+    schema:addressCountry "Kazakhstan".

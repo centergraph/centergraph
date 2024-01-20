@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Timothy";
+    schema:familyName "Bernier";
+    schema:birthDate "1972-07-21"^^xsd:date;
+    schema:address _:b5332.
+_:b5332 a schema:PostalAddress;
+    schema:streetAddress "Von Flats";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "North Alfredafort";
+    schema:postalCode "22031";
+    schema:addressCountry "Luxembourg".

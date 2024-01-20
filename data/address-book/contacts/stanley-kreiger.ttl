@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stanley";
+    schema:familyName "Kreiger";
+    schema:birthDate "1948-07-19"^^xsd:date;
+    schema:address _:b8937.
+_:b8937 a schema:PostalAddress;
+    schema:streetAddress "Lueilwitz Pike";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Port Tremayne";
+    schema:postalCode "84650";
+    schema:addressCountry "Saint Pierre and Miquelon".

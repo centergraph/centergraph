@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Teri";
+    schema:familyName "Cartwright";
+    schema:birthDate "1992-09-27"^^xsd:date;
+    schema:address _:b9443.
+_:b9443 a schema:PostalAddress;
+    schema:streetAddress "Eva Heights";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Watsonville";
+    schema:postalCode "22608-6843";
+    schema:addressCountry "New Caledonia".

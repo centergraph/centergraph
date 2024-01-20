@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eva";
+    schema:familyName "Schmeler";
+    schema:birthDate "1967-09-12"^^xsd:date;
+    schema:address _:b3712.
+_:b3712 a schema:PostalAddress;
+    schema:streetAddress "Spring Gardens";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Jakubowskiland";
+    schema:postalCode "60343-5841";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

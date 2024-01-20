@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jerald";
+    schema:familyName "Towne";
+    schema:birthDate "1949-04-14"^^xsd:date;
+    schema:address _:b6434.
+_:b6434 a schema:PostalAddress;
+    schema:streetAddress "Willms Pines";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Kierafield";
+    schema:postalCode "16432";
+    schema:addressCountry "Argentina".

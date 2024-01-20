@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terry";
+    schema:familyName "Carroll";
+    schema:birthDate "1980-01-17"^^xsd:date;
+    schema:address _:b3681.
+_:b3681 a schema:PostalAddress;
+    schema:streetAddress "E Broadway Street";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Coleboro";
+    schema:postalCode "72933-5559";
+    schema:addressCountry "Italy".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Philip";
+    schema:familyName "Hansen";
+    schema:birthDate "1991-02-15"^^xsd:date;
+    schema:address _:b6493.
+_:b6493 a schema:PostalAddress;
+    schema:streetAddress "Ollie Greens";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Fort Nayeli";
+    schema:postalCode "79233-0400";
+    schema:addressCountry "Cameroon".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sherman";
+    schema:familyName "Daniel";
+    schema:birthDate "1995-12-21"^^xsd:date;
+    schema:address _:b658.
+_:b658 a schema:PostalAddress;
+    schema:streetAddress "Kiel Station";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Fort Letaboro";
+    schema:postalCode "37152";
+    schema:addressCountry "Antarctica".

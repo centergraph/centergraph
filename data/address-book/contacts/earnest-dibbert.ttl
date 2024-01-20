@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Earnest";
+    schema:familyName "Dibbert";
+    schema:birthDate "1948-08-31"^^xsd:date;
+    schema:address _:b294.
+_:b294 a schema:PostalAddress;
+    schema:streetAddress "Garrick Grove";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Glendora";
+    schema:postalCode "67923-7535";
+    schema:addressCountry "Anguilla".

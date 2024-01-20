@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Aaron";
+    schema:familyName "Jones";
+    schema:birthDate "2005-08-21"^^xsd:date;
+    schema:address _:b6259.
+_:b6259 a schema:PostalAddress;
+    schema:streetAddress "Jensen Brooks";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Terryside";
+    schema:postalCode "43029";
+    schema:addressCountry "San Marino".

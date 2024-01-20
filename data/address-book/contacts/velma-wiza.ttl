@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Velma";
+    schema:familyName "Wiza";
+    schema:birthDate "1989-10-05"^^xsd:date;
+    schema:address _:b2589.
+_:b2589 a schema:PostalAddress;
+    schema:streetAddress "Lime Grove";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Arden-Arcade";
+    schema:postalCode "34683-3906";
+    schema:addressCountry "Macao".

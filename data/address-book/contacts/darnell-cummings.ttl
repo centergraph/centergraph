@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darnell";
+    schema:familyName "Cummings";
+    schema:birthDate "2005-04-22"^^xsd:date;
+    schema:address _:b4950.
+_:b4950 a schema:PostalAddress;
+    schema:streetAddress "Brenda Trace";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Lake Benny";
+    schema:postalCode "60990";
+    schema:addressCountry "Kiribati".

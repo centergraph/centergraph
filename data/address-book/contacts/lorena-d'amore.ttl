@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorena";
+    schema:familyName "D'Amore";
+    schema:birthDate "1983-04-26"^^xsd:date;
+    schema:address _:b225.
+_:b225 a schema:PostalAddress;
+    schema:streetAddress "Marks Bridge";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Greenville";
+    schema:postalCode "92606";
+    schema:addressCountry "Norway".

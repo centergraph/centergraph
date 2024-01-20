@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shari";
+    schema:familyName "Moen";
+    schema:birthDate "1982-09-08"^^xsd:date;
+    schema:address _:b8094.
+_:b8094 a schema:PostalAddress;
+    schema:streetAddress "Adolfo Viaduct";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "West Greggfield";
+    schema:postalCode "56172";
+    schema:addressCountry "Sao Tome and Principe".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Francisco";
+    schema:familyName "Kohler";
+    schema:birthDate "1987-11-20"^^xsd:date;
+    schema:address _:b5149.
+_:b5149 a schema:PostalAddress;
+    schema:streetAddress "Hintz Alley";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "North Orlandocester";
+    schema:postalCode "01638";
+    schema:addressCountry "Argentina".

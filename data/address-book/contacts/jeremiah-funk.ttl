@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeremiah";
+    schema:familyName "Funk";
+    schema:birthDate "1963-11-11"^^xsd:date;
+    schema:address _:b4546.
+_:b4546 a schema:PostalAddress;
+    schema:streetAddress "Stiedemann Ranch";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Chaimborough";
+    schema:postalCode "93994-3506";
+    schema:addressCountry "Syrian Arab Republic".

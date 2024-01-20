@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lionel";
+    schema:familyName "Moen";
+    schema:birthDate "1998-10-29"^^xsd:date;
+    schema:address _:b9153.
+_:b9153 a schema:PostalAddress;
+    schema:streetAddress "Division Street";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Mrazstad";
+    schema:postalCode "19734-1585";
+    schema:addressCountry "Liberia".

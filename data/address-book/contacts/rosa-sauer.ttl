@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosa";
+    schema:familyName "Sauer";
+    schema:birthDate "1969-04-07"^^xsd:date;
+    schema:address _:b8333.
+_:b8333 a schema:PostalAddress;
+    schema:streetAddress "Tyrique Parks";
+    schema:addressRegion "Utah";
+    schema:addressLocality "New Kailyn";
+    schema:postalCode "33236-3049";
+    schema:addressCountry "Hong Kong".

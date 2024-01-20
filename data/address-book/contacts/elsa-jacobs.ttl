@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elsa";
+    schema:familyName "Jacobs";
+    schema:birthDate "1977-08-06"^^xsd:date;
+    schema:address _:b6912.
+_:b6912 a schema:PostalAddress;
+    schema:streetAddress "Turcotte Isle";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Fort Xanderside";
+    schema:postalCode "39040";
+    schema:addressCountry "French Southern Territories".

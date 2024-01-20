@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bobbie";
+    schema:familyName "O'Hara";
+    schema:birthDate "1958-08-30"^^xsd:date;
+    schema:address _:b2727.
+_:b2727 a schema:PostalAddress;
+    schema:streetAddress "Bridge Road";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Metzfield";
+    schema:postalCode "53354";
+    schema:addressCountry "South Africa".

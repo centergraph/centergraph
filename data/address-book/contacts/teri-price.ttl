@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Teri";
+    schema:familyName "Price";
+    schema:birthDate "1969-05-31"^^xsd:date;
+    schema:address _:b3270.
+_:b3270 a schema:PostalAddress;
+    schema:streetAddress "Westgate";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Lubowitzborough";
+    schema:postalCode "46204-3383";
+    schema:addressCountry "Iran".

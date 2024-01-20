@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Melody";
+    schema:familyName "Kunde";
+    schema:birthDate "1986-06-30"^^xsd:date;
+    schema:address _:b6455.
+_:b6455 a schema:PostalAddress;
+    schema:streetAddress "Marlene Radial";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Schmidtboro";
+    schema:postalCode "24774";
+    schema:addressCountry "Central African Republic".

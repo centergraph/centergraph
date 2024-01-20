@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darren";
+    schema:familyName "O'Connell";
+    schema:birthDate "1953-09-06"^^xsd:date;
+    schema:address _:b7369.
+_:b7369 a schema:PostalAddress;
+    schema:streetAddress "Vickie Club";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Port Kaylieside";
+    schema:postalCode "60476-2494";
+    schema:addressCountry "Chile".

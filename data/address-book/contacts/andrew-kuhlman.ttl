@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andrew";
+    schema:familyName "Kuhlman";
+    schema:birthDate "1990-10-03"^^xsd:date;
+    schema:address _:b7752.
+_:b7752 a schema:PostalAddress;
+    schema:streetAddress "Hoppe River";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "West Alda";
+    schema:postalCode "78524";
+    schema:addressCountry "Myanmar".

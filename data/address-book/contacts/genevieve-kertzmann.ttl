@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Genevieve";
+    schema:familyName "Kertzmann";
+    schema:birthDate "1967-05-24"^^xsd:date;
+    schema:address _:b7781.
+_:b7781 a schema:PostalAddress;
+    schema:streetAddress "Washington Avenue";
+    schema:addressRegion "New York";
+    schema:addressLocality "Gislasonport";
+    schema:postalCode "82597-7676";
+    schema:addressCountry "Sudan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alyssa";
+    schema:familyName "Beahan";
+    schema:birthDate "1995-10-15"^^xsd:date;
+    schema:address _:b2113.
+_:b2113 a schema:PostalAddress;
+    schema:streetAddress "Franecki Common";
+    schema:addressRegion "California";
+    schema:addressLocality "East Kelly";
+    schema:postalCode "58984-0367";
+    schema:addressCountry "Algeria".

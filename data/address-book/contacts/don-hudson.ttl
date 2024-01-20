@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Don";
+    schema:familyName "Hudson";
+    schema:birthDate "1979-09-10"^^xsd:date;
+    schema:address _:b1576.
+_:b1576 a schema:PostalAddress;
+    schema:streetAddress "Everette Meadows";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Daleburgh";
+    schema:postalCode "99370";
+    schema:addressCountry "Ethiopia".

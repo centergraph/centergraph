@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Luis";
+    schema:familyName "Mosciski";
+    schema:birthDate "1986-10-14"^^xsd:date;
+    schema:address _:b6331.
+_:b6331 a schema:PostalAddress;
+    schema:streetAddress "Chaya Throughway";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "North Las Vegas";
+    schema:postalCode "13121-0652";
+    schema:addressCountry "Falkland Islands (Malvinas)".

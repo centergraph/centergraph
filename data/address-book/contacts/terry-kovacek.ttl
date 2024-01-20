@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terry";
+    schema:familyName "Kovacek";
+    schema:birthDate "1989-04-09"^^xsd:date;
+    schema:address _:b733.
+_:b733 a schema:PostalAddress;
+    schema:streetAddress "Okuneva Radial";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Oleside";
+    schema:postalCode "82621-2775";
+    schema:addressCountry "Niger".

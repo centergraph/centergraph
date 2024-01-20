@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rudy";
+    schema:familyName "Goldner";
+    schema:birthDate "1985-07-26"^^xsd:date;
+    schema:address _:b4206.
+_:b4206 a schema:PostalAddress;
+    schema:streetAddress "S Main";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "New Erling";
+    schema:postalCode "31547-5744";
+    schema:addressCountry "Angola".

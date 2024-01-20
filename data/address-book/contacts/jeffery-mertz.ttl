@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeffery";
+    schema:familyName "Mertz";
+    schema:birthDate "1968-06-27"^^xsd:date;
+    schema:address _:b7570.
+_:b7570 a schema:PostalAddress;
+    schema:streetAddress "Jon Ranch";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "McLaughlinland";
+    schema:postalCode "18757";
+    schema:addressCountry "Benin".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Donna";
+    schema:familyName "Torp-Kohler";
+    schema:birthDate "2004-10-13"^^xsd:date;
+    schema:address _:b37.
+_:b37 a schema:PostalAddress;
+    schema:streetAddress "Hilbert Knoll";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Fort Janelleside";
+    schema:postalCode "51979-7873";
+    schema:addressCountry "Russian Federation".

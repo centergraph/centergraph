@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tom";
+    schema:familyName "Heathcote";
+    schema:birthDate "1944-03-13"^^xsd:date;
+    schema:address _:b762.
+_:b762 a schema:PostalAddress;
+    schema:streetAddress "Parker River";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Fort Kevon";
+    schema:postalCode "01267-7131";
+    schema:addressCountry "Mongolia".

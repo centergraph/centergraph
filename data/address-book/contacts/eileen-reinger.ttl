@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eileen";
+    schema:familyName "Reinger";
+    schema:birthDate "1979-09-25"^^xsd:date;
+    schema:address _:b2687.
+_:b2687 a schema:PostalAddress;
+    schema:streetAddress "Littel Fall";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "West Sydneyfield";
+    schema:postalCode "55513-6677";
+    schema:addressCountry "Angola".

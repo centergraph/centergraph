@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jordan";
+    schema:familyName "Veum";
+    schema:birthDate "1963-11-08"^^xsd:date;
+    schema:address _:b367.
+_:b367 a schema:PostalAddress;
+    schema:streetAddress "Mathias Mews";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Emelyburgh";
+    schema:postalCode "45759";
+    schema:addressCountry "Faroe Islands".

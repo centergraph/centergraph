@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Winston";
+    schema:familyName "Tillman";
+    schema:birthDate "1964-04-21"^^xsd:date;
+    schema:address _:b2646.
+_:b2646 a schema:PostalAddress;
+    schema:streetAddress "Keven Motorway";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Bahringerport";
+    schema:postalCode "99193-3385";
+    schema:addressCountry "Switzerland".

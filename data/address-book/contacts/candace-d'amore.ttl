@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Candace";
+    schema:familyName "D'Amore";
+    schema:birthDate "1949-05-11"^^xsd:date;
+    schema:address _:b8264.
+_:b8264 a schema:PostalAddress;
+    schema:streetAddress "Ferry Trafficway";
+    schema:addressRegion "California";
+    schema:addressLocality "Port Vernonview";
+    schema:postalCode "47166-2693";
+    schema:addressCountry "Gibraltar".

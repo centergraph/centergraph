@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Drew";
+    schema:familyName "Powlowski-Waters";
+    schema:birthDate "1999-04-28"^^xsd:date;
+    schema:address _:b6984.
+_:b6984 a schema:PostalAddress;
+    schema:streetAddress "Maye Rapids";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Vickiehaven";
+    schema:postalCode "22792";
+    schema:addressCountry "South Africa".

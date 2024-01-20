@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shari";
+    schema:familyName "O'Keefe";
+    schema:birthDate "2003-04-09"^^xsd:date;
+    schema:address _:b4896.
+_:b4896 a schema:PostalAddress;
+    schema:streetAddress "W Broad Street";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Des Moines";
+    schema:postalCode "69572-5968";
+    schema:addressCountry "Morocco".

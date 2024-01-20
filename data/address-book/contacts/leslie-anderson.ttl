@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leslie";
+    schema:familyName "Anderson";
+    schema:birthDate "1979-07-03"^^xsd:date;
+    schema:address _:b1391.
+_:b1391 a schema:PostalAddress;
+    schema:streetAddress "Clay Lane";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Sunrise Manor";
+    schema:postalCode "80325";
+    schema:addressCountry "Costa Rica".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Evan";
+    schema:familyName "Von";
+    schema:birthDate "1964-08-07"^^xsd:date;
+    schema:address _:b5791.
+_:b5791 a schema:PostalAddress;
+    schema:streetAddress "Halvorson Heights";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "East Pink";
+    schema:postalCode "95153-1142";
+    schema:addressCountry "Virgin Islands, U.S.".

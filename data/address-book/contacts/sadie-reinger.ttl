@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sadie";
+    schema:familyName "Reinger";
+    schema:birthDate "1997-04-24"^^xsd:date;
+    schema:address _:b8607.
+_:b8607 a schema:PostalAddress;
+    schema:streetAddress "Kuvalis Landing";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Faheyview";
+    schema:postalCode "88584";
+    schema:addressCountry "South Africa".

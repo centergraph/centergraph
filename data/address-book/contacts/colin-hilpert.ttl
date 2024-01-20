@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Colin";
+    schema:familyName "Hilpert";
+    schema:birthDate "1970-10-29"^^xsd:date;
+    schema:address _:b3111.
+_:b3111 a schema:PostalAddress;
+    schema:streetAddress "Crooks Crossing";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Framingham";
+    schema:postalCode "94246";
+    schema:addressCountry "Cook Islands".

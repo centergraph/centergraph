@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elbert";
+    schema:familyName "Homenick";
+    schema:birthDate "1980-03-19"^^xsd:date;
+    schema:address _:b4520.
+_:b4520 a schema:PostalAddress;
+    schema:streetAddress "Hirthe Key";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Hampton";
+    schema:postalCode "65287";
+    schema:addressCountry "Algeria".

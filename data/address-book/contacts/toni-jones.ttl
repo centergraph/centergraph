@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Toni";
+    schema:familyName "Jones";
+    schema:birthDate "1988-04-02"^^xsd:date;
+    schema:address _:b8814.
+_:b8814 a schema:PostalAddress;
+    schema:streetAddress "Will Cliffs";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Port Caitlynborough";
+    schema:postalCode "24588";
+    schema:addressCountry "Angola".

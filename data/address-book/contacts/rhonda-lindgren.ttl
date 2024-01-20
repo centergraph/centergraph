@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rhonda";
+    schema:familyName "Lindgren";
+    schema:birthDate "1976-02-11"^^xsd:date;
+    schema:address _:b1289.
+_:b1289 a schema:PostalAddress;
+    schema:streetAddress "Bailey Hollow";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Turnerfield";
+    schema:postalCode "55722";
+    schema:addressCountry "Cook Islands".

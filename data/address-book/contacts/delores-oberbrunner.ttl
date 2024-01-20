@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Delores";
+    schema:familyName "Oberbrunner";
+    schema:birthDate "2001-06-13"^^xsd:date;
+    schema:address _:b8302.
+_:b8302 a schema:PostalAddress;
+    schema:streetAddress "E Franklin Street";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Yeseniabury";
+    schema:postalCode "57431-2304";
+    schema:addressCountry "South Sudan".

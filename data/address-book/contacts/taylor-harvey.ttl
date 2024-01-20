@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Taylor";
+    schema:familyName "Harvey";
+    schema:birthDate "1985-07-27"^^xsd:date;
+    schema:address _:b9982.
+_:b9982 a schema:PostalAddress;
+    schema:streetAddress "Marcos Knoll";
+    schema:addressRegion "Washington";
+    schema:addressLocality "West Vanessaborough";
+    schema:postalCode "92737";
+    schema:addressCountry "Micronesia".

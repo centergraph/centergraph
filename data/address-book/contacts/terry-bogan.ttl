@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terry";
+    schema:familyName "Bogan";
+    schema:birthDate "1954-05-30"^^xsd:date;
+    schema:address _:b9476.
+_:b9476 a schema:PostalAddress;
+    schema:streetAddress "Jedidiah Flat";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "North Jerelburgh";
+    schema:postalCode "24747-9427";
+    schema:addressCountry "United Kingdom".

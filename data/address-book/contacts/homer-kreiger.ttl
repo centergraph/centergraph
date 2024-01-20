@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Homer";
+    schema:familyName "Kreiger";
+    schema:birthDate "1971-09-12"^^xsd:date;
+    schema:address _:b7994.
+_:b7994 a schema:PostalAddress;
+    schema:streetAddress "Krajcik Village";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Portsmouth";
+    schema:postalCode "82860";
+    schema:addressCountry "Tajikistan".

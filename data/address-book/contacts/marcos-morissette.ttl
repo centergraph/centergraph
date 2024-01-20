@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marcos";
+    schema:familyName "Morissette";
+    schema:birthDate "1975-05-15"^^xsd:date;
+    schema:address _:b9624.
+_:b9624 a schema:PostalAddress;
+    schema:streetAddress "Pfeffer Port";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "New Orleans";
+    schema:postalCode "51996";
+    schema:addressCountry "Mauritius".

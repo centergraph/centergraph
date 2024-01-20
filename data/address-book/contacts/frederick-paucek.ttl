@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Frederick";
+    schema:familyName "Paucek";
+    schema:birthDate "1989-06-21"^^xsd:date;
+    schema:address _:b2162.
+_:b2162 a schema:PostalAddress;
+    schema:streetAddress "Berge Ridges";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "New Neldaboro";
+    schema:postalCode "83539-1081";
+    schema:addressCountry "Ireland".

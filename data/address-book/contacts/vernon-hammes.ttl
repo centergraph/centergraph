@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vernon";
+    schema:familyName "Hammes";
+    schema:birthDate "2000-06-27"^^xsd:date;
+    schema:address _:b4868.
+_:b4868 a schema:PostalAddress;
+    schema:streetAddress "Kacey Gateway";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "South Easterboro";
+    schema:postalCode "43457-2463";
+    schema:addressCountry "Kenya".

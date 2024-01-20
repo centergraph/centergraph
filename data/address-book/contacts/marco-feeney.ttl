@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marco";
+    schema:familyName "Feeney";
+    schema:birthDate "1965-08-15"^^xsd:date;
+    schema:address _:b7177.
+_:b7177 a schema:PostalAddress;
+    schema:streetAddress "Lubowitz Coves";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "South Pearlineberg";
+    schema:postalCode "62295-0253";
+    schema:addressCountry "Slovenia".

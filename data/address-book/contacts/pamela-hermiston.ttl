@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pamela";
+    schema:familyName "Hermiston";
+    schema:birthDate "1976-07-29"^^xsd:date;
+    schema:address _:b5263.
+_:b5263 a schema:PostalAddress;
+    schema:streetAddress "Davis Drive";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Rodriguezbury";
+    schema:postalCode "22407";
+    schema:addressCountry "Slovakia".

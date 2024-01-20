@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Christine";
+    schema:familyName "Olson";
+    schema:birthDate "1946-10-13"^^xsd:date;
+    schema:address _:b9848.
+_:b9848 a schema:PostalAddress;
+    schema:streetAddress "Rowe Rapid";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Gerholdberg";
+    schema:postalCode "63727";
+    schema:addressCountry "Faroe Islands".

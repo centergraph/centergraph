@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Daniel";
+    schema:familyName "Mitchell";
+    schema:birthDate "1948-06-01"^^xsd:date;
+    schema:address _:b2949.
+_:b2949 a schema:PostalAddress;
+    schema:streetAddress "Davin Spurs";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Johnson City";
+    schema:postalCode "11954";
+    schema:addressCountry "Afghanistan".

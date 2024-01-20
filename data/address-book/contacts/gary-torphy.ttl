@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gary";
+    schema:familyName "Torphy";
+    schema:birthDate "1969-11-15"^^xsd:date;
+    schema:address _:b1480.
+_:b1480 a schema:PostalAddress;
+    schema:streetAddress "The Avenue";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "East Hipolito";
+    schema:postalCode "92000-8742";
+    schema:addressCountry "Bouvet Island".

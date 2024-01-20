@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ed";
+    schema:familyName "Ondricka";
+    schema:birthDate "1999-10-22"^^xsd:date;
+    schema:address _:b9637.
+_:b9637 a schema:PostalAddress;
+    schema:streetAddress "12th Street";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Lake Cecilia";
+    schema:postalCode "51451";
+    schema:addressCountry "Tuvalu".

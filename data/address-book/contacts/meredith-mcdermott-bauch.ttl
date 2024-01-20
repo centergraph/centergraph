@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Meredith";
+    schema:familyName "McDermott-Bauch";
+    schema:birthDate "2003-01-04"^^xsd:date;
+    schema:address _:b3627.
+_:b3627 a schema:PostalAddress;
+    schema:streetAddress "Marlborough Road";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "East Clementineberg";
+    schema:postalCode "11348-5992";
+    schema:addressCountry "Comoros".

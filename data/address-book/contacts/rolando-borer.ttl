@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rolando";
+    schema:familyName "Borer";
+    schema:birthDate "1977-11-11"^^xsd:date;
+    schema:address _:b1835.
+_:b1835 a schema:PostalAddress;
+    schema:streetAddress "Anne Fields";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Pricecester";
+    schema:postalCode "52539";
+    schema:addressCountry "Switzerland".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Olga";
+    schema:familyName "Labadie";
+    schema:birthDate "1987-03-21"^^xsd:date;
+    schema:address _:b8367.
+_:b8367 a schema:PostalAddress;
+    schema:streetAddress "Tennyson Road";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Bellingham";
+    schema:postalCode "27694";
+    schema:addressCountry "Palau".

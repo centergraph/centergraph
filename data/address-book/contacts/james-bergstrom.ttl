@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "James";
+    schema:familyName "Bergstrom";
+    schema:birthDate "1999-06-17"^^xsd:date;
+    schema:address _:b2265.
+_:b2265 a schema:PostalAddress;
+    schema:streetAddress "N Park Street";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Pasco";
+    schema:postalCode "10686-1122";
+    schema:addressCountry "Bouvet Island".

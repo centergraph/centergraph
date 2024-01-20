@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marvin";
+    schema:familyName "Bednar";
+    schema:birthDate "1967-09-07"^^xsd:date;
+    schema:address _:b3869.
+_:b3869 a schema:PostalAddress;
+    schema:streetAddress "N Water Street";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Clovis";
+    schema:postalCode "71031-5193";
+    schema:addressCountry "Tuvalu".

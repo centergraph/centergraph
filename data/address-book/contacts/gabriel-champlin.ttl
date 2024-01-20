@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gabriel";
+    schema:familyName "Champlin";
+    schema:birthDate "1984-02-12"^^xsd:date;
+    schema:address _:b8556.
+_:b8556 a schema:PostalAddress;
+    schema:streetAddress "S 5th Street";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "West Chanelfield";
+    schema:postalCode "63613-5821";
+    schema:addressCountry "Saint Pierre and Miquelon".

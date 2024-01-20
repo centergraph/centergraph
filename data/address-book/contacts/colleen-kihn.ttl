@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Colleen";
+    schema:familyName "Kihn";
+    schema:birthDate "1975-01-15"^^xsd:date;
+    schema:address _:b5089.
+_:b5089 a schema:PostalAddress;
+    schema:streetAddress "Cedar Grove";
+    schema:addressRegion "Washington";
+    schema:addressLocality "North Natashaburgh";
+    schema:postalCode "00980";
+    schema:addressCountry "Uruguay".

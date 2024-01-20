@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stephen";
+    schema:familyName "Gottlieb";
+    schema:birthDate "1952-02-02"^^xsd:date;
+    schema:address _:b666.
+_:b666 a schema:PostalAddress;
+    schema:streetAddress "Brookside";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Pourosport";
+    schema:postalCode "92855";
+    schema:addressCountry "North Macedonia".

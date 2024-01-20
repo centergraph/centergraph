@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lena";
+    schema:familyName "Goldner";
+    schema:birthDate "1967-12-12"^^xsd:date;
+    schema:address _:b9462.
+_:b9462 a schema:PostalAddress;
+    schema:streetAddress "Ryan Trace";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Lake Tiffanyton";
+    schema:postalCode "42965";
+    schema:addressCountry "Palestine".

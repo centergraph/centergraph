@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Beulah";
+    schema:familyName "Grimes";
+    schema:birthDate "1970-12-06"^^xsd:date;
+    schema:address _:b3476.
+_:b3476 a schema:PostalAddress;
+    schema:streetAddress "Runolfsdottir Forest";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Kent";
+    schema:postalCode "12834-3046";
+    schema:addressCountry "Greenland".

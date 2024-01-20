@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erik";
+    schema:familyName "Watsica";
+    schema:birthDate "1965-11-11"^^xsd:date;
+    schema:address _:b9608.
+_:b9608 a schema:PostalAddress;
+    schema:streetAddress "W Franklin Street";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Maxwellside";
+    schema:postalCode "52783-1098";
+    schema:addressCountry "Slovakia".

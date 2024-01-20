@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Austin";
+    schema:familyName "Cremin";
+    schema:birthDate "1974-07-17"^^xsd:date;
+    schema:address _:b4895.
+_:b4895 a schema:PostalAddress;
+    schema:streetAddress "Leannon Crescent";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "South Reneebury";
+    schema:postalCode "25230-9178";
+    schema:addressCountry "Mauritius".

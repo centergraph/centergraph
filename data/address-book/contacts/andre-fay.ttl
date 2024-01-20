@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andre";
+    schema:familyName "Fay";
+    schema:birthDate "1959-11-21"^^xsd:date;
+    schema:address _:b1705.
+_:b1705 a schema:PostalAddress;
+    schema:streetAddress "Brook Road";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Nonabury";
+    schema:postalCode "96262-5471";
+    schema:addressCountry "Gibraltar".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alice";
+    schema:familyName "Rutherford";
+    schema:birthDate "1952-12-15"^^xsd:date;
+    schema:address _:b7481.
+_:b7481 a schema:PostalAddress;
+    schema:streetAddress "Lambert Trail";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "New Rhodafield";
+    schema:postalCode "27209";
+    schema:addressCountry "Wallis and Futuna".

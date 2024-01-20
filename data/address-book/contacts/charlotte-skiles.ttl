@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Charlotte";
+    schema:familyName "Skiles";
+    schema:birthDate "2004-12-02"^^xsd:date;
+    schema:address _:b4449.
+_:b4449 a schema:PostalAddress;
+    schema:streetAddress "Clotilde Ridge";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "West Felicia";
+    schema:postalCode "62114";
+    schema:addressCountry "Zambia".

@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Carol";
     schema:familyName "Nader";
-    schema:birthDate "1959-10-02"^^xsd:date;
-    schema:address _:b127.
-_:b127 a schema:PostalAddress;
-    schema:streetAddress "N Jefferson Street";
-    schema:addressRegion "Washington";
-    schema:addressLocality "Fort Cayla";
-    schema:postalCode "07164";
-    schema:addressCountry "Niue".
+    schema:birthDate "1982-02-28"^^xsd:date;
+    schema:address _:b1275.
+_:b1275 a schema:PostalAddress;
+    schema:streetAddress "Broadway Street";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Vanessaport";
+    schema:postalCode "69721";
+    schema:addressCountry "Burundi".

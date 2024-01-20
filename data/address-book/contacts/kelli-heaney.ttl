@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelli";
+    schema:familyName "Heaney";
+    schema:birthDate "1997-09-13"^^xsd:date;
+    schema:address _:b8706.
+_:b8706 a schema:PostalAddress;
+    schema:streetAddress "Giuseppe Burg";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Cicero";
+    schema:postalCode "83596";
+    schema:addressCountry "Kenya".

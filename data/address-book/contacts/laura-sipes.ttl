@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laura";
+    schema:familyName "Sipes";
+    schema:birthDate "1976-11-28"^^xsd:date;
+    schema:address _:b6879.
+_:b6879 a schema:PostalAddress;
+    schema:streetAddress "N Elm Street";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Lednerside";
+    schema:postalCode "21873";
+    schema:addressCountry "Mali".

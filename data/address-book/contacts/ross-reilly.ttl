@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ross";
+    schema:familyName "Reilly";
+    schema:birthDate "1948-05-07"^^xsd:date;
+    schema:address _:b1184.
+_:b1184 a schema:PostalAddress;
+    schema:streetAddress "Felipa Prairie";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Kulashaven";
+    schema:postalCode "37412";
+    schema:addressCountry "Honduras".

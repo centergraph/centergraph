@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cody";
+    schema:familyName "Padberg";
+    schema:birthDate "1989-03-22"^^xsd:date;
+    schema:address _:b5215.
+_:b5215 a schema:PostalAddress;
+    schema:streetAddress "E Union Street";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Tessieton";
+    schema:postalCode "86978";
+    schema:addressCountry "Uganda".

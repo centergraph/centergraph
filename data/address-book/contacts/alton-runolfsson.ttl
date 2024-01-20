@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alton";
+    schema:familyName "Runolfsson";
+    schema:birthDate "2002-10-08"^^xsd:date;
+    schema:address _:b4322.
+_:b4322 a schema:PostalAddress;
+    schema:streetAddress "King Park";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "South Karianne";
+    schema:postalCode "30495";
+    schema:addressCountry "Guyana".

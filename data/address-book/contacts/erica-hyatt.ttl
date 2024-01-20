@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erica";
+    schema:familyName "Hyatt";
+    schema:birthDate "2000-08-14"^^xsd:date;
+    schema:address _:b8693.
+_:b8693 a schema:PostalAddress;
+    schema:streetAddress "Berge Expressway";
+    schema:addressRegion "New York";
+    schema:addressLocality "Watsicacester";
+    schema:postalCode "04725-2973";
+    schema:addressCountry "Saint Pierre and Miquelon".

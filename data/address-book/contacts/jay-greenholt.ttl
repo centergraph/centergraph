@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jay";
+    schema:familyName "Greenholt";
+    schema:birthDate "2002-10-30"^^xsd:date;
+    schema:address _:b3263.
+_:b3263 a schema:PostalAddress;
+    schema:streetAddress "Raoul Gateway";
+    schema:addressRegion "California";
+    schema:addressLocality "Purdytown";
+    schema:postalCode "49609";
+    schema:addressCountry "Faroe Islands".

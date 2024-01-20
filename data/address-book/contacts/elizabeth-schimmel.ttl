@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elizabeth";
+    schema:familyName "Schimmel";
+    schema:birthDate "1990-05-08"^^xsd:date;
+    schema:address _:b2581.
+_:b2581 a schema:PostalAddress;
+    schema:streetAddress "Elm Road";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Port Shemar";
+    schema:postalCode "43640-3401";
+    schema:addressCountry "Senegal".

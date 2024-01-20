@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rafael";
+    schema:familyName "Hintz";
+    schema:birthDate "1949-04-01"^^xsd:date;
+    schema:address _:b8359.
+_:b8359 a schema:PostalAddress;
+    schema:streetAddress "Cole Ways";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Dorachester";
+    schema:postalCode "26448-7037";
+    schema:addressCountry "Mauritania".

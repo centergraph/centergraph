@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leon";
+    schema:familyName "Shields";
+    schema:birthDate "1968-03-30"^^xsd:date;
+    schema:address _:b114.
+_:b114 a schema:PostalAddress;
+    schema:streetAddress "Willow Close";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Kassulkeview";
+    schema:postalCode "07079-9786";
+    schema:addressCountry "Thailand".

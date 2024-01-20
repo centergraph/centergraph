@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jenna";
+    schema:familyName "Stehr";
+    schema:birthDate "1978-02-17"^^xsd:date;
+    schema:address _:b1913.
+_:b1913 a schema:PostalAddress;
+    schema:streetAddress "Modesto Courts";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Dorothystead";
+    schema:postalCode "36293";
+    schema:addressCountry "Mauritania".

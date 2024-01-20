@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nathan";
+    schema:familyName "O'Kon";
+    schema:birthDate "1993-12-23"^^xsd:date;
+    schema:address _:b9830.
+_:b9830 a schema:PostalAddress;
+    schema:streetAddress "Carter Circles";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Corpus Christi";
+    schema:postalCode "30613";
+    schema:addressCountry "Vietnam".

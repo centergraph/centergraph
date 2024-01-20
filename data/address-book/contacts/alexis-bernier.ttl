@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alexis";
+    schema:familyName "Bernier";
+    schema:birthDate "1967-11-04"^^xsd:date;
+    schema:address _:b6496.
+_:b6496 a schema:PostalAddress;
+    schema:streetAddress "Kamron Heights";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Port Marcport";
+    schema:postalCode "80765-8608";
+    schema:addressCountry "Algeria".

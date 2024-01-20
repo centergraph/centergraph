@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harold";
+    schema:familyName "Nicolas";
+    schema:birthDate "1977-10-08"^^xsd:date;
+    schema:address _:b8643.
+_:b8643 a schema:PostalAddress;
+    schema:streetAddress "The Grange";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Greenholtchester";
+    schema:postalCode "87886-8269";
+    schema:addressCountry "South Sudan".

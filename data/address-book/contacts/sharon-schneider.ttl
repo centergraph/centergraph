@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sharon";
+    schema:familyName "Schneider";
+    schema:birthDate "1958-11-03"^^xsd:date;
+    schema:address _:b7386.
+_:b7386 a schema:PostalAddress;
+    schema:streetAddress "N Broad Street";
+    schema:addressRegion "Washington";
+    schema:addressLocality "New Sonnyhaven";
+    schema:postalCode "64445";
+    schema:addressCountry "Turkey".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristin";
+    schema:familyName "Mitchell";
+    schema:birthDate "2001-01-29"^^xsd:date;
+    schema:address _:b2963.
+_:b2963 a schema:PostalAddress;
+    schema:streetAddress "Elna Valley";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "East Percival";
+    schema:postalCode "07741-8829";
+    schema:addressCountry "Denmark".

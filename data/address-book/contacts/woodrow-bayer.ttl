@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Woodrow";
+    schema:familyName "Bayer";
+    schema:birthDate "1992-08-12"^^xsd:date;
+    schema:address _:b4386.
+_:b4386 a schema:PostalAddress;
+    schema:streetAddress "Kyler Avenue";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "North Lula";
+    schema:postalCode "31707";
+    schema:addressCountry "Monaco".

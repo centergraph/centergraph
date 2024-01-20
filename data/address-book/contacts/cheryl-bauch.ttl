@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cheryl";
+    schema:familyName "Bauch";
+    schema:birthDate "1978-07-21"^^xsd:date;
+    schema:address _:b7488.
+_:b7488 a schema:PostalAddress;
+    schema:streetAddress "Kings Highway";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Ponce";
+    schema:postalCode "28095";
+    schema:addressCountry "Brazil".

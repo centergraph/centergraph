@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Fannie";
+    schema:familyName "Waters";
+    schema:birthDate "1945-02-20"^^xsd:date;
+    schema:address _:b6602.
+_:b6602 a schema:PostalAddress;
+    schema:streetAddress "Stiedemann Cape";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Hermanstad";
+    schema:postalCode "39276";
+    schema:addressCountry "Azerbaijan".

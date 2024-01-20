@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andrea";
+    schema:familyName "Jaskolski";
+    schema:birthDate "1964-04-10"^^xsd:date;
+    schema:address _:b6621.
+_:b6621 a schema:PostalAddress;
+    schema:streetAddress "Milan Circles";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Wardstad";
+    schema:postalCode "27391-1852";
+    schema:addressCountry "Slovakia".

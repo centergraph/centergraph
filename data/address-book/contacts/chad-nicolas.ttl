@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Chad";
+    schema:familyName "Nicolas";
+    schema:birthDate "1997-11-22"^^xsd:date;
+    schema:address _:b4828.
+_:b4828 a schema:PostalAddress;
+    schema:streetAddress "4th Street";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Port Bobbie";
+    schema:postalCode "00212";
+    schema:addressCountry "Paraguay".

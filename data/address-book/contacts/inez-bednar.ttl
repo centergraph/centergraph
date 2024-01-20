@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Inez";
+    schema:familyName "Bednar";
+    schema:birthDate "1974-02-20"^^xsd:date;
+    schema:address _:b9515.
+_:b9515 a schema:PostalAddress;
+    schema:streetAddress "Gaston Meadows";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Meaganhaven";
+    schema:postalCode "10195";
+    schema:addressCountry "Malta".

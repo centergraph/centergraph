@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lena";
+    schema:familyName "Ritchie";
+    schema:birthDate "1968-03-02"^^xsd:date;
+    schema:address _:b2061.
+_:b2061 a schema:PostalAddress;
+    schema:streetAddress "Adams Isle";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "New Gerhardland";
+    schema:postalCode "51467-8885";
+    schema:addressCountry "Portugal".

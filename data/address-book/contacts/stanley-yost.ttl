@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stanley";
+    schema:familyName "Yost";
+    schema:birthDate "2002-03-31"^^xsd:date;
+    schema:address _:b9786.
+_:b9786 a schema:PostalAddress;
+    schema:streetAddress "Manor Gardens";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Quincy";
+    schema:postalCode "62475-1255";
+    schema:addressCountry "Czechia".

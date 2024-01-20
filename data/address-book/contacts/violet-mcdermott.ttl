@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Violet";
+    schema:familyName "McDermott";
+    schema:birthDate "1949-07-03"^^xsd:date;
+    schema:address _:b8170.
+_:b8170 a schema:PostalAddress;
+    schema:streetAddress "Baker Street";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Port Duncan";
+    schema:postalCode "77412-9464";
+    schema:addressCountry "Paraguay".

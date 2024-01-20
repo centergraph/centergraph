@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Heather";
+    schema:familyName "Bailey";
+    schema:birthDate "1968-09-22"^^xsd:date;
+    schema:address _:b4689.
+_:b4689 a schema:PostalAddress;
+    schema:streetAddress "E 14th Street";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Cruzside";
+    schema:postalCode "95791";
+    schema:addressCountry "United States Minor Outlying Islands".

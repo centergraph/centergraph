@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hattie";
+    schema:familyName "Doyle";
+    schema:birthDate "1979-11-11"^^xsd:date;
+    schema:address _:b4918.
+_:b4918 a schema:PostalAddress;
+    schema:streetAddress "Myrtice Prairie";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Bertaport";
+    schema:postalCode "81586-6673";
+    schema:addressCountry "Taiwan".

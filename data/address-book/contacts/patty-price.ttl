@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Patty";
+    schema:familyName "Price";
+    schema:birthDate "1975-01-27"^^xsd:date;
+    schema:address _:b888.
+_:b888 a schema:PostalAddress;
+    schema:streetAddress "Dillon Spur";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Wunschhaven";
+    schema:postalCode "35483";
+    schema:addressCountry "Equatorial Guinea".

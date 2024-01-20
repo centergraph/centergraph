@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Barry";
+    schema:familyName "Jenkins";
+    schema:birthDate "1955-03-31"^^xsd:date;
+    schema:address _:b3320.
+_:b3320 a schema:PostalAddress;
+    schema:streetAddress "Oleta Crest";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Tedborough";
+    schema:postalCode "08587-5449";
+    schema:addressCountry "French Guiana".

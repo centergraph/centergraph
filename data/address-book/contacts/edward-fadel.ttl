@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edward";
+    schema:familyName "Fadel";
+    schema:birthDate "1951-11-26"^^xsd:date;
+    schema:address _:b2303.
+_:b2303 a schema:PostalAddress;
+    schema:streetAddress "Jaeden Manor";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "South Vedaton";
+    schema:postalCode "40890-5884";
+    schema:addressCountry "Estonia".

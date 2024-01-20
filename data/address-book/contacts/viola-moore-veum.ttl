@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Viola";
+    schema:familyName "Moore-Veum";
+    schema:birthDate "1952-10-15"^^xsd:date;
+    schema:address _:b3557.
+_:b3557 a schema:PostalAddress;
+    schema:streetAddress "Lodge Close";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "North Cletusbury";
+    schema:postalCode "20063-4248";
+    schema:addressCountry "Sao Tome and Principe".

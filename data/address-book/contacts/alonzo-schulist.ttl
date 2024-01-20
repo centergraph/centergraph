@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alonzo";
+    schema:familyName "Schulist";
+    schema:birthDate "1986-02-18"^^xsd:date;
+    schema:address _:b7644.
+_:b7644 a schema:PostalAddress;
+    schema:streetAddress "Becker Falls";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "East Raymundo";
+    schema:postalCode "26289-3834";
+    schema:addressCountry "Norway".

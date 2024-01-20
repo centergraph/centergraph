@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Robyn";
+    schema:familyName "Lesch";
+    schema:birthDate "1966-07-24"^^xsd:date;
+    schema:address _:b5135.
+_:b5135 a schema:PostalAddress;
+    schema:streetAddress "Kennith Gardens";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "South Christina";
+    schema:postalCode "80883";
+    schema:addressCountry "South Georgia and the South Sandwich Islands".

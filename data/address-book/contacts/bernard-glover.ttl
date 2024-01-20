@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bernard";
+    schema:familyName "Glover";
+    schema:birthDate "1963-04-24"^^xsd:date;
+    schema:address _:b2337.
+_:b2337 a schema:PostalAddress;
+    schema:streetAddress "Jarred Mount";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Winnifredton";
+    schema:postalCode "44497";
+    schema:addressCountry "Cocos (Keeling) Islands".

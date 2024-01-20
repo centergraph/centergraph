@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sheri";
+    schema:familyName "Okuneva";
+    schema:birthDate "1982-06-21"^^xsd:date;
+    schema:address _:b4032.
+_:b4032 a schema:PostalAddress;
+    schema:streetAddress "Marielle Center";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "MacGyverchester";
+    schema:postalCode "10772-3750";
+    schema:addressCountry "Bahamas".

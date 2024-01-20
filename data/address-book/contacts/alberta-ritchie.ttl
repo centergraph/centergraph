@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alberta";
+    schema:familyName "Ritchie";
+    schema:birthDate "1968-03-31"^^xsd:date;
+    schema:address _:b821.
+_:b821 a schema:PostalAddress;
+    schema:streetAddress "Court Street";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Warwick";
+    schema:postalCode "53472";
+    schema:addressCountry "Togo".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carlton";
+    schema:familyName "Jerde";
+    schema:birthDate "1958-11-20"^^xsd:date;
+    schema:address _:b2332.
+_:b2332 a schema:PostalAddress;
+    schema:streetAddress "Central Street";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Jacobsfurt";
+    schema:postalCode "20700";
+    schema:addressCountry "Mexico".

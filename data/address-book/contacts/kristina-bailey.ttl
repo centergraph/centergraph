@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristina";
+    schema:familyName "Bailey";
+    schema:birthDate "1985-04-15"^^xsd:date;
+    schema:address _:b5628.
+_:b5628 a schema:PostalAddress;
+    schema:streetAddress "Norfolk Road";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Las Cruces";
+    schema:postalCode "36613";
+    schema:addressCountry "San Marino".

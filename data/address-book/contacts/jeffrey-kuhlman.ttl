@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeffrey";
+    schema:familyName "Kuhlman";
+    schema:birthDate "1979-04-23"^^xsd:date;
+    schema:address _:b4882.
+_:b4882 a schema:PostalAddress;
+    schema:streetAddress "Chase Plain";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "West Green";
+    schema:postalCode "09209-2447";
+    schema:addressCountry "Guadeloupe".

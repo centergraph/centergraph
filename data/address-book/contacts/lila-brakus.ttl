@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lila";
+    schema:familyName "Brakus";
+    schema:birthDate "1953-05-25"^^xsd:date;
+    schema:address _:b9355.
+_:b9355 a schema:PostalAddress;
+    schema:streetAddress "The Grange";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "South Archland";
+    schema:postalCode "44754-6012";
+    schema:addressCountry "San Marino".

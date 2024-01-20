@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clinton";
+    schema:familyName "Deckow";
+    schema:birthDate "1985-08-23"^^xsd:date;
+    schema:address _:b2818.
+_:b2818 a schema:PostalAddress;
+    schema:streetAddress "Highfield Close";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "West Freeman";
+    schema:postalCode "95919-4425";
+    schema:addressCountry "Nigeria".

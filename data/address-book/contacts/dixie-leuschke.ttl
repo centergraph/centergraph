@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dixie";
+    schema:familyName "Leuschke";
+    schema:birthDate "1952-01-19"^^xsd:date;
+    schema:address _:b625.
+_:b625 a schema:PostalAddress;
+    schema:streetAddress "Walsh Cliff";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Bayerboro";
+    schema:postalCode "87314-3015";
+    schema:addressCountry "Pakistan".

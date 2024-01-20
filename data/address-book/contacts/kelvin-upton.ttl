@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelvin";
+    schema:familyName "Upton";
+    schema:birthDate "1961-06-21"^^xsd:date;
+    schema:address _:b1323.
+_:b1323 a schema:PostalAddress;
+    schema:streetAddress "Hills Crescent";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Kubboro";
+    schema:postalCode "23086";
+    schema:addressCountry "Bahrain".

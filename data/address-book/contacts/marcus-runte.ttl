@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marcus";
+    schema:familyName "Runte";
+    schema:birthDate "1996-02-01"^^xsd:date;
+    schema:address _:b4584.
+_:b4584 a schema:PostalAddress;
+    schema:streetAddress "Donna Ferry";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Konopelskiton";
+    schema:postalCode "94738-8408";
+    schema:addressCountry "Czechia".

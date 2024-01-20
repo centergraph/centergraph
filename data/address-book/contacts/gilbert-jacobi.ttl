@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gilbert";
+    schema:familyName "Jacobi";
+    schema:birthDate "2004-12-12"^^xsd:date;
+    schema:address _:b743.
+_:b743 a schema:PostalAddress;
+    schema:streetAddress "Jamey Club";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "El Paso";
+    schema:postalCode "59435";
+    schema:addressCountry "Iraq".

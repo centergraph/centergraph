@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Boyd";
+    schema:familyName "Bailey-Zieme";
+    schema:birthDate "1968-03-21"^^xsd:date;
+    schema:address _:b9203.
+_:b9203 a schema:PostalAddress;
+    schema:streetAddress "Carmela Glens";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Brannonburgh";
+    schema:postalCode "40393";
+    schema:addressCountry "Albania".

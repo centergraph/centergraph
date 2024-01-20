@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Belinda";
+    schema:familyName "Bruen";
+    schema:birthDate "1993-11-12"^^xsd:date;
+    schema:address _:b9952.
+_:b9952 a schema:PostalAddress;
+    schema:streetAddress "David Loop";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Hilllberg";
+    schema:postalCode "08800";
+    schema:addressCountry "Mayotte".

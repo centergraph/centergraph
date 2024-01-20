@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harold";
+    schema:familyName "Erdman";
+    schema:birthDate "1979-02-20"^^xsd:date;
+    schema:address _:b701.
+_:b701 a schema:PostalAddress;
+    schema:streetAddress "School Lane";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Garden Grove";
+    schema:postalCode "60687-2098";
+    schema:addressCountry "Angola".

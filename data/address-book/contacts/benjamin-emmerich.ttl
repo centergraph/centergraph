@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Benjamin";
+    schema:familyName "Emmerich";
+    schema:birthDate "1966-08-04"^^xsd:date;
+    schema:address _:b7213.
+_:b7213 a schema:PostalAddress;
+    schema:streetAddress "Welch Fords";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "South Blancheside";
+    schema:postalCode "68240-8853";
+    schema:addressCountry "Papua New Guinea".

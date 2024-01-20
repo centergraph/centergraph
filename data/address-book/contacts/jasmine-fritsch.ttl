@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jasmine";
+    schema:familyName "Fritsch";
+    schema:birthDate "1948-08-23"^^xsd:date;
+    schema:address _:b5669.
+_:b5669 a schema:PostalAddress;
+    schema:streetAddress "E 6th Street";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Thompsonton";
+    schema:postalCode "74946-4544";
+    schema:addressCountry "Holy See (Vatican City State)".

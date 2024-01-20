@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Salvatore";
+    schema:familyName "Bashirian";
+    schema:birthDate "1969-12-28"^^xsd:date;
+    schema:address _:b9959.
+_:b9959 a schema:PostalAddress;
+    schema:streetAddress "Rebeca Divide";
+    schema:addressRegion "Texas";
+    schema:addressLocality "New Winstonstead";
+    schema:postalCode "90918";
+    schema:addressCountry "Eritrea".

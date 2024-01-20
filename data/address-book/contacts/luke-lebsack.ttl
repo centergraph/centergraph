@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Luke";
+    schema:familyName "Lebsack";
+    schema:birthDate "2003-07-12"^^xsd:date;
+    schema:address _:b1785.
+_:b1785 a schema:PostalAddress;
+    schema:streetAddress "Margarita Court";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Oliverbury";
+    schema:postalCode "10889-7087";
+    schema:addressCountry "Christmas Island".

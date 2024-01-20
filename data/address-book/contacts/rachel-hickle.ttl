@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rachel";
+    schema:familyName "Hickle";
+    schema:birthDate "1978-01-01"^^xsd:date;
+    schema:address _:b8615.
+_:b8615 a schema:PostalAddress;
+    schema:streetAddress "Kole Land";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Victoria";
+    schema:postalCode "23779-3719";
+    schema:addressCountry "Falkland Islands (Malvinas)".

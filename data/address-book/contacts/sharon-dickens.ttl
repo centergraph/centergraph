@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sharon";
+    schema:familyName "Dickens";
+    schema:birthDate "1944-11-25"^^xsd:date;
+    schema:address _:b6205.
+_:b6205 a schema:PostalAddress;
+    schema:streetAddress "Reynolds Light";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Milotown";
+    schema:postalCode "04161-8176";
+    schema:addressCountry "Jamaica".

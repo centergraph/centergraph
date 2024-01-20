@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Morris";
+    schema:familyName "Bahringer";
+    schema:birthDate "1999-09-25"^^xsd:date;
+    schema:address _:b2694.
+_:b2694 a schema:PostalAddress;
+    schema:streetAddress "Ortiz Oval";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "North Marley";
+    schema:postalCode "55832";
+    schema:addressCountry "Malawi".

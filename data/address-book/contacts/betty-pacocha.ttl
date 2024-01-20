@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Betty";
+    schema:familyName "Pacocha";
+    schema:birthDate "1997-02-23"^^xsd:date;
+    schema:address _:b5996.
+_:b5996 a schema:PostalAddress;
+    schema:streetAddress "Wiley Park";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "West Mario";
+    schema:postalCode "93183-3559";
+    schema:addressCountry "Philippines".

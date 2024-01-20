@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elbert";
+    schema:familyName "Stokes";
+    schema:birthDate "1961-10-27"^^xsd:date;
+    schema:address _:b8564.
+_:b8564 a schema:PostalAddress;
+    schema:streetAddress "Dahlia Spurs";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Mobile";
+    schema:postalCode "81386-0276";
+    schema:addressCountry "Saint Martin".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lauren";
+    schema:familyName "Stracke-Fisher";
+    schema:birthDate "1991-03-16"^^xsd:date;
+    schema:address _:b377.
+_:b377 a schema:PostalAddress;
+    schema:streetAddress "Laila Extension";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Alexandria";
+    schema:postalCode "75925-1337";
+    schema:addressCountry "Montenegro".

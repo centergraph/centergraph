@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andy";
+    schema:familyName "Prohaska";
+    schema:birthDate "1977-06-10"^^xsd:date;
+    schema:address _:b6561.
+_:b6561 a schema:PostalAddress;
+    schema:streetAddress "W 2nd Street";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Lansing";
+    schema:postalCode "15114-3671";
+    schema:addressCountry "Bonaire, Sint Eustatius and Saba".

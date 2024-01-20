@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mildred";
+    schema:familyName "Ritchie";
+    schema:birthDate "1985-05-28"^^xsd:date;
+    schema:address _:b7647.
+_:b7647 a schema:PostalAddress;
+    schema:streetAddress "Natasha Underpass";
+    schema:addressRegion "Utah";
+    schema:addressLocality "West Leraborough";
+    schema:postalCode "74251-7174";
+    schema:addressCountry "Czechia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tracy";
+    schema:familyName "Upton";
+    schema:birthDate "1993-07-18"^^xsd:date;
+    schema:address _:b4426.
+_:b4426 a schema:PostalAddress;
+    schema:streetAddress "Union Avenue";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Oshkosh";
+    schema:postalCode "85598-4938";
+    schema:addressCountry "Central African Republic".

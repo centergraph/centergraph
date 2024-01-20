@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mary";
+    schema:familyName "Bauch";
+    schema:birthDate "1947-08-14"^^xsd:date;
+    schema:address _:b58.
+_:b58 a schema:PostalAddress;
+    schema:streetAddress "S Jackson Street";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Jacintocester";
+    schema:postalCode "77087";
+    schema:addressCountry "Brazil".

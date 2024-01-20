@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brendan";
+    schema:familyName "Herzog";
+    schema:birthDate "1995-04-19"^^xsd:date;
+    schema:address _:b2032.
+_:b2032 a schema:PostalAddress;
+    schema:streetAddress "Hoeger Rapids";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Twin Falls";
+    schema:postalCode "23991";
+    schema:addressCountry "Bonaire, Sint Eustatius and Saba".

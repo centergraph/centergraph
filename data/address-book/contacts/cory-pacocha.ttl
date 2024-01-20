@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cory";
+    schema:familyName "Pacocha";
+    schema:birthDate "1955-09-03"^^xsd:date;
+    schema:address _:b5715.
+_:b5715 a schema:PostalAddress;
+    schema:streetAddress "New Road";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Effieport";
+    schema:postalCode "29563";
+    schema:addressCountry "United Kingdom".

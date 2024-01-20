@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elsa";
+    schema:familyName "Wolf";
+    schema:birthDate "1964-10-26"^^xsd:date;
+    schema:address _:b295.
+_:b295 a schema:PostalAddress;
+    schema:streetAddress "Aurelie Keys";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "South Elroyview";
+    schema:postalCode "90581-1898";
+    schema:addressCountry "Malawi".

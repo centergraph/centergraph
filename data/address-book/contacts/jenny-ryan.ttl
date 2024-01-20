@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jenny";
+    schema:familyName "Ryan";
+    schema:birthDate "1986-07-05"^^xsd:date;
+    schema:address _:b4379.
+_:b4379 a schema:PostalAddress;
+    schema:streetAddress "3rd Avenue";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Cummeratafort";
+    schema:postalCode "13939";
+    schema:addressCountry "Haiti".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alejandro";
+    schema:familyName "Gleason";
+    schema:birthDate "1962-10-27"^^xsd:date;
+    schema:address _:b5399.
+_:b5399 a schema:PostalAddress;
+    schema:streetAddress "Winston Brook";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Emmerichbury";
+    schema:postalCode "91954";
+    schema:addressCountry "Albania".

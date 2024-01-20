@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joann";
+    schema:familyName "Boyle";
+    schema:birthDate "2001-01-05"^^xsd:date;
+    schema:address _:b547.
+_:b547 a schema:PostalAddress;
+    schema:streetAddress "Schmeler Cove";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Las Vegas";
+    schema:postalCode "11510-6677";
+    schema:addressCountry "Papua New Guinea".

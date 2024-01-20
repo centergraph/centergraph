@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wallace";
+    schema:familyName "Goyette";
+    schema:birthDate "1992-02-13"^^xsd:date;
+    schema:address _:b9471.
+_:b9471 a schema:PostalAddress;
+    schema:streetAddress "Nelson Summit";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Coyport";
+    schema:postalCode "23890-9209";
+    schema:addressCountry "Mayotte".

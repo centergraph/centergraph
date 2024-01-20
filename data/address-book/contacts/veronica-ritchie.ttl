@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Veronica";
+    schema:familyName "Ritchie";
+    schema:birthDate "1996-09-25"^^xsd:date;
+    schema:address _:b5173.
+_:b5173 a schema:PostalAddress;
+    schema:streetAddress "Alexandrine Unions";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Austinville";
+    schema:postalCode "29892-5523";
+    schema:addressCountry "Afghanistan".

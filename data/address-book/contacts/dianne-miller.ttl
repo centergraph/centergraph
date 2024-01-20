@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dianne";
+    schema:familyName "Miller";
+    schema:birthDate "1961-07-29"^^xsd:date;
+    schema:address _:b986.
+_:b986 a schema:PostalAddress;
+    schema:streetAddress "Abshire Stravenue";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Madera";
+    schema:postalCode "03906-5138";
+    schema:addressCountry "Turks and Caicos Islands".

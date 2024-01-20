@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sheryl";
+    schema:familyName "Klein";
+    schema:birthDate "1978-09-30"^^xsd:date;
+    schema:address _:b6163.
+_:b6163 a schema:PostalAddress;
+    schema:streetAddress "Hall Lane";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Portland";
+    schema:postalCode "16725";
+    schema:addressCountry "Nauru".

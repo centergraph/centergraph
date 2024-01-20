@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Perry";
+    schema:familyName "Hoeger";
+    schema:birthDate "2000-02-09"^^xsd:date;
+    schema:address _:b4666.
+_:b4666 a schema:PostalAddress;
+    schema:streetAddress "Grimes Curve";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "North Hailie";
+    schema:postalCode "35371-9314";
+    schema:addressCountry "Mauritania".

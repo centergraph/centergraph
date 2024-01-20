@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Christina";
+    schema:familyName "Kuhic";
+    schema:birthDate "1971-10-22"^^xsd:date;
+    schema:address _:b5709.
+_:b5709 a schema:PostalAddress;
+    schema:streetAddress "Union Avenue";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "South Corbin";
+    schema:postalCode "63248";
+    schema:addressCountry "Monaco".

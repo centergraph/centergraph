@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clara";
+    schema:familyName "Kiehn";
+    schema:birthDate "2004-08-23"^^xsd:date;
+    schema:address _:b3910.
+_:b3910 a schema:PostalAddress;
+    schema:streetAddress "Pleasant Street";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Port Jovany";
+    schema:postalCode "54123";
+    schema:addressCountry "Dominican Republic".

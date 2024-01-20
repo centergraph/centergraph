@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shaun";
+    schema:familyName "Bartoletti";
+    schema:birthDate "1947-12-17"^^xsd:date;
+    schema:address _:b6055.
+_:b6055 a schema:PostalAddress;
+    schema:streetAddress "N Railroad Street";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "New Haven";
+    schema:postalCode "65053-6943";
+    schema:addressCountry "Italy".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Melody";
+    schema:familyName "Douglas";
+    schema:birthDate "1979-01-31"^^xsd:date;
+    schema:address _:b1052.
+_:b1052 a schema:PostalAddress;
+    schema:streetAddress "South View";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "West Marcel";
+    schema:postalCode "39505-7535";
+    schema:addressCountry "Bulgaria".

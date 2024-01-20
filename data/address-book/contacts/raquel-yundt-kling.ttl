@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Raquel";
+    schema:familyName "Yundt-Kling";
+    schema:birthDate "1968-10-21"^^xsd:date;
+    schema:address _:b1449.
+_:b1449 a schema:PostalAddress;
+    schema:streetAddress "Predovic Expressway";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "New Kirstin";
+    schema:postalCode "17322-0145";
+    schema:addressCountry "Anguilla".

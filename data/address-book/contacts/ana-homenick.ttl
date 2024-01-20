@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ana";
+    schema:familyName "Homenick";
+    schema:birthDate "1983-05-26"^^xsd:date;
+    schema:address _:b8002.
+_:b8002 a schema:PostalAddress;
+    schema:streetAddress "The Orchard";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Turnershire";
+    schema:postalCode "66638";
+    schema:addressCountry "Japan".

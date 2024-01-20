@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dwight";
+    schema:familyName "Thompson";
+    schema:birthDate "1970-09-25"^^xsd:date;
+    schema:address _:b9422.
+_:b9422 a schema:PostalAddress;
+    schema:streetAddress "Manor Gardens";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Geraldineport";
+    schema:postalCode "07322-8358";
+    schema:addressCountry "Nauru".

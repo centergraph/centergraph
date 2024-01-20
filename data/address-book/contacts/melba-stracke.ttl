@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Melba";
+    schema:familyName "Stracke";
+    schema:birthDate "1968-04-27"^^xsd:date;
+    schema:address _:b104.
+_:b104 a schema:PostalAddress;
+    schema:streetAddress "The Glebe";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Owensboro";
+    schema:postalCode "85421-0852";
+    schema:addressCountry "Kenya".

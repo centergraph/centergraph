@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Micheal";
+    schema:familyName "Larkin";
+    schema:birthDate "1981-01-08"^^xsd:date;
+    schema:address _:b7920.
+_:b7920 a schema:PostalAddress;
+    schema:streetAddress "Turner Curve";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Highlands Ranch";
+    schema:postalCode "31360-1311";
+    schema:addressCountry "Switzerland".

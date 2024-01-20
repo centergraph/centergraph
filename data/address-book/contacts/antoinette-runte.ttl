@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Antoinette";
+    schema:familyName "Runte";
+    schema:birthDate "1973-08-27"^^xsd:date;
+    schema:address _:b1672.
+_:b1672 a schema:PostalAddress;
+    schema:streetAddress "Alanna Divide";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "North Geraldtown";
+    schema:postalCode "05897-2302";
+    schema:addressCountry "Indonesia".

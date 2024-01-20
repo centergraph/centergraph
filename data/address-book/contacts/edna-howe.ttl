@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edna";
+    schema:familyName "Howe";
+    schema:birthDate "1958-08-07"^^xsd:date;
+    schema:address _:b2736.
+_:b2736 a schema:PostalAddress;
+    schema:streetAddress "George Street";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Bartellborough";
+    schema:postalCode "64811-2582";
+    schema:addressCountry "Afghanistan".

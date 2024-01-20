@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Traci";
+    schema:familyName "Hermann";
+    schema:birthDate "1954-08-08"^^xsd:date;
+    schema:address _:b5607.
+_:b5607 a schema:PostalAddress;
+    schema:streetAddress "Church Close";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "New Shadberg";
+    schema:postalCode "54359-7135";
+    schema:addressCountry "Malaysia".

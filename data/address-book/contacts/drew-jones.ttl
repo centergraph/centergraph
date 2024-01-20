@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Drew";
+    schema:familyName "Jones";
+    schema:birthDate "1979-05-20"^^xsd:date;
+    schema:address _:b1912.
+_:b1912 a schema:PostalAddress;
+    schema:streetAddress "Brittany Expressway";
+    schema:addressRegion "California";
+    schema:addressLocality "Port Jettie";
+    schema:postalCode "96201-4385";
+    schema:addressCountry "Cook Islands".

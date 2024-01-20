@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alfredo";
+    schema:familyName "Moen";
+    schema:birthDate "1996-08-02"^^xsd:date;
+    schema:address _:b889.
+_:b889 a schema:PostalAddress;
+    schema:streetAddress "Octavia Point";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Port St. Lucie";
+    schema:postalCode "25489";
+    schema:addressCountry "Gibraltar".

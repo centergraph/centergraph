@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alicia";
+    schema:familyName "Oberbrunner";
+    schema:birthDate "1958-12-13"^^xsd:date;
+    schema:address _:b319.
+_:b319 a schema:PostalAddress;
+    schema:streetAddress "Vine Street";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Sharonland";
+    schema:postalCode "08051-7990";
+    schema:addressCountry "Martinique".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Floyd";
+    schema:familyName "Nitzsche";
+    schema:birthDate "1959-07-01"^^xsd:date;
+    schema:address _:b3299.
+_:b3299 a schema:PostalAddress;
+    schema:streetAddress "Torphy Glens";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Noblesville";
+    schema:postalCode "92466";
+    schema:addressCountry "Lao People's Democratic Republic".

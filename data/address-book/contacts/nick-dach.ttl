@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nick";
+    schema:familyName "Dach";
+    schema:birthDate "1979-05-14"^^xsd:date;
+    schema:address _:b8298.
+_:b8298 a schema:PostalAddress;
+    schema:streetAddress "Donnelly Club";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "West Liza";
+    schema:postalCode "03383";
+    schema:addressCountry "Peru".

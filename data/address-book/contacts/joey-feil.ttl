@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joey";
+    schema:familyName "Feil";
+    schema:birthDate "1999-02-23"^^xsd:date;
+    schema:address _:b6736.
+_:b6736 a schema:PostalAddress;
+    schema:streetAddress "Fadel Crossing";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Spinkaton";
+    schema:postalCode "58841-0822";
+    schema:addressCountry "Fiji".

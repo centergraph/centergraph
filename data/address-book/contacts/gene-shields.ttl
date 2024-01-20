@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gene";
+    schema:familyName "Shields";
+    schema:birthDate "1961-08-09"^^xsd:date;
+    schema:address _:b8460.
+_:b8460 a schema:PostalAddress;
+    schema:streetAddress "Jast Vista";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Kingsport";
+    schema:postalCode "04284";
+    schema:addressCountry "Argentina".

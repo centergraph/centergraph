@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Melissa";
+    schema:familyName "Bergstrom";
+    schema:birthDate "1955-10-29"^^xsd:date;
+    schema:address _:b4764.
+_:b4764 a schema:PostalAddress;
+    schema:streetAddress "Pleasant Street";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Faystad";
+    schema:postalCode "14110";
+    schema:addressCountry "Switzerland".

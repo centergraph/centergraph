@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorenzo";
+    schema:familyName "Jacobs";
+    schema:birthDate "1980-05-19"^^xsd:date;
+    schema:address _:b3762.
+_:b3762 a schema:PostalAddress;
+    schema:streetAddress "Tower Road";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "South Lowell";
+    schema:postalCode "31093";
+    schema:addressCountry "Belarus".

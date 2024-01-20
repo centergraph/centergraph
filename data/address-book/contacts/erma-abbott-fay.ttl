@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erma";
+    schema:familyName "Abbott-Fay";
+    schema:birthDate "1980-05-16"^^xsd:date;
+    schema:address _:b6428.
+_:b6428 a schema:PostalAddress;
+    schema:streetAddress "Hansen Mount";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Stephenstead";
+    schema:postalCode "64137-3095";
+    schema:addressCountry "Philippines".

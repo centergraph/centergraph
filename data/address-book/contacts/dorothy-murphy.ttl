@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dorothy";
+    schema:familyName "Murphy";
+    schema:birthDate "1992-10-19"^^xsd:date;
+    schema:address _:b1740.
+_:b1740 a schema:PostalAddress;
+    schema:streetAddress "Willow Drive";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Daughertyport";
+    schema:postalCode "29796-3590";
+    schema:addressCountry "Saint Vincent and the Grenadines".

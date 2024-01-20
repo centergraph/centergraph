@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nick";
+    schema:familyName "Auer";
+    schema:birthDate "1990-06-17"^^xsd:date;
+    schema:address _:b8174.
+_:b8174 a schema:PostalAddress;
+    schema:streetAddress "Doug Stream";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "North Barrybury";
+    schema:postalCode "25384";
+    schema:addressCountry "Sudan".

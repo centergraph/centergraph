@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hazel";
+    schema:familyName "Batz";
+    schema:birthDate "1946-06-01"^^xsd:date;
+    schema:address _:b7959.
+_:b7959 a schema:PostalAddress;
+    schema:streetAddress "Broad Street";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Lazaroburgh";
+    schema:postalCode "88204-7766";
+    schema:addressCountry "Falkland Islands (Malvinas)".

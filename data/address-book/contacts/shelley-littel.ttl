@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shelley";
+    schema:familyName "Littel";
+    schema:birthDate "1955-08-24"^^xsd:date;
+    schema:address _:b8912.
+_:b8912 a schema:PostalAddress;
+    schema:streetAddress "Harvey Brook";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Jakobfield";
+    schema:postalCode "33664-8906";
+    schema:addressCountry "Hong Kong".

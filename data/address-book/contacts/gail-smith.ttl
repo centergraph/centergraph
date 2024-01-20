@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gail";
+    schema:familyName "Smith";
+    schema:birthDate "1991-03-25"^^xsd:date;
+    schema:address _:b6454.
+_:b6454 a schema:PostalAddress;
+    schema:streetAddress "The Square";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Sporerville";
+    schema:postalCode "06437-0930";
+    schema:addressCountry "Qatar".

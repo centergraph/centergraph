@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rafael";
+    schema:familyName "Kerluke";
+    schema:birthDate "1948-02-12"^^xsd:date;
+    schema:address _:b7353.
+_:b7353 a schema:PostalAddress;
+    schema:streetAddress "Mill Street";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Port Jayne";
+    schema:postalCode "93128-3561";
+    schema:addressCountry "Spain".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gene";
+    schema:familyName "Dietrich";
+    schema:birthDate "1982-05-15"^^xsd:date;
+    schema:address _:b1012.
+_:b1012 a schema:PostalAddress;
+    schema:streetAddress "Orrin Knolls";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Aufderharland";
+    schema:postalCode "41337-2194";
+    schema:addressCountry "Senegal".

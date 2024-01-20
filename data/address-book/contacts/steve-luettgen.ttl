@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Steve";
+    schema:familyName "Luettgen";
+    schema:birthDate "1995-10-09"^^xsd:date;
+    schema:address _:b1059.
+_:b1059 a schema:PostalAddress;
+    schema:streetAddress "Johnson Groves";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Bossier City";
+    schema:postalCode "51212-9275";
+    schema:addressCountry "Italy".

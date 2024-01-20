@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laura";
+    schema:familyName "Satterfield";
+    schema:birthDate "1969-08-11"^^xsd:date;
+    schema:address _:b1318.
+_:b1318 a schema:PostalAddress;
+    schema:streetAddress "Dereck Lock";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "New Imaville";
+    schema:postalCode "30064";
+    schema:addressCountry "Tuvalu".

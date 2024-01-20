@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Francisco";
+    schema:familyName "Von";
+    schema:birthDate "1946-06-21"^^xsd:date;
+    schema:address _:b159.
+_:b159 a schema:PostalAddress;
+    schema:streetAddress "Kaylah Mission";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Miramar";
+    schema:postalCode "53759";
+    schema:addressCountry "Aland Islands".

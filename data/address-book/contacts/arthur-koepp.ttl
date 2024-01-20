@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Arthur";
+    schema:familyName "Koepp";
+    schema:birthDate "2005-11-15"^^xsd:date;
+    schema:address _:b293.
+_:b293 a schema:PostalAddress;
+    schema:streetAddress "Connelly Extensions";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Bashirianshire";
+    schema:postalCode "67649";
+    schema:addressCountry "Nicaragua".

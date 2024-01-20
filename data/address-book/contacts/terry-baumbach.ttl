@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terry";
+    schema:familyName "Baumbach";
+    schema:birthDate "1975-05-23"^^xsd:date;
+    schema:address _:b2866.
+_:b2866 a schema:PostalAddress;
+    schema:streetAddress "Mount Pleasant";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "East Jedidiahfort";
+    schema:postalCode "30960";
+    schema:addressCountry "Maldives".

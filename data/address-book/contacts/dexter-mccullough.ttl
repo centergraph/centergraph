@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dexter";
+    schema:familyName "McCullough";
+    schema:birthDate "1996-02-28"^^xsd:date;
+    schema:address _:b2827.
+_:b2827 a schema:PostalAddress;
+    schema:streetAddress "Hilll Trafficway";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Mosciskishire";
+    schema:postalCode "28409-8394";
+    schema:addressCountry "Greenland".

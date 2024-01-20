@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Aubrey";
+    schema:familyName "Moore";
+    schema:birthDate "1996-02-13"^^xsd:date;
+    schema:address _:b2969.
+_:b2969 a schema:PostalAddress;
+    schema:streetAddress "Edward Island";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Verniceview";
+    schema:postalCode "10619-4815";
+    schema:addressCountry "Saint Pierre and Miquelon".

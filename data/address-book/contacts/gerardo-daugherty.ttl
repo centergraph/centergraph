@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gerardo";
+    schema:familyName "Daugherty";
+    schema:birthDate "1976-10-06"^^xsd:date;
+    schema:address _:b5086.
+_:b5086 a schema:PostalAddress;
+    schema:streetAddress "Janiya Light";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Coachella";
+    schema:postalCode "04223-6441";
+    schema:addressCountry "Lao People's Democratic Republic".

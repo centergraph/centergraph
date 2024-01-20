@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Geoffrey";
+    schema:familyName "Haag";
+    schema:birthDate "1981-10-12"^^xsd:date;
+    schema:address _:b2400.
+_:b2400 a schema:PostalAddress;
+    schema:streetAddress "Chanelle Coves";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Perth Amboy";
+    schema:postalCode "48034-4286";
+    schema:addressCountry "Mauritius".

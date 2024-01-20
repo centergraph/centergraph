@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lillie";
+    schema:familyName "Lockman";
+    schema:birthDate "1969-09-21"^^xsd:date;
+    schema:address _:b4404.
+_:b4404 a schema:PostalAddress;
+    schema:streetAddress "Nitzsche Knoll";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Ashburn";
+    schema:postalCode "48710-2869";
+    schema:addressCountry "Aland Islands".

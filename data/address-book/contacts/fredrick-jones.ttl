@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Fredrick";
+    schema:familyName "Jones";
+    schema:birthDate "1997-07-04"^^xsd:date;
+    schema:address _:b7664.
+_:b7664 a schema:PostalAddress;
+    schema:streetAddress "Dovie Keys";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Kenosha";
+    schema:postalCode "53711";
+    schema:addressCountry "Cape Verde".

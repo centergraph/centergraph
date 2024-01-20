@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kendra";
+    schema:familyName "Kiehn";
+    schema:birthDate "1965-03-26"^^xsd:date;
+    schema:address _:b930.
+_:b930 a schema:PostalAddress;
+    schema:streetAddress "Stracke Pass";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Boyerville";
+    schema:postalCode "81125-0557";
+    schema:addressCountry "French Polynesia".

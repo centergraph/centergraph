@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Crystal";
+    schema:familyName "Heaney";
+    schema:birthDate "1984-11-11"^^xsd:date;
+    schema:address _:b1455.
+_:b1455 a schema:PostalAddress;
+    schema:streetAddress "Grant Bypass";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "North Palmafield";
+    schema:postalCode "08586-0380";
+    schema:addressCountry "Jordan".

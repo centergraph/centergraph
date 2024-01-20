@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doyle";
+    schema:familyName "Price";
+    schema:birthDate "1947-10-13"^^xsd:date;
+    schema:address _:b894.
+_:b894 a schema:PostalAddress;
+    schema:streetAddress "Cow Lane";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Lakincester";
+    schema:postalCode "10856";
+    schema:addressCountry "North Macedonia".

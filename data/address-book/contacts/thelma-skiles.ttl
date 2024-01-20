@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Thelma";
+    schema:familyName "Skiles";
+    schema:birthDate "1974-09-19"^^xsd:date;
+    schema:address _:b8478.
+_:b8478 a schema:PostalAddress;
+    schema:streetAddress "Bedford Road";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Port Jayson";
+    schema:postalCode "30275";
+    schema:addressCountry "Cayman Islands".

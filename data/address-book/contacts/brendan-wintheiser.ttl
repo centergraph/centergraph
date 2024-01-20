@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brendan";
+    schema:familyName "Wintheiser";
+    schema:birthDate "1961-05-02"^^xsd:date;
+    schema:address _:b1090.
+_:b1090 a schema:PostalAddress;
+    schema:streetAddress "Rosenbaum Shoals";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Raquelland";
+    schema:postalCode "99754-6232";
+    schema:addressCountry "Senegal".

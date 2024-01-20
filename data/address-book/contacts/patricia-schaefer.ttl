@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Patricia";
+    schema:familyName "Schaefer";
+    schema:birthDate "1988-10-26"^^xsd:date;
+    schema:address _:b8545.
+_:b8545 a schema:PostalAddress;
+    schema:streetAddress "Lansdowne Road";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Lake Jalon";
+    schema:postalCode "54528";
+    schema:addressCountry "San Marino".

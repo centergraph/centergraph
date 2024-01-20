@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ella";
+    schema:familyName "Labadie";
+    schema:birthDate "1984-12-13"^^xsd:date;
+    schema:address _:b8315.
+_:b8315 a schema:PostalAddress;
+    schema:streetAddress "Ankunding Trace";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Cutler Bay";
+    schema:postalCode "52225";
+    schema:addressCountry "Bhutan".

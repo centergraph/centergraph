@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sheri";
+    schema:familyName "Osinski";
+    schema:birthDate "1975-12-17"^^xsd:date;
+    schema:address _:b9237.
+_:b9237 a schema:PostalAddress;
+    schema:streetAddress "Devonshire Road";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Franzmouth";
+    schema:postalCode "84216";
+    schema:addressCountry "Czechia".

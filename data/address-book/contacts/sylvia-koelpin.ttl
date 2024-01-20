@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sylvia";
+    schema:familyName "Koelpin";
+    schema:birthDate "1944-06-26"^^xsd:date;
+    schema:address _:b9248.
+_:b9248 a schema:PostalAddress;
+    schema:streetAddress "N 8th Street";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "West Michealborough";
+    schema:postalCode "39645";
+    schema:addressCountry "Tuvalu".

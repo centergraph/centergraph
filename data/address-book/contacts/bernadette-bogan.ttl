@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bernadette";
+    schema:familyName "Bogan";
+    schema:birthDate "1971-08-01"^^xsd:date;
+    schema:address _:b4829.
+_:b4829 a schema:PostalAddress;
+    schema:streetAddress "Dicki Crossroad";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "New Maudie";
+    schema:postalCode "00537-0267";
+    schema:addressCountry "Central African Republic".

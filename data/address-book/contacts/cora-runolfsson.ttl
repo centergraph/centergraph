@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cora";
+    schema:familyName "Runolfsson";
+    schema:birthDate "1988-09-26"^^xsd:date;
+    schema:address _:b8843.
+_:b8843 a schema:PostalAddress;
+    schema:streetAddress "Kunze Fields";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Shoreline";
+    schema:postalCode "60620-5870";
+    schema:addressCountry "Poland".

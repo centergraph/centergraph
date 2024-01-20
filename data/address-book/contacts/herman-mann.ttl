@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Herman";
+    schema:familyName "Mann";
+    schema:birthDate "2002-01-27"^^xsd:date;
+    schema:address _:b5146.
+_:b5146 a schema:PostalAddress;
+    schema:streetAddress "Nathan Rue";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Fort Eddie";
+    schema:postalCode "46149-0740";
+    schema:addressCountry "Monaco".

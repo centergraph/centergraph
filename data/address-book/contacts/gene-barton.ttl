@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gene";
+    schema:familyName "Barton";
+    schema:birthDate "1947-03-20"^^xsd:date;
+    schema:address _:b7138.
+_:b7138 a schema:PostalAddress;
+    schema:streetAddress "Roman Road";
+    schema:addressRegion "California";
+    schema:addressLocality "Vinniestead";
+    schema:postalCode "18529";
+    schema:addressCountry "Azerbaijan".

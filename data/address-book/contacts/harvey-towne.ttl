@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harvey";
+    schema:familyName "Towne";
+    schema:birthDate "1947-06-05"^^xsd:date;
+    schema:address _:b1575.
+_:b1575 a schema:PostalAddress;
+    schema:streetAddress "Von Ferry";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Dylanfield";
+    schema:postalCode "18298-3889";
+    schema:addressCountry "Vanuatu".

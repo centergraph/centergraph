@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leticia";
+    schema:familyName "Friesen";
+    schema:birthDate "1972-01-19"^^xsd:date;
+    schema:address _:b9762.
+_:b9762 a schema:PostalAddress;
+    schema:streetAddress "Ash Close";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Lenexa";
+    schema:postalCode "19067-0963";
+    schema:addressCountry "Cocos (Keeling) Islands".

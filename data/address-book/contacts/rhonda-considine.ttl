@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rhonda";
+    schema:familyName "Considine";
+    schema:birthDate "1967-09-08"^^xsd:date;
+    schema:address _:b854.
+_:b854 a schema:PostalAddress;
+    schema:streetAddress "Chapel Road";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Lempiport";
+    schema:postalCode "43883";
+    schema:addressCountry "Eswatini".

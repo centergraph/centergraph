@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Armando";
+    schema:familyName "Schiller";
+    schema:birthDate "1953-12-26"^^xsd:date;
+    schema:address _:b1181.
+_:b1181 a schema:PostalAddress;
+    schema:streetAddress "Hill Street";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Rautown";
+    schema:postalCode "10806";
+    schema:addressCountry "Timor-Leste".

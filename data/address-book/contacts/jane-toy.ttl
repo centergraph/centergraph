@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jane";
+    schema:familyName "Toy";
+    schema:birthDate "1975-10-24"^^xsd:date;
+    schema:address _:b2147.
+_:b2147 a schema:PostalAddress;
+    schema:streetAddress "Meadow View";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Schuppeport";
+    schema:postalCode "88862-0874";
+    schema:addressCountry "Venezuela".

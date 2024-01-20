@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sonia";
+    schema:familyName "Morar";
+    schema:birthDate "1944-01-21"^^xsd:date;
+    schema:address _:b9225.
+_:b9225 a schema:PostalAddress;
+    schema:streetAddress "Hillside Close";
+    schema:addressRegion "California";
+    schema:addressLocality "Port Madisyn";
+    schema:postalCode "00350";
+    schema:addressCountry "Finland".

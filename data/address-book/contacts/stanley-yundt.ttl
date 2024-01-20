@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stanley";
+    schema:familyName "Yundt";
+    schema:birthDate "2005-11-09"^^xsd:date;
+    schema:address _:b27.
+_:b27 a schema:PostalAddress;
+    schema:streetAddress "Cole Landing";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "South Jeramyburgh";
+    schema:postalCode "32781";
+    schema:addressCountry "Turkmenistan".

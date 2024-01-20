@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joe";
+    schema:familyName "DuBuque";
+    schema:birthDate "1999-03-12"^^xsd:date;
+    schema:address _:b1906.
+_:b1906 a schema:PostalAddress;
+    schema:streetAddress "Shany Creek";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Fadelstad";
+    schema:postalCode "05253-4507";
+    schema:addressCountry "Morocco".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Frank";
+    schema:familyName "Powlowski";
+    schema:birthDate "1996-05-18"^^xsd:date;
+    schema:address _:b6030.
+_:b6030 a schema:PostalAddress;
+    schema:streetAddress "Welch Haven";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Blickchester";
+    schema:postalCode "60647";
+    schema:addressCountry "Namibia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vicky";
+    schema:familyName "Greenfelder";
+    schema:birthDate "1947-02-27"^^xsd:date;
+    schema:address _:b6117.
+_:b6117 a schema:PostalAddress;
+    schema:streetAddress "Kassulke Island";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Bakersfield";
+    schema:postalCode "49362";
+    schema:addressCountry "Equatorial Guinea".

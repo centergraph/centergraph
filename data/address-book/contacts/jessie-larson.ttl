@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jessie";
+    schema:familyName "Larson";
+    schema:birthDate "1996-05-15"^^xsd:date;
+    schema:address _:b4870.
+_:b4870 a schema:PostalAddress;
+    schema:streetAddress "Kristy Gardens";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "West Zoey";
+    schema:postalCode "98285";
+    schema:addressCountry "Peru".

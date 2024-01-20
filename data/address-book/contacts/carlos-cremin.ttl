@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carlos";
+    schema:familyName "Cremin";
+    schema:birthDate "1980-01-25"^^xsd:date;
+    schema:address _:b8823.
+_:b8823 a schema:PostalAddress;
+    schema:streetAddress "Aufderhar Parks";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Bergstromberg";
+    schema:postalCode "79115";
+    schema:addressCountry "Moldova".

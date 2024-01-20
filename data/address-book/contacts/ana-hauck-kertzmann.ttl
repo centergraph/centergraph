@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ana";
+    schema:familyName "Hauck-Kertzmann";
+    schema:birthDate "1947-09-24"^^xsd:date;
+    schema:address _:b5229.
+_:b5229 a schema:PostalAddress;
+    schema:streetAddress "Smitham Haven";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Citlallicester";
+    schema:postalCode "16572";
+    schema:addressCountry "Venezuela".

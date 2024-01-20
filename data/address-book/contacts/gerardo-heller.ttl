@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gerardo";
+    schema:familyName "Heller";
+    schema:birthDate "1965-01-08"^^xsd:date;
+    schema:address _:b1003.
+_:b1003 a schema:PostalAddress;
+    schema:streetAddress "Hilll Cove";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "South Dorcas";
+    schema:postalCode "61472";
+    schema:addressCountry "Thailand".

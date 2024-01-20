@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Linda";
+    schema:familyName "Schaefer";
+    schema:birthDate "1969-10-14"^^xsd:date;
+    schema:address _:b1951.
+_:b1951 a schema:PostalAddress;
+    schema:streetAddress "Wiza Prairie";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Marcview";
+    schema:postalCode "33875-3008";
+    schema:addressCountry "Egypt".

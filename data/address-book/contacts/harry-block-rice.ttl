@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harry";
+    schema:familyName "Block-Rice";
+    schema:birthDate "1985-05-13"^^xsd:date;
+    schema:address _:b4974.
+_:b4974 a schema:PostalAddress;
+    schema:streetAddress "W Main";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Fort Sadye";
+    schema:postalCode "69702-3738";
+    schema:addressCountry "Norfolk Island".

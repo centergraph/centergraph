@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jordan";
+    schema:familyName "Dicki";
+    schema:birthDate "1967-03-03"^^xsd:date;
+    schema:address _:b7714.
+_:b7714 a schema:PostalAddress;
+    schema:streetAddress "Reynolds Center";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Kirkland";
+    schema:postalCode "02514-7017";
+    schema:addressCountry "Cocos (Keeling) Islands".

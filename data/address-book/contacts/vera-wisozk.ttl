@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vera";
+    schema:familyName "Wisozk";
+    schema:birthDate "1965-10-08"^^xsd:date;
+    schema:address _:b4219.
+_:b4219 a schema:PostalAddress;
+    schema:streetAddress "Cartwright Freeway";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Mesquite";
+    schema:postalCode "47353-3305";
+    schema:addressCountry "American Samoa".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Teresa";
+    schema:familyName "Hyatt";
+    schema:birthDate "1965-12-30"^^xsd:date;
+    schema:address _:b6611.
+_:b6611 a schema:PostalAddress;
+    schema:streetAddress "Giovani Corner";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Shanymouth";
+    schema:postalCode "58253";
+    schema:addressCountry "Eswatini".

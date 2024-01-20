@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jaime";
+    schema:familyName "Kuhn";
+    schema:birthDate "1962-03-19"^^xsd:date;
+    schema:address _:b8952.
+_:b8952 a schema:PostalAddress;
+    schema:streetAddress "Antoinette Glen";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Ubaldofurt";
+    schema:postalCode "99792";
+    schema:addressCountry "Tuvalu".

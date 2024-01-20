@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carlos";
+    schema:familyName "Miller";
+    schema:birthDate "1969-05-21"^^xsd:date;
+    schema:address _:b4014.
+_:b4014 a schema:PostalAddress;
+    schema:streetAddress "Barney Shoal";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Tigard";
+    schema:postalCode "28297-1570";
+    schema:addressCountry "Grenada".

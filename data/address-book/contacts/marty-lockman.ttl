@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marty";
+    schema:familyName "Lockman";
+    schema:birthDate "1990-02-05"^^xsd:date;
+    schema:address _:b7297.
+_:b7297 a schema:PostalAddress;
+    schema:streetAddress "W 1st Street";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Bossier City";
+    schema:postalCode "63973-8066";
+    schema:addressCountry "Holy See (Vatican City State)".

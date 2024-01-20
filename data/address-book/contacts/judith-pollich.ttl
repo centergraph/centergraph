@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Judith";
+    schema:familyName "Pollich";
+    schema:birthDate "1953-04-09"^^xsd:date;
+    schema:address _:b4786.
+_:b4786 a schema:PostalAddress;
+    schema:streetAddress "Josie Pine";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Pasco";
+    schema:postalCode "32498-8945";
+    schema:addressCountry "Bahrain".

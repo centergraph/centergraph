@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terrance";
+    schema:familyName "Mueller";
+    schema:birthDate "1962-03-14"^^xsd:date;
+    schema:address _:b9138.
+_:b9138 a schema:PostalAddress;
+    schema:streetAddress "Maybell Views";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "West Tyraside";
+    schema:postalCode "33822-9869";
+    schema:addressCountry "Croatia".

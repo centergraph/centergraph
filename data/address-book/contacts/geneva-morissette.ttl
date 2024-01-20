@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Geneva";
+    schema:familyName "Morissette";
+    schema:birthDate "1970-04-06"^^xsd:date;
+    schema:address _:b4137.
+_:b4137 a schema:PostalAddress;
+    schema:streetAddress "Margarete Mission";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Ashburn";
+    schema:postalCode "49675-7308";
+    schema:addressCountry "Cambodia".

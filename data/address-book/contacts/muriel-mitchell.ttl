@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Muriel";
+    schema:familyName "Mitchell";
+    schema:birthDate "1989-07-29"^^xsd:date;
+    schema:address _:b6987.
+_:b6987 a schema:PostalAddress;
+    schema:streetAddress "Ledner Club";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Antoniotown";
+    schema:postalCode "51692-8656";
+    schema:addressCountry "Djibouti".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Courtney";
+    schema:familyName "McCullough";
+    schema:birthDate "1953-12-13"^^xsd:date;
+    schema:address _:b6697.
+_:b6697 a schema:PostalAddress;
+    schema:streetAddress "St Mary's Road";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Lake Ciara";
+    schema:postalCode "01010";
+    schema:addressCountry "Turks and Caicos Islands".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Antoinette";
+    schema:familyName "Lindgren";
+    schema:birthDate "2004-05-22"^^xsd:date;
+    schema:address _:b6682.
+_:b6682 a schema:PostalAddress;
+    schema:streetAddress "Gloucester Road";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Montyton";
+    schema:postalCode "46525";
+    schema:addressCountry "Saint Pierre and Miquelon".

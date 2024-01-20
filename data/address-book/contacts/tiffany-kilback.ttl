@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tiffany";
+    schema:familyName "Kilback";
+    schema:birthDate "1986-05-22"^^xsd:date;
+    schema:address _:b1422.
+_:b1422 a schema:PostalAddress;
+    schema:streetAddress "Morar Crossing";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "San Jose";
+    schema:postalCode "00141";
+    schema:addressCountry "Sweden".

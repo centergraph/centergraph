@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elena";
+    schema:familyName "Lowe";
+    schema:birthDate "1957-02-21"^^xsd:date;
+    schema:address _:b6218.
+_:b6218 a schema:PostalAddress;
+    schema:streetAddress "Wiza Ford";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Arden-Arcade";
+    schema:postalCode "10873-5248";
+    schema:addressCountry "Iceland".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stacy";
+    schema:familyName "Hansen";
+    schema:birthDate "1956-02-05"^^xsd:date;
+    schema:address _:b9014.
+_:b9014 a schema:PostalAddress;
+    schema:streetAddress "Champlin Extension";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "East Blair";
+    schema:postalCode "09782-3432";
+    schema:addressCountry "Slovakia".

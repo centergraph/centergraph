@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Greg";
+    schema:familyName "Hane";
+    schema:birthDate "1983-07-27"^^xsd:date;
+    schema:address _:b5246.
+_:b5246 a schema:PostalAddress;
+    schema:streetAddress "Old Military Road";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Tacoma";
+    schema:postalCode "92745";
+    schema:addressCountry "Democratic Republic of the Congo".

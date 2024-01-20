@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stephanie";
+    schema:familyName "Adams";
+    schema:birthDate "1966-10-31"^^xsd:date;
+    schema:address _:b7984.
+_:b7984 a schema:PostalAddress;
+    schema:streetAddress "Union Street";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Kemmerbury";
+    schema:postalCode "09533";
+    schema:addressCountry "Ukraine".

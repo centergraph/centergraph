@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julio";
+    schema:familyName "Terry";
+    schema:birthDate "1959-08-29"^^xsd:date;
+    schema:address _:b7262.
+_:b7262 a schema:PostalAddress;
+    schema:streetAddress "Rowan Close";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Leonardoborough";
+    schema:postalCode "01416";
+    schema:addressCountry "Morocco".

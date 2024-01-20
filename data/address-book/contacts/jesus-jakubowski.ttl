@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jesus";
+    schema:familyName "Jakubowski";
+    schema:birthDate "1984-05-24"^^xsd:date;
+    schema:address _:b1682.
+_:b1682 a schema:PostalAddress;
+    schema:streetAddress "S Union Street";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "New Shania";
+    schema:postalCode "40807";
+    schema:addressCountry "Guinea-Bissau".

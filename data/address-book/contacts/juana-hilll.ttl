@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Juana";
+    schema:familyName "Hilll";
+    schema:birthDate "1947-11-15"^^xsd:date;
+    schema:address _:b3719.
+_:b3719 a schema:PostalAddress;
+    schema:streetAddress "The Causeway";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Amelybury";
+    schema:postalCode "35548";
+    schema:addressCountry "Belarus".

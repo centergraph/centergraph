@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shawna";
+    schema:familyName "Kassulke";
+    schema:birthDate "1998-03-16"^^xsd:date;
+    schema:address _:b9015.
+_:b9015 a schema:PostalAddress;
+    schema:streetAddress "Schuppe Mountain";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Chandler";
+    schema:postalCode "11146-5768";
+    schema:addressCountry "Nicaragua".

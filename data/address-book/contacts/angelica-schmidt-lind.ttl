@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Angelica";
+    schema:familyName "Schmidt-Lind";
+    schema:birthDate "1976-02-12"^^xsd:date;
+    schema:address _:b9629.
+_:b9629 a schema:PostalAddress;
+    schema:streetAddress "Francis Brook";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Patiencechester";
+    schema:postalCode "74669";
+    schema:addressCountry "Ecuador".

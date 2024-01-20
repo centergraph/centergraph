@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mabel";
+    schema:familyName "Friesen";
+    schema:birthDate "1963-04-16"^^xsd:date;
+    schema:address _:b1324.
+_:b1324 a schema:PostalAddress;
+    schema:streetAddress "New Road";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Town 'n' Country";
+    schema:postalCode "32224-3567";
+    schema:addressCountry "Marshall Islands".

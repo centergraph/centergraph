@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clark";
+    schema:familyName "Waters";
+    schema:birthDate "1961-08-06"^^xsd:date;
+    schema:address _:b2704.
+_:b2704 a schema:PostalAddress;
+    schema:streetAddress "Jodie Fall";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Kassulkeside";
+    schema:postalCode "18431-3246";
+    schema:addressCountry "South Africa".

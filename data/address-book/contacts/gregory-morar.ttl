@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gregory";
+    schema:familyName "Morar";
+    schema:birthDate "1969-01-02"^^xsd:date;
+    schema:address _:b8376.
+_:b8376 a schema:PostalAddress;
+    schema:streetAddress "Evangeline Mountain";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Fort Vivienneworth";
+    schema:postalCode "79897-1829";
+    schema:addressCountry "Ecuador".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rufus";
+    schema:familyName "Glover";
+    schema:birthDate "1982-11-03"^^xsd:date;
+    schema:address _:b927.
+_:b927 a schema:PostalAddress;
+    schema:streetAddress "Jackson Keys";
+    schema:addressRegion "Utah";
+    schema:addressLocality "North Lenniemouth";
+    schema:postalCode "39970";
+    schema:addressCountry "Guam".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jack";
+    schema:familyName "Jacobs";
+    schema:birthDate "1955-02-14"^^xsd:date;
+    schema:address _:b6420.
+_:b6420 a schema:PostalAddress;
+    schema:streetAddress "16th Street";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Lailastad";
+    schema:postalCode "55288";
+    schema:addressCountry "Tunisia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darrel";
+    schema:familyName "Moore";
+    schema:birthDate "1949-09-01"^^xsd:date;
+    schema:address _:b4703.
+_:b4703 a schema:PostalAddress;
+    schema:streetAddress "Towne Club";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Rueckerstead";
+    schema:postalCode "82408";
+    schema:addressCountry "Guinea-Bissau".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Grant";
+    schema:familyName "Hand";
+    schema:birthDate "1983-07-24"^^xsd:date;
+    schema:address _:b6063.
+_:b6063 a schema:PostalAddress;
+    schema:streetAddress "Mount Pleasant";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Lake Jedidiah";
+    schema:postalCode "72797-2905";
+    schema:addressCountry "Kiribati".

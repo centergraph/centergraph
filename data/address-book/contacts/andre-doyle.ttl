@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andre";
+    schema:familyName "Doyle";
+    schema:birthDate "2000-04-28"^^xsd:date;
+    schema:address _:b8168.
+_:b8168 a schema:PostalAddress;
+    schema:streetAddress "Jackson Street";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "South Reyes";
+    schema:postalCode "86714";
+    schema:addressCountry "Monaco".

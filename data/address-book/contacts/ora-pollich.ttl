@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ora";
+    schema:familyName "Pollich";
+    schema:birthDate "1947-03-16"^^xsd:date;
+    schema:address _:b1619.
+_:b1619 a schema:PostalAddress;
+    schema:streetAddress "The Causeway";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Gailcester";
+    schema:postalCode "28730";
+    schema:addressCountry "Ethiopia".

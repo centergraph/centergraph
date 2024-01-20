@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Johanna";
+    schema:familyName "Corwin";
+    schema:birthDate "1958-09-21"^^xsd:date;
+    schema:address _:b2117.
+_:b2117 a schema:PostalAddress;
+    schema:streetAddress "Johnston Drives";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Koeppboro";
+    schema:postalCode "95464-7204";
+    schema:addressCountry "Armenia".

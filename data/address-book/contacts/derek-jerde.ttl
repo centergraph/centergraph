@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Derek";
+    schema:familyName "Jerde";
+    schema:birthDate "1977-07-03"^^xsd:date;
+    schema:address _:b7504.
+_:b7504 a schema:PostalAddress;
+    schema:streetAddress "W North Street";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Tremblaystad";
+    schema:postalCode "20663";
+    schema:addressCountry "New Caledonia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shawna";
+    schema:familyName "Mayer";
+    schema:birthDate "1971-01-26"^^xsd:date;
+    schema:address _:b4365.
+_:b4365 a schema:PostalAddress;
+    schema:streetAddress "Fay Center";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Lake Donato";
+    schema:postalCode "07583-0699";
+    schema:addressCountry "Guyana".

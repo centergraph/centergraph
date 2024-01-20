@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harold";
+    schema:familyName "Little";
+    schema:birthDate "1998-10-02"^^xsd:date;
+    schema:address _:b1160.
+_:b1160 a schema:PostalAddress;
+    schema:streetAddress "Ritchie Ports";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Briannestad";
+    schema:postalCode "27854";
+    schema:addressCountry "Mauritania".

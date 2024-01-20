@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edward";
+    schema:familyName "Koepp";
+    schema:birthDate "1949-09-18"^^xsd:date;
+    schema:address _:b1529.
+_:b1529 a schema:PostalAddress;
+    schema:streetAddress "Dax Villages";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Franciscoberg";
+    schema:postalCode "77955-3918";
+    schema:addressCountry "Jersey".

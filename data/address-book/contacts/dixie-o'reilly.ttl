@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dixie";
+    schema:familyName "O'Reilly";
+    schema:birthDate "1960-02-01"^^xsd:date;
+    schema:address _:b8462.
+_:b8462 a schema:PostalAddress;
+    schema:streetAddress "Marianna Meadow";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Pollichfield";
+    schema:postalCode "11768";
+    schema:addressCountry "Saint Lucia".

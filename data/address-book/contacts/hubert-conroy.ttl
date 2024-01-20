@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hubert";
+    schema:familyName "Conroy";
+    schema:birthDate "1957-12-19"^^xsd:date;
+    schema:address _:b953.
+_:b953 a schema:PostalAddress;
+    schema:streetAddress "Yessenia Loaf";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "East Destintown";
+    schema:postalCode "41666";
+    schema:addressCountry "Mauritius".

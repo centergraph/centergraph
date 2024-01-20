@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ida";
+    schema:familyName "Altenwerth";
+    schema:birthDate "1992-05-12"^^xsd:date;
+    schema:address _:b1475.
+_:b1475 a schema:PostalAddress;
+    schema:streetAddress "Aileen Valleys";
+    schema:addressRegion "Florida";
+    schema:addressLocality "New Odieview";
+    schema:postalCode "90002-1455";
+    schema:addressCountry "Central African Republic".

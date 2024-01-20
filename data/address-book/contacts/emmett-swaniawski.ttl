@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emmett";
+    schema:familyName "Swaniawski";
+    schema:birthDate "1975-09-04"^^xsd:date;
+    schema:address _:b5593.
+_:b5593 a schema:PostalAddress;
+    schema:streetAddress "S Oak Street";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "South Axel";
+    schema:postalCode "39890-2025";
+    schema:addressCountry "El Salvador".

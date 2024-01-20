@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roderick";
+    schema:familyName "Schneider";
+    schema:birthDate "2001-05-24"^^xsd:date;
+    schema:address _:b2561.
+_:b2561 a schema:PostalAddress;
+    schema:streetAddress "Division Street";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Candicefort";
+    schema:postalCode "18886";
+    schema:addressCountry "Uzbekistan".

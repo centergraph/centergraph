@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lonnie";
+    schema:familyName "Feest";
+    schema:birthDate "1955-10-16"^^xsd:date;
+    schema:address _:b6404.
+_:b6404 a schema:PostalAddress;
+    schema:streetAddress "Union Street";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Abelbury";
+    schema:postalCode "56617-1253";
+    schema:addressCountry "Cameroon".

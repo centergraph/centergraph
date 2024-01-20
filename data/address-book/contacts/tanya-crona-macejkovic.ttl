@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tanya";
+    schema:familyName "Crona-Macejkovic";
+    schema:birthDate "1994-07-09"^^xsd:date;
+    schema:address _:b6986.
+_:b6986 a schema:PostalAddress;
+    schema:streetAddress "Rath Terrace";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "South Brigitte";
+    schema:postalCode "59157";
+    schema:addressCountry "Guatemala".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mae";
+    schema:familyName "Tremblay";
+    schema:birthDate "1979-06-16"^^xsd:date;
+    schema:address _:b5483.
+_:b5483 a schema:PostalAddress;
+    schema:streetAddress "Hyatt Via";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Port Berry";
+    schema:postalCode "40234";
+    schema:addressCountry "Jordan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Meredith";
+    schema:familyName "Grady";
+    schema:birthDate "1947-12-25"^^xsd:date;
+    schema:address _:b9424.
+_:b9424 a schema:PostalAddress;
+    schema:streetAddress "14th Street";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Azusa";
+    schema:postalCode "63539";
+    schema:addressCountry "Egypt".

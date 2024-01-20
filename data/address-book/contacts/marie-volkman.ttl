@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marie";
+    schema:familyName "Volkman";
+    schema:birthDate "1961-02-04"^^xsd:date;
+    schema:address _:b1904.
+_:b1904 a schema:PostalAddress;
+    schema:streetAddress "S Broad Street";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "West Carmentown";
+    schema:postalCode "70054";
+    schema:addressCountry "Croatia".

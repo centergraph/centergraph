@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Malcolm";
+    schema:familyName "Marks";
+    schema:birthDate "1976-12-07"^^xsd:date;
+    schema:address _:b8811.
+_:b8811 a schema:PostalAddress;
+    schema:streetAddress "Willow Close";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Darianaworth";
+    schema:postalCode "78266-9409";
+    schema:addressCountry "Monaco".

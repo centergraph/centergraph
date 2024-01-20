@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Susie";
+    schema:familyName "Jenkins";
+    schema:birthDate "1974-11-14"^^xsd:date;
+    schema:address _:b1620.
+_:b1620 a schema:PostalAddress;
+    schema:streetAddress "Lenora Orchard";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Santa Fe";
+    schema:postalCode "49317-1691";
+    schema:addressCountry "Tonga".

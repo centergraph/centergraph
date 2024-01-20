@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Myron";
+    schema:familyName "Kris-Doyle";
+    schema:birthDate "2001-06-16"^^xsd:date;
+    schema:address _:b9118.
+_:b9118 a schema:PostalAddress;
+    schema:streetAddress "Karen Squares";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "South Mabellestead";
+    schema:postalCode "65255-8740";
+    schema:addressCountry "Oman".

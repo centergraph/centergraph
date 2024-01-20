@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mercedes";
+    schema:familyName "Bogisich";
+    schema:birthDate "1963-03-07"^^xsd:date;
+    schema:address _:b11.
+_:b11 a schema:PostalAddress;
+    schema:streetAddress "Beach Road";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Henderson";
+    schema:postalCode "97172-0430";
+    schema:addressCountry "Taiwan".

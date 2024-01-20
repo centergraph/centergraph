@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bernice";
+    schema:familyName "Weber";
+    schema:birthDate "1973-02-09"^^xsd:date;
+    schema:address _:b9234.
+_:b9234 a schema:PostalAddress;
+    schema:streetAddress "Hahn Divide";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Dooleybury";
+    schema:postalCode "11560-2846";
+    schema:addressCountry "Guinea-Bissau".

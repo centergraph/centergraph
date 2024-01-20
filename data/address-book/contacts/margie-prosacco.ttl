@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Margie";
+    schema:familyName "Prosacco";
+    schema:birthDate "1989-05-25"^^xsd:date;
+    schema:address _:b6414.
+_:b6414 a schema:PostalAddress;
+    schema:streetAddress "Amber Walk";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Fort Guadalupeton";
+    schema:postalCode "65127-8817";
+    schema:addressCountry "Gambia".

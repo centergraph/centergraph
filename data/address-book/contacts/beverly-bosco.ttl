@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Beverly";
+    schema:familyName "Bosco";
+    schema:birthDate "1948-12-14"^^xsd:date;
+    schema:address _:b3783.
+_:b3783 a schema:PostalAddress;
+    schema:streetAddress "Thompson Mall";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "South Rickeycester";
+    schema:postalCode "80048-2535";
+    schema:addressCountry "Madagascar".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mattie";
+    schema:familyName "Harber";
+    schema:birthDate "1949-07-01"^^xsd:date;
+    schema:address _:b1920.
+_:b1920 a schema:PostalAddress;
+    schema:streetAddress "Telly Path";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Germanberg";
+    schema:postalCode "52876-5515";
+    schema:addressCountry "Nepal".

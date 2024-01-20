@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bethany";
+    schema:familyName "Zieme";
+    schema:birthDate "1967-08-30"^^xsd:date;
+    schema:address _:b3432.
+_:b3432 a schema:PostalAddress;
+    schema:streetAddress "Raynor Vista";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Wuckertmouth";
+    schema:postalCode "05440";
+    schema:addressCountry "Colombia".

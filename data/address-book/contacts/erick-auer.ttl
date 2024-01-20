@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erick";
+    schema:familyName "Auer";
+    schema:birthDate "2002-09-30"^^xsd:date;
+    schema:address _:b9560.
+_:b9560 a schema:PostalAddress;
+    schema:streetAddress "Olson Pine";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Lomaworth";
+    schema:postalCode "32463";
+    schema:addressCountry "Belize".

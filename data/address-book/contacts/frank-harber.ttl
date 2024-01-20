@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Frank";
+    schema:familyName "Harber";
+    schema:birthDate "1973-05-02"^^xsd:date;
+    schema:address _:b3192.
+_:b3192 a schema:PostalAddress;
+    schema:streetAddress "Emard Rapid";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Davis";
+    schema:postalCode "16930-0169";
+    schema:addressCountry "Kenya".

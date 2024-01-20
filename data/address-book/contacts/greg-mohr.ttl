@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Greg";
+    schema:familyName "Mohr";
+    schema:birthDate "1947-10-10"^^xsd:date;
+    schema:address _:b4893.
+_:b4893 a schema:PostalAddress;
+    schema:streetAddress "New Lane";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "South Elinore";
+    schema:postalCode "10163";
+    schema:addressCountry "French Guiana".

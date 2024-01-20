@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sherry";
+    schema:familyName "Krajcik";
+    schema:birthDate "1962-04-21"^^xsd:date;
+    schema:address _:b968.
+_:b968 a schema:PostalAddress;
+    schema:streetAddress "Georgiana Via";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Lake Jerrodchester";
+    schema:postalCode "61556-9054";
+    schema:addressCountry "Bulgaria".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sonja";
+    schema:familyName "Sporer";
+    schema:birthDate "2001-06-30"^^xsd:date;
+    schema:address _:b957.
+_:b957 a schema:PostalAddress;
+    schema:streetAddress "Jamar Hill";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Fresno";
+    schema:postalCode "94714-6614";
+    schema:addressCountry "Armenia".

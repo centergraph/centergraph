@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ricky";
+    schema:familyName "Lubowitz";
+    schema:birthDate "1970-02-17"^^xsd:date;
+    schema:address _:b4368.
+_:b4368 a schema:PostalAddress;
+    schema:streetAddress "Edison Rapid";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Skokie";
+    schema:postalCode "78700";
+    schema:addressCountry "Dominica".

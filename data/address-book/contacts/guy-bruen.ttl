@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Guy";
+    schema:familyName "Bruen";
+    schema:birthDate "1984-10-21"^^xsd:date;
+    schema:address _:b576.
+_:b576 a schema:PostalAddress;
+    schema:streetAddress "Justine Parkway";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Cedar Hill";
+    schema:postalCode "42615-1657";
+    schema:addressCountry "Sao Tome and Principe".

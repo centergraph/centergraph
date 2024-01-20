@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Yolanda";
+    schema:familyName "Kulas";
+    schema:birthDate "1966-10-06"^^xsd:date;
+    schema:address _:b5013.
+_:b5013 a schema:PostalAddress;
+    schema:streetAddress "Linnie Cove";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Jerrodton";
+    schema:postalCode "13691";
+    schema:addressCountry "Papua New Guinea".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Homer";
+    schema:familyName "Reynolds";
+    schema:birthDate "1977-05-30"^^xsd:date;
+    schema:address _:b3690.
+_:b3690 a schema:PostalAddress;
+    schema:streetAddress "McKenzie Points";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "McCulloughtown";
+    schema:postalCode "58914-9092";
+    schema:addressCountry "Albania".

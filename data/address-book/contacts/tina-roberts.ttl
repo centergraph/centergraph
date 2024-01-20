@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tina";
+    schema:familyName "Roberts";
+    schema:birthDate "1993-11-22"^^xsd:date;
+    schema:address _:b9827.
+_:b9827 a schema:PostalAddress;
+    schema:streetAddress "Lucy Mill";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Rippinville";
+    schema:postalCode "76177";
+    schema:addressCountry "Czechia".

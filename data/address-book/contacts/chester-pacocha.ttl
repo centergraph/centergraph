@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Chester";
+    schema:familyName "Pacocha";
+    schema:birthDate "1990-02-28"^^xsd:date;
+    schema:address _:b5314.
+_:b5314 a schema:PostalAddress;
+    schema:streetAddress "Antonette Fields";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Portage";
+    schema:postalCode "96041-1638";
+    schema:addressCountry "Russian Federation".

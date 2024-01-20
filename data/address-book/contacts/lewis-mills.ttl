@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lewis";
+    schema:familyName "Mills";
+    schema:birthDate "2000-01-26"^^xsd:date;
+    schema:address _:b9745.
+_:b9745 a schema:PostalAddress;
+    schema:streetAddress "Corbin Valley";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "East Whitney";
+    schema:postalCode "65811-3490";
+    schema:addressCountry "Democratic People's Republic of Korea".

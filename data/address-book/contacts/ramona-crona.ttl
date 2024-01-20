@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ramona";
+    schema:familyName "Crona";
+    schema:birthDate "1990-06-11"^^xsd:date;
+    schema:address _:b6528.
+_:b6528 a schema:PostalAddress;
+    schema:streetAddress "W Washington Avenue";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "West Blaze";
+    schema:postalCode "81391";
+    schema:addressCountry "Solomon Islands".

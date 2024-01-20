@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Melvin";
+    schema:familyName "Tremblay";
+    schema:birthDate "1972-12-25"^^xsd:date;
+    schema:address _:b5304.
+_:b5304 a schema:PostalAddress;
+    schema:streetAddress "Beechwood Avenue";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "New Chadrick";
+    schema:postalCode "71951";
+    schema:addressCountry "Lao People's Democratic Republic".

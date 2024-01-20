@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jody";
+    schema:familyName "Frami";
+    schema:birthDate "1972-09-16"^^xsd:date;
+    schema:address _:b9849.
+_:b9849 a schema:PostalAddress;
+    schema:streetAddress "Ulises Forge";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Grand Forks";
+    schema:postalCode "21679";
+    schema:addressCountry "Mali".

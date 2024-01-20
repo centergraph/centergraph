@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clark";
+    schema:familyName "Sauer";
+    schema:birthDate "1958-07-13"^^xsd:date;
+    schema:address _:b2760.
+_:b2760 a schema:PostalAddress;
+    schema:streetAddress "Sylvan Vista";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Rio Rancho";
+    schema:postalCode "62401";
+    schema:addressCountry "Jersey".

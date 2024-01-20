@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Theresa";
+    schema:familyName "Hammes";
+    schema:birthDate "1952-05-23"^^xsd:date;
+    schema:address _:b5932.
+_:b5932 a schema:PostalAddress;
+    schema:streetAddress "Rippin Ramp";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "North Ashton";
+    schema:postalCode "64037-0663";
+    schema:addressCountry "Timor-Leste".

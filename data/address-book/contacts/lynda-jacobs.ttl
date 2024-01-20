@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lynda";
+    schema:familyName "Jacobs";
+    schema:birthDate "1970-03-18"^^xsd:date;
+    schema:address _:b7822.
+_:b7822 a schema:PostalAddress;
+    schema:streetAddress "11th Street";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Waelchifield";
+    schema:postalCode "04796-0241";
+    schema:addressCountry "Faroe Islands".

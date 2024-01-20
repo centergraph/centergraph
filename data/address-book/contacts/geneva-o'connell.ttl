@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Geneva";
+    schema:familyName "O'Connell";
+    schema:birthDate "1982-12-04"^^xsd:date;
+    schema:address _:b6497.
+_:b6497 a schema:PostalAddress;
+    schema:streetAddress "Fahey Harbors";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "South Kittyhaven";
+    schema:postalCode "35192-3901";
+    schema:addressCountry "South Sudan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jessie";
+    schema:familyName "Pollich";
+    schema:birthDate "1980-09-12"^^xsd:date;
+    schema:address _:b4773.
+_:b4773 a schema:PostalAddress;
+    schema:streetAddress "Kub Court";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "South Maximo";
+    schema:postalCode "32174";
+    schema:addressCountry "Gibraltar".

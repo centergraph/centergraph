@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Patricia";
+    schema:familyName "Trantow";
+    schema:birthDate "1964-03-20"^^xsd:date;
+    schema:address _:b4308.
+_:b4308 a schema:PostalAddress;
+    schema:streetAddress "Darrel Common";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Rowantown";
+    schema:postalCode "22266";
+    schema:addressCountry "French Guiana".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Claire";
+    schema:familyName "Dach";
+    schema:birthDate "2004-05-08"^^xsd:date;
+    schema:address _:b484.
+_:b484 a schema:PostalAddress;
+    schema:streetAddress "Candelario Well";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Nataliefield";
+    schema:postalCode "17635-0897";
+    schema:addressCountry "Virgin Islands, British".

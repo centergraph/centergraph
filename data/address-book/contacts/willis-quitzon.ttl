@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Willis";
+    schema:familyName "Quitzon";
+    schema:birthDate "1947-05-18"^^xsd:date;
+    schema:address _:b5211.
+_:b5211 a schema:PostalAddress;
+    schema:streetAddress "Kiehn Divide";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Aaliyahborough";
+    schema:postalCode "05367-7314";
+    schema:addressCountry "Netherlands".

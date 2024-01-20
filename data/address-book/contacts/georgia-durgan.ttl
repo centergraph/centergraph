@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Georgia";
+    schema:familyName "Durgan";
+    schema:birthDate "1973-10-10"^^xsd:date;
+    schema:address _:b9438.
+_:b9438 a schema:PostalAddress;
+    schema:streetAddress "Joey Squares";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "West Constantin";
+    schema:postalCode "18643";
+    schema:addressCountry "Marshall Islands".

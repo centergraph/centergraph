@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Steve";
+    schema:familyName "Bartell";
+    schema:birthDate "1985-06-28"^^xsd:date;
+    schema:address _:b2855.
+_:b2855 a schema:PostalAddress;
+    schema:streetAddress "Cristina Terrace";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "New Chasitychester";
+    schema:postalCode "22120-7863";
+    schema:addressCountry "Canada".

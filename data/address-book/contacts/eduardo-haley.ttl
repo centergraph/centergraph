@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eduardo";
+    schema:familyName "Haley";
+    schema:birthDate "1979-10-20"^^xsd:date;
+    schema:address _:b170.
+_:b170 a schema:PostalAddress;
+    schema:streetAddress "Valerie Mews";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Port Anika";
+    schema:postalCode "39866";
+    schema:addressCountry "Liechtenstein".

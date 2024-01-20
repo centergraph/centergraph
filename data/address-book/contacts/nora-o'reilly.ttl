@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nora";
+    schema:familyName "O'Reilly";
+    schema:birthDate "1990-04-14"^^xsd:date;
+    schema:address _:b3721.
+_:b3721 a schema:PostalAddress;
+    schema:streetAddress "Nienow Square";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "West Amayaworth";
+    schema:postalCode "69673";
+    schema:addressCountry "Saint Martin".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pamela";
+    schema:familyName "Kihn";
+    schema:birthDate "1987-01-24"^^xsd:date;
+    schema:address _:b3100.
+_:b3100 a schema:PostalAddress;
+    schema:streetAddress "Zora Divide";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Federal Way";
+    schema:postalCode "57003";
+    schema:addressCountry "Andorra".

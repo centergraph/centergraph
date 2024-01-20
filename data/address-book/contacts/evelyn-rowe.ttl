@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Evelyn";
+    schema:familyName "Rowe";
+    schema:birthDate "1968-08-11"^^xsd:date;
+    schema:address _:b4553.
+_:b4553 a schema:PostalAddress;
+    schema:streetAddress "Schimmel Union";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Riverton";
+    schema:postalCode "78538";
+    schema:addressCountry "Namibia".

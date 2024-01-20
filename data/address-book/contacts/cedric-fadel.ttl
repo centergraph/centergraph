@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cedric";
+    schema:familyName "Fadel";
+    schema:birthDate "1987-11-08"^^xsd:date;
+    schema:address _:b1075.
+_:b1075 a schema:PostalAddress;
+    schema:streetAddress "Wyman Lodge";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "San Leandro";
+    schema:postalCode "20412";
+    schema:addressCountry "Nauru".

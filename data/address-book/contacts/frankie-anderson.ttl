@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Frankie";
+    schema:familyName "Anderson";
+    schema:birthDate "1960-03-26"^^xsd:date;
+    schema:address _:b4326.
+_:b4326 a schema:PostalAddress;
+    schema:streetAddress "Dickens Manor";
+    schema:addressRegion "California";
+    schema:addressLocality "Huntington Park";
+    schema:postalCode "85801";
+    schema:addressCountry "Monaco".

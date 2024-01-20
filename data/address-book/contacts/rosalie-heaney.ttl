@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosalie";
+    schema:familyName "Heaney";
+    schema:birthDate "2005-06-08"^^xsd:date;
+    schema:address _:b7418.
+_:b7418 a schema:PostalAddress;
+    schema:streetAddress "Kreiger Shores";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Sengerboro";
+    schema:postalCode "66056";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

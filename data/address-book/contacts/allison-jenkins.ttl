@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Allison";
+    schema:familyName "Jenkins";
+    schema:birthDate "1981-04-17"^^xsd:date;
+    schema:address _:b2021.
+_:b2021 a schema:PostalAddress;
+    schema:streetAddress "Ellie Lock";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "New Izaiahside";
+    schema:postalCode "62619-5696";
+    schema:addressCountry "Philippines".

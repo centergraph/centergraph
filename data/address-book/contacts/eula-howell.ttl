@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eula";
+    schema:familyName "Howell";
+    schema:birthDate "2005-07-29"^^xsd:date;
+    schema:address _:b2903.
+_:b2903 a schema:PostalAddress;
+    schema:streetAddress "Beech Road";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "North Corbinport";
+    schema:postalCode "10549-8245";
+    schema:addressCountry "Dominican Republic".

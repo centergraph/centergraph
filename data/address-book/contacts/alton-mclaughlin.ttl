@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alton";
+    schema:familyName "McLaughlin";
+    schema:birthDate "1955-09-22"^^xsd:date;
+    schema:address _:b1859.
+_:b1859 a schema:PostalAddress;
+    schema:streetAddress "D'Amore River";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Pine Bluff";
+    schema:postalCode "90817-1687";
+    schema:addressCountry "Northern Mariana Islands".

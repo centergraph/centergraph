@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brent";
+    schema:familyName "Schulist-Orn";
+    schema:birthDate "1978-09-09"^^xsd:date;
+    schema:address _:b8642.
+_:b8642 a schema:PostalAddress;
+    schema:streetAddress "Cummerata Meadow";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Rathstead";
+    schema:postalCode "99874-6402";
+    schema:addressCountry "United States of America".

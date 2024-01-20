@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rita";
+    schema:familyName "Gutmann";
+    schema:birthDate "1953-03-11"^^xsd:date;
+    schema:address _:b7818.
+_:b7818 a schema:PostalAddress;
+    schema:streetAddress "Grant Street";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Kirlinside";
+    schema:postalCode "41539";
+    schema:addressCountry "Guyana".

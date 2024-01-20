@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Derrick";
+    schema:familyName "Nolan";
+    schema:birthDate "1962-04-17"^^xsd:date;
+    schema:address _:b4223.
+_:b4223 a schema:PostalAddress;
+    schema:streetAddress "Elwyn Motorway";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Theresiaburgh";
+    schema:postalCode "49469";
+    schema:addressCountry "Iran".

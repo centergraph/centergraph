@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Melba";
+    schema:familyName "Ullrich";
+    schema:birthDate "1987-09-01"^^xsd:date;
+    schema:address _:b1030.
+_:b1030 a schema:PostalAddress;
+    schema:streetAddress "Dewitt Key";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Greenfort";
+    schema:postalCode "67494";
+    schema:addressCountry "Comoros".

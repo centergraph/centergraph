@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Duane";
+    schema:familyName "Walker";
+    schema:birthDate "1958-08-13"^^xsd:date;
+    schema:address _:b5290.
+_:b5290 a schema:PostalAddress;
+    schema:streetAddress "Cristopher Parkways";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Franciscacester";
+    schema:postalCode "29804-8991";
+    schema:addressCountry "Palestine".

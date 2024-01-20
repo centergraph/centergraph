@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Yolanda";
+    schema:familyName "Kassulke";
+    schema:birthDate "1946-01-18"^^xsd:date;
+    schema:address _:b8999.
+_:b8999 a schema:PostalAddress;
+    schema:streetAddress "Ora Unions";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Lehi";
+    schema:postalCode "65584-1935";
+    schema:addressCountry "Heard Island and McDonald Islands".

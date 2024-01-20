@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stephanie";
+    schema:familyName "MacGyver";
+    schema:birthDate "1995-09-21"^^xsd:date;
+    schema:address _:b8875.
+_:b8875 a schema:PostalAddress;
+    schema:streetAddress "Hickle Knolls";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Albintown";
+    schema:postalCode "81516";
+    schema:addressCountry "Andorra".

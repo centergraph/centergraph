@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nicolas";
+    schema:familyName "Mosciski";
+    schema:birthDate "2000-09-09"^^xsd:date;
+    schema:address _:b9533.
+_:b9533 a schema:PostalAddress;
+    schema:streetAddress "Kertzmann Station";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Schmittburgh";
+    schema:postalCode "12227-4722";
+    schema:addressCountry "Timor-Leste".

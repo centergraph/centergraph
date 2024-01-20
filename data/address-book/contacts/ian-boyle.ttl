@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ian";
+    schema:familyName "Boyle";
+    schema:birthDate "1956-07-12"^^xsd:date;
+    schema:address _:b8803.
+_:b8803 a schema:PostalAddress;
+    schema:streetAddress "Champlin Passage";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Lawrence";
+    schema:postalCode "31190";
+    schema:addressCountry "Antigua and Barbuda".

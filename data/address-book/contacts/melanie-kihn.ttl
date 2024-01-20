@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Melanie";
+    schema:familyName "Kihn";
+    schema:birthDate "1977-12-01"^^xsd:date;
+    schema:address _:b419.
+_:b419 a schema:PostalAddress;
+    schema:streetAddress "Harrison Forges";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Reychester";
+    schema:postalCode "96565-2725";
+    schema:addressCountry "Cuba".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nora";
+    schema:familyName "Boyle";
+    schema:birthDate "1968-05-13"^^xsd:date;
+    schema:address _:b7033.
+_:b7033 a schema:PostalAddress;
+    schema:streetAddress "Monahan Cliff";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Boulder";
+    schema:postalCode "35806";
+    schema:addressCountry "Democratic People's Republic of Korea".

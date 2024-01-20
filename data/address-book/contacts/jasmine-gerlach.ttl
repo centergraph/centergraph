@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jasmine";
+    schema:familyName "Gerlach";
+    schema:birthDate "1959-09-05"^^xsd:date;
+    schema:address _:b7329.
+_:b7329 a schema:PostalAddress;
+    schema:streetAddress "Kiana Village";
+    schema:addressRegion "New York";
+    schema:addressLocality "Port Cecil";
+    schema:postalCode "67668";
+    schema:addressCountry "Gabon".

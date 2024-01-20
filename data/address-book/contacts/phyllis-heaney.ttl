@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Phyllis";
+    schema:familyName "Heaney";
+    schema:birthDate "2002-06-12"^^xsd:date;
+    schema:address _:b4199.
+_:b4199 a schema:PostalAddress;
+    schema:streetAddress "Eulah Mountain";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "San Jacinto";
+    schema:postalCode "32094-0922";
+    schema:addressCountry "British Indian Ocean Territory (Chagos Archipelago)".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carolyn";
+    schema:familyName "Hagenes";
+    schema:birthDate "2000-08-17"^^xsd:date;
+    schema:address _:b1538.
+_:b1538 a schema:PostalAddress;
+    schema:streetAddress "Conn Crossroad";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Littleton";
+    schema:postalCode "11207-3279";
+    schema:addressCountry "Nigeria".

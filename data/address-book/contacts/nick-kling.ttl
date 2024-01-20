@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nick";
+    schema:familyName "Kling";
+    schema:birthDate "1997-11-12"^^xsd:date;
+    schema:address _:b5310.
+_:b5310 a schema:PostalAddress;
+    schema:streetAddress "Jubilee Close";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Vivienshire";
+    schema:postalCode "27231";
+    schema:addressCountry "El Salvador".

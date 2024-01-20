@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tami";
+    schema:familyName "Yost";
+    schema:birthDate "1993-02-22"^^xsd:date;
+    schema:address _:b3486.
+_:b3486 a schema:PostalAddress;
+    schema:streetAddress "Bedford Road";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Heidenreichfurt";
+    schema:postalCode "99169-8232";
+    schema:addressCountry "Russian Federation".

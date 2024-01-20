@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Johnnie";
+    schema:familyName "Murray";
+    schema:birthDate "1988-01-13"^^xsd:date;
+    schema:address _:b8733.
+_:b8733 a schema:PostalAddress;
+    schema:streetAddress "The Lane";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Hayleemouth";
+    schema:postalCode "28934";
+    schema:addressCountry "Aland Islands".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristin";
+    schema:familyName "Weimann";
+    schema:birthDate "1951-09-28"^^xsd:date;
+    schema:address _:b924.
+_:b924 a schema:PostalAddress;
+    schema:streetAddress "Lysanne Views";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Lake Eugenia";
+    schema:postalCode "79833";
+    schema:addressCountry "Burundi".

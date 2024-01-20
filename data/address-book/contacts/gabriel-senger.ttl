@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gabriel";
+    schema:familyName "Senger";
+    schema:birthDate "1949-01-15"^^xsd:date;
+    schema:address _:b8777.
+_:b8777 a schema:PostalAddress;
+    schema:streetAddress "Bill Heights";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Adashire";
+    schema:postalCode "18245-9301";
+    schema:addressCountry "Netherlands".

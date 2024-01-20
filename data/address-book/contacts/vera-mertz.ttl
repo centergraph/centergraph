@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vera";
+    schema:familyName "Mertz";
+    schema:birthDate "1972-07-12"^^xsd:date;
+    schema:address _:b8035.
+_:b8035 a schema:PostalAddress;
+    schema:streetAddress "Pennsylvania Avenue";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Taliaview";
+    schema:postalCode "84086-9143";
+    schema:addressCountry "Pakistan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ross";
+    schema:familyName "Nienow";
+    schema:birthDate "1989-07-25"^^xsd:date;
+    schema:address _:b1573.
+_:b1573 a schema:PostalAddress;
+    schema:streetAddress "S 1st Street";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "North Domenica";
+    schema:postalCode "31383-6941";
+    schema:addressCountry "Djibouti".

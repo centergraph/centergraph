@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristy";
+    schema:familyName "Watsica";
+    schema:birthDate "1987-04-08"^^xsd:date;
+    schema:address _:b1897.
+_:b1897 a schema:PostalAddress;
+    schema:streetAddress "Luisa Divide";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Veumshire";
+    schema:postalCode "41402";
+    schema:addressCountry "Eritrea".

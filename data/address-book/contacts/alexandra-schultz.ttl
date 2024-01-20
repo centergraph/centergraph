@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alexandra";
+    schema:familyName "Schultz";
+    schema:birthDate "1994-07-25"^^xsd:date;
+    schema:address _:b4634.
+_:b4634 a schema:PostalAddress;
+    schema:streetAddress "Sanford Burg";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Baltimore";
+    schema:postalCode "07917";
+    schema:addressCountry "Zambia".

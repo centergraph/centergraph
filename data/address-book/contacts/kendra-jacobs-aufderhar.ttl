@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kendra";
+    schema:familyName "Jacobs-Aufderhar";
+    schema:birthDate "1992-07-08"^^xsd:date;
+    schema:address _:b1332.
+_:b1332 a schema:PostalAddress;
+    schema:streetAddress "Farrell Trafficway";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "East Khalid";
+    schema:postalCode "49944-5071";
+    schema:addressCountry "Saudi Arabia".

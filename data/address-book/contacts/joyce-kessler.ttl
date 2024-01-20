@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joyce";
+    schema:familyName "Kessler";
+    schema:birthDate "1952-06-05"^^xsd:date;
+    schema:address _:b1397.
+_:b1397 a schema:PostalAddress;
+    schema:streetAddress "S Main Avenue";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Brookhaven";
+    schema:postalCode "55198";
+    schema:addressCountry "Mauritius".

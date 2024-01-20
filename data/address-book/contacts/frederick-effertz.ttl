@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Frederick";
+    schema:familyName "Effertz";
+    schema:birthDate "1992-08-19"^^xsd:date;
+    schema:address _:b4815.
+_:b4815 a schema:PostalAddress;
+    schema:streetAddress "Marvin Circle";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Victorville";
+    schema:postalCode "76043";
+    schema:addressCountry "Montserrat".

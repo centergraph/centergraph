@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marcus";
+    schema:familyName "Daniel";
+    schema:birthDate "1983-10-02"^^xsd:date;
+    schema:address _:b3837.
+_:b3837 a schema:PostalAddress;
+    schema:streetAddress "E Washington Street";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "White Plains";
+    schema:postalCode "25474-3525";
+    schema:addressCountry "Jamaica".

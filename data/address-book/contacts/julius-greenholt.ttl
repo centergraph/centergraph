@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julius";
+    schema:familyName "Greenholt";
+    schema:birthDate "1946-05-30"^^xsd:date;
+    schema:address _:b6306.
+_:b6306 a schema:PostalAddress;
+    schema:streetAddress "Lavern Mountains";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "North Franz";
+    schema:postalCode "57619-9439";
+    schema:addressCountry "Aland Islands".

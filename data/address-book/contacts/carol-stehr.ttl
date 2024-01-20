@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carol";
+    schema:familyName "Stehr";
+    schema:birthDate "1955-09-02"^^xsd:date;
+    schema:address _:b5294.
+_:b5294 a schema:PostalAddress;
+    schema:streetAddress "Center Avenue";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Asheville";
+    schema:postalCode "72447-9803";
+    schema:addressCountry "France".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ronald";
+    schema:familyName "Casper";
+    schema:birthDate "1948-04-28"^^xsd:date;
+    schema:address _:b2766.
+_:b2766 a schema:PostalAddress;
+    schema:streetAddress "Krystal Lodge";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Faheyfort";
+    schema:postalCode "49833-7473";
+    schema:addressCountry "Burkina Faso".

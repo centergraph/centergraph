@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mattie";
+    schema:familyName "D'Amore";
+    schema:birthDate "2003-01-29"^^xsd:date;
+    schema:address _:b2346.
+_:b2346 a schema:PostalAddress;
+    schema:streetAddress "Alverta Court";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Burke";
+    schema:postalCode "23816-7924";
+    schema:addressCountry "Burkina Faso".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andy";
+    schema:familyName "Boehm";
+    schema:birthDate "1955-03-29"^^xsd:date;
+    schema:address _:b4284.
+_:b4284 a schema:PostalAddress;
+    schema:streetAddress "Hilda Keys";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Port Jeffrystad";
+    schema:postalCode "67581-6136";
+    schema:addressCountry "Bonaire, Sint Eustatius and Saba".

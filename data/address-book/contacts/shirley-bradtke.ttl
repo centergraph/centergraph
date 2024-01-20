@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shirley";
+    schema:familyName "Bradtke";
+    schema:birthDate "1983-01-14"^^xsd:date;
+    schema:address _:b8130.
+_:b8130 a schema:PostalAddress;
+    schema:streetAddress "College Avenue";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Melodyland";
+    schema:postalCode "04249";
+    schema:addressCountry "Montenegro".

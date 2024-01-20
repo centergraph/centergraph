@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Traci";
+    schema:familyName "Jast";
+    schema:birthDate "1998-05-23"^^xsd:date;
+    schema:address _:b5834.
+_:b5834 a schema:PostalAddress;
+    schema:streetAddress "Gottlieb Radial";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "East Maryjaneberg";
+    schema:postalCode "17223";
+    schema:addressCountry "Equatorial Guinea".

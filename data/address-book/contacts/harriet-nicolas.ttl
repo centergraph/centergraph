@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harriet";
+    schema:familyName "Nicolas";
+    schema:birthDate "1969-10-22"^^xsd:date;
+    schema:address _:b7029.
+_:b7029 a schema:PostalAddress;
+    schema:streetAddress "Pfeffer Burgs";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Fort Jessie";
+    schema:postalCode "37428";
+    schema:addressCountry "Poland".

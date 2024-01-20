@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Paulette";
+    schema:familyName "Dickinson";
+    schema:birthDate "1967-04-08"^^xsd:date;
+    schema:address _:b3456.
+_:b3456 a schema:PostalAddress;
+    schema:streetAddress "Preston Causeway";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Darbyhaven";
+    schema:postalCode "46198";
+    schema:addressCountry "Ghana".

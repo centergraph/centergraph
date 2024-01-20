@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elmer";
+    schema:familyName "Hagenes";
+    schema:birthDate "1974-10-23"^^xsd:date;
+    schema:address _:b8948.
+_:b8948 a schema:PostalAddress;
+    schema:streetAddress "Martin Luther King Jr Boulevard";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "North Gregorioberg";
+    schema:postalCode "68758-2250";
+    schema:addressCountry "Morocco".

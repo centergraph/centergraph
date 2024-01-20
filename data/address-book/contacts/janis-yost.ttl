@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janis";
+    schema:familyName "Yost";
+    schema:birthDate "1974-02-25"^^xsd:date;
+    schema:address _:b7569.
+_:b7569 a schema:PostalAddress;
+    schema:streetAddress "Lubowitz Unions";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Vickyburgh";
+    schema:postalCode "40036-0917";
+    schema:addressCountry "Palestine".

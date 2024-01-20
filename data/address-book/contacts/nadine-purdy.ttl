@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nadine";
+    schema:familyName "Purdy";
+    schema:birthDate "1971-05-08"^^xsd:date;
+    schema:address _:b7124.
+_:b7124 a schema:PostalAddress;
+    schema:streetAddress "Vine Street";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Hegmannberg";
+    schema:postalCode "59297";
+    schema:addressCountry "Angola".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carlos";
+    schema:familyName "Ortiz";
+    schema:birthDate "1985-05-23"^^xsd:date;
+    schema:address _:b9071.
+_:b9071 a schema:PostalAddress;
+    schema:streetAddress "Veterans Memorial Highway";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Fayetteville";
+    schema:postalCode "13963";
+    schema:addressCountry "Peru".

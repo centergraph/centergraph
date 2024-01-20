@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sonja";
+    schema:familyName "Wilkinson";
+    schema:birthDate "2002-11-19"^^xsd:date;
+    schema:address _:b7152.
+_:b7152 a schema:PostalAddress;
+    schema:streetAddress "Vicarage Road";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Lakewood";
+    schema:postalCode "32103-3148";
+    schema:addressCountry "Nepal".

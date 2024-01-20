@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vernon";
+    schema:familyName "Bosco";
+    schema:birthDate "2000-02-04"^^xsd:date;
+    schema:address _:b8836.
+_:b8836 a schema:PostalAddress;
+    schema:streetAddress "Layla Brook";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Parma";
+    schema:postalCode "22039-6049";
+    schema:addressCountry "France".

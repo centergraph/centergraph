@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bobby";
+    schema:familyName "Ryan";
+    schema:birthDate "1988-01-19"^^xsd:date;
+    schema:address _:b5565.
+_:b5565 a schema:PostalAddress;
+    schema:streetAddress "Aurelie Rapids";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "South Jedidiah";
+    schema:postalCode "11630";
+    schema:addressCountry "Nepal".

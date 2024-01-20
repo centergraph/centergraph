@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cameron";
+    schema:familyName "Tremblay";
+    schema:birthDate "1945-05-26"^^xsd:date;
+    schema:address _:b3368.
+_:b3368 a schema:PostalAddress;
+    schema:streetAddress "Danny Grove";
+    schema:addressRegion "Montana";
+    schema:addressLocality "New Dewitt";
+    schema:postalCode "45055";
+    schema:addressCountry "Thailand".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elisa";
+    schema:familyName "Heller";
+    schema:birthDate "1945-07-02"^^xsd:date;
+    schema:address _:b8464.
+_:b8464 a schema:PostalAddress;
+    schema:streetAddress "Kovacek Lane";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Xanderburgh";
+    schema:postalCode "37753-2102";
+    schema:addressCountry "Lithuania".

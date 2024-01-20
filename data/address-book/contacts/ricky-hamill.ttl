@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ricky";
+    schema:familyName "Hamill";
+    schema:birthDate "2001-01-18"^^xsd:date;
+    schema:address _:b7902.
+_:b7902 a schema:PostalAddress;
+    schema:streetAddress "Haag Village";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Lake Emersonboro";
+    schema:postalCode "21989";
+    schema:addressCountry "Bhutan".

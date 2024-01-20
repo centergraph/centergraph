@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rogelio";
+    schema:familyName "Jacobi";
+    schema:birthDate "1970-11-26"^^xsd:date;
+    schema:address _:b8008.
+_:b8008 a schema:PostalAddress;
+    schema:streetAddress "Bauch Estates";
+    schema:addressRegion "Montana";
+    schema:addressLocality "El Centro";
+    schema:postalCode "73798-9447";
+    schema:addressCountry "Chad".

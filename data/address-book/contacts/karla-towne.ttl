@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Karla";
+    schema:familyName "Towne";
+    schema:birthDate "1968-06-02"^^xsd:date;
+    schema:address _:b5152.
+_:b5152 a schema:PostalAddress;
+    schema:streetAddress "Oak Drive";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Hoegerstad";
+    schema:postalCode "95893";
+    schema:addressCountry "Sint Maarten".

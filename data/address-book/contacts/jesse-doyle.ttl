@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jesse";
+    schema:familyName "Doyle";
+    schema:birthDate "1969-08-14"^^xsd:date;
+    schema:address _:b7069.
+_:b7069 a schema:PostalAddress;
+    schema:streetAddress "Heller Key";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Jeanieburgh";
+    schema:postalCode "41610";
+    schema:addressCountry "Barbados".

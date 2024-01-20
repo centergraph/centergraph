@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gwendolyn";
+    schema:familyName "Bartoletti";
+    schema:birthDate "1963-04-15"^^xsd:date;
+    schema:address _:b6102.
+_:b6102 a schema:PostalAddress;
+    schema:streetAddress "Jaskolski Court";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Johnnystad";
+    schema:postalCode "82504";
+    schema:addressCountry "Saint Vincent and the Grenadines".

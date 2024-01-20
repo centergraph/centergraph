@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Audrey";
+    schema:familyName "Gleichner";
+    schema:birthDate "1994-07-19"^^xsd:date;
+    schema:address _:b5315.
+_:b5315 a schema:PostalAddress;
+    schema:streetAddress "Mayra Street";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Nehatown";
+    schema:postalCode "56873-4160";
+    schema:addressCountry "Sudan".

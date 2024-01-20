@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cynthia";
+    schema:familyName "Hyatt-Padberg";
+    schema:birthDate "2003-09-13"^^xsd:date;
+    schema:address _:b2793.
+_:b2793 a schema:PostalAddress;
+    schema:streetAddress "Sandy Lane";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Vineland";
+    schema:postalCode "34690";
+    schema:addressCountry "French Guiana".

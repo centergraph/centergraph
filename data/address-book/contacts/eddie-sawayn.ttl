@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eddie";
+    schema:familyName "Sawayn";
+    schema:birthDate "1996-04-04"^^xsd:date;
+    schema:address _:b7109.
+_:b7109 a schema:PostalAddress;
+    schema:streetAddress "Miller Cliff";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Lakewood";
+    schema:postalCode "18016-7497";
+    schema:addressCountry "Eritrea".

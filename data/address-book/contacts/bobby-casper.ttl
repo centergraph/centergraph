@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bobby";
+    schema:familyName "Casper";
+    schema:birthDate "1985-07-17"^^xsd:date;
+    schema:address _:b7135.
+_:b7135 a schema:PostalAddress;
+    schema:streetAddress "Gerald Forges";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Coleside";
+    schema:postalCode "05757-5189";
+    schema:addressCountry "Panama".

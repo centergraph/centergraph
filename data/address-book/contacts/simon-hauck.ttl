@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Simon";
+    schema:familyName "Hauck";
+    schema:birthDate "1969-10-16"^^xsd:date;
+    schema:address _:b570.
+_:b570 a schema:PostalAddress;
+    schema:streetAddress "Effertz Mews";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "New Omachester";
+    schema:postalCode "11432";
+    schema:addressCountry "Honduras".

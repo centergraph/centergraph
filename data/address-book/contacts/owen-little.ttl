@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Owen";
+    schema:familyName "Little";
+    schema:birthDate "1959-01-31"^^xsd:date;
+    schema:address _:b4372.
+_:b4372 a schema:PostalAddress;
+    schema:streetAddress "The Laurels";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Lake Hadleyport";
+    schema:postalCode "02638-1487";
+    schema:addressCountry "Saint Barthelemy".

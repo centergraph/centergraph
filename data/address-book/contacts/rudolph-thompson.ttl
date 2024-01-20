@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rudolph";
+    schema:familyName "Thompson";
+    schema:birthDate "1995-12-07"^^xsd:date;
+    schema:address _:b3487.
+_:b3487 a schema:PostalAddress;
+    schema:streetAddress "Waterside";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Jensenbury";
+    schema:postalCode "57458";
+    schema:addressCountry "Guinea-Bissau".

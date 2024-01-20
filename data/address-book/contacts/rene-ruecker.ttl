@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rene";
+    schema:familyName "Ruecker";
+    schema:birthDate "1981-11-14"^^xsd:date;
+    schema:address _:b4320.
+_:b4320 a schema:PostalAddress;
+    schema:streetAddress "Ashleigh Gardens";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "North Charity";
+    schema:postalCode "58825";
+    schema:addressCountry "Thailand".

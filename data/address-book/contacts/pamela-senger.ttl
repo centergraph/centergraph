@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pamela";
+    schema:familyName "Senger";
+    schema:birthDate "1988-11-22"^^xsd:date;
+    schema:address _:b1994.
+_:b1994 a schema:PostalAddress;
+    schema:streetAddress "Rau Center";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Dickiberg";
+    schema:postalCode "59787-4318";
+    schema:addressCountry "Slovakia".

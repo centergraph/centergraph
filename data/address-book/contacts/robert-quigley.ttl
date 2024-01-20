@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Robert";
+    schema:familyName "Quigley";
+    schema:birthDate "1946-06-16"^^xsd:date;
+    schema:address _:b5626.
+_:b5626 a schema:PostalAddress;
+    schema:streetAddress "Kozey Pine";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Rathchester";
+    schema:postalCode "36562";
+    schema:addressCountry "Papua New Guinea".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stephen";
+    schema:familyName "O'Connell";
+    schema:birthDate "1989-07-05"^^xsd:date;
+    schema:address _:b1677.
+_:b1677 a schema:PostalAddress;
+    schema:streetAddress "Orpha Circle";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Pietroville";
+    schema:postalCode "15154-9141";
+    schema:addressCountry "Tanzania".

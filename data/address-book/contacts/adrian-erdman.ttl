@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Adrian";
+    schema:familyName "Erdman";
+    schema:birthDate "1945-05-06"^^xsd:date;
+    schema:address _:b9675.
+_:b9675 a schema:PostalAddress;
+    schema:streetAddress "Vickie Estate";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Spinkaberg";
+    schema:postalCode "36513";
+    schema:addressCountry "Guinea".

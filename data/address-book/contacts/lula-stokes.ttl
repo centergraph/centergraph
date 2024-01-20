@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lula";
+    schema:familyName "Stokes";
+    schema:birthDate "1979-04-17"^^xsd:date;
+    schema:address _:b3005.
+_:b3005 a schema:PostalAddress;
+    schema:streetAddress "Johnson Street";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Port Rachelleworth";
+    schema:postalCode "44230-0931";
+    schema:addressCountry "Niger".

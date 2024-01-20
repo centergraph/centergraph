@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leonard";
+    schema:familyName "Cremin";
+    schema:birthDate "1950-12-06"^^xsd:date;
+    schema:address _:b2165.
+_:b2165 a schema:PostalAddress;
+    schema:streetAddress "Riverside Drive";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Madera";
+    schema:postalCode "76638";
+    schema:addressCountry "Niue".

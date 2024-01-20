@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Karla";
+    schema:familyName "Schmidt";
+    schema:birthDate "1994-04-21"^^xsd:date;
+    schema:address _:b3927.
+_:b3927 a schema:PostalAddress;
+    schema:streetAddress "Skyline Drive";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Conntown";
+    schema:postalCode "19762-9649";
+    schema:addressCountry "Switzerland".

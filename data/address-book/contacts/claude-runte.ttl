@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Claude";
+    schema:familyName "Runte";
+    schema:birthDate "1993-07-19"^^xsd:date;
+    schema:address _:b2076.
+_:b2076 a schema:PostalAddress;
+    schema:streetAddress "W 14th Street";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Leschport";
+    schema:postalCode "73664";
+    schema:addressCountry "Virgin Islands, British".

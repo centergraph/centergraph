@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hugo";
+    schema:familyName "Grady";
+    schema:birthDate "1962-12-15"^^xsd:date;
+    schema:address _:b4812.
+_:b4812 a schema:PostalAddress;
+    schema:streetAddress "Williamson Orchard";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "New Dortha";
+    schema:postalCode "32468";
+    schema:addressCountry "Aland Islands".

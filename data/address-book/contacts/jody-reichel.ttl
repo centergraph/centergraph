@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jody";
+    schema:familyName "Reichel";
+    schema:birthDate "1954-07-31"^^xsd:date;
+    schema:address _:b5876.
+_:b5876 a schema:PostalAddress;
+    schema:streetAddress "Ricardo Divide";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "New Walker";
+    schema:postalCode "25670";
+    schema:addressCountry "Moldova".

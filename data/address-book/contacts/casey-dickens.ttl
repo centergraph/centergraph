@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Casey";
+    schema:familyName "Dickens";
+    schema:birthDate "1992-01-04"^^xsd:date;
+    schema:address _:b5986.
+_:b5986 a schema:PostalAddress;
+    schema:streetAddress "Cruickshank View";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Zulaufboro";
+    schema:postalCode "25725-7092";
+    schema:addressCountry "Azerbaijan".

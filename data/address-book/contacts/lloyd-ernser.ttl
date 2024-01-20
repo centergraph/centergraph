@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lloyd";
+    schema:familyName "Ernser";
+    schema:birthDate "1978-10-26"^^xsd:date;
+    schema:address _:b8281.
+_:b8281 a schema:PostalAddress;
+    schema:streetAddress "Lexie Drives";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Runolfssonshire";
+    schema:postalCode "97818-8606";
+    schema:addressCountry "Portugal".

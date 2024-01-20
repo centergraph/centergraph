@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marian";
+    schema:familyName "Schmitt";
+    schema:birthDate "1944-06-12"^^xsd:date;
+    schema:address _:b7463.
+_:b7463 a schema:PostalAddress;
+    schema:streetAddress "Amir Union";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Hegmannville";
+    schema:postalCode "12259";
+    schema:addressCountry "Fiji".

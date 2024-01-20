@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ramiro";
+    schema:familyName "Daugherty";
+    schema:birthDate "1978-04-14"^^xsd:date;
+    schema:address _:b223.
+_:b223 a schema:PostalAddress;
+    schema:streetAddress "Stephon Viaduct";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Hobartborough";
+    schema:postalCode "48868";
+    schema:addressCountry "Switzerland".

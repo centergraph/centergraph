@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Louis";
+    schema:familyName "Cruickshank";
+    schema:birthDate "1987-02-27"^^xsd:date;
+    schema:address _:b4205.
+_:b4205 a schema:PostalAddress;
+    schema:streetAddress "Lawrence Street";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "North Ruthe";
+    schema:postalCode "19258-3092";
+    schema:addressCountry "Oman".

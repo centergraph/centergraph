@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Felicia";
+    schema:familyName "Zboncak-Mayer";
+    schema:birthDate "1997-06-06"^^xsd:date;
+    schema:address _:b2542.
+_:b2542 a schema:PostalAddress;
+    schema:streetAddress "Mulberry Street";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Port Shyanneville";
+    schema:postalCode "09519-9244";
+    schema:addressCountry "Cuba".

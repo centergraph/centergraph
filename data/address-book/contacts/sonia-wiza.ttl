@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sonia";
+    schema:familyName "Wiza";
+    schema:birthDate "1998-02-25"^^xsd:date;
+    schema:address _:b8124.
+_:b8124 a schema:PostalAddress;
+    schema:streetAddress "Hane Corner";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Kyleighboro";
+    schema:postalCode "07291";
+    schema:addressCountry "Anguilla".

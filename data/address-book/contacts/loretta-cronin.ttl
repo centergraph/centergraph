@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Loretta";
+    schema:familyName "Cronin";
+    schema:birthDate "1965-09-06"^^xsd:date;
+    schema:address _:b10.
+_:b10 a schema:PostalAddress;
+    schema:streetAddress "Prohaska Street";
+    schema:addressRegion "California";
+    schema:addressLocality "Schulisthaven";
+    schema:postalCode "69687-4829";
+    schema:addressCountry "Vanuatu".

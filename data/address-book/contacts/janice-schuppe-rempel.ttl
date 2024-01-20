@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janice";
+    schema:familyName "Schuppe-Rempel";
+    schema:birthDate "1978-08-05"^^xsd:date;
+    schema:address _:b1237.
+_:b1237 a schema:PostalAddress;
+    schema:streetAddress "Water Street";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "New Gianni";
+    schema:postalCode "65171";
+    schema:addressCountry "Holy See (Vatican City State)".

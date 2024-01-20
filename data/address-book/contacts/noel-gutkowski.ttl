@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Noel";
+    schema:familyName "Gutkowski";
+    schema:birthDate "1971-05-06"^^xsd:date;
+    schema:address _:b7921.
+_:b7921 a schema:PostalAddress;
+    schema:streetAddress "Brian Lake";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "South Mariano";
+    schema:postalCode "80310-0237";
+    schema:addressCountry "Serbia".

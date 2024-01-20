@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lance";
+    schema:familyName "Frami";
+    schema:birthDate "1983-11-03"^^xsd:date;
+    schema:address _:b8087.
+_:b8087 a schema:PostalAddress;
+    schema:streetAddress "Eleazar Shores";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "North Missourimouth";
+    schema:postalCode "08063";
+    schema:addressCountry "Guyana".

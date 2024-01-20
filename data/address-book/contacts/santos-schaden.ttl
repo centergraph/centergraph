@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Santos";
+    schema:familyName "Schaden";
+    schema:birthDate "1966-04-18"^^xsd:date;
+    schema:address _:b10000.
+_:b10000 a schema:PostalAddress;
+    schema:streetAddress "Kim Causeway";
+    schema:addressRegion "New York";
+    schema:addressLocality "Shanelland";
+    schema:postalCode "29611-0424";
+    schema:addressCountry "Nigeria".

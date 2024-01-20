@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Colin";
+    schema:familyName "Hackett-Gerlach";
+    schema:birthDate "1988-02-10"^^xsd:date;
+    schema:address _:b5595.
+_:b5595 a schema:PostalAddress;
+    schema:streetAddress "Fadel Extension";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Lake Maureen";
+    schema:postalCode "45613";
+    schema:addressCountry "Sint Maarten".

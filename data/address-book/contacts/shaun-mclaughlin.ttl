@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shaun";
+    schema:familyName "McLaughlin";
+    schema:birthDate "1960-01-07"^^xsd:date;
+    schema:address _:b5094.
+_:b5094 a schema:PostalAddress;
+    schema:streetAddress "Upton Vista";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "North Robert";
+    schema:postalCode "81683";
+    schema:addressCountry "Mexico".

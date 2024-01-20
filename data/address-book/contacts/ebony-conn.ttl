@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ebony";
+    schema:familyName "Conn";
+    schema:birthDate "1956-04-12"^^xsd:date;
+    schema:address _:b3318.
+_:b3318 a schema:PostalAddress;
+    schema:streetAddress "Murray Ramp";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Burniceburgh";
+    schema:postalCode "74268";
+    schema:addressCountry "Israel".

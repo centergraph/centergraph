@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Paul";
+    schema:familyName "Torp";
+    schema:birthDate "1984-09-05"^^xsd:date;
+    schema:address _:b4914.
+_:b4914 a schema:PostalAddress;
+    schema:streetAddress "Park Avenue";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Halvorsonberg";
+    schema:postalCode "27241-9273";
+    schema:addressCountry "Bahrain".

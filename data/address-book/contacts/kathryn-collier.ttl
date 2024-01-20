@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kathryn";
+    schema:familyName "Collier";
+    schema:birthDate "1994-03-07"^^xsd:date;
+    schema:address _:b4120.
+_:b4120 a schema:PostalAddress;
+    schema:streetAddress "Murphy Burg";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Pagacstad";
+    schema:postalCode "06282";
+    schema:addressCountry "Trinidad and Tobago".

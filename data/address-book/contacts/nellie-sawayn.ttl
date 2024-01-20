@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nellie";
+    schema:familyName "Sawayn";
+    schema:birthDate "1965-12-27"^^xsd:date;
+    schema:address _:b8419.
+_:b8419 a schema:PostalAddress;
+    schema:streetAddress "E Jefferson Street";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "North Ezekielchester";
+    schema:postalCode "16430-1184";
+    schema:addressCountry "Luxembourg".

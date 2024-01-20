@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Patrick";
+    schema:familyName "Wyman";
+    schema:birthDate "1952-09-20"^^xsd:date;
+    schema:address _:b2952.
+_:b2952 a schema:PostalAddress;
+    schema:streetAddress "Waylon Junctions";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "West Covina";
+    schema:postalCode "99165";
+    schema:addressCountry "Libyan Arab Jamahiriya".

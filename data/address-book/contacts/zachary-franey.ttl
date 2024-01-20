@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Zachary";
+    schema:familyName "Franey";
+    schema:birthDate "1954-02-11"^^xsd:date;
+    schema:address _:b7400.
+_:b7400 a schema:PostalAddress;
+    schema:streetAddress "Enola Roads";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Hackensack";
+    schema:postalCode "32668";
+    schema:addressCountry "Tunisia".

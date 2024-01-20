@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darryl";
+    schema:familyName "Streich";
+    schema:birthDate "2004-07-28"^^xsd:date;
+    schema:address _:b9430.
+_:b9430 a schema:PostalAddress;
+    schema:streetAddress "Elissa Glens";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "New Kadinstad";
+    schema:postalCode "03495";
+    schema:addressCountry "France".

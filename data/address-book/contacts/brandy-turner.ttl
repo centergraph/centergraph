@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brandy";
+    schema:familyName "Turner";
+    schema:birthDate "1963-08-20"^^xsd:date;
+    schema:address _:b6906.
+_:b6906 a schema:PostalAddress;
+    schema:streetAddress "3rd Street";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Kuhlmanworth";
+    schema:postalCode "09402";
+    schema:addressCountry "Timor-Leste".

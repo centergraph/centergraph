@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tomas";
+    schema:familyName "Mitchell";
+    schema:birthDate "1999-12-27"^^xsd:date;
+    schema:address _:b4990.
+_:b4990 a schema:PostalAddress;
+    schema:streetAddress "Buckridge Walk";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Gunnerfield";
+    schema:postalCode "92173-0544";
+    schema:addressCountry "Zimbabwe".

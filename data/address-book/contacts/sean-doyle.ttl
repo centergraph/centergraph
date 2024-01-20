@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sean";
+    schema:familyName "Doyle";
+    schema:birthDate "1958-12-14"^^xsd:date;
+    schema:address _:b9748.
+_:b9748 a schema:PostalAddress;
+    schema:streetAddress "Clarendon Road";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "East Valeriestad";
+    schema:postalCode "47861-3298";
+    schema:addressCountry "Algeria".

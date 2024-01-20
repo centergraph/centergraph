@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sam";
+    schema:familyName "Hirthe-Schowalter";
+    schema:birthDate "1985-09-02"^^xsd:date;
+    schema:address _:b6105.
+_:b6105 a schema:PostalAddress;
+    schema:streetAddress "Cielo Hill";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Fort Garrettview";
+    schema:postalCode "06001-9968";
+    schema:addressCountry "New Caledonia".

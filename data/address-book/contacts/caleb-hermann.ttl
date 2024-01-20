@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Caleb";
+    schema:familyName "Hermann";
+    schema:birthDate "1980-05-02"^^xsd:date;
+    schema:address _:b3146.
+_:b3146 a schema:PostalAddress;
+    schema:streetAddress "Veterans Memorial Highway";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Lake Theron";
+    schema:postalCode "02545";
+    schema:addressCountry "Australia".

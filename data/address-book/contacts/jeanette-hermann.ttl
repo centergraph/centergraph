@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeanette";
+    schema:familyName "Hermann";
+    schema:birthDate "1962-01-10"^^xsd:date;
+    schema:address _:b7600.
+_:b7600 a schema:PostalAddress;
+    schema:streetAddress "Phoebe Lock";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Lilianachester";
+    schema:postalCode "92490-8133";
+    schema:addressCountry "Uganda".

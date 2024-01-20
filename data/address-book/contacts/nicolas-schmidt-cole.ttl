@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nicolas";
+    schema:familyName "Schmidt-Cole";
+    schema:birthDate "1960-11-25"^^xsd:date;
+    schema:address _:b2341.
+_:b2341 a schema:PostalAddress;
+    schema:streetAddress "Howard Street";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Cruickshankberg";
+    schema:postalCode "30983";
+    schema:addressCountry "Greece".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cornelius";
+    schema:familyName "Ziemann";
+    schema:birthDate "1985-11-09"^^xsd:date;
+    schema:address _:b9218.
+_:b9218 a schema:PostalAddress;
+    schema:streetAddress "Conn Motorway";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Mullerville";
+    schema:postalCode "32677-8519";
+    schema:addressCountry "Falkland Islands (Malvinas)".

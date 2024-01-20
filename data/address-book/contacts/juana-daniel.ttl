@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Juana";
+    schema:familyName "Daniel";
+    schema:birthDate "1977-01-08"^^xsd:date;
+    schema:address _:b7515.
+_:b7515 a schema:PostalAddress;
+    schema:streetAddress "Lawson Islands";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "West Emely";
+    schema:postalCode "58375-3728";
+    schema:addressCountry "Panama".

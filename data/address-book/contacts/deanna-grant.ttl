@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Deanna";
+    schema:familyName "Grant";
+    schema:birthDate "1974-10-27"^^xsd:date;
+    schema:address _:b8776.
+_:b8776 a schema:PostalAddress;
+    schema:streetAddress "Clark Street";
+    schema:addressRegion "Montana";
+    schema:addressLocality "East Westonworth";
+    schema:postalCode "45097-2836";
+    schema:addressCountry "North Macedonia".

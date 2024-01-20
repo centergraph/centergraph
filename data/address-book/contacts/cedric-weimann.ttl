@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cedric";
+    schema:familyName "Weimann";
+    schema:birthDate "1976-09-07"^^xsd:date;
+    schema:address _:b797.
+_:b797 a schema:PostalAddress;
+    schema:streetAddress "Kale Falls";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "South Muhammadhaven";
+    schema:postalCode "55851";
+    schema:addressCountry "Ghana".

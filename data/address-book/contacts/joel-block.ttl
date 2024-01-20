@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joel";
+    schema:familyName "Block";
+    schema:birthDate "1991-01-14"^^xsd:date;
+    schema:address _:b7936.
+_:b7936 a schema:PostalAddress;
+    schema:streetAddress "Larch Close";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Adellemouth";
+    schema:postalCode "77732-4245";
+    schema:addressCountry "United States Minor Outlying Islands".

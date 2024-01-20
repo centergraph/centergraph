@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kerry";
+    schema:familyName "Kassulke";
+    schema:birthDate "1996-05-20"^^xsd:date;
+    schema:address _:b1781.
+_:b1781 a schema:PostalAddress;
+    schema:streetAddress "Madison Viaduct";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Orlandofurt";
+    schema:postalCode "63765";
+    schema:addressCountry "Austria".

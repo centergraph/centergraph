@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Geneva";
+    schema:familyName "Wilderman-Green";
+    schema:birthDate "1987-10-18"^^xsd:date;
+    schema:address _:b759.
+_:b759 a schema:PostalAddress;
+    schema:streetAddress "Franey Road";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "New Ethachester";
+    schema:postalCode "50068-2147";
+    schema:addressCountry "Bosnia and Herzegovina".

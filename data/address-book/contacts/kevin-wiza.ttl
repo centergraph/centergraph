@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kevin";
+    schema:familyName "Wiza";
+    schema:birthDate "2002-06-13"^^xsd:date;
+    schema:address _:b8559.
+_:b8559 a schema:PostalAddress;
+    schema:streetAddress "Tyson Drive";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Jadenton";
+    schema:postalCode "81454-2402";
+    schema:addressCountry "Sierra Leone".

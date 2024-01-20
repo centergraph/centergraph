@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sidney";
+    schema:familyName "Macejkovic";
+    schema:birthDate "1982-10-06"^^xsd:date;
+    schema:address _:b9268.
+_:b9268 a schema:PostalAddress;
+    schema:streetAddress "Hahn Plain";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Elgin";
+    schema:postalCode "98486-9657";
+    schema:addressCountry "Djibouti".

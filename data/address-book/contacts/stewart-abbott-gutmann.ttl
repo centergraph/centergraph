@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stewart";
+    schema:familyName "Abbott-Gutmann";
+    schema:birthDate "1980-05-24"^^xsd:date;
+    schema:address _:b7850.
+_:b7850 a schema:PostalAddress;
+    schema:streetAddress "Bedford Road";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "West Braden";
+    schema:postalCode "92130";
+    schema:addressCountry "Burundi".

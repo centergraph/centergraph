@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dwight";
+    schema:familyName "Wyman";
+    schema:birthDate "1961-06-08"^^xsd:date;
+    schema:address _:b5497.
+_:b5497 a schema:PostalAddress;
+    schema:streetAddress "Nienow Track";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "San Tan Valley";
+    schema:postalCode "95072";
+    schema:addressCountry "Nauru".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Earl";
+    schema:familyName "Carroll";
+    schema:birthDate "1983-11-27"^^xsd:date;
+    schema:address _:b1497.
+_:b1497 a schema:PostalAddress;
+    schema:streetAddress "Rau Avenue";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Fort Sammiemouth";
+    schema:postalCode "74617-5202";
+    schema:addressCountry "Turkmenistan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nelson";
+    schema:familyName "McLaughlin";
+    schema:birthDate "1948-04-21"^^xsd:date;
+    schema:address _:b9496.
+_:b9496 a schema:PostalAddress;
+    schema:streetAddress "Kilback Ferry";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Davie";
+    schema:postalCode "20202-7535";
+    schema:addressCountry "Guinea-Bissau".

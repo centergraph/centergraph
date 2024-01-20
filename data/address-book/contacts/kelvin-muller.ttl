@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelvin";
+    schema:familyName "Muller";
+    schema:birthDate "1990-09-26"^^xsd:date;
+    schema:address _:b3723.
+_:b3723 a schema:PostalAddress;
+    schema:streetAddress "Wilderman Via";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Madelynnhaven";
+    schema:postalCode "14497";
+    schema:addressCountry "Pitcairn Islands".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Muriel";
+    schema:familyName "Hammes";
+    schema:birthDate "1994-12-12"^^xsd:date;
+    schema:address _:b1221.
+_:b1221 a schema:PostalAddress;
+    schema:streetAddress "Amelie Course";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "West Josephinemouth";
+    schema:postalCode "21163-2981";
+    schema:addressCountry "Antigua and Barbuda".

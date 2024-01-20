@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darnell";
+    schema:familyName "Kub";
+    schema:birthDate "1977-03-18"^^xsd:date;
+    schema:address _:b6357.
+_:b6357 a schema:PostalAddress;
+    schema:streetAddress "Cronin Extension";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Jacintheview";
+    schema:postalCode "72597-2479";
+    schema:addressCountry "Wallis and Futuna".

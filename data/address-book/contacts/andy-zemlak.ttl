@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andy";
+    schema:familyName "Zemlak";
+    schema:birthDate "1961-01-23"^^xsd:date;
+    schema:address _:b8562.
+_:b8562 a schema:PostalAddress;
+    schema:streetAddress "Lincoln Street";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Sofiaberg";
+    schema:postalCode "16523";
+    schema:addressCountry "Liechtenstein".

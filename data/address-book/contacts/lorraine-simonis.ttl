@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorraine";
+    schema:familyName "Simonis";
+    schema:birthDate "1948-05-27"^^xsd:date;
+    schema:address _:b7121.
+_:b7121 a schema:PostalAddress;
+    schema:streetAddress "Clementine Pines";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "McCulloughbury";
+    schema:postalCode "57128";
+    schema:addressCountry "Sao Tome and Principe".

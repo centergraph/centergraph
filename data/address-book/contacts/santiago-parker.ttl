@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Santiago";
+    schema:familyName "Parker";
+    schema:birthDate "2000-03-12"^^xsd:date;
+    schema:address _:b3437.
+_:b3437 a schema:PostalAddress;
+    schema:streetAddress "Victoria Road";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Darenfield";
+    schema:postalCode "14970-6083";
+    schema:addressCountry "Liechtenstein".

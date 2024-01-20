@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tracy";
+    schema:familyName "Olson-Konopelski";
+    schema:birthDate "1955-11-27"^^xsd:date;
+    schema:address _:b6491.
+_:b6491 a schema:PostalAddress;
+    schema:streetAddress "Schaden Rapid";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Aminafort";
+    schema:postalCode "10030-8322";
+    schema:addressCountry "Belgium".

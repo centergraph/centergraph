@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Chester";
+    schema:familyName "Schulist";
+    schema:birthDate "1986-02-23"^^xsd:date;
+    schema:address _:b2935.
+_:b2935 a schema:PostalAddress;
+    schema:streetAddress "Corwin Lodge";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Fort Janytown";
+    schema:postalCode "10257-3620";
+    schema:addressCountry "Sweden".

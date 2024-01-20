@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brendan";
+    schema:familyName "Hettinger";
+    schema:birthDate "1997-02-15"^^xsd:date;
+    schema:address _:b4250.
+_:b4250 a schema:PostalAddress;
+    schema:streetAddress "W Lake Street";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Hammond";
+    schema:postalCode "63577";
+    schema:addressCountry "Zambia".

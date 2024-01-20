@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Frank";
+    schema:familyName "Roberts";
+    schema:birthDate "2002-06-25"^^xsd:date;
+    schema:address _:b4873.
+_:b4873 a schema:PostalAddress;
+    schema:streetAddress "Jeffery Greens";
+    schema:addressRegion "Maine";
+    schema:addressLocality "South Destineyfort";
+    schema:postalCode "81884-7698";
+    schema:addressCountry "Cambodia".

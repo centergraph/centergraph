@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elena";
+    schema:familyName "Thompson";
+    schema:birthDate "2001-09-30"^^xsd:date;
+    schema:address _:b6485.
+_:b6485 a schema:PostalAddress;
+    schema:streetAddress "East Road";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "New Darby";
+    schema:postalCode "65432";
+    schema:addressCountry "Cape Verde".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harvey";
+    schema:familyName "Mayer";
+    schema:birthDate "1984-09-09"^^xsd:date;
+    schema:address _:b6571.
+_:b6571 a schema:PostalAddress;
+    schema:streetAddress "Leta Lights";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Fort Wymanbury";
+    schema:postalCode "09006-2710";
+    schema:addressCountry "Chad".

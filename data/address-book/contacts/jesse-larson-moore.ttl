@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jesse";
+    schema:familyName "Larson-Moore";
+    schema:birthDate "1944-02-22"^^xsd:date;
+    schema:address _:b5836.
+_:b5836 a schema:PostalAddress;
+    schema:streetAddress "Annabell Stream";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Stehrberg";
+    schema:postalCode "91398";
+    schema:addressCountry "Trinidad and Tobago".

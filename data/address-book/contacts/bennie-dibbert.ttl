@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bennie";
+    schema:familyName "Dibbert";
+    schema:birthDate "2000-08-05"^^xsd:date;
+    schema:address _:b7395.
+_:b7395 a schema:PostalAddress;
+    schema:streetAddress "College Avenue";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Osinskiville";
+    schema:postalCode "22384-4892";
+    schema:addressCountry "United Arab Emirates".

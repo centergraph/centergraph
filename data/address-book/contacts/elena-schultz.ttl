@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elena";
+    schema:familyName "Schultz";
+    schema:birthDate "1964-09-01"^^xsd:date;
+    schema:address _:b8517.
+_:b8517 a schema:PostalAddress;
+    schema:streetAddress "Manor Drive";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "East Christopborough";
+    schema:postalCode "39524";
+    schema:addressCountry "Cuba".

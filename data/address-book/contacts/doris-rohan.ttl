@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doris";
+    schema:familyName "Rohan";
+    schema:birthDate "1952-06-08"^^xsd:date;
+    schema:address _:b7242.
+_:b7242 a schema:PostalAddress;
+    schema:streetAddress "Lowe Shore";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Lake Selena";
+    schema:postalCode "67256";
+    schema:addressCountry "Mozambique".

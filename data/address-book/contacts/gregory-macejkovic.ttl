@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gregory";
+    schema:familyName "Macejkovic";
+    schema:birthDate "1974-04-22"^^xsd:date;
+    schema:address _:b5403.
+_:b5403 a schema:PostalAddress;
+    schema:streetAddress "Madisyn Corners";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Lake Carmelo";
+    schema:postalCode "62466-4862";
+    schema:addressCountry "Slovakia".

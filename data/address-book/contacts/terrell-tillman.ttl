@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terrell";
+    schema:familyName "Tillman";
+    schema:birthDate "2001-09-09"^^xsd:date;
+    schema:address _:b7115.
+_:b7115 a schema:PostalAddress;
+    schema:streetAddress "Santina Oval";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "North Virginie";
+    schema:postalCode "99297-9890";
+    schema:addressCountry "Northern Mariana Islands".

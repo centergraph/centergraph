@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Robert";
+    schema:familyName "Rodriguez-MacGyver";
+    schema:birthDate "1963-05-14"^^xsd:date;
+    schema:address _:b6292.
+_:b6292 a schema:PostalAddress;
+    schema:streetAddress "Zieme Knolls";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "East Lenora";
+    schema:postalCode "64992";
+    schema:addressCountry "Saint Lucia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Arnold";
+    schema:familyName "Green";
+    schema:birthDate "1949-11-18"^^xsd:date;
+    schema:address _:b1130.
+_:b1130 a schema:PostalAddress;
+    schema:streetAddress "Brakus Throughway";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Gorczanychester";
+    schema:postalCode "05127-9260";
+    schema:addressCountry "Liechtenstein".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mabel";
+    schema:familyName "Hand";
+    schema:birthDate "1994-06-16"^^xsd:date;
+    schema:address _:b9226.
+_:b9226 a schema:PostalAddress;
+    schema:streetAddress "Rocio Corner";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "East Lewis";
+    schema:postalCode "09503-8195";
+    schema:addressCountry "Czechia".

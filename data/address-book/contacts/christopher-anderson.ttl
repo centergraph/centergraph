@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Christopher";
+    schema:familyName "Anderson";
+    schema:birthDate "2004-08-23"^^xsd:date;
+    schema:address _:b8669.
+_:b8669 a schema:PostalAddress;
+    schema:streetAddress "Arvilla Forge";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Lake Dustinburgh";
+    schema:postalCode "00847-1886";
+    schema:addressCountry "Belgium".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pauline";
+    schema:familyName "D'Amore";
+    schema:birthDate "1956-08-23"^^xsd:date;
+    schema:address _:b4540.
+_:b4540 a schema:PostalAddress;
+    schema:streetAddress "Declan Views";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Dachport";
+    schema:postalCode "73988";
+    schema:addressCountry "Northern Mariana Islands".

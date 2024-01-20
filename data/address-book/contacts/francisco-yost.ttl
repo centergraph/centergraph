@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Francisco";
+    schema:familyName "Yost";
+    schema:birthDate "1992-10-26"^^xsd:date;
+    schema:address _:b2035.
+_:b2035 a schema:PostalAddress;
+    schema:streetAddress "Kozey Wall";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "New Domenicostad";
+    schema:postalCode "71249";
+    schema:addressCountry "Senegal".

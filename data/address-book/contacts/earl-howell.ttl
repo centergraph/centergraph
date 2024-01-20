@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Earl";
+    schema:familyName "Howell";
+    schema:birthDate "1968-11-12"^^xsd:date;
+    schema:address _:b6936.
+_:b6936 a schema:PostalAddress;
+    schema:streetAddress "Newton Road";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "West Jabari";
+    schema:postalCode "36343-0524";
+    schema:addressCountry "Montenegro".

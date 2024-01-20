@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Penny";
+    schema:familyName "Gleichner";
+    schema:birthDate "1986-05-14"^^xsd:date;
+    schema:address _:b7417.
+_:b7417 a schema:PostalAddress;
+    schema:streetAddress "Connelly Village";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Fort Gudrun";
+    schema:postalCode "92180";
+    schema:addressCountry "Jersey".

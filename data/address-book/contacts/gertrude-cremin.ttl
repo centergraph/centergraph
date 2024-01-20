@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gertrude";
+    schema:familyName "Cremin";
+    schema:birthDate "1951-07-29"^^xsd:date;
+    schema:address _:b3708.
+_:b3708 a schema:PostalAddress;
+    schema:streetAddress "Thiel Mews";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Bonita Springs";
+    schema:postalCode "98118-0898";
+    schema:addressCountry "Faroe Islands".

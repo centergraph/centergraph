@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mae";
+    schema:familyName "Macejkovic";
+    schema:birthDate "1972-11-16"^^xsd:date;
+    schema:address _:b8548.
+_:b8548 a schema:PostalAddress;
+    schema:streetAddress "Bogan Brook";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "South Valley";
+    schema:postalCode "22592";
+    schema:addressCountry "Timor-Leste".

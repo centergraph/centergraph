@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Felicia";
+    schema:familyName "Runolfsdottir";
+    schema:birthDate "1952-06-28"^^xsd:date;
+    schema:address _:b9205.
+_:b9205 a schema:PostalAddress;
+    schema:streetAddress "Bechtelar Wall";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Port Marlene";
+    schema:postalCode "05089-7277";
+    schema:addressCountry "Bonaire, Sint Eustatius and Saba".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tony";
+    schema:familyName "Dickens";
+    schema:birthDate "1978-12-05"^^xsd:date;
+    schema:address _:b6921.
+_:b6921 a schema:PostalAddress;
+    schema:streetAddress "Cherry Street";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "La Mesa";
+    schema:postalCode "07272";
+    schema:addressCountry "Bolivia".

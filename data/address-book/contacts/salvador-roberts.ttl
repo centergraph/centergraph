@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Salvador";
+    schema:familyName "Roberts";
+    schema:birthDate "1976-01-11"^^xsd:date;
+    schema:address _:b9059.
+_:b9059 a schema:PostalAddress;
+    schema:streetAddress "Minnie Cliff";
+    schema:addressRegion "Utah";
+    schema:addressLocality "West Earnestfield";
+    schema:postalCode "67999";
+    schema:addressCountry "Saint Helena".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Teresa";
+    schema:familyName "Beahan";
+    schema:birthDate "1953-08-06"^^xsd:date;
+    schema:address _:b4081.
+_:b4081 a schema:PostalAddress;
+    schema:streetAddress "Beer Hills";
+    schema:addressRegion "Utah";
+    schema:addressLocality "East Katharina";
+    schema:postalCode "56125-9035";
+    schema:addressCountry "New Caledonia".

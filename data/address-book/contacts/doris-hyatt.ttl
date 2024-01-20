@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doris";
+    schema:familyName "Hyatt";
+    schema:birthDate "1945-04-18"^^xsd:date;
+    schema:address _:b1103.
+_:b1103 a schema:PostalAddress;
+    schema:streetAddress "Keyshawn Ville";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Rosinaport";
+    schema:postalCode "05915";
+    schema:addressCountry "Mauritania".

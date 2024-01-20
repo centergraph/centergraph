@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marlene";
+    schema:familyName "Morar";
+    schema:birthDate "1969-08-10"^^xsd:date;
+    schema:address _:b9655.
+_:b9655 a schema:PostalAddress;
+    schema:streetAddress "Sawayn Wells";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Mariaton";
+    schema:postalCode "68980";
+    schema:addressCountry "Grenada".

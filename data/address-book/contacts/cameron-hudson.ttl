@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cameron";
+    schema:familyName "Hudson";
+    schema:birthDate "1971-05-23"^^xsd:date;
+    schema:address _:b976.
+_:b976 a schema:PostalAddress;
+    schema:streetAddress "Mohr Dale";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "DeKalb";
+    schema:postalCode "78304-8228";
+    schema:addressCountry "Holy See (Vatican City State)".

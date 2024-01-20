@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Johanna";
+    schema:familyName "Schoen";
+    schema:birthDate "2003-03-10"^^xsd:date;
+    schema:address _:b9769.
+_:b9769 a schema:PostalAddress;
+    schema:streetAddress "The Sidings";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Goodyear";
+    schema:postalCode "51536";
+    schema:addressCountry "Guinea".

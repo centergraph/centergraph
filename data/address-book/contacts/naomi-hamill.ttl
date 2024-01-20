@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Naomi";
+    schema:familyName "Hamill";
+    schema:birthDate "1955-08-28"^^xsd:date;
+    schema:address _:b6006.
+_:b6006 a schema:PostalAddress;
+    schema:streetAddress "Ferry Pass";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Fort Casperport";
+    schema:postalCode "86574";
+    schema:addressCountry "Netherlands".

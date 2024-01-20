@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Miguel";
+    schema:familyName "Miller";
+    schema:birthDate "1995-04-26"^^xsd:date;
+    schema:address _:b8807.
+_:b8807 a schema:PostalAddress;
+    schema:streetAddress "Koelpin Cliffs";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Port Elliott";
+    schema:postalCode "18407";
+    schema:addressCountry "Tunisia".

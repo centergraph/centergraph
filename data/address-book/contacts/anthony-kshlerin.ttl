@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Anthony";
+    schema:familyName "Kshlerin";
+    schema:birthDate "1984-09-26"^^xsd:date;
+    schema:address _:b7545.
+_:b7545 a schema:PostalAddress;
+    schema:streetAddress "Skiles Ridge";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Rosaliaberg";
+    schema:postalCode "36742-3014";
+    schema:addressCountry "Jordan".

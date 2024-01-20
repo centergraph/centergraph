@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Paulette";
+    schema:familyName "Turcotte";
+    schema:birthDate "1971-06-01"^^xsd:date;
+    schema:address _:b135.
+_:b135 a schema:PostalAddress;
+    schema:streetAddress "Central Avenue";
+    schema:addressRegion "Utah";
+    schema:addressLocality "South Sadyetown";
+    schema:postalCode "31330-3508";
+    schema:addressCountry "Saint Martin".

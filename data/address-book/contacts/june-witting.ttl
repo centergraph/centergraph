@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "June";
+    schema:familyName "Witting";
+    schema:birthDate "1973-10-07"^^xsd:date;
+    schema:address _:b3227.
+_:b3227 a schema:PostalAddress;
+    schema:streetAddress "Greenville Road";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Ritchieton";
+    schema:postalCode "21822";
+    schema:addressCountry "Aland Islands".

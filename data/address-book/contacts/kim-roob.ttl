@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kim";
+    schema:familyName "Roob";
+    schema:birthDate "1948-03-15"^^xsd:date;
+    schema:address _:b6658.
+_:b6658 a schema:PostalAddress;
+    schema:streetAddress "Nikolaus Vista";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Roseville";
+    schema:postalCode "10338-4858";
+    schema:addressCountry "Grenada".

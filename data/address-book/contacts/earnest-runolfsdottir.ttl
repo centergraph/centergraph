@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Earnest";
+    schema:familyName "Runolfsdottir";
+    schema:birthDate "1982-09-07"^^xsd:date;
+    schema:address _:b4781.
+_:b4781 a schema:PostalAddress;
+    schema:streetAddress "Ziemann Alley";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Zellacester";
+    schema:postalCode "76925-2179";
+    schema:addressCountry "Georgia".

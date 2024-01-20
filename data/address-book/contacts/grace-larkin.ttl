@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Grace";
+    schema:familyName "Larkin";
+    schema:birthDate "1981-10-14"^^xsd:date;
+    schema:address _:b9925.
+_:b9925 a schema:PostalAddress;
+    schema:streetAddress "Trisha Extension";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "South Telly";
+    schema:postalCode "17318-2080";
+    schema:addressCountry "Colombia".

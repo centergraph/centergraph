@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nellie";
+    schema:familyName "Schinner";
+    schema:birthDate "1995-05-24"^^xsd:date;
+    schema:address _:b6664.
+_:b6664 a schema:PostalAddress;
+    schema:streetAddress "Shields Coves";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Boulder";
+    schema:postalCode "82258";
+    schema:addressCountry "French Polynesia".

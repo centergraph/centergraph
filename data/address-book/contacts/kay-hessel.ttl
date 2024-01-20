@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kay";
+    schema:familyName "Hessel";
+    schema:birthDate "1962-10-02"^^xsd:date;
+    schema:address _:b8680.
+_:b8680 a schema:PostalAddress;
+    schema:streetAddress "Landen Falls";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Kubview";
+    schema:postalCode "91351-7198";
+    schema:addressCountry "Solomon Islands".

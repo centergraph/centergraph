@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dwayne";
+    schema:familyName "Miller";
+    schema:birthDate "1977-04-19"^^xsd:date;
+    schema:address _:b9263.
+_:b9263 a schema:PostalAddress;
+    schema:streetAddress "Willie Groves";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Lehnerbury";
+    schema:postalCode "68289";
+    schema:addressCountry "Netherlands".

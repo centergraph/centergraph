@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nadine";
+    schema:familyName "Rutherford";
+    schema:birthDate "1991-05-19"^^xsd:date;
+    schema:address _:b6239.
+_:b6239 a schema:PostalAddress;
+    schema:streetAddress "Heathcote Court";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Schowalterchester";
+    schema:postalCode "22601";
+    schema:addressCountry "Philippines".

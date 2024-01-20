@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Colin";
+    schema:familyName "Thiel";
+    schema:birthDate "1990-10-29"^^xsd:date;
+    schema:address _:b7938.
+_:b7938 a schema:PostalAddress;
+    schema:streetAddress "Gottlieb Burgs";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "New Zackaryborough";
+    schema:postalCode "33885-1454";
+    schema:addressCountry "Kuwait".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Henrietta";
+    schema:familyName "Denesik";
+    schema:birthDate "1973-06-29"^^xsd:date;
+    schema:address _:b491.
+_:b491 a schema:PostalAddress;
+    schema:streetAddress "Verona Crest";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Fort Ryan";
+    schema:postalCode "00605";
+    schema:addressCountry "Ghana".

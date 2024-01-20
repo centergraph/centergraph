@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shawna";
+    schema:familyName "Wehner";
+    schema:birthDate "1949-03-09"^^xsd:date;
+    schema:address _:b1797.
+_:b1797 a schema:PostalAddress;
+    schema:streetAddress "Bradtke Brook";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Thaliastad";
+    schema:postalCode "72052-1085";
+    schema:addressCountry "Greece".

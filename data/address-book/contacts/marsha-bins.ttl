@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marsha";
+    schema:familyName "Bins";
+    schema:birthDate "1980-03-08"^^xsd:date;
+    schema:address _:b5498.
+_:b5498 a schema:PostalAddress;
+    schema:streetAddress "N 9th Street";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Gordonhaven";
+    schema:postalCode "27422-1815";
+    schema:addressCountry "United States of America".

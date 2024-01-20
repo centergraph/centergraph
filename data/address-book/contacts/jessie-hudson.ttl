@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jessie";
+    schema:familyName "Hudson";
+    schema:birthDate "1976-03-22"^^xsd:date;
+    schema:address _:b5075.
+_:b5075 a schema:PostalAddress;
+    schema:streetAddress "Faye Ridges";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "North Harrison";
+    schema:postalCode "25003-0954";
+    schema:addressCountry "Kenya".

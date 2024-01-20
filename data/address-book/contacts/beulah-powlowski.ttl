@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Beulah";
+    schema:familyName "Powlowski";
+    schema:birthDate "1979-06-24"^^xsd:date;
+    schema:address _:b7759.
+_:b7759 a schema:PostalAddress;
+    schema:streetAddress "Desiree Villages";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "North Normaton";
+    schema:postalCode "35875-2048";
+    schema:addressCountry "Armenia".

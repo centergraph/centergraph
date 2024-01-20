@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Susan";
+    schema:familyName "Thiel";
+    schema:birthDate "1989-07-09"^^xsd:date;
+    schema:address _:b9992.
+_:b9992 a schema:PostalAddress;
+    schema:streetAddress "Alexandra Avenue";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Spinkashire";
+    schema:postalCode "84026-9265";
+    schema:addressCountry "Bhutan".

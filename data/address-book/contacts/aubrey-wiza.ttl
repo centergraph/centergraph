@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Aubrey";
+    schema:familyName "Wiza";
+    schema:birthDate "1947-10-12"^^xsd:date;
+    schema:address _:b8547.
+_:b8547 a schema:PostalAddress;
+    schema:streetAddress "Oceane Fields";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Hansenbury";
+    schema:postalCode "19734";
+    schema:addressCountry "Guernsey".

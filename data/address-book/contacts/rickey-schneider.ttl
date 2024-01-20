@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rickey";
+    schema:familyName "Schneider";
+    schema:birthDate "1979-05-18"^^xsd:date;
+    schema:address _:b417.
+_:b417 a schema:PostalAddress;
+    schema:streetAddress "Kutch Mall";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Kulasfield";
+    schema:postalCode "76196-7535";
+    schema:addressCountry "Somalia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Randy";
+    schema:familyName "Effertz";
+    schema:birthDate "1949-04-25"^^xsd:date;
+    schema:address _:b8211.
+_:b8211 a schema:PostalAddress;
+    schema:streetAddress "Mann Causeway";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Wilfredville";
+    schema:postalCode "41909-0353";
+    schema:addressCountry "Namibia".

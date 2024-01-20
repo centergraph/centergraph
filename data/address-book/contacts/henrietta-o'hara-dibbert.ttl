@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Henrietta";
+    schema:familyName "O'Hara-Dibbert";
+    schema:birthDate "1976-11-05"^^xsd:date;
+    schema:address _:b6753.
+_:b6753 a schema:PostalAddress;
+    schema:streetAddress "Nolan Glen";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Buckridgecester";
+    schema:postalCode "00668-2244";
+    schema:addressCountry "Virgin Islands, British".

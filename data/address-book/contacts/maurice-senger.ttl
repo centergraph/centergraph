@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Maurice";
+    schema:familyName "Senger";
+    schema:birthDate "1964-06-14"^^xsd:date;
+    schema:address _:b6798.
+_:b6798 a schema:PostalAddress;
+    schema:streetAddress "Darby Throughway";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Irving";
+    schema:postalCode "81319";
+    schema:addressCountry "Sierra Leone".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristopher";
+    schema:familyName "D'Amore";
+    schema:birthDate "1945-11-17"^^xsd:date;
+    schema:address _:b6029.
+_:b6029 a schema:PostalAddress;
+    schema:streetAddress "Miller Manor";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Columbusfield";
+    schema:postalCode "88044";
+    schema:addressCountry "Uzbekistan".

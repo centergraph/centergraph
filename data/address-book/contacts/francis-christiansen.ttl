@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Francis";
+    schema:familyName "Christiansen";
+    schema:birthDate "1970-11-01"^^xsd:date;
+    schema:address _:b4215.
+_:b4215 a schema:PostalAddress;
+    schema:streetAddress "7th Street";
+    schema:addressRegion "Texas";
+    schema:addressLocality "West Cortez";
+    schema:postalCode "58932-6988";
+    schema:addressCountry "Christmas Island".

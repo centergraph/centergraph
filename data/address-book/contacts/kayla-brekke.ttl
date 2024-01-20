@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kayla";
+    schema:familyName "Brekke";
+    schema:birthDate "1960-02-26"^^xsd:date;
+    schema:address _:b2250.
+_:b2250 a schema:PostalAddress;
+    schema:streetAddress "York Road";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Olafboro";
+    schema:postalCode "12984";
+    schema:addressCountry "Netherlands".

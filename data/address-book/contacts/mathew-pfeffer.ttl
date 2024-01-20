@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mathew";
+    schema:familyName "Pfeffer";
+    schema:birthDate "1948-05-16"^^xsd:date;
+    schema:address _:b7601.
+_:b7601 a schema:PostalAddress;
+    schema:streetAddress "Westgate";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "East Abelardoville";
+    schema:postalCode "99236-5800";
+    schema:addressCountry "Pakistan".

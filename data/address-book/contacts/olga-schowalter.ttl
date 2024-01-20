@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Olga";
+    schema:familyName "Schowalter";
+    schema:birthDate "1979-10-26"^^xsd:date;
+    schema:address _:b4928.
+_:b4928 a schema:PostalAddress;
+    schema:streetAddress "Kunde Square";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Angusbury";
+    schema:postalCode "21171-4492";
+    schema:addressCountry "Brunei Darussalam".

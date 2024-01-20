@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lynne";
+    schema:familyName "Herman";
+    schema:birthDate "1976-08-05"^^xsd:date;
+    schema:address _:b6768.
+_:b6768 a schema:PostalAddress;
+    schema:streetAddress "N Main Street";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Mosciskiberg";
+    schema:postalCode "06251-8654";
+    schema:addressCountry "Colombia".

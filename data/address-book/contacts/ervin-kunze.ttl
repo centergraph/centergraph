@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ervin";
+    schema:familyName "Kunze";
+    schema:birthDate "1991-07-31"^^xsd:date;
+    schema:address _:b746.
+_:b746 a schema:PostalAddress;
+    schema:streetAddress "Emmitt Ville";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "East Ken";
+    schema:postalCode "77582-4214";
+    schema:addressCountry "French Southern Territories".

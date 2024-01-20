@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Armando";
+    schema:familyName "Boyle-Okuneva";
+    schema:birthDate "1986-07-17"^^xsd:date;
+    schema:address _:b933.
+_:b933 a schema:PostalAddress;
+    schema:streetAddress "Cordell Court";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "North Lyrictown";
+    schema:postalCode "47638-9237";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Blanca";
+    schema:familyName "Jacobi";
+    schema:birthDate "1990-11-29"^^xsd:date;
+    schema:address _:b4681.
+_:b4681 a schema:PostalAddress;
+    schema:streetAddress "Amara Stravenue";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Midland";
+    schema:postalCode "02333";
+    schema:addressCountry "Austria".

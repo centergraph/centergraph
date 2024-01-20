@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vivian";
+    schema:familyName "Schulist";
+    schema:birthDate "1995-05-03"^^xsd:date;
+    schema:address _:b3693.
+_:b3693 a schema:PostalAddress;
+    schema:streetAddress "Eladio Ways";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Luisfield";
+    schema:postalCode "43449-7688";
+    schema:addressCountry "Isle of Man".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marjorie";
+    schema:familyName "Harvey";
+    schema:birthDate "1979-02-06"^^xsd:date;
+    schema:address _:b1354.
+_:b1354 a schema:PostalAddress;
+    schema:streetAddress "Euclid Avenue";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Elodyberg";
+    schema:postalCode "33318-7484";
+    schema:addressCountry "Bolivia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Myra";
+    schema:familyName "King";
+    schema:birthDate "1944-06-18"^^xsd:date;
+    schema:address _:b2446.
+_:b2446 a schema:PostalAddress;
+    schema:streetAddress "Prospect Street";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Amarillo";
+    schema:postalCode "90075-0780";
+    schema:addressCountry "Saint Martin".

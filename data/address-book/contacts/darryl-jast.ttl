@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darryl";
+    schema:familyName "Jast";
+    schema:birthDate "1958-06-21"^^xsd:date;
+    schema:address _:b5500.
+_:b5500 a schema:PostalAddress;
+    schema:streetAddress "Santa Track";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Fort Audrey";
+    schema:postalCode "70098-0943";
+    schema:addressCountry "Central African Republic".

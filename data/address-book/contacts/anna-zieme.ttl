@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Anna";
+    schema:familyName "Zieme";
+    schema:birthDate "1996-01-12"^^xsd:date;
+    schema:address _:b8040.
+_:b8040 a schema:PostalAddress;
+    schema:streetAddress "Wilkinson Plain";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Fort Phoebe";
+    schema:postalCode "64244-7059";
+    schema:addressCountry "Grenada".

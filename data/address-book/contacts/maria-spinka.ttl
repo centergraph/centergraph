@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Maria";
+    schema:familyName "Spinka";
+    schema:birthDate "1968-11-22"^^xsd:date;
+    schema:address _:b4664.
+_:b4664 a schema:PostalAddress;
+    schema:streetAddress "Mueller Light";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Port Morgan";
+    schema:postalCode "85840";
+    schema:addressCountry "Jersey".

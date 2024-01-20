@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Estelle";
+    schema:familyName "Crist";
+    schema:birthDate "1963-08-08"^^xsd:date;
+    schema:address _:b8165.
+_:b8165 a schema:PostalAddress;
+    schema:streetAddress "Center Street";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Ernieworth";
+    schema:postalCode "75300-6853";
+    schema:addressCountry "Iceland".

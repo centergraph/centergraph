@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darrin";
+    schema:familyName "Rohan";
+    schema:birthDate "1960-11-04"^^xsd:date;
+    schema:address _:b7879.
+_:b7879 a schema:PostalAddress;
+    schema:streetAddress "Washington Street";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "New Leta";
+    schema:postalCode "51249";
+    schema:addressCountry "Bulgaria".

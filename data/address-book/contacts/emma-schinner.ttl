@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emma";
+    schema:familyName "Schinner";
+    schema:birthDate "1983-11-14"^^xsd:date;
+    schema:address _:b2112.
+_:b2112 a schema:PostalAddress;
+    schema:streetAddress "Geo Fall";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Lake Kaileyberg";
+    schema:postalCode "10663-7398";
+    schema:addressCountry "Jamaica".

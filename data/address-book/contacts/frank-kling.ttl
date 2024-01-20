@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Frank";
+    schema:familyName "Kling";
+    schema:birthDate "1995-06-06"^^xsd:date;
+    schema:address _:b8866.
+_:b8866 a schema:PostalAddress;
+    schema:streetAddress "N Poplar Street";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "North Jedediahworth";
+    schema:postalCode "92793";
+    schema:addressCountry "Tanzania".

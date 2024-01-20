@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carmen";
+    schema:familyName "Morar";
+    schema:birthDate "1978-02-04"^^xsd:date;
+    schema:address _:b3283.
+_:b3283 a schema:PostalAddress;
+    schema:streetAddress "Larue Coves";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Blickberg";
+    schema:postalCode "21476";
+    schema:addressCountry "Cook Islands".

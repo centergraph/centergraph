@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jermaine";
+    schema:familyName "Russel";
+    schema:birthDate "1972-03-18"^^xsd:date;
+    schema:address _:b5816.
+_:b5816 a schema:PostalAddress;
+    schema:streetAddress "Springfield Close";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Lefflerfurt";
+    schema:postalCode "24641-9721";
+    schema:addressCountry "Suriname".

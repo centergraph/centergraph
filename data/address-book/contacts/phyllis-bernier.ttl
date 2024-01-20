@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Phyllis";
+    schema:familyName "Bernier";
+    schema:birthDate "1986-03-29"^^xsd:date;
+    schema:address _:b3797.
+_:b3797 a schema:PostalAddress;
+    schema:streetAddress "Brooklyn Field";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Oswaldton";
+    schema:postalCode "23991-9837";
+    schema:addressCountry "Cuba".

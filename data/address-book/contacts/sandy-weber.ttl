@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sandy";
+    schema:familyName "Weber";
+    schema:birthDate "1989-10-18"^^xsd:date;
+    schema:address _:b3177.
+_:b3177 a schema:PostalAddress;
+    schema:streetAddress "Dooley Prairie";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Goodyear";
+    schema:postalCode "82323-5622";
+    schema:addressCountry "Singapore".

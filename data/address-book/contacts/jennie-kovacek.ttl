@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jennie";
+    schema:familyName "Kovacek";
+    schema:birthDate "1999-03-31"^^xsd:date;
+    schema:address _:b4943.
+_:b4943 a schema:PostalAddress;
+    schema:streetAddress "N Washington Street";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "South Lue";
+    schema:postalCode "08232";
+    schema:addressCountry "Cote d'Ivoire".

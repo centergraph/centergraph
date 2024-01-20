@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edmund";
+    schema:familyName "Glover";
+    schema:birthDate "1999-03-01"^^xsd:date;
+    schema:address _:b1029.
+_:b1029 a schema:PostalAddress;
+    schema:streetAddress "Rebeca Row";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "South Francisco";
+    schema:postalCode "32615";
+    schema:addressCountry "South Sudan".

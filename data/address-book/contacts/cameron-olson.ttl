@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cameron";
+    schema:familyName "Olson";
+    schema:birthDate "1952-02-25"^^xsd:date;
+    schema:address _:b9957.
+_:b9957 a schema:PostalAddress;
+    schema:streetAddress "Oak Street";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Garthfurt";
+    schema:postalCode "10815-2082";
+    schema:addressCountry "Bulgaria".

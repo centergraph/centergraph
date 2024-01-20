@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Justin";
+    schema:familyName "Dicki";
+    schema:birthDate "1983-05-08"^^xsd:date;
+    schema:address _:b1572.
+_:b1572 a schema:PostalAddress;
+    schema:streetAddress "Morar Burg";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Gottliebstead";
+    schema:postalCode "28565";
+    schema:addressCountry "Martinique".

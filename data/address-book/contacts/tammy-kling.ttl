@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tammy";
+    schema:familyName "Kling";
+    schema:birthDate "1976-07-01"^^xsd:date;
+    schema:address _:b6627.
+_:b6627 a schema:PostalAddress;
+    schema:streetAddress "Windsor Close";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Littleborough";
+    schema:postalCode "26757-2765";
+    schema:addressCountry "Armenia".

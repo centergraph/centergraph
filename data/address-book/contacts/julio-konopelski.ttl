@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julio";
+    schema:familyName "Konopelski";
+    schema:birthDate "2001-10-07"^^xsd:date;
+    schema:address _:b4862.
+_:b4862 a schema:PostalAddress;
+    schema:streetAddress "Cronin Glens";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Deannabury";
+    schema:postalCode "66992";
+    schema:addressCountry "Turkmenistan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Richard";
+    schema:familyName "Homenick";
+    schema:birthDate "1978-07-24"^^xsd:date;
+    schema:address _:b947.
+_:b947 a schema:PostalAddress;
+    schema:streetAddress "Milton Street";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Greenfeldertown";
+    schema:postalCode "24438-6361";
+    schema:addressCountry "Spain".

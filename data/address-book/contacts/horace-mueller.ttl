@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Horace";
+    schema:familyName "Mueller";
+    schema:birthDate "1999-02-12"^^xsd:date;
+    schema:address _:b3841.
+_:b3841 a schema:PostalAddress;
+    schema:streetAddress "Winfield Pines";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Raegantown";
+    schema:postalCode "85329";
+    schema:addressCountry "Macao".

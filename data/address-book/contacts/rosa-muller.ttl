@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosa";
+    schema:familyName "Muller";
+    schema:birthDate "1984-02-26"^^xsd:date;
+    schema:address _:b1206.
+_:b1206 a schema:PostalAddress;
+    schema:streetAddress "George Street";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Mullerville";
+    schema:postalCode "10997-1596";
+    schema:addressCountry "Zimbabwe".

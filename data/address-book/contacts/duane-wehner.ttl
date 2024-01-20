@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Duane";
+    schema:familyName "Wehner";
+    schema:birthDate "1950-06-15"^^xsd:date;
+    schema:address _:b380.
+_:b380 a schema:PostalAddress;
+    schema:streetAddress "Jacobson Ford";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Hettingerville";
+    schema:postalCode "68764-5092";
+    schema:addressCountry "Hong Kong".

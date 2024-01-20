@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brenda";
+    schema:familyName "Grant";
+    schema:birthDate "1958-03-31"^^xsd:date;
+    schema:address _:b9858.
+_:b9858 a schema:PostalAddress;
+    schema:streetAddress "Manor Gardens";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Cranston";
+    schema:postalCode "77738-4719";
+    schema:addressCountry "China".

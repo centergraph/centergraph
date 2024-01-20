@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emmett";
+    schema:familyName "Rempel";
+    schema:birthDate "1978-01-18"^^xsd:date;
+    schema:address _:b526.
+_:b526 a schema:PostalAddress;
+    schema:streetAddress "Harvey Springs";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Lake Jason";
+    schema:postalCode "71997-5401";
+    schema:addressCountry "Bermuda".

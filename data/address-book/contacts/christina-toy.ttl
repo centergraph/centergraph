@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Christina";
+    schema:familyName "Toy";
+    schema:birthDate "2002-07-12"^^xsd:date;
+    schema:address _:b9446.
+_:b9446 a schema:PostalAddress;
+    schema:streetAddress "Theo Crest";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Hanford";
+    schema:postalCode "05260-5954";
+    schema:addressCountry "Malta".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nathan";
+    schema:familyName "Kemmer";
+    schema:birthDate "1984-08-30"^^xsd:date;
+    schema:address _:b7516.
+_:b7516 a schema:PostalAddress;
+    schema:streetAddress "Tremblay Shoal";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Lueilwitzbury";
+    schema:postalCode "75090-2001";
+    schema:addressCountry "Aruba".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Genevieve";
+    schema:familyName "Homenick";
+    schema:birthDate "2000-08-21"^^xsd:date;
+    schema:address _:b8596.
+_:b8596 a schema:PostalAddress;
+    schema:streetAddress "Schinner Garden";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Cruickshankfurt";
+    schema:postalCode "77411-3271";
+    schema:addressCountry "Monaco".

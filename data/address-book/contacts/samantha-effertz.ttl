@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Samantha";
+    schema:familyName "Effertz";
+    schema:birthDate "1971-06-27"^^xsd:date;
+    schema:address _:b2846.
+_:b2846 a schema:PostalAddress;
+    schema:streetAddress "Hill Road";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Twin Falls";
+    schema:postalCode "38570";
+    schema:addressCountry "Kyrgyz Republic".

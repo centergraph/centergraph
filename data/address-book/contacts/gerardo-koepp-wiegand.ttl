@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gerardo";
+    schema:familyName "Koepp-Wiegand";
+    schema:birthDate "1956-10-18"^^xsd:date;
+    schema:address _:b6004.
+_:b6004 a schema:PostalAddress;
+    schema:streetAddress "Batz Camp";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Fort Brannonfort";
+    schema:postalCode "77111";
+    schema:addressCountry "Congo".

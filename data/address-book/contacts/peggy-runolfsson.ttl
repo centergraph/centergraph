@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Peggy";
+    schema:familyName "Runolfsson";
+    schema:birthDate "1959-08-30"^^xsd:date;
+    schema:address _:b3428.
+_:b3428 a schema:PostalAddress;
+    schema:streetAddress "Belmont Road";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "New Damienton";
+    schema:postalCode "56424-2036";
+    schema:addressCountry "Zambia".

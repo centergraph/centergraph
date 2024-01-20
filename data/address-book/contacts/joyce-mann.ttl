@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joyce";
+    schema:familyName "Mann";
+    schema:birthDate "1963-10-04"^^xsd:date;
+    schema:address _:b692.
+_:b692 a schema:PostalAddress;
+    schema:streetAddress "Birch Grove";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Beahanville";
+    schema:postalCode "04606-9379";
+    schema:addressCountry "Iran".

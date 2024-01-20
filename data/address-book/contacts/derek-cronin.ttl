@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Derek";
+    schema:familyName "Cronin";
+    schema:birthDate "1965-03-02"^^xsd:date;
+    schema:address _:b7985.
+_:b7985 a schema:PostalAddress;
+    schema:streetAddress "E Washington Street";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Santee";
+    schema:postalCode "17977";
+    schema:addressCountry "Denmark".

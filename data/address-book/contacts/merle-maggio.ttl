@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Merle";
+    schema:familyName "Maggio";
+    schema:birthDate "1979-03-09"^^xsd:date;
+    schema:address _:b8786.
+_:b8786 a schema:PostalAddress;
+    schema:streetAddress "Manchester Road";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Guaynabo";
+    schema:postalCode "98010-9317";
+    schema:addressCountry "Singapore".

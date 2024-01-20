@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doreen";
+    schema:familyName "Friesen";
+    schema:birthDate "2002-07-30"^^xsd:date;
+    schema:address _:b5168.
+_:b5168 a schema:PostalAddress;
+    schema:streetAddress "Dylan Divide";
+    schema:addressRegion "Washington";
+    schema:addressLocality "New Dallaston";
+    schema:postalCode "65651";
+    schema:addressCountry "Ukraine".

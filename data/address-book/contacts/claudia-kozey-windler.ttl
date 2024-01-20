@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Claudia";
+    schema:familyName "Kozey-Windler";
+    schema:birthDate "1953-05-10"^^xsd:date;
+    schema:address _:b9684.
+_:b9684 a schema:PostalAddress;
+    schema:streetAddress "Heaven Shoals";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Klockofield";
+    schema:postalCode "07640-6707";
+    schema:addressCountry "Cayman Islands".

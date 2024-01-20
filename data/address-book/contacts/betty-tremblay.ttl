@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Betty";
+    schema:familyName "Tremblay";
+    schema:birthDate "1968-09-10"^^xsd:date;
+    schema:address _:b5621.
+_:b5621 a schema:PostalAddress;
+    schema:streetAddress "Market Square";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Ethelmouth";
+    schema:postalCode "48542-0883";
+    schema:addressCountry "Dominican Republic".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jamie";
+    schema:familyName "Mertz";
+    schema:birthDate "1963-07-04"^^xsd:date;
+    schema:address _:b3214.
+_:b3214 a schema:PostalAddress;
+    schema:streetAddress "E Market Street";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Denesikchester";
+    schema:postalCode "18277-5275";
+    schema:addressCountry "Falkland Islands (Malvinas)".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alexander";
+    schema:familyName "Emmerich";
+    schema:birthDate "1962-03-02"^^xsd:date;
+    schema:address _:b9584.
+_:b9584 a schema:PostalAddress;
+    schema:streetAddress "Wilderman Estates";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Binghamton";
+    schema:postalCode "72929-8754";
+    schema:addressCountry "Netherlands".

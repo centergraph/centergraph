@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hugh";
+    schema:familyName "Gutkowski";
+    schema:birthDate "1975-08-31"^^xsd:date;
+    schema:address _:b6532.
+_:b6532 a schema:PostalAddress;
+    schema:streetAddress "Hagenes Stream";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "West Allis";
+    schema:postalCode "21510-1428";
+    schema:addressCountry "Brunei Darussalam".

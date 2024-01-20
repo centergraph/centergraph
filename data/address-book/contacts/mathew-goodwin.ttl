@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mathew";
+    schema:familyName "Goodwin";
+    schema:birthDate "1956-08-19"^^xsd:date;
+    schema:address _:b3844.
+_:b3844 a schema:PostalAddress;
+    schema:streetAddress "Boyer Viaduct";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Port Dawnburgh";
+    schema:postalCode "08415-4329";
+    schema:addressCountry "Bahrain".

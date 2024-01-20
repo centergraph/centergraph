@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darrel";
+    schema:familyName "Wuckert";
+    schema:birthDate "1970-08-29"^^xsd:date;
+    schema:address _:b5820.
+_:b5820 a schema:PostalAddress;
+    schema:streetAddress "Kaleb Knolls";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Apex";
+    schema:postalCode "88042";
+    schema:addressCountry "Turks and Caicos Islands".

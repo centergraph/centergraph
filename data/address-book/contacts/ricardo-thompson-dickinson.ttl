@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ricardo";
+    schema:familyName "Thompson-Dickinson";
+    schema:birthDate "2001-09-07"^^xsd:date;
+    schema:address _:b4376.
+_:b4376 a schema:PostalAddress;
+    schema:streetAddress "Pacocha Glen";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Okunevafurt";
+    schema:postalCode "52848-5926";
+    schema:addressCountry "Saint Vincent and the Grenadines".

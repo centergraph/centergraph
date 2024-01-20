@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cora";
+    schema:familyName "Walker";
+    schema:birthDate "1976-03-04"^^xsd:date;
+    schema:address _:b6238.
+_:b6238 a schema:PostalAddress;
+    schema:streetAddress "Strosin Branch";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "New Benton";
+    schema:postalCode "09170";
+    schema:addressCountry "Democratic Republic of the Congo".

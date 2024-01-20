@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Derrick";
+    schema:familyName "Terry";
+    schema:birthDate "1991-12-10"^^xsd:date;
+    schema:address _:b7521.
+_:b7521 a schema:PostalAddress;
+    schema:streetAddress "Wilkinson Alley";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Lake Oma";
+    schema:postalCode "60505-5373";
+    schema:addressCountry "Christmas Island".

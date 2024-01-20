@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Muriel";
+    schema:familyName "Crona";
+    schema:birthDate "1970-01-16"^^xsd:date;
+    schema:address _:b4712.
+_:b4712 a schema:PostalAddress;
+    schema:streetAddress "Central Street";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Simi Valley";
+    schema:postalCode "06410";
+    schema:addressCountry "Ukraine".

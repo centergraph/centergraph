@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wilbert";
+    schema:familyName "Bins";
+    schema:birthDate "1976-06-26"^^xsd:date;
+    schema:address _:b4363.
+_:b4363 a schema:PostalAddress;
+    schema:streetAddress "Leland Circles";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Cuyahoga Falls";
+    schema:postalCode "30824-5872";
+    schema:addressCountry "Belarus".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Priscilla";
+    schema:familyName "Dickinson";
+    schema:birthDate "1944-07-20"^^xsd:date;
+    schema:address _:b5429.
+_:b5429 a schema:PostalAddress;
+    schema:streetAddress "E Central Avenue";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Alisontown";
+    schema:postalCode "72045-0560";
+    schema:addressCountry "Guatemala".

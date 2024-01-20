@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cora";
+    schema:familyName "Conn";
+    schema:birthDate "2005-06-13"^^xsd:date;
+    schema:address _:b6023.
+_:b6023 a schema:PostalAddress;
+    schema:streetAddress "Wood Lane";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Mayerborough";
+    schema:postalCode "31745-9206";
+    schema:addressCountry "Curacao".

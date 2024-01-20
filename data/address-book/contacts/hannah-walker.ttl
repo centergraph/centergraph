@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hannah";
+    schema:familyName "Walker";
+    schema:birthDate "1961-08-02"^^xsd:date;
+    schema:address _:b3468.
+_:b3468 a schema:PostalAddress;
+    schema:streetAddress "McClure Turnpike";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Abbottburgh";
+    schema:postalCode "23824";
+    schema:addressCountry "Turks and Caicos Islands".

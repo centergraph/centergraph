@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joshua";
+    schema:familyName "Zulauf";
+    schema:birthDate "1963-03-21"^^xsd:date;
+    schema:address _:b3474.
+_:b3474 a schema:PostalAddress;
+    schema:streetAddress "Gibson Fall";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Port Elroyland";
+    schema:postalCode "14772-4770";
+    schema:addressCountry "Oman".

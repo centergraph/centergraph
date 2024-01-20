@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erin";
+    schema:familyName "Gislason";
+    schema:birthDate "1967-04-22"^^xsd:date;
+    schema:address _:b9073.
+_:b9073 a schema:PostalAddress;
+    schema:streetAddress "Wilkinson Lakes";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Lake Melanyshire";
+    schema:postalCode "58287";
+    schema:addressCountry "Uruguay".

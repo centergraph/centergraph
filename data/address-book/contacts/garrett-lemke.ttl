@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Garrett";
+    schema:familyName "Lemke";
+    schema:birthDate "1974-09-14"^^xsd:date;
+    schema:address _:b9884.
+_:b9884 a schema:PostalAddress;
+    schema:streetAddress "Jones Wall";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "North Cyril";
+    schema:postalCode "66088";
+    schema:addressCountry "Cuba".

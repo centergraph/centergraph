@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vicki";
+    schema:familyName "Cartwright";
+    schema:birthDate "1967-03-20"^^xsd:date;
+    schema:address _:b8273.
+_:b8273 a schema:PostalAddress;
+    schema:streetAddress "School Street";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Waltham";
+    schema:postalCode "70608-1259";
+    schema:addressCountry "Sweden".

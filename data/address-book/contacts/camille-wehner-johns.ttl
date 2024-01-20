@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Camille";
+    schema:familyName "Wehner-Johns";
+    schema:birthDate "1993-04-06"^^xsd:date;
+    schema:address _:b5128.
+_:b5128 a schema:PostalAddress;
+    schema:streetAddress "Nelson Street";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Haleyberg";
+    schema:postalCode "00806";
+    schema:addressCountry "Haiti".

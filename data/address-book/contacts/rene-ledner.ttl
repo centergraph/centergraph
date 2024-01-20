@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rene";
+    schema:familyName "Ledner";
+    schema:birthDate "1946-10-08"^^xsd:date;
+    schema:address _:b4043.
+_:b4043 a schema:PostalAddress;
+    schema:streetAddress "W Chestnut Street";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Fort Loyalport";
+    schema:postalCode "68460-0557";
+    schema:addressCountry "Bahrain".

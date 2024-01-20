@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sylvia";
+    schema:familyName "Steuber";
+    schema:birthDate "1963-03-07"^^xsd:date;
+    schema:address _:b8136.
+_:b8136 a schema:PostalAddress;
+    schema:streetAddress "Champlin Branch";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "New Eileenside";
+    schema:postalCode "62786-1808";
+    schema:addressCountry "French Guiana".

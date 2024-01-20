@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Guadalupe";
+    schema:familyName "Lowe";
+    schema:birthDate "2000-07-18"^^xsd:date;
+    schema:address _:b9417.
+_:b9417 a schema:PostalAddress;
+    schema:streetAddress "Gladstone Road";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Moore";
+    schema:postalCode "61310-3620";
+    schema:addressCountry "Mali".

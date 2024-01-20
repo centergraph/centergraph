@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruth";
+    schema:familyName "Nikolaus";
+    schema:birthDate "1986-03-19"^^xsd:date;
+    schema:address _:b1039.
+_:b1039 a schema:PostalAddress;
+    schema:streetAddress "Cedar Close";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Lexington-Fayette";
+    schema:postalCode "78457";
+    schema:addressCountry "Slovenia".

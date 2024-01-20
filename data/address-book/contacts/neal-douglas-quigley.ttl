@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Neal";
+    schema:familyName "Douglas-Quigley";
+    schema:birthDate "1954-01-24"^^xsd:date;
+    schema:address _:b2317.
+_:b2317 a schema:PostalAddress;
+    schema:streetAddress "Kunze Lodge";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "North Ken";
+    schema:postalCode "38042-2392";
+    schema:addressCountry "Thailand".

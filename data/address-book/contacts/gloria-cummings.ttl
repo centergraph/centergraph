@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gloria";
+    schema:familyName "Cummings";
+    schema:birthDate "1963-07-07"^^xsd:date;
+    schema:address _:b2056.
+_:b2056 a schema:PostalAddress;
+    schema:streetAddress "Marks Field";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Lake Briaville";
+    schema:postalCode "78993-0679";
+    schema:addressCountry "Saint Pierre and Miquelon".

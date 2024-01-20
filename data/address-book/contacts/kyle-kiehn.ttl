@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kyle";
+    schema:familyName "Kiehn";
+    schema:birthDate "1977-07-30"^^xsd:date;
+    schema:address _:b2983.
+_:b2983 a schema:PostalAddress;
+    schema:streetAddress "Joanny Viaduct";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Wavaburgh";
+    schema:postalCode "17731";
+    schema:addressCountry "New Zealand".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gwen";
+    schema:familyName "Kassulke";
+    schema:birthDate "1963-05-21"^^xsd:date;
+    schema:address _:b5191.
+_:b5191 a schema:PostalAddress;
+    schema:streetAddress "Park View";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Gilbertoborough";
+    schema:postalCode "46565";
+    schema:addressCountry "Solomon Islands".

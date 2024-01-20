@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amelia";
+    schema:familyName "Mann";
+    schema:birthDate "2000-08-21"^^xsd:date;
+    schema:address _:b2329.
+_:b2329 a schema:PostalAddress;
+    schema:streetAddress "Homenick Course";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Rathside";
+    schema:postalCode "12656";
+    schema:addressCountry "Hungary".

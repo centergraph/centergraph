@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roy";
+    schema:familyName "Wilderman";
+    schema:birthDate "1945-04-26"^^xsd:date;
+    schema:address _:b6943.
+_:b6943 a schema:PostalAddress;
+    schema:streetAddress "Curtis Flats";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Marcosborough";
+    schema:postalCode "42781-4861";
+    schema:addressCountry "Sao Tome and Principe".

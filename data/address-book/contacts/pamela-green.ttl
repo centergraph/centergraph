@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pamela";
+    schema:familyName "Green";
+    schema:birthDate "1946-01-28"^^xsd:date;
+    schema:address _:b4701.
+_:b4701 a schema:PostalAddress;
+    schema:streetAddress "S State Street";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "West Ian";
+    schema:postalCode "96954-9685";
+    schema:addressCountry "Libyan Arab Jamahiriya".

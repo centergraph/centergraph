@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ted";
+    schema:familyName "Schmidt";
+    schema:birthDate "1954-09-25"^^xsd:date;
+    schema:address _:b4725.
+_:b4725 a schema:PostalAddress;
+    schema:streetAddress "Russel Ridges";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Sonnyside";
+    schema:postalCode "07319-1032";
+    schema:addressCountry "Saint Pierre and Miquelon".

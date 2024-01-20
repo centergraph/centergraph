@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elisa";
+    schema:familyName "Jacobs";
+    schema:birthDate "1985-12-03"^^xsd:date;
+    schema:address _:b9049.
+_:b9049 a schema:PostalAddress;
+    schema:streetAddress "Hilll Inlet";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Bartonhaven";
+    schema:postalCode "55001";
+    schema:addressCountry "Malawi".

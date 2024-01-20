@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Greg";
+    schema:familyName "Zulauf";
+    schema:birthDate "1956-03-18"^^xsd:date;
+    schema:address _:b4899.
+_:b4899 a schema:PostalAddress;
+    schema:streetAddress "Edward Street";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "North Alejandrin";
+    schema:postalCode "82140-4791";
+    schema:addressCountry "Honduras".

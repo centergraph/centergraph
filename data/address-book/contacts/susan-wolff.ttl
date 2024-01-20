@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Susan";
+    schema:familyName "Wolff";
+    schema:birthDate "1989-04-29"^^xsd:date;
+    schema:address _:b2772.
+_:b2772 a schema:PostalAddress;
+    schema:streetAddress "Fadel Station";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "West Seneca";
+    schema:postalCode "46125-5036";
+    schema:addressCountry "North Macedonia".

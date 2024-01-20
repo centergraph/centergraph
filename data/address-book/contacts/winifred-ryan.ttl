@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Winifred";
+    schema:familyName "Ryan";
+    schema:birthDate "1976-10-05"^^xsd:date;
+    schema:address _:b172.
+_:b172 a schema:PostalAddress;
+    schema:streetAddress "Santino Squares";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Elisabethfield";
+    schema:postalCode "42071-7738";
+    schema:addressCountry "Bangladesh".

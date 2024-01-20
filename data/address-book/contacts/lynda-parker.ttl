@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lynda";
+    schema:familyName "Parker";
+    schema:birthDate "1975-04-09"^^xsd:date;
+    schema:address _:b8200.
+_:b8200 a schema:PostalAddress;
+    schema:streetAddress "Ernser Trail";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Barrowsfield";
+    schema:postalCode "90466-9692";
+    schema:addressCountry "Antigua and Barbuda".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Evan";
+    schema:familyName "Dibbert";
+    schema:birthDate "1966-10-25"^^xsd:date;
+    schema:address _:b3570.
+_:b3570 a schema:PostalAddress;
+    schema:streetAddress "The Croft";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Clovis";
+    schema:postalCode "78661";
+    schema:addressCountry "South Africa".

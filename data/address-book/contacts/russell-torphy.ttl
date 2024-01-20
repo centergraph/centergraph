@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Russell";
+    schema:familyName "Torphy";
+    schema:birthDate "1981-11-10"^^xsd:date;
+    schema:address _:b8480.
+_:b8480 a schema:PostalAddress;
+    schema:streetAddress "S Park Street";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Lehigh Acres";
+    schema:postalCode "53159";
+    schema:addressCountry "Jersey".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Santos";
+    schema:familyName "Hartmann";
+    schema:birthDate "1993-03-11"^^xsd:date;
+    schema:address _:b1256.
+_:b1256 a schema:PostalAddress;
+    schema:streetAddress "Beech Close";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "New Dora";
+    schema:postalCode "27619";
+    schema:addressCountry "Iceland".

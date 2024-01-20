@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dora";
+    schema:familyName "D'Amore";
+    schema:birthDate "1953-11-14"^^xsd:date;
+    schema:address _:b1487.
+_:b1487 a schema:PostalAddress;
+    schema:streetAddress "Jessie Underpass";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "South Durwardton";
+    schema:postalCode "54634";
+    schema:addressCountry "Honduras".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Taylor";
+    schema:familyName "Rosenbaum";
+    schema:birthDate "1999-11-15"^^xsd:date;
+    schema:address _:b5722.
+_:b5722 a schema:PostalAddress;
+    schema:streetAddress "McKenzie Crossroad";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "South Earlene";
+    schema:postalCode "43331";
+    schema:addressCountry "Latvia".

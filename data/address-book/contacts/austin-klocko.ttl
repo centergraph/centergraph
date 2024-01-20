@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Austin";
+    schema:familyName "Klocko";
+    schema:birthDate "1968-10-19"^^xsd:date;
+    schema:address _:b7740.
+_:b7740 a schema:PostalAddress;
+    schema:streetAddress "Kadin Spur";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Onaberg";
+    schema:postalCode "64461-6062";
+    schema:addressCountry "Estonia".

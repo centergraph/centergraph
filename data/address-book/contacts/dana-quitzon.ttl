@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dana";
+    schema:familyName "Quitzon";
+    schema:birthDate "1992-09-26"^^xsd:date;
+    schema:address _:b6358.
+_:b6358 a schema:PostalAddress;
+    schema:streetAddress "Koelpin Manors";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Port Charlotte";
+    schema:postalCode "78478-5538";
+    schema:addressCountry "Cayman Islands".

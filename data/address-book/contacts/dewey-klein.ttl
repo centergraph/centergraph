@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dewey";
+    schema:familyName "Klein";
+    schema:birthDate "1983-04-10"^^xsd:date;
+    schema:address _:b231.
+_:b231 a schema:PostalAddress;
+    schema:streetAddress "Floyd Shoal";
+    schema:addressRegion "Washington";
+    schema:addressLocality "North Keira";
+    schema:postalCode "04558-2284";
+    schema:addressCountry "Aland Islands".

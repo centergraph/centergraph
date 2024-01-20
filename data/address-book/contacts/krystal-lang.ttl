@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Krystal";
+    schema:familyName "Lang";
+    schema:birthDate "2004-05-24"^^xsd:date;
+    schema:address _:b8531.
+_:b8531 a schema:PostalAddress;
+    schema:streetAddress "E 8th Street";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "West Norval";
+    schema:postalCode "01009-1105";
+    schema:addressCountry "Spain".

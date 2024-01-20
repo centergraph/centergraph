@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kirk";
+    schema:familyName "Kub";
+    schema:birthDate "1954-11-07"^^xsd:date;
+    schema:address _:b5407.
+_:b5407 a schema:PostalAddress;
+    schema:streetAddress "O'Kon Park";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Weberville";
+    schema:postalCode "50660-7136";
+    schema:addressCountry "Bahrain".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Heidi";
+    schema:familyName "Armstrong";
+    schema:birthDate "1963-12-15"^^xsd:date;
+    schema:address _:b2630.
+_:b2630 a schema:PostalAddress;
+    schema:streetAddress "S Monroe Street";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Port Yoshiko";
+    schema:postalCode "20075-0441";
+    schema:addressCountry "Oman".

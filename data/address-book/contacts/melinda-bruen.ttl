@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Melinda";
+    schema:familyName "Bruen";
+    schema:birthDate "1978-01-23"^^xsd:date;
+    schema:address _:b5768.
+_:b5768 a schema:PostalAddress;
+    schema:streetAddress "Frontage Road";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "New Keshaunbury";
+    schema:postalCode "02516-3043";
+    schema:addressCountry "Tajikistan".

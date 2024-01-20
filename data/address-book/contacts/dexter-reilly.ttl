@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dexter";
+    schema:familyName "Reilly";
+    schema:birthDate "1955-04-07"^^xsd:date;
+    schema:address _:b3670.
+_:b3670 a schema:PostalAddress;
+    schema:streetAddress "Tobin Corners";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "West Shermanfurt";
+    schema:postalCode "09134";
+    schema:addressCountry "Armenia".

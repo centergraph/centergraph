@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lauren";
+    schema:familyName "Gulgowski";
+    schema:birthDate "1990-08-14"^^xsd:date;
+    schema:address _:b3477.
+_:b3477 a schema:PostalAddress;
+    schema:streetAddress "W Main";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Meriden";
+    schema:postalCode "01052-7233";
+    schema:addressCountry "Cook Islands".

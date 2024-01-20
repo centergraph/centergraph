@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stella";
+    schema:familyName "Lubowitz";
+    schema:birthDate "1970-06-16"^^xsd:date;
+    schema:address _:b2637.
+_:b2637 a schema:PostalAddress;
+    schema:streetAddress "Lenora Hills";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Marksberg";
+    schema:postalCode "95433";
+    schema:addressCountry "Cook Islands".

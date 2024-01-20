@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristin";
+    schema:familyName "Fisher";
+    schema:birthDate "1988-10-21"^^xsd:date;
+    schema:address _:b6764.
+_:b6764 a schema:PostalAddress;
+    schema:streetAddress "Batz Place";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Fort Jasen";
+    schema:postalCode "71703-1153";
+    schema:addressCountry "Macao".

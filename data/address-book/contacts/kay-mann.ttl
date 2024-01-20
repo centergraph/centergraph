@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kay";
+    schema:familyName "Mann";
+    schema:birthDate "1991-09-28"^^xsd:date;
+    schema:address _:b3692.
+_:b3692 a schema:PostalAddress;
+    schema:streetAddress "Crown Street";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Faheyshire";
+    schema:postalCode "83318";
+    schema:addressCountry "Ireland".

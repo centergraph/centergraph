@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Benny";
+    schema:familyName "Kuphal";
+    schema:birthDate "2000-11-12"^^xsd:date;
+    schema:address _:b4787.
+_:b4787 a schema:PostalAddress;
+    schema:streetAddress "Imelda Haven";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Hegmannboro";
+    schema:postalCode "97546-0047";
+    schema:addressCountry "Norfolk Island".

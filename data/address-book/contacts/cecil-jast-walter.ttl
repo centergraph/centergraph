@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cecil";
+    schema:familyName "Jast-Walter";
+    schema:birthDate "1969-12-18"^^xsd:date;
+    schema:address _:b6405.
+_:b6405 a schema:PostalAddress;
+    schema:streetAddress "Nicholaus Spring";
+    schema:addressRegion "New York";
+    schema:addressLocality "Port Dorris";
+    schema:postalCode "32264";
+    schema:addressCountry "South Africa".

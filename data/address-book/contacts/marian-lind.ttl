@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marian";
+    schema:familyName "Lind";
+    schema:birthDate "1959-04-21"^^xsd:date;
+    schema:address _:b1987.
+_:b1987 a schema:PostalAddress;
+    schema:streetAddress "Ricky Rue";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Kirlinboro";
+    schema:postalCode "09541-6587";
+    schema:addressCountry "Spain".

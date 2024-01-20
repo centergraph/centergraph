@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alyssa";
+    schema:familyName "Waelchi-Mueller";
+    schema:birthDate "2000-08-05"^^xsd:date;
+    schema:address _:b4049.
+_:b4049 a schema:PostalAddress;
+    schema:streetAddress "Jalen Court";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Arvada";
+    schema:postalCode "12846";
+    schema:addressCountry "French Southern Territories".

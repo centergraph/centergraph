@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hattie";
+    schema:familyName "Veum";
+    schema:birthDate "1980-10-19"^^xsd:date;
+    schema:address _:b8110.
+_:b8110 a schema:PostalAddress;
+    schema:streetAddress "Schuster Mills";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Hoboken";
+    schema:postalCode "35325-4767";
+    schema:addressCountry "Montenegro".

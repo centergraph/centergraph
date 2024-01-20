@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brandy";
+    schema:familyName "Kautzer";
+    schema:birthDate "1953-05-12"^^xsd:date;
+    schema:address _:b6109.
+_:b6109 a schema:PostalAddress;
+    schema:streetAddress "Candace Road";
+    schema:addressRegion "Texas";
+    schema:addressLocality "New Noemie";
+    schema:postalCode "81818-6355";
+    schema:addressCountry "Guadeloupe".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Felix";
+    schema:familyName "Lang";
+    schema:birthDate "1971-09-05"^^xsd:date;
+    schema:address _:b9089.
+_:b9089 a schema:PostalAddress;
+    schema:streetAddress "Dillon Plaza";
+    schema:addressRegion "Washington";
+    schema:addressLocality "South Crystel";
+    schema:postalCode "58500";
+    schema:addressCountry "India".

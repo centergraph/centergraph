@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Taylor";
+    schema:familyName "Zemlak";
+    schema:birthDate "1945-06-15"^^xsd:date;
+    schema:address _:b5638.
+_:b5638 a schema:PostalAddress;
+    schema:streetAddress "S Broadway Street";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "East Marielleshire";
+    schema:postalCode "94066";
+    schema:addressCountry "Suriname".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rodolfo";
+    schema:familyName "Franecki";
+    schema:birthDate "1953-07-20"^^xsd:date;
+    schema:address _:b683.
+_:b683 a schema:PostalAddress;
+    schema:streetAddress "Robel Junction";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Fort Marlon";
+    schema:postalCode "56355";
+    schema:addressCountry "Albania".

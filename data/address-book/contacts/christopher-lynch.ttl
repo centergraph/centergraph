@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Christopher";
+    schema:familyName "Lynch";
+    schema:birthDate "1979-12-30"^^xsd:date;
+    schema:address _:b3528.
+_:b3528 a schema:PostalAddress;
+    schema:streetAddress "Kling Plaza";
+    schema:addressRegion "New York";
+    schema:addressLocality "Nicolasworth";
+    schema:postalCode "10611";
+    schema:addressCountry "Saint Helena".

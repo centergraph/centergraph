@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Craig";
+    schema:familyName "Schroeder";
+    schema:birthDate "2004-01-05"^^xsd:date;
+    schema:address _:b4169.
+_:b4169 a schema:PostalAddress;
+    schema:streetAddress "Prospect Avenue";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "West Reta";
+    schema:postalCode "99523";
+    schema:addressCountry "Slovenia".

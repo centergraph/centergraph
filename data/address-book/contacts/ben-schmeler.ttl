@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ben";
+    schema:familyName "Schmeler";
+    schema:birthDate "1948-10-20"^^xsd:date;
+    schema:address _:b9901.
+_:b9901 a schema:PostalAddress;
+    schema:streetAddress "Reynolds Shore";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Lancaster";
+    schema:postalCode "99963";
+    schema:addressCountry "Iceland".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mable";
+    schema:familyName "Jacobson";
+    schema:birthDate "1980-07-10"^^xsd:date;
+    schema:address _:b6445.
+_:b6445 a schema:PostalAddress;
+    schema:streetAddress "Vince Land";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Agneshaven";
+    schema:postalCode "37152-0319";
+    schema:addressCountry "Greenland".

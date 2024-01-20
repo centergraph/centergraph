@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alton";
+    schema:familyName "West";
+    schema:birthDate "1998-04-15"^^xsd:date;
+    schema:address _:b4913.
+_:b4913 a schema:PostalAddress;
+    schema:streetAddress "The Mount";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "New Ladarius";
+    schema:postalCode "59301-8259";
+    schema:addressCountry "Ukraine".

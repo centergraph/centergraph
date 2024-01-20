@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brandi";
+    schema:familyName "Schneider-Greenholt";
+    schema:birthDate "1976-08-27"^^xsd:date;
+    schema:address _:b1805.
+_:b1805 a schema:PostalAddress;
+    schema:streetAddress "Turcotte Cliffs";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Tacoma";
+    schema:postalCode "14393-2837";
+    schema:addressCountry "Iceland".

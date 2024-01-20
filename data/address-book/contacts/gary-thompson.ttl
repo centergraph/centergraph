@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gary";
+    schema:familyName "Thompson";
+    schema:birthDate "1971-06-19"^^xsd:date;
+    schema:address _:b5508.
+_:b5508 a schema:PostalAddress;
+    schema:streetAddress "Berry Loop";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Sengerbury";
+    schema:postalCode "50549";
+    schema:addressCountry "Eswatini".

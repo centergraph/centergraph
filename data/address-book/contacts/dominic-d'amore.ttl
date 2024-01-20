@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dominic";
+    schema:familyName "D'Amore";
+    schema:birthDate "1979-11-30"^^xsd:date;
+    schema:address _:b8063.
+_:b8063 a schema:PostalAddress;
+    schema:streetAddress "Cronin Trail";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Kirkland";
+    schema:postalCode "40317";
+    schema:addressCountry "Andorra".

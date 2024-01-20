@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ricardo";
+    schema:familyName "Bogisich";
+    schema:birthDate "1951-08-19"^^xsd:date;
+    schema:address _:b6347.
+_:b6347 a schema:PostalAddress;
+    schema:streetAddress "Lind Ridge";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Stehrworth";
+    schema:postalCode "04308-9004";
+    schema:addressCountry "Argentina".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Felipe";
+    schema:familyName "Raynor";
+    schema:birthDate "1996-11-11"^^xsd:date;
+    schema:address _:b3210.
+_:b3210 a schema:PostalAddress;
+    schema:streetAddress "Feest Ford";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Owenfort";
+    schema:postalCode "94173-4160";
+    schema:addressCountry "Cuba".

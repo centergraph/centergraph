@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Michael";
+    schema:familyName "Langworth";
+    schema:birthDate "1984-05-19"^^xsd:date;
+    schema:address _:b5713.
+_:b5713 a schema:PostalAddress;
+    schema:streetAddress "Sycamore Avenue";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "South Myrlhaven";
+    schema:postalCode "03538-2190";
+    schema:addressCountry "South Sudan".

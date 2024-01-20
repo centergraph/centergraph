@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stephanie";
+    schema:familyName "Windler";
+    schema:birthDate "1998-04-10"^^xsd:date;
+    schema:address _:b9223.
+_:b9223 a schema:PostalAddress;
+    schema:streetAddress "Kshlerin Orchard";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Nikkiberg";
+    schema:postalCode "19385";
+    schema:addressCountry "Gabon".

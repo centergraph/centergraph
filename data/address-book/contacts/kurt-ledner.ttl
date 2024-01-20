@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kurt";
+    schema:familyName "Ledner";
+    schema:birthDate "1986-10-14"^^xsd:date;
+    schema:address _:b6295.
+_:b6295 a schema:PostalAddress;
+    schema:streetAddress "Barrows Knolls";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "West Noemyboro";
+    schema:postalCode "21233-4071";
+    schema:addressCountry "Bulgaria".

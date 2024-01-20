@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ella";
+    schema:familyName "Cruickshank";
+    schema:birthDate "1951-08-18"^^xsd:date;
+    schema:address _:b1095.
+_:b1095 a schema:PostalAddress;
+    schema:streetAddress "Wilkinson Glens";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Lake Lindsey";
+    schema:postalCode "46217";
+    schema:addressCountry "Fiji".

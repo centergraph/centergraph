@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Muriel";
+    schema:familyName "Cassin";
+    schema:birthDate "1984-11-23"^^xsd:date;
+    schema:address _:b8976.
+_:b8976 a schema:PostalAddress;
+    schema:streetAddress "Koch Fords";
+    schema:addressRegion "New York";
+    schema:addressLocality "South Kirstenville";
+    schema:postalCode "32569";
+    schema:addressCountry "Marshall Islands".

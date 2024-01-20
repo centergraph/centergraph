@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Patsy";
+    schema:familyName "Feest";
+    schema:birthDate "1969-08-05"^^xsd:date;
+    schema:address _:b8804.
+_:b8804 a schema:PostalAddress;
+    schema:streetAddress "Sandrine Oval";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Port Carlofurt";
+    schema:postalCode "34570-8751";
+    schema:addressCountry "Malaysia".

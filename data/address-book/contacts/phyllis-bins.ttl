@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Phyllis";
+    schema:familyName "Bins";
+    schema:birthDate "2005-03-24"^^xsd:date;
+    schema:address _:b6146.
+_:b6146 a schema:PostalAddress;
+    schema:streetAddress "Norberto Ford";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "South Americoboro";
+    schema:postalCode "10250-9833";
+    schema:addressCountry "Mali".

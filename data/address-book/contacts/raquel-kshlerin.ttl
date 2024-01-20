@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Raquel";
+    schema:familyName "Kshlerin";
+    schema:birthDate "1962-01-17"^^xsd:date;
+    schema:address _:b9096.
+_:b9096 a schema:PostalAddress;
+    schema:streetAddress "N 4th Street";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Breitenbergville";
+    schema:postalCode "68379-9937";
+    schema:addressCountry "Micronesia".

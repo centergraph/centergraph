@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dustin";
+    schema:familyName "Quitzon";
+    schema:birthDate "1963-07-31"^^xsd:date;
+    schema:address _:b7705.
+_:b7705 a schema:PostalAddress;
+    schema:streetAddress "Taylor Way";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Havenhaven";
+    schema:postalCode "47007";
+    schema:addressCountry "Finland".

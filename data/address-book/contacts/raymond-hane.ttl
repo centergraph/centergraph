@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Raymond";
+    schema:familyName "Hane";
+    schema:birthDate "1953-11-07"^^xsd:date;
+    schema:address _:b1979.
+_:b1979 a schema:PostalAddress;
+    schema:streetAddress "Nathanial Terrace";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Ciceroberg";
+    schema:postalCode "90423";
+    schema:addressCountry "Guinea".

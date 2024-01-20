@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lance";
+    schema:familyName "Smith";
+    schema:birthDate "1989-09-14"^^xsd:date;
+    schema:address _:b6213.
+_:b6213 a schema:PostalAddress;
+    schema:streetAddress "Missouri Isle";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Clairecester";
+    schema:postalCode "88917-5213";
+    schema:addressCountry "Yemen".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marion";
+    schema:familyName "Braun";
+    schema:birthDate "1979-05-10"^^xsd:date;
+    schema:address _:b3615.
+_:b3615 a schema:PostalAddress;
+    schema:streetAddress "Manor Road";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "North Maryboro";
+    schema:postalCode "60197-4262";
+    schema:addressCountry "Niue".

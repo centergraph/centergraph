@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Norma";
+    schema:familyName "Lind";
+    schema:birthDate "1985-06-27"^^xsd:date;
+    schema:address _:b8307.
+_:b8307 a schema:PostalAddress;
+    schema:streetAddress "O'Connell Islands";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Stoltenbergport";
+    schema:postalCode "70692-6681";
+    schema:addressCountry "Democratic Republic of the Congo".

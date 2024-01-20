@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Austin";
+    schema:familyName "Gleichner";
+    schema:birthDate "1963-10-18"^^xsd:date;
+    schema:address _:b4682.
+_:b4682 a schema:PostalAddress;
+    schema:streetAddress "Yundt Village";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Port Elyse";
+    schema:postalCode "94187-3675";
+    schema:addressCountry "South Sudan".

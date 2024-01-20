@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Melissa";
+    schema:familyName "Blick";
+    schema:birthDate "1991-08-12"^^xsd:date;
+    schema:address _:b1078.
+_:b1078 a schema:PostalAddress;
+    schema:streetAddress "Rosalia Spurs";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "South Anahi";
+    schema:postalCode "58116-6205";
+    schema:addressCountry "Bonaire, Sint Eustatius and Saba".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sophie";
+    schema:familyName "Rutherford";
+    schema:birthDate "1996-03-31"^^xsd:date;
+    schema:address _:b4084.
+_:b4084 a schema:PostalAddress;
+    schema:streetAddress "Effertz Harbors";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "West Allis";
+    schema:postalCode "46082";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

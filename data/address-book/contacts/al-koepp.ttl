@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Al";
+    schema:familyName "Koepp";
+    schema:birthDate "1976-03-21"^^xsd:date;
+    schema:address _:b6695.
+_:b6695 a schema:PostalAddress;
+    schema:streetAddress "Kaden Fort";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Kunzeside";
+    schema:postalCode "03286-3789";
+    schema:addressCountry "Senegal".

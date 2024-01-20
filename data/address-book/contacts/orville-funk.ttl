@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Orville";
+    schema:familyName "Funk";
+    schema:birthDate "1955-01-05"^^xsd:date;
+    schema:address _:b5397.
+_:b5397 a schema:PostalAddress;
+    schema:streetAddress "Moore Row";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Pacochaland";
+    schema:postalCode "37799";
+    schema:addressCountry "Norfolk Island".

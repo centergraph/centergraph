@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emanuel";
+    schema:familyName "Bailey";
+    schema:birthDate "1972-04-02"^^xsd:date;
+    schema:address _:b39.
+_:b39 a schema:PostalAddress;
+    schema:streetAddress "Schinner Manors";
+    schema:addressRegion "New York";
+    schema:addressLocality "East Lorenaborough";
+    schema:postalCode "23747-3457";
+    schema:addressCountry "Mauritania".

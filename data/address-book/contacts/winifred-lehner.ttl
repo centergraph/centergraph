@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Winifred";
+    schema:familyName "Lehner";
+    schema:birthDate "1991-02-17"^^xsd:date;
+    schema:address _:b4946.
+_:b4946 a schema:PostalAddress;
+    schema:streetAddress "MacGyver Burg";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Schummtown";
+    schema:postalCode "60396-8672";
+    schema:addressCountry "Tajikistan".

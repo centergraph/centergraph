@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julie";
+    schema:familyName "Bechtelar";
+    schema:birthDate "1985-12-21"^^xsd:date;
+    schema:address _:b9197.
+_:b9197 a schema:PostalAddress;
+    schema:streetAddress "Grady Mill";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "New Amanda";
+    schema:postalCode "39635-7517";
+    schema:addressCountry "Singapore".

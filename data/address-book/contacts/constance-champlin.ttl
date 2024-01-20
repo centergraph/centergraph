@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Constance";
+    schema:familyName "Champlin";
+    schema:birthDate "2001-05-03"^^xsd:date;
+    schema:address _:b6916.
+_:b6916 a schema:PostalAddress;
+    schema:streetAddress "Lind Ways";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "East Veronica";
+    schema:postalCode "65471";
+    schema:addressCountry "Cameroon".

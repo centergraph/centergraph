@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clinton";
+    schema:familyName "Schoen";
+    schema:birthDate "1985-01-09"^^xsd:date;
+    schema:address _:b7852.
+_:b7852 a schema:PostalAddress;
+    schema:streetAddress "Osinski Ville";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "New Emeryville";
+    schema:postalCode "86199-1197";
+    schema:addressCountry "Norfolk Island".

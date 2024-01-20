@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Betsy";
+    schema:familyName "Swift";
+    schema:birthDate "2003-05-23"^^xsd:date;
+    schema:address _:b3023.
+_:b3023 a schema:PostalAddress;
+    schema:streetAddress "Church View";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Fort Norris";
+    schema:postalCode "96100-5375";
+    schema:addressCountry "Falkland Islands (Malvinas)".

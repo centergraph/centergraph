@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorena";
+    schema:familyName "Parisian";
+    schema:birthDate "2002-07-01"^^xsd:date;
+    schema:address _:b691.
+_:b691 a schema:PostalAddress;
+    schema:streetAddress "Erica Shore";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "East Jerelmouth";
+    schema:postalCode "98551";
+    schema:addressCountry "China".

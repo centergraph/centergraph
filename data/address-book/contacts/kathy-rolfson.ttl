@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kathy";
+    schema:familyName "Rolfson";
+    schema:birthDate "1978-10-04"^^xsd:date;
+    schema:address _:b5705.
+_:b5705 a schema:PostalAddress;
+    schema:streetAddress "Zoila Valley";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Alishaworth";
+    schema:postalCode "58539-5454";
+    schema:addressCountry "Tokelau".

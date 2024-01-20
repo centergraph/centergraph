@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tracy";
+    schema:familyName "McDermott";
+    schema:birthDate "1958-04-09"^^xsd:date;
+    schema:address _:b9028.
+_:b9028 a schema:PostalAddress;
+    schema:streetAddress "Barrows Cape";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "East Ethylboro";
+    schema:postalCode "48743-0953";
+    schema:addressCountry "Reunion".

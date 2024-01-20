@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jill";
+    schema:familyName "Keeling";
+    schema:birthDate "1944-10-19"^^xsd:date;
+    schema:address _:b387.
+_:b387 a schema:PostalAddress;
+    schema:streetAddress "E Maple Street";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Hackettshire";
+    schema:postalCode "55025-5820";
+    schema:addressCountry "Turkey".

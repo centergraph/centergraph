@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marian";
+    schema:familyName "Hartmann";
+    schema:birthDate "1953-08-08"^^xsd:date;
+    schema:address _:b1452.
+_:b1452 a schema:PostalAddress;
+    schema:streetAddress "Claud Common";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Botsfordland";
+    schema:postalCode "62724";
+    schema:addressCountry "Taiwan".

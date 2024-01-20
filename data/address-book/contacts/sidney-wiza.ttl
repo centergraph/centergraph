@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sidney";
+    schema:familyName "Wiza";
+    schema:birthDate "1971-01-17"^^xsd:date;
+    schema:address _:b4588.
+_:b4588 a schema:PostalAddress;
+    schema:streetAddress "Kling Trace";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Port Hillardtown";
+    schema:postalCode "68939-1112";
+    schema:addressCountry "Oman".

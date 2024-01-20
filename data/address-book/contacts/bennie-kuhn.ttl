@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bennie";
+    schema:familyName "Kuhn";
+    schema:birthDate "1997-07-06"^^xsd:date;
+    schema:address _:b7350.
+_:b7350 a schema:PostalAddress;
+    schema:streetAddress "Jamison Islands";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Haverhill";
+    schema:postalCode "83266-0981";
+    schema:addressCountry "Iraq".

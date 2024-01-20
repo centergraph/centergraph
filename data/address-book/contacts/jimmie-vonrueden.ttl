@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jimmie";
+    schema:familyName "VonRueden";
+    schema:birthDate "1955-12-11"^^xsd:date;
+    schema:address _:b3355.
+_:b3355 a schema:PostalAddress;
+    schema:streetAddress "D'Amore Hills";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Lake Lavada";
+    schema:postalCode "45465";
+    schema:addressCountry "Eswatini".

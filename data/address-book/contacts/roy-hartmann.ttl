@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roy";
+    schema:familyName "Hartmann";
+    schema:birthDate "1989-12-20"^^xsd:date;
+    schema:address _:b3778.
+_:b3778 a schema:PostalAddress;
+    schema:streetAddress "Mayer Freeway";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Fort Alize";
+    schema:postalCode "53437";
+    schema:addressCountry "Namibia".

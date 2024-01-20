@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ivan";
+    schema:familyName "Koss";
+    schema:birthDate "1959-12-24"^^xsd:date;
+    schema:address _:b1888.
+_:b1888 a schema:PostalAddress;
+    schema:streetAddress "Jace Path";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Pleasanton";
+    schema:postalCode "55226-1148";
+    schema:addressCountry "Albania".

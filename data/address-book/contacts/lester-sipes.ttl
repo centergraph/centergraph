@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lester";
+    schema:familyName "Sipes";
+    schema:birthDate "2003-03-03"^^xsd:date;
+    schema:address _:b3126.
+_:b3126 a schema:PostalAddress;
+    schema:streetAddress "Collins Mount";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Osinskiview";
+    schema:postalCode "62983-0326";
+    schema:addressCountry "Peru".

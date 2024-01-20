@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ginger";
+    schema:familyName "Harris";
+    schema:birthDate "1956-05-01"^^xsd:date;
+    schema:address _:b1742.
+_:b1742 a schema:PostalAddress;
+    schema:streetAddress "W Washington Avenue";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Birmingham";
+    schema:postalCode "04820";
+    schema:addressCountry "Indonesia".

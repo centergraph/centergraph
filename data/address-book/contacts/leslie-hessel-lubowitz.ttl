@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leslie";
+    schema:familyName "Hessel-Lubowitz";
+    schema:birthDate "1981-09-04"^^xsd:date;
+    schema:address _:b470.
+_:b470 a schema:PostalAddress;
+    schema:streetAddress "Mayert Flats";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Tommouth";
+    schema:postalCode "92083-5898";
+    schema:addressCountry "Mongolia".

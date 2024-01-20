@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jessie";
+    schema:familyName "Rowe";
+    schema:birthDate "1977-06-18"^^xsd:date;
+    schema:address _:b1123.
+_:b1123 a schema:PostalAddress;
+    schema:streetAddress "Ricardo Gardens";
+    schema:addressRegion "Montana";
+    schema:addressLocality "New Leolahaven";
+    schema:postalCode "78140";
+    schema:addressCountry "Angola".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lucy";
+    schema:familyName "Keeling";
+    schema:birthDate "1956-08-04"^^xsd:date;
+    schema:address _:b4772.
+_:b4772 a schema:PostalAddress;
+    schema:streetAddress "16th Street";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "East Zoie";
+    schema:postalCode "78701-6106";
+    schema:addressCountry "Guadeloupe".

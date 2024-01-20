@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lynda";
+    schema:familyName "Altenwerth";
+    schema:birthDate "1984-08-06"^^xsd:date;
+    schema:address _:b7126.
+_:b7126 a schema:PostalAddress;
+    schema:streetAddress "N 2nd Street";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Minafort";
+    schema:postalCode "94634-0236";
+    schema:addressCountry "Georgia".

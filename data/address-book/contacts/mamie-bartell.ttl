@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mamie";
+    schema:familyName "Bartell";
+    schema:birthDate "2000-04-26"^^xsd:date;
+    schema:address _:b1096.
+_:b1096 a schema:PostalAddress;
+    schema:streetAddress "Fadel Walks";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Daughertytown";
+    schema:postalCode "26606-0692";
+    schema:addressCountry "Canada".

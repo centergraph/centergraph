@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ebony";
+    schema:familyName "Rempel";
+    schema:birthDate "1974-11-11"^^xsd:date;
+    schema:address _:b5777.
+_:b5777 a schema:PostalAddress;
+    schema:streetAddress "E 4th Avenue";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "New Alfredaberg";
+    schema:postalCode "47743-8391";
+    schema:addressCountry "Bolivia".

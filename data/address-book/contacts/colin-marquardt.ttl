@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Colin";
+    schema:familyName "Marquardt";
+    schema:birthDate "1992-04-18"^^xsd:date;
+    schema:address _:b9317.
+_:b9317 a schema:PostalAddress;
+    schema:streetAddress "Honeysuckle Close";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Danbury";
+    schema:postalCode "31059";
+    schema:addressCountry "Holy See (Vatican City State)".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Patrick";
+    schema:familyName "Oberbrunner";
+    schema:birthDate "1977-12-01"^^xsd:date;
+    schema:address _:b7408.
+_:b7408 a schema:PostalAddress;
+    schema:streetAddress "Charity Highway";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Bashirianberg";
+    schema:postalCode "94548-2062";
+    schema:addressCountry "Ukraine".

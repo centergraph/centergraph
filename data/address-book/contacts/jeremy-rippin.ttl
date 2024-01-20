@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeremy";
+    schema:familyName "Rippin";
+    schema:birthDate "1970-05-20"^^xsd:date;
+    schema:address _:b5385.
+_:b5385 a schema:PostalAddress;
+    schema:streetAddress "Braden Expressway";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Orange";
+    schema:postalCode "30453-7896";
+    schema:addressCountry "Guatemala".

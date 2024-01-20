@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kurt";
+    schema:familyName "Hane";
+    schema:birthDate "1972-05-17"^^xsd:date;
+    schema:address _:b2499.
+_:b2499 a schema:PostalAddress;
+    schema:streetAddress "Mante Harbor";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Rutherfordborough";
+    schema:postalCode "10383-8552";
+    schema:addressCountry "Canada".

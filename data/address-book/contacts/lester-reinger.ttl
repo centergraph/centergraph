@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lester";
+    schema:familyName "Reinger";
+    schema:birthDate "1944-11-18"^^xsd:date;
+    schema:address _:b173.
+_:b173 a schema:PostalAddress;
+    schema:streetAddress "Ethyl Bridge";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Watsicashire";
+    schema:postalCode "12765";
+    schema:addressCountry "South Georgia and the South Sandwich Islands".

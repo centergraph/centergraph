@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Percy";
+    schema:familyName "Brakus";
+    schema:birthDate "1972-03-02"^^xsd:date;
+    schema:address _:b8569.
+_:b8569 a schema:PostalAddress;
+    schema:streetAddress "Kings Highway";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Alessandrocester";
+    schema:postalCode "71523-1651";
+    schema:addressCountry "Virgin Islands, U.S.".

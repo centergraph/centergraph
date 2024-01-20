@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Forrest";
+    schema:familyName "Hilpert";
+    schema:birthDate "1975-04-03"^^xsd:date;
+    schema:address _:b4609.
+_:b4609 a schema:PostalAddress;
+    schema:streetAddress "Rosemary Ways";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Kamrynland";
+    schema:postalCode "75154-6334";
+    schema:addressCountry "Switzerland".

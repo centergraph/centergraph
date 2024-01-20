@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rachael";
+    schema:familyName "Cremin";
+    schema:birthDate "1992-06-03"^^xsd:date;
+    schema:address _:b9311.
+_:b9311 a schema:PostalAddress;
+    schema:streetAddress "Carroll Shore";
+    schema:addressRegion "California";
+    schema:addressLocality "Ramonaborough";
+    schema:postalCode "82885-8379";
+    schema:addressCountry "Angola".

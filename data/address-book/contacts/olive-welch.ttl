@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Olive";
+    schema:familyName "Welch";
+    schema:birthDate "1952-10-24"^^xsd:date;
+    schema:address _:b7571.
+_:b7571 a schema:PostalAddress;
+    schema:streetAddress "Fadel Stravenue";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Lake Erichburgh";
+    schema:postalCode "62836-5433";
+    schema:addressCountry "Ecuador".

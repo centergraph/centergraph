@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristie";
+    schema:familyName "Reichel";
+    schema:birthDate "1975-06-30"^^xsd:date;
+    schema:address _:b4416.
+_:b4416 a schema:PostalAddress;
+    schema:streetAddress "First Avenue";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Lake Ameliashire";
+    schema:postalCode "46001-5564";
+    schema:addressCountry "Bosnia and Herzegovina".

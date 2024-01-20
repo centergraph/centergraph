@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Felipe";
+    schema:familyName "Denesik";
+    schema:birthDate "1959-12-23"^^xsd:date;
+    schema:address _:b3352.
+_:b3352 a schema:PostalAddress;
+    schema:streetAddress "Russell Garden";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Lake Guiseppe";
+    schema:postalCode "25246";
+    schema:addressCountry "Myanmar".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stanley";
+    schema:familyName "Grant";
+    schema:birthDate "1990-06-23"^^xsd:date;
+    schema:address _:b4819.
+_:b4819 a schema:PostalAddress;
+    schema:streetAddress "Manchester Road";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Wildermanboro";
+    schema:postalCode "85151";
+    schema:addressCountry "Mali".

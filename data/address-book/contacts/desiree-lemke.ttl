@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Desiree";
+    schema:familyName "Lemke";
+    schema:birthDate "1947-04-12"^^xsd:date;
+    schema:address _:b7312.
+_:b7312 a schema:PostalAddress;
+    schema:streetAddress "S College Street";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "East Dallasland";
+    schema:postalCode "15342";
+    schema:addressCountry "French Guiana".

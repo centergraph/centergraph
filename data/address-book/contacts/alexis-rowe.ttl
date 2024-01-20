@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alexis";
+    schema:familyName "Rowe";
+    schema:birthDate "1995-07-06"^^xsd:date;
+    schema:address _:b5493.
+_:b5493 a schema:PostalAddress;
+    schema:streetAddress "Hermiston Creek";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Fort Gavinburgh";
+    schema:postalCode "14067-6242";
+    schema:addressCountry "Burkina Faso".

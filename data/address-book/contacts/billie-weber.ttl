@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Billie";
+    schema:familyName "Weber";
+    schema:birthDate "1955-10-17"^^xsd:date;
+    schema:address _:b7439.
+_:b7439 a schema:PostalAddress;
+    schema:streetAddress "Wilderman Ports";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Nathenborough";
+    schema:postalCode "46579-0792";
+    schema:addressCountry "Haiti".

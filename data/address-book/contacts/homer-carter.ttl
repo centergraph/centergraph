@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Homer";
     schema:familyName "Carter";
-    schema:birthDate "1958-02-17"^^xsd:date;
-    schema:address _:b620.
-_:b620 a schema:PostalAddress;
-    schema:streetAddress "Gottlieb Mount";
-    schema:addressRegion "Connecticut";
-    schema:addressLocality "Pfefferburgh";
-    schema:postalCode "69480-8651";
-    schema:addressCountry "Mauritania".
+    schema:birthDate "1988-08-20"^^xsd:date;
+    schema:address _:b413.
+_:b413 a schema:PostalAddress;
+    schema:streetAddress "Cumberland Street";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Jerdeview";
+    schema:postalCode "70184";
+    schema:addressCountry "Palau".

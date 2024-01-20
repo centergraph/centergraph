@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joan";
+    schema:familyName "Wunsch";
+    schema:birthDate "1966-07-08"^^xsd:date;
+    schema:address _:b813.
+_:b813 a schema:PostalAddress;
+    schema:streetAddress "Auer Turnpike";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Johntown";
+    schema:postalCode "71654";
+    schema:addressCountry "Latvia".

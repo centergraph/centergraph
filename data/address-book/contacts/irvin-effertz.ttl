@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Irvin";
+    schema:familyName "Effertz";
+    schema:birthDate "1966-03-14"^^xsd:date;
+    schema:address _:b8676.
+_:b8676 a schema:PostalAddress;
+    schema:streetAddress "Alfredo Greens";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Ariellefield";
+    schema:postalCode "17579";
+    schema:addressCountry "Palau".

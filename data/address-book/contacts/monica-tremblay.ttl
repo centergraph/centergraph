@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Monica";
+    schema:familyName "Tremblay";
+    schema:birthDate "1999-05-17"^^xsd:date;
+    schema:address _:b2582.
+_:b2582 a schema:PostalAddress;
+    schema:streetAddress "Nienow Rapid";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Theresaside";
+    schema:postalCode "14676-3548";
+    schema:addressCountry "Japan".

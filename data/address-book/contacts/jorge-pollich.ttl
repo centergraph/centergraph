@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jorge";
+    schema:familyName "Pollich";
+    schema:birthDate "1961-07-29"^^xsd:date;
+    schema:address _:b1656.
+_:b1656 a schema:PostalAddress;
+    schema:streetAddress "Cumberland Street";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Fort Gregory";
+    schema:postalCode "23137";
+    schema:addressCountry "Sri Lanka".

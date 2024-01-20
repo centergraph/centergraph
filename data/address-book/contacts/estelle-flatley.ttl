@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Estelle";
+    schema:familyName "Flatley";
+    schema:birthDate "1988-05-31"^^xsd:date;
+    schema:address _:b1561.
+_:b1561 a schema:PostalAddress;
+    schema:streetAddress "Lake Drive";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Joanashire";
+    schema:postalCode "63015-7221";
+    schema:addressCountry "Switzerland".

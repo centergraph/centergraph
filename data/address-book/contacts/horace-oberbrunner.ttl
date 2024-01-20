@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Horace";
+    schema:familyName "Oberbrunner";
+    schema:birthDate "1966-11-17"^^xsd:date;
+    schema:address _:b6460.
+_:b6460 a schema:PostalAddress;
+    schema:streetAddress "S 2nd Street";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Pine Bluff";
+    schema:postalCode "11214";
+    schema:addressCountry "Finland".

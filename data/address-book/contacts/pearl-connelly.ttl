@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pearl";
+    schema:familyName "Connelly";
+    schema:birthDate "1964-01-17"^^xsd:date;
+    schema:address _:b5193.
+_:b5193 a schema:PostalAddress;
+    schema:streetAddress "Pauline Green";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Princeborough";
+    schema:postalCode "82645";
+    schema:addressCountry "Jordan".

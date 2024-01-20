@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cesar";
+    schema:familyName "Larson";
+    schema:birthDate "1951-11-22"^^xsd:date;
+    schema:address _:b163.
+_:b163 a schema:PostalAddress;
+    schema:streetAddress "County Line Road";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Fort Margarett";
+    schema:postalCode "28056-6986";
+    schema:addressCountry "Benin".

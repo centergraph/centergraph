@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harry";
+    schema:familyName "Schmeler";
+    schema:birthDate "1998-06-15"^^xsd:date;
+    schema:address _:b4411.
+_:b4411 a schema:PostalAddress;
+    schema:streetAddress "O'Conner Point";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Fort Edna";
+    schema:postalCode "48745-8152";
+    schema:addressCountry "Myanmar".

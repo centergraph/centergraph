@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Levi";
+    schema:familyName "Grimes";
+    schema:birthDate "1967-08-31"^^xsd:date;
+    schema:address _:b305.
+_:b305 a schema:PostalAddress;
+    schema:streetAddress "S 4th Street";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "East Kenneth";
+    schema:postalCode "89175-5910";
+    schema:addressCountry "American Samoa".

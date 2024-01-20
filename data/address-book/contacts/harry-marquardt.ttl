@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harry";
+    schema:familyName "Marquardt";
+    schema:birthDate "1978-01-14"^^xsd:date;
+    schema:address _:b7139.
+_:b7139 a schema:PostalAddress;
+    schema:streetAddress "The Fairway";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Brooklyn Park";
+    schema:postalCode "95316";
+    schema:addressCountry "Virgin Islands, British".

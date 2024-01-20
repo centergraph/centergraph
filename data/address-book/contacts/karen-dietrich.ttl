@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Karen";
+    schema:familyName "Dietrich";
+    schema:birthDate "1967-07-12"^^xsd:date;
+    schema:address _:b8986.
+_:b8986 a schema:PostalAddress;
+    schema:streetAddress "Casper Shoals";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Beerview";
+    schema:postalCode "26418";
+    schema:addressCountry "New Caledonia".

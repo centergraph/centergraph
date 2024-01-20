@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ian";
+    schema:familyName "Morar";
+    schema:birthDate "1962-10-18"^^xsd:date;
+    schema:address _:b5199.
+_:b5199 a schema:PostalAddress;
+    schema:streetAddress "Andreane Pike";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Strosinstad";
+    schema:postalCode "96982-9734";
+    schema:addressCountry "Virgin Islands, U.S.".

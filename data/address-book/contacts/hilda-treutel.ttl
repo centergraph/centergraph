@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hilda";
+    schema:familyName "Treutel";
+    schema:birthDate "1962-02-22"^^xsd:date;
+    schema:address _:b2672.
+_:b2672 a schema:PostalAddress;
+    schema:streetAddress "Derwent Close";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "The Woodlands";
+    schema:postalCode "31535-3676";
+    schema:addressCountry "Lebanon".

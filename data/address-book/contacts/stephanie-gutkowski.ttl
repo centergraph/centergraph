@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stephanie";
+    schema:familyName "Gutkowski";
+    schema:birthDate "1966-01-17"^^xsd:date;
+    schema:address _:b3460.
+_:b3460 a schema:PostalAddress;
+    schema:streetAddress "Woodland Close";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Lake Alex";
+    schema:postalCode "96801";
+    schema:addressCountry "Pakistan".

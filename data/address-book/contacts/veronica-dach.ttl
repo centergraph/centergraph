@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Veronica";
+    schema:familyName "Dach";
+    schema:birthDate "1987-01-12"^^xsd:date;
+    schema:address _:b1800.
+_:b1800 a schema:PostalAddress;
+    schema:streetAddress "Candice Camp";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Braedenmouth";
+    schema:postalCode "84208-2248";
+    schema:addressCountry "Nepal".

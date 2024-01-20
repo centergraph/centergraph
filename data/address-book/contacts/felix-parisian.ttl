@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Felix";
+    schema:familyName "Parisian";
+    schema:birthDate "1983-11-06"^^xsd:date;
+    schema:address _:b3069.
+_:b3069 a schema:PostalAddress;
+    schema:streetAddress "Orchard Road";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Lake Micahfort";
+    schema:postalCode "15917";
+    schema:addressCountry "Israel".

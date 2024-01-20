@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Frank";
+    schema:familyName "Gulgowski";
+    schema:birthDate "1990-10-17"^^xsd:date;
+    schema:address _:b1230.
+_:b1230 a schema:PostalAddress;
+    schema:streetAddress "Ritchie Row";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Lisettechester";
+    schema:postalCode "21451-8145";
+    schema:addressCountry "Portugal".

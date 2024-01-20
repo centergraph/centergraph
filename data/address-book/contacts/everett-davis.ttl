@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Everett";
+    schema:familyName "Davis";
+    schema:birthDate "1992-07-14"^^xsd:date;
+    schema:address _:b8594.
+_:b8594 a schema:PostalAddress;
+    schema:streetAddress "Walsh Throughway";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Serenahaven";
+    schema:postalCode "69131";
+    schema:addressCountry "Saint Lucia".

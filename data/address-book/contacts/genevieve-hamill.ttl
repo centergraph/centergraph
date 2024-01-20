@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Genevieve";
+    schema:familyName "Hamill";
+    schema:birthDate "1993-10-12"^^xsd:date;
+    schema:address _:b8058.
+_:b8058 a schema:PostalAddress;
+    schema:streetAddress "Rowan Close";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Liacester";
+    schema:postalCode "94870-3791";
+    schema:addressCountry "Latvia".

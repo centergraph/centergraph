@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Taylor";
+    schema:familyName "Reichel";
+    schema:birthDate "1968-11-10"^^xsd:date;
+    schema:address _:b8272.
+_:b8272 a schema:PostalAddress;
+    schema:streetAddress "Chestnut Street";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "St. Joseph";
+    schema:postalCode "90771-7680";
+    schema:addressCountry "South Georgia and the South Sandwich Islands".

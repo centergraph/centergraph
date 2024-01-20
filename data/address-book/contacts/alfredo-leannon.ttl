@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alfredo";
+    schema:familyName "Leannon";
+    schema:birthDate "1982-02-05"^^xsd:date;
+    schema:address _:b8486.
+_:b8486 a schema:PostalAddress;
+    schema:streetAddress "S Church Street";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Thadview";
+    schema:postalCode "24525-1557";
+    schema:addressCountry "Andorra".

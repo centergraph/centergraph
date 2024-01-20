@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leonard";
+    schema:familyName "Pacocha";
+    schema:birthDate "1983-03-25"^^xsd:date;
+    schema:address _:b620.
+_:b620 a schema:PostalAddress;
+    schema:streetAddress "Lueilwitz Brooks";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Arvada";
+    schema:postalCode "43963";
+    schema:addressCountry "American Samoa".

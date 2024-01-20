@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marjorie";
+    schema:familyName "Wisozk";
+    schema:birthDate "1977-03-26"^^xsd:date;
+    schema:address _:b4440.
+_:b4440 a schema:PostalAddress;
+    schema:streetAddress "Reymundo Points";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Austin";
+    schema:postalCode "99840";
+    schema:addressCountry "Uganda".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lindsay";
+    schema:familyName "Jacobi";
+    schema:birthDate "1963-01-19"^^xsd:date;
+    schema:address _:b2334.
+_:b2334 a schema:PostalAddress;
+    schema:streetAddress "Nikolaus Glen";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Trantowville";
+    schema:postalCode "73011-6223";
+    schema:addressCountry "Jersey".

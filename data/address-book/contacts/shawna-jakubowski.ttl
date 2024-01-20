@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shawna";
+    schema:familyName "Jakubowski";
+    schema:birthDate "1964-12-02"^^xsd:date;
+    schema:address _:b594.
+_:b594 a schema:PostalAddress;
+    schema:streetAddress "Michael Landing";
+    schema:addressRegion "New York";
+    schema:addressLocality "Gulgowskicester";
+    schema:postalCode "67410-3202";
+    schema:addressCountry "Bahamas".

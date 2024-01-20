@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Trevor";
+    schema:familyName "Bauch";
+    schema:birthDate "1966-12-16"^^xsd:date;
+    schema:address _:b642.
+_:b642 a schema:PostalAddress;
+    schema:streetAddress "E River Road";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Tonawanda";
+    schema:postalCode "02764-3394";
+    schema:addressCountry "Palestine".

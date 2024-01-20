@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rebecca";
+    schema:familyName "Mayert";
+    schema:birthDate "1978-12-08"^^xsd:date;
+    schema:address _:b8303.
+_:b8303 a schema:PostalAddress;
+    schema:streetAddress "Bianka Pine";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Port Kaelyn";
+    schema:postalCode "95320-1612";
+    schema:addressCountry "Samoa".

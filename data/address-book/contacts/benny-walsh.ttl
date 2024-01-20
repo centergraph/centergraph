@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Benny";
+    schema:familyName "Walsh";
+    schema:birthDate "2004-07-11"^^xsd:date;
+    schema:address _:b7758.
+_:b7758 a schema:PostalAddress;
+    schema:streetAddress "Grove Road";
+    schema:addressRegion "California";
+    schema:addressLocality "South Abnerhaven";
+    schema:postalCode "39830-3963";
+    schema:addressCountry "Bolivia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sammy";
+    schema:familyName "Conroy";
+    schema:birthDate "1989-11-04"^^xsd:date;
+    schema:address _:b5867.
+_:b5867 a schema:PostalAddress;
+    schema:streetAddress "Long Lane";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Spinkafield";
+    schema:postalCode "00262-7299";
+    schema:addressCountry "Japan".

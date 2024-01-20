@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Estelle";
+    schema:familyName "Schultz";
+    schema:birthDate "1968-07-10"^^xsd:date;
+    schema:address _:b242.
+_:b242 a schema:PostalAddress;
+    schema:streetAddress "Elm Grove";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Port Jaydaboro";
+    schema:postalCode "44536-3899";
+    schema:addressCountry "Sierra Leone".

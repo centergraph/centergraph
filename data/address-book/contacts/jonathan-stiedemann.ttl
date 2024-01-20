@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jonathan";
+    schema:familyName "Stiedemann";
+    schema:birthDate "1952-11-16"^^xsd:date;
+    schema:address _:b8135.
+_:b8135 a schema:PostalAddress;
+    schema:streetAddress "Roger Way";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Lake Lilatown";
+    schema:postalCode "21900-3249";
+    schema:addressCountry "Madagascar".

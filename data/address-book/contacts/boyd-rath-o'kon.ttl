@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Boyd";
+    schema:familyName "Rath-O'Kon";
+    schema:birthDate "1959-06-20"^^xsd:date;
+    schema:address _:b9371.
+_:b9371 a schema:PostalAddress;
+    schema:streetAddress "The Mount";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Lake Dangelo";
+    schema:postalCode "50041-8304";
+    schema:addressCountry "Uganda".

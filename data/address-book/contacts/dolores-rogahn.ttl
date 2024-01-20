@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dolores";
+    schema:familyName "Rogahn";
+    schema:birthDate "1944-10-27"^^xsd:date;
+    schema:address _:b4005.
+_:b4005 a schema:PostalAddress;
+    schema:streetAddress "Conroy Place";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "South Alexastead";
+    schema:postalCode "50347-6855";
+    schema:addressCountry "Colombia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Samuel";
+    schema:familyName "Emmerich-Huels";
+    schema:birthDate "1967-08-13"^^xsd:date;
+    schema:address _:b9503.
+_:b9503 a schema:PostalAddress;
+    schema:streetAddress "1st Street";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Fort Tianna";
+    schema:postalCode "79262-3873";
+    schema:addressCountry "Oman".

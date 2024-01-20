@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristopher";
+    schema:familyName "Mohr";
+    schema:birthDate "1951-07-14"^^xsd:date;
+    schema:address _:b9940.
+_:b9940 a schema:PostalAddress;
+    schema:streetAddress "Hill Road";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "West Tylerburgh";
+    schema:postalCode "30811-4047";
+    schema:addressCountry "Turkmenistan".

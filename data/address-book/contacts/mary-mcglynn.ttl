@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mary";
+    schema:familyName "McGlynn";
+    schema:birthDate "1958-07-31"^^xsd:date;
+    schema:address _:b1903.
+_:b1903 a schema:PostalAddress;
+    schema:streetAddress "S Washington Street";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Dorianberg";
+    schema:postalCode "62748-4020";
+    schema:addressCountry "Cuba".

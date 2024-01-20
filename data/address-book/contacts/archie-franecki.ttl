@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Archie";
+    schema:familyName "Franecki";
+    schema:birthDate "1993-09-20"^^xsd:date;
+    schema:address _:b1345.
+_:b1345 a schema:PostalAddress;
+    schema:streetAddress "Nolan Inlet";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Donavonburgh";
+    schema:postalCode "75083";
+    schema:addressCountry "Kyrgyz Republic".

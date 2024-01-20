@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carlos";
+    schema:familyName "Champlin";
+    schema:birthDate "1973-01-28"^^xsd:date;
+    schema:address _:b3475.
+_:b3475 a schema:PostalAddress;
+    schema:streetAddress "W River Road";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Lindboro";
+    schema:postalCode "48276-6014";
+    schema:addressCountry "Jordan".

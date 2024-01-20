@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Teresa";
+    schema:familyName "Upton";
+    schema:birthDate "1994-10-02"^^xsd:date;
+    schema:address _:b6178.
+_:b6178 a schema:PostalAddress;
+    schema:streetAddress "Winona Valleys";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Wavafield";
+    schema:postalCode "78389-8502";
+    schema:addressCountry "Germany".

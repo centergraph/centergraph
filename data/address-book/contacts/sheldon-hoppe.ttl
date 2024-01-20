@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sheldon";
+    schema:familyName "Hoppe";
+    schema:birthDate "1970-11-04"^^xsd:date;
+    schema:address _:b977.
+_:b977 a schema:PostalAddress;
+    schema:streetAddress "Lodge Close";
+    schema:addressRegion "New York";
+    schema:addressLocality "Uptonberg";
+    schema:postalCode "09989-2517";
+    schema:addressCountry "Portugal".

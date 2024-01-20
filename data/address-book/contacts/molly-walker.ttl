@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Molly";
+    schema:familyName "Walker";
+    schema:birthDate "2001-08-12"^^xsd:date;
+    schema:address _:b2452.
+_:b2452 a schema:PostalAddress;
+    schema:streetAddress "Joany Crest";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "North Chance";
+    schema:postalCode "47250-0519";
+    schema:addressCountry "Rwanda".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Beatrice";
+    schema:familyName "Huels";
+    schema:birthDate "1958-05-26"^^xsd:date;
+    schema:address _:b3417.
+_:b3417 a schema:PostalAddress;
+    schema:streetAddress "Madyson Mews";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Haydenville";
+    schema:postalCode "49788";
+    schema:addressCountry "Malta".

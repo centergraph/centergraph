@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gina";
+    schema:familyName "Kilback";
+    schema:birthDate "1992-10-01"^^xsd:date;
+    schema:address _:b6805.
+_:b6805 a schema:PostalAddress;
+    schema:streetAddress "Pleasant Street";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Port Nicholas";
+    schema:postalCode "13926";
+    schema:addressCountry "Tajikistan".

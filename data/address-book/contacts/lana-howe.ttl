@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lana";
+    schema:familyName "Howe";
+    schema:birthDate "1969-03-19"^^xsd:date;
+    schema:address _:b2563.
+_:b2563 a schema:PostalAddress;
+    schema:streetAddress "Kiehn Center";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "West Allis";
+    schema:postalCode "69515";
+    schema:addressCountry "French Guiana".

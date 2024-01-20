@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joey";
+    schema:familyName "Gerhold";
+    schema:birthDate "1993-11-06"^^xsd:date;
+    schema:address _:b2506.
+_:b2506 a schema:PostalAddress;
+    schema:streetAddress "Quinn Underpass";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Lake Reubenville";
+    schema:postalCode "25480";
+    schema:addressCountry "United Kingdom".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stephen";
+    schema:familyName "Ortiz";
+    schema:birthDate "1984-11-16"^^xsd:date;
+    schema:address _:b8827.
+_:b8827 a schema:PostalAddress;
+    schema:streetAddress "Kautzer Path";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Waukesha";
+    schema:postalCode "94892-6921";
+    schema:addressCountry "Qatar".

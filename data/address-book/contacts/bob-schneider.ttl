@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bob";
+    schema:familyName "Schneider";
+    schema:birthDate "1965-08-19"^^xsd:date;
+    schema:address _:b1121.
+_:b1121 a schema:PostalAddress;
+    schema:streetAddress "Hoeger Mountains";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Lake Price";
+    schema:postalCode "39721-2062";
+    schema:addressCountry "Christmas Island".

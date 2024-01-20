@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dewey";
+    schema:familyName "McGlynn";
+    schema:birthDate "1960-07-01"^^xsd:date;
+    schema:address _:b5589.
+_:b5589 a schema:PostalAddress;
+    schema:streetAddress "Priory Road";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Syracuse";
+    schema:postalCode "18006-4949";
+    schema:addressCountry "Samoa".

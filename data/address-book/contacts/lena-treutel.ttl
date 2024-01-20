@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lena";
+    schema:familyName "Treutel";
+    schema:birthDate "2001-09-25"^^xsd:date;
+    schema:address _:b9316.
+_:b9316 a schema:PostalAddress;
+    schema:streetAddress "Bayer Wells";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Rochester Hills";
+    schema:postalCode "91988-2385";
+    schema:addressCountry "Mauritius".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Angela";
+    schema:familyName "Frami";
+    schema:birthDate "1955-08-12"^^xsd:date;
+    schema:address _:b3019.
+_:b3019 a schema:PostalAddress;
+    schema:streetAddress "Dicki Branch";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Port Margretstad";
+    schema:postalCode "36075";
+    schema:addressCountry "Lesotho".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marcella";
+    schema:familyName "Bogan";
+    schema:birthDate "1973-03-03"^^xsd:date;
+    schema:address _:b8312.
+_:b8312 a schema:PostalAddress;
+    schema:streetAddress "Andre Haven";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Clarissashire";
+    schema:postalCode "61816-2886";
+    schema:addressCountry "Sierra Leone".

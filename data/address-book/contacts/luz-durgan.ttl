@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Luz";
+    schema:familyName "Durgan";
+    schema:birthDate "1944-04-16"^^xsd:date;
+    schema:address _:b1547.
+_:b1547 a schema:PostalAddress;
+    schema:streetAddress "Maudie Hollow";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Macyworth";
+    schema:postalCode "31959";
+    schema:addressCountry "Spain".

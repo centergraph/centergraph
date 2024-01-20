@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Matthew";
+    schema:familyName "Kuphal";
+    schema:birthDate "1979-09-15"^^xsd:date;
+    schema:address _:b6976.
+_:b6976 a schema:PostalAddress;
+    schema:streetAddress "Bluebell Close";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Hodkiewiczfield";
+    schema:postalCode "28003";
+    schema:addressCountry "Iran".

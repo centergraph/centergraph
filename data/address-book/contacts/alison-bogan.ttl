@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alison";
+    schema:familyName "Bogan";
+    schema:birthDate "1966-06-19"^^xsd:date;
+    schema:address _:b9287.
+_:b9287 a schema:PostalAddress;
+    schema:streetAddress "Schinner Station";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Yuma";
+    schema:postalCode "75111";
+    schema:addressCountry "South Georgia and the South Sandwich Islands".

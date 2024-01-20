@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elsa";
+    schema:familyName "Hammes";
+    schema:birthDate "1956-08-22"^^xsd:date;
+    schema:address _:b5765.
+_:b5765 a schema:PostalAddress;
+    schema:streetAddress "Elm Street";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Briceland";
+    schema:postalCode "42160";
+    schema:addressCountry "Indonesia".

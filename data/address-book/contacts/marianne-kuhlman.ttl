@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marianne";
+    schema:familyName "Kuhlman";
+    schema:birthDate "1979-05-29"^^xsd:date;
+    schema:address _:b5649.
+_:b5649 a schema:PostalAddress;
+    schema:streetAddress "Kertzmann Burg";
+    schema:addressRegion "California";
+    schema:addressLocality "West Charles";
+    schema:postalCode "31320";
+    schema:addressCountry "Brunei Darussalam".

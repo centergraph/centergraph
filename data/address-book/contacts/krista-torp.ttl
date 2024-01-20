@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Krista";
+    schema:familyName "Torp";
+    schema:birthDate "1966-01-16"^^xsd:date;
+    schema:address _:b860.
+_:b860 a schema:PostalAddress;
+    schema:streetAddress "Danielle Canyon";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Cranston";
+    schema:postalCode "25790-9737";
+    schema:addressCountry "Sudan".

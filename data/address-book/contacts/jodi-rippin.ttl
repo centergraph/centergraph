@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jodi";
+    schema:familyName "Rippin";
+    schema:birthDate "1967-12-22"^^xsd:date;
+    schema:address _:b6439.
+_:b6439 a schema:PostalAddress;
+    schema:streetAddress "Stephon Corners";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Travonfurt";
+    schema:postalCode "41066-2791";
+    schema:addressCountry "Micronesia".

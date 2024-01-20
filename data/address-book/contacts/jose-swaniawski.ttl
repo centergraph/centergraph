@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jose";
+    schema:familyName "Swaniawski";
+    schema:birthDate "1998-11-24"^^xsd:date;
+    schema:address _:b8907.
+_:b8907 a schema:PostalAddress;
+    schema:streetAddress "Lee Street";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Lancaster";
+    schema:postalCode "42018";
+    schema:addressCountry "Ukraine".

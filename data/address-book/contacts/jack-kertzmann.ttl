@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jack";
+    schema:familyName "Kertzmann";
+    schema:birthDate "1980-03-22"^^xsd:date;
+    schema:address _:b5783.
+_:b5783 a schema:PostalAddress;
+    schema:streetAddress "Boyd Cove";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Borisville";
+    schema:postalCode "48814";
+    schema:addressCountry "Guatemala".

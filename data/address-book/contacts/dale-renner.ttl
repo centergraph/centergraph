@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dale";
+    schema:familyName "Renner";
+    schema:birthDate "1961-10-16"^^xsd:date;
+    schema:address _:b338.
+_:b338 a schema:PostalAddress;
+    schema:streetAddress "S 14th Street";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Port Rosanna";
+    schema:postalCode "07969-6961";
+    schema:addressCountry "Solomon Islands".

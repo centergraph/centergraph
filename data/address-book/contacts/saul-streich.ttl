@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Saul";
+    schema:familyName "Streich";
+    schema:birthDate "1994-01-13"^^xsd:date;
+    schema:address _:b4659.
+_:b4659 a schema:PostalAddress;
+    schema:streetAddress "Tommie Loop";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Lake Estellastad";
+    schema:postalCode "04520-0473";
+    schema:addressCountry "Tunisia".

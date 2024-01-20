@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorene";
+    schema:familyName "Quitzon";
+    schema:birthDate "1991-05-26"^^xsd:date;
+    schema:address _:b2973.
+_:b2973 a schema:PostalAddress;
+    schema:streetAddress "Kris Mall";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "West Nicholaschester";
+    schema:postalCode "08855-4471";
+    schema:addressCountry "Brazil".

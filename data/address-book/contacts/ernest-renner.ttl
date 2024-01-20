@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ernest";
+    schema:familyName "Renner";
+    schema:birthDate "1996-04-07"^^xsd:date;
+    schema:address _:b4968.
+_:b4968 a schema:PostalAddress;
+    schema:streetAddress "Maggio Landing";
+    schema:addressRegion "California";
+    schema:addressLocality "Batzville";
+    schema:postalCode "65367-5852";
+    schema:addressCountry "South Africa".

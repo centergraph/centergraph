@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leland";
+    schema:familyName "Larson";
+    schema:birthDate "1951-11-23"^^xsd:date;
+    schema:address _:b5662.
+_:b5662 a schema:PostalAddress;
+    schema:streetAddress "S Water Street";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Murrayton";
+    schema:postalCode "42964";
+    schema:addressCountry "Mauritius".

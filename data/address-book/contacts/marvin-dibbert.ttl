@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marvin";
+    schema:familyName "Dibbert";
+    schema:birthDate "1978-05-08"^^xsd:date;
+    schema:address _:b6800.
+_:b6800 a schema:PostalAddress;
+    schema:streetAddress "S Railroad Street";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Port Phoebe";
+    schema:postalCode "80971";
+    schema:addressCountry "Saint Helena".

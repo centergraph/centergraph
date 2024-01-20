@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Teresa";
+    schema:familyName "Strosin";
+    schema:birthDate "1975-08-29"^^xsd:date;
+    schema:address _:b7900.
+_:b7900 a schema:PostalAddress;
+    schema:streetAddress "Stracke Corners";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Lake Holdenhaven";
+    schema:postalCode "14855-4678";
+    schema:addressCountry "Croatia".

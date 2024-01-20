@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Connie";
+    schema:familyName "Thiel";
+    schema:birthDate "1948-10-26"^^xsd:date;
+    schema:address _:b6864.
+_:b6864 a schema:PostalAddress;
+    schema:streetAddress "Jackson Street";
+    schema:addressRegion "New York";
+    schema:addressLocality "Lake Harrison";
+    schema:postalCode "30523-4727";
+    schema:addressCountry "Saint Martin".

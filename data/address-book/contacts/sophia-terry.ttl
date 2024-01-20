@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sophia";
+    schema:familyName "Terry";
+    schema:birthDate "1986-09-11"^^xsd:date;
+    schema:address _:b9678.
+_:b9678 a schema:PostalAddress;
+    schema:streetAddress "Grange Road";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Homestead";
+    schema:postalCode "21453-4246";
+    schema:addressCountry "South Sudan".

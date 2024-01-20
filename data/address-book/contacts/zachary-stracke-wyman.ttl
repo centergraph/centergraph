@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Zachary";
+    schema:familyName "Stracke-Wyman";
+    schema:birthDate "1988-02-12"^^xsd:date;
+    schema:address _:b144.
+_:b144 a schema:PostalAddress;
+    schema:streetAddress "Bessie Court";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Casas Adobes";
+    schema:postalCode "26445-0799";
+    schema:addressCountry "Haiti".

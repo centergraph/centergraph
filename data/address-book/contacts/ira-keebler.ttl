@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ira";
+    schema:familyName "Keebler";
+    schema:birthDate "1960-09-29"^^xsd:date;
+    schema:address _:b7940.
+_:b7940 a schema:PostalAddress;
+    schema:streetAddress "Schimmel Glen";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Tillmanbury";
+    schema:postalCode "62905-7791";
+    schema:addressCountry "Democratic People's Republic of Korea".

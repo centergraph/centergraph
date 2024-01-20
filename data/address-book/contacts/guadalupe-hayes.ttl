@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Guadalupe";
+    schema:familyName "Hayes";
+    schema:birthDate "1980-02-17"^^xsd:date;
+    schema:address _:b753.
+_:b753 a schema:PostalAddress;
+    schema:streetAddress "Robert Forks";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "South Carmine";
+    schema:postalCode "88467-6609";
+    schema:addressCountry "Kiribati".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Oscar";
+    schema:familyName "O'Kon";
+    schema:birthDate "1972-05-27"^^xsd:date;
+    schema:address _:b1179.
+_:b1179 a schema:PostalAddress;
+    schema:streetAddress "Dorian Harbors";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Gorczanyland";
+    schema:postalCode "03101";
+    schema:addressCountry "Israel".

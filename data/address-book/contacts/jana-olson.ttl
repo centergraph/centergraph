@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jana";
+    schema:familyName "Olson";
+    schema:birthDate "1985-09-24"^^xsd:date;
+    schema:address _:b7895.
+_:b7895 a schema:PostalAddress;
+    schema:streetAddress "3rd Street";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "West Ashlee";
+    schema:postalCode "04111-2067";
+    schema:addressCountry "Gambia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Maureen";
+    schema:familyName "Ebert";
+    schema:birthDate "1991-09-24"^^xsd:date;
+    schema:address _:b2862.
+_:b2862 a schema:PostalAddress;
+    schema:streetAddress "Cow Lane";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Lubowitzton";
+    schema:postalCode "51671-8858";
+    schema:addressCountry "Germany".

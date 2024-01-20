@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harvey";
+    schema:familyName "Lebsack";
+    schema:birthDate "2000-07-08"^^xsd:date;
+    schema:address _:b8630.
+_:b8630 a schema:PostalAddress;
+    schema:streetAddress "South View";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Lake Brodyborough";
+    schema:postalCode "61537-0670";
+    schema:addressCountry "Uruguay".

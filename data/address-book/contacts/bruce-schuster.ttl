@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bruce";
+    schema:familyName "Schuster";
+    schema:birthDate "1985-05-05"^^xsd:date;
+    schema:address _:b6811.
+_:b6811 a schema:PostalAddress;
+    schema:streetAddress "W 14th Street";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "South Kennedy";
+    schema:postalCode "37507-3131";
+    schema:addressCountry "Eswatini".

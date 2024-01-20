@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lori";
+    schema:familyName "Lehner";
+    schema:birthDate "1962-01-27"^^xsd:date;
+    schema:address _:b2597.
+_:b2597 a schema:PostalAddress;
+    schema:streetAddress "Kihn Green";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Demariofield";
+    schema:postalCode "45543-7743";
+    schema:addressCountry "Nicaragua".

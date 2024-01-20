@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shannon";
+    schema:familyName "Schaefer";
+    schema:birthDate "1980-01-10"^^xsd:date;
+    schema:address _:b2262.
+_:b2262 a schema:PostalAddress;
+    schema:streetAddress "Krajcik Hollow";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Murphymouth";
+    schema:postalCode "57409";
+    schema:addressCountry "Costa Rica".

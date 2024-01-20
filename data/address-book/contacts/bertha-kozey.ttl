@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bertha";
+    schema:familyName "Kozey";
+    schema:birthDate "1965-06-22"^^xsd:date;
+    schema:address _:b9399.
+_:b9399 a schema:PostalAddress;
+    schema:streetAddress "Cromwell Road";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Port Einofurt";
+    schema:postalCode "75495-2216";
+    schema:addressCountry "Myanmar".

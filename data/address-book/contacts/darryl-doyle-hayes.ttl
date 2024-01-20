@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darryl";
+    schema:familyName "Doyle-Hayes";
+    schema:birthDate "1954-06-14"^^xsd:date;
+    schema:address _:b6773.
+_:b6773 a schema:PostalAddress;
+    schema:streetAddress "N Bridge Street";
+    schema:addressRegion "California";
+    schema:addressLocality "Schmelerstead";
+    schema:postalCode "55804";
+    schema:addressCountry "Greece".

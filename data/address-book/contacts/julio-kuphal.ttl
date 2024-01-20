@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julio";
+    schema:familyName "Kuphal";
+    schema:birthDate "1959-06-08"^^xsd:date;
+    schema:address _:b6068.
+_:b6068 a schema:PostalAddress;
+    schema:streetAddress "Candice Club";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Alisaboro";
+    schema:postalCode "61959-6001";
+    schema:addressCountry "Dominica".

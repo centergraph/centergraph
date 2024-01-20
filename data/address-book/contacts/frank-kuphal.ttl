@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Frank";
+    schema:familyName "Kuphal";
+    schema:birthDate "1968-04-27"^^xsd:date;
+    schema:address _:b4188.
+_:b4188 a schema:PostalAddress;
+    schema:streetAddress "Lynch Forest";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "New Bernadine";
+    schema:postalCode "82258";
+    schema:addressCountry "South Africa".

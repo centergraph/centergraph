@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vera";
+    schema:familyName "Kris";
+    schema:birthDate "1999-10-09"^^xsd:date;
+    schema:address _:b6638.
+_:b6638 a schema:PostalAddress;
+    schema:streetAddress "King Street";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "North Ewellport";
+    schema:postalCode "87537-5119";
+    schema:addressCountry "Nauru".

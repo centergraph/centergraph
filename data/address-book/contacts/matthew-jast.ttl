@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Matthew";
+    schema:familyName "Jast";
+    schema:birthDate "1991-06-01"^^xsd:date;
+    schema:address _:b3684.
+_:b3684 a schema:PostalAddress;
+    schema:streetAddress "Lavon Springs";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "West Robb";
+    schema:postalCode "40966";
+    schema:addressCountry "Romania".

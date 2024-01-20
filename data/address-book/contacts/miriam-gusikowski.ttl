@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Miriam";
+    schema:familyName "Gusikowski";
+    schema:birthDate "2005-07-30"^^xsd:date;
+    schema:address _:b2475.
+_:b2475 a schema:PostalAddress;
+    schema:streetAddress "Erik Extension";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Fort Waylon";
+    schema:postalCode "00458";
+    schema:addressCountry "Zambia".

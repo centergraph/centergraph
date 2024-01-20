@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joann";
+    schema:familyName "Miller";
+    schema:birthDate "1981-09-07"^^xsd:date;
+    schema:address _:b91.
+_:b91 a schema:PostalAddress;
+    schema:streetAddress "Schulist Ridges";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "North Eddie";
+    schema:postalCode "97219-1653";
+    schema:addressCountry "Rwanda".

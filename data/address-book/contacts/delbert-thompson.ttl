@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Delbert";
+    schema:familyName "Thompson";
+    schema:birthDate "1963-07-09"^^xsd:date;
+    schema:address _:b7322.
+_:b7322 a schema:PostalAddress;
+    schema:streetAddress "Haley Parkway";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "VonRuedenstad";
+    schema:postalCode "63250-8477";
+    schema:addressCountry "French Guiana".

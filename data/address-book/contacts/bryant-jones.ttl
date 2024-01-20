@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bryant";
+    schema:familyName "Jones";
+    schema:birthDate "1973-05-19"^^xsd:date;
+    schema:address _:b9740.
+_:b9740 a schema:PostalAddress;
+    schema:streetAddress "Maryjane Heights";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "New Roger";
+    schema:postalCode "60812";
+    schema:addressCountry "Greenland".

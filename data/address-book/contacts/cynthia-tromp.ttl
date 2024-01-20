@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cynthia";
+    schema:familyName "Tromp";
+    schema:birthDate "1981-09-04"^^xsd:date;
+    schema:address _:b5189.
+_:b5189 a schema:PostalAddress;
+    schema:streetAddress "Doris Walk";
+    schema:addressRegion "Florida";
+    schema:addressLocality "South Colinburgh";
+    schema:postalCode "39571-9264";
+    schema:addressCountry "Uganda".

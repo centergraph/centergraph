@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gerard";
+    schema:familyName "Kulas";
+    schema:birthDate "2004-10-19"^^xsd:date;
+    schema:address _:b3154.
+_:b3154 a schema:PostalAddress;
+    schema:streetAddress "N 2nd Street";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Bernhardhaven";
+    schema:postalCode "47150";
+    schema:addressCountry "Syrian Arab Republic".

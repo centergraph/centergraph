@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Chelsea";
+    schema:familyName "Daugherty";
+    schema:birthDate "1978-01-12"^^xsd:date;
+    schema:address _:b2801.
+_:b2801 a schema:PostalAddress;
+    schema:streetAddress "Robel Greens";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "New Evelynworth";
+    schema:postalCode "30938";
+    schema:addressCountry "Mexico".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Conrad";
+    schema:familyName "Pfannerstill";
+    schema:birthDate "1970-03-29"^^xsd:date;
+    schema:address _:b6991.
+_:b6991 a schema:PostalAddress;
+    schema:streetAddress "Danyka Parks";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Lisettestead";
+    schema:postalCode "62987-9617";
+    schema:addressCountry "Bahrain".

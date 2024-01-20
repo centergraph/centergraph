@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Diana";
+    schema:familyName "Abshire";
+    schema:birthDate "1946-10-09"^^xsd:date;
+    schema:address _:b4517.
+_:b4517 a schema:PostalAddress;
+    schema:streetAddress "Riverside Drive";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Lake Adafield";
+    schema:postalCode "63981";
+    schema:addressCountry "Papua New Guinea".

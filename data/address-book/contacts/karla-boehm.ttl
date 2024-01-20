@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Karla";
+    schema:familyName "Boehm";
+    schema:birthDate "1956-01-26"^^xsd:date;
+    schema:address _:b5692.
+_:b5692 a schema:PostalAddress;
+    schema:streetAddress "Kory Passage";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Irondequoit";
+    schema:postalCode "72534-8254";
+    schema:addressCountry "Kuwait".

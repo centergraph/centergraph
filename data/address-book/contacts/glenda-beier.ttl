@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Glenda";
+    schema:familyName "Beier";
+    schema:birthDate "1944-09-10"^^xsd:date;
+    schema:address _:b9280.
+_:b9280 a schema:PostalAddress;
+    schema:streetAddress "Kirlin Pines";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "East Albachester";
+    schema:postalCode "38692";
+    schema:addressCountry "French Guiana".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bernard";
+    schema:familyName "Jacobi";
+    schema:birthDate "1971-08-31"^^xsd:date;
+    schema:address _:b8982.
+_:b8982 a schema:PostalAddress;
+    schema:streetAddress "Hansen Corners";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Willardstad";
+    schema:postalCode "50471-3227";
+    schema:addressCountry "Japan".

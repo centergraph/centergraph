@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brenda";
+    schema:familyName "Crooks";
+    schema:birthDate "1991-04-22"^^xsd:date;
+    schema:address _:b712.
+_:b712 a schema:PostalAddress;
+    schema:streetAddress "Nova Ville";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "South Bobbieton";
+    schema:postalCode "68757";
+    schema:addressCountry "Aland Islands".

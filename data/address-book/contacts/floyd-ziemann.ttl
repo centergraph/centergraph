@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Floyd";
+    schema:familyName "Ziemann";
+    schema:birthDate "1949-11-23"^^xsd:date;
+    schema:address _:b9162.
+_:b9162 a schema:PostalAddress;
+    schema:streetAddress "Maybelle Throughway";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Gustaveshire";
+    schema:postalCode "19390-6249";
+    schema:addressCountry "Greenland".

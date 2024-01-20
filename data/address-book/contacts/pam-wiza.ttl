@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pam";
+    schema:familyName "Wiza";
+    schema:birthDate "1952-06-07"^^xsd:date;
+    schema:address _:b5377.
+_:b5377 a schema:PostalAddress;
+    schema:streetAddress "N Park Street";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "East Rocio";
+    schema:postalCode "00913";
+    schema:addressCountry "Saint Kitts and Nevis".

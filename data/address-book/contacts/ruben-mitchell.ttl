@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruben";
+    schema:familyName "Mitchell";
+    schema:birthDate "1987-05-20"^^xsd:date;
+    schema:address _:b5405.
+_:b5405 a schema:PostalAddress;
+    schema:streetAddress "Amos Landing";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Wehnerchester";
+    schema:postalCode "54133-2820";
+    schema:addressCountry "Democratic Republic of the Congo".

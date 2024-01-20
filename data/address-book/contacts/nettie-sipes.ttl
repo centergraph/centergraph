@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nettie";
+    schema:familyName "Sipes";
+    schema:birthDate "1986-05-13"^^xsd:date;
+    schema:address _:b5989.
+_:b5989 a schema:PostalAddress;
+    schema:streetAddress "Ziemann Courts";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "South Carolefort";
+    schema:postalCode "12403-0609";
+    schema:addressCountry "Mozambique".

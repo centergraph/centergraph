@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Armando";
+    schema:familyName "Bode";
+    schema:birthDate "2003-11-08"^^xsd:date;
+    schema:address _:b1479.
+_:b1479 a schema:PostalAddress;
+    schema:streetAddress "Damien Glens";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "North Moshe";
+    schema:postalCode "87881";
+    schema:addressCountry "Solomon Islands".

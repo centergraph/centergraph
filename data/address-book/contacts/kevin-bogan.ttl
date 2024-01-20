@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kevin";
+    schema:familyName "Bogan";
+    schema:birthDate "1972-09-21"^^xsd:date;
+    schema:address _:b2860.
+_:b2860 a schema:PostalAddress;
+    schema:streetAddress "W Broadway Street";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Casperfurt";
+    schema:postalCode "76008";
+    schema:addressCountry "China".

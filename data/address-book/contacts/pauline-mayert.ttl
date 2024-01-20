@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pauline";
+    schema:familyName "Mayert";
+    schema:birthDate "1956-04-12"^^xsd:date;
+    schema:address _:b9460.
+_:b9460 a schema:PostalAddress;
+    schema:streetAddress "Zulauf Row";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Fort Alfordview";
+    schema:postalCode "52961";
+    schema:addressCountry "Iran".

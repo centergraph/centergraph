@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Candace";
+    schema:familyName "Labadie";
+    schema:birthDate "1960-04-18"^^xsd:date;
+    schema:address _:b6039.
+_:b6039 a schema:PostalAddress;
+    schema:streetAddress "Palma Drive";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Nolantown";
+    schema:postalCode "67222";
+    schema:addressCountry "Algeria".

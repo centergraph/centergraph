@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Louis";
+    schema:familyName "Sporer";
+    schema:birthDate "1970-08-04"^^xsd:date;
+    schema:address _:b1107.
+_:b1107 a schema:PostalAddress;
+    schema:streetAddress "Simeon Flat";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Naomistad";
+    schema:postalCode "30890";
+    schema:addressCountry "Netherlands".

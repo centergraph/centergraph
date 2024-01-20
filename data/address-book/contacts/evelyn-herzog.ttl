@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Evelyn";
+    schema:familyName "Herzog";
+    schema:birthDate "1968-03-31"^^xsd:date;
+    schema:address _:b6880.
+_:b6880 a schema:PostalAddress;
+    schema:streetAddress "Shields Meadow";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Kuvalisside";
+    schema:postalCode "07123-6440";
+    schema:addressCountry "Malta".

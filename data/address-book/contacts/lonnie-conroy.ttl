@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lonnie";
+    schema:familyName "Conroy";
+    schema:birthDate "1948-09-18"^^xsd:date;
+    schema:address _:b8393.
+_:b8393 a schema:PostalAddress;
+    schema:streetAddress "The Ridgeway";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Balistreriton";
+    schema:postalCode "18477-0638";
+    schema:addressCountry "Finland".

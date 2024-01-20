@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Becky";
+    schema:familyName "Corkery";
+    schema:birthDate "1974-01-15"^^xsd:date;
+    schema:address _:b8246.
+_:b8246 a schema:PostalAddress;
+    schema:streetAddress "Tess Points";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Passaic";
+    schema:postalCode "78876";
+    schema:addressCountry "Anguilla".

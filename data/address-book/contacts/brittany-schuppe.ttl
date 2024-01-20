@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brittany";
+    schema:familyName "Schuppe";
+    schema:birthDate "1946-11-11"^^xsd:date;
+    schema:address _:b9981.
+_:b9981 a schema:PostalAddress;
+    schema:streetAddress "Park Street";
+    schema:addressRegion "Washington";
+    schema:addressLocality "South Macie";
+    schema:postalCode "57931";
+    schema:addressCountry "Mongolia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wilbur";
+    schema:familyName "Wiza-Bednar";
+    schema:birthDate "1962-04-01"^^xsd:date;
+    schema:address _:b5416.
+_:b5416 a schema:PostalAddress;
+    schema:streetAddress "N 8th Street";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "South Tyra";
+    schema:postalCode "30615-9385";
+    schema:addressCountry "Australia".

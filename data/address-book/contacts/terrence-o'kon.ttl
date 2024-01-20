@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terrence";
+    schema:familyName "O'Kon";
+    schema:birthDate "1978-06-21"^^xsd:date;
+    schema:address _:b414.
+_:b414 a schema:PostalAddress;
+    schema:streetAddress "Becker Mall";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Mervinborough";
+    schema:postalCode "85257";
+    schema:addressCountry "Montenegro".

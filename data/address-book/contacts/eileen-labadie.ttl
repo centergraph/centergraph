@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eileen";
+    schema:familyName "Labadie";
+    schema:birthDate "1948-10-20"^^xsd:date;
+    schema:address _:b7800.
+_:b7800 a schema:PostalAddress;
+    schema:streetAddress "Donnelly Oval";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "New Wilmaport";
+    schema:postalCode "16796-5992";
+    schema:addressCountry "Spain".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Helen";
+    schema:familyName "Goyette";
+    schema:birthDate "1992-05-10"^^xsd:date;
+    schema:address _:b1893.
+_:b1893 a schema:PostalAddress;
+    schema:streetAddress "London Road";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Port Darrin";
+    schema:postalCode "14089-9970";
+    schema:addressCountry "Costa Rica".

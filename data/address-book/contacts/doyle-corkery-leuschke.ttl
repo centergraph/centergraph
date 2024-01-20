@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doyle";
+    schema:familyName "Corkery-Leuschke";
+    schema:birthDate "1967-06-22"^^xsd:date;
+    schema:address _:b1669.
+_:b1669 a schema:PostalAddress;
+    schema:streetAddress "Hickle Bridge";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Goodwinburgh";
+    schema:postalCode "08233";
+    schema:addressCountry "Ghana".

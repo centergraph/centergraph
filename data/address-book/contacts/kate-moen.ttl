@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kate";
+    schema:familyName "Moen";
+    schema:birthDate "2002-10-25"^^xsd:date;
+    schema:address _:b7183.
+_:b7183 a schema:PostalAddress;
+    schema:streetAddress "Ruth Wall";
+    schema:addressRegion "Washington";
+    schema:addressLocality "New Brunswick";
+    schema:postalCode "02067";
+    schema:addressCountry "Eswatini".

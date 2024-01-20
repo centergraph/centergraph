@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Michele";
+    schema:familyName "Grady";
+    schema:birthDate "2003-01-20"^^xsd:date;
+    schema:address _:b5317.
+_:b5317 a schema:PostalAddress;
+    schema:streetAddress "Green Mills";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Wizabury";
+    schema:postalCode "98968-6025";
+    schema:addressCountry "Mexico".

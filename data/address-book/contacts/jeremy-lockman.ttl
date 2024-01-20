@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeremy";
+    schema:familyName "Lockman";
+    schema:birthDate "1989-01-22"^^xsd:date;
+    schema:address _:b4050.
+_:b4050 a schema:PostalAddress;
+    schema:streetAddress "E Main Street";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Olympia";
+    schema:postalCode "55775";
+    schema:addressCountry "Gambia".

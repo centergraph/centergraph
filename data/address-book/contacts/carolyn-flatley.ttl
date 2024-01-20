@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carolyn";
+    schema:familyName "Flatley";
+    schema:birthDate "1981-02-20"^^xsd:date;
+    schema:address _:b263.
+_:b263 a schema:PostalAddress;
+    schema:streetAddress "Aileen Passage";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "North Cyrustown";
+    schema:postalCode "93939";
+    schema:addressCountry "Sierra Leone".

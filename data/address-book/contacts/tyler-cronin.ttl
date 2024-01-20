@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tyler";
+    schema:familyName "Cronin";
+    schema:birthDate "1945-07-16"^^xsd:date;
+    schema:address _:b7733.
+_:b7733 a schema:PostalAddress;
+    schema:streetAddress "Manor Road";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "San Clemente";
+    schema:postalCode "55869-3102";
+    schema:addressCountry "Bahamas".

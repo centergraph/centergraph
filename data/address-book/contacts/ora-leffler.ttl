@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ora";
+    schema:familyName "Leffler";
+    schema:birthDate "1997-02-17"^^xsd:date;
+    schema:address _:b6043.
+_:b6043 a schema:PostalAddress;
+    schema:streetAddress "Shanahan Forest";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Fort Margaretta";
+    schema:postalCode "53013-3546";
+    schema:addressCountry "Turkey".

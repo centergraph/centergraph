@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Noel";
+    schema:familyName "Schultz";
+    schema:birthDate "1995-01-24"^^xsd:date;
+    schema:address _:b2722.
+_:b2722 a schema:PostalAddress;
+    schema:streetAddress "Cow Lane";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Fosterfort";
+    schema:postalCode "06244";
+    schema:addressCountry "Comoros".

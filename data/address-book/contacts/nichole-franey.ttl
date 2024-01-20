@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nichole";
+    schema:familyName "Franey";
+    schema:birthDate "1974-09-18"^^xsd:date;
+    schema:address _:b5914.
+_:b5914 a schema:PostalAddress;
+    schema:streetAddress "Howard Street";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Buckeye";
+    schema:postalCode "73960-6671";
+    schema:addressCountry "France".

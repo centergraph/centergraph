@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeanne";
+    schema:familyName "Kozey";
+    schema:birthDate "1983-11-06"^^xsd:date;
+    schema:address _:b907.
+_:b907 a schema:PostalAddress;
+    schema:streetAddress "N Elm Street";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "New Moises";
+    schema:postalCode "60260-6361";
+    schema:addressCountry "Bouvet Island".

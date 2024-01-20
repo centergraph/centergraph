@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Delores";
+    schema:familyName "Abbott";
+    schema:birthDate "1998-12-20"^^xsd:date;
+    schema:address _:b5517.
+_:b5517 a schema:PostalAddress;
+    schema:streetAddress "Considine Mall";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Diamondworth";
+    schema:postalCode "81944";
+    schema:addressCountry "Jersey".

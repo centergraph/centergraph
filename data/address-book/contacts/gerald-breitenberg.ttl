@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gerald";
+    schema:familyName "Breitenberg";
+    schema:birthDate "1967-01-12"^^xsd:date;
+    schema:address _:b4346.
+_:b4346 a schema:PostalAddress;
+    schema:streetAddress "Juston Terrace";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Lake Annalise";
+    schema:postalCode "85567-1394";
+    schema:addressCountry "Macao".

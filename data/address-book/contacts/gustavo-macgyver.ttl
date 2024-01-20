@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gustavo";
+    schema:familyName "MacGyver";
+    schema:birthDate "1967-04-17"^^xsd:date;
+    schema:address _:b771.
+_:b771 a schema:PostalAddress;
+    schema:streetAddress "Penelope Manors";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "South Lillian";
+    schema:postalCode "78494-5614";
+    schema:addressCountry "Kuwait".

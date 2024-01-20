@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Abel";
+    schema:familyName "Robel";
+    schema:birthDate "2004-08-14"^^xsd:date;
+    schema:address _:b7147.
+_:b7147 a schema:PostalAddress;
+    schema:streetAddress "Kirlin Harbors";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Cleveland";
+    schema:postalCode "34679-3656";
+    schema:addressCountry "Uganda".

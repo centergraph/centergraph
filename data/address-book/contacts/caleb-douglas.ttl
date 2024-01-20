@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Caleb";
+    schema:familyName "Douglas";
+    schema:birthDate "1954-03-13"^^xsd:date;
+    schema:address _:b9588.
+_:b9588 a schema:PostalAddress;
+    schema:streetAddress "N Court Street";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Cupertino";
+    schema:postalCode "63991";
+    schema:addressCountry "Canada".

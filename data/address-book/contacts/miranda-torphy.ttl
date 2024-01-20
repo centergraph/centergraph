@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Miranda";
+    schema:familyName "Torphy";
+    schema:birthDate "1988-09-18"^^xsd:date;
+    schema:address _:b7848.
+_:b7848 a schema:PostalAddress;
+    schema:streetAddress "Luis Mills";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "New Ibrahimview";
+    schema:postalCode "51158";
+    schema:addressCountry "Serbia".

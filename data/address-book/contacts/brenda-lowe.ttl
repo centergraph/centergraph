@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brenda";
+    schema:familyName "Lowe";
+    schema:birthDate "1969-07-25"^^xsd:date;
+    schema:address _:b9026.
+_:b9026 a schema:PostalAddress;
+    schema:streetAddress "Stiedemann Inlet";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "VonRuedenbury";
+    schema:postalCode "54542-4640";
+    schema:addressCountry "Guinea".

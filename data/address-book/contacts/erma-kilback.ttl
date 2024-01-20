@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erma";
+    schema:familyName "Kilback";
+    schema:birthDate "1989-01-15"^^xsd:date;
+    schema:address _:b590.
+_:b590 a schema:PostalAddress;
+    schema:streetAddress "Vida Squares";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "North Miami Beach";
+    schema:postalCode "37076-1606";
+    schema:addressCountry "United States Minor Outlying Islands".

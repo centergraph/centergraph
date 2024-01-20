@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roberto";
+    schema:familyName "Rolfson";
+    schema:birthDate "1981-05-12"^^xsd:date;
+    schema:address _:b7828.
+_:b7828 a schema:PostalAddress;
+    schema:streetAddress "Pagac Crescent";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Port Ernestina";
+    schema:postalCode "65789-7151";
+    schema:addressCountry "Bolivia".

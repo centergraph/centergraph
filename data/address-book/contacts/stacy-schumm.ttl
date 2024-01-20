@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stacy";
+    schema:familyName "Schumm";
+    schema:birthDate "1983-04-07"^^xsd:date;
+    schema:address _:b577.
+_:b577 a schema:PostalAddress;
+    schema:streetAddress "Miller Gateway";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "North Brant";
+    schema:postalCode "08247";
+    schema:addressCountry "Nepal".

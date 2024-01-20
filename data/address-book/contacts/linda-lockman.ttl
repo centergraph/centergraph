@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Linda";
+    schema:familyName "Lockman";
+    schema:birthDate "1983-10-05"^^xsd:date;
+    schema:address _:b6186.
+_:b6186 a schema:PostalAddress;
+    schema:streetAddress "The Paddock";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Gresham";
+    schema:postalCode "05343-0964";
+    schema:addressCountry "Montserrat".

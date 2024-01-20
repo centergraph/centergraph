@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amy";
+    schema:familyName "Lockman";
+    schema:birthDate "1995-09-06"^^xsd:date;
+    schema:address _:b9514.
+_:b9514 a schema:PostalAddress;
+    schema:streetAddress "Tremblay Rapids";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Angusstead";
+    schema:postalCode "96538-8112";
+    schema:addressCountry "Spain".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eduardo";
+    schema:familyName "Balistreri";
+    schema:birthDate "1990-03-15"^^xsd:date;
+    schema:address _:b6120.
+_:b6120 a schema:PostalAddress;
+    schema:streetAddress "Adriel Flats";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "West Larissaland";
+    schema:postalCode "21164-8328";
+    schema:addressCountry "Palestine".

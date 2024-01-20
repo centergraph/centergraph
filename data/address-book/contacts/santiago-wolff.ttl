@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Santiago";
+    schema:familyName "Wolff";
+    schema:birthDate "1984-10-01"^^xsd:date;
+    schema:address _:b8418.
+_:b8418 a schema:PostalAddress;
+    schema:streetAddress "Don Harbor";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "East Hans";
+    schema:postalCode "41254-7778";
+    schema:addressCountry "Equatorial Guinea".

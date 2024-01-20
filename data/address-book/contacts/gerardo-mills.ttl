@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gerardo";
+    schema:familyName "Mills";
+    schema:birthDate "1990-11-02"^^xsd:date;
+    schema:address _:b2591.
+_:b2591 a schema:PostalAddress;
+    schema:streetAddress "Aiden Well";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Brekkeville";
+    schema:postalCode "52466";
+    schema:addressCountry "Saint Lucia".

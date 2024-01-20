@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosa";
+    schema:familyName "Collins-Adams";
+    schema:birthDate "2000-05-15"^^xsd:date;
+    schema:address _:b4852.
+_:b4852 a schema:PostalAddress;
+    schema:streetAddress "Marquardt Crescent";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Kingfort";
+    schema:postalCode "22458";
+    schema:addressCountry "Puerto Rico".

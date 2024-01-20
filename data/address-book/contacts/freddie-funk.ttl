@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Freddie";
+    schema:familyName "Funk";
+    schema:birthDate "2004-04-12"^^xsd:date;
+    schema:address _:b4892.
+_:b4892 a schema:PostalAddress;
+    schema:streetAddress "Otto Ways";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Cornellboro";
+    schema:postalCode "73877-6536";
+    schema:addressCountry "Anguilla".

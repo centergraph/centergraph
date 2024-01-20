@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "William";
+    schema:familyName "Purdy";
+    schema:birthDate "1986-07-05"^^xsd:date;
+    schema:address _:b3169.
+_:b3169 a schema:PostalAddress;
+    schema:streetAddress "Haskell Pike";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Darrenstad";
+    schema:postalCode "10602";
+    schema:addressCountry "Honduras".

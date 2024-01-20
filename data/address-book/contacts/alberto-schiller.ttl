@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alberto";
+    schema:familyName "Schiller";
+    schema:birthDate "1999-01-17"^^xsd:date;
+    schema:address _:b9068.
+_:b9068 a schema:PostalAddress;
+    schema:streetAddress "Rutherford Isle";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Sidneyshire";
+    schema:postalCode "80028";
+    schema:addressCountry "Madagascar".

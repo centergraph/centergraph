@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ellis";
+    schema:familyName "Renner";
+    schema:birthDate "1969-01-09"^^xsd:date;
+    schema:address _:b6161.
+_:b6161 a schema:PostalAddress;
+    schema:streetAddress "Garett Forges";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Lake Katrine";
+    schema:postalCode "70327-0142";
+    schema:addressCountry "Tanzania".

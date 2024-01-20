@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doyle";
+    schema:familyName "Conroy";
+    schema:birthDate "1987-05-30"^^xsd:date;
+    schema:address _:b4461.
+_:b4461 a schema:PostalAddress;
+    schema:streetAddress "Johns Garden";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Enid";
+    schema:postalCode "68658-1647";
+    schema:addressCountry "Marshall Islands".

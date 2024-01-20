@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Heidi";
+    schema:familyName "Hayes";
+    schema:birthDate "1994-01-29"^^xsd:date;
+    schema:address _:b6694.
+_:b6694 a schema:PostalAddress;
+    schema:streetAddress "Wren Close";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Dickensborough";
+    schema:postalCode "15619";
+    schema:addressCountry "Azerbaijan".

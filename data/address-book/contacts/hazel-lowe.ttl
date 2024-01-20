@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hazel";
+    schema:familyName "Lowe";
+    schema:birthDate "2005-12-05"^^xsd:date;
+    schema:address _:b7319.
+_:b7319 a schema:PostalAddress;
+    schema:streetAddress "W State Street";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "West Adrienne";
+    schema:postalCode "04980-1003";
+    schema:addressCountry "Ethiopia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bobbie";
+    schema:familyName "Hartmann";
+    schema:birthDate "1991-09-09"^^xsd:date;
+    schema:address _:b9200.
+_:b9200 a schema:PostalAddress;
+    schema:streetAddress "Wilderman Mill";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "West Brennonworth";
+    schema:postalCode "88912-2103";
+    schema:addressCountry "Liberia".

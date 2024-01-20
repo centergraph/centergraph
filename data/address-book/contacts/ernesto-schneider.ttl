@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ernesto";
+    schema:familyName "Schneider";
+    schema:birthDate "1984-02-01"^^xsd:date;
+    schema:address _:b9400.
+_:b9400 a schema:PostalAddress;
+    schema:streetAddress "Lesch Courts";
+    schema:addressRegion "California";
+    schema:addressLocality "Port Jadon";
+    schema:postalCode "91396";
+    schema:addressCountry "Latvia".

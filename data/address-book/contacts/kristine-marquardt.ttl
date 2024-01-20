@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristine";
+    schema:familyName "Marquardt";
+    schema:birthDate "1995-03-17"^^xsd:date;
+    schema:address _:b2432.
+_:b2432 a schema:PostalAddress;
+    schema:streetAddress "Jamaal Cape";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "West Kristinbury";
+    schema:postalCode "72288-6465";
+    schema:addressCountry "Slovakia".

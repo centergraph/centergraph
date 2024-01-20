@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Allison";
+    schema:familyName "Larkin";
+    schema:birthDate "1957-07-14"^^xsd:date;
+    schema:address _:b7666.
+_:b7666 a schema:PostalAddress;
+    schema:streetAddress "Bridgette Ridge";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Victoria";
+    schema:postalCode "67130-6385";
+    schema:addressCountry "Cambodia".

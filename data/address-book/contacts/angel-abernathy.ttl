@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Angel";
+    schema:familyName "Abernathy";
+    schema:birthDate "2003-09-08"^^xsd:date;
+    schema:address _:b2090.
+_:b2090 a schema:PostalAddress;
+    schema:streetAddress "Turner Manor";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Lake Edaview";
+    schema:postalCode "31079";
+    schema:addressCountry "Colombia".

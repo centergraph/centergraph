@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jessie";
+    schema:familyName "Carter";
+    schema:birthDate "1960-12-06"^^xsd:date;
+    schema:address _:b7356.
+_:b7356 a schema:PostalAddress;
+    schema:streetAddress "Gutmann Forges";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Darrenboro";
+    schema:postalCode "13267-8584";
+    schema:addressCountry "Papua New Guinea".

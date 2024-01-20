@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shaun";
+    schema:familyName "Mertz";
+    schema:birthDate "1979-08-18"^^xsd:date;
+    schema:address _:b758.
+_:b758 a schema:PostalAddress;
+    schema:streetAddress "Karianne Junction";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Bartonton";
+    schema:postalCode "38702-2370";
+    schema:addressCountry "Ukraine".

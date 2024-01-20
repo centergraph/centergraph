@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marlon";
+    schema:familyName "Schuppe";
+    schema:birthDate "1956-07-11"^^xsd:date;
+    schema:address _:b970.
+_:b970 a schema:PostalAddress;
+    schema:streetAddress "Schamberger Forks";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Leannonton";
+    schema:postalCode "62286-1561";
+    schema:addressCountry "Cuba".

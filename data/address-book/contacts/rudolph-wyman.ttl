@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rudolph";
+    schema:familyName "Wyman";
+    schema:birthDate "1946-06-24"^^xsd:date;
+    schema:address _:b3054.
+_:b3054 a schema:PostalAddress;
+    schema:streetAddress "Priory Road";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Chattanooga";
+    schema:postalCode "37479";
+    schema:addressCountry "Chile".

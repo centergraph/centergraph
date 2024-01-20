@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Diana";
+    schema:familyName "Gleichner";
+    schema:birthDate "1971-01-10"^^xsd:date;
+    schema:address _:b9401.
+_:b9401 a schema:PostalAddress;
+    schema:streetAddress "Reichel Fort";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Spring Valley";
+    schema:postalCode "38719";
+    schema:addressCountry "Cape Verde".

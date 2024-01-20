@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dan";
+    schema:familyName "MacGyver";
+    schema:birthDate "2004-05-27"^^xsd:date;
+    schema:address _:b7304.
+_:b7304 a schema:PostalAddress;
+    schema:streetAddress "Windler Harbors";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Diamond Bar";
+    schema:postalCode "26330";
+    schema:addressCountry "Bhutan".

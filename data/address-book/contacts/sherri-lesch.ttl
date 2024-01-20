@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sherri";
+    schema:familyName "Lesch";
+    schema:birthDate "1969-01-24"^^xsd:date;
+    schema:address _:b934.
+_:b934 a schema:PostalAddress;
+    schema:streetAddress "Rice Corner";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Sunrise Manor";
+    schema:postalCode "48649";
+    schema:addressCountry "Somalia".

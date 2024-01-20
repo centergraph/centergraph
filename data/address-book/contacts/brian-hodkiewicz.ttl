@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brian";
+    schema:familyName "Hodkiewicz";
+    schema:birthDate "1999-08-27"^^xsd:date;
+    schema:address _:b9674.
+_:b9674 a schema:PostalAddress;
+    schema:streetAddress "6th Avenue";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Collierville";
+    schema:postalCode "79902-7511";
+    schema:addressCountry "San Marino".

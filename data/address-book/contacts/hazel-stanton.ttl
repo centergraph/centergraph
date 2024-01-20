@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hazel";
+    schema:familyName "Stanton";
+    schema:birthDate "1962-02-03"^^xsd:date;
+    schema:address _:b7869.
+_:b7869 a schema:PostalAddress;
+    schema:streetAddress "Katlynn Pines";
+    schema:addressRegion "California";
+    schema:addressLocality "Cape Coral";
+    schema:postalCode "92948-1403";
+    schema:addressCountry "Georgia".

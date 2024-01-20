@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bernice";
+    schema:familyName "Jaskolski";
+    schema:birthDate "1988-12-24"^^xsd:date;
+    schema:address _:b7478.
+_:b7478 a schema:PostalAddress;
+    schema:streetAddress "Oceane Avenue";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Jamirboro";
+    schema:postalCode "33230-5523";
+    schema:addressCountry "Micronesia".

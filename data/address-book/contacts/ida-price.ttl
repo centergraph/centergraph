@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ida";
+    schema:familyName "Price";
+    schema:birthDate "1973-08-19"^^xsd:date;
+    schema:address _:b3629.
+_:b3629 a schema:PostalAddress;
+    schema:streetAddress "Sandy Courts";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "New Murphyboro";
+    schema:postalCode "88374-9546";
+    schema:addressCountry "United States Minor Outlying Islands".

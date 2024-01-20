@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rodney";
+    schema:familyName "Hintz";
+    schema:birthDate "1957-12-16"^^xsd:date;
+    schema:address _:b5420.
+_:b5420 a schema:PostalAddress;
+    schema:streetAddress "Nikolaus Drives";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "New Marilyne";
+    schema:postalCode "00237-2138";
+    schema:addressCountry "Guinea-Bissau".

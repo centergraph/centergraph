@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jim";
+    schema:familyName "Gleason";
+    schema:birthDate "1955-06-09"^^xsd:date;
+    schema:address _:b6480.
+_:b6480 a schema:PostalAddress;
+    schema:streetAddress "Haylie Dam";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Beckerboro";
+    schema:postalCode "74055";
+    schema:addressCountry "Bahrain".

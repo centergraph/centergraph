@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carlos";
+    schema:familyName "Koss";
+    schema:birthDate "1998-09-29"^^xsd:date;
+    schema:address _:b302.
+_:b302 a schema:PostalAddress;
+    schema:streetAddress "Favian Camp";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Haleighberg";
+    schema:postalCode "30923-7674";
+    schema:addressCountry "Antarctica".

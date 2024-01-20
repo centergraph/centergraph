@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Whitney";
+    schema:familyName "Ward";
+    schema:birthDate "1973-05-04"^^xsd:date;
+    schema:address _:b9349.
+_:b9349 a schema:PostalAddress;
+    schema:streetAddress "Christiansen Hollow";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Enid";
+    schema:postalCode "16425";
+    schema:addressCountry "Lao People's Democratic Republic".

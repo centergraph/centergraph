@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kathryn";
+    schema:familyName "Vandervort";
+    schema:birthDate "1997-01-09"^^xsd:date;
+    schema:address _:b9536.
+_:b9536 a schema:PostalAddress;
+    schema:streetAddress "Lamont Street";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Kertzmannmouth";
+    schema:postalCode "82222-5910";
+    schema:addressCountry "Botswana".

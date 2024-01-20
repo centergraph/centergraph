@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nichole";
+    schema:familyName "Kovacek";
+    schema:birthDate "1965-03-11"^^xsd:date;
+    schema:address _:b2178.
+_:b2178 a schema:PostalAddress;
+    schema:streetAddress "Buckingham Road";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Vandervortmouth";
+    schema:postalCode "34451";
+    schema:addressCountry "Moldova".

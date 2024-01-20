@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lynette";
+    schema:familyName "O'Keefe";
+    schema:birthDate "1962-09-03"^^xsd:date;
+    schema:address _:b1187.
+_:b1187 a schema:PostalAddress;
+    schema:streetAddress "Mosciski Spur";
+    schema:addressRegion "Montana";
+    schema:addressLocality "North Nyahboro";
+    schema:postalCode "63286-3487";
+    schema:addressCountry "Rwanda".

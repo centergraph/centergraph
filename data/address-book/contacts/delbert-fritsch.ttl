@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Delbert";
+    schema:familyName "Fritsch";
+    schema:birthDate "1975-08-18"^^xsd:date;
+    schema:address _:b7412.
+_:b7412 a schema:PostalAddress;
+    schema:streetAddress "S Pine Street";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "New Deronfurt";
+    schema:postalCode "01685";
+    schema:addressCountry "Saint Martin".

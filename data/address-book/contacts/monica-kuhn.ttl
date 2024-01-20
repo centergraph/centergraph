@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Monica";
+    schema:familyName "Kuhn";
+    schema:birthDate "1979-03-13"^^xsd:date;
+    schema:address _:b713.
+_:b713 a schema:PostalAddress;
+    schema:streetAddress "Laurine Row";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "South Bertrandfurt";
+    schema:postalCode "66476";
+    schema:addressCountry "Madagascar".

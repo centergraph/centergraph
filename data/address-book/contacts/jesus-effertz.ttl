@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jesus";
+    schema:familyName "Effertz";
+    schema:birthDate "1951-03-21"^^xsd:date;
+    schema:address _:b5870.
+_:b5870 a schema:PostalAddress;
+    schema:streetAddress "Johnson Wall";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Vineland";
+    schema:postalCode "90883-0375";
+    schema:addressCountry "Lebanon".

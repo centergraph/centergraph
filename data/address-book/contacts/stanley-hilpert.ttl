@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stanley";
+    schema:familyName "Hilpert";
+    schema:birthDate "1971-02-26"^^xsd:date;
+    schema:address _:b2080.
+_:b2080 a schema:PostalAddress;
+    schema:streetAddress "Hayes Drives";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Scranton";
+    schema:postalCode "06469-2037";
+    schema:addressCountry "Guernsey".

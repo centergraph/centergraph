@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nina";
+    schema:familyName "Gutkowski";
+    schema:birthDate "1944-10-09"^^xsd:date;
+    schema:address _:b3106.
+_:b3106 a schema:PostalAddress;
+    schema:streetAddress "W 5th Street";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "East Lansing";
+    schema:postalCode "49784";
+    schema:addressCountry "Maldives".

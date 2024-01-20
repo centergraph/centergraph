@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Angelica";
+    schema:familyName "Kuphal";
+    schema:birthDate "1961-03-27"^^xsd:date;
+    schema:address _:b6281.
+_:b6281 a schema:PostalAddress;
+    schema:streetAddress "Barrows Land";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Corona";
+    schema:postalCode "39490";
+    schema:addressCountry "Andorra".

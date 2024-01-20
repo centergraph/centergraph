@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marie";
+    schema:familyName "Cartwright-Waters";
+    schema:birthDate "1951-11-11"^^xsd:date;
+    schema:address _:b7494.
+_:b7494 a schema:PostalAddress;
+    schema:streetAddress "Feest Loaf";
+    schema:addressRegion "Texas";
+    schema:addressLocality "East Edwardbury";
+    schema:postalCode "90779";
+    schema:addressCountry "Brazil".

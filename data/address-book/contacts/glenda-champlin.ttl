@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Glenda";
+    schema:familyName "Champlin";
+    schema:birthDate "1970-03-02"^^xsd:date;
+    schema:address _:b9264.
+_:b9264 a schema:PostalAddress;
+    schema:streetAddress "S Division Street";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Port Corbin";
+    schema:postalCode "22906-7838";
+    schema:addressCountry "Mozambique".

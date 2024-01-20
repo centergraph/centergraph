@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Christian";
+    schema:familyName "Wolff";
+    schema:birthDate "1988-09-18"^^xsd:date;
+    schema:address _:b8956.
+_:b8956 a schema:PostalAddress;
+    schema:streetAddress "Carmine Fields";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Apopka";
+    schema:postalCode "40362-8564";
+    schema:addressCountry "Gibraltar".

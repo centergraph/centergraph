@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rudolph";
+    schema:familyName "Gibson";
+    schema:birthDate "1968-02-22"^^xsd:date;
+    schema:address _:b7991.
+_:b7991 a schema:PostalAddress;
+    schema:streetAddress "Chester Road";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Tierraworth";
+    schema:postalCode "39284-0044";
+    schema:addressCountry "Georgia".

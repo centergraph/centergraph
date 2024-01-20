@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harold";
+    schema:familyName "Reynolds";
+    schema:birthDate "2005-12-26"^^xsd:date;
+    schema:address _:b5894.
+_:b5894 a schema:PostalAddress;
+    schema:streetAddress "Raynor Plains";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Carliview";
+    schema:postalCode "29015-3997";
+    schema:addressCountry "Virgin Islands, British".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Austin";
+    schema:familyName "Hane";
+    schema:birthDate "1991-01-20"^^xsd:date;
+    schema:address _:b4498.
+_:b4498 a schema:PostalAddress;
+    schema:streetAddress "Talbot Road";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Port Kylee";
+    schema:postalCode "91109-1403";
+    schema:addressCountry "Oman".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Krista";
+    schema:familyName "Kuhic";
+    schema:birthDate "1949-07-24"^^xsd:date;
+    schema:address _:b702.
+_:b702 a schema:PostalAddress;
+    schema:streetAddress "Schmitt Expressway";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "West Elsefort";
+    schema:postalCode "00083";
+    schema:addressCountry "Turkmenistan".

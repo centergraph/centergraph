@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorenzo";
+    schema:familyName "O'Connell";
+    schema:birthDate "2000-04-27"^^xsd:date;
+    schema:address _:b2809.
+_:b2809 a schema:PostalAddress;
+    schema:streetAddress "Albion Street";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Highland";
+    schema:postalCode "59906-6416";
+    schema:addressCountry "American Samoa".

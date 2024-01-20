@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dana";
+    schema:familyName "Bahringer";
+    schema:birthDate "1965-10-13"^^xsd:date;
+    schema:address _:b7377.
+_:b7377 a schema:PostalAddress;
+    schema:streetAddress "Nola Cape";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Port Deltaside";
+    schema:postalCode "09268-0849";
+    schema:addressCountry "Moldova".

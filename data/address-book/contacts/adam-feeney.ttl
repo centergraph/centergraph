@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Adam";
+    schema:familyName "Feeney";
+    schema:birthDate "1979-09-25"^^xsd:date;
+    schema:address _:b5183.
+_:b5183 a schema:PostalAddress;
+    schema:streetAddress "Legros Divide";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "North Florianport";
+    schema:postalCode "49803-3067";
+    schema:addressCountry "Brunei Darussalam".

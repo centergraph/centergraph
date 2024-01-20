@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pat";
+    schema:familyName "Bartell";
+    schema:birthDate "1985-12-10"^^xsd:date;
+    schema:address _:b4330.
+_:b4330 a schema:PostalAddress;
+    schema:streetAddress "Moen Mills";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Halchester";
+    schema:postalCode "88393";
+    schema:addressCountry "Curacao".

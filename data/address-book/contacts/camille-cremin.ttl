@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Camille";
+    schema:familyName "Cremin";
+    schema:birthDate "1979-01-02"^^xsd:date;
+    schema:address _:b1083.
+_:b1083 a schema:PostalAddress;
+    schema:streetAddress "Roberts Ramp";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "North Beulahshire";
+    schema:postalCode "23880";
+    schema:addressCountry "Tonga".

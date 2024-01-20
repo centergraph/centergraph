@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Louise";
+    schema:familyName "Shanahan";
+    schema:birthDate "1970-09-05"^^xsd:date;
+    schema:address _:b1105.
+_:b1105 a schema:PostalAddress;
+    schema:streetAddress "Reinger Flat";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "West Vickyland";
+    schema:postalCode "72920-0245";
+    schema:addressCountry "Lebanon".

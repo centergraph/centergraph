@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wilma";
+    schema:familyName "Fahey";
+    schema:birthDate "1963-10-13"^^xsd:date;
+    schema:address _:b7127.
+_:b7127 a schema:PostalAddress;
+    schema:streetAddress "Morissette Trace";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Auerville";
+    schema:postalCode "57096";
+    schema:addressCountry "Uruguay".

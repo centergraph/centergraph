@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bryant";
+    schema:familyName "Collier";
+    schema:birthDate "1994-03-26"^^xsd:date;
+    schema:address _:b199.
+_:b199 a schema:PostalAddress;
+    schema:streetAddress "Flossie Views";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Pocatello";
+    schema:postalCode "02368";
+    schema:addressCountry "China".

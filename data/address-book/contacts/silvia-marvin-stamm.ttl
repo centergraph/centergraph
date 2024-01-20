@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Silvia";
+    schema:familyName "Marvin-Stamm";
+    schema:birthDate "1959-01-16"^^xsd:date;
+    schema:address _:b5445.
+_:b5445 a schema:PostalAddress;
+    schema:streetAddress "Quincy Way";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Ratkemouth";
+    schema:postalCode "09506-5288";
+    schema:addressCountry "Zambia".

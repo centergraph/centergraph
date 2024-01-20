@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Anne";
+    schema:familyName "Spencer";
+    schema:birthDate "1951-05-15"^^xsd:date;
+    schema:address _:b6062.
+_:b6062 a schema:PostalAddress;
+    schema:streetAddress "Alex Squares";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Commerce City";
+    schema:postalCode "68825";
+    schema:addressCountry "North Macedonia".

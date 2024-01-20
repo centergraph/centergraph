@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kayla";
+    schema:familyName "Smith";
+    schema:birthDate "1979-08-23"^^xsd:date;
+    schema:address _:b9183.
+_:b9183 a schema:PostalAddress;
+    schema:streetAddress "Laburnum Grove";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Fort Hayley";
+    schema:postalCode "77535-8696";
+    schema:addressCountry "Bonaire, Sint Eustatius and Saba".

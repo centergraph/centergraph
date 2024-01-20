@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edmond";
+    schema:familyName "Kuvalis";
+    schema:birthDate "1964-08-22"^^xsd:date;
+    schema:address _:b9521.
+_:b9521 a schema:PostalAddress;
+    schema:streetAddress "Mattie Vista";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "East Liamworth";
+    schema:postalCode "68612";
+    schema:addressCountry "Mayotte".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tamara";
+    schema:familyName "Howell";
+    schema:birthDate "2001-02-26"^^xsd:date;
+    schema:address _:b3669.
+_:b3669 a schema:PostalAddress;
+    schema:streetAddress "Orchard Street";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Ocala";
+    schema:postalCode "00127-9686";
+    schema:addressCountry "Democratic People's Republic of Korea".

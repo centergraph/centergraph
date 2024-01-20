@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Irving";
+    schema:familyName "Wilkinson";
+    schema:birthDate "1966-01-17"^^xsd:date;
+    schema:address _:b1795.
+_:b1795 a schema:PostalAddress;
+    schema:streetAddress "Herta Land";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Lake Mavisview";
+    schema:postalCode "90116-6081";
+    schema:addressCountry "Kyrgyz Republic".

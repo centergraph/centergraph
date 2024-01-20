@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janet";
+    schema:familyName "Herzog";
+    schema:birthDate "1982-05-16"^^xsd:date;
+    schema:address _:b8167.
+_:b8167 a schema:PostalAddress;
+    schema:streetAddress "Meadow View";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Schmidtburgh";
+    schema:postalCode "56908-9930";
+    schema:addressCountry "South Sudan".

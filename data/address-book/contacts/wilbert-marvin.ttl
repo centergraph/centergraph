@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wilbert";
+    schema:familyName "Marvin";
+    schema:birthDate "2002-01-19"^^xsd:date;
+    schema:address _:b9042.
+_:b9042 a schema:PostalAddress;
+    schema:streetAddress "Wood Lane";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Champaign";
+    schema:postalCode "02694";
+    schema:addressCountry "Saint Pierre and Miquelon".

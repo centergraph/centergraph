@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Teresa";
+    schema:familyName "Quitzon-Mosciski";
+    schema:birthDate "1973-06-13"^^xsd:date;
+    schema:address _:b6088.
+_:b6088 a schema:PostalAddress;
+    schema:streetAddress "Warren Road";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Danaton";
+    schema:postalCode "12753";
+    schema:addressCountry "Australia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Myrtle";
+    schema:familyName "West-Bailey";
+    schema:birthDate "1982-08-01"^^xsd:date;
+    schema:address _:b8942.
+_:b8942 a schema:PostalAddress;
+    schema:streetAddress "Hoeger Circles";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Fort Margaretton";
+    schema:postalCode "47423";
+    schema:addressCountry "Bangladesh".

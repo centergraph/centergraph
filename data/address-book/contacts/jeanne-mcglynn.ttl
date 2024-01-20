@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeanne";
+    schema:familyName "McGlynn";
+    schema:birthDate "1998-02-26"^^xsd:date;
+    schema:address _:b844.
+_:b844 a schema:PostalAddress;
+    schema:streetAddress "Hagenes Ridges";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "West Cristina";
+    schema:postalCode "06464-6029";
+    schema:addressCountry "Ecuador".

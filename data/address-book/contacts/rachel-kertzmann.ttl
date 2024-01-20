@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rachel";
+    schema:familyName "Kertzmann";
+    schema:birthDate "1982-04-23"^^xsd:date;
+    schema:address _:b5196.
+_:b5196 a schema:PostalAddress;
+    schema:streetAddress "Union Avenue";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Fort Lindsey";
+    schema:postalCode "20984-0000";
+    schema:addressCountry "Vanuatu".

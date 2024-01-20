@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Irene";
+    schema:familyName "Cummerata";
+    schema:birthDate "1959-07-01"^^xsd:date;
+    schema:address _:b7460.
+_:b7460 a schema:PostalAddress;
+    schema:streetAddress "Veterans Memorial Drive";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Fairfield";
+    schema:postalCode "90692-1614";
+    schema:addressCountry "Maldives".

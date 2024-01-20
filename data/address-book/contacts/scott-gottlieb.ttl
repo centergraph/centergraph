@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Scott";
+    schema:familyName "Gottlieb";
+    schema:birthDate "1986-05-06"^^xsd:date;
+    schema:address _:b852.
+_:b852 a schema:PostalAddress;
+    schema:streetAddress "Towne Oval";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Arnobury";
+    schema:postalCode "20929-3037";
+    schema:addressCountry "Somalia".

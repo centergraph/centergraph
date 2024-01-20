@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Angelo";
+    schema:familyName "Heller";
+    schema:birthDate "1994-09-16"^^xsd:date;
+    schema:address _:b3250.
+_:b3250 a schema:PostalAddress;
+    schema:streetAddress "Tessie Mills";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Menifee";
+    schema:postalCode "79655-6980";
+    schema:addressCountry "Belgium".

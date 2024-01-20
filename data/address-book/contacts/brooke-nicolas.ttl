@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brooke";
+    schema:familyName "Nicolas";
+    schema:birthDate "1972-12-12"^^xsd:date;
+    schema:address _:b5594.
+_:b5594 a schema:PostalAddress;
+    schema:streetAddress "Blick Viaduct";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "New Fermin";
+    schema:postalCode "54182-8669";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

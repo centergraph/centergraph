@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Allen";
+    schema:familyName "Leuschke";
+    schema:birthDate "2004-11-16"^^xsd:date;
+    schema:address _:b5999.
+_:b5999 a schema:PostalAddress;
+    schema:streetAddress "Sarai Divide";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "North Murl";
+    schema:postalCode "39590";
+    schema:addressCountry "South Africa".

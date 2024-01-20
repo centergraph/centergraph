@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gregory";
+    schema:familyName "Weber";
+    schema:birthDate "1978-05-28"^^xsd:date;
+    schema:address _:b3899.
+_:b3899 a schema:PostalAddress;
+    schema:streetAddress "Adela Summit";
+    schema:addressRegion "Montana";
+    schema:addressLocality "O'Fallon";
+    schema:postalCode "20903";
+    schema:addressCountry "Japan".

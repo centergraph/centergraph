@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Angelina";
+    schema:familyName "Beer";
+    schema:birthDate "1990-08-11"^^xsd:date;
+    schema:address _:b5843.
+_:b5843 a schema:PostalAddress;
+    schema:streetAddress "Jamaal Freeway";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Dickinsonworth";
+    schema:postalCode "84967";
+    schema:addressCountry "Papua New Guinea".

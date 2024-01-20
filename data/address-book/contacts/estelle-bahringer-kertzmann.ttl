@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Estelle";
+    schema:familyName "Bahringer-Kertzmann";
+    schema:birthDate "1992-07-15"^^xsd:date;
+    schema:address _:b2286.
+_:b2286 a schema:PostalAddress;
+    schema:streetAddress "Nicolas Springs";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Lake Callie";
+    schema:postalCode "21353-8913";
+    schema:addressCountry "Moldova".

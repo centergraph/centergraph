@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Levi";
+    schema:familyName "Hills";
+    schema:birthDate "1990-01-31"^^xsd:date;
+    schema:address _:b8450.
+_:b8450 a schema:PostalAddress;
+    schema:streetAddress "Rectory Close";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Maribelfort";
+    schema:postalCode "17448-8493";
+    schema:addressCountry "Senegal".

@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Andre";
     schema:familyName "Franey";
-    schema:birthDate "1999-04-20"^^xsd:date;
-    schema:address _:b8.
-_:b8 a schema:PostalAddress;
-    schema:streetAddress "Balistreri Alley";
-    schema:addressRegion "Louisiana";
-    schema:addressLocality "Devencester";
-    schema:postalCode "41707-3156";
-    schema:addressCountry "Costa Rica".
+    schema:birthDate "1987-11-28"^^xsd:date;
+    schema:address _:b4475.
+_:b4475 a schema:PostalAddress;
+    schema:streetAddress "Kamren Meadows";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Haucktown";
+    schema:postalCode "29545";
+    schema:addressCountry "Syrian Arab Republic".

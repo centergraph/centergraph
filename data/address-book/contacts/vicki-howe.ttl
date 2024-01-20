@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vicki";
+    schema:familyName "Howe";
+    schema:birthDate "1971-11-07"^^xsd:date;
+    schema:address _:b818.
+_:b818 a schema:PostalAddress;
+    schema:streetAddress "Abe Divide";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "East Pablofield";
+    schema:postalCode "10522";
+    schema:addressCountry "American Samoa".

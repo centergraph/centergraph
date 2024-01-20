@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Greg";
+    schema:familyName "Lemke";
+    schema:birthDate "1980-09-20"^^xsd:date;
+    schema:address _:b8901.
+_:b8901 a schema:PostalAddress;
+    schema:streetAddress "E 14th Street";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Marjoriestead";
+    schema:postalCode "39626-8324";
+    schema:addressCountry "Martinique".

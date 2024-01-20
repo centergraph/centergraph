@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Francis";
+    schema:familyName "Dooley";
+    schema:birthDate "1987-11-15"^^xsd:date;
+    schema:address _:b6877.
+_:b6877 a schema:PostalAddress;
+    schema:streetAddress "E Church Street";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Strongsville";
+    schema:postalCode "59000-4053";
+    schema:addressCountry "Slovakia".

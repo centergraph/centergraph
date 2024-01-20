@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Faye";
+    schema:familyName "Harvey-Hansen";
+    schema:birthDate "2003-04-23"^^xsd:date;
+    schema:address _:b3542.
+_:b3542 a schema:PostalAddress;
+    schema:streetAddress "Keebler Passage";
+    schema:addressRegion "California";
+    schema:addressLocality "Letitiastead";
+    schema:postalCode "88582-9145";
+    schema:addressCountry "Malta".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Penny";
+    schema:familyName "Schaden";
+    schema:birthDate "1989-08-24"^^xsd:date;
+    schema:address _:b800.
+_:b800 a schema:PostalAddress;
+    schema:streetAddress "Blaise Junction";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Weston";
+    schema:postalCode "45807-8521";
+    schema:addressCountry "Mongolia".

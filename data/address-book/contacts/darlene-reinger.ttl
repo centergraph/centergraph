@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darlene";
+    schema:familyName "Reinger";
+    schema:birthDate "1966-04-03"^^xsd:date;
+    schema:address _:b6580.
+_:b6580 a schema:PostalAddress;
+    schema:streetAddress "Idell Forest";
+    schema:addressRegion "California";
+    schema:addressLocality "West Lilly";
+    schema:postalCode "15583";
+    schema:addressCountry "Taiwan".

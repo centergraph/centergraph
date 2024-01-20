@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Katie";
+    schema:familyName "Monahan";
+    schema:birthDate "1957-03-15"^^xsd:date;
+    schema:address _:b4493.
+_:b4493 a schema:PostalAddress;
+    schema:streetAddress "Berneice Row";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Conradberg";
+    schema:postalCode "07496";
+    schema:addressCountry "Democratic Republic of the Congo".

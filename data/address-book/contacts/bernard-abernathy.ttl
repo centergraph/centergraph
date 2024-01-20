@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bernard";
+    schema:familyName "Abernathy";
+    schema:birthDate "1995-10-05"^^xsd:date;
+    schema:address _:b6086.
+_:b6086 a schema:PostalAddress;
+    schema:streetAddress "Aufderhar Knoll";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Talonstad";
+    schema:postalCode "15366-4606";
+    schema:addressCountry "Falkland Islands (Malvinas)".

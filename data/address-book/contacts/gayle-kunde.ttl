@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gayle";
+    schema:familyName "Kunde";
+    schema:birthDate "1967-03-14"^^xsd:date;
+    schema:address _:b5695.
+_:b5695 a schema:PostalAddress;
+    schema:streetAddress "Wolf Fort";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "South Lonieport";
+    schema:postalCode "17520";
+    schema:addressCountry "Cocos (Keeling) Islands".

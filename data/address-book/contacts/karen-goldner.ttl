@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Karen";
+    schema:familyName "Goldner";
+    schema:birthDate "1947-05-31"^^xsd:date;
+    schema:address _:b3951.
+_:b3951 a schema:PostalAddress;
+    schema:streetAddress "Woodland Road";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Leifworth";
+    schema:postalCode "77275";
+    schema:addressCountry "Qatar".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jan";
+    schema:familyName "O'Connell";
+    schema:birthDate "1999-11-02"^^xsd:date;
+    schema:address _:b5194.
+_:b5194 a schema:PostalAddress;
+    schema:streetAddress "Vladimir Gardens";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Gleasonboro";
+    schema:postalCode "09942-7021";
+    schema:addressCountry "United States Minor Outlying Islands".

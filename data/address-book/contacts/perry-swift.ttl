@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Perry";
+    schema:familyName "Swift";
+    schema:birthDate "1997-09-11"^^xsd:date;
+    schema:address _:b4897.
+_:b4897 a schema:PostalAddress;
+    schema:streetAddress "Roel Spur";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Seanfield";
+    schema:postalCode "07433";
+    schema:addressCountry "Cook Islands".

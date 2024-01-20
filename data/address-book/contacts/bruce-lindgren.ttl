@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bruce";
+    schema:familyName "Lindgren";
+    schema:birthDate "1955-06-29"^^xsd:date;
+    schema:address _:b788.
+_:b788 a schema:PostalAddress;
+    schema:streetAddress "Rolfson Skyway";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Lake Hazle";
+    schema:postalCode "06465-2746";
+    schema:addressCountry "United States Minor Outlying Islands".

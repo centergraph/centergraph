@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Derrick";
+    schema:familyName "Lebsack-Schuppe";
+    schema:birthDate "1965-01-29"^^xsd:date;
+    schema:address _:b2615.
+_:b2615 a schema:PostalAddress;
+    schema:streetAddress "Commercial Road";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Fort Montanaburgh";
+    schema:postalCode "44919-2279";
+    schema:addressCountry "Tanzania".

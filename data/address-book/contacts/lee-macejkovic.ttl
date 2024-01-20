@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lee";
+    schema:familyName "Macejkovic";
+    schema:birthDate "2003-06-09"^^xsd:date;
+    schema:address _:b4425.
+_:b4425 a schema:PostalAddress;
+    schema:streetAddress "Windmill Lane";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Rogers";
+    schema:postalCode "57463";
+    schema:addressCountry "Lebanon".

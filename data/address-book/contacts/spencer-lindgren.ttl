@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Spencer";
+    schema:familyName "Lindgren";
+    schema:birthDate "1990-12-31"^^xsd:date;
+    schema:address _:b4262.
+_:b4262 a schema:PostalAddress;
+    schema:streetAddress "Tyson Isle";
+    schema:addressRegion "Florida";
+    schema:addressLocality "North Glennatown";
+    schema:postalCode "94249-9864";
+    schema:addressCountry "Somalia".

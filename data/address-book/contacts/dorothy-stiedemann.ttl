@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dorothy";
+    schema:familyName "Stiedemann";
+    schema:birthDate "1996-03-14"^^xsd:date;
+    schema:address _:b3523.
+_:b3523 a schema:PostalAddress;
+    schema:streetAddress "Albin Underpass";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Port Samara";
+    schema:postalCode "58166-1709";
+    schema:addressCountry "Niue".

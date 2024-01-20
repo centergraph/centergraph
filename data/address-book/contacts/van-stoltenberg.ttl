@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Van";
+    schema:familyName "Stoltenberg";
+    schema:birthDate "1962-03-20"^^xsd:date;
+    schema:address _:b9295.
+_:b9295 a schema:PostalAddress;
+    schema:streetAddress "Pfannerstill Stream";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Sengerside";
+    schema:postalCode "97177-2130";
+    schema:addressCountry "Greece".

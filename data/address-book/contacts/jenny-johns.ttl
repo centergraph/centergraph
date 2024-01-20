@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jenny";
+    schema:familyName "Johns";
+    schema:birthDate "1972-03-28"^^xsd:date;
+    schema:address _:b8028.
+_:b8028 a schema:PostalAddress;
+    schema:streetAddress "Broderick Viaduct";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Minnetonka";
+    schema:postalCode "23812";
+    schema:addressCountry "Malawi".

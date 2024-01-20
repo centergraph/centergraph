@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Geoffrey";
+    schema:familyName "Kuhn";
+    schema:birthDate "2001-12-15"^^xsd:date;
+    schema:address _:b739.
+_:b739 a schema:PostalAddress;
+    schema:streetAddress "Pfeffer Plaza";
+    schema:addressRegion "California";
+    schema:addressLocality "Ritchiestead";
+    schema:postalCode "09009";
+    schema:addressCountry "Ukraine".

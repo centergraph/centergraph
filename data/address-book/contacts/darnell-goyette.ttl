@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darnell";
+    schema:familyName "Goyette";
+    schema:birthDate "1999-11-25"^^xsd:date;
+    schema:address _:b1183.
+_:b1183 a schema:PostalAddress;
+    schema:streetAddress "8th Avenue";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "New Araceliborough";
+    schema:postalCode "67996";
+    schema:addressCountry "Uzbekistan".

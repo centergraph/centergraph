@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Byron";
+    schema:familyName "Dooley";
+    schema:birthDate "1945-04-13"^^xsd:date;
+    schema:address _:b5670.
+_:b5670 a schema:PostalAddress;
+    schema:streetAddress "Konopelski Terrace";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Spokane";
+    schema:postalCode "40689";
+    schema:addressCountry "Guinea".

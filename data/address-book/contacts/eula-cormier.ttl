@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eula";
+    schema:familyName "Cormier";
+    schema:birthDate "1988-11-07"^^xsd:date;
+    schema:address _:b3244.
+_:b3244 a schema:PostalAddress;
+    schema:streetAddress "Tillman Lake";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Lake Feliciafurt";
+    schema:postalCode "82496-5767";
+    schema:addressCountry "Central African Republic".

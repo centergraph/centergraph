@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Barry";
+    schema:familyName "Hammes";
+    schema:birthDate "1969-08-06"^^xsd:date;
+    schema:address _:b75.
+_:b75 a schema:PostalAddress;
+    schema:streetAddress "Marcel Skyway";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Glenview";
+    schema:postalCode "06184-8172";
+    schema:addressCountry "Mauritania".

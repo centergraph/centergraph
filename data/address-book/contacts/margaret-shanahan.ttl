@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Margaret";
+    schema:familyName "Shanahan";
+    schema:birthDate "1968-06-27"^^xsd:date;
+    schema:address _:b4722.
+_:b4722 a schema:PostalAddress;
+    schema:streetAddress "Prohaska Meadows";
+    schema:addressRegion "California";
+    schema:addressLocality "New Shana";
+    schema:postalCode "44795-5636";
+    schema:addressCountry "Greece".

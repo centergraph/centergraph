@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Arthur";
+    schema:familyName "Witting";
+    schema:birthDate "1968-07-16"^^xsd:date;
+    schema:address _:b9961.
+_:b9961 a schema:PostalAddress;
+    schema:streetAddress "Krista Brooks";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Corwinbury";
+    schema:postalCode "66003-3165";
+    schema:addressCountry "Cuba".

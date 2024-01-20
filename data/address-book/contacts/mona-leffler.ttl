@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mona";
+    schema:familyName "Leffler";
+    schema:birthDate "1990-11-12"^^xsd:date;
+    schema:address _:b9602.
+_:b9602 a schema:PostalAddress;
+    schema:streetAddress "Barton Road";
+    schema:addressRegion "New York";
+    schema:addressLocality "Oliverfield";
+    schema:postalCode "90716";
+    schema:addressCountry "Western Sahara".

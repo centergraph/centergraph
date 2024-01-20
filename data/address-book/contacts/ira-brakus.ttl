@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ira";
+    schema:familyName "Brakus";
+    schema:birthDate "1944-01-23"^^xsd:date;
+    schema:address _:b5895.
+_:b5895 a schema:PostalAddress;
+    schema:streetAddress "Ryan Course";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "South Trycia";
+    schema:postalCode "52073-5150";
+    schema:addressCountry "Israel".

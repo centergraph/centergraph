@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brendan";
+    schema:familyName "Ward";
+    schema:birthDate "1978-09-04"^^xsd:date;
+    schema:address _:b2350.
+_:b2350 a schema:PostalAddress;
+    schema:streetAddress "Martin Luther King Jr Boulevard";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Legrosport";
+    schema:postalCode "77211";
+    schema:addressCountry "Vietnam".

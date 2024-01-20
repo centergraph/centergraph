@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Monica";
+    schema:familyName "Doyle";
+    schema:birthDate "2002-12-30"^^xsd:date;
+    schema:address _:b9182.
+_:b9182 a schema:PostalAddress;
+    schema:streetAddress "Alexzander Junctions";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Ritchieton";
+    schema:postalCode "27118";
+    schema:addressCountry "Chad".

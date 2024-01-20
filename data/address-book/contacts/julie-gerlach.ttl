@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julie";
+    schema:familyName "Gerlach";
+    schema:birthDate "1994-03-07"^^xsd:date;
+    schema:address _:b5321.
+_:b5321 a schema:PostalAddress;
+    schema:streetAddress "Gorczany Pine";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Milanshire";
+    schema:postalCode "15656-2527";
+    schema:addressCountry "Zimbabwe".

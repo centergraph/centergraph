@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Silvia";
+    schema:familyName "Torp";
+    schema:birthDate "2002-07-26"^^xsd:date;
+    schema:address _:b1441.
+_:b1441 a schema:PostalAddress;
+    schema:streetAddress "Cleveland Crest";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "East Alaynaboro";
+    schema:postalCode "87768-6749";
+    schema:addressCountry "Djibouti".

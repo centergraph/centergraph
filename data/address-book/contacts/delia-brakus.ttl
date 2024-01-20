@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Delia";
+    schema:familyName "Brakus";
+    schema:birthDate "1971-06-15"^^xsd:date;
+    schema:address _:b7223.
+_:b7223 a schema:PostalAddress;
+    schema:streetAddress "Amani Square";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Breitenbergmouth";
+    schema:postalCode "67142-5348";
+    schema:addressCountry "Turks and Caicos Islands".

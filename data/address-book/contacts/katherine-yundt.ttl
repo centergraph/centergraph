@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Katherine";
+    schema:familyName "Yundt";
+    schema:birthDate "1957-08-18"^^xsd:date;
+    schema:address _:b4107.
+_:b4107 a schema:PostalAddress;
+    schema:streetAddress "Waelchi Cliff";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Creminstead";
+    schema:postalCode "36542-2899";
+    schema:addressCountry "Vietnam".

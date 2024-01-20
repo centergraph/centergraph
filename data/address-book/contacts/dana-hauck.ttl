@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dana";
+    schema:familyName "Hauck";
+    schema:birthDate "2002-02-02"^^xsd:date;
+    schema:address _:b6903.
+_:b6903 a schema:PostalAddress;
+    schema:streetAddress "Prosacco Burgs";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Patienceview";
+    schema:postalCode "97307";
+    schema:addressCountry "Kenya".

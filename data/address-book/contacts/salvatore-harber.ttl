@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Salvatore";
+    schema:familyName "Harber";
+    schema:birthDate "1979-06-18"^^xsd:date;
+    schema:address _:b5852.
+_:b5852 a schema:PostalAddress;
+    schema:streetAddress "W 9th Street";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Santa Ana";
+    schema:postalCode "04140";
+    schema:addressCountry "Mali".

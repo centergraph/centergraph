@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Veronica";
+    schema:familyName "Nolan";
+    schema:birthDate "1955-09-13"^^xsd:date;
+    schema:address _:b3345.
+_:b3345 a schema:PostalAddress;
+    schema:streetAddress "E Park Avenue";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Placentia";
+    schema:postalCode "68249-0102";
+    schema:addressCountry "Montserrat".

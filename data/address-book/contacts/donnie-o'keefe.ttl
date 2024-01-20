@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Donnie";
+    schema:familyName "O'Keefe";
+    schema:birthDate "1954-09-25"^^xsd:date;
+    schema:address _:b2900.
+_:b2900 a schema:PostalAddress;
+    schema:streetAddress "Romaguera Village";
+    schema:addressRegion "Utah";
+    schema:addressLocality "West Providencicester";
+    schema:postalCode "16223";
+    schema:addressCountry "Kazakhstan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Patty";
+    schema:familyName "Morar";
+    schema:birthDate "1975-11-15"^^xsd:date;
+    schema:address _:b3845.
+_:b3845 a schema:PostalAddress;
+    schema:streetAddress "Eveline Mews";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Sioux Falls";
+    schema:postalCode "66556";
+    schema:addressCountry "Honduras".

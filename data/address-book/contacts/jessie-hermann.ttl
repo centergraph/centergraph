@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jessie";
+    schema:familyName "Hermann";
+    schema:birthDate "1985-07-24"^^xsd:date;
+    schema:address _:b524.
+_:b524 a schema:PostalAddress;
+    schema:streetAddress "Wilderman Streets";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Port Orville";
+    schema:postalCode "08859";
+    schema:addressCountry "Myanmar".

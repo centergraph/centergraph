@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eugene";
+    schema:familyName "Gibson";
+    schema:birthDate "1998-05-06"^^xsd:date;
+    schema:address _:b8347.
+_:b8347 a schema:PostalAddress;
+    schema:streetAddress "Donnelly Ports";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "South Alejandrinport";
+    schema:postalCode "56921";
+    schema:addressCountry "Singapore".

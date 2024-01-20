@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wallace";
+    schema:familyName "Spencer";
+    schema:birthDate "1973-09-12"^^xsd:date;
+    schema:address _:b9213.
+_:b9213 a schema:PostalAddress;
+    schema:streetAddress "Highland Avenue";
+    schema:addressRegion "New York";
+    schema:addressLocality "Waukegan";
+    schema:postalCode "22182-9178";
+    schema:addressCountry "Guinea-Bissau".

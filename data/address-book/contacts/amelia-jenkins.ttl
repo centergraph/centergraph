@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amelia";
+    schema:familyName "Jenkins";
+    schema:birthDate "1965-10-20"^^xsd:date;
+    schema:address _:b1081.
+_:b1081 a schema:PostalAddress;
+    schema:streetAddress "Kennedy Place";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Bloomington";
+    schema:postalCode "53475";
+    schema:addressCountry "Democratic People's Republic of Korea".

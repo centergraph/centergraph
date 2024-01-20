@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Georgia";
+    schema:familyName "Hauck";
+    schema:birthDate "1998-02-09"^^xsd:date;
+    schema:address _:b4393.
+_:b4393 a schema:PostalAddress;
+    schema:streetAddress "Fisher Junctions";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Milesfield";
+    schema:postalCode "01092-6677";
+    schema:addressCountry "Liechtenstein".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nathan";
+    schema:familyName "Tillman";
+    schema:birthDate "1974-04-28"^^xsd:date;
+    schema:address _:b2234.
+_:b2234 a schema:PostalAddress;
+    schema:streetAddress "Abbey Road";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "New Elian";
+    schema:postalCode "29307";
+    schema:addressCountry "Pitcairn Islands".

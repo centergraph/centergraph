@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristina";
+    schema:familyName "Marvin-Dare";
+    schema:birthDate "1992-10-24"^^xsd:date;
+    schema:address _:b5394.
+_:b5394 a schema:PostalAddress;
+    schema:streetAddress "Adalberto Loop";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Port Makaylamouth";
+    schema:postalCode "66016";
+    schema:addressCountry "Burundi".

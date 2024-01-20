@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gladys";
+    schema:familyName "Glover";
+    schema:birthDate "1983-10-20"^^xsd:date;
+    schema:address _:b7957.
+_:b7957 a schema:PostalAddress;
+    schema:streetAddress "Herman Pike";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "DeSoto";
+    schema:postalCode "66158";
+    schema:addressCountry "Serbia".

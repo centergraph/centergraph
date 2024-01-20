@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dolores";
+    schema:familyName "Bednar";
+    schema:birthDate "1971-01-23"^^xsd:date;
+    schema:address _:b9903.
+_:b9903 a schema:PostalAddress;
+    schema:streetAddress "The Limes";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Mount Prospect";
+    schema:postalCode "45107";
+    schema:addressCountry "Greenland".

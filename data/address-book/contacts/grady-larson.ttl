@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Grady";
+    schema:familyName "Larson";
+    schema:birthDate "1971-12-06"^^xsd:date;
+    schema:address _:b8996.
+_:b8996 a schema:PostalAddress;
+    schema:streetAddress "Betty Skyway";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Port Evelyn";
+    schema:postalCode "86534-6937";
+    schema:addressCountry "Netherlands".

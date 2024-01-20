@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Garrett";
+    schema:familyName "Satterfield";
+    schema:birthDate "1967-04-06"^^xsd:date;
+    schema:address _:b3659.
+_:b3659 a schema:PostalAddress;
+    schema:streetAddress "Douglas Mews";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Port Luisachester";
+    schema:postalCode "87699";
+    schema:addressCountry "Barbados".

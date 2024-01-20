@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tim";
+    schema:familyName "Bruen";
+    schema:birthDate "1996-08-12"^^xsd:date;
+    schema:address _:b756.
+_:b756 a schema:PostalAddress;
+    schema:streetAddress "Rudy Station";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Escondido";
+    schema:postalCode "83184-1233";
+    schema:addressCountry "Greece".

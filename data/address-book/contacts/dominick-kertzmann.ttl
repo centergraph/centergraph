@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dominick";
+    schema:familyName "Kertzmann";
+    schema:birthDate "1981-09-25"^^xsd:date;
+    schema:address _:b4894.
+_:b4894 a schema:PostalAddress;
+    schema:streetAddress "Oberbrunner Cove";
+    schema:addressRegion "New York";
+    schema:addressLocality "Luettgenstead";
+    schema:postalCode "41174-7039";
+    schema:addressCountry "Dominica".

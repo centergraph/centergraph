@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosemary";
+    schema:familyName "Gorczany";
+    schema:birthDate "1944-08-25"^^xsd:date;
+    schema:address _:b4020.
+_:b4020 a schema:PostalAddress;
+    schema:streetAddress "8th Avenue";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "North Jenningsberg";
+    schema:postalCode "19945";
+    schema:addressCountry "Portugal".

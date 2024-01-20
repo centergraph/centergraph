@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Santiago";
+    schema:familyName "Howell";
+    schema:birthDate "1999-10-29"^^xsd:date;
+    schema:address _:b2268.
+_:b2268 a schema:PostalAddress;
+    schema:streetAddress "Isabel Skyway";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "New Adela";
+    schema:postalCode "04430-2180";
+    schema:addressCountry "Palau".

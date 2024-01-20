@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Taylor";
+    schema:familyName "Ratke";
+    schema:birthDate "1949-01-26"^^xsd:date;
+    schema:address _:b8839.
+_:b8839 a schema:PostalAddress;
+    schema:streetAddress "Bayer Isle";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Fort Giovanny";
+    schema:postalCode "24694-3789";
+    schema:addressCountry "France".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alicia";
+    schema:familyName "Miller";
+    schema:birthDate "1975-01-06"^^xsd:date;
+    schema:address _:b165.
+_:b165 a schema:PostalAddress;
+    schema:streetAddress "Saul Shore";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Homestead";
+    schema:postalCode "92656-0077";
+    schema:addressCountry "Christmas Island".

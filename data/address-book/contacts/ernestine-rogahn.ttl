@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ernestine";
+    schema:familyName "Rogahn";
+    schema:birthDate "1960-07-14"^^xsd:date;
+    schema:address _:b1549.
+_:b1549 a schema:PostalAddress;
+    schema:streetAddress "Hirthe Mill";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "North Darrionport";
+    schema:postalCode "88037-1659";
+    schema:addressCountry "Mexico".

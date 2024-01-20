@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Moses";
+    schema:familyName "Hettinger";
+    schema:birthDate "1977-11-02"^^xsd:date;
+    schema:address _:b4961.
+_:b4961 a schema:PostalAddress;
+    schema:streetAddress "Hills Grove";
+    schema:addressRegion "Washington";
+    schema:addressLocality "New Ed";
+    schema:postalCode "27951-0242";
+    schema:addressCountry "Democratic People's Republic of Korea".

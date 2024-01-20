@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brent";
+    schema:familyName "Toy";
+    schema:birthDate "1944-06-11"^^xsd:date;
+    schema:address _:b1771.
+_:b1771 a schema:PostalAddress;
+    schema:streetAddress "Wisoky Club";
+    schema:addressRegion "New York";
+    schema:addressLocality "Port Virgil";
+    schema:postalCode "67557-7749";
+    schema:addressCountry "New Caledonia".

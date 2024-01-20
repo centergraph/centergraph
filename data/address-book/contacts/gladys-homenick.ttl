@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gladys";
+    schema:familyName "Homenick";
+    schema:birthDate "1974-10-28"^^xsd:date;
+    schema:address _:b4816.
+_:b4816 a schema:PostalAddress;
+    schema:streetAddress "E 6th Street";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Lake Avery";
+    schema:postalCode "27763";
+    schema:addressCountry "Australia".

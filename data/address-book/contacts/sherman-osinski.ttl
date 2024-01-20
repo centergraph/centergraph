@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sherman";
+    schema:familyName "Osinski";
+    schema:birthDate "1976-02-07"^^xsd:date;
+    schema:address _:b2481.
+_:b2481 a schema:PostalAddress;
+    schema:streetAddress "Honeysuckle Close";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "West Fay";
+    schema:postalCode "51903";
+    schema:addressCountry "Iran".

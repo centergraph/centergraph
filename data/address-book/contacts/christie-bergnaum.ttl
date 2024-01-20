@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Christie";
+    schema:familyName "Bergnaum";
+    schema:birthDate "1963-06-20"^^xsd:date;
+    schema:address _:b4340.
+_:b4340 a schema:PostalAddress;
+    schema:streetAddress "Elmo Burgs";
+    schema:addressRegion "Texas";
+    schema:addressLocality "North Jett";
+    schema:postalCode "16847";
+    schema:addressCountry "Tajikistan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Todd";
+    schema:familyName "Runte";
+    schema:birthDate "1949-03-25"^^xsd:date;
+    schema:address _:b1697.
+_:b1697 a schema:PostalAddress;
+    schema:streetAddress "Roxanne Court";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Hettingerport";
+    schema:postalCode "35447-5416";
+    schema:addressCountry "Saudi Arabia".

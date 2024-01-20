@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Lee";
     schema:familyName "Morissette";
-    schema:birthDate "1972-09-28"^^xsd:date;
-    schema:address _:b4.
-_:b4 a schema:PostalAddress;
-    schema:streetAddress "Manley Freeway";
-    schema:addressRegion "North Dakota";
-    schema:addressLocality "Andrewcester";
-    schema:postalCode "39887";
-    schema:addressCountry "Ireland".
+    schema:birthDate "1987-07-09"^^xsd:date;
+    schema:address _:b9923.
+_:b9923 a schema:PostalAddress;
+    schema:streetAddress "Lafayette Street";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "East Sageville";
+    schema:postalCode "45929-0478";
+    schema:addressCountry "American Samoa".

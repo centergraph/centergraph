@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Randal";
+    schema:familyName "Kunde";
+    schema:birthDate "1998-01-24"^^xsd:date;
+    schema:address _:b6960.
+_:b6960 a schema:PostalAddress;
+    schema:streetAddress "Alvah Harbors";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Tuscaloosa";
+    schema:postalCode "22116-9802";
+    schema:addressCountry "Turkey".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Isaac";
+    schema:familyName "Lind";
+    schema:birthDate "1989-10-05"^^xsd:date;
+    schema:address _:b1238.
+_:b1238 a schema:PostalAddress;
+    schema:streetAddress "Corkery Valley";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Monahanberg";
+    schema:postalCode "62732";
+    schema:addressCountry "India".

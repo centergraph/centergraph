@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dominick";
+    schema:familyName "Lowe";
+    schema:birthDate "1970-06-03"^^xsd:date;
+    schema:address _:b7265.
+_:b7265 a schema:PostalAddress;
+    schema:streetAddress "Unique Courts";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "North Celestinetown";
+    schema:postalCode "61186-1765";
+    schema:addressCountry "Sierra Leone".

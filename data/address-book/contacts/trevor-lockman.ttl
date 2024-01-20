@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Trevor";
+    schema:familyName "Lockman";
+    schema:birthDate "1975-01-30"^^xsd:date;
+    schema:address _:b4989.
+_:b4989 a schema:PostalAddress;
+    schema:streetAddress "Patricia Parkways";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Tustin";
+    schema:postalCode "95775";
+    schema:addressCountry "Angola".

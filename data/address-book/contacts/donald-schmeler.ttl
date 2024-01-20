@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Donald";
+    schema:familyName "Schmeler";
+    schema:birthDate "1947-04-20"^^xsd:date;
+    schema:address _:b5059.
+_:b5059 a schema:PostalAddress;
+    schema:streetAddress "Huels Knoll";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "New Ianchester";
+    schema:postalCode "19231-8686";
+    schema:addressCountry "India".

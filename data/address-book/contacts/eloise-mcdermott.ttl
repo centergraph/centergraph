@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eloise";
+    schema:familyName "McDermott";
+    schema:birthDate "1963-03-01"^^xsd:date;
+    schema:address _:b2975.
+_:b2975 a schema:PostalAddress;
+    schema:streetAddress "River Street";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "East Nakia";
+    schema:postalCode "37994";
+    schema:addressCountry "Faroe Islands".

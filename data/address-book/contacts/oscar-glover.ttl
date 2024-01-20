@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Oscar";
+    schema:familyName "Glover";
+    schema:birthDate "1998-09-11"^^xsd:date;
+    schema:address _:b4705.
+_:b4705 a schema:PostalAddress;
+    schema:streetAddress "Narciso Burgs";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "East Danteton";
+    schema:postalCode "45481";
+    schema:addressCountry "Lebanon".

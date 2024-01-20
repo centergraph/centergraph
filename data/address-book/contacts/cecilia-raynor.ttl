@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cecilia";
+    schema:familyName "Raynor";
+    schema:birthDate "1986-08-09"^^xsd:date;
+    schema:address _:b8612.
+_:b8612 a schema:PostalAddress;
+    schema:streetAddress "Lorenz Forges";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Fritschshire";
+    schema:postalCode "67936-8537";
+    schema:addressCountry "Bermuda".

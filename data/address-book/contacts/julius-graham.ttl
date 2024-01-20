@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julius";
+    schema:familyName "Graham";
+    schema:birthDate "1989-02-09"^^xsd:date;
+    schema:address _:b5519.
+_:b5519 a schema:PostalAddress;
+    schema:streetAddress "S Franklin Street";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "East Royal";
+    schema:postalCode "05221";
+    schema:addressCountry "Vanuatu".

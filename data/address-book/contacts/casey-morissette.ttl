@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Casey";
+    schema:familyName "Morissette";
+    schema:birthDate "1963-12-21"^^xsd:date;
+    schema:address _:b1427.
+_:b1427 a schema:PostalAddress;
+    schema:streetAddress "Nina Corner";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Natashaberg";
+    schema:postalCode "80808-3876";
+    schema:addressCountry "Armenia".

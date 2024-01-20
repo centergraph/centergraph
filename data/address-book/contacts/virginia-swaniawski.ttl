@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Virginia";
+    schema:familyName "Swaniawski";
+    schema:birthDate "2003-04-08"^^xsd:date;
+    schema:address _:b5312.
+_:b5312 a schema:PostalAddress;
+    schema:streetAddress "Crooks Bridge";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "North Lorenza";
+    schema:postalCode "06640";
+    schema:addressCountry "Kazakhstan".

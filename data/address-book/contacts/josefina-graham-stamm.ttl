@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Josefina";
+    schema:familyName "Graham-Stamm";
+    schema:birthDate "1958-03-26"^^xsd:date;
+    schema:address _:b8472.
+_:b8472 a schema:PostalAddress;
+    schema:streetAddress "Annamae Ridge";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Port Mya";
+    schema:postalCode "87453";
+    schema:addressCountry "Bangladesh".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sara";
+    schema:familyName "Feest";
+    schema:birthDate "1968-10-15"^^xsd:date;
+    schema:address _:b5611.
+_:b5611 a schema:PostalAddress;
+    schema:streetAddress "N 1st Street";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Fort Billie";
+    schema:postalCode "67992-2437";
+    schema:addressCountry "Belarus".

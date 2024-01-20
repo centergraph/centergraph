@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sara";
+    schema:familyName "Carter";
+    schema:birthDate "1949-10-04"^^xsd:date;
+    schema:address _:b6675.
+_:b6675 a schema:PostalAddress;
+    schema:streetAddress "Reilly Harbor";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "East Hardyton";
+    schema:postalCode "08045";
+    schema:addressCountry "San Marino".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Margaret";
+    schema:familyName "Hagenes";
+    schema:birthDate "2005-11-02"^^xsd:date;
+    schema:address _:b330.
+_:b330 a schema:PostalAddress;
+    schema:streetAddress "William Flat";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Port Dollyside";
+    schema:postalCode "00056-6808";
+    schema:addressCountry "Vanuatu".

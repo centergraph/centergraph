@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Orlando";
+    schema:familyName "Hansen";
+    schema:birthDate "1976-12-02"^^xsd:date;
+    schema:address _:b5422.
+_:b5422 a schema:PostalAddress;
+    schema:streetAddress "W Church Street";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Reillystad";
+    schema:postalCode "07660-4700";
+    schema:addressCountry "Burkina Faso".

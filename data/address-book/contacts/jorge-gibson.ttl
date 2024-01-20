@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jorge";
+    schema:familyName "Gibson";
+    schema:birthDate "1977-01-31"^^xsd:date;
+    schema:address _:b3163.
+_:b3163 a schema:PostalAddress;
+    schema:streetAddress "Serenity Land";
+    schema:addressRegion "California";
+    schema:addressLocality "Muellertown";
+    schema:postalCode "09558-2044";
+    schema:addressCountry "Belgium".

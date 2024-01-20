@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Norman";
+    schema:familyName "Simonis";
+    schema:birthDate "1976-08-23"^^xsd:date;
+    schema:address _:b4490.
+_:b4490 a schema:PostalAddress;
+    schema:streetAddress "Zachery Villages";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Zulastad";
+    schema:postalCode "89269";
+    schema:addressCountry "Tajikistan".

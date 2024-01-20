@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lillian";
+    schema:familyName "Nitzsche";
+    schema:birthDate "1944-05-04"^^xsd:date;
+    schema:address _:b3592.
+_:b3592 a schema:PostalAddress;
+    schema:streetAddress "Laurel Close";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Avondale";
+    schema:postalCode "04689";
+    schema:addressCountry "Luxembourg".

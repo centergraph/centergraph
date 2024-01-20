@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Teresa";
+    schema:familyName "Howe";
+    schema:birthDate "1967-09-18"^^xsd:date;
+    schema:address _:b9664.
+_:b9664 a schema:PostalAddress;
+    schema:streetAddress "Fay Spring";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Johnstonville";
+    schema:postalCode "96830-4915";
+    schema:addressCountry "Namibia".

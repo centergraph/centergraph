@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vivian";
+    schema:familyName "Kuvalis";
+    schema:birthDate "1984-07-27"^^xsd:date;
+    schema:address _:b8717.
+_:b8717 a schema:PostalAddress;
+    schema:streetAddress "The Hawthorns";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Davisstead";
+    schema:postalCode "41352-4950";
+    schema:addressCountry "Italy".

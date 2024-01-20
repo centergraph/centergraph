@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Victoria";
+    schema:familyName "Tremblay";
+    schema:birthDate "1946-06-06"^^xsd:date;
+    schema:address _:b5512.
+_:b5512 a schema:PostalAddress;
+    schema:streetAddress "Cemetery Road";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "East Gerdaworth";
+    schema:postalCode "00212-2314";
+    schema:addressCountry "Suriname".

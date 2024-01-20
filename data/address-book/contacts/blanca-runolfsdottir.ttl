@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Blanca";
+    schema:familyName "Runolfsdottir";
+    schema:birthDate "1979-02-25"^^xsd:date;
+    schema:address _:b4778.
+_:b4778 a schema:PostalAddress;
+    schema:streetAddress "South View";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Chesapeake";
+    schema:postalCode "61212-9819";
+    schema:addressCountry "Nigeria".

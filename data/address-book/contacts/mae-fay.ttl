@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mae";
+    schema:familyName "Fay";
+    schema:birthDate "1985-01-21"^^xsd:date;
+    schema:address _:b2369.
+_:b2369 a schema:PostalAddress;
+    schema:streetAddress "N 3rd Street";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "West Palm Beach";
+    schema:postalCode "88461-0921";
+    schema:addressCountry "Montserrat".

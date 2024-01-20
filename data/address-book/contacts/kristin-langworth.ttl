@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristin";
+    schema:familyName "Langworth";
+    schema:birthDate "1951-07-13"^^xsd:date;
+    schema:address _:b6300.
+_:b6300 a schema:PostalAddress;
+    schema:streetAddress "Ora Skyway";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Lakinburgh";
+    schema:postalCode "98362";
+    schema:addressCountry "Andorra".

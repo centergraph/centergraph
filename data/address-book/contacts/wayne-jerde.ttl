@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wayne";
+    schema:familyName "Jerde";
+    schema:birthDate "1975-03-04"^^xsd:date;
+    schema:address _:b4023.
+_:b4023 a schema:PostalAddress;
+    schema:streetAddress "Willms Fords";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "West Curtisborough";
+    schema:postalCode "32528-9727";
+    schema:addressCountry "Kenya".

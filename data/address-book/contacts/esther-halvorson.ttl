@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Esther";
+    schema:familyName "Halvorson";
+    schema:birthDate "2002-01-02"^^xsd:date;
+    schema:address _:b371.
+_:b371 a schema:PostalAddress;
+    schema:streetAddress "Dicki Gateway";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Laceyport";
+    schema:postalCode "20636";
+    schema:addressCountry "Tuvalu".

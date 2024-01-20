@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elijah";
+    schema:familyName "Auer-Raynor";
+    schema:birthDate "1962-08-08"^^xsd:date;
+    schema:address _:b8024.
+_:b8024 a schema:PostalAddress;
+    schema:streetAddress "Shawna Throughway";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "East Jedediahton";
+    schema:postalCode "16369-4916";
+    schema:addressCountry "Thailand".

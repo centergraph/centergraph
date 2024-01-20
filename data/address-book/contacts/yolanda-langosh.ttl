@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Yolanda";
+    schema:familyName "Langosh";
+    schema:birthDate "1982-10-28"^^xsd:date;
+    schema:address _:b7082.
+_:b7082 a schema:PostalAddress;
+    schema:streetAddress "Station Street";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Abernathyland";
+    schema:postalCode "40921";
+    schema:addressCountry "Central African Republic".

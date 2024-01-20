@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cesar";
+    schema:familyName "O'Hara";
+    schema:birthDate "1997-04-03"^^xsd:date;
+    schema:address _:b5087.
+_:b5087 a schema:PostalAddress;
+    schema:streetAddress "Carmela Views";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Gulfport";
+    schema:postalCode "03806-1749";
+    schema:addressCountry "Zambia".

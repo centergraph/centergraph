@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erica";
+    schema:familyName "Konopelski";
+    schema:birthDate "1969-06-16"^^xsd:date;
+    schema:address _:b708.
+_:b708 a schema:PostalAddress;
+    schema:streetAddress "Cyrus Spurs";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "South Jovanny";
+    schema:postalCode "36896-9793";
+    schema:addressCountry "Iraq".

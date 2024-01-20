@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ernest";
+    schema:familyName "Borer";
+    schema:birthDate "1995-10-26"^^xsd:date;
+    schema:address _:b5535.
+_:b5535 a schema:PostalAddress;
+    schema:streetAddress "Johnson Plain";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Towson";
+    schema:postalCode "02572-2155";
+    schema:addressCountry "Albania".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dustin";
+    schema:familyName "Veum";
+    schema:birthDate "1981-08-30"^^xsd:date;
+    schema:address _:b2414.
+_:b2414 a schema:PostalAddress;
+    schema:streetAddress "Wiza Mountains";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "North Teresa";
+    schema:postalCode "83230";
+    schema:addressCountry "Guam".

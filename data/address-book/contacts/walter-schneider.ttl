@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Walter";
+    schema:familyName "Schneider";
+    schema:birthDate "1995-08-26"^^xsd:date;
+    schema:address _:b224.
+_:b224 a schema:PostalAddress;
+    schema:streetAddress "Jennie Manors";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Fort Verniceside";
+    schema:postalCode "56333-7656";
+    schema:addressCountry "Central African Republic".

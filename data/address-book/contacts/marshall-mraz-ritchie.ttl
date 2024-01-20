@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marshall";
+    schema:familyName "Mraz-Ritchie";
+    schema:birthDate "1982-10-10"^^xsd:date;
+    schema:address _:b6131.
+_:b6131 a schema:PostalAddress;
+    schema:streetAddress "Jerel Village";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Port Casimer";
+    schema:postalCode "18502-9184";
+    schema:addressCountry "Cocos (Keeling) Islands".

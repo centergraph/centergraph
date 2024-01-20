@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelley";
+    schema:familyName "Senger";
+    schema:birthDate "1993-10-29"^^xsd:date;
+    schema:address _:b6135.
+_:b6135 a schema:PostalAddress;
+    schema:streetAddress "Forest Cliff";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "South Sterlingcester";
+    schema:postalCode "12829-2185";
+    schema:addressCountry "Nigeria".

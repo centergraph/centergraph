@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sherman";
+    schema:familyName "Okuneva";
+    schema:birthDate "1977-11-08"^^xsd:date;
+    schema:address _:b5556.
+_:b5556 a schema:PostalAddress;
+    schema:streetAddress "Grant Run";
+    schema:addressRegion "New York";
+    schema:addressLocality "Haileymouth";
+    schema:postalCode "50412-0344";
+    schema:addressCountry "Costa Rica".

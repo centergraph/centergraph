@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Yvonne";
+    schema:familyName "Douglas";
+    schema:birthDate "1972-04-27"^^xsd:date;
+    schema:address _:b5078.
+_:b5078 a schema:PostalAddress;
+    schema:streetAddress "Abbey Creek";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Cranston";
+    schema:postalCode "42414";
+    schema:addressCountry "Colombia".

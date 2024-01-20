@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julian";
+    schema:familyName "Huel";
+    schema:birthDate "1991-08-20"^^xsd:date;
+    schema:address _:b7387.
+_:b7387 a schema:PostalAddress;
+    schema:streetAddress "Ressie Isle";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Fort Enosview";
+    schema:postalCode "84084-4773";
+    schema:addressCountry "Slovakia".

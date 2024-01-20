@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Patti";
+    schema:familyName "Langosh";
+    schema:birthDate "1947-08-05"^^xsd:date;
+    schema:address _:b7114.
+_:b7114 a schema:PostalAddress;
+    schema:streetAddress "Lodge Close";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Claudiacester";
+    schema:postalCode "56843-0580";
+    schema:addressCountry "Tuvalu".

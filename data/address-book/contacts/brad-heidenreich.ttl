@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brad";
+    schema:familyName "Heidenreich";
+    schema:birthDate "2000-09-11"^^xsd:date;
+    schema:address _:b2622.
+_:b2622 a schema:PostalAddress;
+    schema:streetAddress "Stephania Lights";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Kuhicborough";
+    schema:postalCode "32498-2097";
+    schema:addressCountry "Bolivia".

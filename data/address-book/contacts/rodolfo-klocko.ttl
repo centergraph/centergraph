@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rodolfo";
+    schema:familyName "Klocko";
+    schema:birthDate "1967-08-11"^^xsd:date;
+    schema:address _:b6813.
+_:b6813 a schema:PostalAddress;
+    schema:streetAddress "Broadway Street";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "East Meagan";
+    schema:postalCode "93371";
+    schema:addressCountry "Ireland".

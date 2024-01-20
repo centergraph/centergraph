@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Michele";
+    schema:familyName "Swift";
+    schema:birthDate "1946-01-05"^^xsd:date;
+    schema:address _:b5980.
+_:b5980 a schema:PostalAddress;
+    schema:streetAddress "Okuneva Ridges";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Stamford";
+    schema:postalCode "94535";
+    schema:addressCountry "Georgia".

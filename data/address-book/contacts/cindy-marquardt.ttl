@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cindy";
+    schema:familyName "Marquardt";
+    schema:birthDate "1999-04-13"^^xsd:date;
+    schema:address _:b9960.
+_:b9960 a schema:PostalAddress;
+    schema:streetAddress "Hope Extensions";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Wildermanbury";
+    schema:postalCode "31856";
+    schema:addressCountry "Israel".

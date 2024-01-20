@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ann";
+    schema:familyName "Ebert";
+    schema:birthDate "1947-09-11"^^xsd:date;
+    schema:address _:b5946.
+_:b5946 a schema:PostalAddress;
+    schema:streetAddress "Sydney Hollow";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Xandermouth";
+    schema:postalCode "71032";
+    schema:addressCountry "Ecuador".

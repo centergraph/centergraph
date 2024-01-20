@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edmond";
+    schema:familyName "Buckridge";
+    schema:birthDate "1981-09-04"^^xsd:date;
+    schema:address _:b5280.
+_:b5280 a schema:PostalAddress;
+    schema:streetAddress "Jordon Neck";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Lake Rosaliaworth";
+    schema:postalCode "84766-4014";
+    schema:addressCountry "Ireland".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Claudia";
+    schema:familyName "Christiansen";
+    schema:birthDate "1999-01-22"^^xsd:date;
+    schema:address _:b5318.
+_:b5318 a schema:PostalAddress;
+    schema:streetAddress "Vandervort Route";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Fort Nasirton";
+    schema:postalCode "20641-8843";
+    schema:addressCountry "British Indian Ocean Territory (Chagos Archipelago)".

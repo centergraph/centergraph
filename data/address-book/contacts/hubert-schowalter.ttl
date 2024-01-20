@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hubert";
+    schema:familyName "Schowalter";
+    schema:birthDate "1985-11-09"^^xsd:date;
+    schema:address _:b3230.
+_:b3230 a schema:PostalAddress;
+    schema:streetAddress "Garden Close";
+    schema:addressRegion "Florida";
+    schema:addressLocality "East Carlo";
+    schema:postalCode "92198";
+    schema:addressCountry "Cocos (Keeling) Islands".

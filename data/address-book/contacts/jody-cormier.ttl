@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jody";
+    schema:familyName "Cormier";
+    schema:birthDate "1972-08-26"^^xsd:date;
+    schema:address _:b898.
+_:b898 a schema:PostalAddress;
+    schema:streetAddress "Verona Harbor";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Herzogstad";
+    schema:postalCode "40012";
+    schema:addressCountry "Cote d'Ivoire".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eva";
+    schema:familyName "Bayer";
+    schema:birthDate "1962-09-08"^^xsd:date;
+    schema:address _:b12.
+_:b12 a schema:PostalAddress;
+    schema:streetAddress "Bogisich Via";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Diamond Bar";
+    schema:postalCode "55720-1605";
+    schema:addressCountry "El Salvador".

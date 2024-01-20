@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clark";
+    schema:familyName "Hammes";
+    schema:birthDate "1958-05-31"^^xsd:date;
+    schema:address _:b3021.
+_:b3021 a schema:PostalAddress;
+    schema:streetAddress "Birch Avenue";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Mertieburgh";
+    schema:postalCode "25502";
+    schema:addressCountry "Holy See (Vatican City State)".

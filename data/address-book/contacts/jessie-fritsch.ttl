@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jessie";
+    schema:familyName "Fritsch";
+    schema:birthDate "1958-01-14"^^xsd:date;
+    schema:address _:b8453.
+_:b8453 a schema:PostalAddress;
+    schema:streetAddress "Kassulke Pass";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Eileenburgh";
+    schema:postalCode "76775";
+    schema:addressCountry "British Indian Ocean Territory (Chagos Archipelago)".

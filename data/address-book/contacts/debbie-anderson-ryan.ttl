@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Debbie";
+    schema:familyName "Anderson-Ryan";
+    schema:birthDate "1959-12-09"^^xsd:date;
+    schema:address _:b4814.
+_:b4814 a schema:PostalAddress;
+    schema:streetAddress "Ferry Forks";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Austenfurt";
+    schema:postalCode "94622-4352";
+    schema:addressCountry "Aruba".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terrell";
+    schema:familyName "Kunze";
+    schema:birthDate "1946-10-22"^^xsd:date;
+    schema:address _:b1356.
+_:b1356 a schema:PostalAddress;
+    schema:streetAddress "Adams Avenue";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "West Maehaven";
+    schema:postalCode "13888";
+    schema:addressCountry "Mali".

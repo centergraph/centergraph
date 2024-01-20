@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Krystal";
+    schema:familyName "VonRueden";
+    schema:birthDate "1963-04-29"^^xsd:date;
+    schema:address _:b1673.
+_:b1673 a schema:PostalAddress;
+    schema:streetAddress "N 4th Street";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "West Geo";
+    schema:postalCode "08238-1505";
+    schema:addressCountry "Republic of Korea".

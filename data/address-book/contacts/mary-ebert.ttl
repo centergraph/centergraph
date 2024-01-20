@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mary";
+    schema:familyName "Ebert";
+    schema:birthDate "1969-08-01"^^xsd:date;
+    schema:address _:b5822.
+_:b5822 a schema:PostalAddress;
+    schema:streetAddress "Feil Spring";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Dawsonton";
+    schema:postalCode "76257";
+    schema:addressCountry "Sao Tome and Principe".

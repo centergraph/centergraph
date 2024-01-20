@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Grace";
+    schema:familyName "Hane";
+    schema:birthDate "2002-09-15"^^xsd:date;
+    schema:address _:b2669.
+_:b2669 a schema:PostalAddress;
+    schema:streetAddress "Murray Dale";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Fort Dariohaven";
+    schema:postalCode "50627";
+    schema:addressCountry "Uruguay".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Latoya";
+    schema:familyName "Schultz-Abernathy";
+    schema:birthDate "1992-04-02"^^xsd:date;
+    schema:address _:b7246.
+_:b7246 a schema:PostalAddress;
+    schema:streetAddress "George Street";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Denesikfurt";
+    schema:postalCode "82872-7126";
+    schema:addressCountry "Tonga".

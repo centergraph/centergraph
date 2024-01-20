@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cesar";
+    schema:familyName "Stiedemann";
+    schema:birthDate "1982-04-15"^^xsd:date;
+    schema:address _:b9362.
+_:b9362 a schema:PostalAddress;
+    schema:streetAddress "Kingfisher Close";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Bergstromville";
+    schema:postalCode "26916";
+    schema:addressCountry "Gabon".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Irvin";
+    schema:familyName "Boehm";
+    schema:birthDate "1970-03-09"^^xsd:date;
+    schema:address _:b2610.
+_:b2610 a schema:PostalAddress;
+    schema:streetAddress "Jessika Flats";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Hamilton";
+    schema:postalCode "10034-2313";
+    schema:addressCountry "Northern Mariana Islands".

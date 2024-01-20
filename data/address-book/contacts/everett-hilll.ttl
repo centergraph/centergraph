@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Everett";
+    schema:familyName "Hilll";
+    schema:birthDate "1949-08-23"^^xsd:date;
+    schema:address _:b9966.
+_:b9966 a schema:PostalAddress;
+    schema:streetAddress "State Avenue";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "North Tyresechester";
+    schema:postalCode "35332";
+    schema:addressCountry "Paraguay".

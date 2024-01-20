@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rodolfo";
+    schema:familyName "Moore";
+    schema:birthDate "1980-04-18"^^xsd:date;
+    schema:address _:b3155.
+_:b3155 a schema:PostalAddress;
+    schema:streetAddress "Reichel Port";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Strackestad";
+    schema:postalCode "64637-4014";
+    schema:addressCountry "Kuwait".

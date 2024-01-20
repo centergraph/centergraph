@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wilson";
+    schema:familyName "Berge";
+    schema:birthDate "1993-05-15"^^xsd:date;
+    schema:address _:b1194.
+_:b1194 a schema:PostalAddress;
+    schema:streetAddress "Park Lane";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Alicehaven";
+    schema:postalCode "37435-1270";
+    schema:addressCountry "Barbados".

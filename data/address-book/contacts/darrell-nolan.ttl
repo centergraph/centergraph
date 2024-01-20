@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darrell";
+    schema:familyName "Nolan";
+    schema:birthDate "2005-10-11"^^xsd:date;
+    schema:address _:b9204.
+_:b9204 a schema:PostalAddress;
+    schema:streetAddress "Hodkiewicz Rue";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Fort Boyd";
+    schema:postalCode "39713-4880";
+    schema:addressCountry "Portugal".

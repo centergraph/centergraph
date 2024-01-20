@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Minnie";
+    schema:familyName "Cole";
+    schema:birthDate "1960-03-17"^^xsd:date;
+    schema:address _:b4710.
+_:b4710 a schema:PostalAddress;
+    schema:streetAddress "Runolfsson Coves";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Joseberg";
+    schema:postalCode "80879";
+    schema:addressCountry "Sudan".

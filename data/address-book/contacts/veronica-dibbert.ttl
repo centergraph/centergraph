@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Veronica";
+    schema:familyName "Dibbert";
+    schema:birthDate "1945-04-10"^^xsd:date;
+    schema:address _:b6017.
+_:b6017 a schema:PostalAddress;
+    schema:streetAddress "Trantow Cove";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "West Dandreberg";
+    schema:postalCode "16351-1095";
+    schema:addressCountry "San Marino".

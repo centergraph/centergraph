@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leroy";
+    schema:familyName "Daniel";
+    schema:birthDate "1992-05-21"^^xsd:date;
+    schema:address _:b4075.
+_:b4075 a schema:PostalAddress;
+    schema:streetAddress "Auer Parks";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "East Lillian";
+    schema:postalCode "74369";
+    schema:addressCountry "Turkmenistan".

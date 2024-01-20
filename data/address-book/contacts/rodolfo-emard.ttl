@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rodolfo";
+    schema:familyName "Emard";
+    schema:birthDate "1993-12-30"^^xsd:date;
+    schema:address _:b8925.
+_:b8925 a schema:PostalAddress;
+    schema:streetAddress "Clarence Road";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Fidelmouth";
+    schema:postalCode "88413-7826";
+    schema:addressCountry "Lithuania".

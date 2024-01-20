@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bennie";
+    schema:familyName "Donnelly";
+    schema:birthDate "1972-01-21"^^xsd:date;
+    schema:address _:b7367.
+_:b7367 a schema:PostalAddress;
+    schema:streetAddress "Krajcik Road";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Port Jamel";
+    schema:postalCode "63425";
+    schema:addressCountry "Ghana".

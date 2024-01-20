@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jan";
+    schema:familyName "Hartmann";
+    schema:birthDate "1989-11-06"^^xsd:date;
+    schema:address _:b7728.
+_:b7728 a schema:PostalAddress;
+    schema:streetAddress "Lake Street";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "South Cruzton";
+    schema:postalCode "71571";
+    schema:addressCountry "Myanmar".

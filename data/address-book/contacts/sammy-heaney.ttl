@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sammy";
+    schema:familyName "Heaney";
+    schema:birthDate "1975-10-13"^^xsd:date;
+    schema:address _:b553.
+_:b553 a schema:PostalAddress;
+    schema:streetAddress "Kohler Passage";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "West Elinor";
+    schema:postalCode "89917";
+    schema:addressCountry "Martinique".

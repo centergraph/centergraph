@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tom";
+    schema:familyName "Predovic";
+    schema:birthDate "1952-01-19"^^xsd:date;
+    schema:address _:b6278.
+_:b6278 a schema:PostalAddress;
+    schema:streetAddress "Matteo Estates";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Gabemouth";
+    schema:postalCode "50698-2475";
+    schema:addressCountry "Bangladesh".

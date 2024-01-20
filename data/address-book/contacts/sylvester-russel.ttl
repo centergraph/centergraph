@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sylvester";
+    schema:familyName "Russel";
+    schema:birthDate "1951-11-13"^^xsd:date;
+    schema:address _:b878.
+_:b878 a schema:PostalAddress;
+    schema:streetAddress "Annie Mountains";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Haltom City";
+    schema:postalCode "85803-0534";
+    schema:addressCountry "Syrian Arab Republic".

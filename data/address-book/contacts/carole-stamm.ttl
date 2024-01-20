@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carole";
+    schema:familyName "Stamm";
+    schema:birthDate "2003-06-24"^^xsd:date;
+    schema:address _:b2779.
+_:b2779 a schema:PostalAddress;
+    schema:streetAddress "Stroman Mount";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Fort Dangelo";
+    schema:postalCode "38372";
+    schema:addressCountry "Faroe Islands".

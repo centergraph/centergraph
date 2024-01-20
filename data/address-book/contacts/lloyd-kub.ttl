@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lloyd";
+    schema:familyName "Kub";
+    schema:birthDate "1983-12-16"^^xsd:date;
+    schema:address _:b8317.
+_:b8317 a schema:PostalAddress;
+    schema:streetAddress "Barton Ridge";
+    schema:addressRegion "New York";
+    schema:addressLocality "Arnoldoton";
+    schema:postalCode "19091";
+    schema:addressCountry "Northern Mariana Islands".

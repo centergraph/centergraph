@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brandy";
+    schema:familyName "Kunde";
+    schema:birthDate "1955-07-22"^^xsd:date;
+    schema:address _:b9552.
+_:b9552 a schema:PostalAddress;
+    schema:streetAddress "The Fairway";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Dareworth";
+    schema:postalCode "84058-4317";
+    schema:addressCountry "Bosnia and Herzegovina".

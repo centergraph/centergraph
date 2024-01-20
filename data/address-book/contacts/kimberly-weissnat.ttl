@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kimberly";
+    schema:familyName "Weissnat";
+    schema:birthDate "1997-09-21"^^xsd:date;
+    schema:address _:b403.
+_:b403 a schema:PostalAddress;
+    schema:streetAddress "Buckingham Road";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Fort Justonhaven";
+    schema:postalCode "04201-9324";
+    schema:addressCountry "Democratic Republic of the Congo".

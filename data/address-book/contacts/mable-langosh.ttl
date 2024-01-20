@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mable";
+    schema:familyName "Langosh";
+    schema:birthDate "1976-04-17"^^xsd:date;
+    schema:address _:b2306.
+_:b2306 a schema:PostalAddress;
+    schema:streetAddress "Lake Drive";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "West Malliebury";
+    schema:postalCode "05221-7102";
+    schema:addressCountry "New Caledonia".

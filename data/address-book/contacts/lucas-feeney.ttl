@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lucas";
+    schema:familyName "Feeney";
+    schema:birthDate "1947-05-09"^^xsd:date;
+    schema:address _:b2659.
+_:b2659 a schema:PostalAddress;
+    schema:streetAddress "Angela Place";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "New Delbertshire";
+    schema:postalCode "76407-1430";
+    schema:addressCountry "Puerto Rico".

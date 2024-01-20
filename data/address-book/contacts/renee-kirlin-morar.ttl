@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Renee";
+    schema:familyName "Kirlin-Morar";
+    schema:birthDate "1989-06-01"^^xsd:date;
+    schema:address _:b6275.
+_:b6275 a schema:PostalAddress;
+    schema:streetAddress "Hyatt Center";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "West Jaylonberg";
+    schema:postalCode "88180";
+    schema:addressCountry "Bolivia".

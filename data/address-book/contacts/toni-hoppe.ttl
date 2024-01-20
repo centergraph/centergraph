@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Toni";
+    schema:familyName "Hoppe";
+    schema:birthDate "2002-01-21"^^xsd:date;
+    schema:address _:b4656.
+_:b4656 a schema:PostalAddress;
+    schema:streetAddress "Stoltenberg Walk";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "East Emie";
+    schema:postalCode "60720";
+    schema:addressCountry "Vietnam".

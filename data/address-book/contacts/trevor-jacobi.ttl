@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Trevor";
+    schema:familyName "Jacobi";
+    schema:birthDate "1990-03-17"^^xsd:date;
+    schema:address _:b2638.
+_:b2638 a schema:PostalAddress;
+    schema:streetAddress "Kyra Branch";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Lake Reannabury";
+    schema:postalCode "68893-1336";
+    schema:addressCountry "Austria".

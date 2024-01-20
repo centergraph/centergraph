@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lisa";
+    schema:familyName "Breitenberg";
+    schema:birthDate "1973-03-22"^^xsd:date;
+    schema:address _:b4184.
+_:b4184 a schema:PostalAddress;
+    schema:streetAddress "Mill Close";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Port Malachiborough";
+    schema:postalCode "70311";
+    schema:addressCountry "Georgia".

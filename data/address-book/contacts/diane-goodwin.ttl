@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Diane";
+    schema:familyName "Goodwin";
+    schema:birthDate "1998-07-17"^^xsd:date;
+    schema:address _:b612.
+_:b612 a schema:PostalAddress;
+    schema:streetAddress "Ashleigh Pines";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Cummerataland";
+    schema:postalCode "07559";
+    schema:addressCountry "Belgium".

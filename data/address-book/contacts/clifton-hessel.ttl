@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clifton";
+    schema:familyName "Hessel";
+    schema:birthDate "1994-08-15"^^xsd:date;
+    schema:address _:b1375.
+_:b1375 a schema:PostalAddress;
+    schema:streetAddress "Sabina Well";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "New Nicholaus";
+    schema:postalCode "89926-3797";
+    schema:addressCountry "Comoros".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sue";
+    schema:familyName "Hand";
+    schema:birthDate "2001-07-09"^^xsd:date;
+    schema:address _:b616.
+_:b616 a schema:PostalAddress;
+    schema:streetAddress "Gusikowski Falls";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Caspermouth";
+    schema:postalCode "79957";
+    schema:addressCountry "American Samoa".

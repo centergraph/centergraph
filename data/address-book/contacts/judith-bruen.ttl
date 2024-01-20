@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Judith";
+    schema:familyName "Bruen";
+    schema:birthDate "1979-11-01"^^xsd:date;
+    schema:address _:b4200.
+_:b4200 a schema:PostalAddress;
+    schema:streetAddress "Jake Crossroad";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "East Vaughnview";
+    schema:postalCode "25043";
+    schema:addressCountry "Kenya".

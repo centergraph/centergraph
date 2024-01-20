@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dennis";
+    schema:familyName "Dare";
+    schema:birthDate "1992-01-13"^^xsd:date;
+    schema:address _:b8719.
+_:b8719 a schema:PostalAddress;
+    schema:streetAddress "Lea Stream";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Boulder";
+    schema:postalCode "44463-0817";
+    schema:addressCountry "Austria".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terence";
+    schema:familyName "Lang";
+    schema:birthDate "1957-10-23"^^xsd:date;
+    schema:address _:b8052.
+_:b8052 a schema:PostalAddress;
+    schema:streetAddress "Julio Shores";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Lake Samirstead";
+    schema:postalCode "12808";
+    schema:addressCountry "Belize".

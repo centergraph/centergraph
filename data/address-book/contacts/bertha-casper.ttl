@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bertha";
+    schema:familyName "Casper";
+    schema:birthDate "1962-10-30"^^xsd:date;
+    schema:address _:b5068.
+_:b5068 a schema:PostalAddress;
+    schema:streetAddress "Harvey Harbor";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Herthachester";
+    schema:postalCode "18328-3923";
+    schema:addressCountry "Palestine".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Geneva";
+    schema:familyName "Mosciski";
+    schema:birthDate "1963-09-11"^^xsd:date;
+    schema:address _:b6058.
+_:b6058 a schema:PostalAddress;
+    schema:streetAddress "Electa Fort";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Lake Anyaville";
+    schema:postalCode "70255";
+    schema:addressCountry "Gabon".

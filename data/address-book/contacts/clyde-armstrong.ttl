@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clyde";
+    schema:familyName "Armstrong";
+    schema:birthDate "1987-10-16"^^xsd:date;
+    schema:address _:b6979.
+_:b6979 a schema:PostalAddress;
+    schema:streetAddress "Ellen Forge";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Fort Worth";
+    schema:postalCode "30528";
+    schema:addressCountry "Greenland".

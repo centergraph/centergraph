@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joy";
+    schema:familyName "Bosco";
+    schema:birthDate "1966-11-14"^^xsd:date;
+    schema:address _:b7302.
+_:b7302 a schema:PostalAddress;
+    schema:streetAddress "Metz Roads";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Jeromychester";
+    schema:postalCode "66293-5360";
+    schema:addressCountry "Palestine".

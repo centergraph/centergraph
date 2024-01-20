@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Anita";
+    schema:familyName "Donnelly";
+    schema:birthDate "1989-11-06"^^xsd:date;
+    schema:address _:b1364.
+_:b1364 a schema:PostalAddress;
+    schema:streetAddress "Miracle Flat";
+    schema:addressRegion "California";
+    schema:addressLocality "Vonburgh";
+    schema:postalCode "43611-4645";
+    schema:addressCountry "Kenya".

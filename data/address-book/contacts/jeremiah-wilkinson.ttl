@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeremiah";
+    schema:familyName "Wilkinson";
+    schema:birthDate "1980-10-11"^^xsd:date;
+    schema:address _:b4833.
+_:b4833 a schema:PostalAddress;
+    schema:streetAddress "Breanna Vista";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "West Isabelle";
+    schema:postalCode "87635";
+    schema:addressCountry "Armenia".

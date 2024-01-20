@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wendell";
+    schema:familyName "Gleason";
+    schema:birthDate "1954-02-09"^^xsd:date;
+    schema:address _:b5687.
+_:b5687 a schema:PostalAddress;
+    schema:streetAddress "The Ridgeway";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "South Eloisa";
+    schema:postalCode "19253";
+    schema:addressCountry "Afghanistan".

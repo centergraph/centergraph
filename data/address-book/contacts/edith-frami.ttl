@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edith";
+    schema:familyName "Frami";
+    schema:birthDate "1979-02-07"^^xsd:date;
+    schema:address _:b6182.
+_:b6182 a schema:PostalAddress;
+    schema:streetAddress "The Mount";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Rowlett";
+    schema:postalCode "79064";
+    schema:addressCountry "Uruguay".

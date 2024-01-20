@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shawn";
+    schema:familyName "Reichert";
+    schema:birthDate "1970-04-13"^^xsd:date;
+    schema:address _:b6744.
+_:b6744 a schema:PostalAddress;
+    schema:streetAddress "Altenwerth Locks";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Kesslerville";
+    schema:postalCode "63583";
+    schema:addressCountry "Namibia".

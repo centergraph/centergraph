@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Natasha";
+    schema:familyName "Ullrich";
+    schema:birthDate "1966-08-21"^^xsd:date;
+    schema:address _:b3530.
+_:b3530 a schema:PostalAddress;
+    schema:streetAddress "W 4th Avenue";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Hilo";
+    schema:postalCode "84066";
+    schema:addressCountry "Solomon Islands".

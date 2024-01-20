@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bruce";
+    schema:familyName "Block";
+    schema:birthDate "1961-08-18"^^xsd:date;
+    schema:address _:b9553.
+_:b9553 a schema:PostalAddress;
+    schema:streetAddress "Angelo Forges";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "East Robert";
+    schema:postalCode "12551-9468";
+    schema:addressCountry "Hong Kong".

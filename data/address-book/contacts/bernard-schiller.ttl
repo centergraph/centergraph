@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bernard";
+    schema:familyName "Schiller";
+    schema:birthDate "1991-06-15"^^xsd:date;
+    schema:address _:b3205.
+_:b3205 a schema:PostalAddress;
+    schema:streetAddress "Second Avenue";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Kautzershire";
+    schema:postalCode "38730";
+    schema:addressCountry "South Sudan".

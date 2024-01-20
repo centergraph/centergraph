@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Steve";
+    schema:familyName "Hudson";
+    schema:birthDate "1993-07-25"^^xsd:date;
+    schema:address _:b5984.
+_:b5984 a schema:PostalAddress;
+    schema:streetAddress "Stroman Glen";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Port Leonor";
+    schema:postalCode "23647-6748";
+    schema:addressCountry "Anguilla".

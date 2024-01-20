@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Martin";
+    schema:familyName "Beahan";
+    schema:birthDate "1983-03-12"^^xsd:date;
+    schema:address _:b9111.
+_:b9111 a schema:PostalAddress;
+    schema:streetAddress "O'Reilly Divide";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "West Stephanfurt";
+    schema:postalCode "18851-9116";
+    schema:addressCountry "Democratic Republic of the Congo".

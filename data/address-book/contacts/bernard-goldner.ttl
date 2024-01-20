@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bernard";
+    schema:familyName "Goldner";
+    schema:birthDate "1998-11-18"^^xsd:date;
+    schema:address _:b3116.
+_:b3116 a schema:PostalAddress;
+    schema:streetAddress "Chelsea Corner";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "St. Louis";
+    schema:postalCode "48622-8270";
+    schema:addressCountry "Serbia".

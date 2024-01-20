@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kimberly";
+    schema:familyName "Barton";
+    schema:birthDate "1978-05-03"^^xsd:date;
+    schema:address _:b7883.
+_:b7883 a schema:PostalAddress;
+    schema:streetAddress "Harvey Tunnel";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Mitchellstad";
+    schema:postalCode "78423-8306";
+    schema:addressCountry "Ukraine".

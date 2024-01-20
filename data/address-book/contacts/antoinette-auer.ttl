@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Antoinette";
+    schema:familyName "Auer";
+    schema:birthDate "2002-01-29"^^xsd:date;
+    schema:address _:b9436.
+_:b9436 a schema:PostalAddress;
+    schema:streetAddress "N Oak Street";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "North Keon";
+    schema:postalCode "48966";
+    schema:addressCountry "Singapore".

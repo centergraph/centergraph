@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lamar";
+    schema:familyName "Hilll-Harber";
+    schema:birthDate "1983-02-16"^^xsd:date;
+    schema:address _:b9481.
+_:b9481 a schema:PostalAddress;
+    schema:streetAddress "Pansy Ranch";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "North Jensen";
+    schema:postalCode "09706";
+    schema:addressCountry "Syrian Arab Republic".

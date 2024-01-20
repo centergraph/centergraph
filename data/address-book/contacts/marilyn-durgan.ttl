@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marilyn";
+    schema:familyName "Durgan";
+    schema:birthDate "1977-09-14"^^xsd:date;
+    schema:address _:b9618.
+_:b9618 a schema:PostalAddress;
+    schema:streetAddress "Goyette Turnpike";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "South Jacquesburgh";
+    schema:postalCode "32970";
+    schema:addressCountry "Lao People's Democratic Republic".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hector";
+    schema:familyName "Ledner";
+    schema:birthDate "1996-08-16"^^xsd:date;
+    schema:address _:b1467.
+_:b1467 a schema:PostalAddress;
+    schema:streetAddress "Gusikowski Green";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Trentonchester";
+    schema:postalCode "96575-0540";
+    schema:addressCountry "Madagascar".

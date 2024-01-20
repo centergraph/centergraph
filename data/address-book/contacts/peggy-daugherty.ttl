@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Peggy";
+    schema:familyName "Daugherty";
+    schema:birthDate "1995-11-26"^^xsd:date;
+    schema:address _:b8778.
+_:b8778 a schema:PostalAddress;
+    schema:streetAddress "S Water Street";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Bartoncester";
+    schema:postalCode "80034";
+    schema:addressCountry "Liberia".

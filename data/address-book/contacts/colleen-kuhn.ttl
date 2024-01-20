@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Colleen";
+    schema:familyName "Kuhn";
+    schema:birthDate "1965-04-25"^^xsd:date;
+    schema:address _:b1431.
+_:b1431 a schema:PostalAddress;
+    schema:streetAddress "Blanda Motorway";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Floyport";
+    schema:postalCode "11386-9911";
+    schema:addressCountry "Republic of Korea".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sylvester";
+    schema:familyName "Balistreri";
+    schema:birthDate "1965-04-03"^^xsd:date;
+    schema:address _:b187.
+_:b187 a schema:PostalAddress;
+    schema:streetAddress "Ignatius Ramp";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Lombard";
+    schema:postalCode "51460";
+    schema:addressCountry "Paraguay".

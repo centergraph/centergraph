@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Theodore";
+    schema:familyName "McLaughlin";
+    schema:birthDate "1951-10-27"^^xsd:date;
+    schema:address _:b4337.
+_:b4337 a schema:PostalAddress;
+    schema:streetAddress "Heidenreich Motorway";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Rippinborough";
+    schema:postalCode "91480";
+    schema:addressCountry "Cambodia".

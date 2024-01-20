@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eva";
+    schema:familyName "Berge";
+    schema:birthDate "1949-07-26"^^xsd:date;
+    schema:address _:b329.
+_:b329 a schema:PostalAddress;
+    schema:streetAddress "Isaac Wells";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Towneton";
+    schema:postalCode "79649";
+    schema:addressCountry "Jersey".

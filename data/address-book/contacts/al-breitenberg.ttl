@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Al";
+    schema:familyName "Breitenberg";
+    schema:birthDate "1992-07-31"^^xsd:date;
+    schema:address _:b3709.
+_:b3709 a schema:PostalAddress;
+    schema:streetAddress "Mulberry Street";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "New Sophiaville";
+    schema:postalCode "80212";
+    schema:addressCountry "Morocco".

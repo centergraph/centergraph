@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darla";
+    schema:familyName "Marvin";
+    schema:birthDate "1970-11-16"^^xsd:date;
+    schema:address _:b3206.
+_:b3206 a schema:PostalAddress;
+    schema:streetAddress "Melvina Ramp";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Jessietown";
+    schema:postalCode "58702";
+    schema:addressCountry "Argentina".

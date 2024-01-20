@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Ronnie";
     schema:familyName "Reichel";
-    schema:birthDate "1994-06-25"^^xsd:date;
-    schema:address _:b430.
-_:b430 a schema:PostalAddress;
-    schema:streetAddress "N Poplar Street";
-    schema:addressRegion "Iowa";
-    schema:addressLocality "East Toy";
-    schema:postalCode "99179";
-    schema:addressCountry "Azerbaijan".
+    schema:birthDate "1967-12-29"^^xsd:date;
+    schema:address _:b8555.
+_:b8555 a schema:PostalAddress;
+    schema:streetAddress "Kris Manors";
+    schema:addressRegion "New York";
+    schema:addressLocality "Lake Gunnarfurt";
+    schema:postalCode "80408-4252";
+    schema:addressCountry "Bosnia and Herzegovina".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Maxine";
+    schema:familyName "Bednar";
+    schema:birthDate "1945-02-07"^^xsd:date;
+    schema:address _:b858.
+_:b858 a schema:PostalAddress;
+    schema:streetAddress "Sage Route";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "West Benedictton";
+    schema:postalCode "43941";
+    schema:addressCountry "Niue".

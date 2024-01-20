@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Debbie";
+    schema:familyName "Koelpin";
+    schema:birthDate "1988-10-19"^^xsd:date;
+    schema:address _:b9757.
+_:b9757 a schema:PostalAddress;
+    schema:streetAddress "Jed Lock";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Alexandershire";
+    schema:postalCode "40613-7389";
+    schema:addressCountry "French Guiana".

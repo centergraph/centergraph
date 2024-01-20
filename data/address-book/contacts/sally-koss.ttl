@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sally";
+    schema:familyName "Koss";
+    schema:birthDate "1999-01-10"^^xsd:date;
+    schema:address _:b3394.
+_:b3394 a schema:PostalAddress;
+    schema:streetAddress "Vine Street";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Reichelburgh";
+    schema:postalCode "48706-3239";
+    schema:addressCountry "Cote d'Ivoire".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Helen";
+    schema:familyName "Russel";
+    schema:birthDate "1946-06-16"^^xsd:date;
+    schema:address _:b1122.
+_:b1122 a schema:PostalAddress;
+    schema:streetAddress "Meta Courts";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Gloverworth";
+    schema:postalCode "43662-0859";
+    schema:addressCountry "Latvia".

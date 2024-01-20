@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Adam";
+    schema:familyName "Dickens";
+    schema:birthDate "1944-02-13"^^xsd:date;
+    schema:address _:b6495.
+_:b6495 a schema:PostalAddress;
+    schema:streetAddress "Bahringer Ville";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "West Myrlburgh";
+    schema:postalCode "94358";
+    schema:addressCountry "Seychelles".

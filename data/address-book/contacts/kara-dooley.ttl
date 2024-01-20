@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kara";
+    schema:familyName "Dooley";
+    schema:birthDate "1965-09-07"^^xsd:date;
+    schema:address _:b7039.
+_:b7039 a schema:PostalAddress;
+    schema:streetAddress "Schumm Burg";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Laviniafurt";
+    schema:postalCode "86162-2784";
+    schema:addressCountry "Belize".

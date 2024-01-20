@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Neal";
+    schema:familyName "Collier";
+    schema:birthDate "1951-11-02"^^xsd:date;
+    schema:address _:b2813.
+_:b2813 a schema:PostalAddress;
+    schema:streetAddress "Derwent Close";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Fort Ruthe";
+    schema:postalCode "22537-6486";
+    schema:addressCountry "United States Minor Outlying Islands".

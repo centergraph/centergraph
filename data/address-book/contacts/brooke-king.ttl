@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brooke";
+    schema:familyName "King";
+    schema:birthDate "2002-08-03"^^xsd:date;
+    schema:address _:b8539.
+_:b8539 a schema:PostalAddress;
+    schema:streetAddress "Grove Road";
+    schema:addressRegion "New York";
+    schema:addressLocality "North Destiny";
+    schema:postalCode "54871";
+    schema:addressCountry "United States Minor Outlying Islands".

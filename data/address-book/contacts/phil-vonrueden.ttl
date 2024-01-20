@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Phil";
+    schema:familyName "VonRueden";
+    schema:birthDate "1998-03-29"^^xsd:date;
+    schema:address _:b4321.
+_:b4321 a schema:PostalAddress;
+    schema:streetAddress "Dach Row";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Danykastead";
+    schema:postalCode "35064";
+    schema:addressCountry "Eritrea".

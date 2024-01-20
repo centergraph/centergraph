@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carlton";
+    schema:familyName "Dicki";
+    schema:birthDate "1967-02-05"^^xsd:date;
+    schema:address _:b9231.
+_:b9231 a schema:PostalAddress;
+    schema:streetAddress "E 6th Street";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Lake Tatyanacester";
+    schema:postalCode "14507-2919";
+    schema:addressCountry "Christmas Island".

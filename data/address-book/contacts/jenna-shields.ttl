@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jenna";
+    schema:familyName "Shields";
+    schema:birthDate "1962-06-22"^^xsd:date;
+    schema:address _:b4743.
+_:b4743 a schema:PostalAddress;
+    schema:streetAddress "Tatum Gardens";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Lake Dejuanmouth";
+    schema:postalCode "25265-0536";
+    schema:addressCountry "Italy".

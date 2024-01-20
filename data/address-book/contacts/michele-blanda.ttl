@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Michele";
+    schema:familyName "Blanda";
+    schema:birthDate "1995-10-20"^^xsd:date;
+    schema:address _:b5268.
+_:b5268 a schema:PostalAddress;
+    schema:streetAddress "Albany Road";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Lake Velvafield";
+    schema:postalCode "17467-6641";
+    schema:addressCountry "Slovenia".

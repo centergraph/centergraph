@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lloyd";
+    schema:familyName "Will";
+    schema:birthDate "1994-03-21"^^xsd:date;
+    schema:address _:b3828.
+_:b3828 a schema:PostalAddress;
+    schema:streetAddress "Elvera Knoll";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Lake Jaiden";
+    schema:postalCode "71845-6425";
+    schema:addressCountry "Sri Lanka".

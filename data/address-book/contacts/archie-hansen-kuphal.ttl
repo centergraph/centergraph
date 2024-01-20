@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Archie";
+    schema:familyName "Hansen-Kuphal";
+    schema:birthDate "1984-05-22"^^xsd:date;
+    schema:address _:b3664.
+_:b3664 a schema:PostalAddress;
+    schema:streetAddress "S 9th Street";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Lake Andresworth";
+    schema:postalCode "89213-4190";
+    schema:addressCountry "Greenland".

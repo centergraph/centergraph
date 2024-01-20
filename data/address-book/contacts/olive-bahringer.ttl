@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Olive";
+    schema:familyName "Bahringer";
+    schema:birthDate "1965-03-01"^^xsd:date;
+    schema:address _:b6978.
+_:b6978 a schema:PostalAddress;
+    schema:streetAddress "Connelly Lock";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Georgetown";
+    schema:postalCode "61725";
+    schema:addressCountry "Cocos (Keeling) Islands".

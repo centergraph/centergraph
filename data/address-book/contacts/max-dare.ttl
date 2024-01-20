@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Max";
+    schema:familyName "Dare";
+    schema:birthDate "1965-05-02"^^xsd:date;
+    schema:address _:b2617.
+_:b2617 a schema:PostalAddress;
+    schema:streetAddress "Gibson Landing";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Wildermancester";
+    schema:postalCode "64040-1091";
+    schema:addressCountry "Iceland".

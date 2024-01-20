@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joel";
+    schema:familyName "Ebert";
+    schema:birthDate "1969-12-18"^^xsd:date;
+    schema:address _:b8904.
+_:b8904 a schema:PostalAddress;
+    schema:streetAddress "Schmeler Spring";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Mablecester";
+    schema:postalCode "67447-9615";
+    schema:addressCountry "Austria".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emma";
+    schema:familyName "Conn";
+    schema:birthDate "1987-01-19"^^xsd:date;
+    schema:address _:b1057.
+_:b1057 a schema:PostalAddress;
+    schema:streetAddress "Emory Vista";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Wunschfurt";
+    schema:postalCode "05397-9090";
+    schema:addressCountry "Puerto Rico".

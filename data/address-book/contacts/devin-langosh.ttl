@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Devin";
+    schema:familyName "Langosh";
+    schema:birthDate "1948-07-04"^^xsd:date;
+    schema:address _:b297.
+_:b297 a schema:PostalAddress;
+    schema:streetAddress "McKenzie Knoll";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Fort Tremayne";
+    schema:postalCode "68043-9019";
+    schema:addressCountry "Brunei Darussalam".

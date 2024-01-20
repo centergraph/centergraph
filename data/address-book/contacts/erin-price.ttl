@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erin";
+    schema:familyName "Price";
+    schema:birthDate "1981-03-09"^^xsd:date;
+    schema:address _:b4491.
+_:b4491 a schema:PostalAddress;
+    schema:streetAddress "Alyson Hills";
+    schema:addressRegion "Texas";
+    schema:addressLocality "West Ramonland";
+    schema:postalCode "35999-4595";
+    schema:addressCountry "Paraguay".

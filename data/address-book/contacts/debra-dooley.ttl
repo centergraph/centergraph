@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Debra";
+    schema:familyName "Dooley";
+    schema:birthDate "1980-09-16"^^xsd:date;
+    schema:address _:b6469.
+_:b6469 a schema:PostalAddress;
+    schema:streetAddress "Jade Wells";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Florin";
+    schema:postalCode "15583";
+    schema:addressCountry "Kenya".

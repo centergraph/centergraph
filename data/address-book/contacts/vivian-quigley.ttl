@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vivian";
+    schema:familyName "Quigley";
+    schema:birthDate "1992-08-15"^^xsd:date;
+    schema:address _:b9883.
+_:b9883 a schema:PostalAddress;
+    schema:streetAddress "Norfolk Road";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Irondequoit";
+    schema:postalCode "08877-3842";
+    schema:addressCountry "Belarus".

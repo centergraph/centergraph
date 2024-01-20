@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Orlando";
+    schema:familyName "Medhurst";
+    schema:birthDate "1960-11-08"^^xsd:date;
+    schema:address _:b8192.
+_:b8192 a schema:PostalAddress;
+    schema:streetAddress "N Cedar Street";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Fort Marion";
+    schema:postalCode "89024";
+    schema:addressCountry "Holy See (Vatican City State)".

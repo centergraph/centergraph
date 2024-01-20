@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Angela";
+    schema:familyName "Berge";
+    schema:birthDate "1960-06-07"^^xsd:date;
+    schema:address _:b5732.
+_:b5732 a schema:PostalAddress;
+    schema:streetAddress "N Pine Street";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Casper";
+    schema:postalCode "41511";
+    schema:addressCountry "Papua New Guinea".

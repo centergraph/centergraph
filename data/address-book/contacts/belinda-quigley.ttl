@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Belinda";
+    schema:familyName "Quigley";
+    schema:birthDate "1950-10-30"^^xsd:date;
+    schema:address _:b4537.
+_:b4537 a schema:PostalAddress;
+    schema:streetAddress "Runolfsson Spur";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Francescoshire";
+    schema:postalCode "42743";
+    schema:addressCountry "Papua New Guinea".

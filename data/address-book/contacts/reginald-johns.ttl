@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Reginald";
+    schema:familyName "Johns";
+    schema:birthDate "1987-06-03"^^xsd:date;
+    schema:address _:b106.
+_:b106 a schema:PostalAddress;
+    schema:streetAddress "Wyman Land";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Kyleeworth";
+    schema:postalCode "32201";
+    schema:addressCountry "Northern Mariana Islands".

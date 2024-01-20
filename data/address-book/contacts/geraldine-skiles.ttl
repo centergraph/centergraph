@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Geraldine";
+    schema:familyName "Skiles";
+    schema:birthDate "1968-11-18"^^xsd:date;
+    schema:address _:b636.
+_:b636 a schema:PostalAddress;
+    schema:streetAddress "Estrella Path";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Peggietown";
+    schema:postalCode "79932";
+    schema:addressCountry "Angola".

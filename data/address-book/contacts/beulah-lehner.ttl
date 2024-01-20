@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Beulah";
+    schema:familyName "Lehner";
+    schema:birthDate "1967-07-04"^^xsd:date;
+    schema:address _:b1820.
+_:b1820 a schema:PostalAddress;
+    schema:streetAddress "Anastacio Harbors";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "East Biankafield";
+    schema:postalCode "66814";
+    schema:addressCountry "Nauru".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doris";
+    schema:familyName "Homenick";
+    schema:birthDate "1990-05-04"^^xsd:date;
+    schema:address _:b9133.
+_:b9133 a schema:PostalAddress;
+    schema:streetAddress "Albany Road";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Sacramento";
+    schema:postalCode "39844-5793";
+    schema:addressCountry "Cayman Islands".

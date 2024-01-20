@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Chester";
+    schema:familyName "Koss";
+    schema:birthDate "1996-04-29"^^xsd:date;
+    schema:address _:b9575.
+_:b9575 a schema:PostalAddress;
+    schema:streetAddress "Isabella Viaduct";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Port Tamia";
+    schema:postalCode "98090-3687";
+    schema:addressCountry "Libyan Arab Jamahiriya".

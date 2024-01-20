@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alexis";
+    schema:familyName "Marvin";
+    schema:birthDate "1999-11-29"^^xsd:date;
+    schema:address _:b3249.
+_:b3249 a schema:PostalAddress;
+    schema:streetAddress "Corkery Shore";
+    schema:addressRegion "California";
+    schema:addressLocality "Sydniehaven";
+    schema:postalCode "88853";
+    schema:addressCountry "Norway".

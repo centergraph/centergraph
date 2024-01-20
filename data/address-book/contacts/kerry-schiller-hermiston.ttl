@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kerry";
+    schema:familyName "Schiller-Hermiston";
+    schema:birthDate "1990-03-30"^^xsd:date;
+    schema:address _:b1508.
+_:b1508 a schema:PostalAddress;
+    schema:streetAddress "N Main Street";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Tremblayboro";
+    schema:postalCode "84301-5156";
+    schema:addressCountry "Uganda".

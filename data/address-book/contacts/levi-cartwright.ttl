@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Levi";
+    schema:familyName "Cartwright";
+    schema:birthDate "1976-06-19"^^xsd:date;
+    schema:address _:b6671.
+_:b6671 a schema:PostalAddress;
+    schema:streetAddress "McCullough Cliffs";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Kassulkeworth";
+    schema:postalCode "96324";
+    schema:addressCountry "Sao Tome and Principe".

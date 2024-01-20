@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carrie";
+    schema:familyName "Moore";
+    schema:birthDate "1984-02-06"^^xsd:date;
+    schema:address _:b6770.
+_:b6770 a schema:PostalAddress;
+    schema:streetAddress "Ivah Light";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Johns Creek";
+    schema:postalCode "07512";
+    schema:addressCountry "Turkmenistan".

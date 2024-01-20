@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Noah";
+    schema:familyName "Torphy";
+    schema:birthDate "1985-01-27"^^xsd:date;
+    schema:address _:b5678.
+_:b5678 a schema:PostalAddress;
+    schema:streetAddress "Larkin Station";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Harlingen";
+    schema:postalCode "02201";
+    schema:addressCountry "Cayman Islands".

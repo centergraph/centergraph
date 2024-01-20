@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ellis";
+    schema:familyName "Jacobson";
+    schema:birthDate "1953-06-19"^^xsd:date;
+    schema:address _:b1956.
+_:b1956 a schema:PostalAddress;
+    schema:streetAddress "Myron Hill";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Port Heleneboro";
+    schema:postalCode "71677-2392";
+    schema:addressCountry "French Guiana".

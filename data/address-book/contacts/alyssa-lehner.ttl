@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alyssa";
+    schema:familyName "Lehner";
+    schema:birthDate "1962-09-10"^^xsd:date;
+    schema:address _:b1536.
+_:b1536 a schema:PostalAddress;
+    schema:streetAddress "Daniel Forges";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Delano";
+    schema:postalCode "33962-4449";
+    schema:addressCountry "Germany".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tasha";
+    schema:familyName "Rempel";
+    schema:birthDate "1963-06-13"^^xsd:date;
+    schema:address _:b9296.
+_:b9296 a schema:PostalAddress;
+    schema:streetAddress "Pine Grove";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Ronport";
+    schema:postalCode "26111-9710";
+    schema:addressCountry "Colombia".

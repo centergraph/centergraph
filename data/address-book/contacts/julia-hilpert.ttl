@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julia";
+    schema:familyName "Hilpert";
+    schema:birthDate "1952-11-21"^^xsd:date;
+    schema:address _:b146.
+_:b146 a schema:PostalAddress;
+    schema:streetAddress "Rodrigo Parks";
+    schema:addressRegion "Maine";
+    schema:addressLocality "South Laylachester";
+    schema:postalCode "22016-3983";
+    schema:addressCountry "Tuvalu".

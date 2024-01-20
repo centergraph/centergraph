@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sophia";
+    schema:familyName "Smitham";
+    schema:birthDate "1966-10-23"^^xsd:date;
+    schema:address _:b2938.
+_:b2938 a schema:PostalAddress;
+    schema:streetAddress "Marcelo Crossing";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Jackson";
+    schema:postalCode "28566";
+    schema:addressCountry "Denmark".

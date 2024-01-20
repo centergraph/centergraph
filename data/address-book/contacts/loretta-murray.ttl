@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Loretta";
+    schema:familyName "Murray";
+    schema:birthDate "1993-01-08"^^xsd:date;
+    schema:address _:b7110.
+_:b7110 a schema:PostalAddress;
+    schema:streetAddress "Christiansen Square";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Daltontown";
+    schema:postalCode "70346";
+    schema:addressCountry "United States Minor Outlying Islands".

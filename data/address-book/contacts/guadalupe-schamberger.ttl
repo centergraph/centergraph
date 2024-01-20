@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Guadalupe";
+    schema:familyName "Schamberger";
+    schema:birthDate "1957-12-27"^^xsd:date;
+    schema:address _:b8127.
+_:b8127 a schema:PostalAddress;
+    schema:streetAddress "Judy Cape";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Lake Philipboro";
+    schema:postalCode "57948-4579";
+    schema:addressCountry "Saint Pierre and Miquelon".

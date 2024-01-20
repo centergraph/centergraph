@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janet";
+    schema:familyName "Hintz";
+    schema:birthDate "1993-06-17"^^xsd:date;
+    schema:address _:b3198.
+_:b3198 a schema:PostalAddress;
+    schema:streetAddress "Goodwin Place";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Port Cecelia";
+    schema:postalCode "74358";
+    schema:addressCountry "Saint Vincent and the Grenadines".

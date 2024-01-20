@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Teresa";
+    schema:familyName "Schneider";
+    schema:birthDate "1956-12-02"^^xsd:date;
+    schema:address _:b628.
+_:b628 a schema:PostalAddress;
+    schema:streetAddress "Lyric Plaza";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Kuphalfort";
+    schema:postalCode "93828";
+    schema:addressCountry "Saint Pierre and Miquelon".

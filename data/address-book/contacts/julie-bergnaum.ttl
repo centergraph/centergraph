@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julie";
+    schema:familyName "Bergnaum";
+    schema:birthDate "1987-04-16"^^xsd:date;
+    schema:address _:b9947.
+_:b9947 a schema:PostalAddress;
+    schema:streetAddress "Marsh Lane";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Napa";
+    schema:postalCode "12824-3572";
+    schema:addressCountry "United States of America".

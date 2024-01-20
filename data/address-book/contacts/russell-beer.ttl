@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Russell";
+    schema:familyName "Beer";
+    schema:birthDate "1953-09-12"^^xsd:date;
+    schema:address _:b8554.
+_:b8554 a schema:PostalAddress;
+    schema:streetAddress "Harvey Garden";
+    schema:addressRegion "California";
+    schema:addressLocality "Hagenesland";
+    schema:postalCode "80914-4822";
+    schema:addressCountry "Estonia".

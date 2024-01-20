@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nancy";
+    schema:familyName "Connelly";
+    schema:birthDate "1983-11-28"^^xsd:date;
+    schema:address _:b7565.
+_:b7565 a schema:PostalAddress;
+    schema:streetAddress "Zella Trace";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Bahringerton";
+    schema:postalCode "73779-9731";
+    schema:addressCountry "Saint Barthelemy".

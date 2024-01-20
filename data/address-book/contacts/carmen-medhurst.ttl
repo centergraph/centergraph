@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carmen";
+    schema:familyName "Medhurst";
+    schema:birthDate "1957-05-20"^^xsd:date;
+    schema:address _:b6203.
+_:b6203 a schema:PostalAddress;
+    schema:streetAddress "Kingsway";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "New Theodoreburgh";
+    schema:postalCode "37393";
+    schema:addressCountry "Tonga".

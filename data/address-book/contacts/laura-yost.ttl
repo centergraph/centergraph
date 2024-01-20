@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Laura";
+    schema:familyName "Yost";
+    schema:birthDate "1945-11-07"^^xsd:date;
+    schema:address _:b8578.
+_:b8578 a schema:PostalAddress;
+    schema:streetAddress "Hickory Street";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Port Mayetown";
+    schema:postalCode "59959";
+    schema:addressCountry "Guatemala".

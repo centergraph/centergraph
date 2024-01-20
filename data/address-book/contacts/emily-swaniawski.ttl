@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emily";
+    schema:familyName "Swaniawski";
+    schema:birthDate "1946-04-23"^^xsd:date;
+    schema:address _:b4697.
+_:b4697 a schema:PostalAddress;
+    schema:streetAddress "The Maltings";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "New Agnesfurt";
+    schema:postalCode "71700";
+    schema:addressCountry "Eswatini".

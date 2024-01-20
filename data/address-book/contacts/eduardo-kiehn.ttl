@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eduardo";
+    schema:familyName "Kiehn";
+    schema:birthDate "1976-09-17"^^xsd:date;
+    schema:address _:b4179.
+_:b4179 a schema:PostalAddress;
+    schema:streetAddress "Karlee Mount";
+    schema:addressRegion "New York";
+    schema:addressLocality "West Augusta";
+    schema:postalCode "39076-4418";
+    schema:addressCountry "Vietnam".

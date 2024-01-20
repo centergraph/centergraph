@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andres";
+    schema:familyName "Murray";
+    schema:birthDate "1958-05-13"^^xsd:date;
+    schema:address _:b2885.
+_:b2885 a schema:PostalAddress;
+    schema:streetAddress "Berneice Locks";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Cheektowaga";
+    schema:postalCode "34572-0127";
+    schema:addressCountry "Saint Vincent and the Grenadines".

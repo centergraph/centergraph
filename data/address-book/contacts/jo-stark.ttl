@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jo";
+    schema:familyName "Stark";
+    schema:birthDate "1985-07-04"^^xsd:date;
+    schema:address _:b4094.
+_:b4094 a schema:PostalAddress;
+    schema:streetAddress "Konopelski Villages";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Port Juanamouth";
+    schema:postalCode "30531";
+    schema:addressCountry "Moldova".

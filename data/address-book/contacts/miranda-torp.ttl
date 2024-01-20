@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Miranda";
+    schema:familyName "Torp";
+    schema:birthDate "1956-03-28"^^xsd:date;
+    schema:address _:b1247.
+_:b1247 a schema:PostalAddress;
+    schema:streetAddress "N Water Street";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Pablotown";
+    schema:postalCode "36794-0999";
+    schema:addressCountry "Bahamas".

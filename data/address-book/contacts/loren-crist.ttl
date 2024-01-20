@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Loren";
+    schema:familyName "Crist";
+    schema:birthDate "1982-03-15"^^xsd:date;
+    schema:address _:b644.
+_:b644 a schema:PostalAddress;
+    schema:streetAddress "S Elm Street";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Akron";
+    schema:postalCode "38438-2740";
+    schema:addressCountry "Grenada".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wendy";
+    schema:familyName "Bogisich";
+    schema:birthDate "2003-04-01"^^xsd:date;
+    schema:address _:b8189.
+_:b8189 a schema:PostalAddress;
+    schema:streetAddress "Nader Way";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Euclid";
+    schema:postalCode "33633";
+    schema:addressCountry "Canada".

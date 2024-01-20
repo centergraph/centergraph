@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lynda";
+    schema:familyName "Labadie";
+    schema:birthDate "2002-04-05"^^xsd:date;
+    schema:address _:b6772.
+_:b6772 a schema:PostalAddress;
+    schema:streetAddress "Schmitt Shoal";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Bertrammouth";
+    schema:postalCode "72037";
+    schema:addressCountry "Jersey".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Arlene";
+    schema:familyName "Windler";
+    schema:birthDate "1986-09-13"^^xsd:date;
+    schema:address _:b2106.
+_:b2106 a schema:PostalAddress;
+    schema:streetAddress "Schinner Burg";
+    schema:addressRegion "California";
+    schema:addressLocality "South Nakia";
+    schema:postalCode "35815-9067";
+    schema:addressCountry "Oman".

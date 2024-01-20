@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Annie";
+    schema:familyName "Hermiston";
+    schema:birthDate "1971-12-22"^^xsd:date;
+    schema:address _:b3855.
+_:b3855 a schema:PostalAddress;
+    schema:streetAddress "Bay Street";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Wizachester";
+    schema:postalCode "41789";
+    schema:addressCountry "Mayotte".

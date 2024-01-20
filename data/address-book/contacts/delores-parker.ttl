@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Delores";
+    schema:familyName "Parker";
+    schema:birthDate "1972-12-30"^^xsd:date;
+    schema:address _:b4512.
+_:b4512 a schema:PostalAddress;
+    schema:streetAddress "S Railroad Street";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Leopoldville";
+    schema:postalCode "78449-9247";
+    schema:addressCountry "Sint Maarten".

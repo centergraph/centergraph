@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Samuel";
+    schema:familyName "Kozey";
+    schema:birthDate "1977-11-24"^^xsd:date;
+    schema:address _:b1940.
+_:b1940 a schema:PostalAddress;
+    schema:streetAddress "Wolf Cove";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "North Iantown";
+    schema:postalCode "02927-3251";
+    schema:addressCountry "Democratic People's Republic of Korea".

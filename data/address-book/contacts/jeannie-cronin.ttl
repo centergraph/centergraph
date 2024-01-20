@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeannie";
+    schema:familyName "Cronin";
+    schema:birthDate "1945-10-08"^^xsd:date;
+    schema:address _:b2078.
+_:b2078 a schema:PostalAddress;
+    schema:streetAddress "1st Avenue";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Leolaton";
+    schema:postalCode "54812";
+    schema:addressCountry "Grenada".

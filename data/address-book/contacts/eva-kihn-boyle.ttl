@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eva";
+    schema:familyName "Kihn-Boyle";
+    schema:birthDate "1985-10-23"^^xsd:date;
+    schema:address _:b3302.
+_:b3302 a schema:PostalAddress;
+    schema:streetAddress "N Central Avenue";
+    schema:addressRegion "Utah";
+    schema:addressLocality "West Aryannabury";
+    schema:postalCode "87132";
+    schema:addressCountry "Aruba".

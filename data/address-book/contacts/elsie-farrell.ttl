@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elsie";
+    schema:familyName "Farrell";
+    schema:birthDate "1964-09-15"^^xsd:date;
+    schema:address _:b9593.
+_:b9593 a schema:PostalAddress;
+    schema:streetAddress "Kris Ford";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Port Matteo";
+    schema:postalCode "89760";
+    schema:addressCountry "Finland".

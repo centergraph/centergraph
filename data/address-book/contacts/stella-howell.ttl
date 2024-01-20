@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stella";
+    schema:familyName "Howell";
+    schema:birthDate "1982-02-19"^^xsd:date;
+    schema:address _:b5381.
+_:b5381 a schema:PostalAddress;
+    schema:streetAddress "Kuhn Gardens";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Auerborough";
+    schema:postalCode "99597-1823";
+    schema:addressCountry "Saint Kitts and Nevis".

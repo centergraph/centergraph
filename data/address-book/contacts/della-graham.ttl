@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Della";
+    schema:familyName "Graham";
+    schema:birthDate "1985-09-25"^^xsd:date;
+    schema:address _:b2293.
+_:b2293 a schema:PostalAddress;
+    schema:streetAddress "Juana Valley";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Gloverboro";
+    schema:postalCode "06054";
+    schema:addressCountry "Sint Maarten".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Katie";
+    schema:familyName "Considine";
+    schema:birthDate "2001-06-02"^^xsd:date;
+    schema:address _:b4097.
+_:b4097 a schema:PostalAddress;
+    schema:streetAddress "Lowell Park";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Novellaworth";
+    schema:postalCode "68794";
+    schema:addressCountry "Bahrain".

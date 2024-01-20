@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Toby";
+    schema:familyName "Wyman";
+    schema:birthDate "1998-02-10"^^xsd:date;
+    schema:address _:b9855.
+_:b9855 a schema:PostalAddress;
+    schema:streetAddress "Schowalter Glen";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Plantation";
+    schema:postalCode "64354";
+    schema:addressCountry "Senegal".

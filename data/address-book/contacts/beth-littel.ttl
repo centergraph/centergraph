@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Beth";
+    schema:familyName "Littel";
+    schema:birthDate "1993-03-08"^^xsd:date;
+    schema:address _:b238.
+_:b238 a schema:PostalAddress;
+    schema:streetAddress "Bell Lane";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "DuBuqueport";
+    schema:postalCode "29685";
+    schema:addressCountry "Christmas Island".

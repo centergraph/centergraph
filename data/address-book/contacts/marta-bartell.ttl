@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marta";
+    schema:familyName "Bartell";
+    schema:birthDate "1964-05-24"^^xsd:date;
+    schema:address _:b432.
+_:b432 a schema:PostalAddress;
+    schema:streetAddress "Oak Street";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "South Paige";
+    schema:postalCode "10432-8520";
+    schema:addressCountry "Czechia".

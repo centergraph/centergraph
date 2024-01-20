@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Benny";
+    schema:familyName "Blanda-Volkman";
+    schema:birthDate "1971-10-02"^^xsd:date;
+    schema:address _:b122.
+_:b122 a schema:PostalAddress;
+    schema:streetAddress "Kozey Terrace";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Hauckmouth";
+    schema:postalCode "70654-1907";
+    schema:addressCountry "Spain".

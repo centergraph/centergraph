@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Caroline";
+    schema:familyName "Mayer";
+    schema:birthDate "1955-11-16"^^xsd:date;
+    schema:address _:b8514.
+_:b8514 a schema:PostalAddress;
+    schema:streetAddress "Stoney Lane";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Klockoboro";
+    schema:postalCode "17351";
+    schema:addressCountry "Mauritania".

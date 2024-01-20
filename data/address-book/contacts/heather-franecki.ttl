@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Heather";
+    schema:familyName "Franecki";
+    schema:birthDate "1951-01-05"^^xsd:date;
+    schema:address _:b7389.
+_:b7389 a schema:PostalAddress;
+    schema:streetAddress "W Park Street";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "West Palm Beach";
+    schema:postalCode "14964";
+    schema:addressCountry "Congo".

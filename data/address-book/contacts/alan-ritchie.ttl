@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alan";
+    schema:familyName "Ritchie";
+    schema:birthDate "2004-03-06"^^xsd:date;
+    schema:address _:b4159.
+_:b4159 a schema:PostalAddress;
+    schema:streetAddress "S 7th Street";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "South Gwendolynshire";
+    schema:postalCode "56104-9856";
+    schema:addressCountry "Lithuania".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Candace";
+    schema:familyName "Gusikowski";
+    schema:birthDate "1948-01-06"^^xsd:date;
+    schema:address _:b2559.
+_:b2559 a schema:PostalAddress;
+    schema:streetAddress "First Street";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "La Crosse";
+    schema:postalCode "59857";
+    schema:addressCountry "Finland".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ralph";
+    schema:familyName "Barrows";
+    schema:birthDate "1989-01-08"^^xsd:date;
+    schema:address _:b5124.
+_:b5124 a schema:PostalAddress;
+    schema:streetAddress "Adolph Keys";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Schmittbury";
+    schema:postalCode "12620-7743";
+    schema:addressCountry "Jordan".

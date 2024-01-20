@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edgar";
+    schema:familyName "Emard";
+    schema:birthDate "1997-09-07"^^xsd:date;
+    schema:address _:b9397.
+_:b9397 a schema:PostalAddress;
+    schema:streetAddress "Rosenbaum Shore";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Port Jayda";
+    schema:postalCode "31693-1609";
+    schema:addressCountry "United States Minor Outlying Islands".

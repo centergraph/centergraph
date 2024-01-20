@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Renee";
+    schema:familyName "Hessel";
+    schema:birthDate "2004-12-02"^^xsd:date;
+    schema:address _:b8516.
+_:b8516 a schema:PostalAddress;
+    schema:streetAddress "Cheyanne Centers";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Jessetown";
+    schema:postalCode "24167";
+    schema:addressCountry "Honduras".

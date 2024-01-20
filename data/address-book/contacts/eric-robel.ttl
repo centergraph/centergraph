@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eric";
+    schema:familyName "Robel";
+    schema:birthDate "1989-04-01"^^xsd:date;
+    schema:address _:b7905.
+_:b7905 a schema:PostalAddress;
+    schema:streetAddress "Destany Station";
+    schema:addressRegion "California";
+    schema:addressLocality "Connellycester";
+    schema:postalCode "04444";
+    schema:addressCountry "Brunei Darussalam".

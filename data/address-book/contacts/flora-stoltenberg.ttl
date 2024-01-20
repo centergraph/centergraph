@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Flora";
+    schema:familyName "Stoltenberg";
+    schema:birthDate "1975-08-04"^^xsd:date;
+    schema:address _:b2843.
+_:b2843 a schema:PostalAddress;
+    schema:streetAddress "Pollich Court";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Temecula";
+    schema:postalCode "30107-3154";
+    schema:addressCountry "Kyrgyz Republic".

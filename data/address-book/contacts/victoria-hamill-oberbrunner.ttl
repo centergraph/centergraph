@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Victoria";
+    schema:familyName "Hamill-Oberbrunner";
+    schema:birthDate "1991-10-14"^^xsd:date;
+    schema:address _:b3370.
+_:b3370 a schema:PostalAddress;
+    schema:streetAddress "Bramley Close";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Grahamfield";
+    schema:postalCode "55511";
+    schema:addressCountry "Puerto Rico".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Renee";
+    schema:familyName "West";
+    schema:birthDate "1980-06-21"^^xsd:date;
+    schema:address _:b8064.
+_:b8064 a schema:PostalAddress;
+    schema:streetAddress "Bechtelar Field";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Pittsfield";
+    schema:postalCode "22181";
+    schema:addressCountry "South Georgia and the South Sandwich Islands".

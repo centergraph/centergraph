@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Homer";
+    schema:familyName "Barton";
+    schema:birthDate "1956-05-13"^^xsd:date;
+    schema:address _:b1346.
+_:b1346 a schema:PostalAddress;
+    schema:streetAddress "Parisian Gardens";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Kshlerincester";
+    schema:postalCode "00576";
+    schema:addressCountry "Saint Pierre and Miquelon".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Heidi";
+    schema:familyName "Sanford";
+    schema:birthDate "1996-04-30"^^xsd:date;
+    schema:address _:b8326.
+_:b8326 a schema:PostalAddress;
+    schema:streetAddress "Verla Spurs";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "New Myronfield";
+    schema:postalCode "02211-9688";
+    schema:addressCountry "Estonia".

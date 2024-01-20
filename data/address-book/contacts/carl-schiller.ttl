@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carl";
+    schema:familyName "Schiller";
+    schema:birthDate "1986-03-14"^^xsd:date;
+    schema:address _:b9692.
+_:b9692 a schema:PostalAddress;
+    schema:streetAddress "Aiyana Summit";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Danialton";
+    schema:postalCode "32371";
+    schema:addressCountry "Antarctica".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Earl";
+    schema:familyName "VonRueden";
+    schema:birthDate "1951-07-03"^^xsd:date;
+    schema:address _:b9127.
+_:b9127 a schema:PostalAddress;
+    schema:streetAddress "Nicolas Route";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Ponce";
+    schema:postalCode "11140-7456";
+    schema:addressCountry "Central African Republic".

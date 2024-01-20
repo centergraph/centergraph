@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Irving";
+    schema:familyName "Langworth-Keeling";
+    schema:birthDate "1971-06-08"^^xsd:date;
+    schema:address _:b8396.
+_:b8396 a schema:PostalAddress;
+    schema:streetAddress "Wava Forest";
+    schema:addressRegion "Maine";
+    schema:addressLocality "South Maybellview";
+    schema:postalCode "94363";
+    schema:addressCountry "Venezuela".

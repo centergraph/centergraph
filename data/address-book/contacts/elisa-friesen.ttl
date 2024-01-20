@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elisa";
+    schema:familyName "Friesen";
+    schema:birthDate "1994-02-24"^^xsd:date;
+    schema:address _:b7941.
+_:b7941 a schema:PostalAddress;
+    schema:streetAddress "Roman Way";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Elfriedaworth";
+    schema:postalCode "41158-6098";
+    schema:addressCountry "El Salvador".

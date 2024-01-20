@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Luis";
+    schema:familyName "Kiehn-Ruecker";
+    schema:birthDate "1962-03-24"^^xsd:date;
+    schema:address _:b3264.
+_:b3264 a schema:PostalAddress;
+    schema:streetAddress "Josiane Rapids";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "New Aydenshire";
+    schema:postalCode "84943";
+    schema:addressCountry "Morocco".

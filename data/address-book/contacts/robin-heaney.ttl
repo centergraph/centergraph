@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Robin";
+    schema:familyName "Heaney";
+    schema:birthDate "1983-06-23"^^xsd:date;
+    schema:address _:b6558.
+_:b6558 a schema:PostalAddress;
+    schema:streetAddress "Brennan Road";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Gutkowskiport";
+    schema:postalCode "74570";
+    schema:addressCountry "Burundi".

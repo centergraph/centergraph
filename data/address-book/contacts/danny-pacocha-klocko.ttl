@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Danny";
+    schema:familyName "Pacocha-Klocko";
+    schema:birthDate "1979-04-13"^^xsd:date;
+    schema:address _:b5334.
+_:b5334 a schema:PostalAddress;
+    schema:streetAddress "Bahringer Turnpike";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "South Johathan";
+    schema:postalCode "47366";
+    schema:addressCountry "Eritrea".

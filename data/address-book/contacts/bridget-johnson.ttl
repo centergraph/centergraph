@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bridget";
+    schema:familyName "Johnson";
+    schema:birthDate "1999-08-30"^^xsd:date;
+    schema:address _:b5675.
+_:b5675 a schema:PostalAddress;
+    schema:streetAddress "Alexandra Road";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Schoenview";
+    schema:postalCode "76147-0240";
+    schema:addressCountry "Nepal".

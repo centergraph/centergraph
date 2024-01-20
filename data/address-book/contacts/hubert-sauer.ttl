@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hubert";
+    schema:familyName "Sauer";
+    schema:birthDate "1973-09-29"^^xsd:date;
+    schema:address _:b5383.
+_:b5383 a schema:PostalAddress;
+    schema:streetAddress "Ryan Springs";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Tuckahoe";
+    schema:postalCode "97729";
+    schema:addressCountry "Tajikistan".

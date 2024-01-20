@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pearl";
+    schema:familyName "Mitchell";
+    schema:birthDate "1953-05-15"^^xsd:date;
+    schema:address _:b8590.
+_:b8590 a schema:PostalAddress;
+    schema:streetAddress "Douglas Road";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Garthtown";
+    schema:postalCode "67289-5910";
+    schema:addressCountry "Niue".

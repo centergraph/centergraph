@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Teresa";
+    schema:familyName "Wuckert";
+    schema:birthDate "1970-08-17"^^xsd:date;
+    schema:address _:b9078.
+_:b9078 a schema:PostalAddress;
+    schema:streetAddress "Rippin Junctions";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Evansville";
+    schema:postalCode "08125-1842";
+    schema:addressCountry "Montserrat".

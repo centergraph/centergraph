@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Renee";
     schema:familyName "Boyle";
-    schema:birthDate "1998-02-06"^^xsd:date;
-    schema:address _:b231.
-_:b231 a schema:PostalAddress;
-    schema:streetAddress "N Railroad Street";
-    schema:addressRegion "Utah";
-    schema:addressLocality "Westland";
-    schema:postalCode "36607-0066";
-    schema:addressCountry "Mauritania".
+    schema:birthDate "1993-01-08"^^xsd:date;
+    schema:address _:b1960.
+_:b1960 a schema:PostalAddress;
+    schema:streetAddress "Cummerata Trafficway";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Port Elnorahaven";
+    schema:postalCode "42687-3038";
+    schema:addressCountry "Slovenia".

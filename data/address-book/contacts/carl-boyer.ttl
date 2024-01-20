@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carl";
+    schema:familyName "Boyer";
+    schema:birthDate "2001-02-25"^^xsd:date;
+    schema:address _:b8500.
+_:b8500 a schema:PostalAddress;
+    schema:streetAddress "Mill Street";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Port Seamuston";
+    schema:postalCode "23162-3859";
+    schema:addressCountry "Seychelles".

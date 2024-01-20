@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mamie";
+    schema:familyName "Fritsch";
+    schema:birthDate "1969-11-11"^^xsd:date;
+    schema:address _:b8485.
+_:b8485 a schema:PostalAddress;
+    schema:streetAddress "Stanton Bridge";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "St. Cloud";
+    schema:postalCode "79677-9934";
+    schema:addressCountry "Cocos (Keeling) Islands".

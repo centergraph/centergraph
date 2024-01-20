@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jaime";
+    schema:familyName "Brakus";
+    schema:birthDate "1998-08-26"^^xsd:date;
+    schema:address _:b2747.
+_:b2747 a schema:PostalAddress;
+    schema:streetAddress "Alma Street";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Tempe";
+    schema:postalCode "95825-6525";
+    schema:addressCountry "United States of America".

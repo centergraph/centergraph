@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bernadette";
+    schema:familyName "Boehm";
+    schema:birthDate "1965-07-12"^^xsd:date;
+    schema:address _:b7503.
+_:b7503 a schema:PostalAddress;
+    schema:streetAddress "Veterans Memorial Drive";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "El Centro";
+    schema:postalCode "73433-0944";
+    schema:addressCountry "Nigeria".

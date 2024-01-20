@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Percy";
+    schema:familyName "Bahringer";
+    schema:birthDate "1969-01-06"^^xsd:date;
+    schema:address _:b4707.
+_:b4707 a schema:PostalAddress;
+    schema:streetAddress "Gibson Streets";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Danville";
+    schema:postalCode "62459-8406";
+    schema:addressCountry "Rwanda".

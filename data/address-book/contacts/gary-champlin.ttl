@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gary";
+    schema:familyName "Champlin";
+    schema:birthDate "1985-05-02"^^xsd:date;
+    schema:address _:b9998.
+_:b9998 a schema:PostalAddress;
+    schema:streetAddress "Fahey Lane";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "West Jacquelyn";
+    schema:postalCode "63573";
+    schema:addressCountry "Haiti".

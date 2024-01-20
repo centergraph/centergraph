@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Grant";
+    schema:familyName "Marks";
+    schema:birthDate "1985-06-02"^^xsd:date;
+    schema:address _:b4779.
+_:b4779 a schema:PostalAddress;
+    schema:streetAddress "Glebe Close";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "South Maida";
+    schema:postalCode "28996-0719";
+    schema:addressCountry "Congo".

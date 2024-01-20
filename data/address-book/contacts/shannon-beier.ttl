@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shannon";
+    schema:familyName "Beier";
+    schema:birthDate "1999-11-14"^^xsd:date;
+    schema:address _:b4305.
+_:b4305 a schema:PostalAddress;
+    schema:streetAddress "White Knolls";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Oak Lawn";
+    schema:postalCode "59448-9893";
+    schema:addressCountry "Heard Island and McDonald Islands".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Genevieve";
+    schema:familyName "Runolfsdottir-Ratke";
+    schema:birthDate "1996-09-20"^^xsd:date;
+    schema:address _:b5054.
+_:b5054 a schema:PostalAddress;
+    schema:streetAddress "Grand Avenue";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "West Brooklynfurt";
+    schema:postalCode "20559-6354";
+    schema:addressCountry "Romania".

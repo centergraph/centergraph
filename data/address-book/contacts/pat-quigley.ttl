@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pat";
+    schema:familyName "Quigley";
+    schema:birthDate "1967-09-20"^^xsd:date;
+    schema:address _:b4981.
+_:b4981 a schema:PostalAddress;
+    schema:streetAddress "W Central Avenue";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Dedrickland";
+    schema:postalCode "91413-7437";
+    schema:addressCountry "Czechia".

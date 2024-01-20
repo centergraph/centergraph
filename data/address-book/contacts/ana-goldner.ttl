@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ana";
+    schema:familyName "Goldner";
+    schema:birthDate "1986-11-04"^^xsd:date;
+    schema:address _:b66.
+_:b66 a schema:PostalAddress;
+    schema:streetAddress "Monroe Street";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Port Deshaunchester";
+    schema:postalCode "45544-7342";
+    schema:addressCountry "Antarctica".

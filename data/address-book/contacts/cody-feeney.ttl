@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cody";
+    schema:familyName "Feeney";
+    schema:birthDate "1957-08-09"^^xsd:date;
+    schema:address _:b4472.
+_:b4472 a schema:PostalAddress;
+    schema:streetAddress "E Park Avenue";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "East Reillyshire";
+    schema:postalCode "65222";
+    schema:addressCountry "Gabon".

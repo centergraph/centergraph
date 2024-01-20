@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amelia";
+    schema:familyName "Kutch";
+    schema:birthDate "1944-05-10"^^xsd:date;
+    schema:address _:b8844.
+_:b8844 a schema:PostalAddress;
+    schema:streetAddress "S Front Street";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "South Lindsey";
+    schema:postalCode "81514";
+    schema:addressCountry "Saint Barthelemy".

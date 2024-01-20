@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marguerite";
+    schema:familyName "Towne";
+    schema:birthDate "1977-04-10"^^xsd:date;
+    schema:address _:b1523.
+_:b1523 a schema:PostalAddress;
+    schema:streetAddress "Ora Cliff";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "South Marlen";
+    schema:postalCode "97315-4452";
+    schema:addressCountry "Costa Rica".

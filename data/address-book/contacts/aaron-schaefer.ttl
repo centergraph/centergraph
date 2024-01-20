@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Aaron";
+    schema:familyName "Schaefer";
+    schema:birthDate "1998-04-25"^^xsd:date;
+    schema:address _:b532.
+_:b532 a schema:PostalAddress;
+    schema:streetAddress "Kuhlman Parks";
+    schema:addressRegion "New York";
+    schema:addressLocality "Delmerworth";
+    schema:postalCode "04761";
+    schema:addressCountry "Syrian Arab Republic".

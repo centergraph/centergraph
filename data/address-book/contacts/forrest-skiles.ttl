@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Forrest";
+    schema:familyName "Skiles";
+    schema:birthDate "1947-06-13"^^xsd:date;
+    schema:address _:b4721.
+_:b4721 a schema:PostalAddress;
+    schema:streetAddress "Kenyatta Bridge";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "North Magdalenport";
+    schema:postalCode "98377";
+    schema:addressCountry "Poland".

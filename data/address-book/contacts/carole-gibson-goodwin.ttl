@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carole";
+    schema:familyName "Gibson-Goodwin";
+    schema:birthDate "1991-12-15"^^xsd:date;
+    schema:address _:b6977.
+_:b6977 a schema:PostalAddress;
+    schema:streetAddress "Reichel Park";
+    schema:addressRegion "Montana";
+    schema:addressLocality "New Cassandra";
+    schema:postalCode "75614";
+    schema:addressCountry "Croatia".

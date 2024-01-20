@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cecil";
+    schema:familyName "Abernathy";
+    schema:birthDate "1963-10-04"^^xsd:date;
+    schema:address _:b1623.
+_:b1623 a schema:PostalAddress;
+    schema:streetAddress "Tennyson Road";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Abshirefort";
+    schema:postalCode "73311-9638";
+    schema:addressCountry "United States Minor Outlying Islands".

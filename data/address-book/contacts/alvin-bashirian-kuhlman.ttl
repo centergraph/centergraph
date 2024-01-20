@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alvin";
+    schema:familyName "Bashirian-Kuhlman";
+    schema:birthDate "1962-07-24"^^xsd:date;
+    schema:address _:b4233.
+_:b4233 a schema:PostalAddress;
+    schema:streetAddress "Rowan Close";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Fort Virginia";
+    schema:postalCode "75743";
+    schema:addressCountry "Equatorial Guinea".

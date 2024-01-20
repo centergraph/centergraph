@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roland";
+    schema:familyName "Hansen";
+    schema:birthDate "1987-12-25"^^xsd:date;
+    schema:address _:b9824.
+_:b9824 a schema:PostalAddress;
+    schema:streetAddress "Rafaela Mews";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "D'Amoreberg";
+    schema:postalCode "48422-9073";
+    schema:addressCountry "Eswatini".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sam";
+    schema:familyName "Conroy";
+    schema:birthDate "1958-11-11"^^xsd:date;
+    schema:address _:b5961.
+_:b5961 a schema:PostalAddress;
+    schema:streetAddress "Oak Road";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Fort Simborough";
+    schema:postalCode "36409-3722";
+    schema:addressCountry "Bhutan".

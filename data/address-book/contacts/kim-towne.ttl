@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kim";
+    schema:familyName "Towne";
+    schema:birthDate "1962-08-12"^^xsd:date;
+    schema:address _:b9500.
+_:b9500 a schema:PostalAddress;
+    schema:streetAddress "W 7th Street";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Cypress";
+    schema:postalCode "37278-1221";
+    schema:addressCountry "China".

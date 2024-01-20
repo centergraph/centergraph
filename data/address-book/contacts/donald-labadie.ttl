@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Donald";
+    schema:familyName "Labadie";
+    schema:birthDate "1973-11-26"^^xsd:date;
+    schema:address _:b7108.
+_:b7108 a schema:PostalAddress;
+    schema:streetAddress "The Grange";
+    schema:addressRegion "New York";
+    schema:addressLocality "Lake Colt";
+    schema:postalCode "68008-9203";
+    schema:addressCountry "Mali".

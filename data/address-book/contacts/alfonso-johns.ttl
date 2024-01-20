@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alfonso";
+    schema:familyName "Johns";
+    schema:birthDate "2002-06-21"^^xsd:date;
+    schema:address _:b5910.
+_:b5910 a schema:PostalAddress;
+    schema:streetAddress "S 1st Avenue";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "New Magdalenachester";
+    schema:postalCode "35317-1669";
+    schema:addressCountry "British Indian Ocean Territory (Chagos Archipelago)".

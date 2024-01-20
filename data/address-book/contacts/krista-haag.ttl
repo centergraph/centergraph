@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Krista";
+    schema:familyName "Haag";
+    schema:birthDate "1946-09-09"^^xsd:date;
+    schema:address _:b4465.
+_:b4465 a schema:PostalAddress;
+    schema:streetAddress "Lake Road";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Medhurstshire";
+    schema:postalCode "28489-7649";
+    schema:addressCountry "Brazil".

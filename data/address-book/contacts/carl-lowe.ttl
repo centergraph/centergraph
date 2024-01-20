@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carl";
+    schema:familyName "Lowe";
+    schema:birthDate "1966-01-22"^^xsd:date;
+    schema:address _:b1365.
+_:b1365 a schema:PostalAddress;
+    schema:streetAddress "Margarette Cove";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "East Arlobury";
+    schema:postalCode "93582-5636";
+    schema:addressCountry "United Arab Emirates".

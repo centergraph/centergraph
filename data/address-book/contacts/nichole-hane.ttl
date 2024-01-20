@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nichole";
+    schema:familyName "Hane";
+    schema:birthDate "1947-06-21"^^xsd:date;
+    schema:address _:b4639.
+_:b4639 a schema:PostalAddress;
+    schema:streetAddress "Castle Street";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Dockborough";
+    schema:postalCode "04598";
+    schema:addressCountry "Azerbaijan".

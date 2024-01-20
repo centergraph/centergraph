@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joan";
+    schema:familyName "Franecki";
+    schema:birthDate "1946-09-17"^^xsd:date;
+    schema:address _:b5967.
+_:b5967 a schema:PostalAddress;
+    schema:streetAddress "Estel Light";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Rancho Palos Verdes";
+    schema:postalCode "00768-0051";
+    schema:addressCountry "Bangladesh".

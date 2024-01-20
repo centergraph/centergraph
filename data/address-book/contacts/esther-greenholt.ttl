@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Esther";
+    schema:familyName "Greenholt";
+    schema:birthDate "1969-07-30"^^xsd:date;
+    schema:address _:b5998.
+_:b5998 a schema:PostalAddress;
+    schema:streetAddress "Garden Street";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "New Beaulahbury";
+    schema:postalCode "13235-2009";
+    schema:addressCountry "Netherlands".

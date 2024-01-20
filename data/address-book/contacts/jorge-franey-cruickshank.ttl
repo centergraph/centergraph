@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jorge";
+    schema:familyName "Franey-Cruickshank";
+    schema:birthDate "1980-07-15"^^xsd:date;
+    schema:address _:b5027.
+_:b5027 a schema:PostalAddress;
+    schema:streetAddress "Macy Cape";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Simonisport";
+    schema:postalCode "04160-2453";
+    schema:addressCountry "Haiti".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Abraham";
+    schema:familyName "Weissnat";
+    schema:birthDate "1946-01-14"^^xsd:date;
+    schema:address _:b1962.
+_:b1962 a schema:PostalAddress;
+    schema:streetAddress "Stamm Shores";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "East Cesarshire";
+    schema:postalCode "26616";
+    schema:addressCountry "Ethiopia".

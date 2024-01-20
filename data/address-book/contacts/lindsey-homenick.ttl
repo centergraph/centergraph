@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lindsey";
+    schema:familyName "Homenick";
+    schema:birthDate "1974-08-16"^^xsd:date;
+    schema:address _:b4679.
+_:b4679 a schema:PostalAddress;
+    schema:streetAddress "Batz Summit";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Carson";
+    schema:postalCode "51827";
+    schema:addressCountry "Colombia".

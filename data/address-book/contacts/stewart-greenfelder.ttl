@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stewart";
+    schema:familyName "Greenfelder";
+    schema:birthDate "1978-01-05"^^xsd:date;
+    schema:address _:b856.
+_:b856 a schema:PostalAddress;
+    schema:streetAddress "Roberts Passage";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Denniscester";
+    schema:postalCode "68753";
+    schema:addressCountry "Saint Pierre and Miquelon".

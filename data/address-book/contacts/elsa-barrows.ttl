@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elsa";
+    schema:familyName "Barrows";
+    schema:birthDate "1961-12-04"^^xsd:date;
+    schema:address _:b8466.
+_:b8466 a schema:PostalAddress;
+    schema:streetAddress "W Main";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "South Tyrellfield";
+    schema:postalCode "35578";
+    schema:addressCountry "Bangladesh".

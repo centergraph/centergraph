@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leslie";
+    schema:familyName "Kilback";
+    schema:birthDate "1991-08-06"^^xsd:date;
+    schema:address _:b6061.
+_:b6061 a schema:PostalAddress;
+    schema:streetAddress "Tate Pines";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Novato";
+    schema:postalCode "51622";
+    schema:addressCountry "Australia".

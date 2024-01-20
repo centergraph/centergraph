@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leah";
+    schema:familyName "McDermott";
+    schema:birthDate "1998-07-23"^^xsd:date;
+    schema:address _:b7238.
+_:b7238 a schema:PostalAddress;
+    schema:streetAddress "Adams Street";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "McAllen";
+    schema:postalCode "77811";
+    schema:addressCountry "Guatemala".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darnell";
+    schema:familyName "Waelchi";
+    schema:birthDate "1961-12-02"^^xsd:date;
+    schema:address _:b4146.
+_:b4146 a schema:PostalAddress;
+    schema:streetAddress "Mayert Fields";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Alfredabury";
+    schema:postalCode "35435-3984";
+    schema:addressCountry "Luxembourg".

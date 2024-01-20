@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emilio";
+    schema:familyName "Mosciski";
+    schema:birthDate "2003-07-26"^^xsd:date;
+    schema:address _:b1886.
+_:b1886 a schema:PostalAddress;
+    schema:streetAddress "Cummings Haven";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Torphyland";
+    schema:postalCode "94726";
+    schema:addressCountry "Anguilla".

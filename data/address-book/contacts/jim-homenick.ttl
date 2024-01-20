@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jim";
+    schema:familyName "Homenick";
+    schema:birthDate "1995-01-15"^^xsd:date;
+    schema:address _:b3055.
+_:b3055 a schema:PostalAddress;
+    schema:streetAddress "Kaley Place";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Lake Rosalindaview";
+    schema:postalCode "18996-0408";
+    schema:addressCountry "Malaysia".

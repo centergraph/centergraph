@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tomas";
+    schema:familyName "Jakubowski";
+    schema:birthDate "1994-08-07"^^xsd:date;
+    schema:address _:b4066.
+_:b4066 a schema:PostalAddress;
+    schema:streetAddress "Della Wells";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Torphyworth";
+    schema:postalCode "11007-7330";
+    schema:addressCountry "Uzbekistan".

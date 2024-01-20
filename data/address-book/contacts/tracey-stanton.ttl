@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tracey";
+    schema:familyName "Stanton";
+    schema:birthDate "1967-04-07"^^xsd:date;
+    schema:address _:b7085.
+_:b7085 a schema:PostalAddress;
+    schema:streetAddress "Windmill Close";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Diegochester";
+    schema:postalCode "38015-0258";
+    schema:addressCountry "Marshall Islands".

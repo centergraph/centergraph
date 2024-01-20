@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Santos";
+    schema:familyName "Heller";
+    schema:birthDate "1951-06-03"^^xsd:date;
+    schema:address _:b5020.
+_:b5020 a schema:PostalAddress;
+    schema:streetAddress "Bode Groves";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Schneiderstead";
+    schema:postalCode "18577";
+    schema:addressCountry "United Kingdom".

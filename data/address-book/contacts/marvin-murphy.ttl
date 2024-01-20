@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marvin";
+    schema:familyName "Murphy";
+    schema:birthDate "1950-10-08"^^xsd:date;
+    schema:address _:b8253.
+_:b8253 a schema:PostalAddress;
+    schema:streetAddress "Prospect Avenue";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Virginiehaven";
+    schema:postalCode "14257";
+    schema:addressCountry "Dominican Republic".

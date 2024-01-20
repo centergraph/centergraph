@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bridget";
+    schema:familyName "Herzog";
+    schema:birthDate "1969-04-07"^^xsd:date;
+    schema:address _:b2497.
+_:b2497 a schema:PostalAddress;
+    schema:streetAddress "Marcus Villages";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "West Toni";
+    schema:postalCode "32956-5359";
+    schema:addressCountry "Anguilla".

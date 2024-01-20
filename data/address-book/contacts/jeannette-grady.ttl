@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeannette";
+    schema:familyName "Grady";
+    schema:birthDate "1959-05-30"^^xsd:date;
+    schema:address _:b5084.
+_:b5084 a schema:PostalAddress;
+    schema:streetAddress "Cow Lane";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Toyfurt";
+    schema:postalCode "81851";
+    schema:addressCountry "Micronesia".

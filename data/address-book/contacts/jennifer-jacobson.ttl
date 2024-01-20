@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jennifer";
+    schema:familyName "Jacobson";
+    schema:birthDate "1989-05-27"^^xsd:date;
+    schema:address _:b8624.
+_:b8624 a schema:PostalAddress;
+    schema:streetAddress "Nader Haven";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Niagara Falls";
+    schema:postalCode "29814";
+    schema:addressCountry "Burkina Faso".

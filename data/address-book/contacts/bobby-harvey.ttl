@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bobby";
+    schema:familyName "Harvey";
+    schema:birthDate "1982-08-31"^^xsd:date;
+    schema:address _:b7631.
+_:b7631 a schema:PostalAddress;
+    schema:streetAddress "Chance Junction";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Feeststead";
+    schema:postalCode "54655";
+    schema:addressCountry "Czechia".

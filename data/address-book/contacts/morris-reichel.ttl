@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Morris";
+    schema:familyName "Reichel";
+    schema:birthDate "2002-12-13"^^xsd:date;
+    schema:address _:b6782.
+_:b6782 a schema:PostalAddress;
+    schema:streetAddress "Hettinger Haven";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Kilbackside";
+    schema:postalCode "52474";
+    schema:addressCountry "Martinique".

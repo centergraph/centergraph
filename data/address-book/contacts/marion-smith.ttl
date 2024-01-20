@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marion";
+    schema:familyName "Smith";
+    schema:birthDate "1995-11-09"^^xsd:date;
+    schema:address _:b6407.
+_:b6407 a schema:PostalAddress;
+    schema:streetAddress "Adaline Ways";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Macejkovicburgh";
+    schema:postalCode "39835";
+    schema:addressCountry "Anguilla".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nettie";
+    schema:familyName "Connelly";
+    schema:birthDate "1999-03-19"^^xsd:date;
+    schema:address _:b1531.
+_:b1531 a schema:PostalAddress;
+    schema:streetAddress "Balmoral Road";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Lake Valerieport";
+    schema:postalCode "30702-9576";
+    schema:addressCountry "Estonia".

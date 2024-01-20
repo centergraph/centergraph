@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carlton";
+    schema:familyName "Grimes";
+    schema:birthDate "1983-05-22"^^xsd:date;
+    schema:address _:b7730.
+_:b7730 a schema:PostalAddress;
+    schema:streetAddress "Dickinson Burg";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "East Kevonview";
+    schema:postalCode "34445";
+    schema:addressCountry "Iraq".

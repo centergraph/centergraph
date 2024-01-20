@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Van";
+    schema:familyName "Deckow";
+    schema:birthDate "1965-11-06"^^xsd:date;
+    schema:address _:b5358.
+_:b5358 a schema:PostalAddress;
+    schema:streetAddress "Bernard Mill";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Williamsonview";
+    schema:postalCode "48784-0724";
+    schema:addressCountry "Mali".

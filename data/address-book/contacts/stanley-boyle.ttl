@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stanley";
+    schema:familyName "Boyle";
+    schema:birthDate "1956-04-12"^^xsd:date;
+    schema:address _:b26.
+_:b26 a schema:PostalAddress;
+    schema:streetAddress "Hill Road";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "New Alysahaven";
+    schema:postalCode "30329-4426";
+    schema:addressCountry "Chad".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gregory";
+    schema:familyName "Hessel";
+    schema:birthDate "1965-02-15"^^xsd:date;
+    schema:address _:b7004.
+_:b7004 a schema:PostalAddress;
+    schema:streetAddress "Rosendo Turnpike";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Noemichester";
+    schema:postalCode "91990-5268";
+    schema:addressCountry "Sri Lanka".

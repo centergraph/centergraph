@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Noah";
+    schema:familyName "Brown";
+    schema:birthDate "1971-06-02"^^xsd:date;
+    schema:address _:b1567.
+_:b1567 a schema:PostalAddress;
+    schema:streetAddress "Schiller Track";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Jeramieborough";
+    schema:postalCode "78247";
+    schema:addressCountry "Republic of Korea".

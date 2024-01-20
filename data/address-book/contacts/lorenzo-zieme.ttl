@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorenzo";
+    schema:familyName "Zieme";
+    schema:birthDate "1968-04-23"^^xsd:date;
+    schema:address _:b5830.
+_:b5830 a schema:PostalAddress;
+    schema:streetAddress "Angelo Landing";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Faustomouth";
+    schema:postalCode "10814-2899";
+    schema:addressCountry "Cayman Islands".

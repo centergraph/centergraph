@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nadine";
+    schema:familyName "Turcotte";
+    schema:birthDate "1971-12-19"^^xsd:date;
+    schema:address _:b2316.
+_:b2316 a schema:PostalAddress;
+    schema:streetAddress "Kunde Flat";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "West Palm Beach";
+    schema:postalCode "16491-1253";
+    schema:addressCountry "Trinidad and Tobago".

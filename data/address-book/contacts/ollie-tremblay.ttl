@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ollie";
+    schema:familyName "Tremblay";
+    schema:birthDate "2001-11-02"^^xsd:date;
+    schema:address _:b6368.
+_:b6368 a schema:PostalAddress;
+    schema:streetAddress "Castle Close";
+    schema:addressRegion "New York";
+    schema:addressLocality "Fort Florenceville";
+    schema:postalCode "19736-1351";
+    schema:addressCountry "Saint Barthelemy".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Albert";
+    schema:familyName "Crooks";
+    schema:birthDate "1984-12-12"^^xsd:date;
+    schema:address _:b1608.
+_:b1608 a schema:PostalAddress;
+    schema:streetAddress "Angie Court";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "West Mariam";
+    schema:postalCode "30152";
+    schema:addressCountry "Holy See (Vatican City State)".

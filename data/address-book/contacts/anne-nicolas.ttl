@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Anne";
+    schema:familyName "Nicolas";
+    schema:birthDate "1992-09-25"^^xsd:date;
+    schema:address _:b7648.
+_:b7648 a schema:PostalAddress;
+    schema:streetAddress "Milton Street";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Kaiabury";
+    schema:postalCode "93372-3192";
+    schema:addressCountry "Vanuatu".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doyle";
+    schema:familyName "Wolf";
+    schema:birthDate "1997-07-21"^^xsd:date;
+    schema:address _:b9007.
+_:b9007 a schema:PostalAddress;
+    schema:streetAddress "Percival Grove";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Lake Howell";
+    schema:postalCode "53271-1465";
+    schema:addressCountry "Dominica".

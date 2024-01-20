@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Garry";
+    schema:familyName "Jacobs";
+    schema:birthDate "1971-03-28"^^xsd:date;
+    schema:address _:b5831.
+_:b5831 a schema:PostalAddress;
+    schema:streetAddress "Kuhlman Corners";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Lemkeborough";
+    schema:postalCode "07286";
+    schema:addressCountry "Yemen".

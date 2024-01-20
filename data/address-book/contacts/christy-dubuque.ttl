@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Christy";
+    schema:familyName "DuBuque";
+    schema:birthDate "1985-07-30"^^xsd:date;
+    schema:address _:b3779.
+_:b3779 a schema:PostalAddress;
+    schema:streetAddress "Front Street";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Prohaskastad";
+    schema:postalCode "55831";
+    schema:addressCountry "Pakistan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Myra";
+    schema:familyName "Gleason";
+    schema:birthDate "1961-10-05"^^xsd:date;
+    schema:address _:b2166.
+_:b2166 a schema:PostalAddress;
+    schema:streetAddress "Wiza Park";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Goodwinshire";
+    schema:postalCode "23329-8485";
+    schema:addressCountry "Marshall Islands".

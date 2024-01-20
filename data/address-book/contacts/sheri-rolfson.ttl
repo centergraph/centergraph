@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sheri";
+    schema:familyName "Rolfson";
+    schema:birthDate "2001-02-13"^^xsd:date;
+    schema:address _:b9354.
+_:b9354 a schema:PostalAddress;
+    schema:streetAddress "Antonio Estates";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Cheektowaga";
+    schema:postalCode "29402";
+    schema:addressCountry "Bolivia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Irma";
+    schema:familyName "O'Kon";
+    schema:birthDate "1978-10-25"^^xsd:date;
+    schema:address _:b2298.
+_:b2298 a schema:PostalAddress;
+    schema:streetAddress "Morar Crossing";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Lueilwitzcester";
+    schema:postalCode "66713-9714";
+    schema:addressCountry "Comoros".

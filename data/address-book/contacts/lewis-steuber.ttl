@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lewis";
+    schema:familyName "Steuber";
+    schema:birthDate "1986-08-02"^^xsd:date;
+    schema:address _:b1434.
+_:b1434 a schema:PostalAddress;
+    schema:streetAddress "Birch Road";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Irondequoit";
+    schema:postalCode "60330-0383";
+    schema:addressCountry "Myanmar".

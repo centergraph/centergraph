@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lester";
+    schema:familyName "Kub";
+    schema:birthDate "1999-05-11"^^xsd:date;
+    schema:address _:b3588.
+_:b3588 a schema:PostalAddress;
+    schema:streetAddress "E Broad Street";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Feeneystad";
+    schema:postalCode "61120";
+    schema:addressCountry "Gambia".

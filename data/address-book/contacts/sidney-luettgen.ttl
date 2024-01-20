@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sidney";
+    schema:familyName "Luettgen";
+    schema:birthDate "1950-06-27"^^xsd:date;
+    schema:address _:b9222.
+_:b9222 a schema:PostalAddress;
+    schema:streetAddress "Jerome Land";
+    schema:addressRegion "California";
+    schema:addressLocality "Letitiaborough";
+    schema:postalCode "71128-7428";
+    schema:addressCountry "Morocco".

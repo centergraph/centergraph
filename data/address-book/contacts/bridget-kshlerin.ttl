@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bridget";
+    schema:familyName "Kshlerin";
+    schema:birthDate "2001-07-29"^^xsd:date;
+    schema:address _:b5130.
+_:b5130 a schema:PostalAddress;
+    schema:streetAddress "Willms Spurs";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Jaylenchester";
+    schema:postalCode "38769";
+    schema:addressCountry "Namibia".

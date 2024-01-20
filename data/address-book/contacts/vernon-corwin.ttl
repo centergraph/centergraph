@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vernon";
+    schema:familyName "Corwin";
+    schema:birthDate "1989-01-09"^^xsd:date;
+    schema:address _:b3143.
+_:b3143 a schema:PostalAddress;
+    schema:streetAddress "Princes Street";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Casandraside";
+    schema:postalCode "47564";
+    schema:addressCountry "Antarctica".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorene";
+    schema:familyName "Flatley";
+    schema:birthDate "1994-01-29"^^xsd:date;
+    schema:address _:b8423.
+_:b8423 a schema:PostalAddress;
+    schema:streetAddress "Manor Drive";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "North Betsytown";
+    schema:postalCode "52606-6571";
+    schema:addressCountry "Congo".

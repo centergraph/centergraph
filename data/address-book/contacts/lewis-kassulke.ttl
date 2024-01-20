@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lewis";
+    schema:familyName "Kassulke";
+    schema:birthDate "1982-08-10"^^xsd:date;
+    schema:address _:b4109.
+_:b4109 a schema:PostalAddress;
+    schema:streetAddress "Tillman Port";
+    schema:addressRegion "New York";
+    schema:addressLocality "Valdosta";
+    schema:postalCode "65275-3571";
+    schema:addressCountry "Angola".

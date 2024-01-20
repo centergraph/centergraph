@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julie";
+    schema:familyName "Murray";
+    schema:birthDate "1973-07-12"^^xsd:date;
+    schema:address _:b4798.
+_:b4798 a schema:PostalAddress;
+    schema:streetAddress "Trisha Circle";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Lake Lloyd";
+    schema:postalCode "65170-9016";
+    schema:addressCountry "Saint Martin".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clifton";
+    schema:familyName "Schneider";
+    schema:birthDate "1969-02-04"^^xsd:date;
+    schema:address _:b6072.
+_:b6072 a schema:PostalAddress;
+    schema:streetAddress "Rebeca Haven";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Nashville-Davidson";
+    schema:postalCode "59620-1529";
+    schema:addressCountry "Mexico".

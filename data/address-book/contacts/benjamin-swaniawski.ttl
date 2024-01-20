@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Benjamin";
+    schema:familyName "Swaniawski";
+    schema:birthDate "1965-07-09"^^xsd:date;
+    schema:address _:b2936.
+_:b2936 a schema:PostalAddress;
+    schema:streetAddress "Elise Orchard";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Shanyton";
+    schema:postalCode "38392";
+    schema:addressCountry "Belize".

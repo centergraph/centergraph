@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Faith";
+    schema:familyName "O'Conner";
+    schema:birthDate "1995-03-25"^^xsd:date;
+    schema:address _:b2449.
+_:b2449 a schema:PostalAddress;
+    schema:streetAddress "Addie Glens";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "Port Lindsaymouth";
+    schema:postalCode "92523";
+    schema:addressCountry "Christmas Island".

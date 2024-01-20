@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeanne";
+    schema:familyName "Wolff";
+    schema:birthDate "2005-12-16"^^xsd:date;
+    schema:address _:b5962.
+_:b5962 a schema:PostalAddress;
+    schema:streetAddress "Giovanny Field";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Jovanside";
+    schema:postalCode "58885";
+    schema:addressCountry "Papua New Guinea".

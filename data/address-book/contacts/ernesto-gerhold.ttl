@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ernesto";
+    schema:familyName "Gerhold";
+    schema:birthDate "1991-07-04"^^xsd:date;
+    schema:address _:b8881.
+_:b8881 a schema:PostalAddress;
+    schema:streetAddress "N Main Avenue";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Lake Alexys";
+    schema:postalCode "03037-5827";
+    schema:addressCountry "Malawi".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Darrel";
+    schema:familyName "Okuneva";
+    schema:birthDate "1946-10-01"^^xsd:date;
+    schema:address _:b7187.
+_:b7187 a schema:PostalAddress;
+    schema:streetAddress "Hansen Port";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Port Myrna";
+    schema:postalCode "50149";
+    schema:addressCountry "Taiwan".

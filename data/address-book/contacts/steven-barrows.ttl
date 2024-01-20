@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Steven";
+    schema:familyName "Barrows";
+    schema:birthDate "2003-05-08"^^xsd:date;
+    schema:address _:b2115.
+_:b2115 a schema:PostalAddress;
+    schema:streetAddress "Church Path";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Willland";
+    schema:postalCode "78277";
+    schema:addressCountry "Oman".

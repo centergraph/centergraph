@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sonya";
+    schema:familyName "Ankunding";
+    schema:birthDate "1953-01-06"^^xsd:date;
+    schema:address _:b9891.
+_:b9891 a schema:PostalAddress;
+    schema:streetAddress "Bramley Close";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "New Delaney";
+    schema:postalCode "24553";
+    schema:addressCountry "Zambia".

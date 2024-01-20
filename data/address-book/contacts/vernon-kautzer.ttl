@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vernon";
+    schema:familyName "Kautzer";
+    schema:birthDate "1971-09-10"^^xsd:date;
+    schema:address _:b198.
+_:b198 a schema:PostalAddress;
+    schema:streetAddress "Labadie Ridges";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "New Llewellyn";
+    schema:postalCode "21105-4886";
+    schema:addressCountry "Dominica".

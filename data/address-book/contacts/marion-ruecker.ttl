@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marion";
+    schema:familyName "Ruecker";
+    schema:birthDate "1987-11-08"^^xsd:date;
+    schema:address _:b4016.
+_:b4016 a schema:PostalAddress;
+    schema:streetAddress "Austin Walks";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Lake Bryonburgh";
+    schema:postalCode "90620";
+    schema:addressCountry "Japan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Holly";
+    schema:familyName "Berge";
+    schema:birthDate "2000-03-15"^^xsd:date;
+    schema:address _:b93.
+_:b93 a schema:PostalAddress;
+    schema:streetAddress "Christiansen Ford";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Cassinworth";
+    schema:postalCode "75324-2448";
+    schema:addressCountry "Mauritania".

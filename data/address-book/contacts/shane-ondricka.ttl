@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shane";
+    schema:familyName "Ondricka";
+    schema:birthDate "2002-03-07"^^xsd:date;
+    schema:address _:b6955.
+_:b6955 a schema:PostalAddress;
+    schema:streetAddress "Garrison Burgs";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Nampa";
+    schema:postalCode "24247";
+    schema:addressCountry "Macao".

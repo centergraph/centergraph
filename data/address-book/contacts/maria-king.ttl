@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Maria";
+    schema:familyName "King";
+    schema:birthDate "2001-11-13"^^xsd:date;
+    schema:address _:b5398.
+_:b5398 a schema:PostalAddress;
+    schema:streetAddress "N Cedar Street";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "West Anastaciofort";
+    schema:postalCode "88419-6337";
+    schema:addressCountry "Mozambique".

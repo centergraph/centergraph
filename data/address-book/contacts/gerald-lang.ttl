@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gerald";
+    schema:familyName "Lang";
+    schema:birthDate "1948-01-10"^^xsd:date;
+    schema:address _:b7840.
+_:b7840 a schema:PostalAddress;
+    schema:streetAddress "Rogahn Glen";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Walshfurt";
+    schema:postalCode "37444";
+    schema:addressCountry "Georgia".

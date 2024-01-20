@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rudolph";
+    schema:familyName "Stroman";
+    schema:birthDate "1959-11-01"^^xsd:date;
+    schema:address _:b3935.
+_:b3935 a schema:PostalAddress;
+    schema:streetAddress "Walsh Spur";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Laurenbury";
+    schema:postalCode "22731-5814";
+    schema:addressCountry "Democratic People's Republic of Korea".

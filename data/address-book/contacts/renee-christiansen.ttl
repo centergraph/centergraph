@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Renee";
+    schema:familyName "Christiansen";
+    schema:birthDate "1944-11-28"^^xsd:date;
+    schema:address _:b3231.
+_:b3231 a schema:PostalAddress;
+    schema:streetAddress "Kaycee Summit";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "South Lora";
+    schema:postalCode "98953-1564";
+    schema:addressCountry "Zambia".

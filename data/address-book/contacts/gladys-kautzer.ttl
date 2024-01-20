@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gladys";
+    schema:familyName "Kautzer";
+    schema:birthDate "1950-05-15"^^xsd:date;
+    schema:address _:b8471.
+_:b8471 a schema:PostalAddress;
+    schema:streetAddress "Ruby Views";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Sayreville";
+    schema:postalCode "58967";
+    schema:addressCountry "Armenia".

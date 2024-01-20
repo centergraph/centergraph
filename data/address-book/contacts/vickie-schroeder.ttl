@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Vickie";
+    schema:familyName "Schroeder";
+    schema:birthDate "1969-10-30"^^xsd:date;
+    schema:address _:b2573.
+_:b2573 a schema:PostalAddress;
+    schema:streetAddress "Watsica Bridge";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Leesburg";
+    schema:postalCode "82013-0026";
+    schema:addressCountry "Slovakia".

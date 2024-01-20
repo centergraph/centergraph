@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ken";
+    schema:familyName "Breitenberg";
+    schema:birthDate "1952-06-01"^^xsd:date;
+    schema:address _:b6626.
+_:b6626 a schema:PostalAddress;
+    schema:streetAddress "Beech Grove";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Bel Air South";
+    schema:postalCode "01225";
+    schema:addressCountry "Antigua and Barbuda".

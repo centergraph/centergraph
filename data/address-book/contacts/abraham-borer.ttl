@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Abraham";
+    schema:familyName "Borer";
+    schema:birthDate "1959-09-22"^^xsd:date;
+    schema:address _:b2296.
+_:b2296 a schema:PostalAddress;
+    schema:streetAddress "Elinor Rue";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Pflugerville";
+    schema:postalCode "57116";
+    schema:addressCountry "Nepal".

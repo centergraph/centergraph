@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tracy";
+    schema:familyName "Smith";
+    schema:birthDate "1963-10-22"^^xsd:date;
+    schema:address _:b5728.
+_:b5728 a schema:PostalAddress;
+    schema:streetAddress "Windermere Road";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Elmirachester";
+    schema:postalCode "09149";
+    schema:addressCountry "Kazakhstan".

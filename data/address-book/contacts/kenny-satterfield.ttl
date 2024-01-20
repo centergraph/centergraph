@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kenny";
+    schema:familyName "Satterfield";
+    schema:birthDate "1972-06-01"^^xsd:date;
+    schema:address _:b5603.
+_:b5603 a schema:PostalAddress;
+    schema:streetAddress "Maggie Cliffs";
+    schema:addressRegion "New York";
+    schema:addressLocality "Melisafield";
+    schema:postalCode "91534";
+    schema:addressCountry "Burkina Faso".

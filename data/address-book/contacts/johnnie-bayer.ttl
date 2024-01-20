@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Johnnie";
+    schema:familyName "Bayer";
+    schema:birthDate "1948-03-08"^^xsd:date;
+    schema:address _:b2439.
+_:b2439 a schema:PostalAddress;
+    schema:streetAddress "Stroman Ports";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Highland";
+    schema:postalCode "03544-9317";
+    schema:addressCountry "Democratic Republic of the Congo".

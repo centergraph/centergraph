@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Faye";
+    schema:familyName "Ratke";
+    schema:birthDate "1974-05-24"^^xsd:date;
+    schema:address _:b410.
+_:b410 a schema:PostalAddress;
+    schema:streetAddress "W 12th Street";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Armstrongside";
+    schema:postalCode "66809-5502";
+    schema:addressCountry "Netherlands".

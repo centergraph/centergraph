@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brett";
+    schema:familyName "Stanton";
+    schema:birthDate "2002-01-26"^^xsd:date;
+    schema:address _:b5571.
+_:b5571 a schema:PostalAddress;
+    schema:streetAddress "Sipes Isle";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "West Chazfort";
+    schema:postalCode "31781-3053";
+    schema:addressCountry "Montserrat".

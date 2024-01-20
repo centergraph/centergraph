@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Maureen";
+    schema:familyName "Hessel";
+    schema:birthDate "2005-02-22"^^xsd:date;
+    schema:address _:b3130.
+_:b3130 a schema:PostalAddress;
+    schema:streetAddress "Cavendish Road";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Larrybury";
+    schema:postalCode "85681-3921";
+    schema:addressCountry "Uzbekistan".

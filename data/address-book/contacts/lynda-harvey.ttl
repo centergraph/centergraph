@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lynda";
+    schema:familyName "Harvey";
+    schema:birthDate "1959-01-06"^^xsd:date;
+    schema:address _:b1460.
+_:b1460 a schema:PostalAddress;
+    schema:streetAddress "Leonor Roads";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Lake Domenico";
+    schema:postalCode "87002-9173";
+    schema:addressCountry "Lesotho".

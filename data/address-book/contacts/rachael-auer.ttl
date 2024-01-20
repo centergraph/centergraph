@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rachael";
+    schema:familyName "Auer";
+    schema:birthDate "1967-10-20"^^xsd:date;
+    schema:address _:b4289.
+_:b4289 a schema:PostalAddress;
+    schema:streetAddress "Amos Bypass";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Fritschside";
+    schema:postalCode "67958";
+    schema:addressCountry "Saint Barthelemy".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Travis";
+    schema:familyName "Larkin";
+    schema:birthDate "1964-06-18"^^xsd:date;
+    schema:address _:b841.
+_:b841 a schema:PostalAddress;
+    schema:streetAddress "N High Street";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Koleton";
+    schema:postalCode "71281-8639";
+    schema:addressCountry "Singapore".

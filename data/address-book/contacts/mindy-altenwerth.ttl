@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mindy";
+    schema:familyName "Altenwerth";
+    schema:birthDate "1978-04-15"^^xsd:date;
+    schema:address _:b7694.
+_:b7694 a schema:PostalAddress;
+    schema:streetAddress "Era Islands";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Cerritos";
+    schema:postalCode "25164";
+    schema:addressCountry "Belize".

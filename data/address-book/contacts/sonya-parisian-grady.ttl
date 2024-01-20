@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sonya";
+    schema:familyName "Parisian-Grady";
+    schema:birthDate "1988-12-04"^^xsd:date;
+    schema:address _:b1961.
+_:b1961 a schema:PostalAddress;
+    schema:streetAddress "Noble Station";
+    schema:addressRegion "Maine";
+    schema:addressLocality "East Richard";
+    schema:postalCode "93416";
+    schema:addressCountry "Democratic Republic of the Congo".

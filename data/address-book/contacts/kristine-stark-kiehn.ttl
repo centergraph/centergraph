@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristine";
+    schema:familyName "Stark-Kiehn";
+    schema:birthDate "1976-02-01"^^xsd:date;
+    schema:address _:b6956.
+_:b6956 a schema:PostalAddress;
+    schema:streetAddress "Clay Lane";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Lake Stephon";
+    schema:postalCode "09875-4691";
+    schema:addressCountry "Rwanda".

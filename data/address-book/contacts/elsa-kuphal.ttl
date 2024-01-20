@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elsa";
+    schema:familyName "Kuphal";
+    schema:birthDate "1995-08-10"^^xsd:date;
+    schema:address _:b9175.
+_:b9175 a schema:PostalAddress;
+    schema:streetAddress "George Street";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Schmidtberg";
+    schema:postalCode "81909-7216";
+    schema:addressCountry "Afghanistan".

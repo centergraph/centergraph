@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ralph";
+    schema:familyName "Ledner";
+    schema:birthDate "1998-04-09"^^xsd:date;
+    schema:address _:b9975.
+_:b9975 a schema:PostalAddress;
+    schema:streetAddress "Thiel Field";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Alishaville";
+    schema:postalCode "94004-6989";
+    schema:addressCountry "Honduras".

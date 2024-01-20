@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sarah";
+    schema:familyName "Jast";
+    schema:birthDate "1977-09-25"^^xsd:date;
+    schema:address _:b4134.
+_:b4134 a schema:PostalAddress;
+    schema:streetAddress "E Bridge Street";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Daijashire";
+    schema:postalCode "04322-9501";
+    schema:addressCountry "Latvia".

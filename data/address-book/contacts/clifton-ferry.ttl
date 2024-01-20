@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clifton";
+    schema:familyName "Ferry";
+    schema:birthDate "1976-08-13"^^xsd:date;
+    schema:address _:b2781.
+_:b2781 a schema:PostalAddress;
+    schema:streetAddress "S Oak Street";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Turnerworth";
+    schema:postalCode "12977-9683";
+    schema:addressCountry "Lao People's Democratic Republic".

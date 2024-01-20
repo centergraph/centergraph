@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alfredo";
+    schema:familyName "Nikolaus";
+    schema:birthDate "1980-01-14"^^xsd:date;
+    schema:address _:b6646.
+_:b6646 a schema:PostalAddress;
+    schema:streetAddress "Williamson Crest";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "North Andreannetown";
+    schema:postalCode "56564-4789";
+    schema:addressCountry "Burkina Faso".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Santiago";
+    schema:familyName "Willms";
+    schema:birthDate "2004-02-14"^^xsd:date;
+    schema:address _:b8947.
+_:b8947 a schema:PostalAddress;
+    schema:streetAddress "McClure Walk";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Reillyfort";
+    schema:postalCode "36408-1939";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jonathon";
+    schema:familyName "Abshire";
+    schema:birthDate "1970-06-22"^^xsd:date;
+    schema:address _:b8692.
+_:b8692 a schema:PostalAddress;
+    schema:streetAddress "Gwen Ramp";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Stokescester";
+    schema:postalCode "31442";
+    schema:addressCountry "Samoa".

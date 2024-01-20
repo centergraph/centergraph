@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amy";
+    schema:familyName "Parisian";
+    schema:birthDate "1989-10-09"^^xsd:date;
+    schema:address _:b7738.
+_:b7738 a schema:PostalAddress;
+    schema:streetAddress "Maribel Cape";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Adrielchester";
+    schema:postalCode "76255-6462";
+    schema:addressCountry "North Macedonia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leo";
+    schema:familyName "Feeney";
+    schema:birthDate "1982-09-11"^^xsd:date;
+    schema:address _:b2529.
+_:b2529 a schema:PostalAddress;
+    schema:streetAddress "Desiree Drives";
+    schema:addressRegion "California";
+    schema:addressLocality "Port Rosalind";
+    schema:postalCode "24686";
+    schema:addressCountry "Iraq".

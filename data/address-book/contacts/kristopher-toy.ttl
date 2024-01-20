@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristopher";
+    schema:familyName "Toy";
+    schema:birthDate "1977-12-22"^^xsd:date;
+    schema:address _:b1773.
+_:b1773 a schema:PostalAddress;
+    schema:streetAddress "New Road";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Fort Lionelport";
+    schema:postalCode "92534-7372";
+    schema:addressCountry "Aland Islands".

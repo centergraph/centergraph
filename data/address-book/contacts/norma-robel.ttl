@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Norma";
+    schema:familyName "Robel";
+    schema:birthDate "1986-08-21"^^xsd:date;
+    schema:address _:b4558.
+_:b4558 a schema:PostalAddress;
+    schema:streetAddress "Dorris Creek";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Fort Madilyn";
+    schema:postalCode "64641-8793";
+    schema:addressCountry "Sudan".

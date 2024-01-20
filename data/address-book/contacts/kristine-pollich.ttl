@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristine";
+    schema:familyName "Pollich";
+    schema:birthDate "1990-08-04"^^xsd:date;
+    schema:address _:b3835.
+_:b3835 a schema:PostalAddress;
+    schema:streetAddress "King's Road";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Aydenworth";
+    schema:postalCode "42337-0430";
+    schema:addressCountry "Italy".

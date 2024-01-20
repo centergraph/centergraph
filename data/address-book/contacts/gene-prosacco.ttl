@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gene";
+    schema:familyName "Prosacco";
+    schema:birthDate "2000-09-15"^^xsd:date;
+    schema:address _:b7528.
+_:b7528 a schema:PostalAddress;
+    schema:streetAddress "14th Street";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Lake Julesworth";
+    schema:postalCode "33512-1208";
+    schema:addressCountry "Venezuela".

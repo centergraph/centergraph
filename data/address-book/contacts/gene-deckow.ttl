@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gene";
+    schema:familyName "Deckow";
+    schema:birthDate "1985-09-27"^^xsd:date;
+    schema:address _:b2553.
+_:b2553 a schema:PostalAddress;
+    schema:streetAddress "Petra Rapid";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Torpland";
+    schema:postalCode "41546-9469";
+    schema:addressCountry "Sierra Leone".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wanda";
+    schema:familyName "Grant";
+    schema:birthDate "1944-04-12"^^xsd:date;
+    schema:address _:b6359.
+_:b6359 a schema:PostalAddress;
+    schema:streetAddress "Beth Summit";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Rodriguezton";
+    schema:postalCode "05167";
+    schema:addressCountry "Kiribati".

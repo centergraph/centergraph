@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Heidi";
+    schema:familyName "Stroman";
+    schema:birthDate "1959-06-08"^^xsd:date;
+    schema:address _:b8954.
+_:b8954 a schema:PostalAddress;
+    schema:streetAddress "Roberts Ports";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Dejaberg";
+    schema:postalCode "61437";
+    schema:addressCountry "Chad".

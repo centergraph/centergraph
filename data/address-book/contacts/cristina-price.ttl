@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cristina";
+    schema:familyName "Price";
+    schema:birthDate "1944-03-05"^^xsd:date;
+    schema:address _:b6040.
+_:b6040 a schema:PostalAddress;
+    schema:streetAddress "Cassin Meadow";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Casas Adobes";
+    schema:postalCode "51976-3052";
+    schema:addressCountry "Israel".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "James";
+    schema:familyName "Pagac";
+    schema:birthDate "2001-12-07"^^xsd:date;
+    schema:address _:b2513.
+_:b2513 a schema:PostalAddress;
+    schema:streetAddress "Roberts Row";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "New Rosa";
+    schema:postalCode "64707";
+    schema:addressCountry "Samoa".

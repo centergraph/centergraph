@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Floyd";
+    schema:familyName "Jast";
+    schema:birthDate "1963-12-28"^^xsd:date;
+    schema:address _:b4210.
+_:b4210 a schema:PostalAddress;
+    schema:streetAddress "Shields Ford";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "New Noemycester";
+    schema:postalCode "46622";
+    schema:addressCountry "Greenland".

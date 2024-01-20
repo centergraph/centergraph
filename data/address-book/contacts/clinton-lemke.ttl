@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clinton";
+    schema:familyName "Lemke";
+    schema:birthDate "1990-01-26"^^xsd:date;
+    schema:address _:b5601.
+_:b5601 a schema:PostalAddress;
+    schema:streetAddress "Tyreek Center";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Dearborn";
+    schema:postalCode "82159-5930";
+    schema:addressCountry "Monaco".

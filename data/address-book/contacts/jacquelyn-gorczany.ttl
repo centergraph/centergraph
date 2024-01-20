@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jacquelyn";
+    schema:familyName "Gorczany";
+    schema:birthDate "1957-04-08"^^xsd:date;
+    schema:address _:b900.
+_:b900 a schema:PostalAddress;
+    schema:streetAddress "Mya Plain";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Pocatello";
+    schema:postalCode "82782-7576";
+    schema:addressCountry "Libyan Arab Jamahiriya".

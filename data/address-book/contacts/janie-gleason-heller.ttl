@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janie";
+    schema:familyName "Gleason-Heller";
+    schema:birthDate "1955-04-10"^^xsd:date;
+    schema:address _:b2863.
+_:b2863 a schema:PostalAddress;
+    schema:streetAddress "Ash Grove";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Lafayette";
+    schema:postalCode "45132-7005";
+    schema:addressCountry "Denmark".

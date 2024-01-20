@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lillie";
+    schema:familyName "Larson";
+    schema:birthDate "1995-02-23"^^xsd:date;
+    schema:address _:b8981.
+_:b8981 a schema:PostalAddress;
+    schema:streetAddress "William Rapid";
+    schema:addressRegion "California";
+    schema:addressLocality "Sonnyworth";
+    schema:postalCode "18495";
+    schema:addressCountry "Uzbekistan".

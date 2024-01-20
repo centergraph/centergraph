@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jordan";
+    schema:familyName "Jenkins";
+    schema:birthDate "1961-09-23"^^xsd:date;
+    schema:address _:b3997.
+_:b3997 a schema:PostalAddress;
+    schema:streetAddress "Ullrich Coves";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Casas Adobes";
+    schema:postalCode "52752";
+    schema:addressCountry "Germany".

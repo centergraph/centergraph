@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hope";
+    schema:familyName "Block";
+    schema:birthDate "1951-03-13"^^xsd:date;
+    schema:address _:b2275.
+_:b2275 a schema:PostalAddress;
+    schema:streetAddress "Low Road";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Brownfort";
+    schema:postalCode "32147-5837";
+    schema:addressCountry "Qatar".

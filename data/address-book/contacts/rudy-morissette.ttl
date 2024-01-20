@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rudy";
+    schema:familyName "Morissette";
+    schema:birthDate "1984-01-08"^^xsd:date;
+    schema:address _:b7722.
+_:b7722 a schema:PostalAddress;
+    schema:streetAddress "Cedar Road";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "South Jairofield";
+    schema:postalCode "87816";
+    schema:addressCountry "Mali".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shannon";
+    schema:familyName "Macejkovic-Wiegand";
+    schema:birthDate "1963-10-13"^^xsd:date;
+    schema:address _:b5769.
+_:b5769 a schema:PostalAddress;
+    schema:streetAddress "Botsford Cape";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Angelineburgh";
+    schema:postalCode "42538";
+    schema:addressCountry "Malta".

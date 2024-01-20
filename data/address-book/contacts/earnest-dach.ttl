@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Earnest";
+    schema:familyName "Dach";
+    schema:birthDate "1964-08-22"^^xsd:date;
+    schema:address _:b229.
+_:b229 a schema:PostalAddress;
+    schema:streetAddress "Witting Centers";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "New Drew";
+    schema:postalCode "16286";
+    schema:addressCountry "Aland Islands".

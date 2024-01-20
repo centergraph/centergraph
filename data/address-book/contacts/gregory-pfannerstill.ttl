@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gregory";
+    schema:familyName "Pfannerstill";
+    schema:birthDate "1961-07-24"^^xsd:date;
+    schema:address _:b8721.
+_:b8721 a schema:PostalAddress;
+    schema:streetAddress "Bauch Expressway";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Mayerfort";
+    schema:postalCode "27477-7609";
+    schema:addressCountry "Palestine".

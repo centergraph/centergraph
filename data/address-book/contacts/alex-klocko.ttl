@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alex";
+    schema:familyName "Klocko";
+    schema:birthDate "1984-07-02"^^xsd:date;
+    schema:address _:b4237.
+_:b4237 a schema:PostalAddress;
+    schema:streetAddress "The Mews";
+    schema:addressRegion "Florida";
+    schema:addressLocality "East Keaton";
+    schema:postalCode "88598-5047";
+    schema:addressCountry "Malawi".

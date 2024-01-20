@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clay";
+    schema:familyName "Fisher-Bogisich";
+    schema:birthDate "1974-06-15"^^xsd:date;
+    schema:address _:b3649.
+_:b3649 a schema:PostalAddress;
+    schema:streetAddress "Rogahn Road";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "North Helene";
+    schema:postalCode "05569-8378";
+    schema:addressCountry "Afghanistan".

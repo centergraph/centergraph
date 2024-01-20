@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janis";
+    schema:familyName "Gerhold";
+    schema:birthDate "1949-12-28"^^xsd:date;
+    schema:address _:b1884.
+_:b1884 a schema:PostalAddress;
+    schema:streetAddress "Waldo Walk";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "South Rickey";
+    schema:postalCode "01072";
+    schema:addressCountry "Afghanistan".

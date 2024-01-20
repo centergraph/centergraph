@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Randal";
+    schema:familyName "Kessler";
+    schema:birthDate "1978-05-18"^^xsd:date;
+    schema:address _:b6549.
+_:b6549 a schema:PostalAddress;
+    schema:streetAddress "Clay Wells";
+    schema:addressRegion "New York";
+    schema:addressLocality "Phyllisland";
+    schema:postalCode "58842";
+    schema:addressCountry "Palau".

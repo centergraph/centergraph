@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doreen";
+    schema:familyName "Beer";
+    schema:birthDate "1977-02-20"^^xsd:date;
+    schema:address _:b613.
+_:b613 a schema:PostalAddress;
+    schema:streetAddress "Clarence Street";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Lake Eladioville";
+    schema:postalCode "93015";
+    schema:addressCountry "Cape Verde".

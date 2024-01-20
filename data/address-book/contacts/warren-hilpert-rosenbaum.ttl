@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Warren";
+    schema:familyName "Hilpert-Rosenbaum";
+    schema:birthDate "1985-12-11"^^xsd:date;
+    schema:address _:b4492.
+_:b4492 a schema:PostalAddress;
+    schema:streetAddress "Wren Close";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Wisozkboro";
+    schema:postalCode "39754";
+    schema:addressCountry "Australia".

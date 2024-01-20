@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Renee";
+    schema:familyName "Bode";
+    schema:birthDate "2005-02-02"^^xsd:date;
+    schema:address _:b5043.
+_:b5043 a schema:PostalAddress;
+    schema:streetAddress "West Street";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Lake Samson";
+    schema:postalCode "60152";
+    schema:addressCountry "Greenland".

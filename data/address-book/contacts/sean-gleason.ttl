@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sean";
+    schema:familyName "Gleason";
+    schema:birthDate "1996-08-28"^^xsd:date;
+    schema:address _:b2994.
+_:b2994 a schema:PostalAddress;
+    schema:streetAddress "Grange Road";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Bristol";
+    schema:postalCode "72362-3364";
+    schema:addressCountry "Portugal".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Delia";
+    schema:familyName "Quigley";
+    schema:birthDate "1969-08-08"^^xsd:date;
+    schema:address _:b9512.
+_:b9512 a schema:PostalAddress;
+    schema:streetAddress "Brycen Vista";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Lake Franciscoborough";
+    schema:postalCode "49278";
+    schema:addressCountry "Philippines".

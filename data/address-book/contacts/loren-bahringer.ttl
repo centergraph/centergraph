@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Loren";
+    schema:familyName "Bahringer";
+    schema:birthDate "1975-09-13"^^xsd:date;
+    schema:address _:b322.
+_:b322 a schema:PostalAddress;
+    schema:streetAddress "Edgar Rapid";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Albany";
+    schema:postalCode "79390";
+    schema:addressCountry "Bahamas".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Grady";
+    schema:familyName "Ortiz";
+    schema:birthDate "2003-09-27"^^xsd:date;
+    schema:address _:b6672.
+_:b6672 a schema:PostalAddress;
+    schema:streetAddress "Park Road";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Lonshire";
+    schema:postalCode "29749-8401";
+    schema:addressCountry "Belarus".

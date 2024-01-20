@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stuart";
+    schema:familyName "Gottlieb";
+    schema:birthDate "1961-11-26"^^xsd:date;
+    schema:address _:b8727.
+_:b8727 a schema:PostalAddress;
+    schema:streetAddress "Hansen Passage";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "North Rupertport";
+    schema:postalCode "35299";
+    schema:addressCountry "Bolivia".

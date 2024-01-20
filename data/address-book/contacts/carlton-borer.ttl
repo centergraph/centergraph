@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carlton";
+    schema:familyName "Borer";
+    schema:birthDate "1984-08-22"^^xsd:date;
+    schema:address _:b1415.
+_:b1415 a schema:PostalAddress;
+    schema:streetAddress "Hazel Grove";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "West Kaelynfield";
+    schema:postalCode "34315-1663";
+    schema:addressCountry "Eswatini".

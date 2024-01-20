@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wilson";
+    schema:familyName "Mitchell";
+    schema:birthDate "1983-10-09"^^xsd:date;
+    schema:address _:b9189.
+_:b9189 a schema:PostalAddress;
+    schema:streetAddress "Sigmund Freeway";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Jessiefort";
+    schema:postalCode "01432-7658";
+    schema:addressCountry "Mayotte".

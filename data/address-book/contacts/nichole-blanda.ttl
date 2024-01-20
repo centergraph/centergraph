@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Nichole";
     schema:familyName "Blanda";
-    schema:birthDate "1970-04-04"^^xsd:date;
-    schema:address _:b936.
-_:b936 a schema:PostalAddress;
-    schema:streetAddress "McCullough Keys";
-    schema:addressRegion "Kentucky";
-    schema:addressLocality "Fort Ruben";
-    schema:postalCode "52756-8326";
-    schema:addressCountry "South Africa".
+    schema:birthDate "1984-02-26"^^xsd:date;
+    schema:address _:b9729.
+_:b9729 a schema:PostalAddress;
+    schema:streetAddress "Elm Street";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "East Winfield";
+    schema:postalCode "81563";
+    schema:addressCountry "Sao Tome and Principe".

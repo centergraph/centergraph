@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gina";
+    schema:familyName "Reichert";
+    schema:birthDate "1995-11-03"^^xsd:date;
+    schema:address _:b5772.
+_:b5772 a schema:PostalAddress;
+    schema:streetAddress "Moises Forest";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Birmingham";
+    schema:postalCode "27407-0570";
+    schema:addressCountry "Denmark".

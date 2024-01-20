@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lawrence";
+    schema:familyName "Schinner";
+    schema:birthDate "1998-09-28"^^xsd:date;
+    schema:address _:b7008.
+_:b7008 a schema:PostalAddress;
+    schema:streetAddress "Bins Island";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Angelicastad";
+    schema:postalCode "63530-3542";
+    schema:addressCountry "Mauritania".

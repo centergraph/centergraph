@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rochelle";
+    schema:familyName "Corwin";
+    schema:birthDate "1963-01-20"^^xsd:date;
+    schema:address _:b961.
+_:b961 a schema:PostalAddress;
+    schema:streetAddress "Main Street S";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "South Kennedychester";
+    schema:postalCode "14641";
+    schema:addressCountry "Mali".

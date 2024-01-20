@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jan";
+    schema:familyName "Boyer";
+    schema:birthDate "1960-08-08"^^xsd:date;
+    schema:address _:b2190.
+_:b2190 a schema:PostalAddress;
+    schema:streetAddress "Harrison Street";
+    schema:addressRegion "Ohio";
+    schema:addressLocality "Altenwerthcester";
+    schema:postalCode "43195-4132";
+    schema:addressCountry "Bulgaria".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dianne";
+    schema:familyName "Roob";
+    schema:birthDate "1944-02-17"^^xsd:date;
+    schema:address _:b8342.
+_:b8342 a schema:PostalAddress;
+    schema:streetAddress "Franklin Road";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "West Devenstead";
+    schema:postalCode "07774";
+    schema:addressCountry "Albania".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marcos";
+    schema:familyName "Gutmann";
+    schema:birthDate "1983-11-27"^^xsd:date;
+    schema:address _:b3102.
+_:b3102 a schema:PostalAddress;
+    schema:streetAddress "Effertz Mall";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Lake Zoecester";
+    schema:postalCode "59357-4899";
+    schema:addressCountry "Democratic Republic of the Congo".

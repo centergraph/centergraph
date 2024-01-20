@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeffery";
+    schema:familyName "Schimmel";
+    schema:birthDate "1948-05-30"^^xsd:date;
+    schema:address _:b2195.
+_:b2195 a schema:PostalAddress;
+    schema:streetAddress "Elva Knolls";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Hilmaland";
+    schema:postalCode "18311";
+    schema:addressCountry "Uzbekistan".

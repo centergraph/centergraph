@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Zachary";
+    schema:familyName "Stehr";
+    schema:birthDate "1995-07-29"^^xsd:date;
+    schema:address _:b6895.
+_:b6895 a schema:PostalAddress;
+    schema:streetAddress "Libbie Estates";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Kaylahton";
+    schema:postalCode "83998";
+    schema:addressCountry "Egypt".

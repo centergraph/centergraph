@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marilyn";
+    schema:familyName "Bashirian";
+    schema:birthDate "2005-05-15"^^xsd:date;
+    schema:address _:b230.
+_:b230 a schema:PostalAddress;
+    schema:streetAddress "Wellington Road";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "New Cornellstead";
+    schema:postalCode "63172-1678";
+    schema:addressCountry "Mayotte".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sabrina";
+    schema:familyName "Stiedemann";
+    schema:birthDate "1997-12-30"^^xsd:date;
+    schema:address _:b486.
+_:b486 a schema:PostalAddress;
+    schema:streetAddress "Garden Close";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Fort Ladarius";
+    schema:postalCode "05896-9879";
+    schema:addressCountry "Zimbabwe".

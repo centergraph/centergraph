@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Percy";
+    schema:familyName "Johnston";
+    schema:birthDate "1955-02-08"^^xsd:date;
+    schema:address _:b6689.
+_:b6689 a schema:PostalAddress;
+    schema:streetAddress "N Railroad Street";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "West Robbie";
+    schema:postalCode "76819-2104";
+    schema:addressCountry "Mali".

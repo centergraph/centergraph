@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rhonda";
+    schema:familyName "Corkery";
+    schema:birthDate "1969-12-13"^^xsd:date;
+    schema:address _:b3482.
+_:b3482 a schema:PostalAddress;
+    schema:streetAddress "Hickle Trafficway";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "North Kurtis";
+    schema:postalCode "00063";
+    schema:addressCountry "Tajikistan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Faith";
+    schema:familyName "Fay";
+    schema:birthDate "1958-12-23"^^xsd:date;
+    schema:address _:b5968.
+_:b5968 a schema:PostalAddress;
+    schema:streetAddress "Marks Lights";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Jackmouth";
+    schema:postalCode "62452-1784";
+    schema:addressCountry "Micronesia".

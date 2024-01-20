@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Spencer";
+    schema:familyName "Abernathy";
+    schema:birthDate "2002-01-01"^^xsd:date;
+    schema:address _:b6624.
+_:b6624 a schema:PostalAddress;
+    schema:streetAddress "Keebler Dale";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Langworthstead";
+    schema:postalCode "25997";
+    schema:addressCountry "Vietnam".

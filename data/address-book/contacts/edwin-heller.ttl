@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edwin";
+    schema:familyName "Heller";
+    schema:birthDate "1957-04-28"^^xsd:date;
+    schema:address _:b1855.
+_:b1855 a schema:PostalAddress;
+    schema:streetAddress "Larissa Fields";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Durgancester";
+    schema:postalCode "62690";
+    schema:addressCountry "Cyprus".

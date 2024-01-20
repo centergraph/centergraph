@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alton";
+    schema:familyName "Rempel";
+    schema:birthDate "1977-11-19"^^xsd:date;
+    schema:address _:b4623.
+_:b4623 a schema:PostalAddress;
+    schema:streetAddress "O'Reilly Park";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Port Cullenfort";
+    schema:postalCode "99218-9390";
+    schema:addressCountry "Colombia".

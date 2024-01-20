@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marianne";
+    schema:familyName "Howe";
+    schema:birthDate "1978-12-02"^^xsd:date;
+    schema:address _:b1280.
+_:b1280 a schema:PostalAddress;
+    schema:streetAddress "Lueilwitz Villages";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "New Darron";
+    schema:postalCode "87716";
+    schema:addressCountry "Sri Lanka".

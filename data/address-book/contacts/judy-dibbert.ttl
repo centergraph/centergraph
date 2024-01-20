@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Judy";
+    schema:familyName "Dibbert";
+    schema:birthDate "1970-10-30"^^xsd:date;
+    schema:address _:b8279.
+_:b8279 a schema:PostalAddress;
+    schema:streetAddress "Morton Burgs";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Bonita Springs";
+    schema:postalCode "39633";
+    schema:addressCountry "Mauritius".

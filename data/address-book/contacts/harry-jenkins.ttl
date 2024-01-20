@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harry";
+    schema:familyName "Jenkins";
+    schema:birthDate "1981-12-26"^^xsd:date;
+    schema:address _:b4352.
+_:b4352 a schema:PostalAddress;
+    schema:streetAddress "Marcelle Fords";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Matildeboro";
+    schema:postalCode "39413-9257";
+    schema:addressCountry "Montserrat".

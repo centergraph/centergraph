@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lula";
+    schema:familyName "MacGyver";
+    schema:birthDate "1986-08-07"^^xsd:date;
+    schema:address _:b3426.
+_:b3426 a schema:PostalAddress;
+    schema:streetAddress "S State Street";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Portsmouth";
+    schema:postalCode "56099";
+    schema:addressCountry "Montserrat".

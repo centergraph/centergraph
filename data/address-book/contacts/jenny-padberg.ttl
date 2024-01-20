@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jenny";
+    schema:familyName "Padberg";
+    schema:birthDate "1951-05-30"^^xsd:date;
+    schema:address _:b637.
+_:b637 a schema:PostalAddress;
+    schema:streetAddress "Rebeka Mill";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "New Lavada";
+    schema:postalCode "64471";
+    schema:addressCountry "Israel".

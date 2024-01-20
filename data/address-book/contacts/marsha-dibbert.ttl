@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marsha";
+    schema:familyName "Dibbert";
+    schema:birthDate "1994-05-26"^^xsd:date;
+    schema:address _:b7743.
+_:b7743 a schema:PostalAddress;
+    schema:streetAddress "Sidney Springs";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Moenborough";
+    schema:postalCode "13488";
+    schema:addressCountry "Saint Barthelemy".

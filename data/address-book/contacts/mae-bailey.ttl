@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mae";
+    schema:familyName "Bailey";
+    schema:birthDate "1945-11-19"^^xsd:date;
+    schema:address _:b1046.
+_:b1046 a schema:PostalAddress;
+    schema:streetAddress "Tennyson Road";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Nicholausfurt";
+    schema:postalCode "84770-5837";
+    schema:addressCountry "Nigeria".

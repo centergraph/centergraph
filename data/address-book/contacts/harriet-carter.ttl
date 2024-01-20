@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harriet";
+    schema:familyName "Carter";
+    schema:birthDate "1953-05-01"^^xsd:date;
+    schema:address _:b2945.
+_:b2945 a schema:PostalAddress;
+    schema:streetAddress "Jaden Branch";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Collierville";
+    schema:postalCode "82496";
+    schema:addressCountry "Greece".

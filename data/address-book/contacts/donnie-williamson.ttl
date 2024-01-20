@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Donnie";
+    schema:familyName "Williamson";
+    schema:birthDate "1972-03-11"^^xsd:date;
+    schema:address _:b1347.
+_:b1347 a schema:PostalAddress;
+    schema:streetAddress "Mante Garden";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Arcadia";
+    schema:postalCode "81282";
+    schema:addressCountry "Georgia".

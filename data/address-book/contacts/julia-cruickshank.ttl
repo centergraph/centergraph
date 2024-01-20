@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Julia";
+    schema:familyName "Cruickshank";
+    schema:birthDate "1995-12-03"^^xsd:date;
+    schema:address _:b2549.
+_:b2549 a schema:PostalAddress;
+    schema:streetAddress "Westgate";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "New Melyssaworth";
+    schema:postalCode "13984";
+    schema:addressCountry "Cyprus".

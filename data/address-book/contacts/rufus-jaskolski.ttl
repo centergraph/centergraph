@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rufus";
+    schema:familyName "Jaskolski";
+    schema:birthDate "1985-02-23"^^xsd:date;
+    schema:address _:b9010.
+_:b9010 a schema:PostalAddress;
+    schema:streetAddress "Williamson Mount";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Tonawanda";
+    schema:postalCode "39648-5380";
+    schema:addressCountry "American Samoa".

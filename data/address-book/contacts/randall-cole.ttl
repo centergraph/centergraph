@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Randall";
+    schema:familyName "Cole";
+    schema:birthDate "1986-09-03"^^xsd:date;
+    schema:address _:b3215.
+_:b3215 a schema:PostalAddress;
+    schema:streetAddress "Lemke Rest";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Alycemouth";
+    schema:postalCode "79288";
+    schema:addressCountry "Botswana".

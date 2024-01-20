@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Danny";
+    schema:familyName "Cremin";
+    schema:birthDate "1989-03-10"^^xsd:date;
+    schema:address _:b2238.
+_:b2238 a schema:PostalAddress;
+    schema:streetAddress "Demond Mount";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Runolfsdottirfield";
+    schema:postalCode "66247-6543";
+    schema:addressCountry "Chile".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elias";
+    schema:familyName "Okuneva";
+    schema:birthDate "1999-11-11"^^xsd:date;
+    schema:address _:b1006.
+_:b1006 a schema:PostalAddress;
+    schema:streetAddress "Williamson Crescent";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Tremblayburgh";
+    schema:postalCode "00913-5774";
+    schema:addressCountry "Nepal".

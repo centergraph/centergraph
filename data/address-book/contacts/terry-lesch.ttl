@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terry";
+    schema:familyName "Lesch";
+    schema:birthDate "1964-12-06"^^xsd:date;
+    schema:address _:b3488.
+_:b3488 a schema:PostalAddress;
+    schema:streetAddress "Maryjane Estates";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "South Albinaville";
+    schema:postalCode "18286-8992";
+    schema:addressCountry "Tunisia".

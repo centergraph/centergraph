@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cecil";
+    schema:familyName "Tremblay";
+    schema:birthDate "2004-09-28"^^xsd:date;
+    schema:address _:b468.
+_:b468 a schema:PostalAddress;
+    schema:streetAddress "Pagac Fields";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Annabellville";
+    schema:postalCode "19475-1208";
+    schema:addressCountry "Cape Verde".

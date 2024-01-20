@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leroy";
+    schema:familyName "Conn";
+    schema:birthDate "1966-05-28"^^xsd:date;
+    schema:address _:b8128.
+_:b8128 a schema:PostalAddress;
+    schema:streetAddress "Kay Parkways";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Fort Mekhi";
+    schema:postalCode "37319-3312";
+    schema:addressCountry "Kiribati".

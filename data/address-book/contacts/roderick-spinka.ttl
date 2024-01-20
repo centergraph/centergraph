@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roderick";
+    schema:familyName "Spinka";
+    schema:birthDate "1972-10-21"^^xsd:date;
+    schema:address _:b5889.
+_:b5889 a schema:PostalAddress;
+    schema:streetAddress "Hulda Spurs";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Lake Destinfield";
+    schema:postalCode "33472-4098";
+    schema:addressCountry "Virgin Islands, British".

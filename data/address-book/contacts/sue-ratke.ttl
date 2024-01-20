@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sue";
+    schema:familyName "Ratke";
+    schema:birthDate "2001-04-21"^^xsd:date;
+    schema:address _:b7718.
+_:b7718 a schema:PostalAddress;
+    schema:streetAddress "Manley Walks";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Caguas";
+    schema:postalCode "67083-1317";
+    schema:addressCountry "Rwanda".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Todd";
+    schema:familyName "Schaden";
+    schema:birthDate "1978-06-25"^^xsd:date;
+    schema:address _:b7793.
+_:b7793 a schema:PostalAddress;
+    schema:streetAddress "Jazmyne Alley";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Nyahview";
+    schema:postalCode "67401";
+    schema:addressCountry "Norfolk Island".

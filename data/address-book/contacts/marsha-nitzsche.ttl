@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marsha";
+    schema:familyName "Nitzsche";
+    schema:birthDate "1952-03-14"^^xsd:date;
+    schema:address _:b1016.
+_:b1016 a schema:PostalAddress;
+    schema:streetAddress "Marks Squares";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Hoboken";
+    schema:postalCode "59288";
+    schema:addressCountry "Liberia".

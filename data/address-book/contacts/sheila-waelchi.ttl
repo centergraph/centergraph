@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sheila";
+    schema:familyName "Waelchi";
+    schema:birthDate "1958-02-17"^^xsd:date;
+    schema:address _:b5881.
+_:b5881 a schema:PostalAddress;
+    schema:streetAddress "The Paddocks";
+    schema:addressRegion "New York";
+    schema:addressLocality "Sammietown";
+    schema:postalCode "56652-0160";
+    schema:addressCountry "Bahrain".

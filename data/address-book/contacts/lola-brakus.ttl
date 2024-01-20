@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lola";
+    schema:familyName "Brakus";
+    schema:birthDate "2001-10-06"^^xsd:date;
+    schema:address _:b1291.
+_:b1291 a schema:PostalAddress;
+    schema:streetAddress "Anika Green";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Monahanworth";
+    schema:postalCode "37482";
+    schema:addressCountry "Djibouti".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorene";
+    schema:familyName "Kertzmann";
+    schema:birthDate "1979-12-06"^^xsd:date;
+    schema:address _:b4011.
+_:b4011 a schema:PostalAddress;
+    schema:streetAddress "George Street";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Port Keaton";
+    schema:postalCode "04307";
+    schema:addressCountry "Vietnam".

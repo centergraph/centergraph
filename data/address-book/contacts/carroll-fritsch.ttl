@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carroll";
+    schema:familyName "Fritsch";
+    schema:birthDate "1997-06-09"^^xsd:date;
+    schema:address _:b4695.
+_:b4695 a schema:PostalAddress;
+    schema:streetAddress "Park Road";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Dannyberg";
+    schema:postalCode "56442-7471";
+    schema:addressCountry "Tuvalu".

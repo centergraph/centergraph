@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Winifred";
+    schema:familyName "Walter";
+    schema:birthDate "1993-01-29"^^xsd:date;
+    schema:address _:b880.
+_:b880 a schema:PostalAddress;
+    schema:streetAddress "Brice Hill";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Perris";
+    schema:postalCode "18498-0740";
+    schema:addressCountry "Gabon".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clayton";
+    schema:familyName "Littel-Emard";
+    schema:birthDate "1971-09-14"^^xsd:date;
+    schema:address _:b8354.
+_:b8354 a schema:PostalAddress;
+    schema:streetAddress "E River Road";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Lefflerberg";
+    schema:postalCode "02659";
+    schema:addressCountry "Republic of Korea".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edward";
+    schema:familyName "Wilkinson";
+    schema:birthDate "1988-02-13"^^xsd:date;
+    schema:address _:b9337.
+_:b9337 a schema:PostalAddress;
+    schema:streetAddress "Ryann Circles";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Octaviashire";
+    schema:postalCode "82947";
+    schema:addressCountry "Trinidad and Tobago".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clara";
+    schema:familyName "Pagac";
+    schema:birthDate "1954-10-11"^^xsd:date;
+    schema:address _:b7945.
+_:b7945 a schema:PostalAddress;
+    schema:streetAddress "S Oak Street";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "New Tiffanycester";
+    schema:postalCode "38611";
+    schema:addressCountry "Hungary".

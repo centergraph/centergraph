@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lois";
+    schema:familyName "Prosacco";
+    schema:birthDate "1979-02-15"^^xsd:date;
+    schema:address _:b9728.
+_:b9728 a schema:PostalAddress;
+    schema:streetAddress "Kub Station";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "South Gertrude";
+    schema:postalCode "74401-3619";
+    schema:addressCountry "Japan".

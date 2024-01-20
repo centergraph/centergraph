@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dexter";
+    schema:familyName "Ullrich";
+    schema:birthDate "1992-01-10"^^xsd:date;
+    schema:address _:b735.
+_:b735 a schema:PostalAddress;
+    schema:streetAddress "Park Street";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Kleinside";
+    schema:postalCode "97965";
+    schema:addressCountry "Nicaragua".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mark";
+    schema:familyName "Reichert";
+    schema:birthDate "1965-03-29"^^xsd:date;
+    schema:address _:b1317.
+_:b1317 a schema:PostalAddress;
+    schema:streetAddress "S West Street";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Sammamish";
+    schema:postalCode "70976-0354";
+    schema:addressCountry "South Africa".

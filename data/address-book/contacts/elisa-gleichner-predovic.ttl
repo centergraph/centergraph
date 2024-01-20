@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elisa";
+    schema:familyName "Gleichner-Predovic";
+    schema:birthDate "1986-11-29"^^xsd:date;
+    schema:address _:b7330.
+_:b7330 a schema:PostalAddress;
+    schema:streetAddress "Wiza Shore";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "East Elisabury";
+    schema:postalCode "78363-4526";
+    schema:addressCountry "Armenia".

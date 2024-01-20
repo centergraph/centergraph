@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jackie";
+    schema:familyName "Volkman";
+    schema:birthDate "1961-04-13"^^xsd:date;
+    schema:address _:b2677.
+_:b2677 a schema:PostalAddress;
+    schema:streetAddress "Rogahn Throughway";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Erdmanfield";
+    schema:postalCode "74272";
+    schema:addressCountry "Democratic People's Republic of Korea".

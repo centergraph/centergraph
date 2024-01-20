@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rodolfo";
+    schema:familyName "Morar";
+    schema:birthDate "2001-04-12"^^xsd:date;
+    schema:address _:b7076.
+_:b7076 a schema:PostalAddress;
+    schema:streetAddress "Hessel Loaf";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Baton Rouge";
+    schema:postalCode "41798-7217";
+    schema:addressCountry "Kuwait".

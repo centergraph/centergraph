@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Abraham";
+    schema:familyName "Kutch";
+    schema:birthDate "1968-01-17"^^xsd:date;
+    schema:address _:b4902.
+_:b4902 a schema:PostalAddress;
+    schema:streetAddress "Alexandre Cliffs";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "East Mitchelstad";
+    schema:postalCode "68858";
+    schema:addressCountry "France".

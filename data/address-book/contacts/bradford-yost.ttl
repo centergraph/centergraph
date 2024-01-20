@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bradford";
+    schema:familyName "Yost";
+    schema:birthDate "1962-09-30"^^xsd:date;
+    schema:address _:b3485.
+_:b3485 a schema:PostalAddress;
+    schema:streetAddress "Gislason Ports";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Lake Katelynn";
+    schema:postalCode "28554-4599";
+    schema:addressCountry "Barbados".

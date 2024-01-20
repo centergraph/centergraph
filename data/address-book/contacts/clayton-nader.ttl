@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clayton";
+    schema:familyName "Nader";
+    schema:birthDate "1984-10-04"^^xsd:date;
+    schema:address _:b5561.
+_:b5561 a schema:PostalAddress;
+    schema:streetAddress "Zella Spur";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "West Anahiview";
+    schema:postalCode "05243-7002";
+    schema:addressCountry "Tanzania".

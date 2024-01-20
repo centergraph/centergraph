@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carolyn";
+    schema:familyName "Klein";
+    schema:birthDate "1962-01-29"^^xsd:date;
+    schema:address _:b3436.
+_:b3436 a schema:PostalAddress;
+    schema:streetAddress "Wisoky Meadow";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Port Ashafort";
+    schema:postalCode "07493";
+    schema:addressCountry "Portugal".

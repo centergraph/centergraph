@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Daniel";
+    schema:familyName "Muller-Funk";
+    schema:birthDate "1982-08-31"^^xsd:date;
+    schema:address _:b7091.
+_:b7091 a schema:PostalAddress;
+    schema:streetAddress "Uriel Prairie";
+    schema:addressRegion "Maine";
+    schema:addressLocality "South Percymouth";
+    schema:postalCode "61525";
+    schema:addressCountry "Wallis and Futuna".

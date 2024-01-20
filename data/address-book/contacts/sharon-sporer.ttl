@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sharon";
+    schema:familyName "Sporer";
+    schema:birthDate "1997-06-13"^^xsd:date;
+    schema:address _:b2509.
+_:b2509 a schema:PostalAddress;
+    schema:streetAddress "The Orchard";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Thompsonburgh";
+    schema:postalCode "24811";
+    schema:addressCountry "Iceland".

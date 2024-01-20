@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emmett";
+    schema:familyName "Hessel";
+    schema:birthDate "2001-10-01"^^xsd:date;
+    schema:address _:b1664.
+_:b1664 a schema:PostalAddress;
+    schema:streetAddress "Schmidt Forks";
+    schema:addressRegion "Maine";
+    schema:addressLocality "East Wandacester";
+    schema:postalCode "48775-9603";
+    schema:addressCountry "Croatia".

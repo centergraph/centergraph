@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nicholas";
+    schema:familyName "Kozey";
+    schema:birthDate "1982-12-29"^^xsd:date;
+    schema:address _:b937.
+_:b937 a schema:PostalAddress;
+    schema:streetAddress "Maryse Flats";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "New Ashtyn";
+    schema:postalCode "12382-0193";
+    schema:addressCountry "Faroe Islands".

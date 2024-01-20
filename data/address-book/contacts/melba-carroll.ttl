@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Melba";
+    schema:familyName "Carroll";
+    schema:birthDate "1996-07-10"^^xsd:date;
+    schema:address _:b4249.
+_:b4249 a schema:PostalAddress;
+    schema:streetAddress "Haley Route";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Daytona Beach";
+    schema:postalCode "33494-6260";
+    schema:addressCountry "Armenia".

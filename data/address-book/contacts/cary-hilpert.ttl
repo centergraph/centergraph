@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cary";
+    schema:familyName "Hilpert";
+    schema:birthDate "1983-01-10"^^xsd:date;
+    schema:address _:b872.
+_:b872 a schema:PostalAddress;
+    schema:streetAddress "Aufderhar Pass";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Fort Helga";
+    schema:postalCode "86839-6310";
+    schema:addressCountry "Colombia".

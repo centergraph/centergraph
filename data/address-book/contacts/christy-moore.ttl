@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Christy";
+    schema:familyName "Moore";
+    schema:birthDate "1992-07-10"^^xsd:date;
+    schema:address _:b2336.
+_:b2336 a schema:PostalAddress;
+    schema:streetAddress "Swaniawski Road";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "North Rosellaport";
+    schema:postalCode "08572-2668";
+    schema:addressCountry "American Samoa".

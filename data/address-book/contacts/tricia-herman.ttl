@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tricia";
+    schema:familyName "Herman";
+    schema:birthDate "1948-05-28"^^xsd:date;
+    schema:address _:b2776.
+_:b2776 a schema:PostalAddress;
+    schema:streetAddress "Rath Cape";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Grahamstad";
+    schema:postalCode "39469-8099";
+    schema:addressCountry "Venezuela".

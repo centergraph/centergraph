@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lucia";
+    schema:familyName "Bode";
+    schema:birthDate "1994-05-25"^^xsd:date;
+    schema:address _:b1443.
+_:b1443 a schema:PostalAddress;
+    schema:streetAddress "Ankunding Greens";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Meredithburgh";
+    schema:postalCode "63087-7434";
+    schema:addressCountry "Canada".

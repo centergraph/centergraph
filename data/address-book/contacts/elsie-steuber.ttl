@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elsie";
+    schema:familyName "Steuber";
+    schema:birthDate "1995-12-30"^^xsd:date;
+    schema:address _:b7853.
+_:b7853 a schema:PostalAddress;
+    schema:streetAddress "Somerset Road";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Madalynville";
+    schema:postalCode "19826-9995";
+    schema:addressCountry "Northern Mariana Islands".

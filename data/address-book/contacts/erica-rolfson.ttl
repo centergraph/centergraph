@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Erica";
+    schema:familyName "Rolfson";
+    schema:birthDate "1998-04-27"^^xsd:date;
+    schema:address _:b1581.
+_:b1581 a schema:PostalAddress;
+    schema:streetAddress "Weber Motorway";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Fort Brenna";
+    schema:postalCode "47055";
+    schema:addressCountry "Austria".

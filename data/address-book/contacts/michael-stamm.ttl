@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Michael";
+    schema:familyName "Stamm";
+    schema:birthDate "1949-09-13"^^xsd:date;
+    schema:address _:b9038.
+_:b9038 a schema:PostalAddress;
+    schema:streetAddress "E Pine Street";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "West Levifort";
+    schema:postalCode "33675-7048";
+    schema:addressCountry "Tanzania".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Robin";
+    schema:familyName "Wilkinson";
+    schema:birthDate "2001-12-08"^^xsd:date;
+    schema:address _:b1557.
+_:b1557 a schema:PostalAddress;
+    schema:streetAddress "Reanna Plains";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Genovevahaven";
+    schema:postalCode "93964-5239";
+    schema:addressCountry "United States Minor Outlying Islands".

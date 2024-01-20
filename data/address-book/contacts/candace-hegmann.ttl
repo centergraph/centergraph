@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Candace";
+    schema:familyName "Hegmann";
+    schema:birthDate "1957-08-24"^^xsd:date;
+    schema:address _:b97.
+_:b97 a schema:PostalAddress;
+    schema:streetAddress "Shields Circle";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "East Melynacester";
+    schema:postalCode "66895-2719";
+    schema:addressCountry "Tunisia".

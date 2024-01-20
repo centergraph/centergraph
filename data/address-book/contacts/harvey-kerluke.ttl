@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harvey";
+    schema:familyName "Kerluke";
+    schema:birthDate "1969-07-17"^^xsd:date;
+    schema:address _:b7106.
+_:b7106 a schema:PostalAddress;
+    schema:streetAddress "The Poplars";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "North Earleneville";
+    schema:postalCode "63149";
+    schema:addressCountry "Equatorial Guinea".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Johanna";
+    schema:familyName "Jacobi";
+    schema:birthDate "1978-11-12"^^xsd:date;
+    schema:address _:b429.
+_:b429 a schema:PostalAddress;
+    schema:streetAddress "Schoen Pine";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Riceland";
+    schema:postalCode "13125-6408";
+    schema:addressCountry "Dominican Republic".

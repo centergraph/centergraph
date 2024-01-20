@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cecil";
+    schema:familyName "Jacobson";
+    schema:birthDate "1947-09-26"^^xsd:date;
+    schema:address _:b2942.
+_:b2942 a schema:PostalAddress;
+    schema:streetAddress "Nikolaus Overpass";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Alvinatown";
+    schema:postalCode "38154-6675";
+    schema:addressCountry "French Guiana".

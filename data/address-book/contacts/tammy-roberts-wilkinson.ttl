@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tammy";
+    schema:familyName "Roberts-Wilkinson";
+    schema:birthDate "1962-08-27"^^xsd:date;
+    schema:address _:b9763.
+_:b9763 a schema:PostalAddress;
+    schema:streetAddress "Emmy Villages";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Wisokyberg";
+    schema:postalCode "97954";
+    schema:addressCountry "Palau".

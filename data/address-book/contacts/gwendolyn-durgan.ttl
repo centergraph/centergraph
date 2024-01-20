@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gwendolyn";
+    schema:familyName "Durgan";
+    schema:birthDate "2004-10-25"^^xsd:date;
+    schema:address _:b7766.
+_:b7766 a schema:PostalAddress;
+    schema:streetAddress "Carroll Valley";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Reynoldsshire";
+    schema:postalCode "67800-3966";
+    schema:addressCountry "Saint Martin".

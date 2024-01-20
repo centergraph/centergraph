@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Randolph";
+    schema:familyName "Bins";
+    schema:birthDate "1969-02-20"^^xsd:date;
+    schema:address _:b8580.
+_:b8580 a schema:PostalAddress;
+    schema:streetAddress "Mae Burgs";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Lebsackchester";
+    schema:postalCode "85871-9301";
+    schema:addressCountry "Colombia".

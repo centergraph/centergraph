@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cameron";
+    schema:familyName "Crooks";
+    schema:birthDate "1950-08-13"^^xsd:date;
+    schema:address _:b5698.
+_:b5698 a schema:PostalAddress;
+    schema:streetAddress "Lynch Burgs";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Collierview";
+    schema:postalCode "32961-8351";
+    schema:addressCountry "North Macedonia".

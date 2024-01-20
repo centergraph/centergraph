@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Scott";
+    schema:familyName "Wiza";
+    schema:birthDate "1975-02-25"^^xsd:date;
+    schema:address _:b2826.
+_:b2826 a schema:PostalAddress;
+    schema:streetAddress "Volkman Cove";
+    schema:addressRegion "Florida";
+    schema:addressLocality "North Rachelle";
+    schema:postalCode "80161";
+    schema:addressCountry "Spain".

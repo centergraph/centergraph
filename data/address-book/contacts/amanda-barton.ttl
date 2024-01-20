@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amanda";
+    schema:familyName "Barton";
+    schema:birthDate "1969-06-05"^^xsd:date;
+    schema:address _:b1164.
+_:b1164 a schema:PostalAddress;
+    schema:streetAddress "Helena Hills";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "New Adriana";
+    schema:postalCode "98834-9767";
+    schema:addressCountry "Iraq".

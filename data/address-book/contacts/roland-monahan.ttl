@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roland";
+    schema:familyName "Monahan";
+    schema:birthDate "1965-05-12"^^xsd:date;
+    schema:address _:b1421.
+_:b1421 a schema:PostalAddress;
+    schema:streetAddress "Mante Center";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Olgafield";
+    schema:postalCode "88759-0297";
+    schema:addressCountry "Jamaica".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edna";
+    schema:familyName "Hegmann";
+    schema:birthDate "1995-09-21"^^xsd:date;
+    schema:address _:b9967.
+_:b9967 a schema:PostalAddress;
+    schema:streetAddress "Wellington Street";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Marksfurt";
+    schema:postalCode "65252";
+    schema:addressCountry "Libyan Arab Jamahiriya".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruby";
+    schema:familyName "Schinner";
+    schema:birthDate "2003-11-26"^^xsd:date;
+    schema:address _:b4706.
+_:b4706 a schema:PostalAddress;
+    schema:streetAddress "Tillman Estates";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Lake Alan";
+    schema:postalCode "01765-2479";
+    schema:addressCountry "Nauru".

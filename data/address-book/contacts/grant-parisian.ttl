@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Grant";
+    schema:familyName "Parisian";
+    schema:birthDate "1960-08-30"^^xsd:date;
+    schema:address _:b5412.
+_:b5412 a schema:PostalAddress;
+    schema:streetAddress "Terry Rest";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Collierville";
+    schema:postalCode "50557-1941";
+    schema:addressCountry "Heard Island and McDonald Islands".

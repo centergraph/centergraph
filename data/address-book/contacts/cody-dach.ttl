@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cody";
+    schema:familyName "Dach";
+    schema:birthDate "1962-07-01"^^xsd:date;
+    schema:address _:b1671.
+_:b1671 a schema:PostalAddress;
+    schema:streetAddress "Columbia Avenue";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Poinciana";
+    schema:postalCode "40078";
+    schema:addressCountry "Guadeloupe".

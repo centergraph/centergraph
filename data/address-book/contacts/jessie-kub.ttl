@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jessie";
+    schema:familyName "Kub";
+    schema:birthDate "1964-03-09"^^xsd:date;
+    schema:address _:b7776.
+_:b7776 a schema:PostalAddress;
+    schema:streetAddress "Canal Street";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Emiefurt";
+    schema:postalCode "60863-7728";
+    schema:addressCountry "Saint Lucia".

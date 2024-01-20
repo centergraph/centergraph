@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gail";
+    schema:familyName "Collins";
+    schema:birthDate "1963-08-29"^^xsd:date;
+    schema:address _:b4177.
+_:b4177 a schema:PostalAddress;
+    schema:streetAddress "Nels Burgs";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "West Darrincester";
+    schema:postalCode "45517-7069";
+    schema:addressCountry "Portugal".

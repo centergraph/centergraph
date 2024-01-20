@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kellie";
+    schema:familyName "Greenholt";
+    schema:birthDate "1978-09-17"^^xsd:date;
+    schema:address _:b5916.
+_:b5916 a schema:PostalAddress;
+    schema:streetAddress "Misty Cape";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Sheboygan";
+    schema:postalCode "75110-9902";
+    schema:addressCountry "Oman".

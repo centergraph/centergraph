@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sammy";
+    schema:familyName "O'Conner";
+    schema:birthDate "1975-07-02"^^xsd:date;
+    schema:address _:b3989.
+_:b3989 a schema:PostalAddress;
+    schema:streetAddress "Belmont Road";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Port Delbert";
+    schema:postalCode "74713";
+    schema:addressCountry "Guadeloupe".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Antonio";
+    schema:familyName "Casper";
+    schema:birthDate "2004-01-21"^^xsd:date;
+    schema:address _:b8016.
+_:b8016 a schema:PostalAddress;
+    schema:streetAddress "Rashad Route";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Port Lavernastad";
+    schema:postalCode "89482";
+    schema:addressCountry "Congo".

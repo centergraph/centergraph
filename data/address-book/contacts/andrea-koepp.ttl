@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andrea";
+    schema:familyName "Koepp";
+    schema:birthDate "1994-12-04"^^xsd:date;
+    schema:address _:b5680.
+_:b5680 a schema:PostalAddress;
+    schema:streetAddress "York Street";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Devontehaven";
+    schema:postalCode "88260-7064";
+    schema:addressCountry "Kiribati".

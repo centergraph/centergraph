@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sheri";
+    schema:familyName "Bailey";
+    schema:birthDate "1946-09-09"^^xsd:date;
+    schema:address _:b4467.
+_:b4467 a schema:PostalAddress;
+    schema:streetAddress "Hayes Brooks";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "Fort Robertochester";
+    schema:postalCode "18458";
+    schema:addressCountry "Guernsey".

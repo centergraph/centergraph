@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cecil";
+    schema:familyName "Haley";
+    schema:birthDate "1950-01-20"^^xsd:date;
+    schema:address _:b7607.
+_:b7607 a schema:PostalAddress;
+    schema:streetAddress "New Road";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Rancho Cordova";
+    schema:postalCode "09472-3832";
+    schema:addressCountry "Sudan".

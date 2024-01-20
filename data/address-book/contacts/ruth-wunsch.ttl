@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruth";
+    schema:familyName "Wunsch";
+    schema:birthDate "1966-04-05"^^xsd:date;
+    schema:address _:b574.
+_:b574 a schema:PostalAddress;
+    schema:streetAddress "1st Street";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Athenafort";
+    schema:postalCode "48443";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

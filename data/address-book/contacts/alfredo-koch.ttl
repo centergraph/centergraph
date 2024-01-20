@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alfredo";
+    schema:familyName "Koch";
+    schema:birthDate "1967-01-06"^^xsd:date;
+    schema:address _:b9267.
+_:b9267 a schema:PostalAddress;
+    schema:streetAddress "Orchard Road";
+    schema:addressRegion "California";
+    schema:addressLocality "North Ericastead";
+    schema:postalCode "63679";
+    schema:addressCountry "Fiji".

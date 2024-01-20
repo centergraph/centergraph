@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Olive";
+    schema:familyName "Ratke";
+    schema:birthDate "1964-08-05"^^xsd:date;
+    schema:address _:b9663.
+_:b9663 a schema:PostalAddress;
+    schema:streetAddress "Cassin Pines";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Estrellastad";
+    schema:postalCode "82396-6358";
+    schema:addressCountry "United States Minor Outlying Islands".

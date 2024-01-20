@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hector";
+    schema:familyName "Volkman";
+    schema:birthDate "1949-08-19"^^xsd:date;
+    schema:address _:b233.
+_:b233 a schema:PostalAddress;
+    schema:streetAddress "Lafayette Street";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Manhattan";
+    schema:postalCode "58503-5772";
+    schema:addressCountry "South Sudan".

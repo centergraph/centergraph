@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeff";
+    schema:familyName "Marvin";
+    schema:birthDate "1955-10-27"^^xsd:date;
+    schema:address _:b7391.
+_:b7391 a schema:PostalAddress;
+    schema:streetAddress "Sven Lakes";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "East Guidofort";
+    schema:postalCode "50157";
+    schema:addressCountry "Sao Tome and Principe".

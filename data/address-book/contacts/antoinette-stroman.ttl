@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Antoinette";
+    schema:familyName "Stroman";
+    schema:birthDate "1991-09-20"^^xsd:date;
+    schema:address _:b7251.
+_:b7251 a schema:PostalAddress;
+    schema:streetAddress "Murphy Highway";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Bellflower";
+    schema:postalCode "19808-6242";
+    schema:addressCountry "Taiwan".

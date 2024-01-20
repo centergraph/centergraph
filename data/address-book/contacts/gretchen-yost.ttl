@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gretchen";
+    schema:familyName "Yost";
+    schema:birthDate "1983-05-07"^^xsd:date;
+    schema:address _:b31.
+_:b31 a schema:PostalAddress;
+    schema:streetAddress "9th Street";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Sarasota";
+    schema:postalCode "13426";
+    schema:addressCountry "Saint Helena".

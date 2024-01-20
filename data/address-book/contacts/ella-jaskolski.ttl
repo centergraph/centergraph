@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ella";
+    schema:familyName "Jaskolski";
+    schema:birthDate "1956-11-25"^^xsd:date;
+    schema:address _:b6896.
+_:b6896 a schema:PostalAddress;
+    schema:streetAddress "Jasmin Centers";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Dietrichberg";
+    schema:postalCode "65324-9344";
+    schema:addressCountry "Malta".

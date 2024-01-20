@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Abraham";
+    schema:familyName "Waters";
+    schema:birthDate "1994-02-18"^^xsd:date;
+    schema:address _:b3193.
+_:b3193 a schema:PostalAddress;
+    schema:streetAddress "Barn Close";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "West Jaquanchester";
+    schema:postalCode "07976-0855";
+    schema:addressCountry "Paraguay".

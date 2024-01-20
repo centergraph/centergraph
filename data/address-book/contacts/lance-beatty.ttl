@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lance";
+    schema:familyName "Beatty";
+    schema:birthDate "2002-10-31"^^xsd:date;
+    schema:address _:b3269.
+_:b3269 a schema:PostalAddress;
+    schema:streetAddress "N Cedar Street";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Fort Ceasar";
+    schema:postalCode "58982";
+    schema:addressCountry "Tajikistan".

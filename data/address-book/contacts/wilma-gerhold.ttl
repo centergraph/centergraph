@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wilma";
+    schema:familyName "Gerhold";
+    schema:birthDate "1971-11-14"^^xsd:date;
+    schema:address _:b9985.
+_:b9985 a schema:PostalAddress;
+    schema:streetAddress "Joannie Canyon";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Wizaport";
+    schema:postalCode "41629";
+    schema:addressCountry "Jamaica".

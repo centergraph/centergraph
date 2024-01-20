@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joann";
+    schema:familyName "Hauck";
+    schema:birthDate "1995-02-22"^^xsd:date;
+    schema:address _:b2322.
+_:b2322 a schema:PostalAddress;
+    schema:streetAddress "Albert Crest";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Strosinshire";
+    schema:postalCode "07210";
+    schema:addressCountry "Madagascar".

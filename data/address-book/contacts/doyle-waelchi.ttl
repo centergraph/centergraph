@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doyle";
+    schema:familyName "Waelchi";
+    schema:birthDate "1945-03-03"^^xsd:date;
+    schema:address _:b3628.
+_:b3628 a schema:PostalAddress;
+    schema:streetAddress "N 2nd Street";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Kuhlmanboro";
+    schema:postalCode "98384";
+    schema:addressCountry "Curacao".

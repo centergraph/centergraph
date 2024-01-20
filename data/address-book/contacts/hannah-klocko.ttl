@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hannah";
+    schema:familyName "Klocko";
+    schema:birthDate "1960-05-28"^^xsd:date;
+    schema:address _:b5302.
+_:b5302 a schema:PostalAddress;
+    schema:streetAddress "Thelma Land";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "New Whitney";
+    schema:postalCode "55968-4254";
+    schema:addressCountry "Nepal".

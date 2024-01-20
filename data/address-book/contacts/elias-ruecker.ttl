@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Elias";
+    schema:familyName "Ruecker";
+    schema:birthDate "2005-03-11"^^xsd:date;
+    schema:address _:b9677.
+_:b9677 a schema:PostalAddress;
+    schema:streetAddress "Parkside";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Fort Baileyfield";
+    schema:postalCode "48619-0406";
+    schema:addressCountry "Argentina".

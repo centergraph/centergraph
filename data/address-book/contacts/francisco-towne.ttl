@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Francisco";
+    schema:familyName "Towne";
+    schema:birthDate "1982-12-12"^^xsd:date;
+    schema:address _:b1817.
+_:b1817 a schema:PostalAddress;
+    schema:streetAddress "MacGyver Island";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "New Kristaville";
+    schema:postalCode "10075";
+    schema:addressCountry "Haiti".

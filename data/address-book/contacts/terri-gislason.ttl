@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terri";
+    schema:familyName "Gislason";
+    schema:birthDate "1980-01-03"^^xsd:date;
+    schema:address _:b6242.
+_:b6242 a schema:PostalAddress;
+    schema:streetAddress "Cross Street";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Willview";
+    schema:postalCode "85824-5169";
+    schema:addressCountry "Sri Lanka".

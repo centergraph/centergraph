@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bob";
+    schema:familyName "Spinka";
+    schema:birthDate "1996-02-13"^^xsd:date;
+    schema:address _:b236.
+_:b236 a schema:PostalAddress;
+    schema:streetAddress "Alexandre Causeway";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Keelingburgh";
+    schema:postalCode "93608-6067";
+    schema:addressCountry "Argentina".

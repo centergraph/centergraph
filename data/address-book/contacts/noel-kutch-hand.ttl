@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Noel";
+    schema:familyName "Kutch-Hand";
+    schema:birthDate "1946-04-15"^^xsd:date;
+    schema:address _:b8364.
+_:b8364 a schema:PostalAddress;
+    schema:streetAddress "Adolfo Hollow";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "South Hertha";
+    schema:postalCode "00122-1966";
+    schema:addressCountry "Aland Islands".

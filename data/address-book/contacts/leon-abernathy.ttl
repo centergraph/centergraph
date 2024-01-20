@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leon";
+    schema:familyName "Abernathy";
+    schema:birthDate "1976-09-25"^^xsd:date;
+    schema:address _:b1829.
+_:b1829 a schema:PostalAddress;
+    schema:streetAddress "Keanu Glen";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Fort Corneliuschester";
+    schema:postalCode "62198";
+    schema:addressCountry "Iran".

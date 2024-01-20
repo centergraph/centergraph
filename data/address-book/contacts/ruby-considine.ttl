@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruby";
+    schema:familyName "Considine";
+    schema:birthDate "1975-03-07"^^xsd:date;
+    schema:address _:b3101.
+_:b3101 a schema:PostalAddress;
+    schema:streetAddress "The Lane";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Boscoburgh";
+    schema:postalCode "16813";
+    schema:addressCountry "Palestine".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Silvia";
+    schema:familyName "Kuphal";
+    schema:birthDate "1997-11-30"^^xsd:date;
+    schema:address _:b7942.
+_:b7942 a schema:PostalAddress;
+    schema:streetAddress "Kings Highway";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Eleanorahaven";
+    schema:postalCode "55645-0338";
+    schema:addressCountry "British Indian Ocean Territory (Chagos Archipelago)".

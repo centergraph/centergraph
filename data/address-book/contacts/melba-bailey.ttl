@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Melba";
+    schema:familyName "Bailey";
+    schema:birthDate "1959-11-06"^^xsd:date;
+    schema:address _:b2835.
+_:b2835 a schema:PostalAddress;
+    schema:streetAddress "S Church Street";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Amelymouth";
+    schema:postalCode "02700-6219";
+    schema:addressCountry "Turkmenistan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cynthia";
+    schema:familyName "Jast";
+    schema:birthDate "2005-09-06"^^xsd:date;
+    schema:address _:b4225.
+_:b4225 a schema:PostalAddress;
+    schema:streetAddress "Klein Lake";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "East Madisyn";
+    schema:postalCode "07095";
+    schema:addressCountry "Italy".

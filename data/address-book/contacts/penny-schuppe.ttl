@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Penny";
+    schema:familyName "Schuppe";
+    schema:birthDate "1987-07-13"^^xsd:date;
+    schema:address _:b8164.
+_:b8164 a schema:PostalAddress;
+    schema:streetAddress "Roob Wells";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Euclid";
+    schema:postalCode "93885-2909";
+    schema:addressCountry "Reunion".

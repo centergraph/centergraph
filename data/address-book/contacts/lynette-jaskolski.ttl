@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lynette";
+    schema:familyName "Jaskolski";
+    schema:birthDate "1978-10-01"^^xsd:date;
+    schema:address _:b9962.
+_:b9962 a schema:PostalAddress;
+    schema:streetAddress "Oberbrunner Radial";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Laylaview";
+    schema:postalCode "57883";
+    schema:addressCountry "Fiji".

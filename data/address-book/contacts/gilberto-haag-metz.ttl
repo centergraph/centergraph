@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gilberto";
+    schema:familyName "Haag-Metz";
+    schema:birthDate "1958-01-13"^^xsd:date;
+    schema:address _:b1038.
+_:b1038 a schema:PostalAddress;
+    schema:streetAddress "D'Amore Field";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Kaylieland";
+    schema:postalCode "74482";
+    schema:addressCountry "Western Sahara".

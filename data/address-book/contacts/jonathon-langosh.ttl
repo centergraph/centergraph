@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jonathon";
+    schema:familyName "Langosh";
+    schema:birthDate "1944-08-01"^^xsd:date;
+    schema:address _:b667.
+_:b667 a schema:PostalAddress;
+    schema:streetAddress "Cremin Hollow";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Blickchester";
+    schema:postalCode "98829-5073";
+    schema:addressCountry "United Arab Emirates".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Trevor";
+    schema:familyName "Hahn";
+    schema:birthDate "1954-05-14"^^xsd:date;
+    schema:address _:b8179.
+_:b8179 a schema:PostalAddress;
+    schema:streetAddress "N 2nd Street";
+    schema:addressRegion "California";
+    schema:addressLocality "Lake Daynaboro";
+    schema:postalCode "26052-4202";
+    schema:addressCountry "Czechia".

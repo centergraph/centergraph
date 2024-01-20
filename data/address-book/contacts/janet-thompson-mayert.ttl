@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janet";
+    schema:familyName "Thompson-Mayert";
+    schema:birthDate "1992-01-09"^^xsd:date;
+    schema:address _:b6021.
+_:b6021 a schema:PostalAddress;
+    schema:streetAddress "Cordelia Station";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Lakewood";
+    schema:postalCode "83268-3964";
+    schema:addressCountry "Paraguay".

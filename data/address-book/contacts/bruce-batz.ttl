@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bruce";
+    schema:familyName "Batz";
+    schema:birthDate "1958-09-20"^^xsd:date;
+    schema:address _:b516.
+_:b516 a schema:PostalAddress;
+    schema:streetAddress "Emard Loaf";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Port Connerville";
+    schema:postalCode "18646-7636";
+    schema:addressCountry "Saint Helena".

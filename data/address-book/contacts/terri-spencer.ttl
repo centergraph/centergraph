@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terri";
+    schema:familyName "Spencer";
+    schema:birthDate "1948-01-21"^^xsd:date;
+    schema:address _:b4633.
+_:b4633 a schema:PostalAddress;
+    schema:streetAddress "Ora Mountains";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "West Patiencestad";
+    schema:postalCode "71164";
+    schema:addressCountry "Solomon Islands".

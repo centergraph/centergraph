@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tamara";
+    schema:familyName "Kuhic";
+    schema:birthDate "1963-01-27"^^xsd:date;
+    schema:address _:b9974.
+_:b9974 a schema:PostalAddress;
+    schema:streetAddress "Floy Roads";
+    schema:addressRegion "New York";
+    schema:addressLocality "New Ocieside";
+    schema:postalCode "88499-7691";
+    schema:addressCountry "Gabon".

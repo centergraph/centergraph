@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mable";
+    schema:familyName "Rowe-Gottlieb";
+    schema:birthDate "1951-11-27"^^xsd:date;
+    schema:address _:b5357.
+_:b5357 a schema:PostalAddress;
+    schema:streetAddress "Myriam Canyon";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "O'Harafield";
+    schema:postalCode "45795-7480";
+    schema:addressCountry "Argentina".

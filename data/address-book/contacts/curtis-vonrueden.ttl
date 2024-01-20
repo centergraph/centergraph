@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Curtis";
+    schema:familyName "VonRueden";
+    schema:birthDate "1945-07-03"^^xsd:date;
+    schema:address _:b2335.
+_:b2335 a schema:PostalAddress;
+    schema:streetAddress "St George's Road";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "South Elmo";
+    schema:postalCode "74470-9482";
+    schema:addressCountry "Israel".

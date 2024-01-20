@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Viola";
+    schema:familyName "Hoppe-Murazik";
+    schema:birthDate "1990-07-12"^^xsd:date;
+    schema:address _:b6667.
+_:b6667 a schema:PostalAddress;
+    schema:streetAddress "Kulas Ferry";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "East Elizabethshire";
+    schema:postalCode "48707";
+    schema:addressCountry "Wallis and Futuna".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lynette";
+    schema:familyName "Waelchi";
+    schema:birthDate "1988-01-22"^^xsd:date;
+    schema:address _:b4282.
+_:b4282 a schema:PostalAddress;
+    schema:streetAddress "Rolfson Walk";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Fort Junius";
+    schema:postalCode "40514-4147";
+    schema:addressCountry "Comoros".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Franklin";
+    schema:familyName "Schimmel";
+    schema:birthDate "1953-11-29"^^xsd:date;
+    schema:address _:b8993.
+_:b8993 a schema:PostalAddress;
+    schema:streetAddress "Michale Cove";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Colebury";
+    schema:postalCode "84083";
+    schema:addressCountry "Bhutan".

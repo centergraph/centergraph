@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mona";
+    schema:familyName "Hagenes";
+    schema:birthDate "1951-03-09"^^xsd:date;
+    schema:address _:b2200.
+_:b2200 a schema:PostalAddress;
+    schema:streetAddress "Michael Knolls";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Lake Lolitaton";
+    schema:postalCode "91070-5520";
+    schema:addressCountry "Syrian Arab Republic".

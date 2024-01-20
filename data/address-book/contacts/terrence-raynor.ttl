@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Terrence";
+    schema:familyName "Raynor";
+    schema:birthDate "1997-09-12"^^xsd:date;
+    schema:address _:b8591.
+_:b8591 a schema:PostalAddress;
+    schema:streetAddress "Sycamore Close";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "New Nadia";
+    schema:postalCode "99104";
+    schema:addressCountry "Bhutan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lana";
+    schema:familyName "Hessel";
+    schema:birthDate "1988-05-22"^^xsd:date;
+    schema:address _:b4055.
+_:b4055 a schema:PostalAddress;
+    schema:streetAddress "Adelbert Avenue";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Hillsboro";
+    schema:postalCode "15606";
+    schema:addressCountry "Lebanon".

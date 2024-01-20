@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ellis";
+    schema:familyName "Schamberger";
+    schema:birthDate "1977-10-25"^^xsd:date;
+    schema:address _:b5219.
+_:b5219 a schema:PostalAddress;
+    schema:streetAddress "Kirlin River";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Port Brielle";
+    schema:postalCode "54871-4034";
+    schema:addressCountry "South Africa".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shaun";
+    schema:familyName "Berge";
+    schema:birthDate "1962-12-12"^^xsd:date;
+    schema:address _:b6265.
+_:b6265 a schema:PostalAddress;
+    schema:streetAddress "Farrell Corner";
+    schema:addressRegion "Texas";
+    schema:addressLocality "East Jade";
+    schema:postalCode "98397-7849";
+    schema:addressCountry "Costa Rica".

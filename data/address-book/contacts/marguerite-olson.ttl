@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marguerite";
+    schema:familyName "Olson";
+    schema:birthDate "1977-11-29"^^xsd:date;
+    schema:address _:b1481.
+_:b1481 a schema:PostalAddress;
+    schema:streetAddress "E Broadway";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "South Loyce";
+    schema:postalCode "04527";
+    schema:addressCountry "Samoa".

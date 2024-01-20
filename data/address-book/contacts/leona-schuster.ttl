@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leona";
+    schema:familyName "Schuster";
+    schema:birthDate "1984-03-21"^^xsd:date;
+    schema:address _:b7366.
+_:b7366 a schema:PostalAddress;
+    schema:streetAddress "Skyla Canyon";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Margretport";
+    schema:postalCode "83572";
+    schema:addressCountry "Bonaire, Sint Eustatius and Saba".

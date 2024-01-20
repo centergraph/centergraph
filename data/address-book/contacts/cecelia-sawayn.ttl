@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cecelia";
+    schema:familyName "Sawayn";
+    schema:birthDate "1976-05-13"^^xsd:date;
+    schema:address _:b7909.
+_:b7909 a schema:PostalAddress;
+    schema:streetAddress "Halvorson Underpass";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Wintheiserhaven";
+    schema:postalCode "89972";
+    schema:addressCountry "Kazakhstan".

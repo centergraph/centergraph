@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dan";
+    schema:familyName "Dach";
+    schema:birthDate "1992-10-22"^^xsd:date;
+    schema:address _:b3613.
+_:b3613 a schema:PostalAddress;
+    schema:streetAddress "Klocko Burgs";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Fort Shaina";
+    schema:postalCode "69919";
+    schema:addressCountry "Mongolia".

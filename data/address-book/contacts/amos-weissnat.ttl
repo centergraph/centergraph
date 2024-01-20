@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amos";
+    schema:familyName "Weissnat";
+    schema:birthDate "1993-10-11"^^xsd:date;
+    schema:address _:b4087.
+_:b4087 a schema:PostalAddress;
+    schema:streetAddress "Goyette Viaduct";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Port Mathildeview";
+    schema:postalCode "81508";
+    schema:addressCountry "Hungary".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shannon";
+    schema:familyName "Swift-Murphy";
+    schema:birthDate "1952-08-21"^^xsd:date;
+    schema:address _:b3012.
+_:b3012 a schema:PostalAddress;
+    schema:streetAddress "Hoeger Parkways";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Aldafield";
+    schema:postalCode "22972-2239";
+    schema:addressCountry "Nauru".

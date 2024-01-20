@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nicolas";
+    schema:familyName "Dooley";
+    schema:birthDate "1953-08-17"^^xsd:date;
+    schema:address _:b3923.
+_:b3923 a schema:PostalAddress;
+    schema:streetAddress "Ratke Creek";
+    schema:addressRegion "Texas";
+    schema:addressLocality "Lake Kamren";
+    schema:postalCode "18467-1832";
+    schema:addressCountry "Bosnia and Herzegovina".

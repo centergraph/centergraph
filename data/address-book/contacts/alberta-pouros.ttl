@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alberta";
+    schema:familyName "Pouros";
+    schema:birthDate "1995-06-20"^^xsd:date;
+    schema:address _:b5217.
+_:b5217 a schema:PostalAddress;
+    schema:streetAddress "Celestine Street";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "New Margaritamouth";
+    schema:postalCode "57356";
+    schema:addressCountry "Belize".

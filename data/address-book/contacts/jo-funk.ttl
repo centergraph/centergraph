@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jo";
+    schema:familyName "Funk";
+    schema:birthDate "1989-07-16"^^xsd:date;
+    schema:address _:b9565.
+_:b9565 a schema:PostalAddress;
+    schema:streetAddress "Kerluke Park";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Lake Reyesmouth";
+    schema:postalCode "07496-6262";
+    schema:addressCountry "Bahamas".

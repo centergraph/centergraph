@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Perry";
+    schema:familyName "Lynch";
+    schema:birthDate "2000-04-14"^^xsd:date;
+    schema:address _:b8021.
+_:b8021 a schema:PostalAddress;
+    schema:streetAddress "Gordon Road";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Lake Aftonworth";
+    schema:postalCode "91830-4775";
+    schema:addressCountry "Canada".

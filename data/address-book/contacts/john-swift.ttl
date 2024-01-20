@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "John";
+    schema:familyName "Swift";
+    schema:birthDate "1983-10-27"^^xsd:date;
+    schema:address _:b3623.
+_:b3623 a schema:PostalAddress;
+    schema:streetAddress "Toy Estate";
+    schema:addressRegion "Washington";
+    schema:addressLocality "North Port";
+    schema:postalCode "19678-1890";
+    schema:addressCountry "Central African Republic".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lucy";
+    schema:familyName "McClure";
+    schema:birthDate "1975-08-09"^^xsd:date;
+    schema:address _:b6049.
+_:b6049 a schema:PostalAddress;
+    schema:streetAddress "Ahmed Pines";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "North Mitchel";
+    schema:postalCode "40630-2421";
+    schema:addressCountry "Italy".

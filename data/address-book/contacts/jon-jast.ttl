@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jon";
+    schema:familyName "Jast";
+    schema:birthDate "1991-11-06"^^xsd:date;
+    schema:address _:b5955.
+_:b5955 a schema:PostalAddress;
+    schema:streetAddress "Kertzmann Rapid";
+    schema:addressRegion "Michigan";
+    schema:addressLocality "Fort Bell";
+    schema:postalCode "58641-5155";
+    schema:addressCountry "Belgium".

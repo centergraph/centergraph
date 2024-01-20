@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ramiro";
+    schema:familyName "Dietrich";
+    schema:birthDate "1974-02-01"^^xsd:date;
+    schema:address _:b2619.
+_:b2619 a schema:PostalAddress;
+    schema:streetAddress "Nelson Crossing";
+    schema:addressRegion "California";
+    schema:addressLocality "North Jeffreyview";
+    schema:postalCode "98288-5746";
+    schema:addressCountry "Georgia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Marta";
+    schema:familyName "Lebsack";
+    schema:birthDate "1970-12-20"^^xsd:date;
+    schema:address _:b2643.
+_:b2643 a schema:PostalAddress;
+    schema:streetAddress "Valerie Views";
+    schema:addressRegion "California";
+    schema:addressLocality "Townefurt";
+    schema:postalCode "13932-3726";
+    schema:addressCountry "Burundi".

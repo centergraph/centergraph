@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Deanna";
+    schema:familyName "O'Hara";
+    schema:birthDate "2002-10-17"^^xsd:date;
+    schema:address _:b1902.
+_:b1902 a schema:PostalAddress;
+    schema:streetAddress "Deja Hollow";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Fort Durward";
+    schema:postalCode "23055";
+    schema:addressCountry "Seychelles".

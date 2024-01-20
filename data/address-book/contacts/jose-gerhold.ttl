@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jose";
+    schema:familyName "Gerhold";
+    schema:birthDate "1948-12-23"^^xsd:date;
+    schema:address _:b2122.
+_:b2122 a schema:PostalAddress;
+    schema:streetAddress "Hill Road";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "West Howellstad";
+    schema:postalCode "28990-0644";
+    schema:addressCountry "Kyrgyz Republic".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nicole";
+    schema:familyName "Mohr";
+    schema:birthDate "1959-07-13"^^xsd:date;
+    schema:address _:b7637.
+_:b7637 a schema:PostalAddress;
+    schema:streetAddress "Rashawn Spur";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "West Laishaboro";
+    schema:postalCode "73263";
+    schema:addressCountry "Aland Islands".

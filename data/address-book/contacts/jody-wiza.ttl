@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jody";
+    schema:familyName "Wiza";
+    schema:birthDate "2003-03-06"^^xsd:date;
+    schema:address _:b8288.
+_:b8288 a schema:PostalAddress;
+    schema:streetAddress "Nina Estate";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "North Myra";
+    schema:postalCode "57067";
+    schema:addressCountry "Brazil".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorene";
+    schema:familyName "Rolfson";
+    schema:birthDate "2004-09-25"^^xsd:date;
+    schema:address _:b6888.
+_:b6888 a schema:PostalAddress;
+    schema:streetAddress "Euclid Avenue";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Pawtucket";
+    schema:postalCode "96819-9836";
+    schema:addressCountry "Trinidad and Tobago".

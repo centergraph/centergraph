@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Manuel";
+    schema:familyName "Lebsack-Olson";
+    schema:birthDate "1965-12-11"^^xsd:date;
+    schema:address _:b5660.
+_:b5660 a schema:PostalAddress;
+    schema:streetAddress "Bergnaum Rest";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Lake Rebeca";
+    schema:postalCode "09775-3662";
+    schema:addressCountry "Papua New Guinea".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Johnnie";
+    schema:familyName "Wiegand";
+    schema:birthDate "1970-03-27"^^xsd:date;
+    schema:address _:b2301.
+_:b2301 a schema:PostalAddress;
+    schema:streetAddress "Keon Garden";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Lake Guyfort";
+    schema:postalCode "08514-9808";
+    schema:addressCountry "Zimbabwe".

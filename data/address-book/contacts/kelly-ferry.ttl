@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelly";
+    schema:familyName "Ferry";
+    schema:birthDate "1957-07-31"^^xsd:date;
+    schema:address _:b8764.
+_:b8764 a schema:PostalAddress;
+    schema:streetAddress "Nora Unions";
+    schema:addressRegion "Utah";
+    schema:addressLocality "Altoona";
+    schema:postalCode "15417";
+    schema:addressCountry "United States of America".

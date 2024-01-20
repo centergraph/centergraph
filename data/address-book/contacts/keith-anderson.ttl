@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Keith";
+    schema:familyName "Anderson";
+    schema:birthDate "1975-02-18"^^xsd:date;
+    schema:address _:b6508.
+_:b6508 a schema:PostalAddress;
+    schema:streetAddress "Schaefer Crossroad";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Auerboro";
+    schema:postalCode "74209";
+    schema:addressCountry "Paraguay".

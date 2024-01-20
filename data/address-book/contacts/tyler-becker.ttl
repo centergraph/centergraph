@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tyler";
+    schema:familyName "Becker";
+    schema:birthDate "1987-10-30"^^xsd:date;
+    schema:address _:b9622.
+_:b9622 a schema:PostalAddress;
+    schema:streetAddress "Rutherford Key";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Jackson";
+    schema:postalCode "98705";
+    schema:addressCountry "Pakistan".

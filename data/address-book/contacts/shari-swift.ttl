@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shari";
+    schema:familyName "Swift";
+    schema:birthDate "2003-11-10"^^xsd:date;
+    schema:address _:b9485.
+_:b9485 a schema:PostalAddress;
+    schema:streetAddress "Park Place";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Alafaya";
+    schema:postalCode "55895-2833";
+    schema:addressCountry "Italy".

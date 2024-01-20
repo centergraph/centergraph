@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brittany";
+    schema:familyName "Welch";
+    schema:birthDate "1999-02-13"^^xsd:date;
+    schema:address _:b9701.
+_:b9701 a schema:PostalAddress;
+    schema:streetAddress "Klein Plaza";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "East Fredericboro";
+    schema:postalCode "26308-1499";
+    schema:addressCountry "Mauritius".

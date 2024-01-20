@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Harold";
+    schema:familyName "Kihn";
+    schema:birthDate "1948-11-08"^^xsd:date;
+    schema:address _:b1273.
+_:b1273 a schema:PostalAddress;
+    schema:streetAddress "Shany Courts";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Pricefort";
+    schema:postalCode "84075";
+    schema:addressCountry "Brunei Darussalam".

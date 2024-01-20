@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bessie";
+    schema:familyName "Brown";
+    schema:birthDate "2005-10-26"^^xsd:date;
+    schema:address _:b3248.
+_:b3248 a schema:PostalAddress;
+    schema:streetAddress "Tatyana Bypass";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Mentor";
+    schema:postalCode "03313";
+    schema:addressCountry "Curacao".

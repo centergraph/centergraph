@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Geoffrey";
     schema:familyName "Collier";
-    schema:birthDate "1991-12-27"^^xsd:date;
-    schema:address _:b560.
-_:b560 a schema:PostalAddress;
-    schema:streetAddress "Nader Orchard";
-    schema:addressRegion "California";
-    schema:addressLocality "Hageneston";
-    schema:postalCode "57973-8888";
-    schema:addressCountry "Ireland".
+    schema:birthDate "1950-06-13"^^xsd:date;
+    schema:address _:b7820.
+_:b7820 a schema:PostalAddress;
+    schema:streetAddress "Veterans Memorial Drive";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Lake Malikafield";
+    schema:postalCode "12629";
+    schema:addressCountry "Papua New Guinea".

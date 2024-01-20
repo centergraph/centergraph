@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lucia";
+    schema:familyName "Gleason";
+    schema:birthDate "1948-11-24"^^xsd:date;
+    schema:address _:b9938.
+_:b9938 a schema:PostalAddress;
+    schema:streetAddress "Payton Lakes";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Sengerfield";
+    schema:postalCode "54835";
+    schema:addressCountry "Greece".

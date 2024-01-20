@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Albert";
+    schema:familyName "Davis";
+    schema:birthDate "1991-04-26"^^xsd:date;
+    schema:address _:b2221.
+_:b2221 a schema:PostalAddress;
+    schema:streetAddress "E High Street";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "North Johnny";
+    schema:postalCode "67936-7768";
+    schema:addressCountry "Eswatini".

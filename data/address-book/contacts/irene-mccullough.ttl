@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Irene";
+    schema:familyName "McCullough";
+    schema:birthDate "1991-09-20"^^xsd:date;
+    schema:address _:b9516.
+_:b9516 a schema:PostalAddress;
+    schema:streetAddress "Reinger Ranch";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Bernhardport";
+    schema:postalCode "12999";
+    schema:addressCountry "Peru".

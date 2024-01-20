@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Antonia";
+    schema:familyName "Dicki";
+    schema:birthDate "1995-04-09"^^xsd:date;
+    schema:address _:b4608.
+_:b4608 a schema:PostalAddress;
+    schema:streetAddress "Lincoln Light";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Gulgowskiside";
+    schema:postalCode "20076-2379";
+    schema:addressCountry "Bouvet Island".

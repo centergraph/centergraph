@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pablo";
+    schema:familyName "Lesch";
+    schema:birthDate "1966-03-03"^^xsd:date;
+    schema:address _:b3596.
+_:b3596 a schema:PostalAddress;
+    schema:streetAddress "Sage Gateway";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Owensboro";
+    schema:postalCode "31111-4045";
+    schema:addressCountry "Madagascar".

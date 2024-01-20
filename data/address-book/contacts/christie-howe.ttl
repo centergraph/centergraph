@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Christie";
+    schema:familyName "Howe";
+    schema:birthDate "1951-03-11"^^xsd:date;
+    schema:address _:b7374.
+_:b7374 a schema:PostalAddress;
+    schema:streetAddress "Jaskolski Knolls";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "South Keltonfort";
+    schema:postalCode "52363";
+    schema:addressCountry "Lebanon".

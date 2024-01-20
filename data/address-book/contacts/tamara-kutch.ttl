@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tamara";
+    schema:familyName "Kutch";
+    schema:birthDate "2001-10-01"^^xsd:date;
+    schema:address _:b5367.
+_:b5367 a schema:PostalAddress;
+    schema:streetAddress "Okuneva Rest";
+    schema:addressRegion "California";
+    schema:addressLocality "North Bobbieview";
+    schema:postalCode "37264-7128";
+    schema:addressCountry "Cote d'Ivoire".

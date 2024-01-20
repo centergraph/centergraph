@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wm";
+    schema:familyName "Powlowski";
+    schema:birthDate "1960-12-21"^^xsd:date;
+    schema:address _:b9978.
+_:b9978 a schema:PostalAddress;
+    schema:streetAddress "Woodside";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Haltom City";
+    schema:postalCode "29689-2359";
+    schema:addressCountry "Brunei Darussalam".

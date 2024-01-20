@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lana";
+    schema:familyName "Stokes";
+    schema:birthDate "2002-10-16"^^xsd:date;
+    schema:address _:b450.
+_:b450 a schema:PostalAddress;
+    schema:streetAddress "Bergstrom Falls";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Wichita Falls";
+    schema:postalCode "04991";
+    schema:addressCountry "Israel".

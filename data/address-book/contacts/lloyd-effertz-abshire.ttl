@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lloyd";
+    schema:familyName "Effertz-Abshire";
+    schema:birthDate "1960-09-27"^^xsd:date;
+    schema:address _:b1218.
+_:b1218 a schema:PostalAddress;
+    schema:streetAddress "Cremin Mountains";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Fort Mauricestad";
+    schema:postalCode "29584-3224";
+    schema:addressCountry "Niger".

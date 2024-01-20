@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosalie";
+    schema:familyName "Kautzer";
+    schema:birthDate "1969-12-21"^^xsd:date;
+    schema:address _:b9755.
+_:b9755 a schema:PostalAddress;
+    schema:streetAddress "Ruth Overpass";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Nolaberg";
+    schema:postalCode "05060";
+    schema:addressCountry "New Zealand".

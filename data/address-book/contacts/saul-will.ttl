@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Saul";
+    schema:familyName "Will";
+    schema:birthDate "1957-02-03"^^xsd:date;
+    schema:address _:b2453.
+_:b2453 a schema:PostalAddress;
+    schema:streetAddress "Johann Rue";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Fort Wymanside";
+    schema:postalCode "22673";
+    schema:addressCountry "Niue".

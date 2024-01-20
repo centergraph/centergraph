@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Isabel";
+    schema:familyName "Goyette";
+    schema:birthDate "1955-04-15"^^xsd:date;
+    schema:address _:b8988.
+_:b8988 a schema:PostalAddress;
+    schema:streetAddress "Crooks Mountain";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Springfield";
+    schema:postalCode "64930";
+    schema:addressCountry "Chile".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Salvador";
+    schema:familyName "Turcotte";
+    schema:birthDate "1991-01-13"^^xsd:date;
+    schema:address _:b2240.
+_:b2240 a schema:PostalAddress;
+    schema:streetAddress "High Road";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Rancho Santa Margarita";
+    schema:postalCode "24307";
+    schema:addressCountry "Kiribati".

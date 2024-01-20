@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lorene";
+    schema:familyName "Thiel";
+    schema:birthDate "1962-01-18"^^xsd:date;
+    schema:address _:b1100.
+_:b1100 a schema:PostalAddress;
+    schema:streetAddress "Elmore Parks";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Port Rhianna";
+    schema:postalCode "04071";
+    schema:addressCountry "Indonesia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Judith";
+    schema:familyName "Walter";
+    schema:birthDate "1951-01-27"^^xsd:date;
+    schema:address _:b8084.
+_:b8084 a schema:PostalAddress;
+    schema:streetAddress "Amelie Valley";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "North Lavern";
+    schema:postalCode "58477-2050";
+    schema:addressCountry "Italy".

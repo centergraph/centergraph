@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Adam";
+    schema:familyName "Von";
+    schema:birthDate "1944-11-02"^^xsd:date;
+    schema:address _:b7334.
+_:b7334 a schema:PostalAddress;
+    schema:streetAddress "W Franklin Street";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "East Lupe";
+    schema:postalCode "92269-3685";
+    schema:addressCountry "Antarctica".

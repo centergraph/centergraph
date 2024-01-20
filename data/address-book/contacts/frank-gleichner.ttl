@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Frank";
+    schema:familyName "Gleichner";
+    schema:birthDate "1986-09-01"^^xsd:date;
+    schema:address _:b2649.
+_:b2649 a schema:PostalAddress;
+    schema:streetAddress "Hank Meadow";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Erie";
+    schema:postalCode "94407";
+    schema:addressCountry "Switzerland".

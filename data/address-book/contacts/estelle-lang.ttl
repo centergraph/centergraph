@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Estelle";
+    schema:familyName "Lang";
+    schema:birthDate "1978-07-16"^^xsd:date;
+    schema:address _:b9839.
+_:b9839 a schema:PostalAddress;
+    schema:streetAddress "Clay Extension";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "West Stevie";
+    schema:postalCode "82678";
+    schema:addressCountry "Uzbekistan".

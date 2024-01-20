@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ryan";
+    schema:familyName "Heaney";
+    schema:birthDate "1983-08-07"^^xsd:date;
+    schema:address _:b8208.
+_:b8208 a schema:PostalAddress;
+    schema:streetAddress "Steuber Estate";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "East Ramirostead";
+    schema:postalCode "09172";
+    schema:addressCountry "Sao Tome and Principe".

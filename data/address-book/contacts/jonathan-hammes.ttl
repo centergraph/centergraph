@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jonathan";
+    schema:familyName "Hammes";
+    schema:birthDate "2002-12-21"^^xsd:date;
+    schema:address _:b5674.
+_:b5674 a schema:PostalAddress;
+    schema:streetAddress "Powlowski Common";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Eudorachester";
+    schema:postalCode "88436";
+    schema:addressCountry "Philippines".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Regina";
+    schema:familyName "Wiza";
+    schema:birthDate "1993-05-24"^^xsd:date;
+    schema:address _:b4647.
+_:b4647 a schema:PostalAddress;
+    schema:streetAddress "Zachery Corners";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Fayetteville";
+    schema:postalCode "89492-2996";
+    schema:addressCountry "Hong Kong".

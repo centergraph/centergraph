@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amber";
+    schema:familyName "Dickinson";
+    schema:birthDate "1964-11-01"^^xsd:date;
+    schema:address _:b2579.
+_:b2579 a schema:PostalAddress;
+    schema:streetAddress "Feil Divide";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Nicolasworth";
+    schema:postalCode "61050-5091";
+    schema:addressCountry "Indonesia".

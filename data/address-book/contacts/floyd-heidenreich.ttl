@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Floyd";
+    schema:familyName "Heidenreich";
+    schema:birthDate "1974-06-07"^^xsd:date;
+    schema:address _:b4307.
+_:b4307 a schema:PostalAddress;
+    schema:streetAddress "Fahey Villages";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Tinley Park";
+    schema:postalCode "06677";
+    schema:addressCountry "Mali".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Spencer";
+    schema:familyName "McCullough-Cartwright";
+    schema:birthDate "1997-06-25"^^xsd:date;
+    schema:address _:b3740.
+_:b3740 a schema:PostalAddress;
+    schema:streetAddress "Cambridge Street";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Cristobalworth";
+    schema:postalCode "87343";
+    schema:addressCountry "Australia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nick";
+    schema:familyName "O'Connell";
+    schema:birthDate "1994-05-02"^^xsd:date;
+    schema:address _:b2272.
+_:b2272 a schema:PostalAddress;
+    schema:streetAddress "Green Lane";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "South Rogerside";
+    schema:postalCode "29738";
+    schema:addressCountry "Equatorial Guinea".

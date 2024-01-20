@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ivan";
+    schema:familyName "Schmeler-Kilback";
+    schema:birthDate "1971-08-06"^^xsd:date;
+    schema:address _:b7706.
+_:b7706 a schema:PostalAddress;
+    schema:streetAddress "Gustave Land";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Port Arthur";
+    schema:postalCode "89926-6472";
+    schema:addressCountry "Cambodia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Valerie";
+    schema:familyName "Friesen";
+    schema:birthDate "1963-05-28"^^xsd:date;
+    schema:address _:b2888.
+_:b2888 a schema:PostalAddress;
+    schema:streetAddress "Ward Drive";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Broomfield";
+    schema:postalCode "26765-1075";
+    schema:addressCountry "San Marino".

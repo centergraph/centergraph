@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sergio";
+    schema:familyName "Block";
+    schema:birthDate "1955-07-11"^^xsd:date;
+    schema:address _:b3429.
+_:b3429 a schema:PostalAddress;
+    schema:streetAddress "Kiehn Mews";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Lake Pascale";
+    schema:postalCode "96159-1182";
+    schema:addressCountry "United Arab Emirates".

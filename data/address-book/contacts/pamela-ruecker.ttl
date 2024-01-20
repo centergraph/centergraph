@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pamela";
+    schema:familyName "Ruecker";
+    schema:birthDate "1968-03-22"^^xsd:date;
+    schema:address _:b8313.
+_:b8313 a schema:PostalAddress;
+    schema:streetAddress "Friesen Club";
+    schema:addressRegion "New York";
+    schema:addressLocality "North Maryjaneside";
+    schema:postalCode "65986-2991";
+    schema:addressCountry "Chile".

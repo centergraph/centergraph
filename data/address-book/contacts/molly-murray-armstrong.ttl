@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Molly";
+    schema:familyName "Murray-Armstrong";
+    schema:birthDate "1969-01-05"^^xsd:date;
+    schema:address _:b6746.
+_:b6746 a schema:PostalAddress;
+    schema:streetAddress "Flavio Ferry";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Margueritestead";
+    schema:postalCode "85617";
+    schema:addressCountry "Panama".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lindsey";
+    schema:familyName "Aufderhar";
+    schema:birthDate "1991-03-01"^^xsd:date;
+    schema:address _:b7881.
+_:b7881 a schema:PostalAddress;
+    schema:streetAddress "Gunnar Rapids";
+    schema:addressRegion "Utah";
+    schema:addressLocality "West Nataliaborough";
+    schema:postalCode "40102-5835";
+    schema:addressCountry "Palestine".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelvin";
+    schema:familyName "Nienow";
+    schema:birthDate "2004-06-12"^^xsd:date;
+    schema:address _:b835.
+_:b835 a schema:PostalAddress;
+    schema:streetAddress "Cambridge Street";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Flint";
+    schema:postalCode "81165-3432";
+    schema:addressCountry "Azerbaijan".

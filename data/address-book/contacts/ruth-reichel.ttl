@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruth";
+    schema:familyName "Reichel";
+    schema:birthDate "1955-02-22"^^xsd:date;
+    schema:address _:b5440.
+_:b5440 a schema:PostalAddress;
+    schema:streetAddress "DuBuque Estate";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Utica";
+    schema:postalCode "80025";
+    schema:addressCountry "France".

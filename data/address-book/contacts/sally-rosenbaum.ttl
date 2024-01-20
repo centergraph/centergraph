@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sally";
+    schema:familyName "Rosenbaum";
+    schema:birthDate "1959-07-07"^^xsd:date;
+    schema:address _:b9662.
+_:b9662 a schema:PostalAddress;
+    schema:streetAddress "Sycamore Street";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Amieberg";
+    schema:postalCode "14053-5752";
+    schema:addressCountry "Bulgaria".

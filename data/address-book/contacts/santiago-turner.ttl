@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Santiago";
+    schema:familyName "Turner";
+    schema:birthDate "1945-08-10"^^xsd:date;
+    schema:address _:b3971.
+_:b3971 a schema:PostalAddress;
+    schema:streetAddress "Ash Grove";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Ronnyland";
+    schema:postalCode "83610-2483";
+    schema:addressCountry "Cuba".

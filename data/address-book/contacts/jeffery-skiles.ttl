@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeffery";
+    schema:familyName "Skiles";
+    schema:birthDate "1963-01-12"^^xsd:date;
+    schema:address _:b6818.
+_:b6818 a schema:PostalAddress;
+    schema:streetAddress "Andre Brooks";
+    schema:addressRegion "Maryland";
+    schema:addressLocality "Greenholtmouth";
+    schema:postalCode "71576-3109";
+    schema:addressCountry "Equatorial Guinea".

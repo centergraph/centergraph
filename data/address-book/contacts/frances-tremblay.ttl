@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Frances";
+    schema:familyName "Tremblay";
+    schema:birthDate "1994-03-04"^^xsd:date;
+    schema:address _:b6266.
+_:b6266 a schema:PostalAddress;
+    schema:streetAddress "W 1st Street";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "New Anikamouth";
+    schema:postalCode "38025";
+    schema:addressCountry "Cote d'Ivoire".

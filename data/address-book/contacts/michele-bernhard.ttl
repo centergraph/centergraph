@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Michele";
+    schema:familyName "Bernhard";
+    schema:birthDate "2004-05-28"^^xsd:date;
+    schema:address _:b7086.
+_:b7086 a schema:PostalAddress;
+    schema:streetAddress "Moore Key";
+    schema:addressRegion "Rhode Island";
+    schema:addressLocality "Trenton";
+    schema:postalCode "18976";
+    schema:addressCountry "Syrian Arab Republic".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roxanne";
+    schema:familyName "Gleason";
+    schema:birthDate "1990-03-10"^^xsd:date;
+    schema:address _:b6319.
+_:b6319 a schema:PostalAddress;
+    schema:streetAddress "Hane Expressway";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Kertzmannton";
+    schema:postalCode "16280";
+    schema:addressCountry "Mozambique".

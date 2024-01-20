@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Victoria";
+    schema:familyName "Koch";
+    schema:birthDate "1999-11-10"^^xsd:date;
+    schema:address _:b4813.
+_:b4813 a schema:PostalAddress;
+    schema:streetAddress "Main Avenue";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "Kristahaven";
+    schema:postalCode "63300-3267";
+    schema:addressCountry "Guam".

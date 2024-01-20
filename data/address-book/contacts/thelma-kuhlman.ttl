@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Thelma";
+    schema:familyName "Kuhlman";
+    schema:birthDate "1968-10-24"^^xsd:date;
+    schema:address _:b4053.
+_:b4053 a schema:PostalAddress;
+    schema:streetAddress "Marilie Meadows";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Geraldchester";
+    schema:postalCode "18195-8855";
+    schema:addressCountry "Sierra Leone".

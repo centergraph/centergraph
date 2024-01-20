@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Tracy";
+    schema:familyName "Hand";
+    schema:birthDate "2002-02-09"^^xsd:date;
+    schema:address _:b4663.
+_:b4663 a schema:PostalAddress;
+    schema:streetAddress "E Park Avenue";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Antelope";
+    schema:postalCode "18984-1249";
+    schema:addressCountry "Bulgaria".

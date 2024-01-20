@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brooke";
+    schema:familyName "Hyatt";
+    schema:birthDate "1949-07-21"^^xsd:date;
+    schema:address _:b3787.
+_:b3787 a schema:PostalAddress;
+    schema:streetAddress "Ashley Court";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Lehnerborough";
+    schema:postalCode "11629-1654";
+    schema:addressCountry "Cote d'Ivoire".

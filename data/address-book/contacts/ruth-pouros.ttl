@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruth";
+    schema:familyName "Pouros";
+    schema:birthDate "1987-11-24"^^xsd:date;
+    schema:address _:b2633.
+_:b2633 a schema:PostalAddress;
+    schema:streetAddress "E Cedar Street";
+    schema:addressRegion "California";
+    schema:addressLocality "Port Kaela";
+    schema:postalCode "08019-6056";
+    schema:addressCountry "Poland".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Amy";
+    schema:familyName "Trantow";
+    schema:birthDate "1974-04-15"^^xsd:date;
+    schema:address _:b3278.
+_:b3278 a schema:PostalAddress;
+    schema:streetAddress "Quincy Isle";
+    schema:addressRegion "Mississippi";
+    schema:addressLocality "Cicero";
+    schema:postalCode "50757-7838";
+    schema:addressCountry "Paraguay".

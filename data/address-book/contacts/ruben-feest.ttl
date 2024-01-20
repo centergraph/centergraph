@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ruben";
+    schema:familyName "Feest";
+    schema:birthDate "1944-04-08"^^xsd:date;
+    schema:address _:b2910.
+_:b2910 a schema:PostalAddress;
+    schema:streetAddress "Quitzon Harbor";
+    schema:addressRegion "Virginia";
+    schema:addressLocality "New Londonborough";
+    schema:postalCode "81455";
+    schema:addressCountry "Netherlands".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jodi";
+    schema:familyName "Boehm";
+    schema:birthDate "1959-04-26"^^xsd:date;
+    schema:address _:b5258.
+_:b5258 a schema:PostalAddress;
+    schema:streetAddress "E 14th Street";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Lorain";
+    schema:postalCode "38564-7464";
+    schema:addressCountry "Bermuda".

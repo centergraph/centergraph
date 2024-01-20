@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Florence";
+    schema:familyName "Steuber-Smith";
+    schema:birthDate "1958-01-17"^^xsd:date;
+    schema:address _:b3199.
+_:b3199 a schema:PostalAddress;
+    schema:streetAddress "Lincoln Street";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Fort Clementinaworth";
+    schema:postalCode "83310";
+    schema:addressCountry "French Polynesia".

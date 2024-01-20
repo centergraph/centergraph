@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Muriel";
+    schema:familyName "Farrell";
+    schema:birthDate "1977-05-17"^^xsd:date;
+    schema:address _:b1483.
+_:b1483 a schema:PostalAddress;
+    schema:streetAddress "Amiya Haven";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "South Greenport";
+    schema:postalCode "79969";
+    schema:addressCountry "Somalia".

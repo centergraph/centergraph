@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rudolph";
+    schema:familyName "Pagac";
+    schema:birthDate "1986-05-20"^^xsd:date;
+    schema:address _:b2468.
+_:b2468 a schema:PostalAddress;
+    schema:streetAddress "Dustin Isle";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Lake Forest";
+    schema:postalCode "01225";
+    schema:addressCountry "Guadeloupe".

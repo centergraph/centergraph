@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joshua";
+    schema:familyName "Walter";
+    schema:birthDate "2004-01-31"^^xsd:date;
+    schema:address _:b5921.
+_:b5921 a schema:PostalAddress;
+    schema:streetAddress "W State Street";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Carson City";
+    schema:postalCode "58864";
+    schema:addressCountry "Cape Verde".

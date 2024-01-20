@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Otis";
+    schema:familyName "Konopelski";
+    schema:birthDate "1965-11-24"^^xsd:date;
+    schema:address _:b8414.
+_:b8414 a schema:PostalAddress;
+    schema:streetAddress "Jaren Shoals";
+    schema:addressRegion "Idaho";
+    schema:addressLocality "Tamarac";
+    schema:postalCode "63199";
+    schema:addressCountry "Guinea".

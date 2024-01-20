@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Israel";
+    schema:familyName "Witting";
+    schema:birthDate "1990-01-07"^^xsd:date;
+    schema:address _:b3805.
+_:b3805 a schema:PostalAddress;
+    schema:streetAddress "12th Street";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Lebsackmouth";
+    schema:postalCode "81090";
+    schema:addressCountry "Liberia".

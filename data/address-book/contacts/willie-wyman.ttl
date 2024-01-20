@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Willie";
+    schema:familyName "Wyman";
+    schema:birthDate "1992-04-14"^^xsd:date;
+    schema:address _:b9679.
+_:b9679 a schema:PostalAddress;
+    schema:streetAddress "Jayden Union";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Dixiestad";
+    schema:postalCode "60755-0338";
+    schema:addressCountry "Republic of Korea".

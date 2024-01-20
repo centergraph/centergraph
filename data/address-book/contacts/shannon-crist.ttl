@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shannon";
+    schema:familyName "Crist";
+    schema:birthDate "1986-02-06"^^xsd:date;
+    schema:address _:b2330.
+_:b2330 a schema:PostalAddress;
+    schema:streetAddress "Marlborough Road";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Schimmelstad";
+    schema:postalCode "37342";
+    schema:addressCountry "French Polynesia".

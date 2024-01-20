@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Martha";
+    schema:familyName "Blick";
+    schema:birthDate "1973-11-14"^^xsd:date;
+    schema:address _:b4658.
+_:b4658 a schema:PostalAddress;
+    schema:streetAddress "Viviane Point";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "New Talia";
+    schema:postalCode "76533-1089";
+    schema:addressCountry "Estonia".

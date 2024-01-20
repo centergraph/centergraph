@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sophia";
+    schema:familyName "Langworth";
+    schema:birthDate "1944-02-07"^^xsd:date;
+    schema:address _:b2916.
+_:b2916 a schema:PostalAddress;
+    schema:streetAddress "Bode Bridge";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "DuBuqueport";
+    schema:postalCode "66494-4120";
+    schema:addressCountry "Djibouti".

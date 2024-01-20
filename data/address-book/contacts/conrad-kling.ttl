@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Conrad";
+    schema:familyName "Kling";
+    schema:birthDate "2003-06-24"^^xsd:date;
+    schema:address _:b2235.
+_:b2235 a schema:PostalAddress;
+    schema:streetAddress "Hill Street";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Aufderharstad";
+    schema:postalCode "83769";
+    schema:addressCountry "Liberia".

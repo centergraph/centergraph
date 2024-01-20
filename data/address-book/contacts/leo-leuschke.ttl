@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leo";
+    schema:familyName "Leuschke";
+    schema:birthDate "1991-09-26"^^xsd:date;
+    schema:address _:b6371.
+_:b6371 a schema:PostalAddress;
+    schema:streetAddress "Hayden Way";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Earnestfort";
+    schema:postalCode "99114-0603";
+    schema:addressCountry "Lesotho".

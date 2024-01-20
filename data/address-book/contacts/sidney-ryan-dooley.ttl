@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sidney";
+    schema:familyName "Ryan-Dooley";
+    schema:birthDate "1973-09-10"^^xsd:date;
+    schema:address _:b8946.
+_:b8946 a schema:PostalAddress;
+    schema:streetAddress "Krajcik Fall";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Lake Jarrodboro";
+    schema:postalCode "55986-4529";
+    schema:addressCountry "Denmark".

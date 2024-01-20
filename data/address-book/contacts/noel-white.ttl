@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Noel";
+    schema:familyName "White";
+    schema:birthDate "1985-08-02"^^xsd:date;
+    schema:address _:b7272.
+_:b7272 a schema:PostalAddress;
+    schema:streetAddress "Adrien Curve";
+    schema:addressRegion "Maine";
+    schema:addressLocality "West Buckmouth";
+    schema:postalCode "60743-3786";
+    schema:addressCountry "Namibia".

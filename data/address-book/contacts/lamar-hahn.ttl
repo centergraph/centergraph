@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lamar";
+    schema:familyName "Hahn";
+    schema:birthDate "1953-04-04"^^xsd:date;
+    schema:address _:b9293.
+_:b9293 a schema:PostalAddress;
+    schema:streetAddress "Rath Branch";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Mitchellbury";
+    schema:postalCode "60747";
+    schema:addressCountry "Papua New Guinea".

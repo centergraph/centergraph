@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Delia";
+    schema:familyName "Hyatt";
+    schema:birthDate "1968-08-22"^^xsd:date;
+    schema:address _:b7623.
+_:b7623 a schema:PostalAddress;
+    schema:streetAddress "Patience Heights";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "West Ilaview";
+    schema:postalCode "43773";
+    schema:addressCountry "Gambia".

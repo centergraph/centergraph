@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sheryl";
+    schema:familyName "Hilpert";
+    schema:birthDate "1956-02-21"^^xsd:date;
+    schema:address _:b606.
+_:b606 a schema:PostalAddress;
+    schema:streetAddress "Martine Burg";
+    schema:addressRegion "Washington";
+    schema:addressLocality "Wisokyland";
+    schema:postalCode "68202";
+    schema:addressCountry "United States Minor Outlying Islands".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jonathon";
+    schema:familyName "Durgan";
+    schema:birthDate "2003-01-10"^^xsd:date;
+    schema:address _:b4445.
+_:b4445 a schema:PostalAddress;
+    schema:streetAddress "Ronaldo Pines";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Mitchellport";
+    schema:postalCode "53360";
+    schema:addressCountry "Curacao".

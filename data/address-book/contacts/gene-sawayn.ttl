@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gene";
+    schema:familyName "Sawayn";
+    schema:birthDate "1982-01-03"^^xsd:date;
+    schema:address _:b5048.
+_:b5048 a schema:PostalAddress;
+    schema:streetAddress "Littel Hill";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "Bentonville";
+    schema:postalCode "51011-9779";
+    schema:addressCountry "Central African Republic".

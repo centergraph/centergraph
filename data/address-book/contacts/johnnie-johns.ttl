@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Johnnie";
+    schema:familyName "Johns";
+    schema:birthDate "1960-12-09"^^xsd:date;
+    schema:address _:b1704.
+_:b1704 a schema:PostalAddress;
+    schema:streetAddress "Garden Street";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Farrellport";
+    schema:postalCode "41513-8122";
+    schema:addressCountry "Svalbard & Jan Mayen Islands".

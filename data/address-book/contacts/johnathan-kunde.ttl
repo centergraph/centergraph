@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Johnathan";
+    schema:familyName "Kunde";
+    schema:birthDate "1982-05-14"^^xsd:date;
+    schema:address _:b4657.
+_:b4657 a schema:PostalAddress;
+    schema:streetAddress "Haag Via";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Fisherland";
+    schema:postalCode "71841-0006";
+    schema:addressCountry "Holy See (Vatican City State)".

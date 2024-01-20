@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Willard";
+    schema:familyName "Ortiz";
+    schema:birthDate "1948-10-02"^^xsd:date;
+    schema:address _:b1020.
+_:b1020 a schema:PostalAddress;
+    schema:streetAddress "Hirthe Lights";
+    schema:addressRegion "New Jersey";
+    schema:addressLocality "West Ephraim";
+    schema:postalCode "60187-0742";
+    schema:addressCountry "American Samoa".

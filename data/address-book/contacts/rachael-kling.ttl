@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rachael";
+    schema:familyName "Kling";
+    schema:birthDate "1982-09-29"^^xsd:date;
+    schema:address _:b3911.
+_:b3911 a schema:PostalAddress;
+    schema:streetAddress "Bianka Branch";
+    schema:addressRegion "Massachusetts";
+    schema:addressLocality "New Laurynton";
+    schema:postalCode "93909-7776";
+    schema:addressCountry "Holy See (Vatican City State)".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brett";
+    schema:familyName "Kiehn";
+    schema:birthDate "1979-07-02"^^xsd:date;
+    schema:address _:b9120.
+_:b9120 a schema:PostalAddress;
+    schema:streetAddress "Quarry Road";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Maxinecester";
+    schema:postalCode "04892";
+    schema:addressCountry "Croatia".

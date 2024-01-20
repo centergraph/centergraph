@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeremiah";
+    schema:familyName "Runte";
+    schema:birthDate "1984-07-18"^^xsd:date;
+    schema:address _:b9698.
+_:b9698 a schema:PostalAddress;
+    schema:streetAddress "Brown Manors";
+    schema:addressRegion "Kansas";
+    schema:addressLocality "Melbourne";
+    schema:postalCode "13949-5020";
+    schema:addressCountry "Seychelles".

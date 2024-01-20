@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ernestine";
+    schema:familyName "Maggio";
+    schema:birthDate "1959-09-13"^^xsd:date;
+    schema:address _:b2604.
+_:b2604 a schema:PostalAddress;
+    schema:streetAddress "Parker Isle";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Waelchifield";
+    schema:postalCode "88538";
+    schema:addressCountry "Cayman Islands".

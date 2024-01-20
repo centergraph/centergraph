@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Perry";
+    schema:familyName "Erdman";
+    schema:birthDate "1989-10-17"^^xsd:date;
+    schema:address _:b9790.
+_:b9790 a schema:PostalAddress;
+    schema:streetAddress "MacGyver View";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "South Lavada";
+    schema:postalCode "66836";
+    schema:addressCountry "Honduras".

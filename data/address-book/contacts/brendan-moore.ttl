@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brendan";
+    schema:familyName "Moore";
+    schema:birthDate "1996-03-30"^^xsd:date;
+    schema:address _:b6739.
+_:b6739 a schema:PostalAddress;
+    schema:streetAddress "Jaskolski Union";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Collinsboro";
+    schema:postalCode "61594-7159";
+    schema:addressCountry "Kuwait".

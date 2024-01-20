@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Hugo";
+    schema:familyName "Walker";
+    schema:birthDate "1961-01-13"^^xsd:date;
+    schema:address _:b9238.
+_:b9238 a schema:PostalAddress;
+    schema:streetAddress "Mills Burgs";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Franeyfurt";
+    schema:postalCode "74699";
+    schema:addressCountry "United Kingdom".

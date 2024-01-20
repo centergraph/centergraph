@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Shannon";
+    schema:familyName "Bosco";
+    schema:birthDate "1983-08-11"^^xsd:date;
+    schema:address _:b9783.
+_:b9783 a schema:PostalAddress;
+    schema:streetAddress "Greenholt Via";
+    schema:addressRegion "Pennsylvania";
+    schema:addressLocality "Johannfield";
+    schema:postalCode "82307";
+    schema:addressCountry "Northern Mariana Islands".

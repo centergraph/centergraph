@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Penny";
+    schema:familyName "Hickle";
+    schema:birthDate "1969-02-13"^^xsd:date;
+    schema:address _:b9837.
+_:b9837 a schema:PostalAddress;
+    schema:streetAddress "Cherry Tree Close";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Kacistad";
+    schema:postalCode "67789";
+    schema:addressCountry "French Polynesia".

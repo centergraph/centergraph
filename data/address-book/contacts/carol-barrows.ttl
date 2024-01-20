@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carol";
+    schema:familyName "Barrows";
+    schema:birthDate "2000-07-17"^^xsd:date;
+    schema:address _:b8392.
+_:b8392 a schema:PostalAddress;
+    schema:streetAddress "Martin Luther King Drive";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Baltimore";
+    schema:postalCode "06184-0376";
+    schema:addressCountry "France".

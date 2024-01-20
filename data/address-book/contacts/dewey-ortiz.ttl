@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dewey";
+    schema:familyName "Ortiz";
+    schema:birthDate "1948-03-08"^^xsd:date;
+    schema:address _:b4061.
+_:b4061 a schema:PostalAddress;
+    schema:streetAddress "Wisoky Street";
+    schema:addressRegion "Illinois";
+    schema:addressLocality "Carmelotown";
+    schema:postalCode "09710";
+    schema:addressCountry "Sudan".

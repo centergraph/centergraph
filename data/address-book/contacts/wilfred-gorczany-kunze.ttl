@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wilfred";
+    schema:familyName "Gorczany-Kunze";
+    schema:birthDate "1982-07-17"^^xsd:date;
+    schema:address _:b6647.
+_:b6647 a schema:PostalAddress;
+    schema:streetAddress "D'Amore Points";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "East Darrel";
+    schema:postalCode "62435";
+    schema:addressCountry "Slovakia".

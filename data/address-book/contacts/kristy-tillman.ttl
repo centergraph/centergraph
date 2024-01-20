@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristy";
+    schema:familyName "Tillman";
+    schema:birthDate "1980-06-24"^^xsd:date;
+    schema:address _:b3004.
+_:b3004 a schema:PostalAddress;
+    schema:streetAddress "Forest Avenue";
+    schema:addressRegion "Delaware";
+    schema:addressLocality "Lake Meaghanstad";
+    schema:postalCode "01708-5421";
+    schema:addressCountry "Senegal".

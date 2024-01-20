@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clara";
+    schema:familyName "Johnston";
+    schema:birthDate "1986-11-23"^^xsd:date;
+    schema:address _:b3357.
+_:b3357 a schema:PostalAddress;
+    schema:streetAddress "Guadalupe Key";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Lake Horaciochester";
+    schema:postalCode "04546";
+    schema:addressCountry "Madagascar".

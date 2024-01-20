@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeannie";
+    schema:familyName "Rohan";
+    schema:birthDate "1966-12-29"^^xsd:date;
+    schema:address _:b5026.
+_:b5026 a schema:PostalAddress;
+    schema:streetAddress "Merritt Drive";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Rosariotown";
+    schema:postalCode "85617-7975";
+    schema:addressCountry "Guernsey".

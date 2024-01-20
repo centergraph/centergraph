@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ray";
+    schema:familyName "Witting";
+    schema:birthDate "1951-11-13"^^xsd:date;
+    schema:address _:b7508.
+_:b7508 a schema:PostalAddress;
+    schema:streetAddress "Russell Street";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "West Pattie";
+    schema:postalCode "41133-1483";
+    schema:addressCountry "Democratic Republic of the Congo".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roderick";
+    schema:familyName "Hegmann";
+    schema:birthDate "1977-12-20"^^xsd:date;
+    schema:address _:b7458.
+_:b7458 a schema:PostalAddress;
+    schema:streetAddress "Deonte Spur";
+    schema:addressRegion "Minnesota";
+    schema:addressLocality "Ryanview";
+    schema:postalCode "11957-5602";
+    schema:addressCountry "Sao Tome and Principe".

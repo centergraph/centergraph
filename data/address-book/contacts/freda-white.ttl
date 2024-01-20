@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Freda";
+    schema:familyName "White";
+    schema:birthDate "1950-09-18"^^xsd:date;
+    schema:address _:b2664.
+_:b2664 a schema:PostalAddress;
+    schema:streetAddress "Alexandre Expressway";
+    schema:addressRegion "North Dakota";
+    schema:addressLocality "Fort Yasmin";
+    schema:postalCode "61365";
+    schema:addressCountry "Portugal".

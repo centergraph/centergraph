@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rafael";
+    schema:familyName "Hessel";
+    schema:birthDate "1946-11-21"^^xsd:date;
+    schema:address _:b7627.
+_:b7627 a schema:PostalAddress;
+    schema:streetAddress "Labadie Ferry";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "New Alberta";
+    schema:postalCode "57359-9642";
+    schema:addressCountry "Niger".

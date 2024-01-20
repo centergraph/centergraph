@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Wendell";
+    schema:familyName "Ward";
+    schema:birthDate "2004-04-15"^^xsd:date;
+    schema:address _:b9916.
+_:b9916 a schema:PostalAddress;
+    schema:streetAddress "Billie Walks";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Sandy";
+    schema:postalCode "93369";
+    schema:addressCountry "British Indian Ocean Territory (Chagos Archipelago)".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leslie";
+    schema:familyName "Hermann";
+    schema:birthDate "1989-04-12"^^xsd:date;
+    schema:address _:b8593.
+_:b8593 a schema:PostalAddress;
+    schema:streetAddress "Canal Street";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Pfannerstillside";
+    schema:postalCode "53059-2716";
+    schema:addressCountry "Holy See (Vatican City State)".

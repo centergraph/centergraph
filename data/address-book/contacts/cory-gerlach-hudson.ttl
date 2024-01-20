@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cory";
+    schema:familyName "Gerlach-Hudson";
+    schema:birthDate "2003-02-05"^^xsd:date;
+    schema:address _:b6946.
+_:b6946 a schema:PostalAddress;
+    schema:streetAddress "Izabella Loaf";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "San Antonio";
+    schema:postalCode "55784-2160";
+    schema:addressCountry "India".

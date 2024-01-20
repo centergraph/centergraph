@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rosie";
+    schema:familyName "Hahn";
+    schema:birthDate "2003-02-07"^^xsd:date;
+    schema:address _:b7219.
+_:b7219 a schema:PostalAddress;
+    schema:streetAddress "Lawrence Knoll";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "West Aidacester";
+    schema:postalCode "38050";
+    schema:addressCountry "Australia".

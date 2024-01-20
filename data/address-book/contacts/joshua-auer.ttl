@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Joshua";
+    schema:familyName "Auer";
+    schema:birthDate "1983-10-23"^^xsd:date;
+    schema:address _:b5560.
+_:b5560 a schema:PostalAddress;
+    schema:streetAddress "Janelle Valleys";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "Wittingworth";
+    schema:postalCode "54340";
+    schema:addressCountry "Barbados".

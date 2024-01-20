@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Sam";
+    schema:familyName "Nienow-Ferry";
+    schema:birthDate "1989-07-02"^^xsd:date;
+    schema:address _:b9201.
+_:b9201 a schema:PostalAddress;
+    schema:streetAddress "Hansen Fork";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "Spokane";
+    schema:postalCode "62743";
+    schema:addressCountry "Lesotho".

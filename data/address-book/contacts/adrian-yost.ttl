@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Adrian";
+    schema:familyName "Yost";
+    schema:birthDate "1946-01-04"^^xsd:date;
+    schema:address _:b2486.
+_:b2486 a schema:PostalAddress;
+    schema:streetAddress "Lansdowne Road";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Schmelerland";
+    schema:postalCode "51581-3109";
+    schema:addressCountry "Guinea".

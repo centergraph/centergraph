@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Virgil";
+    schema:familyName "Sawayn";
+    schema:birthDate "1970-08-22"^^xsd:date;
+    schema:address _:b8248.
+_:b8248 a schema:PostalAddress;
+    schema:streetAddress "Hilpert Haven";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Chicago";
+    schema:postalCode "65803";
+    schema:addressCountry "Guinea".

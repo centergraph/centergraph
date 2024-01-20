@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Barbara";
+    schema:familyName "Kertzmann";
+    schema:birthDate "1971-04-29"^^xsd:date;
+    schema:address _:b3621.
+_:b3621 a schema:PostalAddress;
+    schema:streetAddress "Bahringer Course";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Casper";
+    schema:postalCode "54358";
+    schema:addressCountry "Gibraltar".

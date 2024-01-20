@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mitchell";
+    schema:familyName "Osinski";
+    schema:birthDate "1955-05-11"^^xsd:date;
+    schema:address _:b1686.
+_:b1686 a schema:PostalAddress;
+    schema:streetAddress "Silver Street";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Santa Fe";
+    schema:postalCode "91239-8904";
+    schema:addressCountry "New Zealand".

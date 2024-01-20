@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ira";
+    schema:familyName "Reichel";
+    schema:birthDate "1992-12-06"^^xsd:date;
+    schema:address _:b3802.
+_:b3802 a schema:PostalAddress;
+    schema:streetAddress "13th Street";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Thalialand";
+    schema:postalCode "15690-9151";
+    schema:addressCountry "Benin".

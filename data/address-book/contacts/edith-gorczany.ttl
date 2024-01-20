@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Edith";
+    schema:familyName "Gorczany";
+    schema:birthDate "1952-01-30"^^xsd:date;
+    schema:address _:b3091.
+_:b3091 a schema:PostalAddress;
+    schema:streetAddress "Norfolk Road";
+    schema:addressRegion "South Dakota";
+    schema:addressLocality "Sawaynchester";
+    schema:postalCode "96055-6507";
+    schema:addressCountry "Serbia".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Doug";
+    schema:familyName "Baumbach";
+    schema:birthDate "2005-02-04"^^xsd:date;
+    schema:address _:b999.
+_:b999 a schema:PostalAddress;
+    schema:streetAddress "Spruce Street";
+    schema:addressRegion "Arkansas";
+    schema:addressLocality "Lawton";
+    schema:postalCode "42726-0677";
+    schema:addressCountry "France".

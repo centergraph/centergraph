@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stewart";
+    schema:familyName "Bins";
+    schema:birthDate "2003-12-01"^^xsd:date;
+    schema:address _:b7411.
+_:b7411 a schema:PostalAddress;
+    schema:streetAddress "Common Lane";
+    schema:addressRegion "Maine";
+    schema:addressLocality "North Miami Beach";
+    schema:postalCode "63502";
+    schema:addressCountry "Botswana".

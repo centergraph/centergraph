@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Loretta";
+    schema:familyName "Roob";
+    schema:birthDate "1989-06-01"^^xsd:date;
+    schema:address _:b6990.
+_:b6990 a schema:PostalAddress;
+    schema:streetAddress "Adams Valley";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Fort Amely";
+    schema:postalCode "08059";
+    schema:addressCountry "Argentina".

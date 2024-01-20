@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Willie";
+    schema:familyName "Johnson";
+    schema:birthDate "1983-08-30"^^xsd:date;
+    schema:address _:b3317.
+_:b3317 a schema:PostalAddress;
+    schema:streetAddress "S 10th Street";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "West Osborneland";
+    schema:postalCode "53171-9757";
+    schema:addressCountry "Micronesia".

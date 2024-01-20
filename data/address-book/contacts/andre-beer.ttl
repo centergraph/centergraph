@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Andre";
+    schema:familyName "Beer";
+    schema:birthDate "1978-02-26"^^xsd:date;
+    schema:address _:b6756.
+_:b6756 a schema:PostalAddress;
+    schema:streetAddress "W 5th Street";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "West Mckenzieburgh";
+    schema:postalCode "56246";
+    schema:addressCountry "Libyan Arab Jamahiriya".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Damon";
+    schema:familyName "Abshire";
+    schema:birthDate "1964-11-18"^^xsd:date;
+    schema:address _:b506.
+_:b506 a schema:PostalAddress;
+    schema:streetAddress "Bartoletti Estate";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Hicksville";
+    schema:postalCode "55998";
+    schema:addressCountry "Azerbaijan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Loretta";
+    schema:familyName "Collins-Fahey";
+    schema:birthDate "1946-06-10"^^xsd:date;
+    schema:address _:b1565.
+_:b1565 a schema:PostalAddress;
+    schema:streetAddress "Morissette Plaza";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Filomenastad";
+    schema:postalCode "19281";
+    schema:addressCountry "Thailand".

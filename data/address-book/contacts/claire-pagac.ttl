@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Claire";
+    schema:familyName "Pagac";
+    schema:birthDate "1964-05-10"^^xsd:date;
+    schema:address _:b9405.
+_:b9405 a schema:PostalAddress;
+    schema:streetAddress "Bailey Island";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Fort Myers";
+    schema:postalCode "80017-4533";
+    schema:addressCountry "Liberia".

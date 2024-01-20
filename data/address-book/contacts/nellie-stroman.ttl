@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nellie";
+    schema:familyName "Stroman";
+    schema:birthDate "1957-10-25"^^xsd:date;
+    schema:address _:b9630.
+_:b9630 a schema:PostalAddress;
+    schema:streetAddress "Kelvin Glen";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "Pfannerstillside";
+    schema:postalCode "94372";
+    schema:addressCountry "Jordan".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Arthur";
+    schema:familyName "Blanda";
+    schema:birthDate "1957-02-09"^^xsd:date;
+    schema:address _:b1072.
+_:b1072 a schema:PostalAddress;
+    schema:streetAddress "Cruickshank Throughway";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Hortenseview";
+    schema:postalCode "50272";
+    schema:addressCountry "Kyrgyz Republic".

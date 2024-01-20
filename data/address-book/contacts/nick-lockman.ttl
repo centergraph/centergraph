@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Nick";
+    schema:familyName "Lockman";
+    schema:birthDate "1993-03-14"^^xsd:date;
+    schema:address _:b9935.
+_:b9935 a schema:PostalAddress;
+    schema:streetAddress "Mante Points";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "West Edwin";
+    schema:postalCode "00527";
+    schema:addressCountry "Romania".

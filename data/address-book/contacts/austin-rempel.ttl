@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Austin";
+    schema:familyName "Rempel";
+    schema:birthDate "1970-02-13"^^xsd:date;
+    schema:address _:b4589.
+_:b4589 a schema:PostalAddress;
+    schema:streetAddress "Nick Place";
+    schema:addressRegion "Alabama";
+    schema:addressLocality "Concord";
+    schema:postalCode "05571-0726";
+    schema:addressCountry "Cote d'Ivoire".

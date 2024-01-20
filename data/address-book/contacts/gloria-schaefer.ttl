@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gloria";
+    schema:familyName "Schaefer";
+    schema:birthDate "1988-06-08"^^xsd:date;
+    schema:address _:b5641.
+_:b5641 a schema:PostalAddress;
+    schema:streetAddress "Tomasa Views";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Stanleyhaven";
+    schema:postalCode "77861-2620";
+    schema:addressCountry "Cocos (Keeling) Islands".

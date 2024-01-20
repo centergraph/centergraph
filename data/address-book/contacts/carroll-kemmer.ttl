@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Carroll";
+    schema:familyName "Kemmer";
+    schema:birthDate "1959-08-28"^^xsd:date;
+    schema:address _:b466.
+_:b466 a schema:PostalAddress;
+    schema:streetAddress "Oak Avenue";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Ezraville";
+    schema:postalCode "65690-9241";
+    schema:addressCountry "Ireland".

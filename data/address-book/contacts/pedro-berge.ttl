@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Pedro";
+    schema:familyName "Berge";
+    schema:birthDate "1995-08-05"^^xsd:date;
+    schema:address _:b3814.
+_:b3814 a schema:PostalAddress;
+    schema:streetAddress "Shanon Points";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "North Rosemary";
+    schema:postalCode "22269-1769";
+    schema:addressCountry "Liberia".

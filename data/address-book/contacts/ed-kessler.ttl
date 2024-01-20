@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ed";
+    schema:familyName "Kessler";
+    schema:birthDate "1997-12-09"^^xsd:date;
+    schema:address _:b9009.
+_:b9009 a schema:PostalAddress;
+    schema:streetAddress "Freeda Hill";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Roswell";
+    schema:postalCode "45523-3720";
+    schema:addressCountry "Lao People's Democratic Republic".

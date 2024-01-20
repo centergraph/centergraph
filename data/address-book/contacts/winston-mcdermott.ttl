@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Winston";
+    schema:familyName "McDermott";
+    schema:birthDate "1984-03-21"^^xsd:date;
+    schema:address _:b7624.
+_:b7624 a schema:PostalAddress;
+    schema:streetAddress "Nicolas Fall";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Lake Jakobport";
+    schema:postalCode "47811-9068";
+    schema:addressCountry "Marshall Islands".

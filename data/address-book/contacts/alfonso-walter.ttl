@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alfonso";
+    schema:familyName "Walter";
+    schema:birthDate "1998-11-05"^^xsd:date;
+    schema:address _:b5137.
+_:b5137 a schema:PostalAddress;
+    schema:streetAddress "Sandra Street";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Dublin";
+    schema:postalCode "22854-5178";
+    schema:addressCountry "Greece".

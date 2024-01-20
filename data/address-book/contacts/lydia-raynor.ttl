@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lydia";
+    schema:familyName "Raynor";
+    schema:birthDate "1989-10-11"^^xsd:date;
+    schema:address _:b1807.
+_:b1807 a schema:PostalAddress;
+    schema:streetAddress "Frederik View";
+    schema:addressRegion "Missouri";
+    schema:addressLocality "Staceycester";
+    schema:postalCode "99210";
+    schema:addressCountry "Mexico".

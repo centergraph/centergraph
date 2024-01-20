@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Zachary";
+    schema:familyName "Zieme";
+    schema:birthDate "1971-02-28"^^xsd:date;
+    schema:address _:b5700.
+_:b5700 a schema:PostalAddress;
+    schema:streetAddress "Ronny Road";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Deronland";
+    schema:postalCode "30457-8132";
+    schema:addressCountry "Bahamas".

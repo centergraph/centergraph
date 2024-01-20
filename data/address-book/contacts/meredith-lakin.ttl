@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Meredith";
+    schema:familyName "Lakin";
+    schema:birthDate "1994-06-12"^^xsd:date;
+    schema:address _:b7423.
+_:b7423 a schema:PostalAddress;
+    schema:streetAddress "Robel Locks";
+    schema:addressRegion "Oregon";
+    schema:addressLocality "Carletontown";
+    schema:postalCode "93641";
+    schema:addressCountry "Spain".

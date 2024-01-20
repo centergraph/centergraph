@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lisa";
+    schema:familyName "Hayes";
+    schema:birthDate "1971-08-05"^^xsd:date;
+    schema:address _:b4690.
+_:b4690 a schema:PostalAddress;
+    schema:streetAddress "Otho Parkway";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Kubcester";
+    schema:postalCode "89365";
+    schema:addressCountry "Mongolia".
