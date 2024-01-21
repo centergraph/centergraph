@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Emilio";
+    schema:familyName "Langworth";
+    schema:birthDate "1992-03-02"^^xsd:date;
+    schema:address _:b27.
+_:b27 a schema:PostalAddress;
+    schema:streetAddress "Moore Walk";
+    schema:addressRegion "Nevada";
+    schema:addressLocality "Olafield";
+    schema:postalCode "74010-8612";
+    schema:addressCountry "Armenia".

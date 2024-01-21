@@ -5,11 +5,11 @@
     a schema:Person;
     schema:givenName "Arturo";
     schema:familyName "Cruickshank";
-    schema:birthDate "1975-08-23"^^xsd:date;
-    schema:address _:b955.
-_:b955 a schema:PostalAddress;
-    schema:streetAddress "Maurine Skyway";
-    schema:addressRegion "Massachusetts";
-    schema:addressLocality "Lake Chesley";
-    schema:postalCode "51139-6210";
-    schema:addressCountry "Libyan Arab Jamahiriya".
+    schema:birthDate "1971-07-27"^^xsd:date;
+    schema:address _:b3.
+_:b3 a schema:PostalAddress;
+    schema:streetAddress "Mill Road";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "Rachelletown";
+    schema:postalCode "95749";
+    schema:addressCountry "Bouvet Island".

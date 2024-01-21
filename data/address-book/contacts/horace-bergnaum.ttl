@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Horace";
+    schema:familyName "Bergnaum";
+    schema:birthDate "1952-01-19"^^xsd:date;
+    schema:address _:b65.
+_:b65 a schema:PostalAddress;
+    schema:streetAddress "Witting Forest";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "Fort Mercedesview";
+    schema:postalCode "68060";
+    schema:addressCountry "Anguilla".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Stanley";
+    schema:familyName "Schinner";
+    schema:birthDate "1973-07-18"^^xsd:date;
+    schema:address _:b58.
+_:b58 a schema:PostalAddress;
+    schema:streetAddress "Merle Plains";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Oshkosh";
+    schema:postalCode "97875-6429";
+    schema:addressCountry "Iran".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jacob";
+    schema:familyName "Wolf";
+    schema:birthDate "1951-10-23"^^xsd:date;
+    schema:address _:b79.
+_:b79 a schema:PostalAddress;
+    schema:streetAddress "S Main Avenue";
+    schema:addressRegion "California";
+    schema:addressLocality "Kadinside";
+    schema:postalCode "10929";
+    schema:addressCountry "Timor-Leste".

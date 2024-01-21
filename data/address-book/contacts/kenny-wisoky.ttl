@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kenny";
+    schema:familyName "Wisoky";
+    schema:birthDate "1996-03-17"^^xsd:date;
+    schema:address _:b38.
+_:b38 a schema:PostalAddress;
+    schema:streetAddress "Wunsch Trail";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "East Jameyville";
+    schema:postalCode "45123";
+    schema:addressCountry "Latvia".

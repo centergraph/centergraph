@@ -1,8 +1,7 @@
 import Form from '@centergraph/sdk/lib/react/components/Form'
-import { api, base } from '../centerGraph'
+import { base } from '../centerGraph'
 import { useNavigate } from 'react-router-dom'
-
-const { schema } = api.namespaces
+import { Person } from '../types'
 
 export default function AddContact() {
   const navigate = useNavigate()
@@ -10,14 +9,10 @@ export default function AddContact() {
   return (
     <>
       <h1>Add a person</h1>
-      <Form
-        pathCreator={(pointer) =>
-          `/contacts/${pointer.out(schema('givenName')).value}-${pointer.out(schema('familyName')).value}`
-        }
+      <Form<Person>
+        pathCreator={(object) => `/contacts/${object.givenName}-${object.familyName}`}
         shaclUrl={`${base}/shapes/contact.shacl`}
-        afterSubmit={() => {
-          navigate('/')
-        }}
+        afterSubmit={() => navigate('/')}
       >
         <div className="d-flex justify-content-end gap-2">
           <button className="btn mt-4 btn-primary">Save</button>

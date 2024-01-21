@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Cameron";
+    schema:familyName "Buckridge";
+    schema:birthDate "1977-05-04"^^xsd:date;
+    schema:address _:b100.
+_:b100 a schema:PostalAddress;
+    schema:streetAddress "Elenor Field";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Fort Juvenalboro";
+    schema:postalCode "99447";
+    schema:addressCountry "Norway".

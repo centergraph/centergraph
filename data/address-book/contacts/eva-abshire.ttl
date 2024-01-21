@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Eva";
+    schema:familyName "Abshire";
+    schema:birthDate "1946-04-04"^^xsd:date;
+    schema:address _:b68.
+_:b68 a schema:PostalAddress;
+    schema:streetAddress "Stanton Viaduct";
+    schema:addressRegion "Iowa";
+    schema:addressLocality "West Itzel";
+    schema:postalCode "99530";
+    schema:addressCountry "Hong Kong".

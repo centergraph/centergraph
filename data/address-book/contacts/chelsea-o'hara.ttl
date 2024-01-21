@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Chelsea";
+    schema:familyName "O'Hara";
+    schema:birthDate "1975-12-31"^^xsd:date;
+    schema:address _:b88.
+_:b88 a schema:PostalAddress;
+    schema:streetAddress "Langworth Union";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "East Melody";
+    schema:postalCode "26995-7662";
+    schema:addressCountry "Canada".

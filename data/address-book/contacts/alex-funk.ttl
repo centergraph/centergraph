@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alex";
+    schema:familyName "Funk";
+    schema:birthDate "1944-11-02"^^xsd:date;
+    schema:address _:b44.
+_:b44 a schema:PostalAddress;
+    schema:streetAddress "Sienna Meadows";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Lake Bridgetmouth";
+    schema:postalCode "38781";
+    schema:addressCountry "Togo".

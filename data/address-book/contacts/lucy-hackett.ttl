@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lucy";
+    schema:familyName "Hackett";
+    schema:birthDate "1998-11-25"^^xsd:date;
+    schema:address _:b59.
+_:b59 a schema:PostalAddress;
+    schema:streetAddress "Reichel Lights";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Lubbock";
+    schema:postalCode "78786";
+    schema:addressCountry "France".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lucia";
+    schema:familyName "Auer";
+    schema:birthDate "1948-05-28"^^xsd:date;
+    schema:address _:b6.
+_:b6 a schema:PostalAddress;
+    schema:streetAddress "E Walnut Street";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "The Hammocks";
+    schema:postalCode "72158";
+    schema:addressCountry "Democratic People's Republic of Korea".

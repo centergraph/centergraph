@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Brittany";
+    schema:familyName "Bode";
+    schema:birthDate "1996-02-16"^^xsd:date;
+    schema:address _:b86.
+_:b86 a schema:PostalAddress;
+    schema:streetAddress "Kris Forks";
+    schema:addressRegion "Wyoming";
+    schema:addressLocality "South Toy";
+    schema:postalCode "10768";
+    schema:addressCountry "Czechia".

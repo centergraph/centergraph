@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bernadette";
+    schema:familyName "Heathcote";
+    schema:birthDate "1962-06-29"^^xsd:date;
+    schema:address _:b54.
+_:b54 a schema:PostalAddress;
+    schema:streetAddress "Colton Club";
+    schema:addressRegion "Vermont";
+    schema:addressLocality "Fort David";
+    schema:postalCode "95698";
+    schema:addressCountry "Angola".

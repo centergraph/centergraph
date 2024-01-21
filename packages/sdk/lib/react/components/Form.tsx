@@ -5,16 +5,21 @@ import { GetApiRequest } from '../../requests/GetApiRequest'
 import { centerGraphContext } from '../context'
 import { asResource } from '@centergraph/sdk/lib/core/asResource'
 import { Suspense } from '@preact-signals/safe-react/react'
+import { quadsToShapeObject } from '@centergraph/shared/lib/quadsToShapeObject'
+import { Parser } from 'n3'
+import grapoi from 'grapoi'
+import factory from '@rdfjs/data-model'
+import datasetFactory from '@rdfjs/dataset'
 
-type FormProps = {
-  data?: GetApiRequest<unknown>
+type FormProps<T> = {
+  data?: GetApiRequest<T>
   shaclUrl?: string
   children?: ReactNode
-  pathCreator?: (pointer: GrapoiPointer) => string
-  afterSubmit?: (iri?: string) => void
+  pathCreator?: (data: T, pointer: GrapoiPointer) => string
+  afterSubmit?: ({ path, object }: { path?: string; object: T }) => void
 }
 
-export default function Form({ data, children, shaclUrl, afterSubmit, pathCreator }: FormProps) {
+export default function Form<T>({ data, children, shaclUrl, afterSubmit, pathCreator }: FormProps<T>) {
   const { api } = useContext(centerGraphContext)
 
   if (!shaclUrl && data) shaclUrl = asResource(data.shaclUrl(), data.url + ':shacl')
@@ -24,12 +29,22 @@ export default function Form({ data, children, shaclUrl, afterSubmit, pathCreato
       <ShaclRenderer
         dataUrl={data?.url}
         shaclShapesUrl={shaclUrl}
-        onSubmit={(dataset, pointer) => {
+        onSubmit={async (dataset, pointer) => {
+          const context = api.context
+
+          const shaclShape = await api.fetch(shaclUrl!).then((response) => response.text())
+          const parser = new Parser()
+
+          const shaclQuads = await parser.parse(shaclShape)
+          const shaclPointer = grapoi({ dataset: datasetFactory.dataset(shaclQuads), factory })
+
+          const object = await quadsToShapeObject(shaclPointer, pointer, context)
+
           // Update
           if (data) {
             try {
               data.update(dataset).then(() => {
-                if (afterSubmit) afterSubmit()
+                if (afterSubmit) afterSubmit({ object })
               })
             } catch (error) {
               console.error(error)
@@ -38,9 +53,9 @@ export default function Form({ data, children, shaclUrl, afterSubmit, pathCreato
           // Create
           else {
             if (!pathCreator) throw new Error('pathCreator is required for creating new items with the form')
-            const path = pathCreator(pointer).toLocaleLowerCase().replace(/ /g, '-')
+            const path = pathCreator(object, pointer).toLocaleLowerCase().replace(/ /g, '-')
             api.create(path, dataset)
-            if (afterSubmit) afterSubmit(path)
+            if (afterSubmit) afterSubmit({ object, path })
           }
         }}
         settings={Object.assign({}, api.shaclRendererSettings, { mode: 'edit' })}

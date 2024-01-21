@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lynn";
+    schema:familyName "Graham";
+    schema:birthDate "1990-09-15"^^xsd:date;
+    schema:address _:b14.
+_:b14 a schema:PostalAddress;
+    schema:streetAddress "Bednar Corners";
+    schema:addressRegion "Wisconsin";
+    schema:addressLocality "Craigboro";
+    schema:postalCode "88645-1885";
+    schema:addressCountry "Cuba".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Henry";
+    schema:familyName "Marks";
+    schema:birthDate "1978-04-23"^^xsd:date;
+    schema:address _:b62.
+_:b62 a schema:PostalAddress;
+    schema:streetAddress "Savannah Grove";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Port Herman";
+    schema:postalCode "56961-3683";
+    schema:addressCountry "Palau".

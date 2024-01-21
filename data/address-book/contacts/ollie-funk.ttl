@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ollie";
+    schema:familyName "Funk";
+    schema:birthDate "1946-02-19"^^xsd:date;
+    schema:address _:b2.
+_:b2 a schema:PostalAddress;
+    schema:streetAddress "Halvorson Haven";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Grand Junction";
+    schema:postalCode "83469";
+    schema:addressCountry "Belgium".

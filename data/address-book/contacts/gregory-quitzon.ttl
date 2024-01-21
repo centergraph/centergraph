@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Gregory";
+    schema:familyName "Quitzon";
+    schema:birthDate "1963-11-28"^^xsd:date;
+    schema:address _:b34.
+_:b34 a schema:PostalAddress;
+    schema:streetAddress "Robel Spur";
+    schema:addressRegion "Louisiana";
+    schema:addressLocality "North Davionport";
+    schema:postalCode "66964-7919";
+    schema:addressCountry "North Macedonia".

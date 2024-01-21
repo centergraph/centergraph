@@ -119,11 +119,9 @@ export class QueryBuilder<T extends NamedNode[] | number> implements PromiseLike
         const [valueA] = [...dataset.match(null, predicate, null, a)]
         const [valueB] = [...dataset.match(null, predicate, null, b)]
 
-        if (order === 'ASC') {
-          return valueA?.object?.value?.localeCompare(valueB?.object?.value)
-        } else {
-          return valueB?.object?.value?.localeCompare(valueA?.object?.value)
-        }
+        return order === 'ASC'
+          ? valueA?.object?.value?.localeCompare(valueB?.object?.value)
+          : valueB?.object?.value?.localeCompare(valueA?.object?.value)
       })
     }
 

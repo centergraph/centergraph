@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Troy";
+    schema:familyName "Metz";
+    schema:birthDate "1995-01-25"^^xsd:date;
+    schema:address _:b98.
+_:b98 a schema:PostalAddress;
+    schema:streetAddress "Hand Overpass";
+    schema:addressRegion "Connecticut";
+    schema:addressLocality "Midland";
+    schema:postalCode "65906-9533";
+    schema:addressCountry "Ecuador".

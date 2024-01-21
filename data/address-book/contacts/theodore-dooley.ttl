@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Theodore";
+    schema:familyName "Dooley";
+    schema:birthDate "1977-05-07"^^xsd:date;
+    schema:address _:b22.
+_:b22 a schema:PostalAddress;
+    schema:streetAddress "Beer Keys";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "North Bernhardfield";
+    schema:postalCode "99494";
+    schema:addressCountry "Ethiopia".

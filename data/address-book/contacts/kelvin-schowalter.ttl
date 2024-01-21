@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelvin";
+    schema:familyName "Schowalter";
+    schema:birthDate "1995-01-04"^^xsd:date;
+    schema:address _:b9.
+_:b9 a schema:PostalAddress;
+    schema:streetAddress "Margot Cove";
+    schema:addressRegion "South Carolina";
+    schema:addressLocality "South Abbyland";
+    schema:postalCode "82249";
+    schema:addressCountry "Sint Maarten".

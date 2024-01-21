@@ -30,7 +30,7 @@ export class CenterGraph {
   public shaclRendererSettings: ShaclRendererProps['settings']
   public context: { [key: string]: string } = {}
 
-  #fetch: (typeof globalThis)['fetch']
+  fetch: (typeof globalThis)['fetch']
 
   namespaces = namespaces
 
@@ -43,8 +43,8 @@ export class CenterGraph {
 
     this.shaclRendererSettings = this.options.shaclRendererSettings ?? defaultSettings('view')
     registerCoreWidgets(this.shaclRendererSettings)
-    this.#fetch = (input, init) => this.#d2LFetch.fetch(input, init)
-    this.shaclRendererSettings.fetch = this.#fetch
+    this.fetch = (input, init) => this.#d2LFetch.fetch(input, init)
+    this.shaclRendererSettings.fetch = this.fetch
   }
 
   async init() {
@@ -55,18 +55,18 @@ export class CenterGraph {
   get<T>(path: string | NamedNode) {
     if (typeof path !== 'string') path = path.value
     const url = path.includes('http://') || path.includes('https://') ? path : this.options.base + path
-    return new GetApiRequest<T>(this.#fetch, this.options.base, url)
+    return new GetApiRequest<T>(this.fetch, this.options.base, url)
   }
 
   async getContext() {
-    return this.#fetch(`${this.options.base}/api/context`).then((response) => response.json())
+    return this.fetch(`${this.options.base}/api/context`).then((response) => response.json())
   }
 
   async create(path: string | NamedNode, dataset: DatasetCore) {
     if (typeof path !== 'string') path = path.value
     const iri = this.options.base + path
     const turtle = await writeTurtle([...dataset])
-    const result = await this.#fetch(iri, {
+    const result = await this.fetch(iri, {
       method: 'PUT',
       body: turtle,
     }).then((response) => response.text())
@@ -77,7 +77,7 @@ export class CenterGraph {
     if (typeof path !== 'string') path = path.value
     if (!path.endsWith('/')) throw new Error('The path must end with a slash')
     const url = path.includes('http://') || path.includes('https://') ? path : this.options.base + path
-    return new FolderApiRequest(this.#fetch, url)
+    return new FolderApiRequest(this.fetch, url)
   }
 
   get query() {
@@ -87,7 +87,7 @@ export class CenterGraph {
       asCount: false,
       mode: navigator.onLine ? 'remote' : 'local',
       store: this.#store,
-      fetch: this.#fetch,
+      fetch: this.fetch,
     })
   }
 
@@ -98,7 +98,7 @@ export class CenterGraph {
       prefixes: this.context,
       mode: navigator.onLine ? 'remote' : 'local',
       store: this.#store,
-      fetch: this.#fetch,
+      fetch: this.fetch,
     })
   }
 

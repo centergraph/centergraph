@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jennie";
+    schema:familyName "Hane";
+    schema:birthDate "1995-07-16"^^xsd:date;
+    schema:address _:b99.
+_:b99 a schema:PostalAddress;
+    schema:streetAddress "Bridge Road";
+    schema:addressRegion "North Carolina";
+    schema:addressLocality "Coachella";
+    schema:postalCode "21466";
+    schema:addressCountry "Liechtenstein".

@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Willard";
+    schema:familyName "Hansen";
+    schema:birthDate "1979-01-30"^^xsd:date;
+    schema:address _:b37.
+_:b37 a schema:PostalAddress;
+    schema:streetAddress "Vicarage Lane";
+    schema:addressRegion "New York";
+    schema:addressLocality "Sauershire";
+    schema:postalCode "39284";
+    schema:addressCountry "Monaco".

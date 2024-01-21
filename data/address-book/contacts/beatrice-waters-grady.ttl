@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Beatrice";
+    schema:familyName "Waters-Grady";
+    schema:birthDate "1998-09-27"^^xsd:date;
+    schema:address _:b45.
+_:b45 a schema:PostalAddress;
+    schema:streetAddress "Clark Street";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Bountiful";
+    schema:postalCode "26505";
+    schema:addressCountry "Montenegro".

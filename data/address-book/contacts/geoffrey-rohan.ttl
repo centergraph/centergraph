@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Geoffrey";
+    schema:familyName "Rohan";
+    schema:birthDate "1955-05-29"^^xsd:date;
+    schema:address _:b75.
+_:b75 a schema:PostalAddress;
+    schema:streetAddress "E 8th Street";
+    schema:addressRegion "Nebraska";
+    schema:addressLocality "Ericastad";
+    schema:postalCode "43770";
+    schema:addressCountry "Nepal".

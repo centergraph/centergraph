@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bernadette";
+    schema:familyName "Gerhold";
+    schema:birthDate "1952-08-06"^^xsd:date;
+    schema:address _:b30.
+_:b30 a schema:PostalAddress;
+    schema:streetAddress "W Broadway";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Murfreesboro";
+    schema:postalCode "37375-1043";
+    schema:addressCountry "Bosnia and Herzegovina".

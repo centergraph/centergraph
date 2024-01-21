@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Clifton";
+    schema:familyName "Simonis";
+    schema:birthDate "2004-07-27"^^xsd:date;
+    schema:address _:b70.
+_:b70 a schema:PostalAddress;
+    schema:streetAddress "Casper Valleys";
+    schema:addressRegion "California";
+    schema:addressLocality "Lake Kathleen";
+    schema:postalCode "21574";
+    schema:addressCountry "Cape Verde".

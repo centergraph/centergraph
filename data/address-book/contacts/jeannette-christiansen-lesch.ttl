@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Jeannette";
+    schema:familyName "Christiansen-Lesch";
+    schema:birthDate "1992-01-24"^^xsd:date;
+    schema:address _:b63.
+_:b63 a schema:PostalAddress;
+    schema:streetAddress "Mohammad Prairie";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Fort Nestor";
+    schema:postalCode "18045-5215";
+    schema:addressCountry "Botswana".

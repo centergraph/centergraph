@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Janis";
+    schema:familyName "Wyman";
+    schema:birthDate "1966-05-28"^^xsd:date;
+    schema:address _:b36.
+_:b36 a schema:PostalAddress;
+    schema:streetAddress "N Division Street";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Devenside";
+    schema:postalCode "94811-9651";
+    schema:addressCountry "Austria".

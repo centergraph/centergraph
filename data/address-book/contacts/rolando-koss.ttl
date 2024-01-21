@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Rolando";
+    schema:familyName "Koss";
+    schema:birthDate "1982-05-03"^^xsd:date;
+    schema:address _:b78.
+_:b78 a schema:PostalAddress;
+    schema:streetAddress "Keira Crescent";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Temecula";
+    schema:postalCode "72273-4538";
+    schema:addressCountry "Malawi".

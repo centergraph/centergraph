@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bert";
+    schema:familyName "Watsica";
+    schema:birthDate "1982-09-29"^^xsd:date;
+    schema:address _:b82.
+_:b82 a schema:PostalAddress;
+    schema:streetAddress "Mills Well";
+    schema:addressRegion "Florida";
+    schema:addressLocality "Port Serenity";
+    schema:postalCode "30555-3276";
+    schema:addressCountry "Marshall Islands".

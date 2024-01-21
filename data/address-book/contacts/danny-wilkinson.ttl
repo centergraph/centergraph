@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Danny";
+    schema:familyName "Wilkinson";
+    schema:birthDate "1951-07-19"^^xsd:date;
+    schema:address _:b93.
+_:b93 a schema:PostalAddress;
+    schema:streetAddress "Homenick Neck";
+    schema:addressRegion "New York";
+    schema:addressLocality "Lake Alexzander";
+    schema:postalCode "41436-3976";
+    schema:addressCountry "Pitcairn Islands".

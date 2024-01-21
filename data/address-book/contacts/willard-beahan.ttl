@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Willard";
+    schema:familyName "Beahan";
+    schema:birthDate "1998-05-25"^^xsd:date;
+    schema:address _:b28.
+_:b28 a schema:PostalAddress;
+    schema:streetAddress "Stehr Lakes";
+    schema:addressRegion "Oklahoma";
+    schema:addressLocality "Domenicobury";
+    schema:postalCode "73334-8514";
+    schema:addressCountry "French Polynesia".

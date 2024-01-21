@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Lindsey";
+    schema:familyName "Trantow";
+    schema:birthDate "1992-05-06"^^xsd:date;
+    schema:address _:b51.
+_:b51 a schema:PostalAddress;
+    schema:streetAddress "Tomasa Forest";
+    schema:addressRegion "Montana";
+    schema:addressLocality "Aliviaport";
+    schema:postalCode "88096";
+    schema:addressCountry "Uganda".

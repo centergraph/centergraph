@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kathy";
+    schema:familyName "Bailey";
+    schema:birthDate "1966-07-30"^^xsd:date;
+    schema:address _:b84.
+_:b84 a schema:PostalAddress;
+    schema:streetAddress "Bogisich Brooks";
+    schema:addressRegion "Kentucky";
+    schema:addressLocality "New Alfort";
+    schema:postalCode "85495";
+    schema:addressCountry "Liberia".

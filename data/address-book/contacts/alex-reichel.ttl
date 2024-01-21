@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Alex";
+    schema:familyName "Reichel";
+    schema:birthDate "1963-02-07"^^xsd:date;
+    schema:address _:b66.
+_:b66 a schema:PostalAddress;
+    schema:streetAddress "Howell Park";
+    schema:addressRegion "Maine";
+    schema:addressLocality "Robertsberg";
+    schema:postalCode "60487-5655";
+    schema:addressCountry "Czechia".

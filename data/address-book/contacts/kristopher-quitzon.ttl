@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kristopher";
+    schema:familyName "Quitzon";
+    schema:birthDate "1980-08-14"^^xsd:date;
+    schema:address _:b23.
+_:b23 a schema:PostalAddress;
+    schema:streetAddress "McKenzie Fort";
+    schema:addressRegion "Colorado";
+    schema:addressLocality "Yuma";
+    schema:postalCode "96262";
+    schema:addressCountry "Netherlands".

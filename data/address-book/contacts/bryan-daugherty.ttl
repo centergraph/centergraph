@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bryan";
+    schema:familyName "Daugherty";
+    schema:birthDate "1967-09-17"^^xsd:date;
+    schema:address _:b69.
+_:b69 a schema:PostalAddress;
+    schema:streetAddress "Armstrong Hill";
+    schema:addressRegion "West Virginia";
+    schema:addressLocality "Lakintown";
+    schema:postalCode "84694-1340";
+    schema:addressCountry "Turks and Caicos Islands".

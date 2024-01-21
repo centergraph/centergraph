@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Mandy";
+    schema:familyName "Hermiston";
+    schema:birthDate "1993-01-02"^^xsd:date;
+    schema:address _:b56.
+_:b56 a schema:PostalAddress;
+    schema:streetAddress "Chestnut Drive";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "Hellerfort";
+    schema:postalCode "67407-1927";
+    schema:addressCountry "Aland Islands".

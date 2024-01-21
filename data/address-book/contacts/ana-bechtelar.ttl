@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Ana";
+    schema:familyName "Bechtelar";
+    schema:birthDate "1958-12-12"^^xsd:date;
+    schema:address _:b20.
+_:b20 a schema:PostalAddress;
+    schema:streetAddress "Jamaal River";
+    schema:addressRegion "New Hampshire";
+    schema:addressLocality "New Eduardo";
+    schema:postalCode "44272";
+    schema:addressCountry "Cook Islands".

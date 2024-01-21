@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Roberta";
+    schema:familyName "Hand";
+    schema:birthDate "1993-10-02"^^xsd:date;
+    schema:address _:b8.
+_:b8 a schema:PostalAddress;
+    schema:streetAddress "Grant Route";
+    schema:addressRegion "New Mexico";
+    schema:addressLocality "North Cathyside";
+    schema:postalCode "82781";
+    schema:addressCountry "Czechia".

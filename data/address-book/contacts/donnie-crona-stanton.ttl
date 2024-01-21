@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Donnie";
+    schema:familyName "Crona-Stanton";
+    schema:birthDate "1944-10-11"^^xsd:date;
+    schema:address _:b71.
+_:b71 a schema:PostalAddress;
+    schema:streetAddress "Bernier Flat";
+    schema:addressRegion "Tennessee";
+    schema:addressLocality "Philadelphia";
+    schema:postalCode "86095-3307";
+    schema:addressCountry "Bonaire, Sint Eustatius and Saba".

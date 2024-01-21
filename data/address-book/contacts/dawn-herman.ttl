@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Dawn";
+    schema:familyName "Herman";
+    schema:birthDate "1988-12-17"^^xsd:date;
+    schema:address _:b77.
+_:b77 a schema:PostalAddress;
+    schema:streetAddress "Jackeline Turnpike";
+    schema:addressRegion "Indiana";
+    schema:addressLocality "Rancho Cordova";
+    schema:postalCode "57442";
+    schema:addressCountry "Netherlands".

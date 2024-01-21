@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Bernard";
+    schema:familyName "Ryan";
+    schema:birthDate "1977-12-11"^^xsd:date;
+    schema:address _:b4.
+_:b4 a schema:PostalAddress;
+    schema:streetAddress "Commerce Street";
+    schema:addressRegion "Georgia";
+    schema:addressLocality "Kiehnhaven";
+    schema:postalCode "13491-7382";
+    schema:addressCountry "Uganda".

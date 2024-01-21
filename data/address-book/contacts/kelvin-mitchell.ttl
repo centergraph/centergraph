@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Kelvin";
+    schema:familyName "Mitchell";
+    schema:birthDate "1944-08-09"^^xsd:date;
+    schema:address _:b73.
+_:b73 a schema:PostalAddress;
+    schema:streetAddress "W Lake Street";
+    schema:addressRegion "Arizona";
+    schema:addressLocality "Aurora";
+    schema:postalCode "46583-7168";
+    schema:addressCountry "Uzbekistan".

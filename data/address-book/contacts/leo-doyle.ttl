@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leo";
+    schema:familyName "Doyle";
+    schema:birthDate "1948-05-31"^^xsd:date;
+    schema:address _:b33.
+_:b33 a schema:PostalAddress;
+    schema:streetAddress "Balistreri Estates";
+    schema:addressRegion "Alaska";
+    schema:addressLocality "Schimmelburgh";
+    schema:postalCode "20101-7863";
+    schema:addressCountry "Cambodia".

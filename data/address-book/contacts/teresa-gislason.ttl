@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Teresa";
+    schema:familyName "Gislason";
+    schema:birthDate "2001-04-12"^^xsd:date;
+    schema:address _:b48.
+_:b48 a schema:PostalAddress;
+    schema:streetAddress "Cedar Avenue";
+    schema:addressRegion "Hawaii";
+    schema:addressLocality "Hauckstead";
+    schema:postalCode "92275-9963";
+    schema:addressCountry "Jamaica".

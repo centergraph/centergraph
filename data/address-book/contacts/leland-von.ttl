@@ -1,0 +1,15 @@
+@prefix schema: <https://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> <http://www.w3.org/ns/shacl#shapesGraph> </shapes/contact.shacl>;
+    a schema:Person;
+    schema:givenName "Leland";
+    schema:familyName "Von";
+    schema:birthDate "1947-06-09"^^xsd:date;
+    schema:address _:b55.
+_:b55 a schema:PostalAddress;
+    schema:streetAddress "Jason Track";
+    schema:addressRegion "Maine";
+    schema:addressLocality "South Rebekaland";
+    schema:postalCode "29566-9292";
+    schema:addressCountry "British Indian Ocean Territory (Chagos Archipelago)".
