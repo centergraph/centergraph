@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
     "paths": {
-      "@centergraph/shared/*": ["./packages/shared/lib/*"],
-      "@centergraph/shacl-renderer/*": ["./packages/shacl-renderer/lib/*"],
+      "@centergraph/shared/*": ["./packages/shared/*"],
+      "@centergraph/shacl-renderer/*": ["./packages/shacl-renderer/*"],
+      "@centergraph/turtle-sync/*": ["./packages/turtle-sync/*"],
       "@centergraph/sdk": ["./packages/sdk/lib/CenterGraph.ts"],
-      "@centergraph/sdk/*": ["./packages/sdk/lib/*"]
+      "@centergraph/sdk/*": ["./packages/sdk/*"]
     }
   }
 }

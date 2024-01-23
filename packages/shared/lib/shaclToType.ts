@@ -1,4 +1,4 @@
-import ts, { factory, SyntaxKind } from 'typescript'
+import * as ts from 'typescript'
 import { ContextParser } from 'jsonld-context-parser'
 import { rdf, sh, sr, xsd } from '@centergraph/shared/lib/namespaces'
 import parsePath from 'shacl-engine/lib/parsePath'
@@ -51,45 +51,45 @@ export async function shaclToType(
       const subType = await shaclToType(nodeShapePointer, context, true)
 
       props.push(
-        factory.createPropertySignature(
+        ts.factory.createPropertySignature(
           undefined,
-          factory.createIdentifier(compactedPredicate),
-          !isRequired ? factory.createToken(SyntaxKind.QuestionToken) : undefined,
-          isMultiple ? factory.createArrayTypeNode(subType) : subType
+          ts.factory.createIdentifier(compactedPredicate),
+          !isRequired ? ts.factory.createToken(ts.SyntaxKind.QuestionToken) : undefined,
+          isMultiple ? ts.factory.createArrayTypeNode(subType) : subType
         )
       )
     } else {
-      let type: ts.TypeNode = factory.createKeywordTypeNode(ts.SyntaxKind.StringKeyword)
+      let type: ts.TypeNode = ts.factory.createKeywordTypeNode(ts.SyntaxKind.StringKeyword)
 
       if (shaclProperty.out(sh('datatype')).term?.equals(xsd('date'))) {
-        type = factory.createTypeReferenceNode('Date')
+        type = ts.factory.createTypeReferenceNode('Date')
       }
 
       props.push(
-        factory.createPropertySignature(
+        ts.factory.createPropertySignature(
           undefined,
-          factory.createIdentifier(compactedPredicate),
-          !isRequired ? factory.createToken(SyntaxKind.QuestionToken) : undefined,
-          isMultiple ? factory.createArrayTypeNode(type) : type
+          ts.factory.createIdentifier(compactedPredicate),
+          !isRequired ? ts.factory.createToken(ts.SyntaxKind.QuestionToken) : undefined,
+          isMultiple ? ts.factory.createArrayTypeNode(type) : type
         )
       )
     }
   }
 
   if (nested) {
-    return factory.createTypeLiteralNode(props)
+    return ts.factory.createTypeLiteralNode(props)
   }
 
   const typeName = parsedContext.compactIri(shapePointer.out(sh('targetClass')).value, true)
 
-  const type = factory.createTypeAliasDeclaration(
-    [factory.createModifier(ts.SyntaxKind.ExportKeyword)],
-    factory.createIdentifier(typeName),
+  const type = ts.factory.createTypeAliasDeclaration(
+    [ts.factory.createModifier(ts.SyntaxKind.ExportKeyword)],
+    ts.factory.createIdentifier(typeName),
     undefined,
-    factory.createTypeLiteralNode(props)
+    ts.factory.createTypeLiteralNode(props)
   )
 
-  const nodes = factory.createNodeArray([type])
+  const nodes = ts.factory.createNodeArray([type])
   const sourceFile = ts.createSourceFile('placeholder.ts', '', ts.ScriptTarget.ESNext, true, ts.ScriptKind.TS)
   const printer = ts.createPrinter()
   return printer.printList(ts.ListFormat.MultiLine, nodes, sourceFile)

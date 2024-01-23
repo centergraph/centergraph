@@ -17,6 +17,7 @@
     "@jeswr/pretty-turtle": "npm:@jeswr/pretty-turtle",
     "shacl-engine/lib/parsePath": "https://esm.sh/shacl-engine/lib/parsePath",
     "@centergraph/shared/": "./packages/shared/",
+    "@centergraph/turtle-sync/": "./packages/turtle-sync/",
     "oidc-provider": "npm:oidc-provider",
     "react": "npm:react",
     "ink": "npm:ink",

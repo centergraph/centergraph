@@ -1,4 +1,4 @@
-import '../polyfills/node.ts'
+// import '../polyfills/node.ts'
 
 import Provider, { errors } from 'oidc-provider'
 
