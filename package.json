@@ -31,6 +31,7 @@
     "react": "^18.2.0",
     "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18.2.0",
+    "react-oidc-context": "^2.3.1",
     "react-router-dom": "*",
     "react-window": "^1.8.10",
     "react-window-infinite-loader": "^1.0.9",

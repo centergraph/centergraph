@@ -1,6 +1,7 @@
 import { ldp, rdf } from '@centergraph/shared/lib/namespaces.ts'
 import { writeTurtle } from '@centergraph/shared/lib/writeTurtle.ts'
 import { NextFunction, Request, Response } from 'express'
+import fs from 'fs'
 import { DataFactory, Quad, Store } from 'n3'
 
 import { baseIRI, context, folder as dataFolder, store } from '../../Base.ts'
@@ -10,12 +11,12 @@ const getFolderQuads = async (folder: string, iri: string) => {
   quads.push(DataFactory.quad(DataFactory.namedNode(iri), rdf('type'), ldp('Container')))
   quads.push(DataFactory.quad(DataFactory.namedNode(iri), rdf('type'), ldp('BasicContainer')))
 
-  for await (const fileEntry of Deno.readDir(folder)) {
-    if (!fileEntry.name.includes('.ttl') || !fileEntry.isFile) continue
+  for await (const fileEntry of await fs.promises.readdir(folder)) {
+    if (!fileEntry.includes('.ttl')) continue
     const newQuad = DataFactory.quad(
       DataFactory.namedNode(iri),
       ldp('contains'),
-      DataFactory.namedNode(iri + fileEntry.name.replace('.ttl', ''))
+      DataFactory.namedNode(iri + fileEntry.replace('.ttl', ''))
     )
     quads.push(newQuad)
   }
@@ -37,11 +38,12 @@ export const handleGet = async (request: Request, response: Response, next: Next
   const iri = baseIRI + fullUrl.pathname
 
   const quads = await getDocumentQuads(iri)
+
   if (!quads.length) {
     const folder = dataFolder + fullUrl.pathname
     try {
-      const stat = await Deno.stat(folder)
-      if (!stat.isDirectory) return next()
+      const exists = fs.existsSync(folder)
+      if (!exists) return next()
     } catch (error) {
       return next()
     }

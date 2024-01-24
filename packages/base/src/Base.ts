@@ -5,6 +5,7 @@ import bodyParser from 'body-parser'
 import cors from 'cors'
 import express from 'express'
 import { Express, Request, Response } from 'express'
+import fs from 'fs'
 import { Store } from 'n3'
 
 import { context as contextRoute } from './routes/context.ts'
@@ -26,8 +27,8 @@ const port = 8000
 const namespacesAsPrefixes = Object.fromEntries(
   Object.entries(namespaces).map(([prefix, builder]: [string, () => { value: string }]) => [prefix, builder().value])
 )
-export const context = JSON.parse(Deno.readTextFileSync(`${folder}/context.json`))
-export const jwks = JSON.parse(Deno.readTextFileSync(`${folder}/jwks.json`))
+export const context = JSON.parse(fs.readFileSync(`${folder}/context.json`, 'utf-8'))
+export const jwks = JSON.parse(fs.readFileSync(`${folder}/jwks.json`, 'utf-8'))
 Object.assign(context, prefixes, namespacesAsPrefixes)
 const oidc = createProvider(baseIRI)
 
@@ -51,10 +52,12 @@ app.listen(port, () => {
   console.log(`Ready: CenterGraph Base is running on ${baseIRI}/`)
 })
 
-const watcher = Deno.watchFs(folder)
+const watcher = fs.watch(folder, { recursive: true }, (event, filename) => {
+  console.log(`Detected ${event} in ${filename}`)
+})
 
-for await (const event of watcher) {
-  if (event.kind === 'modify') {
-    Deno.run({ cmd: ['touch', new URL('', import.meta.url).pathname] })
-  }
-}
+// for await (const event of watcher) {
+//   if (event.kind === 'modify') {
+//     Deno.run({ cmd: ['touch', new URL('', import.meta.url).pathname] })
+//   }
+// }

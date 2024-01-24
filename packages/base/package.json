@@ -8,7 +8,9 @@
     "@centergraph/shared": "*"
   },
   "scripts": {
-    "dev": "deno run -A --unstable-sloppy-imports --watch src/Base.ts",
+    "dev-deno": "deno run -A --unstable-sloppy-imports --watch src/Base.ts",
+    "dev-bun": "bun --watch src/Base.ts",
+    "dev": "npm run dev-bun",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   }
 }
