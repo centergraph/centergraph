@@ -5,6 +5,7 @@ import ContactsLayout from './routes/ContactsLayout.tsx'
 import ViewContact from './routes/ViewContact.tsx'
 import EditContact from './routes/EditContact.tsx'
 import AddContact from './routes/AddContact.tsx'
+import Search from './routes/Search.tsx'
 
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <BrowserRouter>
         <Header />
         <Routes>
+          <Route path="search" element={<Search />} />
           <Route path="/" element={<ContactsLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="contact/add" element={<AddContact />} />

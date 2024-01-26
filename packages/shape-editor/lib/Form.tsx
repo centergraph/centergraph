@@ -35,7 +35,11 @@ export default function Form({
     settings.initialDataDataset = datasetFactory.dataset(quads)
     setSettings(settings)
 
-    const widgetMeta = widgetMetas?.find((widgetMeta) => widgetMeta.iri.equals(item.pointer.out(dash('editor')).term))
+    const widgetMeta = widgetMetas?.find(
+      (widgetMeta) =>
+        widgetMeta.iri.equals(item.pointer.out(dash('editor')).term) ||
+        widgetMeta.iri.equals(item.pointer.out(dash('viewer')).term)
+    )
 
     if (widgetMeta?.formParts?.length) {
       const shaclDataset = datasetFactory.dataset()
@@ -88,9 +92,10 @@ export default function Form({
                   const oldQuads = item.pointer.distinct().out().quads()
 
                   for (const oldQuad of oldQuads) dataset.delete(oldQuad)
-                  for (const quad of [...settings.dataDataset]) {
-                    if (quad.object.value) dataset.add(quad)
-                  }
+                  if (settings.initialDataDataset)
+                    for (const quad of [...settings.initialDataDataset]) {
+                      if (quad.object.value) dataset.add(quad)
+                    }
 
                   close()
                 }}

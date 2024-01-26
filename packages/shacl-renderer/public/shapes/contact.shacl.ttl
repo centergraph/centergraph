@@ -28,6 +28,13 @@
     sh:datatype xsd:string ;
   ];
 
+  sh:property [
+    sh:name "Household members"@en ;
+    sh:path schema:householdMembers ;
+    sh:maxCount 1;
+    sh:datatype xsd:integer ;
+  ];
+
   # sh:property [
   #   sh:name "Name"@en ;
   #   sh:group <#name> ;

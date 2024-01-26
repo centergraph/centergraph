@@ -45,6 +45,17 @@ export class QueryBuilder<T extends NamedNode[] | number> implements PromiseLike
     this.#fetch = options.fetch ?? globalThis.fetch
   }
 
+  clone() {
+    const Prototype = Object.getPrototypeOf(this)
+    const clone = new Prototype(this.#options)
+
+    for (const { predicate, object } of this.#filters) clone.filter(predicate, object)
+    for (const { predicate, order } of this.#sorters) clone.sort(predicate, order)
+    if (this.#paginate.limit || this.#paginate.offset) clone.paginate(this.#paginate.limit, this.#paginate.offset)
+
+    return clone as QueryBuilder<T>
+  }
+
   filter(predicate: Term, object?: Term) {
     this.#filters.push({ predicate, object })
     return this

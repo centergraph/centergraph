@@ -91,7 +91,9 @@ export default function ShapeEditor(props: ShapeEditorProps) {
 
   return grid && shaclPointer && regions ? (
     <>
-      {activeFormProperty ? <Form widgetMetas={widgetMetas} item={activeFormProperty} close={() => setActiveFormProperty(null)} /> : null}
+      {activeFormProperty ? (
+        <Form widgetMetas={widgetMetas} item={activeFormProperty} close={() => setActiveFormProperty(null)} />
+      ) : null}
 
       <DragDropContext onDragEnd={(event) => onDragEnd(shaclPointer, baseIRI, data, setData, event)}>
         <div>
