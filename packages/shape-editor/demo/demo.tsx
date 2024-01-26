@@ -1,4 +1,6 @@
 import ReactDOM from 'react-dom/client'
-import ShapeEditor from '../lib/ShapeEditor'
+import ShapeNavigation from '../lib/ShapeNavigation'
 
-ReactDOM.createRoot(document.getElementById('app')!).render(<ShapeEditor shaclShapesUrl="/shapes/contact.shacl.ttl" />)
+ReactDOM.createRoot(document.getElementById('app')!).render(
+  <ShapeNavigation shaclShapesUrl="/shapes/contact.shacl.ttl" />
+)

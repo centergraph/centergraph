@@ -38,8 +38,6 @@ export type SortableStateItem = SortableStateItemGroup | SortableStateItemProper
 
 export type SortableState = Array<SortableStateItemRegion>
 
-let isLoading = false
-
 export default function ShapeEditor(props: ShapeEditorProps) {
   const { shaclShapesUrl } = props
   const fetch = props.fetch ?? globalThis.fetch
@@ -50,6 +48,7 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_app, setApp] = useState<GrapoiPointer>()
   const [widgetMetas, setWidgetMetas] = useState<Array<WidgetMeta>>()
+  const [isLoading, setIsLoading] = useState(false)
 
   const [activeFormProperty, setActiveFormProperty] = useState<SortableStateItem | null>(null)
 
@@ -57,7 +56,7 @@ export default function ShapeEditor(props: ShapeEditorProps) {
 
   useEffect(() => {
     if (isLoading) return
-    isLoading = true
+    setIsLoading(true)
     loadShapeEditorData(shaclShapesUrl).then(({ pointer, initialData, app, ...grid }) => {
       setShaclPointer(pointer)
       setGrid(grid)
@@ -68,6 +67,7 @@ export default function ShapeEditor(props: ShapeEditorProps) {
         fetchAppApi(appUrl).then(setWidgetMetas)
       }
     })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fetch, shaclShapesUrl, grid?.hasGrid])
 
   const { gridTemplateAreas, gridTemplateRows, gridTemplateColumns } = grid ?? {}
@@ -88,6 +88,8 @@ export default function ShapeEditor(props: ShapeEditorProps) {
       )
     })
   }
+
+  console.log(grid)
 
   return grid && shaclPointer && regions ? (
     <>

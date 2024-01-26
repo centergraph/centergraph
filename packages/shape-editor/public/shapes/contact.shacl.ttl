@@ -148,9 +148,9 @@
 
 # Views
 <#card>
-  a sh:NodeShape ;
+  a sh:NodeShape, sr:ViewShape ;
   sh:targetClass schema:Person ;
-  schema:name "Person Card" ;
+  schema:name "Card" ;
 
   sh:property [
     sh:path schema:givenName ;

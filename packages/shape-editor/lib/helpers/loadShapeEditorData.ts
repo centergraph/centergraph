@@ -2,7 +2,7 @@ import grapoi from 'grapoi'
 import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
 import factory from '@rdfjs/data-model'
-import { sh, sr, srl, se } from '@centergraph/shared/lib/namespaces'
+import { sh, sr, srl, se, schema } from '@centergraph/shared/lib/namespaces'
 import { resetOrders } from './resetOrders'
 import { SortableState } from '../ShapeEditor'
 import { getData } from './getData'
@@ -40,7 +40,7 @@ export const loadShapeEditorData = async (
       const grid = pointer.out(sr('grid'))
       const app = pointer.out(se('app'))
 
-      if (grid?.term.value.startsWith(srl().value)) {
+      if (grid?.term?.value.startsWith(srl().value)) {
         // TODO load it from the absolute URL.
         const layoutsTurtle = await fetch('/shapes/layouts.ttl').then((response) => response.text())
         const parser = new Parser({
@@ -50,11 +50,14 @@ export const loadShapeEditorData = async (
         for (const quad of quads) dataset.add(quad)
       }
 
-      const regions = [...new Set(grid?.out(sr('grid-template-areas')).value?.replace(/'|"/g, ' ').split(' ').filter(Boolean) ?? [])]
+      const regions = [
+        ...new Set(grid?.out(sr('grid-template-areas')).value?.replace(/'|"/g, ' ').split(' ').filter(Boolean) ?? []),
+      ]
 
       const gridTemplateAreas = grid?.out(sr('grid-template-areas')).value
       const gridTemplateRows = grid?.out(sr('grid-template-rows')).value
       const gridTemplateColumns = grid?.out(sr('grid-template-columns')).value
+      const gridLabel = grid?.out(schema('name')).value
 
       const initialData = getData(pointer, baseIRI)
 
@@ -63,6 +66,7 @@ export const loadShapeEditorData = async (
         hasGrid: !!grid.value,
         gridTemplateAreas,
         gridTemplateRows,
+        gridLabel,
         gridTemplateColumns,
         regions,
         initialData,

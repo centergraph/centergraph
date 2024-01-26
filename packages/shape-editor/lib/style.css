@@ -43,3 +43,8 @@
 .configure-button {
   cursor: pointer;
 }
+
+.grid-region-_undefined {
+  background-color: #f7efef;
+  border: 1px dashed gray;
+}
