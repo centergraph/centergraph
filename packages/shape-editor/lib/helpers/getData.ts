@@ -60,12 +60,12 @@ export const getData = (pointer: GrapoiPointer, baseIRI: string): SortableState 
   undefinedRegion.items.push({
     type: 'group',
     pointer: grapoi({ factory, dataset: datasetFactory.dataset() }),
-    id: '_undefined',
+    id: '_undefined:_undefined',
     items: propertiesWithoutGroup.map((shaclProperty) => {
       return {
         type: 'property' as const,
         pointer: shaclProperty,
-        id: `_undefined:${shaclProperty.term.value}`,
+        id: `_undefined:_undefined:${shaclProperty.term.value}`,
       }
     }),
   })
