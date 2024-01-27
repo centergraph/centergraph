@@ -34,8 +34,10 @@ export const loadShapeEditorData = async (
       const dataset = datasetFactory.dataset(quads)
       const pointer = grapoi({ dataset, factory, term: factory.namedNode(baseIRI) })
       const propertyGroups = pointer?.node([sh('PropertyGroup')]).in() ?? []
-
       resetOrders(propertyGroups)
+
+      const shaclProperties = pointer?.out(sh('property'))
+      resetOrders(shaclProperties)
 
       const grid = pointer.out(sr('grid'))
       const app = pointer.out(se('app'))

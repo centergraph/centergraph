@@ -4,10 +4,14 @@ import { Icon } from '@iconify/react'
 import { SortableStateItem, SortableStateItemProperty } from './ShapeEditor'
 
 export default function ShaclProperty(
-  props: SortableStateItemProperty & { setActiveFormProperty: React.Dispatch<React.SetStateAction<SortableStateItem | null>> }
+  props: SortableStateItemProperty & {
+    setActiveFormProperty: React.Dispatch<React.SetStateAction<SortableStateItem | null>>
+  }
 ) {
   const { pointer, id, setActiveFormProperty } = props
-  const label = pointer.out([sh('name'), rdfs('label'), schema('name')]).values[0] ?? pointer.term.id.split(/\/|#/g).pop()
+  const path = pointer.out(sh('path')).value
+  const label = pointer.out([sh('name'), rdfs('label'), schema('name')]).values[0] ?? path.split(/\/|#/g).pop()
+
   const shOrder = pointer.out(sh('order')).value
   const order = shOrder ? parseFloat(shOrder) : 0
 

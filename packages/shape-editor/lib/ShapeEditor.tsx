@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useId, useState } from 'react'
 import './style.css'
 import { DragDropContext } from 'react-beautiful-dnd'
 import { GridData, loadShapeEditorData } from './helpers/loadShapeEditorData'
@@ -49,6 +49,7 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   const [_app, setApp] = useState<GrapoiPointer>()
   const [widgetMetas, setWidgetMetas] = useState<Array<WidgetMeta>>()
   const [isLoading, setIsLoading] = useState(false)
+  const [showEmptyGroups, setShowEmptyGroups] = useState(false)
 
   const [activeFormProperty, setActiveFormProperty] = useState<SortableStateItem | null>(null)
 
@@ -78,24 +79,40 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   const mapGroupRegion = (regionData: SortableStateItemRegion) => {
     if (!shaclPointer) return
 
-    return regionData.items.map((group) => {
-      return (
-        <PropertyGroup setActiveFormProperty={setActiveFormProperty} key={group.id} {...group}>
-          {group.items.map((property) => (
-            <ShaclProperty setActiveFormProperty={setActiveFormProperty} key={property.id} {...property} />
-          ))}
-        </PropertyGroup>
-      )
-    })
+    return regionData.items
+      .filter((group) => showEmptyGroups || group.items.length > 0)
+      .map((group) => {
+        return (
+          <PropertyGroup setActiveFormProperty={setActiveFormProperty} key={group.id} {...group}>
+            {group.items.map((property) => (
+              <ShaclProperty setActiveFormProperty={setActiveFormProperty} key={property.id} {...property} />
+            ))}
+          </PropertyGroup>
+        )
+      })
   }
 
-  console.log(grid)
+  const showEmptyGroupsId = useId()
 
   return grid && shaclPointer && regions ? (
     <>
       {activeFormProperty ? (
         <Form widgetMetas={widgetMetas} item={activeFormProperty} close={() => setActiveFormProperty(null)} />
       ) : null}
+
+      <div className="form-check form-switch mb-4">
+        <input
+          onChange={(event) => setShowEmptyGroups(event.target.checked)}
+          className="form-check-input"
+          type="checkbox"
+          role="switch"
+          checked={showEmptyGroups}
+          id={showEmptyGroupsId}
+        />
+        <label className="form-check-label" htmlFor={showEmptyGroupsId}>
+          Show empty groups
+        </label>
+      </div>
 
       <DragDropContext onDragEnd={(event) => onDragEnd(shaclPointer, baseIRI, data, setData, event)}>
         <div>

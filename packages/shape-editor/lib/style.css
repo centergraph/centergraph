@@ -48,3 +48,12 @@
   background-color: #f7efef;
   border: 1px dashed gray;
 }
+
+.shacl-group._undefined {
+  background-color: #f7efef;
+  border: 1px dashed gray;
+
+  .handle {
+    display: none !important;
+  }
+}

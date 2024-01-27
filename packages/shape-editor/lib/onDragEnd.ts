@@ -12,6 +12,7 @@ export const onDragEnd = (
   setData: React.Dispatch<React.SetStateAction<SortableState>>,
   { source, destination }: DropResult
 ) => {
+  console.log(source, destination)
   if (destination === undefined || destination === null) return null
   if (source.droppableId === destination.droppableId && destination.index === source.index) return null
 
