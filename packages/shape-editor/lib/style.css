@@ -49,7 +49,7 @@
   border: 1px dashed gray;
 }
 
-.shacl-group._undefined {
+.shacl-group.-undefined--undefined {
   background-color: #f7efef;
   border: 1px dashed gray;
 

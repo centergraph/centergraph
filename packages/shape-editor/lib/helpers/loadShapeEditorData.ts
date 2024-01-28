@@ -2,8 +2,7 @@ import grapoi from 'grapoi'
 import { Parser } from 'n3'
 import datasetFactory from '@rdfjs/dataset'
 import factory from '@rdfjs/data-model'
-import { sh, sr, srl, se, schema } from '@centergraph/shared/lib/namespaces'
-import { resetOrders } from './resetOrders'
+import { sr, srl, se, schema } from '@centergraph/shared/lib/namespaces'
 import { SortableState } from '../ShapeEditor'
 import { getData } from './getData'
 
@@ -33,11 +32,6 @@ export const loadShapeEditorData = async (
       const quads = await parser.parse(turtle)
       const dataset = datasetFactory.dataset(quads)
       const pointer = grapoi({ dataset, factory, term: factory.namedNode(baseIRI) })
-      const propertyGroups = pointer?.node([sh('PropertyGroup')]).in() ?? []
-      resetOrders(propertyGroups)
-
-      const shaclProperties = pointer?.out(sh('property'))
-      resetOrders(shaclProperties)
 
       const grid = pointer.out(sr('grid'))
       const app = pointer.out(se('app'))
@@ -60,8 +54,7 @@ export const loadShapeEditorData = async (
       const gridTemplateRows = grid?.out(sr('grid-template-rows')).value
       const gridTemplateColumns = grid?.out(sr('grid-template-columns')).value
       const gridLabel = grid?.out(schema('name')).value
-
-      const initialData = getData(pointer, baseIRI)
+      const initialData = getData(pointer, baseIRI, true)
 
       return {
         pointer,

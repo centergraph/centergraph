@@ -16,7 +16,7 @@ export default function ShaclProperty(
   const order = shOrder ? parseFloat(shOrder) : 0
 
   return (
-    <Draggable draggableId={id} index={order}>
+    <Draggable key={id} draggableId={id} index={order}>
       {(provided) => (
         <div className="shacl-property rounded-1 ps-2 pe-2" ref={provided.innerRef} {...provided.draggableProps}>
           <span className="title d-flex align-items-center">

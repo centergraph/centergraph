@@ -19,16 +19,16 @@ export default function PropertyGroup(
   const order = shOrder ? parseFloat(shOrder) : 0
 
   return (
-    <Draggable draggableId={pointer.term?.id ?? id} index={order}>
+    <Draggable key={id} draggableId={id} index={order}>
       {(dragProvided, dragMonitor) => (
-        <Droppable droppableId={id} type="property">
+        <Droppable key={id} droppableId={id} type="property">
           {(dropProvided, monitor) => (
             <details
               ref={dragProvided.innerRef}
               {...dragProvided.draggableProps}
-              className={`shacl-group ${id} p-2 rounded-2 ${dragMonitor.isDragging ? 'is-dragged' : ''} ${
-                monitor.isDraggingOver ? 'is-dragging-over' : ''
-              }`}
+              className={`shacl-group ${id.replace(/:|_/g, '-')} p-2 rounded-2 ${
+                dragMonitor.isDragging ? 'is-dragged' : ''
+              } ${monitor.isDraggingOver ? 'is-dragging-over' : ''}`}
             >
               <summary className="title d-flex align-items-center">
                 <div className="d-flex handle align-items-center" {...dragProvided.dragHandleProps}>
