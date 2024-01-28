@@ -1,6 +1,5 @@
 import { DataFactory } from 'n3'
 import { dash, sh, xsd } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
-import widgetForm from '@centergraph/shacl-renderer/lib/widget.ttl?raw'
 
 export const iri = dash('BooleanSelectEditor')
 
@@ -21,5 +20,3 @@ export const score = (dataPointer: GrapoiPointer, shaclPointer: GrapoiPointer) =
 }
 
 export const createTerm = () => DataFactory.literal('', xsd('boolean'))
-
-export const formParts = [widgetForm]

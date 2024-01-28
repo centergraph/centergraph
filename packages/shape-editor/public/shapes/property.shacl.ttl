@@ -15,8 +15,17 @@
   sh:property [
     sh:name "Label"@en ;
     sh:path sh:name ;
+    sh:order 2 ;
     sh:datatype xsd:string ;
   ];
 
+  sh:property [
+    sh:name "Show label"@en ;
+    sh:path sr:showLabel ;
+    sh:maxCount 1;
+    sh:order 1 ;
+    sh:datatype xsd:boolean ;
+  ];
   
+
 .

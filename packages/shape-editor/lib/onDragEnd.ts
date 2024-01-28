@@ -12,8 +12,6 @@ export const onDragEnd = (
   setData: React.Dispatch<React.SetStateAction<SortableState>>,
   { source, destination }: DropResult
 ) => {
-  console.log(data, source, destination)
-
   if (destination === undefined || destination === null) return null
   if (source.droppableId === destination.droppableId && destination.index === source.index) return null
 
@@ -29,8 +27,6 @@ export const onDragEnd = (
       if (!regionData) throw new Error('Could not find the region')
       const groupData = regionData.items.find((group) => group.id === `${regionData.id}:${startGroup}`)
       if (!groupData) throw new Error('Could not find the group')
-
-      console.log(groupData)
 
       const sourceProperty = groupData.items[source.index]
       const newList = groupData.items.filter((item) => item.id !== sourceProperty.id)

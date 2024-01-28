@@ -14,7 +14,7 @@ type ShapeNavigationProps = {
 type ShapeMeta = {
   label: string
   iri: string
-  type: 'view' | 'form'
+  type: 'view' | 'edit'
 }
 
 type ShapesMeta = ShapeMeta[]
@@ -35,7 +35,7 @@ const getShapeFileMeta = async (url: string): Promise<ShapesMeta> => {
     output.push({
       label: form.out(schema('name')).value,
       iri: url + form.term.value,
-      type: 'form',
+      type: 'edit',
     })
   }
 
@@ -68,7 +68,7 @@ export default function ShapeNavigation({ shaclShapesUrl }: ShapeNavigationProps
       <header className="d-flex gap-2 mb-5 align-items-center">
         {selectedShape ? (
           <h1 className="h3 d-flex text-nowrap">
-            <Icon icon={selectedShape.type === 'form' ? 'mdi:form' : 'mdi:eye'} />
+            <Icon icon={selectedShape.type === 'edit' ? 'mdi:form' : 'mdi:eye'} />
             &nbsp; Edit {selectedShape.type}:
           </h1>
         ) : null}
@@ -81,7 +81,7 @@ export default function ShapeNavigation({ shaclShapesUrl }: ShapeNavigationProps
           >
             <optgroup label="Forms">
               {meta
-                ?.filter((item) => item.type === 'form')
+                ?.filter((item) => item.type === 'edit')
                 .map(({ label, iri }) => (
                   <option key={iri} value={iri}>
                     {label}
@@ -104,7 +104,9 @@ export default function ShapeNavigation({ shaclShapesUrl }: ShapeNavigationProps
         {selectedShape ? <button className="btn btn-primary">Save</button> : null}
       </header>
 
-      {currentShapeIri ? <ShapeEditor key={currentShapeIri} shaclShapesUrl={currentShapeIri} /> : null}
+      {currentShapeIri ? (
+        <ShapeEditor mode={selectedShape!.type} key={currentShapeIri} shaclShapesUrl={currentShapeIri} />
+      ) : null}
     </>
   )
 }

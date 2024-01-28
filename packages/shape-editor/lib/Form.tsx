@@ -13,9 +13,11 @@ export default function Form({
   close,
   item,
   widgetMetas,
+  mode,
 }: {
   close: () => void
   item: SortableStateItem
+  mode: 'view' | 'edit'
   widgetMetas?: Array<WidgetMeta>
 }) {
   const [settings, setSettings] = useState<Settings>()

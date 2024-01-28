@@ -12,6 +12,7 @@ import { fetchAppApi } from './helpers/fetchAppApi'
 
 export type ShapeEditorProps = {
   shaclShapesUrl: string
+  mode: 'view' | 'edit'
   fetch?: typeof globalThis.fetch
 }
 
@@ -39,7 +40,7 @@ export type SortableStateItem = SortableStateItemGroup | SortableStateItemProper
 export type SortableState = Array<SortableStateItemRegion>
 
 export default function ShapeEditor(props: ShapeEditorProps) {
-  const { shaclShapesUrl } = props
+  const { shaclShapesUrl, mode } = props
   const fetch = props.fetch ?? globalThis.fetch
 
   const [shaclPointer, setShaclPointer] = useState<GrapoiPointer>()
@@ -97,7 +98,12 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   return grid && shaclPointer && regions ? (
     <>
       {activeFormProperty ? (
-        <Form widgetMetas={widgetMetas} item={activeFormProperty} close={() => setActiveFormProperty(null)} />
+        <Form
+          mode={mode}
+          widgetMetas={widgetMetas}
+          item={activeFormProperty}
+          close={() => setActiveFormProperty(null)}
+        />
       ) : null}
 
       <div className="form-check form-switch mb-4">

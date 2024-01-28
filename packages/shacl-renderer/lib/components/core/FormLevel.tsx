@@ -24,7 +24,7 @@ export default function FormLevel({ shaclPointer, settings, dataPointer, childre
       const widget = <ShaclProperty key={shaclProperty.term.value} {...innerProps} />
       return { group, order, widget }
     })
-    .sort((a, b) => b.order - a.order)
+    .sort((a, b) => a.order - b.order)
 
   const groupIdentifiers = new Set(shaclPropertyWidgets.map(({ group }) => group))
   const groups = [...groupIdentifiers.values()].map((groupIdentifier) => {

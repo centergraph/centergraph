@@ -10,6 +10,7 @@
     sh:name "Width"@en ;
     sh:path schema:width ;
     sh:maxCount 1;
+    sh:order 4 ;
     sh:datatype xsd:integer ;
   ];
 
@@ -17,6 +18,7 @@
     sh:name "Height"@en ;
     sh:path schema:height ;
     sh:maxCount 1;
+    sh:order 5 ;
     sh:datatype xsd:integer ;
   ];
 
