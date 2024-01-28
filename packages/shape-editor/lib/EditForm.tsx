@@ -9,12 +9,12 @@ import DatasetCore from '@rdfjs/dataset/DatasetCore'
 import { dash, rdfs, schema, sh } from '@centergraph/shared/lib/namespaces'
 import { Parser } from 'n3'
 
-export default function Form({
+export default function EditForm({
   close,
   item,
   widgetMetas,
-  mode,
-}: {
+}: // mode,
+{
   close: () => void
   item: SortableStateItem
   mode: 'view' | 'edit'

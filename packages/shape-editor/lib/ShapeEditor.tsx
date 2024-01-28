@@ -6,9 +6,10 @@ import GridRegion from './GridRegion'
 import PropertyGroup from './PropertyGroup'
 import ShaclProperty from './ShaclProperty'
 import { onDragEnd } from './onDragEnd'
-import Form from './Form'
+import EditForm from './EditForm'
 import { WidgetMeta } from '@centergraph/shacl-renderer/lib/types'
 import { fetchAppApi } from './helpers/fetchAppApi'
+import AddFormPropertyForm from './AddFormPropertyForm'
 
 export type ShapeEditorProps = {
   shaclShapesUrl: string
@@ -51,6 +52,7 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   const [widgetMetas, setWidgetMetas] = useState<Array<WidgetMeta>>()
   const [isLoading, setIsLoading] = useState(false)
   const [showEmptyGroups, setShowEmptyGroups] = useState(false)
+  const [showAddPropertyForm, setShowAddPropertyForm] = useState(false)
 
   const [activeFormProperty, setActiveFormProperty] = useState<SortableStateItem | null>(null)
 
@@ -98,7 +100,7 @@ export default function ShapeEditor(props: ShapeEditorProps) {
   return grid && shaclPointer && regions ? (
     <>
       {activeFormProperty ? (
-        <Form
+        <EditForm
           mode={mode}
           widgetMetas={widgetMetas}
           item={activeFormProperty}
@@ -106,18 +108,35 @@ export default function ShapeEditor(props: ShapeEditorProps) {
         />
       ) : null}
 
-      <div className="form-check form-switch mb-4">
-        <input
-          onChange={(event) => setShowEmptyGroups(event.target.checked)}
-          className="form-check-input"
-          type="checkbox"
-          role="switch"
-          checked={showEmptyGroups}
-          id={showEmptyGroupsId}
-        />
-        <label className="form-check-label" htmlFor={showEmptyGroupsId}>
-          Show empty groups
-        </label>
+      {showAddPropertyForm && mode === 'edit' ? (
+        <AddFormPropertyForm close={() => setShowAddPropertyForm(false)} />
+      ) : null}
+
+      <div className="controls d-flex gap-3 align-items-center  mb-4">
+        <div className="form-check form-switch">
+          <input
+            onChange={(event) => setShowEmptyGroups(event.target.checked)}
+            className="form-check-input"
+            type="checkbox"
+            role="switch"
+            checked={showEmptyGroups}
+            id={showEmptyGroupsId}
+          />
+          <label className="form-check-label" htmlFor={showEmptyGroupsId}>
+            Show empty groups
+          </label>
+        </div>
+
+        <button className="btn btn-secondary">Add group</button>
+
+        <button
+          className="btn btn-secondary"
+          onClick={() => {
+            setShowAddPropertyForm(true)
+          }}
+        >
+          Add property
+        </button>
       </div>
 
       <DragDropContext onDragEnd={(event) => onDragEnd(shaclPointer, baseIRI, data, setData, event)}>

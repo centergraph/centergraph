@@ -65,11 +65,11 @@ export default function ShapeNavigation({ shaclShapesUrl }: ShapeNavigationProps
 
   return (
     <>
-      <header className="d-flex gap-2 mb-5 align-items-center">
+      <header className="d-flex gap-2 align-items-center">
         {selectedShape ? (
-          <h1 className="h3 d-flex text-nowrap">
+          <h1 className="h3 d-flex text-nowrap mb-0 align-items-center">
             <Icon icon={selectedShape.type === 'edit' ? 'mdi:form' : 'mdi:eye'} />
-            &nbsp; Edit {selectedShape.type}:
+            &nbsp; Edit {selectedShape.type === 'edit' ? 'form' : 'view'}:
           </h1>
         ) : null}
 
@@ -105,7 +105,10 @@ export default function ShapeNavigation({ shaclShapesUrl }: ShapeNavigationProps
       </header>
 
       {currentShapeIri ? (
-        <ShapeEditor mode={selectedShape!.type} key={currentShapeIri} shaclShapesUrl={currentShapeIri} />
+        <>
+          <hr />
+          <ShapeEditor mode={selectedShape!.type} key={currentShapeIri} shaclShapesUrl={currentShapeIri} />
+        </>
       ) : null}
     </>
   )
