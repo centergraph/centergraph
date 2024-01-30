@@ -17,6 +17,7 @@ type GrapoiPointer = {
   deleteList: () => GrapoiPointer
   list: () => Array<GrapoiPointer>
   ptrs: Array<{ dataset: DatasetCore } & GrapoiPointer>
+  addList: (predicates?: Array<NamedNode | null> | NamedNode, items: Term[]) => GrapoiPointer
   clone: (data?: unknown) => GrapoiPointer
   node: (predicates?: Array<NamedNode | null> | NamedNode, subjects?: Array<NamedNode> | NamedNode) => GrapoiPointer
   execute: (paths: Array<unknown>) => GrapoiPointer
@@ -28,7 +29,15 @@ type GrapoiPointer = {
 }
 
 declare module 'grapoi' {
-  function grapoi({ dataset, factory, term }: { dataset: Dataset; factory: DataFactory; term?: NamedNode }): GrapoiPointer
+  function grapoi({
+    dataset,
+    factory,
+    term,
+  }: {
+    dataset: Dataset
+    factory: DataFactory
+    term?: NamedNode
+  }): GrapoiPointer
   export = grapoi
 }
 

@@ -6,6 +6,8 @@ import datasetFactory from '@rdfjs/dataset'
 import { sr, rdf, schema } from '@centergraph/shared/lib/namespaces'
 import ShapeEditor from './ShapeEditor'
 import { Icon } from '@iconify/react'
+import CenterGraph from '@centergraph/sdk/lib/react/context/Provider'
+import { api } from './centerGraph'
 
 type ShapeNavigationProps = {
   shaclShapesUrl: string
@@ -64,7 +66,7 @@ export default function ShapeNavigation({ shaclShapesUrl }: ShapeNavigationProps
   const selectedShape = meta?.find((item) => item.iri === currentShapeIri)
 
   return (
-    <>
+    <CenterGraph api={api}>
       <header className="d-flex gap-2 align-items-center">
         {selectedShape ? (
           <h1 className="h3 d-flex text-nowrap mb-0 align-items-center">
@@ -110,6 +112,6 @@ export default function ShapeNavigation({ shaclShapesUrl }: ShapeNavigationProps
           <ShapeEditor mode={selectedShape!.type} key={currentShapeIri} shaclShapesUrl={currentShapeIri} />
         </>
       ) : null}
-    </>
+    </CenterGraph>
   )
 }

@@ -10,6 +10,7 @@ import EditForm from './EditForm'
 import { WidgetMeta } from '@centergraph/shacl-renderer/lib/types'
 import { fetchAppApi } from './helpers/fetchAppApi'
 import AddFormPropertyForm from './AddFormPropertyForm'
+import AddViewPropertyForm from './AddViewPropertyForm'
 
 export type ShapeEditorProps = {
   shaclShapesUrl: string
@@ -110,6 +111,9 @@ export default function ShapeEditor(props: ShapeEditorProps) {
 
       {showAddPropertyForm && mode === 'edit' ? (
         <AddFormPropertyForm close={() => setShowAddPropertyForm(false)} />
+      ) : null}
+      {showAddPropertyForm && mode === 'view' ? (
+        <AddViewPropertyForm shaclPointer={shaclPointer} close={() => setShowAddPropertyForm(false)} />
       ) : null}
 
       <div className="controls d-flex gap-3 align-items-center  mb-4">
