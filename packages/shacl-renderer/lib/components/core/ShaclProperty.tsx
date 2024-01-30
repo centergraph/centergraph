@@ -34,6 +34,7 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
 
   const alternativePredicates = path[0].predicates
   const maxCount = shaclPointer.out(sh('maxCount')).value ? parseInt(shaclPointer.out(sh('maxCount')).value) : Infinity
+  const required = shaclPointer.out(sh('minCount')).value ? !!parseInt(shaclPointer.out(sh('minCount')).value) : false
 
   // Sometimes the whole of the property can be hidden.
   const shouldShow =
@@ -52,6 +53,8 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
 
   const wrapper = (children: ReactNode) => (cssClasses ? <div className={cssClasses}>{children}</div> : <>{children}</>)
 
+  console.log(required)
+
   return shouldShow
     ? wrapper(
         <>
@@ -59,7 +62,8 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
           {label ? (
             <label className={settings.cssClasses[settings.mode].label}>
               {label}
-              {settings.mode === 'view' ? ': ' : ''}
+              {settings.mode === 'edit' && required ? <span className="required"> *</span> : null}
+              {settings.mode === 'view' ? ': ' : null}
             </label>
           ) : null}
 

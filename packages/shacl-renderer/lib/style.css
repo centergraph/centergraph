@@ -44,3 +44,7 @@
 .property-wrapper + .property-wrapper {
   margin-top: 0.5rem;
 }
+
+.required {
+  color: var(--bs-danger);
+}
