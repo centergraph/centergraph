@@ -53,8 +53,6 @@ export default function ShaclProperty({ shaclPointer, dataPointer, settings }: S
 
   const wrapper = (children: ReactNode) => (cssClasses ? <div className={cssClasses}>{children}</div> : <>{children}</>)
 
-  console.log(required)
-
   return shouldShow
     ? wrapper(
         <>

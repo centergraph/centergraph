@@ -9,10 +9,11 @@ import grapoi from 'grapoi'
 
 type AddPropertyFormProps = {
   close: () => void
+  update: () => void
   shaclPointer: GrapoiPointer
 }
 
-export default function AddViewPropertyForm({ close, shaclPointer }: AddPropertyFormProps) {
+export default function AddViewPropertyForm({ close, shaclPointer, update }: AddPropertyFormProps) {
   const [settings] = useState(() => {
     const settings = defaultSettings('edit')
     registerCoreWidgets(settings)
@@ -53,8 +54,24 @@ export default function AddViewPropertyForm({ close, shaclPointer }: AddProperty
             <div className="modal-body">
               <Suspense>
                 <ShaclRenderer
+                  subject={shaclPointer.term.value}
+                  key={'add-view-property-form'}
                   onSubmit={(data) => {
-                    console.log(data)
+                    const root = factory.blankNode()
+                    const dataset = shaclPointer.ptrs[0].dataset
+                    const quads = [...data]
+                    for (const quad of quads)
+                      dataset.add(
+                        factory.quad(
+                          quad.subject.equals(shaclPointer.term) ? root : quad.subject,
+                          quad.predicate,
+                          quad.object
+                        )
+                      )
+                    dataset.add(factory.quad(shaclPointer.term, sh('property'), root))
+                    console.log(quads, dataset)
+                    close()
+                    update()
                   }}
                   settings={settings}
                   shaclShapesUrl={`./shapes/property.shacl.ttl`}

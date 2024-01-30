@@ -2,11 +2,11 @@ import { signal, Signal } from '@preact-signals/safe-react'
 import { simpleCache } from '../CenterGraph'
 
 const resourceCache = new Map()
-const signals: Map<string, Signal> = new Map()
-const cacheIds: Map<string, string[]> = new Map()
-const promises: Map<string, PromiseLike<unknown>> = new Map()
+const signals: Map<any, Signal> = new Map()
+const cacheIds: Map<any, string[]> = new Map()
+const promises: Map<any, PromiseLike<unknown>> = new Map()
 
-export function asResource<T>(promise: PromiseLike<T>, cacheKey: string, subscribeCallback?: () => void) {
+export function asResource<T>(promise: PromiseLike<T>, cacheKey: any, subscribeCallback?: () => void) {
   if (resourceCache.has(cacheKey)) return resourceCache.get(cacheKey).read()
 
   let status = 'pending'

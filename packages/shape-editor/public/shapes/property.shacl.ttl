@@ -8,7 +8,6 @@
 
 <>
   a sh:NodeShape ;
-  sh:targetClass sh:PropertyGroup ;
 
   schema:name "Property" ;
 

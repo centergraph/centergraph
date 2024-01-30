@@ -27,6 +27,7 @@ export default function AddFormPropertyForm({ close }: AddPropertyFormProps) {
             <div className="modal-body">
               <Suspense>
                 <ShaclRenderer
+                  key={'add-form-property-form'}
                   onSubmit={(data) => {
                     console.log(data)
                   }}

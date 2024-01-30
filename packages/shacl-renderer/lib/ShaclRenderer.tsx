@@ -57,6 +57,7 @@ const createShaclRendererResource = (
   dataUrl?: string,
   subject?: string
 ) => {
+  // TODO improve this deduplication mechanism.
   const cid = JSON.stringify([shaclShapesUrl, dataUrl, subject, settings.mode].join(':'))
 
   const dataDataset = settings.initialDataDataset ?? datasetFactory.dataset()
@@ -69,7 +70,8 @@ const createShaclRendererResource = (
     ]).then(([shaclShapes, dataPointer]) => {
       return { shaclShapes, dataPointer, dataDataset, shaclDataset }
     }),
-    cid
+    // TODO improve this deduplication mechanism.
+    settings.initialShaclDataset ?? cid
   )
 }
 

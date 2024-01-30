@@ -11,6 +11,7 @@ import { WidgetMeta } from '@centergraph/shacl-renderer/lib/types'
 import { fetchAppApi } from './helpers/fetchAppApi'
 import AddFormPropertyForm from './AddFormPropertyForm'
 import AddViewPropertyForm from './AddViewPropertyForm'
+import { getData } from './helpers/getData'
 
 export type ShapeEditorProps = {
   shaclShapesUrl: string
@@ -110,10 +111,15 @@ export default function ShapeEditor(props: ShapeEditorProps) {
       ) : null}
 
       {showAddPropertyForm && mode === 'edit' ? (
-        <AddFormPropertyForm close={() => setShowAddPropertyForm(false)} />
+        <AddFormPropertyForm key={'AddFormPropertyForm'} close={() => setShowAddPropertyForm(false)} />
       ) : null}
       {showAddPropertyForm && mode === 'view' ? (
-        <AddViewPropertyForm shaclPointer={shaclPointer} close={() => setShowAddPropertyForm(false)} />
+        <AddViewPropertyForm
+          key={'AddViewPropertyForm'}
+          update={() => setData(getData(shaclPointer, baseIRI))}
+          shaclPointer={shaclPointer}
+          close={() => setShowAddPropertyForm(false)}
+        />
       ) : null}
 
       <div className="controls d-flex gap-3 align-items-center  mb-4">
