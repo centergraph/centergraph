@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@600&display=swap');
 
 :root {
-  --brown: rgb(87, 33, 8);
-  --brownLight: rgb(128, 61, 30);
+  --blue: rgb(96, 165, 255);
+  --blueDark: rgb(43, 100, 174);
 }
 
 p,
@@ -44,6 +44,7 @@ h6 {
 
 .site-logo {
   height: 100px;
+  width: 432px;
 }
 
 html,
@@ -54,10 +55,10 @@ body {
 }
 
 body {
-  border-left: 3em var(--brown) solid;
+  border-left: 3em var(--blue) solid;
 }
 
 a:link,
 a:visited {
-  color: var(--brownLight);
+  color: var(--blueDark);
 }
