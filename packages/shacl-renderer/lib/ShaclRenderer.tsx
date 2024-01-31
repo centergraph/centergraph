@@ -57,6 +57,7 @@ const createShaclRendererResource = (
   dataUrl?: string,
   subject?: string
 ) => {
+  // TODO improve this deduplication mechanism.
   const cid = JSON.stringify([shaclShapesUrl, dataUrl, subject, settings.mode].join(':'))
 
   const dataDataset = settings.initialDataDataset ?? datasetFactory.dataset()
@@ -69,7 +70,8 @@ const createShaclRendererResource = (
     ]).then(([shaclShapes, dataPointer]) => {
       return { shaclShapes, dataPointer, dataDataset, shaclDataset }
     }),
-    cid
+    // TODO improve this deduplication mechanism.
+    settings.initialShaclDataset ?? cid
   )
 }
 
@@ -87,6 +89,8 @@ export default function ShaclRenderer({
     dataUrl,
     subject
   )
+
+  // TODO make it possible to use an already created Grapoi pointer so that you can have a graph and only edit a little sub graph.
 
   let shaclRoot = shaclShapes.hasOut(rdf('type'), sh('NodeShape'))
   if (settings.targetClass) shaclRoot = shaclRoot.hasOut(sh('targetClass'), DataFactory.namedNode(settings.targetClass))

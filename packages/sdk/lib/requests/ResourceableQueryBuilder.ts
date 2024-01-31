@@ -14,4 +14,9 @@ export class ResourceableQueryBuilder<T extends NamedNode[] | number> extends Qu
   asResourceFunction(): () => T {
     return () => asResource(this, this.url)
   }
+
+  // TODO is overwriting this clone method needed? I did it for the types
+  clone() {
+    return super.clone() as ResourceableQueryBuilder<T>
+  }
 }

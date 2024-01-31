@@ -9,6 +9,8 @@
   schema:birthDate "1947-01-14"^^xsd:date ;
   # schema:birthDate "1947-01-14" ;
 
+  schema:householdMembers 6 ;
+
   schema:address [
     schema:streetAddress "Wagramer Strasse 5" ;
     schema:postalCode "1220" ;

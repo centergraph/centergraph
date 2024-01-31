@@ -5,20 +5,21 @@
 @prefix schema: <https://schema.org/> .
 
 <>
-  sh:property [
-    sh:name "Show label"@en ;
-    sh:path sr:showLabel ;
-    sh:maxCount 1;
-    sh:datatype xsd:string ;
-  ];
-  
 
   sh:property [
-    sh:name "Family name"@en ;
-    sh:path schema:familyName ;
-    sh:minCount 1;
+    sh:name "Width"@en ;
+    sh:path schema:width ;
     sh:maxCount 1;
-    sh:datatype xsd:string ;
+    sh:order 4 ;
+    sh:datatype xsd:integer ;
+  ];
+
+  sh:property [
+    sh:name "Height"@en ;
+    sh:path schema:height ;
+    sh:maxCount 1;
+    sh:order 5 ;
+    sh:datatype xsd:integer ;
   ];
 
 .

@@ -21,7 +21,6 @@
     <strong class="mb-2">Concepts</strong>
     <ul class="list-group concepts mb-3">
       <li class="list-group-item"><a href="/data-and-config/document-oriented">Document oriented</a> <em class="">Data as documents and these are ordered in a filesystem abstraction.</em></li>
-      <li class="list-group-item"><a href="/data-and-config/dtap">DTAP workflow</a> <em class="">Easily save your config in GIT.</em></li>
     </ul>
 
     <strong class="mb-2">Tech</strong>
@@ -81,38 +80,34 @@
 
     <strong class="mb-2">Tech</strong>
     <ul class="list-group tech">
+      <li class="list-group-item"><a href="/front-end/shacl-renderer">SHACL Renderer</a> <em class="">A form and view renderer</em></li>
+      <li class="list-group-item"><a href="/front-end/shape-editor">Shape Editor</a> <em class="">A SHACL shape editor</em></li>
+      <li class="list-group-item"><a href="/front-end/shacl-to-type">SHACL to type</a> <em class="">SHACL TypeScript types</em></li>
+      <li class="list-group-item"><a href="/front-end/query-builder">QueryBuilder</a> <em class="">A light weight QueryBuilder</em></li>
       <li class="list-group-item bg-light"><a href="https://react.dev/" target="_blank">React</a> <em class="text-body-secondary">Library for user interfaces</em></li>
-      <li class="list-group-item"><a href="#">SHACL Renderer</a> <em class="">A form and view renderer</em></li>
-      <li class="list-group-item"><a href="#">Shape Editor</a> <em class="">A SHACL shape editor</em></li>
-      <li class="list-group-item"><a href="#">SHACL to type</a> <em class="">SHACL TypeScript types</em></li>
     </ul>
   </div>
 
   <div class="column">
-    <h3><a href="Offline">Offline</a></h3>
+    <h3><a href="/offline">Offline</a></h3>
     <p class="description">Data that has traveled across the wire is still acccesible.</p>
-        
-    <strong class="mb-2">Concepts</strong>
-    <ul class="list-group concepts mb-3">
-      <li class="list-group-item"><a href="/offline/sdk">SDK offline</a> <em class="">Use the SDK as you are used to.</em></li>
-    </ul>
 
     <strong class="mb-2">Tech</strong>
     <ul class="list-group tech">
       <li class="list-group-item bg-light"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache" target="_blank">Cache API</a> <em class="text-body-secondary">Saves the documents</em></li>
       <li class="list-group-item bg-light"><a href="https://rdf.js.org/dataset-spec/#datasetcore-interface" target="_blank">DatasetCore</a> <em class="text-body-secondary">In memory RDF store</em></li>
-      <li class="list-group-item"><a href="#">QueryBuilder</a> <em class="">A light weight QueryBuilder</em></li>
     </ul>
   </div>
 
 
 </div>
 
-<style>
+<style lang="scss">
   .column {
     display: flex;
     flex-direction: column;
-    flex: 0 0 220px;
+    flex: 4 0 220px;
+    // max-width: 100vw;
 
     .description {
       min-height : 100px;
@@ -124,6 +119,7 @@
   }
 
   .overview {
-    padding-right: 100px;
+    // padding-right: 100px;
+    flex-wrap: wrap;
   }
 </style>

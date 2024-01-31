@@ -30,6 +30,15 @@
   ];
   
   sh:property [
+    sh:name "Image"@en ;
+    sh:path schema:depiction ;
+    dash:viewer dash:ImageViewer ;
+    sh:maxCount 1;
+    sh:group <#other> ;
+    sh:datatype xsd:string ;
+  ];
+  
+  sh:property [
     sh:name "Nick name"@en ;
     sh:path schema:nickName ;
     sh:minCount 1;
@@ -139,9 +148,9 @@
 
 # Views
 <#card>
-  a sh:NodeShape ;
+  a sh:NodeShape, sr:ViewShape ;
   sh:targetClass schema:Person ;
-  schema:name "Person Card" ;
+  schema:name "Card" ;
 
   sh:property [
     sh:path schema:givenName ;

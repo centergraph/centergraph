@@ -4,3 +4,27 @@ layout: ../../layouts/html.astro
 ---
 
 Turtle Sync helps with syncing the turtle files on the hard disk to the in memory store or to your database such as Apache Jena.
+
+To move the configuration from development to production you have to commit the files with Git. You can configure a document with the following:
+
+```turtle
+@prefix ts: <https://centergraph.danielbeeke.nl/turtle-sync#> .
+
+<>
+  ts:strategy ts:DeleteInsert ;
+  ...
+```
+
+The available strategies:
+
+## ts:Ensure
+
+The document will be inserted once and changes on the instance of your application will be preserved.
+
+## ts:Delete
+
+The document will be deleted. The identifier can not be used anymore.
+
+## ts:DeleteInsert
+
+The document is deleted and created each time when your application starts.

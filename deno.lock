@@ -1413,5 +1413,22 @@
     "https://esm.sh/v135/ws@8.15.1/denonext/ws.mjs": "7ff93b9419216211d07e853d815cf70a4f26b13f0c867ac1258443938f82fc44",
     "https://esm.sh/v135/yallist@4.0.0/denonext/yallist.mjs": "61f180d807dda50bac17028eda05d5722a3fecef6e98a9064e2353ea6864fd82",
     "https://esm.sh/v135/yoga-wasm-web@0.3.3/denonext/auto.js": "43a76270a84f09eabd57c0d83f71b2b2044c8cef905431fa1894509d25c81674"
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:@jeswr/pretty-turtle",
+      "npm:body-parser",
+      "npm:cli-spinners",
+      "npm:figlet",
+      "npm:ink",
+      "npm:ink-task-list",
+      "npm:oidc-provider",
+      "npm:react"
+    ],
+    "packageJson": {
+      "dependencies": [
+        "npm:@centergraph/shared"
+      ]
+    }
   }
 }

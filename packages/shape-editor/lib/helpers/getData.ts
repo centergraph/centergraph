@@ -1,23 +1,33 @@
 import factory from '@rdfjs/data-model'
+import datasetFactory from '@rdfjs/dataset'
 import { sh, sr } from '@centergraph/shared/lib/namespaces'
 import { getAllShapesFromShape } from './getAllShapesFromShape'
 import { sortPointersByShOrder } from './sortPointersByShOrder'
 import { SortableState } from '../ShapeEditor'
+import grapoi from 'grapoi'
+import { resetOrders } from './resetOrders'
 
-const filterPropertyGroups = (propertyGroup: GrapoiPointer, grid: GrapoiPointer, region: string, regions: string[]) => {
+export const filterPropertyGroups = (
+  propertyGroup: GrapoiPointer,
+  grid: GrapoiPointer,
+  region: string,
+  regions: string[]
+) => {
   const gridArea = propertyGroup.out(sr('gridArea')).value
   if (region === '_undefined' && (!grid?.value || !regions.includes(gridArea))) return true
   if (region === '_undefined' && grid?.value) return gridArea === undefined
   return gridArea === region && regions.includes(region)
 }
 
-export const getData = (pointer: GrapoiPointer, baseIRI: string): SortableState => {
+export const getData = (pointer: GrapoiPointer, baseIRI: string, shouldResetOrders: boolean = false): SortableState => {
   const grid = pointer.out(sr('grid'))
-  const regions = [...new Set(grid?.out(sr('grid-template-areas')).value?.replace(/'|"/g, ' ').split(' ').filter(Boolean) ?? [])]
+  const regions = [
+    ...new Set(grid?.out(sr('grid-template-areas')).value?.replace(/'|"/g, ' ').split(' ').filter(Boolean) ?? []),
+  ]
   const shapeIris = getAllShapesFromShape(pointer, factory.namedNode(baseIRI))
   const shapes = pointer.node(shapeIris)
 
-  return ['_undefined', ...regions].map((region) => {
+  const output: SortableState = ['_undefined', ...regions].map((region) => {
     return {
       type: 'region' as const,
       id: region,
@@ -47,4 +57,36 @@ export const getData = (pointer: GrapoiPointer, baseIRI: string): SortableState 
         }),
     }
   })
+
+  const propertiesWithoutGroup = [
+    ...pointer.out(sh('property')).filter((p: GrapoiPointer) => !p.hasOut(sh('group')).value),
+  ].sort(sortPointersByShOrder)
+
+  if (propertiesWithoutGroup.length) {
+    const undefinedRegion = output.find((region) => region.id === '_undefined')!
+    undefinedRegion.items.push({
+      type: 'group',
+      pointer: grapoi({ factory, dataset: datasetFactory.dataset() }),
+      id: '_undefined:_undefined',
+      items: propertiesWithoutGroup.map((shaclProperty) => {
+        return {
+          type: 'property' as const,
+          pointer: shaclProperty,
+          id: `_undefined:_undefined:${shaclProperty.term.value}`,
+        }
+      }),
+    })
+  }
+
+  if (shouldResetOrders) {
+    for (const region of output) {
+      resetOrders(region.items.map((group) => group.pointer))
+
+      for (const group of region.items) {
+        resetOrders(group.items.map((property) => property.pointer))
+      }
+    }
+  }
+
+  return output
 }

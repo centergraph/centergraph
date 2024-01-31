@@ -7,6 +7,7 @@ import { lastPart } from '@centergraph/shacl-renderer/lib/helpers/lastPart'
 import kebabCase from 'lodash-es/kebabCase'
 import { useValidate } from '@centergraph/shacl-renderer/lib/hooks/useValidate'
 import factory from '@rdfjs/data-model'
+import { dash, sh } from '@/helpers/namespaces'
 
 type PropertyObjectProps = {
   shaclPointer: GrapoiPointer
@@ -50,6 +51,15 @@ export default function ShaclPropertyObject({
   const inner = (children: ReactNode) =>
     innerCssClasses ? <div className={innerCssClasses}>{children}</div> : <>{children}</>
 
+  const isBlankNodeEditor = widgetMeta.iri && dash('BlankNodeEditor').equals(widgetMeta!.iri)
+  const maxCount = shaclPointer.out(sh('maxCount')).value ? parseInt(shaclPointer.out(sh('maxCount')).value) : Infinity
+
+  let showRemove = true
+
+  if (isBlankNodeEditor && maxCount === 1) {
+    showRemove = false
+  }
+
   return wrapper(
     <>
       {inner(
@@ -67,7 +77,7 @@ export default function ShaclPropertyObject({
           ) : (
             <div className={settings.cssClasses[settings.mode].input}></div>
           )}
-          {settings.mode === 'edit' ? (
+          {settings.mode === 'edit' && showRemove ? (
             <button
               onClick={() => {
                 // Removes all quads that are one level deeper

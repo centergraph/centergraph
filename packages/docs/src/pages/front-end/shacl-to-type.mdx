@@ -1,0 +1,9 @@
+---
+title: 'SHACL to type'
+layout: ../../layouts/html.astro
+---
+
+The SDk returns plain JavaScript objects when fetching data. However the API does not. The API uses the turtle language. The translation from turtle to JavaScript objects happen with two components, the SHACL shape which knows the properties and their cardinality and the JSON-ld context which is used for mapping predicate IRIs to simple properties.
+
+In this process xsd:date objects are transformed to the JavaScript Date object.
+The transformation supports only a subset of SHACL.

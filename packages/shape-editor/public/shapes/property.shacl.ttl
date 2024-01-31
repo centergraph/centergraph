@@ -8,15 +8,31 @@
 
 <>
   a sh:NodeShape ;
-  sh:targetClass sh:PropertyGroup ;
 
   schema:name "Property" ;
 
   sh:property [
     sh:name "Label"@en ;
     sh:path sh:name ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:order 1 ;
     sh:datatype xsd:string ;
   ];
 
+  sh:property [
+    sh:name "Show label"@en ;
+    sh:path sr:showLabel ;
+    sh:maxCount 1;
+    sh:order 2 ;
+    sh:datatype xsd:boolean ;
+  ];
   
+  sh:property [
+    sh:name "CSS Class"@en ;
+    sh:path sr:class ;
+    sh:maxCount 1;
+    sh:order 3 ;
+    sh:datatype xsd:string ;
+  ];
 .

@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="viewport" content="width=device-width"><title>Server Driven UI</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script><link rel="stylesheet" href="/_astro/files.iB8OJLo6.css" /></head> <body> <a href="/" class="logo-link"> <img src="/logo.svg" class="site-logo"> </a> <div class="text-muted mb-5"> <em>[In active development but far from stable]</em> </div> <h1>Server Driven UI</h1> <main id="site-main"><p>CenterGraph has a server driven UI at it’s core. It enables you to define how forms and views look via the shape editor. The definitions of those views and forms are saved as SHACL in the database.
+The widgets that are used are modeled after <a href="https://datashapes.org/forms.html">DASH</a>.</p>
+<h2 id="how-does-it-work">How does it work?</h2>
+<ul>
+<li>There are three parts:
+<ul>
+<li><strong>Your app</strong> with declared widgets (and the core widgets)</li>
+<li><strong>The SHACL shape</strong>, the definition of the view / form</li>
+<li><strong>The shape editor</strong>
+<ul>
+<li>The Shape Editor is a React element which you can load into a admin app. It would also be possible to have an admin section in the main app. It is still to be determined how to do this in the demo app. You can however look at the shape editor demo at <a href="http://localhost:8003">http://localhost:8003</a>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Inside the SHACL shape there can be a <code>se:app</code> predicate which should have an object like: <code>&lt;http://localhost:8001/&gt;</code>. This tells the shape editor when it loads it should get widget meta data from that application at localhost:8001. Every widget declared in the app will be available in shape editor. This means that you can have app specific views and forms. When a SHACL shape is loaded in an app that does not have the required widget he scoring algorythm kicks in and will find the best widget for that context.</p>
+<h2 id="what-is-a-widget">What is a widget?</h2>
+<h2 id="how-to-add-a-widget-for-the-forms-or-views">How to add a widget for the forms or views?</h2></main> </body></html>

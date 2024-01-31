@@ -9,33 +9,44 @@ import DatasetCore from '@rdfjs/dataset/DatasetCore'
 import { dash, rdfs, schema, sh } from '@centergraph/shared/lib/namespaces'
 import { Parser } from 'n3'
 
-export default function Form({
+export default function EditForm({
   close,
   item,
   widgetMetas,
-}: {
+}: // mode,
+{
   close: () => void
   item: SortableStateItem
+  mode: 'view' | 'edit'
   widgetMetas?: Array<WidgetMeta>
 }) {
   const [settings, setSettings] = useState<Settings>()
   const [shaclShapesUrl, setShaclShapesUrl] = useState<string | undefined>(undefined)
   const [ready, setReady] = useState<boolean>(false)
 
+  const path = item.pointer?.out(sh('path')).value
+
   const label =
-    item.pointer.out([sh('name'), rdfs('label'), schema('name')]).values[0] ??
+    item.pointer?.out([sh('name'), rdfs('label'), schema('name')]).values[0] ??
+    path?.split(/\/|#/g).pop() ??
     item.pointer?.term.id.split(/\/|#/g).pop() ??
     'undefined'
 
   useEffect(() => {
-    const quads = item.pointer.distinct().out().quads()
+    const quads = item.pointer?.distinct().out().quads() ?? []
     const settings = defaultSettings('edit')
     registerCoreWidgets(settings)
 
-    settings.initialDataDataset = datasetFactory.dataset(quads)
+    console.log([...quads])
+
+    settings.initialDataDataset = datasetFactory.dataset([...quads])
     setSettings(settings)
 
-    const widgetMeta = widgetMetas?.find((widgetMeta) => widgetMeta.iri.equals(item.pointer.out(dash('editor')).term))
+    const widgetMeta = widgetMetas?.find(
+      (widgetMeta) =>
+        widgetMeta.iri.equals(item.pointer?.out(dash('editor')).term) ||
+        widgetMeta.iri.equals(item.pointer?.out(dash('viewer')).term)
+    )
 
     if (widgetMeta?.formParts?.length) {
       const shaclDataset = datasetFactory.dataset()
@@ -74,7 +85,7 @@ export default function Form({
               <button type="button" className="btn-close" onClick={close} aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <ShaclRenderer settings={settings} shaclShapesUrl={shaclShapesUrl} subject={item.pointer.term.value} />
+              <ShaclRenderer settings={settings} shaclShapesUrl={shaclShapesUrl} subject={item.pointer?.term.value} />
             </div>
             <div className="modal-footer">
               <button type="button" className="btn btn-secondary" onClick={close}>
@@ -84,13 +95,14 @@ export default function Form({
                 type="button"
                 className="btn btn-primary"
                 onClick={() => {
-                  const dataset = item.pointer.ptrs[0].dataset as DatasetCore
-                  const oldQuads = item.pointer.distinct().out().quads()
+                  const dataset = item.pointer?.ptrs[0].dataset as DatasetCore
+                  const oldQuads = item.pointer?.distinct().out().quads() ?? []
 
                   for (const oldQuad of oldQuads) dataset.delete(oldQuad)
-                  for (const quad of [...settings.dataDataset]) {
-                    if (quad.object.value) dataset.add(quad)
-                  }
+                  if (settings.initialDataDataset)
+                    for (const quad of [...settings.initialDataDataset]) {
+                      if (quad.object.value) dataset.add(quad)
+                    }
 
                   close()
                 }}

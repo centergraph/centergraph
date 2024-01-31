@@ -1,6 +1,6 @@
 ---
 const { title } = Astro.props.frontmatter
-import '../style.css'
+import '../style.scss'
 ---
 <html lang="en">
 	<head>
@@ -26,11 +26,16 @@ import '../style.css'
       crossorigin="anonymous"
     ></script>
 	</head>
-	<body class="p-5">
+	<body>
 
-    <a href="/">
-      <img src="/logo.svg" class="mb-5" style={{ width: '340px', height: '60px' }} />
+    <a href="/" class="logo-link">
+      <img src="/logo.svg" class="site-logo" />
     </a>
+
+    <div class="text-muted mb-5">
+      <em>[In active development but far from stable]</em>
+
+    </div>
 
 		<h1>{title}</h1>
 
