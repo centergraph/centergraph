@@ -18,7 +18,7 @@ pre {
 
 #site-main > *:not(h1):not(h2):not(h3) {
   /* margin-left: 2em; */
-  margin-right: 2em;
+  // margin-right: 2em;
 }
 
 #site-main {
@@ -43,8 +43,8 @@ h6 {
 }
 
 .site-logo {
-  height: 100px;
   width: 432px;
+  max-width: 100%;
 }
 
 html,
@@ -52,6 +52,11 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 3em;
 }
 
 body {
@@ -61,4 +66,9 @@ body {
 a:link,
 a:visited {
   color: var(--blueDark);
+}
+
+.logo-link {
+  position: relative;
+  max-width: 100%;
 }
