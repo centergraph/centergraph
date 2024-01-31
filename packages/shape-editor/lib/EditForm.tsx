@@ -37,7 +37,9 @@ export default function EditForm({
     const settings = defaultSettings('edit')
     registerCoreWidgets(settings)
 
-    settings.initialDataDataset = datasetFactory.dataset(quads)
+    console.log([...quads])
+
+    settings.initialDataDataset = datasetFactory.dataset([...quads])
     setSettings(settings)
 
     const widgetMeta = widgetMetas?.find(

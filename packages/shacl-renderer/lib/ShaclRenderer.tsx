@@ -90,6 +90,8 @@ export default function ShaclRenderer({
     subject
   )
 
+  // TODO make it possible to use an already created Grapoi pointer so that you can have a graph and only edit a little sub graph.
+
   let shaclRoot = shaclShapes.hasOut(rdf('type'), sh('NodeShape'))
   if (settings.targetClass) shaclRoot = shaclRoot.hasOut(sh('targetClass'), DataFactory.namedNode(settings.targetClass))
 

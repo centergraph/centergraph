@@ -106,6 +106,7 @@ export default function ShapeEditor(props: ShapeEditorProps) {
           mode={mode}
           widgetMetas={widgetMetas}
           item={activeFormProperty}
+          key={JSON.stringify(activeFormProperty)}
           close={() => setActiveFormProperty(null)}
         />
       ) : null}
