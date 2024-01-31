@@ -38,12 +38,12 @@ app.get('/api/query', query)
 app.get('/api/context', contextRoute)
 app.get('/api/types', types)
 app.use('/oidc', oidc.callback())
-app.use(bodyParser.text({ type: '*/*' }), turtle)
 app.use(
   express.static(folder, {
     extensions: ['svg'],
   })
 )
+app.use(bodyParser.text({ type: '*/*' }), turtle)
 app.get('/', (_request: Request, response: Response) => {
   response.send('Hello, welcome to CenterGraph')
 })

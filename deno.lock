@@ -1424,11 +1424,6 @@
       "npm:ink-task-list",
       "npm:oidc-provider",
       "npm:react"
-    ],
-    "packageJson": {
-      "dependencies": [
-        "npm:@centergraph/shared"
-      ]
-    }
+    ]
   }
 }

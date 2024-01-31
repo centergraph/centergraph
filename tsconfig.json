@@ -1,5 +1,13 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
+    "noEmit": true,
+    "module": "NodeNext",
+    "target": "ESNext",
+    "moduleResolution": "NodeNext",
+    "allowSyntheticDefaultImports": true,
+    "lib": ["ESNext"],
+    "allowImportingTsExtensions": true,
     "paths": {
       "@centergraph/shared/*": ["./packages/shared/*"],
       "@centergraph/shacl-renderer/*": ["./packages/shacl-renderer/*"],

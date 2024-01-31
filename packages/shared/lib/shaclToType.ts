@@ -1,4 +1,4 @@
-import * as ts from 'typescript'
+import ts from 'typescript'
 import { ContextParser } from 'jsonld-context-parser'
 import { rdf, sh, sr, xsd } from '@centergraph/shared/lib/namespaces'
 import parsePath from 'shacl-engine/lib/parsePath'

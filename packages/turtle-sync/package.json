@@ -1,6 +1,8 @@
 {
   "name": "@centergraph/turtle-sync",
   "description": "A data sync from turtle to the database or the in-memory store",
+  "main": "./src/turtleSync.ts",
+  "type": "module",
   "scripts": {
     "dev-test": "deno test --allow-read --allow-net --watch",
     "test": "deno test --allow-read --allow-net",
