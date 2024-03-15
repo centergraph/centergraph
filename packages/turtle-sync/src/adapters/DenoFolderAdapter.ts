@@ -26,7 +26,10 @@ export class DenoFolderAdapter implements FolderAdapter {
     for await (const file of walk(this.#folder)) {
       if (!file.name.endsWith(suffix)) continue
 
-      const relativePath = file.name.replace(this.#folder + '/', '').replace(suffix, '')
+      const relativePath = file.name
+        .replace(this.#folder + '/', '')
+        .replace(suffix, '')
+        .replace('.shacl', '')
 
       yield {
         relativePath,

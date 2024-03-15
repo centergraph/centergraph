@@ -1,6 +1,6 @@
 import { dataFactory, Parser, ShaclValidator, Store, Term } from './deps.ts'
 import { lastPart } from './helpers/lastPart.ts'
-import { rdf, sh, ts } from './helpers/namespaces.ts'
+import { faker, rdf, sh, sr, ts } from './helpers/namespaces.ts'
 import { shaclReportResultToString } from './helpers/shaclReportResultToString.ts'
 import { parseTurtleFile } from './parseTurtleFile.ts'
 import type { TurtleToStoreOptions } from './types.ts'
@@ -53,6 +53,7 @@ export default async function turtleSync(options: TurtleToStoreOptions) {
 
   for await (const file of options.folderAdapter.iterator('.shacl.ttl')) {
     const { store, errors } = await parseTurtleFile(file, options.baseIRI)
+    console.log(errors)
     if (errors.length) throw new Error(`The SHACL shape ${file.relativePath} could not be parsed.`)
     if (store) shaclStore.addQuads(store.getQuads(null, null, null, null))
     const storeClassQuads = store.getQuads(null, sh('targetClass'), null, null)
@@ -69,9 +70,7 @@ export default async function turtleSync(options: TurtleToStoreOptions) {
   const indexedErrors: Record<string, string[]> = {}
 
   for await (const file of options.folderAdapter.iterator('.ttl')) {
-    // TODO this is not very clean. The iterator cuts of the extension.
-    if (file.relativePath.endsWith('.shacl')) continue
-
+    console.log(file.relativePath)
     const { store, metadata, errors, prefixes: newPrefixes } = await parseTurtleFile(file, options.baseIRI)
     Object.assign(prefixes, newPrefixes)
 
@@ -82,8 +81,15 @@ export default async function turtleSync(options: TurtleToStoreOptions) {
 
     const rdfClass = store.getQuads(dataFactory.namedNode(options.baseIRI + file.relativePath), rdf('type'), null, null)
 
-    if (rdfClass.length > 1) throw new Error('Found a turtle file with multiple subjects')
-    const report = await validator.validate({ dataset: store }, [{ terms: rdfClass }])
+    // TODO Discuss with Thomas at https://github.com/rdf-ext/shacl-engine/issues/18
+    const filteredRdfClasses = rdfClass
+      .filter((quad) => ![faker('Shape'), sr('MainShape')].some((searchTerm) => quad.object.equals(searchTerm)))
+      .map((quad) => quad.object)
+
+    const report = await validator.validate(
+      { dataset: store },
+      filteredRdfClasses.length ? [{ terms: filteredRdfClasses }] : undefined
+    )
 
     if (!report.conforms) {
       indexedErrors[file.relativePath] = report.results.flatMap(shaclReportResultToString)
