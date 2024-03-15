@@ -2,9 +2,9 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "noEmit": true,
-    "module": "NodeNext",
+    "module": "ESNext",
     "target": "ESNext",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "lib": ["ESNext"],
     "allowImportingTsExtensions": true,
@@ -15,5 +15,8 @@
       "@centergraph/sdk": ["./packages/sdk/lib/CenterGraph.ts"],
       "@centergraph/sdk/*": ["./packages/sdk/*"]
     }
+  },
+  "ts-node": {
+    "esm": true
   }
 }

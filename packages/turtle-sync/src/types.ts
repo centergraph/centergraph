@@ -4,7 +4,7 @@ import { DatasetCore, Store } from './deps.ts'
  * The options for TurtleToStore
  */
 export type TurtleToStoreOptions = {
-  store?: typeof DatasetCore
+  store?: typeof DatasetCore | Store
   shaclStore?: Store
   sparqlEndpoint?: string
   folderAdapter: FolderAdapter

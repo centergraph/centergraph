@@ -8,7 +8,7 @@ import { rdf, sh } from '@centergraph/shacl-renderer/lib/helpers/namespaces'
 import { DataFactory } from 'n3'
 import { preloadWidgets } from './helpers/preloadWidgets'
 import './style.css'
-import { DatasetCore } from '@rdfjs/types'
+import { DatasetCore, Term } from '@rdfjs/types'
 import { state } from './context/state'
 import { asResource } from '@centergraph/sdk/lib/core/asResource'
 
@@ -34,6 +34,8 @@ const loadShaclShapes = async (settings: Settings, dataset: DatasetCore, shaclSh
 }
 
 const loadData = async (settings: Settings, dataset: DatasetCore, dataUrl?: string, subject?: string) => {
+  let subjectTerm: Term | undefined = undefined
+
   if (dataUrl) {
     const response = await settings
       .fetch(dataUrl.split('#')[0])
@@ -46,9 +48,17 @@ const loadData = async (settings: Settings, dataset: DatasetCore, dataUrl?: stri
     for (const quad of quads) dataset.add(quad)
   }
 
-  subject = subject ? subject : dataUrl
-  if (!subject) subject = ''
-  return grapoi({ dataset, factory: DataFactory, term: DataFactory.namedNode(subject) })
+  if (settings.subjectSelector) {
+    subjectTerm = settings.subjectSelector(dataset)
+  }
+
+  if (!subjectTerm) {
+    subject = subject ? subject : dataUrl
+    if (!subject) subject = ''
+    subjectTerm = DataFactory.namedNode(subject)
+  }
+
+  return grapoi({ dataset, factory: DataFactory, term: subjectTerm })
 }
 
 const createShaclRendererResource = (

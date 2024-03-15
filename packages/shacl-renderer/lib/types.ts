@@ -32,6 +32,7 @@ export type Settings = {
   mode: 'edit' | 'view'
   fetch: typeof globalThis.fetch
   targetClass?: string
+  subjectSelector?: (dataset: DatasetCore) => Term | undefined
   widgetMetas: {
     editors: Array<WidgetMeta>
     viewers: Array<WidgetMeta>

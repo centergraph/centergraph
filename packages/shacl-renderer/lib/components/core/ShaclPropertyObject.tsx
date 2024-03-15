@@ -34,6 +34,7 @@ export default function ShaclPropertyObject({
   const setTerm = (value: Term) => {
     const dataset: DatasetCore = dataPointer.ptrs[0].dataset
     const [quad] = [...dataPointer.quads()]
+    // Grapoi remove seems to delete duplicates too.
     dataset.delete(quad)
     dataset.add(factory.quad(quad.subject, quad.predicate, value as Quad_Object, quad.graph))
 

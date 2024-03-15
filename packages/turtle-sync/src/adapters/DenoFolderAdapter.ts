@@ -28,8 +28,6 @@ export class DenoFolderAdapter implements FolderAdapter {
 
       const relativePath = file.name.replace(this.#folder + '/', '').replace(suffix, '')
 
-      console.log(relativePath)
-
       yield {
         relativePath,
         get contents() {

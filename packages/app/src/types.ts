@@ -12,3 +12,9 @@ export type Person = {
 };
 
 
+export type User = {
+    username: string;
+    familyName: string;
+};
+
+

@@ -17,11 +17,13 @@ import { types } from './routes/types.ts'
 export const folder = '../../data/address-book'
 export const store = new Store()
 export const baseIRI = 'http://localhost:8000'
-export const { prefixes } = await turtleSync({
+export const { prefixes, indexedErrors } = await turtleSync({
   store,
   baseIRI: baseIRI + '/',
   folderAdapter: new DenoFolderAdapter(folder),
 })
+
+console.log(indexedErrors)
 
 const port = 8000
 const namespacesAsPrefixes = Object.fromEntries(
@@ -30,7 +32,7 @@ const namespacesAsPrefixes = Object.fromEntries(
 export const context = JSON.parse(fs.readFileSync(`${folder}/context.json`, 'utf-8'))
 export const jwks = JSON.parse(fs.readFileSync(`${folder}/jwks.json`, 'utf-8'))
 Object.assign(context, prefixes, namespacesAsPrefixes)
-const oidc = createProvider(baseIRI)
+const oidc = createProvider(baseIRI, store)
 
 const app: Express = express()
 app.use(cors())
@@ -51,13 +53,3 @@ app.get('/', (_request: Request, response: Response) => {
 app.listen(port, () => {
   console.log(`Ready: CenterGraph Base is running on ${baseIRI}/`)
 })
-
-const watcher = fs.watch(folder, { recursive: true }, (event, filename) => {
-  console.log(`Detected ${event} in ${filename}`)
-})
-
-// for await (const event of watcher) {
-//   if (event.kind === 'modify') {
-//     Deno.run({ cmd: ['touch', new URL('', import.meta.url).pathname] })
-//   }
-// }

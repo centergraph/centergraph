@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom/client'
 import { defaultSettings } from '@/defaultSettings'
 import { registerCoreWidgets } from '@/helpers/registerWidgets'
 import { ReactNode } from 'react'
+import { DatasetCore } from '@rdfjs/types'
+import factory from '@rdfjs/data-model'
 
 const editSettings = defaultSettings('edit')
 registerCoreWidgets(editSettings)
@@ -11,15 +13,28 @@ registerCoreWidgets(editSettings)
 const viewSettings = defaultSettings('view')
 registerCoreWidgets(viewSettings)
 
+const blankSettings = defaultSettings('edit')
+blankSettings.subjectSelector = (dataset: DatasetCore) => {
+  const addresses = dataset.match(
+    factory.namedNode('http://example.com/john-doe'),
+    factory.namedNode('https://schema.org/address'),
+    null
+  )
+  return [...addresses]?.[0]?.object
+}
+registerCoreWidgets(blankSettings)
+
+console.log(blankSettings)
+
 const presets: {
   [key: string]: {
     title: string
-    element: ReactNode
+    element: () => ReactNode
   }
 } = {
   'contact-card-form': {
     title: 'Contact card form',
-    element: (
+    element: () => (
       <ShaclRenderer
         settings={editSettings}
         shaclShapesUrl="./shapes/contact.shacl.ttl"
@@ -28,9 +43,15 @@ const presets: {
       />
     ),
   },
+  'blank-node': {
+    title: 'Blank Node pointer',
+    element: () => (
+      <ShaclRenderer settings={blankSettings} shaclShapesUrl="./shapes/blank.shacl.ttl" dataUrl="./blank.ttl" />
+    ),
+  },
   'contact-card-form-empty': {
     title: 'Contact card form empty',
-    element: (
+    element: () => (
       <ShaclRenderer
         settings={editSettings}
         onSubmit={(dataset, pointer) => {
@@ -44,7 +65,7 @@ const presets: {
   },
   'various-widgets-form': {
     title: 'Various widgets form',
-    element: (
+    element: () => (
       <ShaclRenderer
         settings={editSettings}
         shaclShapesUrl="./shapes/various-widgets.shacl.ttl"
@@ -55,7 +76,7 @@ const presets: {
   },
   'contact-card-view': {
     title: 'Contact card view',
-    element: (
+    element: () => (
       <ShaclRenderer
         settings={viewSettings}
         shaclShapesUrl="./shapes/contact.shacl.ttl"
@@ -70,7 +91,7 @@ export function Main() {
   const presetName = location.pathname.substring(1)
 
   if (presets[presetName]) {
-    return presets[presetName].element
+    return presets[presetName].element()
   }
 
   return (

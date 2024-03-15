@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ts: <https://centergraph.danielbeeke.nl/turtle-sync#> .
+@prefix sr: <https://centergraph.danielbeeke.nl/shacl-renderer#> .
+
+<>
+  ts:strategy ts:DeleteInsert ;
+
+  a sh:NodeShape, sr:MainShape ;
+  sh:targetClass schema:User ;
+
+  sh:property [
+    sh:name "Username"@en ;
+    sh:path schema:username ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:datatype xsd:string ;
+  ];
+  
+  sh:property [
+    sh:name "Password"@en ;
+    sh:path schema:familyName ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:datatype xsd:string ;
+  ];
+.
+

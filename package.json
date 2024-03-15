@@ -39,7 +39,6 @@
     "typescript-lru-cache": "^2.0.0"
   },
   "devDependencies": {
-    "tsx": "^4.7.0",
     "@astrojs/check": "^0.4.1",
     "@astrojs/mdx": "^2.0.3",
     "@preact/preset-vite": "^2.7.0",
@@ -75,8 +74,10 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unused-imports": "^3.0.0",
     "happy-dom": "^12.10.3",
+    "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.7.0",
     "turbo": "^1.11.3",
     "typescript": "^5.3.3",
     "vite": "^5.0.8",

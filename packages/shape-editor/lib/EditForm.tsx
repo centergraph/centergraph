@@ -33,13 +33,10 @@ export default function EditForm({
     'undefined'
 
   useEffect(() => {
-    const quads = item.pointer?.distinct().out().quads() ?? []
     const settings = defaultSettings('edit')
+    settings.initialDataDataset = item.pointer.ptrs[0].dataset
+    settings.subjectSelector = () => item.pointer.term
     registerCoreWidgets(settings)
-
-    console.log([...quads])
-
-    settings.initialDataDataset = datasetFactory.dataset([...quads])
     setSettings(settings)
 
     const widgetMeta = widgetMetas?.find(

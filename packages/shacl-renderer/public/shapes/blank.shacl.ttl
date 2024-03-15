@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sr: <https://centergraph.danielbeeke.nl/shacl-renderer#> .
+@prefix dash: <http://datashapes.org/dash#> .
+
+<>
+    a sh:NodeShape ;
+    sh:targetClass schema:PostalAddress ;
+
+    sh:property [
+        sh:name "Street"@en ;
+        sh:group <#address> ;
+        sh:path schema:streetAddress ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:name "Postal code"@en ;
+        sh:path schema:postalCode ;
+        sh:group <#address> ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:name "Locality"@en ;
+        sh:group <#address> ;
+        sh:path schema:addressLocality ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:name "Region"@en ;
+        sh:group <#address> ;
+        sh:path schema:addressRegion ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+
+    sh:property [
+        sh:name "Country"@en ;
+        sh:path schema:addressCountry ;
+        sh:group <#address> ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
